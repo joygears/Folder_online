@@ -1,0 +1,17 @@
+类型   地址       模块/标签/异常                    状态  反汇编                                命中   摘要                                                                                                                                                    
+软件断点                                                                                  
+     00419974 ollydbg.exe                 已禁用 push ebp                           0    
+     0041E604 ollydbg.exe                 已启用 push ebp                           4675 消息回调函数的开头, breakif(arg.get(1) == 0x100 && arg.get(0) == 0x3E0894)
+     0041EAF5 ollydbg.exe                 已启用 test byte ptr ds:[4CD8FF],1        2    #1
+     0041EB18 ollydbg.exe                 已启用 lea ecx,dword ptr ss:[ebp-14]      2    var_10和var_14赋值的地方
+     0041EB27 ollydbg.exe                 已禁用 call ollydbg.447598                0    
+     0041EB33 ollydbg.exe                 已启用 lea ecx,dword ptr ss:[ebp-18]      1    #2 var_18赋值的地方
+     0041EB3F ollydbg.exe                 已禁用 call ollydbg.4582F0                0    
+     0041EBE3 ollydbg.exe                 已禁用 call <JMP.&GetClientRect>          0    
+     0041EC3A ollydbg.exe                 已禁用 call <JMP.&MapVirtualKeyA>         0    
+     0041F8CB ollydbg.exe                 已启用 cmp dword ptr ss:[ebp+10],71       1    关键函数位置
+     0041F910 ollydbg.exe                 已禁用 call ollydbg.419974                0    
+     0041FFF7 ollydbg.exe                 已禁用 call <ollydbg._Disassembleforward> 0    
+     004375DC ollydbg.exe                 已启用 call ollydbg.42E294                1    
+     75DDF100 <user32.dll.RegisterClassA> 已禁用 mov edi,edi                        0    breakif(0), 日志if(1, "WNDCLASSA : lpfnWndProc == {[[esp+4]+4]} lpszClassName ==  {ansi@[[esp+4]+24]}  {[[esp+4]+4]-401000}     {[[esp+4]+4]-4B0000}  ")
+     75DEC5D0 <user32.dll.RegisterClassW> 已禁用 mov edi,edi                        0    
