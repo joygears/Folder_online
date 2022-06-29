@@ -1,0 +1,28 @@
+插入名称
+
+在名称表中插入新的或替换给定类型的现有名称。如果 name 为 NULL 或空，则删除条目。成功返回 0，错误返回 -1。注意：不要在调用Quickinsertname和Mergequicknames之间调用此函数！
+
+int Insertname(ulong addr,int type,char *name);
+
+参数：
+
+addr - 名称地址；
+
+type - 名称类型（预定义类型为NM_xxx）；
+
+name - 要插入的名称。如果 name 为 NULL 或空，则从 name 表中删除条目。
+
+
+static	[4EAE14]	dword
+
+
+static	[4EAE1C]   dword   [4EAE18] dword
+
+static	[4EAE34]	dword	[4EAE38]	dword
+
+static	[4D6EB0]	dword	
+
+
+
+
+
