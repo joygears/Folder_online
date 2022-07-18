@@ -1,5 +1,4 @@
 #include "Hardbreakpoint.h"
-#include <Windows.h>
 DWORD * P4D375C = (DWORD*)0x4D375C;
 HINSTANCE* hInstance = (HINSTANCE*)0x004D3B78;
 HWND *hWndClient = (HWND*)0x004D3B80;
