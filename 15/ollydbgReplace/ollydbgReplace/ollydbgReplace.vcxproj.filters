@@ -29,5 +29,8 @@
     <ClCompile Include="Hardbreakpoint.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ollydbg.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

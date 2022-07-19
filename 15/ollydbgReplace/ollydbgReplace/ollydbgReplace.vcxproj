@@ -145,6 +145,7 @@
   <ItemGroup>
     <ClCompile Include="Hardbreakpoint.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ollydbg.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

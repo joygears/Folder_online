@@ -1,6 +1,6 @@
 #include "hook.hpp"
 #include "Hardbreakpoint.h"
-FARPROC g_func = (FARPROC)0x00408F54;
+FARPROC g_func = (FARPROC)0x00408690;
 hook hk;
 BOOL APIENTRY DllMain(HMODULE hModule,
     DWORD  ul_reason_for_call,
