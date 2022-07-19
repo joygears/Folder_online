@@ -1210,35 +1210,7 @@ typedef struct t_hardbpoint            // Description of hardware breakpoint
     ulong          reserved[4];          // Reserved for the future
 } t_hardbpoint;
 
-extc int     cdecl Setbreakpoint(ulong addr, ulong type, uchar cmd);
-extc int     cdecl Setbreakpointext(ulong addr, ulong type, char cmd, ulong passcount);
-extc int     cdecl Manualbreakpoint(ulong addr, int key, int shiftkey, ulong nametype, int font);
-extc void    cdecl Deletebreakpoints(ulong addr0, ulong addr1, int silent);
-extc ulong   cdecl Getbreakpointtype(ulong addr);
-extc ulong   cdecl Getbreakpointtypecount(ulong addr, ulong* passcount);
-extc ulong   cdecl Getnextbreakpoint(ulong addr, ulong* type, int* cmd);
-extc void    cdecl Tempbreakpoint(ulong addr, int mode);
-extc int     cdecl Hardbreakpoints(int closeondelete);
-extc int     cdecl Sethardwarebreakpoint(ulong addr, int size, int type);
-extc int     cdecl Deletehardwarebreakpoint(int index);
-extc int     cdecl Deletehardwarebreakbyaddr(ulong addr);
-extc int     cdecl Setmembreakpoint(int type, ulong addr, ulong size);
-extc uchar* cdecl Findhittrace(ulong addr, uchar** ptracecopy, ulong* psize);
-extc int     cdecl Modifyhittrace(ulong addr0, ulong addr1, int mode);
-extc ulong   cdecl Isretaddr(ulong retaddr, ulong* procaddr);
-extc HWND    cdecl Creatertracewindow();
-extc void    cdecl Settracecondition(char* cond, int onsuspicious, ulong in0, ulong in1, ulong out0, ulong out1);
-extc void    cdecl Settracecount(ulong count);
-extc void    cdecl Settracepauseoncommands(char* cmdset);
-extc int     cdecl Startruntrace(t_reg* preg);
-extc void    cdecl Deleteruntrace();
-extc int     cdecl Runtracesize();
-extc int     cdecl Findprevruntraceip(ulong ip, int startback);
-extc int     cdecl Findnextruntraceip(ulong ip, int startback);
-extc int     cdecl Getruntraceregisters(int nback, t_reg* preg, t_reg* pold, char* cmd, char* comment);
-extc int     cdecl Getruntraceprofile(ulong addr, ulong size, ulong* profile);
-extc void    cdecl Scrollruntracewindow(int back);
-extc HWND    cdecl Createprofilewindow(ulong base, ulong size);
+
 
 
 ////////////////////////////////////////////////////////////////////////////////

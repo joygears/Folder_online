@@ -10,7 +10,7 @@ BOOL APIENTRY DllMain(HMODULE hModule,
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
-        hk.hook_by_code(g_func, (PROC)Hardbreakpoints);
+        hk.hook_by_code(g_func, (PROC)Sethardwarebreakpoint);
         break;
     case DLL_THREAD_ATTACH:
     case DLL_THREAD_DETACH:

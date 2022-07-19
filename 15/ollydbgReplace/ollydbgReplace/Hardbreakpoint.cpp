@@ -6,19 +6,23 @@ DLGPROC DialogFunc = (DLGPROC)0x00408E1C;
 
 DWORD* dword_4D375C = (PDWORD)0x4D375C;
 t_hardbpoint* hardpointAry = (t_hardbpoint*)0x004D8D70;
-t_thread* threadAry = (t_thread*)0x4D7DB0;
+t_thread** ppthreadAry = (t_thread**)0x4D7DB0;
 void  (*Error)(const char *) = (void  (*)(const char*))0x0045401C;
 t_status* g_debugedProcessStatus =(t_status*)0x004D5A5C;
+PDWORD dword_4CD2E8 = (PDWORD)0x4CD2E8;
+PDWORD g_DebugedThreadCount = (PDWORD)0x004D7D98;
 int Hardbreakpoints(int arg_0)
 {
     if (*P4D375C == 0) {
         return -1;
     }
+    *dword_4CD2E8 = arg_0;
     return DialogBoxParamA(*hInstance, "DIA_HARD", *hWndClient, DialogFunc, 0);
 }
 
 int Sethardwarebreakpoint(int addr, int size, int type) {
     DWORD edi;
+    t_thread* threadAry = *ppthreadAry;
     //若[4D375C] != 0, 则跳转，否则return - 1, 表示失败
     if (*dword_4D375C == 0)
         return -1;
@@ -111,6 +115,10 @@ int Sethardwarebreakpoint(int addr, int size, int type) {
     if (threadAry == 0) {
         Error((char*)"Internal error : don't know how to set hardware breakpoint.");
         return -1;
+    }
+
+    for (i = 0; i < *g_DebugedThreadCount; i++) {
+        SuspendThread(threadAry[i].thread);
     }
 
 
