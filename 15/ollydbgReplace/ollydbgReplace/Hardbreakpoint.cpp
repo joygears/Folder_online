@@ -21,8 +21,9 @@ int Hardbreakpoints(int arg_0)
 }
 
 int Sethardwarebreakpoint(int addr, int size, int type) {
-    DWORD edi;
+
     t_thread* threadAry = *ppthreadAry;
+    CONTEXT Context ;
     //若[4D375C] != 0, 则跳转，否则return - 1, 表示失败
     if (*dword_4D375C == 0)
         return -1;
@@ -31,7 +32,7 @@ int Sethardwarebreakpoint(int addr, int size, int type) {
         size = 1;
     }
     else if (type == HB_IO) {
-        edi = addr & 0xFFFFF;
+        addr = addr & 0xFFFFF;
     }
     else if (type != HB_FREE && size - 1 & addr != 0) {
         return -1;
@@ -44,20 +45,20 @@ int Sethardwarebreakpoint(int addr, int size, int type) {
     int containFlag = 0;
     int i = 0;
     do {
-   
-        //若打的断点是重复断点，则直接返回成功
         if (hardpointAry[i].type != HB_FREE
-            && type == hardpointAry[i].type
-            && addr >= hardpointAry[i].addr
-            && hardpointAry[i].addr + hardpointAry[i].size >= addr + size) {
-            return 0;
-        }
-         //若当前断点包含了之前打的断点，则覆盖之前的断点
-        if (addr <= hardpointAry[i].addr
-            && hardpointAry[i].addr + hardpointAry[i].size <= addr + size) {
-            hardpointAry[i].addr = addr;
-            hardpointAry[i].size = size;
-            containFlag = true;
+            && type == hardpointAry[i].type) {
+            //若打的断点是重复断点，则直接返回成功
+            if (addr >= hardpointAry[i].addr
+                && hardpointAry[i].addr + hardpointAry[i].size >= addr + size) {
+                return 0;
+            }
+            //若当前断点包含了之前打的断点，则覆盖之前的断点
+            if (addr <= hardpointAry[i].addr
+                && hardpointAry[i].addr + hardpointAry[i].size <= addr + size) {
+                hardpointAry[i].addr = addr;
+                hardpointAry[i].size = size;
+                containFlag = true;
+            }
         }
         i++;
       
@@ -122,5 +123,79 @@ int Sethardwarebreakpoint(int addr, int size, int type) {
     }
 
 
+    for (int i = 0; i < *g_DebugedThreadCount; i++) {
+        Context.ContextFlags = 0x10010;
+        if (!GetThreadContext(threadAry[i].thread, &Context)) {
+            int a = ::GetLastError();
+            continue;
+        }
+        Context.Dr0 = hardpointAry[0].addr;
+        Context.Dr1 = hardpointAry[1].addr;
+        Context.Dr2 = hardpointAry[2].addr;
+        Context.Dr3 = hardpointAry[3].addr;
+
+        DWORD esi = 0x400;
+        int j = 0;
+        int var_4;
+
+        do {
+
+            if (hardpointAry[j].type != HB_FREE) {
+
+                esi = esi | (1 << ((j * 2) & 0xFF));
+
+                switch (hardpointAry[j].type) {
+
+                case 1:
+                case 5:
+                case 6:
+                case 7:
+                    var_4 = 0;
+                    hardpointAry[j].type = 1;
+                    break;
+
+                case 2:
+                    var_4 = 3;
+                    esi |= 0x100;
+                    break;
+
+                case 3:
+                    var_4 = 1;
+                    esi |= 0x100;
+                    break;
+
+                case 4:
+                    var_4 = 2;
+                    esi |= 0x100;
+                    break;
+
+                default:
+                    var_4 = 0;
+                }
+         
+                switch (hardpointAry[i].type) {
+
+                case 2:
+                    var_4 |= 4;
+                    break;
+
+                case 4:
+                    var_4 |= 0x0C;
+                }
+
+                esi |= (var_4 << ((j * 4 + 0x10) & 0xFF));
+            }
+
+            j++;
+
+        }while (j < 4);
+
+        Context.Dr7 = esi;
+
+        SetThreadContext(threadAry[i].thread, &Context);
+    }
+    for (i = 0; i < *g_DebugedThreadCount; i++) {
+        ResumeThread(threadAry[i].thread);
+    }
     return 0;
 }
