@@ -11,4 +11,5 @@ extern t_thread** ppthreadAry;
 extern void  (*Error)(const char*);
 extern t_status* g_debugedProcessStatus;
 int Hardbreakpoints(int);
-int Sethardwarebreakpoint(int addr, int size, int type);
+int Sethardwarebreakpoint(unsigned long addr, int size, int type);
+int Deletehardwarebreakpoint(int index);

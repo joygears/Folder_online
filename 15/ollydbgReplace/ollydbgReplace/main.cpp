@@ -1,6 +1,6 @@
 #include "hook.hpp"
 #include "Hardbreakpoint.h"
-FARPROC g_func = (FARPROC)0x00408690;
+FARPROC g_func = (FARPROC)0x004089EC;
 hook hk;
 BOOL APIENTRY DllMain(HMODULE hModule,
     DWORD  ul_reason_for_call,
@@ -10,7 +10,7 @@ BOOL APIENTRY DllMain(HMODULE hModule,
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
-        hk.hook_by_code(g_func, (PROC)Sethardwarebreakpoint);
+        hk.hook_by_code(g_func, (PROC)Deletehardwarebreakpoint);
         break;
     case DLL_THREAD_ATTACH:
     case DLL_THREAD_DETACH:
