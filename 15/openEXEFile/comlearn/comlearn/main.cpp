@@ -151,6 +151,7 @@ int main() {
 		
 	}
 	CoUninitialize();
-	
+	IMAGE_NT_HEADERS
+		MB_OK
 	return 0;
 }
