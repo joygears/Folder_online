@@ -1,0 +1,24 @@
+RaiseException：
+	ExceptionCode   0E06D7363h
+	ExceptionFlags  1
+	ExceptionRecord 0                 
+	ExceptionAddress 0                   
+	NumberParameters  3
+	ExceptionInformation  19930520h  
+						  0019FF14h  //pExceptionObj
+						  00418A50h	 //pFuncinfo
+						  
+main_SEH:
+	ExceptionCode   0E06D7363h
+	ExceptionFlags  1
+	ExceptionRecord 0                 
+	ExceptionAddress 76939962h                  
+	NumberParameters  3
+	ExceptionInformation  19930520h  
+						  0019FF14h  //pExceptionObj
+						  00418A50h	 //pFuncinfo
+_except_handler:
+	Exception_RECORD * pRecord 0019F920
+	Exception_REGISTRATION_RECORD *pFrame 0019FF1Ch
+	CONTEXT * pContext 0019F82C
+	PVOID pValue 0019F830  
