@@ -6,6 +6,7 @@ int main(int argc, char* argv[])  {
   }
   catch ( int e )  {
     printf(" 触发 int 异常 \r\n");
+    return e;
   }
   catch ( float e)  {
     printf(" 触发 float 异常 \r\n");
