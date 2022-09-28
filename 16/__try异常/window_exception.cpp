@@ -19,6 +19,9 @@ int main()
     __except (exception_filter(GetExceptionInformation())) {
         MessageBox(0, TEXT("捕获内存访问异常成功"), 0, 0);
     }
+	__except (exception_filter(GetExceptionInformation())) {
+        MessageBox(0, TEXT("捕获内存访问异常成功"), 0, 0);
+    }
 }
 
 
