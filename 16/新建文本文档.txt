@@ -10,4 +10,4 @@
 A8 socket 
 AC HANDLE hEvent
 
-B0 bool 
+B0 bool  connect
