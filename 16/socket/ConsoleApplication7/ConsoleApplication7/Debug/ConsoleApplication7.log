@@ -35,4 +35,4 @@ libcpmtd.lib(locale.obj) : error LNK2019: 无法解析的外部符号 __realloc_
 libcpmtd.lib(StlLCMapStringA.obj) : error LNK2019: 无法解析的外部符号 __CrtDbgReportW，函数 __freea_crt 中引用了该符号
 libcpmtd.lib(xmbtowc.obj) : error LNK2001: 无法解析的外部符号 __CrtDbgReportW
 libcpmtd.lib(StlCompareStringA.obj) : error LNK2001: 无法解析的外部符号 __CrtDbgReportW
-C:\Users\Administrator\source\repos\ConsoleApplication7\Debug\server.exe : fatal error LNK1120: 7 个无法解析的外部命令
+D:\Game\Folder_online\16\socket\ConsoleApplication7\Debug\server.exe : fatal error LNK1120: 7 个无法解析的外部命令

@@ -58,6 +58,14 @@ int main(int argc, char* argv[]) {
         if (!flag)
             cout << "接收到一个链接：" << inet_ntoa(client_sin.sin_addr) << endl;
         flag = 1;
+       
+        
+        string data;
+        getline(cin, data);
+        const char* sendData;
+        sendData = data.c_str();
+        send(clientSocket, sendData, strlen(sendData), 0);
+
         int num = recv(clientSocket, msg, 100, 0);
         if (num > 0)
         {
@@ -66,11 +74,7 @@ int main(int argc, char* argv[]) {
 
         }
 
-        string data;
-        getline(cin, data);
-        const char* sendData;
-        sendData = data.c_str();
-        send(clientSocket, sendData, strlen(sendData), 0);
+        
         closesocket(clientSocket);
     }
 
