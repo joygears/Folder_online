@@ -1,11 +1,17 @@
 ﻿#include<winsock2.h>
 #include<iostream>
+#include <stdio.h>
 #include<string>
 using namespace std;
 #pragma comment(lib,"ws2_32.lib")
 
 int main(int argc, char* argv[]) {
-
+    int i = 0x00408238;
+   
+    float f = (float)0x0211DBD0;
+   
+    memcpy(&f, &i, 4);
+    i = f;
     //初始化DLL
     WORD sockVersion = MAKEWORD(2, 2);
     WSADATA wsdata;
@@ -65,7 +71,7 @@ int main(int argc, char* argv[]) {
         const char* sendData;
         sendData = data.c_str();
         send(clientSocket, sendData, strlen(sendData), 0);
-
+        
         int num = recv(clientSocket, msg, 100, 0);
         if (num > 0)
         {
