@@ -55,7 +55,7 @@ int main(int argc, char* argv[]) {
 
     SOCKET clientSocket;
     sockaddr_in client_sin;
-    char msg[100];//存储传送的消息
+    char msg[8192];//存储传送的消息
     int flag = 0;//是否已经连接上
     int len = sizeof(client_sin);
     while (true) {
@@ -81,7 +81,7 @@ int main(int argc, char* argv[]) {
         sendData = data.c_str();
         send(clientSocket, sendData, LEN_DATA, 0);
         
-        int num = recv(clientSocket, msg, 100, 0);
+        int num = recv(clientSocket, msg, 8192, 0);
         if (num > 0)
         {
             msg[num] = '\0';
