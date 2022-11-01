@@ -1,39 +1,7 @@
 ﻿  ConsoleApplication7.cpp
-D:\Game\Folder_online\16\socket\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(73,57): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-libcpmtd.lib(xwcsxfrm.obj) : error LNK2001: 无法解析的外部符号 _free_dbg
-libcpmtd.lib(StlCompareStringA.obj) : error LNK2001: 无法解析的外部符号 _free_dbg
-libcpmtd.lib(locale.obj) : error LNK2001: 无法解析的外部符号 _free_dbg
-libcpmtd.lib(StlLCMapStringA.obj) : error LNK2001: 无法解析的外部符号 _free_dbg
-libcpmtd.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 _free_dbg
-libcpmtd.lib(xlocale.obj) : error LNK2001: 无法解析的外部符号 _free_dbg
-ConsoleApplication7.obj : error LNK2001: 无法解析的外部符号 _free_dbg
-libcpmtd.lib(locale0.obj) : error LNK2001: 无法解析的外部符号 _free_dbg
-libcpmtd.lib(cin.obj) : error LNK2001: 无法解析的外部符号 _free_dbg
-libcpmtd.lib(cout.obj) : error LNK2001: 无法解析的外部符号 _free_dbg
-libcpmtd.lib(xwcsxfrm.obj) : error LNK2001: 无法解析的外部符号 _malloc_dbg
-libcpmtd.lib(StlCompareStringA.obj) : error LNK2001: 无法解析的外部符号 _malloc_dbg
-libcpmtd.lib(locale.obj) : error LNK2001: 无法解析的外部符号 _malloc_dbg
-libcpmtd.lib(StlLCMapStringA.obj) : error LNK2001: 无法解析的外部符号 _malloc_dbg
-libcpmtd.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 _malloc_dbg
-libcpmtd.lib(xlocale.obj) : error LNK2001: 无法解析的外部符号 _malloc_dbg
-ConsoleApplication7.obj : error LNK2001: 无法解析的外部符号 _malloc_dbg
-libcpmtd.lib(locale0.obj) : error LNK2001: 无法解析的外部符号 _malloc_dbg
-libcpmtd.lib(cin.obj) : error LNK2001: 无法解析的外部符号 _malloc_dbg
-libcpmtd.lib(cout.obj) : error LNK2001: 无法解析的外部符号 _malloc_dbg
-libcpmtd.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 _CrtDbgReport
-libcpmtd.lib(xlocale.obj) : error LNK2001: 无法解析的外部符号 _CrtDbgReport
-ConsoleApplication7.obj : error LNK2001: 无法解析的外部符号 _CrtDbgReport
-libcpmtd.lib(cin.obj) : error LNK2001: 无法解析的外部符号 _CrtDbgReport
-libcpmtd.lib(cout.obj) : error LNK2001: 无法解析的外部符号 _CrtDbgReport
-libcpmtd.lib(locale.obj) : error LNK2001: 无法解析的外部符号 _CrtDbgReport
-libcpmtd.lib(_tolower.obj) : error LNK2019: 无法解析的外部符号 _calloc_dbg，函数 _Getctype 中引用了该符号
-libcpmtd.lib(locale.obj) : error LNK2001: 无法解析的外部符号 _calloc_dbg
-libcpmtd.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 _calloc_dbg
-libcpmtd.lib(xlocale.obj) : error LNK2001: 无法解析的外部符号 _calloc_dbg
-libcpmtd.lib(_tolower.obj) : error LNK2019: 无法解析的外部符号 _wcsdup_dbg，函数 _Getctype 中引用了该符号
-libcpmtd.lib(xstrcoll.obj) : error LNK2001: 无法解析的外部符号 _wcsdup_dbg
-libcpmtd.lib(locale.obj) : error LNK2019: 无法解析的外部符号 _realloc_dbg，函数 "private: static void __cdecl std::locale::_Locimp::_Locimp_Addfac(class std::locale::_Locimp *,class std::locale::facet *,unsigned __int64)" (?_Locimp_Addfac@_Locimp@locale@std@@CAXPEAV123@PEAVfacet@23@_K@Z) 中引用了该符号
-libcpmtd.lib(StlLCMapStringA.obj) : error LNK2019: 无法解析的外部符号 _CrtDbgReportW，函数 _freea_crt 中引用了该符号
-libcpmtd.lib(xmbtowc.obj) : error LNK2001: 无法解析的外部符号 _CrtDbgReportW
-libcpmtd.lib(StlCompareStringA.obj) : error LNK2001: 无法解析的外部符号 _CrtDbgReportW
-D:\Game\Folder_online\16\socket\ConsoleApplication7\x64\Debug\server.exe : fatal error LNK1120: 7 个无法解析的外部命令
+D:\Users\st\Folder_online\16\socket\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(20,9): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+D:\Users\st\Folder_online\16\socket\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(77,71): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\Users\st\Folder_online\16\socket\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(145,20): warning C4018: “<”: 有符号/无符号不匹配
+ConsoleApplication7.obj : error LNK2019: 无法解析的外部符号 __imp__invalid_parameter，函数 "void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned __int64)" (??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z) 中引用了该符号
+ConsoleApplication7.obj : error LNK2019: 无法解析的外部符号 __imp__CrtDbgReport，函数 "void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned __int64)" (??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z) 中引用了该符号
+D:\Users\st\Folder_online\16\socket\ConsoleApplication7\x64\Debug\server.exe : fatal error LNK1120: 2 个无法解析的外部命令

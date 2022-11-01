@@ -15,7 +15,7 @@ int main()
     SOCKET soc = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     if (soc == 0)
         return 0;
-    hostent* hent = gethostbyname("127.0.0.1");
+    hostent* hent = gethostbyname("192.168.6.70");
     if (hent == 0)
         return 0;
     short port = htons(5566);
@@ -24,6 +24,7 @@ int main()
     memcpy(&saddr.sa_data[2], &hent->h_addr_list[0][0], 4);
   
     if (connect(soc, &saddr, 16) == -1) {
+        int a = WSAGetLastError();
         return 0;
     }
     if (!setsockopt(soc, SOL_SOCKET, SO_KEEPALIVE, (const char*)&optBuf, 4)) {

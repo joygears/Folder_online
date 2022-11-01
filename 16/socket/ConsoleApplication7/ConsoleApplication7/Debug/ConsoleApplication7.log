@@ -1,3 +1,3 @@
 ﻿  ConsoleApplication7.cpp
-D:\Game\Folder_online\16\socket\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(14,9): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
-  ConsoleApplication7.vcxproj -> D:\Game\Folder_online\16\socket\ConsoleApplication7\Debug\server.exe
+D:\Users\st\Folder_online\16\socket\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(158,20): warning C4018: “<”: 有符号/无符号不匹配
+  ConsoleApplication7.vcxproj -> D:\Users\st\Folder_online\16\socket\ConsoleApplication7\Debug\server.exe
