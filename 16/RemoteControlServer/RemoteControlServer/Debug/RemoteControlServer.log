@@ -1,2 +1,4 @@
-﻿  DiskInfoExtractor.cpp
-  RemoteControlServer.vcxproj -> D:\Users\st\Folder_online\16\RemoteControlServer\Debug\RemoteControlServer.exe
+﻿  DataExtractor.cpp
+D:\Game\Folder_online\16\RemoteControlServer\RemoteControlServer\DataExtractor.cpp(11,8): warning C4101: “buf”: 未引用的局部变量
+D:\Game\Folder_online\16\RemoteControlServer\RemoteControlServer\DataExtractor.cpp(46,58): warning C4018: “<”: 有符号/无符号不匹配
+  RemoteControlServer.vcxproj -> D:\Game\Folder_online\16\RemoteControlServer\Debug\RemoteControlServer.exe

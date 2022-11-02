@@ -11,7 +11,7 @@
 
 using namespace std;
 
-void getDiskInfo(SOCKET clientSocket);
+void getDiskInfo(SOCKET clientSocket, SOCKET serverSocket);
 
 int main(){
   // 监听端口等待连接
@@ -80,7 +80,7 @@ int main(){
     cin >> orinal;
     switch (orinal.c_str()[0]) {
     case '1':
-        getDiskInfo(clientSocket);
+        getDiskInfo(clientSocket, serverSocket);
         break;
     default:
         cout << "无此功能" << endl;
@@ -90,10 +90,11 @@ int main(){
     return  0;
 }
 #define LEN_DATA 22
-void getDiskInfo(SOCKET clientSocket) {
+void getDiskInfo(SOCKET clientSocket, SOCKET serverSocket) {
 
     char msg[8192];//存储传送的消息
-
+    sockaddr_in client_sin;
+    int len = sizeof(client_sin);
 
     cout << "您选择的是获取磁盘信息功能" << endl;
     char keyAry[256];
@@ -106,6 +107,14 @@ void getDiskInfo(SOCKET clientSocket) {
     sendData = data.c_str();
     cout << "向客户端发送指令" << endl;
     send(clientSocket, sendData, LEN_DATA, 0);
+
+    clientSocket = accept(serverSocket, (sockaddr*)&client_sin, &len);
+    if (clientSocket == INVALID_SOCKET) {
+        cout << "Accept error" << endl;
+      
+        return ;
+    }
+
     while (true) {
         DiskInfoExtractor extractor;
         int num = recv(clientSocket, msg, 8192, 0);

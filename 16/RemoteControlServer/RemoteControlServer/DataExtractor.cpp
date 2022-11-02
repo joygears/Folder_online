@@ -50,7 +50,7 @@ int DataExtractor::parse_data()
 		pSrc = new char[size - 17];
 		this->plainTextContainer.buffer_read(pSrc, size - 17);
 		this->plainTextContainer.buffer_read(&compressFlag, 4);
-		if (compressFlag == 0x1C03) {
+		if (compressFlag == 0x2189) {
 			this->parsedData.appendData(pSrc, size - 17);
 		}
 	} while (true);
