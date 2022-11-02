@@ -21,9 +21,27 @@
     <ClCompile Include="rc4crpt.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DataContainer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DataExtractor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="rc4crpt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DataContainer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DataExtractor.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

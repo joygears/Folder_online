@@ -4,6 +4,9 @@
 #include <iostream>
 #include <Windows.h>
 #include "rc4crpt.h"
+#include "DataContainer.h"
+#include "DataExtractor.h"
+#include "utils.h"
 #pragma comment(lib,"ws2_32.lib")
 
 using namespace std;
@@ -54,7 +57,8 @@ int main(){
         cout << "Listen error" << endl;
         return 1;
     }
-
+    DataContainer connector;
+    connector.DataContainerExpansion(400);
     SOCKET clientSocket= 0;
     sockaddr_in client_sin;
    
@@ -95,20 +99,20 @@ void getDiskInfo(SOCKET clientSocket) {
     char keyAry[256];
     string data = { 0x4B,0x75,0x47,0x6F,0x75,LEN_DATA,0x00,0x00,0x00,LEN_DATA,0x00,0x00,0x00,0x01,0x00,0x00,0x00,0x00,0x03,0x1C,0x00,0x00 };
 
-    rc4_init(keyAry, (char*)"1593044206", strlen("1593044206"));
+    rc4_init(keyAry, (char*)RC4_KEY, strlen(RC4_KEY));
     rc4_cryp(keyAry, (char*)data.c_str(), LEN_DATA);
     //getline(cin, data);
     const char* sendData;
     sendData = data.c_str();
     cout << "向客户端发送指令" << endl;
     send(clientSocket, sendData, LEN_DATA, 0);
-    int num = recv(clientSocket, msg, 8192, 0);
-    if (num > 0)
-    {
-        msg[num] = '\0';
-        cout << "Client say: " << msg << endl;
-
+    while (true) {
+        DataExtractor extractor;
+        int num = recv(clientSocket, msg, 8192, 0);
+        if (num == 0) break;
+        extractor.decryptData(msg, num);
+        extractor.parse_data();
+        std::cout << "客户端说" << extractor.parsedData.getAddressOfIndex(0) << endl;
     }
-
 }
 

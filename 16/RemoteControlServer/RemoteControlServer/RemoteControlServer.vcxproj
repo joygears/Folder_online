@@ -140,11 +140,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DataContainer.cpp" />
+    <ClCompile Include="DataExtractor.cpp" />
     <ClCompile Include="rc4crpt.cpp" />
     <ClCompile Include="RemoteControlServer.cpp" />
+    <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DataContainer.h" />
+    <ClInclude Include="DataExtractor.h" />
     <ClInclude Include="rc4crpt.h" />
+    <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
