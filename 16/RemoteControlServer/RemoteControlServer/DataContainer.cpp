@@ -70,7 +70,7 @@ int DataContainer::DataContainerExpansion(size_t size)
 int DataContainer::buffer_read(void* data, size_t size)
 {	
 	EnterCriticalSection(&this->lpCriticalSection);
-	if (size < this->getMemorySize()) {
+	if (size > this->getMemorySize()) {
 		LeaveCriticalSection(&this->lpCriticalSection);
 		return 0;
 	}

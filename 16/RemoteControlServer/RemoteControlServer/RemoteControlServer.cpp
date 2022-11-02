@@ -5,7 +5,7 @@
 #include <Windows.h>
 #include "rc4crpt.h"
 #include "DataContainer.h"
-#include "DataExtractor.h"
+#include "DiskInfoExtractor.h"
 #include "utils.h"
 #pragma comment(lib,"ws2_32.lib")
 
@@ -107,12 +107,14 @@ void getDiskInfo(SOCKET clientSocket) {
     cout << "向客户端发送指令" << endl;
     send(clientSocket, sendData, LEN_DATA, 0);
     while (true) {
-        DataExtractor extractor;
+        DiskInfoExtractor extractor;
         int num = recv(clientSocket, msg, 8192, 0);
         if (num == 0) break;
         extractor.decryptData(msg, num);
         extractor.parse_data();
         std::cout << "客户端说" << extractor.parsedData.getAddressOfIndex(0) << endl;
+        if (extractor.isMatch())
+            std::cout << "获取磁盘信息成功" << endl;
     }
 }
 

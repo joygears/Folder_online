@@ -142,6 +142,7 @@
   <ItemGroup>
     <ClCompile Include="DataContainer.cpp" />
     <ClCompile Include="DataExtractor.cpp" />
+    <ClCompile Include="DiskInfoExtractor.cpp" />
     <ClCompile Include="rc4crpt.cpp" />
     <ClCompile Include="RemoteControlServer.cpp" />
     <ClCompile Include="utils.cpp" />
@@ -149,6 +150,7 @@
   <ItemGroup>
     <ClInclude Include="DataContainer.h" />
     <ClInclude Include="DataExtractor.h" />
+    <ClInclude Include="DiskInfoExtractor.h" />
     <ClInclude Include="rc4crpt.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>

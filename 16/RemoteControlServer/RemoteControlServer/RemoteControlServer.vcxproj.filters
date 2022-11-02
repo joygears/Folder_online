@@ -30,6 +30,9 @@
     <ClCompile Include="DataExtractor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DiskInfoExtractor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="rc4crpt.h">
@@ -42,6 +45,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="DataExtractor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DiskInfoExtractor.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
