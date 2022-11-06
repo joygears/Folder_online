@@ -56,3 +56,4 @@ int DataExtractor::parse_data()
 	} while (true);
 	return 0;
 }
+

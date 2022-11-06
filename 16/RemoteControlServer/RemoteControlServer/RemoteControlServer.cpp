@@ -75,17 +75,18 @@ int main(){
     }
 
     cout << "连接成功，接收到一个链接：" << inet_ntoa(client_sin.sin_addr) << endl;
-    cout << "1、获取磁盘信息" << endl;
-    cout << "请输入功能序号" << endl;
-    cin >> orinal;
-    switch (orinal.c_str()[0]) {
-    case '1':
-        getDiskInfo(clientSocket, serverSocket);
-        break;
-    default:
-        cout << "无此功能" << endl;
+    while (true) {
+        cout << "1、获取磁盘信息" << endl;
+        cout << "请输入功能序号" << endl;
+        cin >> orinal;
+        switch (orinal.c_str()[0]) {
+        case '1':
+            getDiskInfo(clientSocket, serverSocket);
+            break;
+        default:
+            cout << "无此功能" << endl;
+        }
     }
-
 
     return  0;
 }
@@ -105,7 +106,7 @@ void getDiskInfo(SOCKET clientSocket, SOCKET serverSocket) {
     //getline(cin, data);
     const char* sendData;
     sendData = data.c_str();
-    cout << "向客户端发送指令" << endl;
+    cout << "发送指令中" << endl;
     send(clientSocket, sendData, LEN_DATA, 0);
 
     clientSocket = accept(serverSocket, (sockaddr*)&client_sin, &len);
@@ -122,8 +123,16 @@ void getDiskInfo(SOCKET clientSocket, SOCKET serverSocket) {
         extractor.decryptData(msg, num);
         extractor.parse_data();
         std::cout << "客户端说" << extractor.parsedData.getAddressOfIndex(0) << endl;
-        if (extractor.isMatch())
+        if (extractor.isMatch()) {
             std::cout << "获取磁盘信息成功" << endl;
+            diskinfo *info = extractor.getDiskInfo();
+
+            for (int i = 0; i < extractor.diskCount; i++) {
+                std::cout << info[i].lpRootPathName << "  " << (int)info[i].driveType << "  " << info[i].totalMBs << "  " << info[i].FreeMBs << "  " << info[i].typeName << "  " << info[i].szFileSystemName << std::endl;
+
+            }
+            break;
+        }
     }
 }
 
