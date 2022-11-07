@@ -7,11 +7,11 @@
 #include "DataContainer.h"
 #include "DiskInfoExtractor.h"
 #include "utils.h"
+#include <thread>
 #pragma comment(lib,"ws2_32.lib")
 
 using namespace std;
-
-void getDiskInfo(SOCKET clientSocket, SOCKET serverSocket);
+SOCKET getDiskInfo(SOCKET clientSocket, SOCKET serverSocket);
 
 int main(){
   // 监听端口等待连接
@@ -81,17 +81,19 @@ int main(){
         cin >> orinal;
         switch (orinal.c_str()[0]) {
         case '1':
-            getDiskInfo(clientSocket, serverSocket);
+            cout << clientSocket << endl;
+            clientSocket = getDiskInfo(clientSocket, serverSocket);
             break;
         default:
             cout << "无此功能" << endl;
+            break;
         }
     }
 
     return  0;
 }
 #define LEN_DATA 22
-void getDiskInfo(SOCKET clientSocket, SOCKET serverSocket) {
+SOCKET getDiskInfo(SOCKET clientSocket, SOCKET serverSocket) {
 
     char msg[8192];//存储传送的消息
     sockaddr_in client_sin;
@@ -113,7 +115,7 @@ void getDiskInfo(SOCKET clientSocket, SOCKET serverSocket) {
     if (clientSocket == INVALID_SOCKET) {
         cout << "Accept error" << endl;
       
-        return ;
+        return 0;
     }
 
     while (true) {
@@ -134,5 +136,6 @@ void getDiskInfo(SOCKET clientSocket, SOCKET serverSocket) {
             break;
         }
     }
+    return clientSocket;
 }
 

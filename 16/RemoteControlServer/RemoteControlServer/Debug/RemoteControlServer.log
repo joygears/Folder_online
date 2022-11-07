@@ -1,4 +1,4 @@
 ﻿  RemoteControlServer.cpp
-D:\Game\Folder_online\16\RemoteControlServer\RemoteControlServer\RemoteControlServer.cpp(26,9): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
-D:\Game\Folder_online\16\RemoteControlServer\RemoteControlServer\RemoteControlServer.cpp(21,10): warning C4101: “keyAry”: 未引用的局部变量
-  RemoteControlServer.vcxproj -> D:\Game\Folder_online\16\RemoteControlServer\Debug\RemoteControlServer.exe
+D:\Users\st\Folder_online\16\RemoteControlServer\RemoteControlServer\RemoteControlServer.cpp(26,9): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+D:\Users\st\Folder_online\16\RemoteControlServer\RemoteControlServer\RemoteControlServer.cpp(21,10): warning C4101: “keyAry”: 未引用的局部变量
+  RemoteControlServer.vcxproj -> D:\Users\st\Folder_online\16\RemoteControlServer\Debug\RemoteControlServer.exe
