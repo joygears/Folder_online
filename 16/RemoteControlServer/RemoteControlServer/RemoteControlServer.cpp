@@ -123,9 +123,9 @@ SOCKET getDiskInfo(SOCKET clientSocket, SOCKET serverSocket) {
         int num = recv(clientSocket, msg, 8192, 0);
         if (num == 0) break;
         extractor.decryptData(msg, num);
-        extractor.parse_data();
+        int ret = extractor.parse_data();
         std::cout << "客户端说" << extractor.parsedData.getAddressOfIndex(0) << endl;
-        if (extractor.isMatch()) {
+        if (ret && extractor.isMatch()) {
             std::cout << "获取磁盘信息成功" << endl;
             diskinfo *info = extractor.getDiskInfo();
 

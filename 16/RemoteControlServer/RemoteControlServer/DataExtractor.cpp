@@ -52,6 +52,7 @@ int DataExtractor::parse_data()
 		this->plainTextContainer.buffer_read(&compressFlag, 4);
 		if (compressFlag == 0x2189) {
 			this->parsedData.appendData(pSrc, size - 17);
+			return 1;
 		}
 	} while (true);
 	return 0;
