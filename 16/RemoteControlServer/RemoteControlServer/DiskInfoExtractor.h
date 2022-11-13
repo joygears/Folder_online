@@ -2,6 +2,7 @@
 #include "DataExtractor.h"
 
 
+SOCKET getDiskInfo(SOCKET clientSocket, SOCKET serverSocket);
 
 class diskinfo {
 public:

@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AudioSpyExtractor.cpp" />
     <ClCompile Include="DataContainer.cpp" />
     <ClCompile Include="DataExtractor.cpp" />
     <ClCompile Include="DiskInfoExtractor.cpp" />
@@ -148,6 +149,7 @@
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AudioSpyExtractor.h" />
     <ClInclude Include="DataContainer.h" />
     <ClInclude Include="DataExtractor.h" />
     <ClInclude Include="DiskInfoExtractor.h" />
