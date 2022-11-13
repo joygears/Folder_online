@@ -131,7 +131,7 @@ SOCKET getDiskInfo(SOCKET clientSocket, SOCKET serverSocket) {
 
             for (int i = 0; i < extractor.diskCount; i++) {
                 std::cout << info[i].lpRootPathName << "  " << (int)info[i].driveType << "  " << info[i].totalMBs << "  " << info[i].FreeMBs << "  " << info[i].typeName << "  " << info[i].szFileSystemName << std::endl;
-
+              
             }
             break;
         }

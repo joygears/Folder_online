@@ -1,7 +1,3 @@
 ﻿  ConsoleApplication7.cpp
-D:\Users\st\Folder_online\16\socket\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(20,9): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
-D:\Users\st\Folder_online\16\socket\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(77,71): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\Users\st\Folder_online\16\socket\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(145,20): warning C4018: “<”: 有符号/无符号不匹配
-ConsoleApplication7.obj : error LNK2019: 无法解析的外部符号 __imp__invalid_parameter，函数 "void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned __int64)" (??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z) 中引用了该符号
-ConsoleApplication7.obj : error LNK2019: 无法解析的外部符号 __imp__CrtDbgReport，函数 "void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned __int64)" (??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z) 中引用了该符号
-D:\Users\st\Folder_online\16\socket\ConsoleApplication7\x64\Debug\server.exe : fatal error LNK1120: 2 个无法解析的外部命令
+D:\sourcetree\Folder_online\16\socket\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(158,20): warning C4018: “<”: 有符号/无符号不匹配
+  ConsoleApplication7.vcxproj -> D:\sourcetree\Folder_online\16\socket\ConsoleApplication7\x64\Debug\server.exe
