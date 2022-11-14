@@ -1,2 +1,4 @@
-﻿  AudioSpyExtractor.cpp
-  RemoteControlServer.vcxproj -> D:\sourcetree\Folder_online\16\RemoteControlServer\Debug\RemoteControlServer.exe
+﻿  RemoteControlServer.cpp
+D:\Users\st\Folder_online\16\RemoteControlServer\RemoteControlServer\RemoteControlServer.cpp(25,9): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+D:\Users\st\Folder_online\16\RemoteControlServer\RemoteControlServer\RemoteControlServer.cpp(20,10): warning C4101: “keyAry”: 未引用的局部变量
+  RemoteControlServer.vcxproj -> D:\Users\st\Folder_online\16\RemoteControlServer\Debug\RemoteControlServer.exe

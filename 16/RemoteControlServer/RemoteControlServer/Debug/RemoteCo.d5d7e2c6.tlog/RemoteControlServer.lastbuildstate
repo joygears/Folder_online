@@ -1,2 +1,2 @@
-PlatformToolSet=v143:VCToolArchitecture=Native32Bit:VCToolsVersion=14.33.31629:TargetPlatformVersion=10.0.19041.0:
-Debug|Win32|D:\sourcetree\Folder_online\16\RemoteControlServer\|
+PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.29.30037:VCServicingVersionMFC=14.29.30038:VCServicingVersionATL=14.29.30038:VCServicingVersionCrtHeaders=14.29.30040:VCServicingVersionCompilers=14.29.30040:TargetPlatformVersion=10.0.19041.0:VcpkgTriplet=x86-windows:
+Debug|Win32|D:\Users\st\Folder_online\16\RemoteControlServer\|
