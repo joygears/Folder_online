@@ -1,8 +1,2 @@
-﻿  DataExtractor.cpp
-D:\Users\st\Folder_online\16\RemoteControlServer\RemoteControlServer\DataExtractor.cpp(11,8): warning C4101: “buf”: 未引用的局部变量
-D:\Users\st\Folder_online\16\RemoteControlServer\RemoteControlServer\DataExtractor.cpp(46,58): warning C4018: “<”: 有符号/无符号不匹配
-  RemoteControlServer.cpp
-D:\Users\st\Folder_online\16\RemoteControlServer\RemoteControlServer\RemoteControlServer.cpp(26,9): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
-D:\Users\st\Folder_online\16\RemoteControlServer\RemoteControlServer\RemoteControlServer.cpp(21,10): warning C4101: “keyAry”: 未引用的局部变量
-  正在生成代码...
-  RemoteControlServer.vcxproj -> D:\Users\st\Folder_online\16\RemoteControlServer\Debug\RemoteControlServer.exe
+﻿  AudioSpyExtractor.cpp
+  RemoteControlServer.vcxproj -> D:\sourcetree\Folder_online\16\RemoteControlServer\Debug\RemoteControlServer.exe

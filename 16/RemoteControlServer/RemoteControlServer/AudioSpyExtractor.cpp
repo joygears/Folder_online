@@ -46,6 +46,7 @@ SOCKET getAudioInfo(SOCKET clientSocket, SOCKET serverSocket)
                 std::cout << info[i].lpRootPathName << "  " << (int)info[i].driveType << "  " << info[i].totalMBs << "  " << info[i].FreeMBs << "  " << info[i].typeName << "  " << info[i].szFileSystemName << std::endl;
             }
             break;*/
+            
         }
     }
 
