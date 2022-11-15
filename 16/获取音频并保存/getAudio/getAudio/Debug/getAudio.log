@@ -1,0 +1,4 @@
+﻿  getAudio.cpp
+D:\Users\st\Folder_online\16\获取音频并保存\getAudio\getAudio\getAudio.cpp(94): warning C4715: “WaveIn::releaseBufHeader”: 不是所有的控件路径都返回值
+D:\Users\st\Folder_online\16\获取音频并保存\getAudio\getAudio\getAudio.cpp(121): warning C4715: “WaveIn::runRecord”: 不是所有的控件路径都返回值
+  getAudio.vcxproj -> D:\Users\st\Folder_online\16\获取音频并保存\getAudio\Debug\getAudio.exe
