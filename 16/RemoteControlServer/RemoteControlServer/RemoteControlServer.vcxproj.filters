@@ -36,6 +36,9 @@
     <ClCompile Include="AudioSpyExtractor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DDosOpenExtractor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="rc4crpt.h">
@@ -54,6 +57,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="AudioSpyExtractor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DDosOpenExtractor.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

