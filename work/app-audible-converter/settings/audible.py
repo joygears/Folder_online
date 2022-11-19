@@ -49,10 +49,18 @@ class AudibleConvert:
     def compute(self, checksum):
         if os.sep == '\\':
             process = QProcess()
-            process.start('bin\\win_rcrack.exe', ['bin\\tables', '-h', checksum])
+            exe = os.path.abspath('.\\bin\\win_rcrack.exe')
+            tables = os.path.abspath('.\\bin\\tables')
+            commands = [exe,tables, '-h', checksum]
+            command  = " ".join(commands)
+            process.start(exe,[tables, '-h', checksum])
+            # process.start('cmd', ['echo hello world'])
             process.waitForStarted()
             process.waitForFinished(-1)
             output = process.readAllStandardOutput().data().decode().strip()
+            r = os.popen(command)
+            output = os.system(command)
+            output = r.read()
             code = output[-8:]
             if self.verify_code(code):
                 return code
@@ -224,15 +232,14 @@ class AudibleConvert:
                 args = ['-y', '-activation_bytes', act_code, '-i', filepath, '-ss', '0', '-t', '600', '-vn', outpath]
             proc = subprocess.Popen([self.EXE] + args, stderr=subprocess.PIPE, universal_newlines=True,
                                     startupinfo=startupinfo)
-            while proc.poll() is  None:
+            while proc.poll() is None:
                 try:
                     content = proc.stderr.readline()
                 except UnicodeDecodeError:
                     content = ""
                 if 'size=' not in content:
                     continue
-            print(proc.poll())
-
+            
 
     def get_chapters(self, filepath):
         typ = self.check_type(filepath)
