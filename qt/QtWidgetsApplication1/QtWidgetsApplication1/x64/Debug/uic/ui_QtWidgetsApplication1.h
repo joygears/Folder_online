@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'QtWidgetsApplication1.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.1
+** Created by: Qt User Interface Compiler version 5.15.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -37,8 +37,8 @@ public:
 
     void retranslateUi(QWidget *QtWidgetsApplication1Class)
     {
-        QtWidgetsApplication1Class->setWindowTitle(QApplication::translate("QtWidgetsApplication1Class", "QtWidgetsApplication1", nullptr));
-        centerBtn->setText(QApplication::translate("QtWidgetsApplication1Class", "sayHeleo", nullptr));
+        QtWidgetsApplication1Class->setWindowTitle(QCoreApplication::translate("QtWidgetsApplication1Class", "QtWidgetsApplication1", nullptr));
+        centerBtn->setText(QCoreApplication::translate("QtWidgetsApplication1Class", "sayHeleo", nullptr));
     } // retranslateUi
 
 };

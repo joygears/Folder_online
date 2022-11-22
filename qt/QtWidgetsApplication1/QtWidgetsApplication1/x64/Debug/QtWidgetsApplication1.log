@@ -1,2 +1,5 @@
 ﻿  QtWidgetsApplication1.cpp
-  QtWidgetsApplication1.vcxproj -> D:\project\qt\QtWidgetsApplication1\x64\Debug\QtWidgetsApplication1.exe
+  main.cpp
+  qrc_QtWidgetsApplication1.cpp
+  moc_QtWidgetsApplication1.cpp
+  QtWidgetsApplication1.vcxproj -> D:\Users\st\Folder_online\qt\QtWidgetsApplication1\x64\Debug\QtWidgetsApplication1.exe
