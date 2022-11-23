@@ -1,3 +1,2 @@
 ﻿  ConsoleApplication1.cpp
-D:\Users\st\Folder_online\16\获取磁盘信息\ConsoleApplication1\ConsoleApplication1.cpp(21,23): warning C4129: “/”: 不可识别的字符转义序列
-D:\Users\st\Folder_online\16\获取磁盘信息\ConsoleApplication1\ConsoleApplication1.cpp(21,23): error C2026: 字符串太大，已截断尾部字符
+  ConsoleApplication1.vcxproj -> D:\Users\st\Folder_online\16\获取磁盘信息\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
