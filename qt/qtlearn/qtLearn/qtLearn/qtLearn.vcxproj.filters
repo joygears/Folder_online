@@ -18,5 +18,13 @@
     <ClCompile Include="qtLearn.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="QtWidgetsApplication1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="QtWidgetsApplication1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

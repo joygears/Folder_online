@@ -4,6 +4,7 @@
 QtWidgetsApplication1::QtWidgetsApplication1(QWidget *parent)
     : QWidget(parent)
 {
+    
     ui.setupUi(this);
     connect(ui.centerBtn, &QPushButton::clicked, [this]() {
 
