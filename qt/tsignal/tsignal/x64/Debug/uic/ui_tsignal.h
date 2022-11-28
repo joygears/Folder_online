@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'tsignal.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.1
+** Created by: Qt User Interface Compiler version 5.12.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -52,7 +52,7 @@ public:
 
     void retranslateUi(QMainWindow *tsignalClass)
     {
-        tsignalClass->setWindowTitle(QCoreApplication::translate("tsignalClass", "tsignal", nullptr));
+        tsignalClass->setWindowTitle(QApplication::translate("tsignalClass", "tsignal", nullptr));
     } // retranslateUi
 
 };
