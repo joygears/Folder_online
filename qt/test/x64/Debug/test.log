@@ -1,0 +1,6 @@
+﻿  moc tsignal.h
+  tsignal.cpp
+  main.cpp
+  qrc_test.cpp
+  moc_tsignal.cpp
+  test.vcxproj -> D:\Users\st\Folder_online\qt\test\x64\Debug\test.exe

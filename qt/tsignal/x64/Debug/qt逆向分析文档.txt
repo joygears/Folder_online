@@ -7,7 +7,7 @@ int 信号在本类中的偏移
 void * * 信号参数
 
 
-QMetaObjectPrivate::signalOffset(const QMetaObject *m)
+signal_index = singal_ordinal + QMetaObjectPrivate::signalOffset(const QMetaObject *m)
 返回对象基类的信号数量
 
 
@@ -75,3 +75,22 @@ static const uint qt_meta_data_TsignalApp[] = {
 
        0        // eod
 }; 
+
+
+struct QObjectPrivate *__fastcall QObjectPrivate::get(struct QObject *)  //这个指针是从[sender+0x8]获取的
+获取 QObjectPrivate * 指针 sp
+
+QBasicAtomicPointer<QObjectPrivate::ConnectionData>::loadRelaxed(void) //该指针的值为[sp+0x40]
+获取QObjectPrivate::ConnectionData *   ,
+
+
+QExplicitlySharedDataPointer<QObjectPrivate::ConnectionData>::QExplicitlySharedDataPointer<QObjectPrivate::ConnectionData>(QObjectPrivate::ConnectionData *)
+将spconnections放到connections的0x0处
+
+
+QExplicitlySharedDataPointer<QObjectPrivate::ConnectionData>::operator->(void)
+QBasicAtomicPointer<QObjectPrivate::SignalVector>::loadRelaxed(void)
+
+[soconnections + 0x8]的位置 == psignalVector
+
+list = signalVector[signal_index]
