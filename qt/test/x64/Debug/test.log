@@ -1,6 +1,6 @@
-﻿  Reading Qt configuration (D:/app/qt/5.15.1/msvc2019_64/bin/qmake)
+﻿  moc tsignal.h
   tsignal.cpp
   main.cpp
-  qrc_test.cpp
-  moc_tsignal.cpp
-  test.vcxproj -> D:\Users\st\Folder_online\qt\test\x64\Debug\test.exe
+D:\Users\st\Folder_online\qt\test\tsignal.cpp(6,64): error C2664: “QMetaObject::Connection QObject::connect(const QObject *,const char *,const QObject *,const char *,Qt::ConnectionType)”: 无法将参数 2 从“overloaded-function”转换为“const char *”
+D:\Users\st\Folder_online\qt\test\tsignal.cpp(6,31): message : 上下文不允许消除重载函数的歧义
+D:\app\qt\5.15.1\msvc2019_64\include\QtCore\qobject.h(222,36): message : 参见“QObject::connect”的声明 (编译源文件 tsignal.cpp)

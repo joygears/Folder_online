@@ -3,12 +3,14 @@
 // 必须继承QObject才能使用信号和槽
 class TsignalApp :public QMainWindow
 {
+    Q_OBJECT
 public:
+    
     TsignalApp();
     void slotFileNew();
-    Q_OBJECT
-        // 信号声明区
-signals:
+    
+// 信号声明区
+ signals:
     // 声明信号 mySignal()
     void mySignal();
     // 声明信号 mySignal(int)

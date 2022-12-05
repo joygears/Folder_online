@@ -3,7 +3,7 @@
 TsignalApp::TsignalApp()
 {
     // 将信号 mySignal() 与槽 mySlot() 相关联
-    connect(this, SIGNAL(mySignal()), SLOT(mySlot()));
+    connect(this,&TsignalApp::mySignal,this,&TsignalApp::mySlot);
     // 将信号 mySignal(int) 与槽 mySlot(int) 相关联
     connect(this, SIGNAL(mySignal(int)), SLOT(mySlot(int)));
     // 将信号 mySignalParam(int,int) 与槽 mySlotParam(int,int) 相关联
