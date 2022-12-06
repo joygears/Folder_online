@@ -2503,7 +2503,7 @@ class SourceWalker(GenericASTTraversal, object):
         # "return None". However you can't issue a "return" statement in
         # main. So as the old cigarette slogan goes: I'd rather switch (the token stream)
         # than fight (with the grammar to not emit "return None").
-        if self.hide_internal:
+        if self.hide_internal: #去除Tokens末尾的retuen None 代码里是没有这一句的
             if len(tokens) >= 2 and not noneInNames:
                 if tokens[-1].kind in ("RETURN_VALUE", "RETURN_VALUE_LAMBDA"):
                     # Python 3.4's classes can add a "return None" which is
@@ -2529,6 +2529,8 @@ class SourceWalker(GenericASTTraversal, object):
             ast = python_parser.parse(self.p, tokens, customize, code)
             self.p.insts = p_insts
         except (python_parser.ParserError, AssertionError) as e:
+            import traceback
+            print(traceback.format_exc())
             raise ParserError(e, tokens, self.p.debug['reduce'])
 
         checker(ast, False, self.ast_errors)
@@ -2593,7 +2595,7 @@ def code_deparse(
         compile_mode=compile_mode,
         is_pypy=is_pypy,
         linestarts=linestarts,
-    )
+    ) #初始化指令到源码的格式字符串
 
     isTopLevel = co.co_name == "<module>"
     deparsed.ast = deparsed.build_ast(tokens, customize, co, isTopLevel=isTopLevel)
