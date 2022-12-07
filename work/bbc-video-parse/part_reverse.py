@@ -46,12 +46,15 @@ def decompile_part(co,father_name=None,outstream=sys.stdout):
             mapstream=None,
             do_fragments=False,
         )
-    except Exception as e:
+    except:
         bytecode = get_sub_codeObject_list(co)
         for code in bytecode:
             co = code.argval
             decompile_part(co,name,outstream)
-decompile_part(co)
+bytecode = get_sub_codeObject_list(co)
+for code in bytecode:
+    co = code.argval
+    decompile_part(co,None,outstream)
 
 
 
