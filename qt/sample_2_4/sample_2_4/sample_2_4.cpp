@@ -22,6 +22,10 @@ void sample_2_4::init()
     fontComboBox =new  QFontComboBox;
     ui.mainToolBar->addWidget(new QLabel(QString::fromLocal8Bit("×ÖÌå:")));
     ui.mainToolBar->addWidget(fontComboBox);
+
+    void (QSpinBox:: * valueChanged)(int) = &QSpinBox::valueChanged;
+    connect(spinFontSize, valueChanged, this, &sample_2_4::on_spinFontSize_valueChanged);
+    connect(fontComboBox, &QFontComboBox::currentFontChanged, this, &sample_2_4::ChangeFontFamily);
 }
 
 void sample_2_4::on_actItalic_triggered(bool checked)
@@ -38,12 +42,44 @@ void sample_2_4::on_actUnderline_triggered(bool checked)
     ui.textEdit->mergeCurrentCharFormat(fmt);
 }
 
+void sample_2_4::on_textEdit_copyAvailable(bool copyable)
+{
+    ui.actCopy->setEnabled(copyable);
+    ui.actCut->setEnabled(copyable);
+}
+
+void sample_2_4::on_textEdit_selectionChanged()
+{
+    QTextCharFormat fmt = ui.textEdit->currentCharFormat();
+    ui.actUnderline->setChecked(fmt.font().underline());
+    ui.actBold->setChecked(fmt.font().bold());
+    ui.actItalic->setChecked(fmt.font().italic());
+}
+
+void sample_2_4::on_spinFontSize_valueChanged(int fontSize)
+{
+    QTextCharFormat fmt;
+    fmt.setFontPointSize(fontSize);
+    ui.textEdit->mergeCurrentCharFormat(fmt);
+    processBar->setValue(fontSize);
+}
+
+void sample_2_4::ChangeFontFamily(const QFont& font)
+{
+    QTextCharFormat fmt;
+    fmt.setFontFamily(font.family());
+    ui.textEdit->mergeCurrentCharFormat(fmt);
+}
+
 sample_2_4::sample_2_4(QWidget *parent)
     : QMainWindow(parent)
 {
     ui.setupUi(this);
     init();
+    this->setWindowIcon(QIcon(":/images/images/07.ico"));
     this->setCentralWidget(ui.textEdit);
+    ui.actCopy->setEnabled(false);
+    ui.actCut->setEnabled(false);
 }
 
 void sample_2_4::on_actBold_triggered(bool checked) {

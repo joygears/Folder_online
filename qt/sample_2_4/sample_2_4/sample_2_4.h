@@ -21,6 +21,10 @@ private slots:
     void on_actBold_triggered(bool checked);
     void on_actItalic_triggered(bool checked);
     void on_actUnderline_triggered(bool checked);
+    void on_textEdit_copyAvailable(bool copyable);
+    void on_textEdit_selectionChanged();
+    void on_spinFontSize_valueChanged(int fontSize);
+    void ChangeFontFamily(const QFont& font);
 public:
     sample_2_4(QWidget *parent = Q_NULLPTR);
 
