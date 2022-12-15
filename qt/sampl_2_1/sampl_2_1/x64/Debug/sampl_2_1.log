@@ -1,0 +1,10 @@
+﻿  Reading Qt configuration (C:\Qt\Qt5.12.1\5.12.1\msvc2017_64\bin\qmake.exe)
+  uic sampl_2_1.ui
+  rcc sampl_2_1.qrc
+  moc sampl_2_1.h
+   RCC: Warning: No resources in 'D:\project\qt\sampl_2_1\sampl_2_1\sampl_2_1.qrc'.
+  sampl_2_1.cpp
+  main.cpp
+  qrc_sampl_2_1.cpp
+  moc_sampl_2_1.cpp
+  sampl_2_1.vcxproj -> D:\project\qt\sampl_2_1\x64\Debug\sampl_2_1.exe

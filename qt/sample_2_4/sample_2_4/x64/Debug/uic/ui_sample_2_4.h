@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'sample_2_4.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.1
+** Created by: Qt User Interface Compiler version 5.12.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -15,6 +15,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolBar>
@@ -35,7 +36,9 @@ public:
     QAction *actBold;
     QAction *actUnderline;
     QWidget *centralWidget;
+    QWidget *widget;
     QTextEdit *textEdit;
+    QPushButton *pushButton;
     QMenuBar *menuBar;
     QMenu *menu;
     QMenu *menu_2;
@@ -98,9 +101,15 @@ public:
         actUnderline->setIcon(icon8);
         centralWidget = new QWidget(sample_2_4Class);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
-        textEdit = new QTextEdit(centralWidget);
+        widget = new QWidget(centralWidget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(250, 40, 251, 361));
+        textEdit = new QTextEdit(widget);
         textEdit->setObjectName(QString::fromUtf8("textEdit"));
-        textEdit->setGeometry(QRect(130, 60, 271, 121));
+        textEdit->setGeometry(QRect(-190, 0, 271, 121));
+        pushButton = new QPushButton(widget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(0, 150, 75, 23));
         sample_2_4Class->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(sample_2_4Class);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -153,58 +162,59 @@ public:
 
     void retranslateUi(QMainWindow *sample_2_4Class)
     {
-        sample_2_4Class->setWindowTitle(QCoreApplication::translate("sample_2_4Class", "sample_2_4", nullptr));
-        actNew->setText(QCoreApplication::translate("sample_2_4Class", "\346\226\260\345\273\272", nullptr));
-#if QT_CONFIG(tooltip)
-        actNew->setToolTip(QCoreApplication::translate("sample_2_4Class", "\346\226\260\345\273\272", nullptr));
-#endif // QT_CONFIG(tooltip)
-#if QT_CONFIG(shortcut)
-        actNew->setShortcut(QCoreApplication::translate("sample_2_4Class", "Ctrl+N", nullptr));
-#endif // QT_CONFIG(shortcut)
-        actOpen->setText(QCoreApplication::translate("sample_2_4Class", "\346\211\223\345\274\200", nullptr));
-#if QT_CONFIG(tooltip)
-        actOpen->setToolTip(QCoreApplication::translate("sample_2_4Class", "\346\211\223\345\274\200\346\226\207\344\273\266", nullptr));
-#endif // QT_CONFIG(tooltip)
-#if QT_CONFIG(shortcut)
-        actOpen->setShortcut(QCoreApplication::translate("sample_2_4Class", "Ctrl+O", nullptr));
-#endif // QT_CONFIG(shortcut)
-        actExit->setText(QCoreApplication::translate("sample_2_4Class", "\351\200\200\345\207\272", nullptr));
-#if QT_CONFIG(tooltip)
-        actExit->setToolTip(QCoreApplication::translate("sample_2_4Class", "\351\200\200\345\207\272\347\250\213\345\272\217", nullptr));
-#endif // QT_CONFIG(tooltip)
-#if QT_CONFIG(shortcut)
-        actExit->setShortcut(QCoreApplication::translate("sample_2_4Class", "Ctrl+E", nullptr));
-#endif // QT_CONFIG(shortcut)
-        actCut->setText(QCoreApplication::translate("sample_2_4Class", "\345\211\252\345\210\207", nullptr));
-#if QT_CONFIG(tooltip)
-        actCut->setToolTip(QCoreApplication::translate("sample_2_4Class", "\345\211\252\345\210\207", nullptr));
-#endif // QT_CONFIG(tooltip)
-#if QT_CONFIG(shortcut)
-        actCut->setShortcut(QCoreApplication::translate("sample_2_4Class", "Ctrl+C", nullptr));
-#endif // QT_CONFIG(shortcut)
-        actCopy->setText(QCoreApplication::translate("sample_2_4Class", "\345\244\215\345\210\266", nullptr));
-#if QT_CONFIG(tooltip)
-        actCopy->setToolTip(QCoreApplication::translate("sample_2_4Class", "\345\244\215\345\210\266", nullptr));
-#endif // QT_CONFIG(tooltip)
-        actPaste->setText(QCoreApplication::translate("sample_2_4Class", "\347\262\230\350\264\264", nullptr));
-#if QT_CONFIG(tooltip)
-        actPaste->setToolTip(QCoreApplication::translate("sample_2_4Class", "\347\262\230\350\264\264", nullptr));
-#endif // QT_CONFIG(tooltip)
-        actItalic->setText(QCoreApplication::translate("sample_2_4Class", "\346\226\234\344\275\223", nullptr));
-#if QT_CONFIG(tooltip)
-        actItalic->setToolTip(QCoreApplication::translate("sample_2_4Class", "\346\226\234\344\275\223", nullptr));
-#endif // QT_CONFIG(tooltip)
-        actBold->setText(QCoreApplication::translate("sample_2_4Class", "\347\262\227\344\275\223", nullptr));
-#if QT_CONFIG(tooltip)
-        actBold->setToolTip(QCoreApplication::translate("sample_2_4Class", "\347\262\227\344\275\223", nullptr));
-#endif // QT_CONFIG(tooltip)
-        actUnderline->setText(QCoreApplication::translate("sample_2_4Class", "\344\270\213\345\210\222\347\272\277", nullptr));
-#if QT_CONFIG(tooltip)
-        actUnderline->setToolTip(QCoreApplication::translate("sample_2_4Class", "\344\270\213\345\210\222\347\272\277", nullptr));
-#endif // QT_CONFIG(tooltip)
-        menu->setTitle(QCoreApplication::translate("sample_2_4Class", "\346\226\207\344\273\266", nullptr));
-        menu_2->setTitle(QCoreApplication::translate("sample_2_4Class", "\347\274\226\350\276\221", nullptr));
-        menu_3->setTitle(QCoreApplication::translate("sample_2_4Class", "\346\240\274\345\274\217", nullptr));
+        sample_2_4Class->setWindowTitle(QApplication::translate("sample_2_4Class", "sample_2_4", nullptr));
+        actNew->setText(QApplication::translate("sample_2_4Class", "\346\226\260\345\273\272", nullptr));
+#ifndef QT_NO_TOOLTIP
+        actNew->setToolTip(QApplication::translate("sample_2_4Class", "\346\226\260\345\273\272", nullptr));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_SHORTCUT
+        actNew->setShortcut(QApplication::translate("sample_2_4Class", "Ctrl+N", nullptr));
+#endif // QT_NO_SHORTCUT
+        actOpen->setText(QApplication::translate("sample_2_4Class", "\346\211\223\345\274\200", nullptr));
+#ifndef QT_NO_TOOLTIP
+        actOpen->setToolTip(QApplication::translate("sample_2_4Class", "\346\211\223\345\274\200\346\226\207\344\273\266", nullptr));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_SHORTCUT
+        actOpen->setShortcut(QApplication::translate("sample_2_4Class", "Ctrl+O", nullptr));
+#endif // QT_NO_SHORTCUT
+        actExit->setText(QApplication::translate("sample_2_4Class", "\351\200\200\345\207\272", nullptr));
+#ifndef QT_NO_TOOLTIP
+        actExit->setToolTip(QApplication::translate("sample_2_4Class", "\351\200\200\345\207\272\347\250\213\345\272\217", nullptr));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_SHORTCUT
+        actExit->setShortcut(QApplication::translate("sample_2_4Class", "Ctrl+E", nullptr));
+#endif // QT_NO_SHORTCUT
+        actCut->setText(QApplication::translate("sample_2_4Class", "\345\211\252\345\210\207", nullptr));
+#ifndef QT_NO_TOOLTIP
+        actCut->setToolTip(QApplication::translate("sample_2_4Class", "\345\211\252\345\210\207", nullptr));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_SHORTCUT
+        actCut->setShortcut(QApplication::translate("sample_2_4Class", "Ctrl+C", nullptr));
+#endif // QT_NO_SHORTCUT
+        actCopy->setText(QApplication::translate("sample_2_4Class", "\345\244\215\345\210\266", nullptr));
+#ifndef QT_NO_TOOLTIP
+        actCopy->setToolTip(QApplication::translate("sample_2_4Class", "\345\244\215\345\210\266", nullptr));
+#endif // QT_NO_TOOLTIP
+        actPaste->setText(QApplication::translate("sample_2_4Class", "\347\262\230\350\264\264", nullptr));
+#ifndef QT_NO_TOOLTIP
+        actPaste->setToolTip(QApplication::translate("sample_2_4Class", "\347\262\230\350\264\264", nullptr));
+#endif // QT_NO_TOOLTIP
+        actItalic->setText(QApplication::translate("sample_2_4Class", "\346\226\234\344\275\223", nullptr));
+#ifndef QT_NO_TOOLTIP
+        actItalic->setToolTip(QApplication::translate("sample_2_4Class", "\346\226\234\344\275\223", nullptr));
+#endif // QT_NO_TOOLTIP
+        actBold->setText(QApplication::translate("sample_2_4Class", "\347\262\227\344\275\223", nullptr));
+#ifndef QT_NO_TOOLTIP
+        actBold->setToolTip(QApplication::translate("sample_2_4Class", "\347\262\227\344\275\223", nullptr));
+#endif // QT_NO_TOOLTIP
+        actUnderline->setText(QApplication::translate("sample_2_4Class", "\344\270\213\345\210\222\347\272\277", nullptr));
+#ifndef QT_NO_TOOLTIP
+        actUnderline->setToolTip(QApplication::translate("sample_2_4Class", "\344\270\213\345\210\222\347\272\277", nullptr));
+#endif // QT_NO_TOOLTIP
+        pushButton->setText(QApplication::translate("sample_2_4Class", "PushButton", nullptr));
+        menu->setTitle(QApplication::translate("sample_2_4Class", "\346\226\207\344\273\266", nullptr));
+        menu_2->setTitle(QApplication::translate("sample_2_4Class", "\347\274\226\350\276\221", nullptr));
+        menu_3->setTitle(QApplication::translate("sample_2_4Class", "\346\240\274\345\274\217", nullptr));
     } // retranslateUi
 
 };
