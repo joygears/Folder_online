@@ -36,6 +36,7 @@ void Sample_3_1::on_spinBoxGirl_valueChanged(int value)
 void Sample_3_1::on_AgeChanged(unsigned value)
 {
     QString text = "";
+    QObject* obj = sender();
     QPerson* pPerson = qobject_cast<QPerson*>(sender());
     QString qName = pPerson->property("name").toString();
     QString qSex = pPerson->property("sex").toString();

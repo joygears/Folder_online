@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'Sample_3_1.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.1
+** Created by: Qt User Interface Compiler version 5.12.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -125,13 +125,13 @@ public:
 
     void retranslateUi(QMainWindow *Sample_3_1Class)
     {
-        Sample_3_1Class->setWindowTitle(QCoreApplication::translate("Sample_3_1Class", "Sample_3_1", nullptr));
-        labelBoy->setText(QCoreApplication::translate("Sample_3_1Class", "\350\256\276\347\275\256\347\224\267\347\224\237\345\271\264\351\276\204\357\274\232", nullptr));
-        btnGrowBoy->setText(QCoreApplication::translate("Sample_3_1Class", "boy\351\225\277\345\244\247\344\270\200\345\262\201", nullptr));
-        btnMetaData->setText(QCoreApplication::translate("Sample_3_1Class", "\347\261\273\347\232\204\345\205\203\345\257\271\350\261\241\344\277\241\346\201\257", nullptr));
-        labelGirl->setText(QCoreApplication::translate("Sample_3_1Class", "\350\256\276\347\275\256\345\245\263\347\224\237\345\271\264\351\276\204\357\274\232", nullptr));
-        btnGrowGirl->setText(QCoreApplication::translate("Sample_3_1Class", "girl\351\225\277\345\244\247\344\270\200\345\262\201", nullptr));
-        btnClear->setText(QCoreApplication::translate("Sample_3_1Class", "\346\270\205\347\251\272\346\226\207\346\234\254\346\241\206", nullptr));
+        Sample_3_1Class->setWindowTitle(QApplication::translate("Sample_3_1Class", "Sample_3_1", nullptr));
+        labelBoy->setText(QApplication::translate("Sample_3_1Class", "\350\256\276\347\275\256\347\224\267\347\224\237\345\271\264\351\276\204\357\274\232", nullptr));
+        btnGrowBoy->setText(QApplication::translate("Sample_3_1Class", "boy\351\225\277\345\244\247\344\270\200\345\262\201", nullptr));
+        btnMetaData->setText(QApplication::translate("Sample_3_1Class", "\347\261\273\347\232\204\345\205\203\345\257\271\350\261\241\344\277\241\346\201\257", nullptr));
+        labelGirl->setText(QApplication::translate("Sample_3_1Class", "\350\256\276\347\275\256\345\245\263\347\224\237\345\271\264\351\276\204\357\274\232", nullptr));
+        btnGrowGirl->setText(QApplication::translate("Sample_3_1Class", "girl\351\225\277\345\244\247\344\270\200\345\262\201", nullptr));
+        btnClear->setText(QApplication::translate("Sample_3_1Class", "\346\270\205\347\251\272\346\226\207\346\234\254\346\241\206", nullptr));
     } // retranslateUi
 
 };
