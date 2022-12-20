@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/pictopdf.ico</file>
+        <file>images/Product.ico</file>
+        <file>images/wsl.ico</file>
+    </qresource>
+</RCC>
