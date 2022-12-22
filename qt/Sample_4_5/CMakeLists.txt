@@ -9,7 +9,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-set(CMAKE_CREATE_CONSOLE_EXE "/subsystem:windows")
+# set(CMAKE_CREATE_CONSOLE_EXE "/subsystem:windows")
 
 
 if(CMAKE_VERSION VERSION_LESS "3.7.0")

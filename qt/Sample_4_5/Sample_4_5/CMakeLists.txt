@@ -1,4 +1,13 @@
-find_package(Qt5 COMPONENTS Widgets Gui REQUIRED)
+find_package(Qt5 COMPONENTS Widgets REQUIRED)
+
+
+
+# message(STATUS ---------------Qt5_DIR:${Qt5_DIR})
+# message(STATUS ---------------Qt5_FOUND:${Qt5_FOUND})
+
+# message(STATUS ---------------Qt5Widgets_INCLUDE_DIRS:${Qt5Widgets_INCLUDE_DIRS})
+# message(STATUS ---------------Qt5Widgets_LIBRARIES:${Qt5Widgets_LIBRARIES})
+
 
 set(HEADERS 
     Sample_4_5.h
@@ -22,9 +31,8 @@ set(UI
 add_executable(${PROJECT_NAME}  ${HEADERS} ${SOURCES} ${RESOURCES} ${UI})
 
 
-target_link_libraries(${PROJECT_NAME} Qt5::Widgets Qt5::Gui)
+target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
 
-target_link_directories(${PROJECT_NAME} PUBLIC "hello")
 
 
 

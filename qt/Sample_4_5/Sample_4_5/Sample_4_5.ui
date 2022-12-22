@@ -67,7 +67,7 @@
          </widget>
         </item>
         <item row="0" column="0" colspan="3">
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="btnGetTime">
           <property name="text">
            <string>读取当前日期时间</string>
           </property>
@@ -81,7 +81,27 @@
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QTimeEdit" name="timeEdit"/>
+         <widget class="QTimeEdit" name="timeEditCurrent">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="currentSection">
+           <enum>QDateTimeEdit::HourSection</enum>
+          </property>
+          <property name="displayFormat">
+           <string>H:mm:ss</string>
+          </property>
+          <property name="time">
+           <time>
+            <hour>15</hour>
+            <minute>10</minute>
+            <second>30</second>
+           </time>
+          </property>
+         </widget>
         </item>
         <item row="1" column="2">
          <spacer name="horizontalSpacer_2">
