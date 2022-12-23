@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>833</width>
+    <width>885</width>
     <height>400</height>
    </rect>
   </property>
@@ -23,7 +23,7 @@
        </property>
        <layout class="QGridLayout" name="gridLayout">
         <item row="1" column="4">
-         <widget class="QPushButton" name="pushButton_2">
+         <widget class="QPushButton" name="btnSetTime">
           <property name="text">
            <string>设置时间</string>
           </property>
@@ -37,17 +37,43 @@
          </widget>
         </item>
         <item row="2" column="3">
-         <widget class="QLineEdit" name="lineEdit_2"/>
+         <widget class="QLineEdit" name="lineEditDate"/>
         </item>
         <item row="2" column="4">
-         <widget class="QPushButton" name="pushButton_3">
+         <widget class="QPushButton" name="btnSetDate">
           <property name="text">
            <string>设置日期</string>
           </property>
          </widget>
         </item>
         <item row="2" column="1" colspan="2">
-         <widget class="QDateEdit" name="dateEdit"/>
+         <widget class="QDateEdit" name="dateEdit">
+          <property name="wrapping">
+           <bool>false</bool>
+          </property>
+          <property name="frame">
+           <bool>true</bool>
+          </property>
+          <property name="correctionMode">
+           <enum>QAbstractSpinBox::CorrectToPreviousValue</enum>
+          </property>
+          <property name="displayFormat">
+           <string>yyyy年M月d日</string>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+          <property name="timeSpec">
+           <enum>Qt::LocalTime</enum>
+          </property>
+          <property name="date">
+           <date>
+            <year>2022</year>
+            <month>7</month>
+            <day>14</day>
+           </date>
+          </property>
+         </widget>
         </item>
         <item row="0" column="3">
          <widget class="QLabel" name="label">
@@ -57,10 +83,14 @@
          </widget>
         </item>
         <item row="3" column="1" colspan="2">
-         <widget class="QDateTimeEdit" name="dateTimeEdit"/>
+         <widget class="QDateTimeEdit" name="dateTimeEdit">
+          <property name="displayFormat">
+           <string>yyyy-M-d HH:mm:ss</string>
+          </property>
+         </widget>
         </item>
         <item row="3" column="4">
-         <widget class="QPushButton" name="pushButton_4">
+         <widget class="QPushButton" name="btnSetDateTime">
           <property name="text">
            <string>设置日期时间</string>
           </property>
@@ -117,7 +147,7 @@
          </spacer>
         </item>
         <item row="1" column="3">
-         <widget class="QLineEdit" name="lineEdit"/>
+         <widget class="QLineEdit" name="lineEditTime"/>
         </item>
         <item row="1" column="0">
          <widget class="QLabel" name="label_2">
@@ -127,7 +157,7 @@
          </widget>
         </item>
         <item row="3" column="3">
-         <widget class="QLineEdit" name="lineEdit_3"/>
+         <widget class="QLineEdit" name="lineEditDateTime"/>
         </item>
        </layout>
       </widget>
