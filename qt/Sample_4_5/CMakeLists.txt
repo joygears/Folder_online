@@ -21,8 +21,6 @@ add_subdirectory(Sample_4_5)
 
 
 
-
-
 # function(print_directory_variables dir)
 #     # Dump variables:
 #     get_property(_variableNames DIRECTORY ${dir} PROPERTY VARIABLES)

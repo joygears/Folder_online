@@ -171,14 +171,14 @@
         <item row="0" column="0">
          <layout class="QHBoxLayout" name="horizontalLayout_4">
           <item>
-           <widget class="QPushButton" name="pushButton_5">
+           <widget class="QPushButton" name="btnStart">
             <property name="text">
              <string>开始</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_6">
+           <widget class="QPushButton" name="btnStop">
             <property name="enabled">
              <bool>false</bool>
             </property>
@@ -200,7 +200,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_5">
+           <widget class="QLabel" name="labelEcilpse">
             <property name="text">
              <string>流逝时间</string>
             </property>
@@ -218,10 +218,23 @@
            </widget>
           </item>
           <item>
-           <widget class="QTimeEdit" name="timeEdit_2"/>
+           <widget class="QSpinBox" name="spinInternal">
+            <property name="suffix">
+             <string> ms</string>
+            </property>
+            <property name="maximum">
+             <number>99999</number>
+            </property>
+            <property name="singleStep">
+             <number>1000</number>
+            </property>
+            <property name="value">
+             <number>1000</number>
+            </property>
+           </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_7">
+           <widget class="QPushButton" name="btnSetInternal">
             <property name="text">
              <string>设置周期</string>
             </property>
@@ -245,23 +258,59 @@
         <item row="2" column="0">
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
-           <widget class="QLCDNumber" name="lcdNumber">
+           <widget class="QLCDNumber" name="lcdHour">
+            <property name="contextMenuPolicy">
+             <enum>Qt::DefaultContextMenu</enum>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <property name="lineWidth">
+             <number>1</number>
+            </property>
+            <property name="midLineWidth">
+             <number>0</number>
+            </property>
+            <property name="smallDecimalPoint">
+             <bool>false</bool>
+            </property>
             <property name="digitCount">
              <number>2</number>
+            </property>
+            <property name="segmentStyle">
+             <enum>QLCDNumber::Flat</enum>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLCDNumber" name="lcdNumber_2">
+           <widget class="QLCDNumber" name="lcdMinute">
+            <property name="smallDecimalPoint">
+             <bool>false</bool>
+            </property>
             <property name="digitCount">
              <number>2</number>
+            </property>
+            <property name="segmentStyle">
+             <enum>QLCDNumber::Flat</enum>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLCDNumber" name="lcdNumber_3">
+           <widget class="QLCDNumber" name="lcdSecond">
             <property name="digitCount">
              <number>2</number>
+            </property>
+            <property name="segmentStyle">
+             <enum>QLCDNumber::Flat</enum>
             </property>
            </widget>
           </item>
@@ -295,7 +344,7 @@
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QLineEdit" name="lineEdit_4"/>
+         <widget class="QLineEdit" name="lineEditSelectedDate"/>
         </item>
         <item row="1" column="0" colspan="2">
          <widget class="QCalendarWidget" name="calendarWidget"/>
@@ -317,7 +366,7 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_8">
+      <widget class="QPushButton" name="btnClose">
        <property name="text">
         <string>停止</string>
        </property>
@@ -344,5 +393,22 @@
  <resources>
   <include location="Sample_4_5.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>btnClose</sender>
+   <signal>clicked()</signal>
+   <receiver>Sample_4_5Class</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>677</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>442</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
