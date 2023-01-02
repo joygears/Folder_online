@@ -3,7 +3,7 @@ class SingleApplicationPrivate;
 class SingleApplication:public QApplication {
 	Q_OBJECT
 public :
-	SingleApplication(int argc,char ** argv,int arg_c=4);
+	SingleApplication(int argc,char ** argv,int arg_8=1,int arg_c=4,int arg_10=1000);
 	
 signals:
 	void instanceStarted();

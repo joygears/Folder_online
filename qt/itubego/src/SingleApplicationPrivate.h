@@ -8,7 +8,8 @@ class SingleApplicationPrivate :public QObject {
 public:
 	SingleApplicationPrivate(SingleApplication * app);
 	void generateHash();
-	void sub_487080();
+	quint16 initSharedMem();
+	quint16 getMemCheckSum();
 public slots:
 	void slotConnectionEstablished();
 	void slotDataAvailable(QLocalSocket*,unsigned int);
@@ -24,3 +25,10 @@ public:
 	int m_map; // 24
 };
 
+struct sharememory {
+	bool m_0;
+	int m_4;
+	int m_8;
+	int m_c;
+	quint16 m_checkSum;
+};

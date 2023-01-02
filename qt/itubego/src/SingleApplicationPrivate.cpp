@@ -9,6 +9,7 @@ void SingleApplicationPrivate::slotConnectionEstablished() {
 
 
 }
+
 void SingleApplicationPrivate::generateHash()
 {
 	TCHAR userName[257] = {0,};
@@ -32,10 +33,21 @@ void SingleApplicationPrivate::generateHash()
 		
 	
 }
-void SingleApplicationPrivate::sub_487080()
-{
-	m_sharedMemory->data();
 
+
+quint16  SingleApplicationPrivate::initSharedMem()
+{
+	sharememory*  mem = (sharememory*)m_sharedMemory->data();
+	mem->m_0 = false;
+	mem->m_4 = 0;
+	mem->m_8 = -1;
+	mem->m_c = -1;
+	mem->m_checkSum = qChecksum((char *)m_sharedMemory->data(),16);
+	return mem->m_checkSum;
+}
+quint16 SingleApplicationPrivate::getMemCheckSum()
+{
+	return qChecksum((char*)m_sharedMemory->data(), 16);
 }
 void SingleApplicationPrivate::slotDataAvailable(QLocalSocket*, unsigned int data)
 {
