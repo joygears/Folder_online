@@ -16,7 +16,9 @@ public:
     ~Widget();
 private slots:
     void on_btnInitList_clicked();
-    
+    void on_btnClearCombo_clicked();
+    void on_btnMap_clicked();
+    void on_checkEditable_stateChanged(int state);
 private:
     Ui::Widget *ui;
 };
