@@ -42,7 +42,7 @@ SingleApplication::SingleApplication(int argc, char** argv,int arg_8,int arg_c,i
 		} while (m_d->getMemCheckSum() != data->m_checkSum);
 	}
 	if (data->m_0 == 0) {
-		m_d->sub_487580();
+		m_d->createServer();
 	}
 	else {
 		if (arg_8 == 0) {
@@ -59,4 +59,25 @@ SingleApplication::SingleApplication(int argc, char** argv,int arg_8,int arg_c,i
 		}
 	}
 	m_d->m_sharedMemory->unlock();
+}
+
+bool SingleApplication::notInitServer()
+{
+	return !m_d->m_server;
+}
+
+qint64 SingleApplication::getAppPID()
+{
+	m_d->m_sharedMemory->lock();
+	sharememory* data = (sharememory*)m_d->m_sharedMemory->data();
+	m_d->m_sharedMemory->unlock();
+	return data->m_appPID;
+}
+
+bool SingleApplication::eventFilter(QObject* obj, QEvent* event)
+{
+	/*if (obj == this && event->type() == QEvent::ApplicationActivate && ((SingleApplication*)obj)->pMainWindow)  //等pMainWindow定义好，然后才能调用show
+		((SingleApplication*)obj)->pMainWindow->show();*/
+	QObject::eventFilter(obj, event);
+	return false;
 }

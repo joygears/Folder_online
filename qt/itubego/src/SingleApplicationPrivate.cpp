@@ -40,14 +40,31 @@ quint16  SingleApplicationPrivate::initSharedMem()
 	sharememory*  mem = (sharememory*)m_sharedMemory->data();
 	mem->m_0 = false;
 	mem->m_4 = 0;
-	mem->m_8 = -1;
-	mem->m_c = -1;
+	mem->m_appPID = -1;
 	mem->m_checkSum = qChecksum((char *)m_sharedMemory->data(),16);
 	return mem->m_checkSum;
 }
 quint16 SingleApplicationPrivate::getMemCheckSum()
 {
 	return qChecksum((char*)m_sharedMemory->data(), 16);
+}
+void SingleApplicationPrivate::createServer()
+{
+	QLocalServer::removeServer(m_sha256);
+	m_server = new QLocalServer(0);
+	m_server->setSocketOptions((m_20 & 1) != 0 ? QLocalServer::UserAccessOption : QLocalServer::WorldAccessOption);
+	m_server->listen(m_sha256);
+	connect(m_server, &QLocalServer::newConnection, this, &SingleApplicationPrivate::slotConnectionEstablished);
+	sharememory * data = (sharememory*)m_sharedMemory->data();
+	data->m_0 = true;
+	data->m_appPID = QCoreApplication::applicationPid();
+	data->m_checkSum = qChecksum((char*)m_sharedMemory->data(), 16);
+}
+void SingleApplicationPrivate::sub_486770(int arg_0, int arg_1)
+{
+}
+void SingleApplicationPrivate::sub_486610(int arg_0)
+{
 }
 void SingleApplicationPrivate::slotDataAvailable(QLocalSocket*, unsigned int data)
 {

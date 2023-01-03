@@ -13,9 +13,9 @@ set(SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/SingleApplicationPrivate.cpp
 )
 
-# set(RESOURCES 
-#     Sample_4_5.qrc
-# )
+set(RESOURCES 
+   res.qrc
+)
 
 # set(UI
 # 	Sample_4_5.ui
