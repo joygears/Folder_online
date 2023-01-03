@@ -20,8 +20,27 @@ void Widget::on_btnClearCombo_clicked()
 
 void Widget::on_checkEditable_stateChanged(int state)
 {
+    
     ui->comboBox->setEditable(state);
 
+}
+
+void Widget::on_comboBox_currentTextChanged(const QString& text)
+{   if(!text.isEmpty())
+        ui->plainTextEdit->appendPlainText(text);
+}
+
+void Widget::on_comboBox_2_currentTextChanged(const QString& text)
+{
+    if (!text.isEmpty()) {
+        
+        ui->plainTextEdit->appendPlainText(text+QString::fromLocal8Bit("ÇøºÅ£º")+ui->comboBox_2->currentData().toString());
+    }
+}
+
+void Widget::on_checkReadable_clicked(bool checked)
+{
+    ui->plainTextEdit->setReadOnly(checked);
 }
 
 void Widget::on_btnMap_clicked()

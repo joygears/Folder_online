@@ -19,6 +19,9 @@ private slots:
     void on_btnClearCombo_clicked();
     void on_btnMap_clicked();
     void on_checkEditable_stateChanged(int state);
+    void on_comboBox_currentTextChanged(const QString& text);
+    void on_comboBox_2_currentTextChanged(const QString& text);
+    void on_checkReadable_clicked(bool checked);
 private:
     Ui::Widget *ui;
 };
