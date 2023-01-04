@@ -5,12 +5,14 @@ find_package(Qt5Network)
 set(HEADERS 
     ${CMAKE_CURRENT_SOURCE_DIR}/SingleApplication.h
     ${CMAKE_CURRENT_SOURCE_DIR}/SingleApplicationPrivate.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/config.h
 )
 
 set(SOURCES 
     ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/SingleApplication.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/SingleApplicationPrivate.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/config.cpp
 )
 
 set(RESOURCES 

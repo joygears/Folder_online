@@ -3,6 +3,7 @@
 #include <qDebug>
 #include <Windows.h>
 #include <QIcon>
+#include "config.h"
 
 
 int main(int argc,char ** argv){
@@ -21,5 +22,10 @@ int main(int argc,char ** argv){
 	a.installEventFilter(&a);
 	QApplication::setWindowIcon(QIcon(":/res/appIcon.png"));
 	qDebug() << "App dir path : " << QCoreApplication::applicationDirPath();
+	preConfig();
+	createLogPath();
+
+
 	return 0;
 }
+
