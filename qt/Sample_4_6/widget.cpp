@@ -1,6 +1,7 @@
 #include "widget.h"
 #include "./ui_widget.h"
-
+#include <QTextBlock>
+#include <QMenu>
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
@@ -41,6 +42,24 @@ void Widget::on_comboBox_2_currentTextChanged(const QString& text)
 void Widget::on_checkReadable_clicked(bool checked)
 {
     ui->plainTextEdit->setReadOnly(checked);
+}
+
+void Widget::on_btnAddToCombo_clicked()
+{
+    QTextDocument * doc = ui->plainTextEdit->document();
+    int num = doc->blockCount();
+    QIcon icon(":/third/images/Cursor_Laser_Pointer.ico");
+    for (int i = 0; i < num; i++) {
+       // doc->findBlockByNumber(i)
+        ui->comboBox->addItem(icon, doc->findBlockByNumber(i).text());
+    }
+
+}
+
+void Widget::on_plainTextEdit_customContextMenuRequested(const QPoint& pos)
+{
+    QMenu* menu = ui->plainTextEdit->createStandardContextMenu();
+    menu->exec(pos);
 }
 
 void Widget::on_btnMap_clicked()

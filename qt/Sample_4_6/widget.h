@@ -22,6 +22,8 @@ private slots:
     void on_comboBox_currentTextChanged(const QString& text);
     void on_comboBox_2_currentTextChanged(const QString& text);
     void on_checkReadable_clicked(bool checked);
+    void on_btnAddToCombo_clicked();
+    void on_plainTextEdit_customContextMenuRequested(const QPoint& pos);
 private:
     Ui::Widget *ui;
 };
