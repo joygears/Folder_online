@@ -15,8 +15,9 @@ MyTabWidget::MyTabWidget(QWidget* parent):QWidget(parent){
         "QToolButton:pressed{background-color:rgb(232,232,232);}"
 	}
 )");
+	stack = new QStackedWidget(this);
 
-
+	mainLayout->addWidget(stack);
 	mainLayout->addWidget(bar);
 	this->setLayout(mainLayout);
 	

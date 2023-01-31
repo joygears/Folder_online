@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'uiFit.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.1
+** Created by: Qt User Interface Compiler version 5.15.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -44,7 +44,7 @@ public:
     {
         if (uiFitClass->objectName().isEmpty())
             uiFitClass->setObjectName(QString::fromUtf8("uiFitClass"));
-        uiFitClass->resize(402, 543);
+        uiFitClass->resize(597, 543);
         centralWidget = new QWidget(uiFitClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         verticalLayout = new QVBoxLayout(centralWidget);
@@ -113,7 +113,7 @@ public:
         uiFitClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(uiFitClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 402, 23));
+        menuBar->setGeometry(QRect(0, 0, 597, 23));
         uiFitClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(uiFitClass);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
