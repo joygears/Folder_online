@@ -297,12 +297,16 @@ IT myfind(IT& a,IT& b,T data){
 	}
 	return b;
 }
-template<class IT>
-void sort(IT &begin,IT &end){
-	IT p=begin,i=begin,j=--end;
+
+
+
+template<class IT,class CMP>
+void sort(IT &begin,IT &end,CMP cmp){
+	IT p=begin,i=begin,j=end;
+	--j;
 	while(i!=j){
 		if(*p==*i){
-			if(*p < *j)
+			if(cmp(*p,*j))
 				--j;
 			else{
 				swap(*p,*j);
@@ -311,7 +315,7 @@ void sort(IT &begin,IT &end){
 			}
 		}
 		else{
-			if(*i< *p)
+			if(cmp(*i,*p))
 				++i;
 			else{
 				swap(*p,*i);
@@ -323,14 +327,18 @@ void sort(IT &begin,IT &end){
 
 	}
 	IT it=begin;
+	IT last = end;
+	--last;
 	++it;
 	if(p!=begin && p!=it)
-		sort(begin,p);
+		sort(begin,p,cmp);
 	it = p;
 	++it;
-	if(it!=--end && it!=end)
-		sort(it,end);
+
+	if(it!=end && it!= last)
+		sort(it,end,cmp);
 }
+
 
 // ostream& operator<<(ostream& os,list<int>& l){
 
@@ -340,11 +348,33 @@ void sort(IT &begin,IT &end){
 // 	return os;
 // }
 
+
+
+
+
+template<class T> 
+class CMPDown{
+public:
+	CMPDown(){
+		
+	}
+	
+	bool operator()(T& a,T& b){
+		return a > b;
+	}
+
+	CMPDown(T& a,T& b){
+		cout << "CMPDown::CMPDown(){}";
+	}
+};
 int main(){
 	list<int> m;
 	m.push_back(22);
 	m.push_back(1);
 	m.push_back(3);
+	m.push_back(7);
+	m.push_back(3);
+	m.push_back(99);
 	// list<int>::iterator it_ = m.begin();
 	// m.insert(it_,0);
 	// list<int>::iterator target =  m.begin();
@@ -355,7 +385,9 @@ int main(){
 	// m.erase(target);
 	// list<int>::iterator it = myfind(m.begin(),m.end(),2);
 	// m.erase(it);
-	sort(m.begin(),m.end());
+	int a=1,b=2;
+	CMPDown<int> cmp(a,b);
+	sort(m.begin(),m.end(),cmp);
 	for(list<int>::iterator it = m.begin();it != m.end(); it++ ){
 
 		cout << *it << endl;
