@@ -7,7 +7,7 @@ void print(string str,list<int> & ls){
 	for(list<int>::iterator it = ls.begin();it != ls.end();++it){
 		cout <<*it<< " ";
 	}
-	cout << endl << "------------------";
+	cout << endl << "------------------" << endl;
 
 }
 
@@ -29,7 +29,7 @@ int main(){
 	lst.push_back(2000);
 	lst.push_back(3000);
 	lst.push_back(4000);
-	ls.splice(ls.begin(),lst);
+	ls.splice(ls.begin(),lst,lst.begin(),--lst.end());
 	print("ls:",ls);
-	print("lst",lst);
+	print("lst:",lst);
 }
