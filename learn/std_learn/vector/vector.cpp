@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <memory>
 using namespace std;
 
 class Student{
@@ -17,7 +18,7 @@ public:
 	}
 	~Student(){
 
-		//cout <<"析构 " << m_name << " " << this << endl;
+		cout <<"析构 " << m_name << " " << this << endl;
 	}
 	bool operator==(Student const& that){
 
@@ -56,22 +57,29 @@ public:
 };
 
 int main(){
-	vector<Student> stus;
-	stus.push_back(Student("张飞",20));
-	stus.push_back(Student("刘备",26));
-	stus.push_back(Student("赵云",15));
-	stus.push_back(Student("关羽",25));
+	// vector<Student> stus;
+	// stus.push_back(Student("张飞",20));
+	// stus.push_back(Student("刘备",26));
+	// stus.push_back(Student("赵云",15));
+	// stus.push_back(Student("关羽",25));
 
-	print(stus);
+	// print(stus);
 
-	vector<Student>::iterator it = find(stus.begin(),stus.end(),Student("张飞",20));
-	if(it!=stus.end())
-		stus.erase(it);
-	print(stus);
-	CMP cmp;
-	//sort(stus.begin(),stus.end());
-	sort(stus.begin(),stus.end(),cmp);
-	print(stus);
-
+	// vector<Student>::iterator it = find(stus.begin(),stus.end(),Student("张飞",20));
+	// if(it!=stus.end())
+	// 	stus.erase(it);
+	// print(stus);
+	// CMP cmp;
+	// //sort(stus.begin(),stus.end());
+	// sort(stus.begin(),stus.end(),cmp);
+	// print(stus);
+	weak_ptr<Student> stu;
+	
+	{
+		shared_ptr<Student> ptr(new Student("张飞", 20));
+	stu = ptr;
+		}
+	
+	getchar();
 	return 0;
 }

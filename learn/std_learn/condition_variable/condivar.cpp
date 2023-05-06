@@ -23,10 +23,10 @@ int main()
 	cv.wait(lk, [&]() {return start; });
 	cout << "over" << endl;*/
 	int a = 0;
-	auto b = [&]() {
+	auto b = [&](int c) {
 		return a;
-	};
+	}(a);
 
-	Function(b);
+	//Function(b);
 
 }
