@@ -4,6 +4,8 @@
 
 using namespace std;
 
+
+
 class Candidate{
 public:
 	Candidate(string name=""):m_name(name),m_vote(0){}
@@ -18,6 +20,9 @@ void print(map<char,Candidate> & m){
 	cout << endl << "---------------------------";
 }
 
+
+typedef map<char, Candidate>::iterator IT;
+
 int main(){
 	map<char,Candidate> m;
 	m.insert(pair<char,Candidate>('A',Candidate("张飞")));
@@ -25,8 +30,27 @@ int main(){
 	m['C'] = Candidate("赵云");
 	m['D'] = Candidate("马超");
 	m['E'] = Candidate("黄忠");
+	for (int i = 0; i < 10; i++) {
+		char ch;
+		
 
-	print(m);
+		print(m);
+		
+		cin >> ch;
+		IT it = m.find(ch);
+		if (it == m.end()) {
+			cout << "废票";
+			continue;
+		}
+		
+		(*it).second.m_vote++;
+
+	}
+
+	for (IT it = m.begin(); it != m.end(); it++) {
+		cout << (*it).second.m_name << " : " << (*it).second.m_vote << "	";
+	}
+	
 
 	return 0;
 }
