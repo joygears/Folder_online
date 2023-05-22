@@ -9,8 +9,8 @@ void delog(const wchar_t* fmt, ...)
     va_list args;
     int n;
     va_start(args, fmt);
-    wprintf(fmt, args);
-    swprintf_s(_buf, 256, fmt,args);
+    vwprintf(fmt, args);
+    vswprintf_s(_buf, 256, fmt,args);
     OutputDebugString(_buf);
     va_end(args);
 }

@@ -29,17 +29,21 @@ void initializeApp() {
 
     HMODULE hWidevine = LoadLibrary(dycWidevine.c_str());
 
-   
-    delog(L"LoadLibrary GetLasterror %d", GetLastError());
+    if(!hWidevine)
+    delog(L"LoadLibrary widevinecdm.dll error  GetLasterror %d\n", GetLastError());
 
     VerifyCdmHost_0 = (bool (*)(verifyWrap*, int flag))GetProcAddress(hWidevine, "VerifyCdmHost_0");
     _InitializeCdmModule_4 = (void (*)())GetProcAddress(hWidevine, "InitializeCdmModule_4");
     _CreateCdmInstance = (void* (*)(int interface_version, const char* key_system, uint32_t key_system_len,
             void* host_function, void* extra_data))GetProcAddress(hWidevine, "CreateCdmInstance");
+    _DeinitializeCdmModule = (void (*)())GetProcAddress(hWidevine, "DeinitializeCdmModule");
+    _GetCdmVersion = (char * (*)())GetProcAddress(hWidevine, "GetCdmVersion");
 
-    int retcode = VerifyCdmHost_0(&wrap, 2);
+    delog(TEXT("load widevinecdm success, %p, %p, %p, %p \n"), _InitializeCdmModule_4, _CreateCdmInstance, _DeinitializeCdmModule, _GetCdmVersion);
 
-    delog(L"widevine VerifyCdmHost_0 retcode %d", retcode);
+    bool retcode = VerifyCdmHost_0(&wrap, 2);
+
+    delog(L"widevine VerifyCdmHost_0 retcode value %d\n",retcode);
 }
 
 int main()
@@ -48,9 +52,42 @@ int main()
     initializeApp();
     InitializeCdmModule_4();
 
+    DeinitializeCdmModule();
 
     return 0;
 
+}
+
+
+
+
+DLL_EXPORT void InitializeCdmModule_4()
+{
+    _InitializeCdmModule_4();
+}
+
+DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system, uint32_t key_system_len, void* host_function, void* extra_data)
+{
+    delog(TEXT("CreateCdmInstance %d, %s, %lld, \n"), interface_version, key_system, key_system_len);
+    void* instance = _CreateCdmInstance(interface_version, key_system, key_system_len, host_function, extra_data);
+    if (!instance)
+    {
+        delog(TEXT("no origin instance created\n"));
+        return nullptr;
+    }
+
+    return instance;
+}
+
+DLL_EXPORT void DeinitializeCdmModule()
+{
+    delog(TEXT("DeinitializeCdmModule\n"));
+    _DeinitializeCdmModule();
+}
+
+DLL_EXPORT char* GetCdmVersion()
+{
+    return _GetCdmVersion();
 }
 
 
@@ -87,22 +124,4 @@ BOOL WINAPI DllMain(
         break;
     }
     return TRUE;  // Successful DLL_PROCESS_ATTACH.
-}
-
-DLL_EXPORT void InitializeCdmModule_4()
-{
-    _InitializeCdmModule_4();
-}
-
-DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system, uint32_t key_system_len, void* host_function, void* extra_data)
-{
-    delog(TEXT("CreateCdmInstance %d, %s, %lld, "), interface_version, key_system, key_system_len);
-    void* instance = _CreateCdmInstance(interface_version, key_system, key_system_len, host_function, extra_data);
-    if (!instance)
-    {
-        delog(TEXT("no origin instance created"));
-        return nullptr;
-    }
-
-    return instance;
 }
