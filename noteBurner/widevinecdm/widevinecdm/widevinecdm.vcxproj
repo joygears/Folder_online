@@ -139,9 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="fucntion.cpp" />
     <ClCompile Include="widevinecdm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="fucntion.h" />
     <ClInclude Include="widevinecdm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
