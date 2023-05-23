@@ -11,13 +11,16 @@ void initializeApp() {
     wstring sigVfchm = TEXT(R"(.\..\..\sig_files\vfchm.dll.sig)");
     verifyWrap wrap;
    
-
-
+    Write((LPTSTR)TEXT(R"(D:\czl.log)"), (LPSTR)"hello");
+    
 
     HANDLE HDycWidevinecdm = CreateFile(dycWidevine.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
     HANDLE HSigWidevinecdm = CreateFile(sigWidevine.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
     HANDLE hFVfchm = CreateFile(dycVfchm.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
     HANDLE hSigVfchm = CreateFile(sigVfchm.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
+
+    delog(TEXT("open file, %p, %p, %p, %p\n"), HDycWidevinecdm, HSigWidevinecdm, hFVfchm, hSigVfchm);
+
 
     wrap.chDycVfchm = dycVfchm.c_str();
     wrap.hFVfchm = hFVfchm;
@@ -26,12 +29,12 @@ void initializeApp() {
     wrap.HDycWidevinecdm = HDycWidevinecdm;
     wrap.HSigWidevinecdm = HSigWidevinecdm;
 
-
+   
     HMODULE hWidevine = LoadLibrary(dycWidevine.c_str());
 
     if(!hWidevine)
     delog(L"LoadLibrary widevinecdm.dll error  GetLasterror %d\n", GetLastError());
-
+    
     VerifyCdmHost_0 = (bool (*)(verifyWrap*, int flag))GetProcAddress(hWidevine, "VerifyCdmHost_0");
     _InitializeCdmModule_4 = (void (*)())GetProcAddress(hWidevine, "InitializeCdmModule_4");
     _CreateCdmInstance = (void* (*)(int interface_version, const char* key_system, uint32_t key_system_len,
@@ -63,6 +66,7 @@ int main()
 
 DLL_EXPORT void InitializeCdmModule_4()
 {
+    delog(TEXT("InitializeCdmModule_4\n"));
     _InitializeCdmModule_4();
 }
 
@@ -102,6 +106,7 @@ BOOL WINAPI DllMain(
     case DLL_PROCESS_ATTACH:
         // Initialize once for each new process.
         // Return FALSE to fail DLL load.
+        DisableThreadLibraryCalls((HMODULE)hinstDLL);
         initializeApp();
         break;
 
