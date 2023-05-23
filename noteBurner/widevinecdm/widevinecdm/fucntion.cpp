@@ -1,22 +1,30 @@
 #include "fucntion.h"
 #include <cstdarg>
-#include <iostream>
+
 #include <fstream>
 #include <mutex>
 
-void delog(const wchar_t* fmt, ...)
+
+void delog(const wchar_t* fmt)
+{ 
+   
+}
+
+
+void delog(const char * fmt, ...)
 {
-    TCHAR _buf[256] = { 0 };
-    TCHAR _buf2[256] = TEXT("czl ");
+    CHAR _buf[256] = { 0 };
+    CHAR _buf2[256] = "czl ";
     va_list args;
     int n;
     va_start(args, fmt);
-    vwprintf(fmt, args);
-    vswprintf_s(_buf, 256, fmt,args);
-    vswprintf_s(_buf, 256, _buf, args);
-    wcscat(_buf2, _buf);
-    //writeToFile(_buf2);
-    OutputDebugString(_buf2);
+    vprintf(fmt, args);
+    vsprintf_s(_buf, 256, fmt, args);
+    vsprintf_s(_buf, 256, _buf, args);
+    strcat(_buf2, _buf);
+    wstring str = DecodeUtf8(_buf2);
+    writeToFile(str.c_str());
+    OutputDebugString(str.c_str());
     va_end(args);
 }
 
@@ -39,21 +47,43 @@ void writeToFile(const wchar_t * buf) {
 
 int Write( LPTSTR lpPath, LPSTR lpText)
 {
-	//´´½¨ÎÄ¼þ
-    FILE * hFile = _wfopen(lpPath, TEXT("w"));
+	//åˆ›å»ºæ–‡ä»¶
+    FILE * hFile = _wfopen(lpPath, TEXT("a+"));
 
 	if (hFile == nullptr)
 	{
-		delog(TEXT("hFile == nullptr getLastError %d"), GetLastError());
+		delog("hFile == nullptr getLastError %d", GetLastError());
 		return -1;
 	}
 
 	
-	// ½«ÄÚÈÝÐ´ÈëÎÄ¼þ
+	// å°†å†…å®¹å†™å…¥æ–‡ä»¶
 	DWORD dwWriten = 0;
     fputs(lpText, hFile);
 	
 
     fclose(hFile);
 	return 1;
+}
+
+
+std::wstring DecodeUtf8(string in)
+{
+    wstring s(in.length(), (' ')); //"tchar.h"
+    size_t len = ::MultiByteToWideChar(CP_UTF8, 0,
+        in.c_str(), in.length(),
+        &s[0], s.length());
+    s.resize(len);
+    return s;
+}
+
+std::string EncodeUtf8(std::wstring in)
+{
+    std::string s(in.length() * 3 + 1, ' ');
+    size_t len = ::WideCharToMultiByte(CP_UTF8, 0,
+        in.c_str(), in.length(),
+        &s[0], s.length(),
+        NULL, NULL);
+    s.resize(len);
+    return s;
 }

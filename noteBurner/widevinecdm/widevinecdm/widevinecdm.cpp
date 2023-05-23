@@ -11,15 +11,14 @@ void initializeApp() {
     wstring sigVfchm = TEXT(R"(.\..\..\sig_files\vfchm.dll.sig)");
     verifyWrap wrap;
    
-    Write((LPTSTR)TEXT(R"(D:\czl.log)"), (LPSTR)"hello");
+ 
     
-
     HANDLE HDycWidevinecdm = CreateFile(dycWidevine.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
     HANDLE HSigWidevinecdm = CreateFile(sigWidevine.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
     HANDLE hFVfchm = CreateFile(dycVfchm.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
     HANDLE hSigVfchm = CreateFile(sigVfchm.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
 
-    delog(TEXT("open file, %p, %p, %p, %p\n"), HDycWidevinecdm, HSigWidevinecdm, hFVfchm, hSigVfchm);
+    delog("open file, %p, %p, %p, %p\n", HDycWidevinecdm, HSigWidevinecdm, hFVfchm, hSigVfchm);
 
 
     wrap.chDycVfchm = dycVfchm.c_str();
@@ -33,7 +32,7 @@ void initializeApp() {
     HMODULE hWidevine = LoadLibrary(dycWidevine.c_str());
 
     if(!hWidevine)
-    delog(L"LoadLibrary widevinecdm.dll error  GetLasterror %d\n", GetLastError());
+    delog("LoadLibrary widevinecdm.dll error  GetLasterror %d\n", GetLastError());
     
     VerifyCdmHost_0 = (bool (*)(verifyWrap*, int flag))GetProcAddress(hWidevine, "VerifyCdmHost_0");
     _InitializeCdmModule_4 = (void (*)())GetProcAddress(hWidevine, "InitializeCdmModule_4");
@@ -42,11 +41,11 @@ void initializeApp() {
     _DeinitializeCdmModule = (void (*)())GetProcAddress(hWidevine, "DeinitializeCdmModule");
     _GetCdmVersion = (char * (*)())GetProcAddress(hWidevine, "GetCdmVersion");
 
-    delog(TEXT("load widevinecdm success, %p, %p, %p, %p \n"), _InitializeCdmModule_4, _CreateCdmInstance, _DeinitializeCdmModule, _GetCdmVersion);
+    delog("load widevinecdm success, %p, %p, %p, %p \n", _InitializeCdmModule_4, _CreateCdmInstance, _DeinitializeCdmModule, _GetCdmVersion);
 
     bool retcode = VerifyCdmHost_0(&wrap, 2);
 
-    delog(L"widevine VerifyCdmHost_0 retcode value %d\n",retcode);
+    delog("widevine VerifyCdmHost_0 retcode value %d\n",retcode);
 }
 
 int main()
@@ -66,17 +65,17 @@ int main()
 
 DLL_EXPORT void InitializeCdmModule_4()
 {
-    delog(TEXT("InitializeCdmModule_4\n"));
+    delog("InitializeCdmModule_4\n");
     _InitializeCdmModule_4();
 }
 
 DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system, uint32_t key_system_len, void* host_function, void* extra_data)
 {
-    delog(TEXT("CreateCdmInstance %d, %s, %lld, \n"), interface_version, key_system, key_system_len);
+    delog("CreateCdmInstance %d, %s, %lld, \n", interface_version, key_system, key_system_len);
     void* instance = _CreateCdmInstance(interface_version, key_system, key_system_len, host_function, extra_data);
     if (!instance)
     {
-        delog(TEXT("no origin instance created\n"));
+        delog("no origin instance created\n");
         return nullptr;
     }
 
@@ -85,7 +84,7 @@ DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system
 
 DLL_EXPORT void DeinitializeCdmModule()
 {
-    delog(TEXT("DeinitializeCdmModule\n"));
+    delog("DeinitializeCdmModule\n");
     _DeinitializeCdmModule();
 }
 
@@ -129,4 +128,73 @@ BOOL WINAPI DllMain(
         break;
     }
     return TRUE;  // Successful DLL_PROCESS_ATTACH.
+}
+
+void MyContentDecryptionModuleProxy::Initialize(bool allow_distinctive_identifier, bool allow_persistent_state, bool flag)
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 76);
+        return;
+    }
+   
+    delog("init module(%p), %d, %d, %d", this, allow_distinctive_identifier, allow_persistent_state, flag);
+
+    m_instance->Initialize(allow_distinctive_identifier, allow_persistent_state, flag);
+    this->GetStatusForPolicy(-1, (int *)&allow_distinctive_identifier);
+}
+
+void MyContentDecryptionModuleProxy::GetStatusForPolicy(uint32_t promise_id, int* policy)
+{
+    delog("module(%p) GetStatusForPolicy", this);
+    
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return;
+    }
+   
+    string aGetstatusforpo = "GetStatusForPolicy_";
+
+    switch (*policy) {
+    case 0:
+        aGetstatusforpo.append("HDCP_None");
+        break;
+    case 1:
+        aGetstatusforpo.append("HDCP_1_0");
+        break;
+    case 2:
+        aGetstatusforpo.append("HDCP_1_1");
+        break;
+    case 3:
+        aGetstatusforpo.append("HDCP_1_2");
+        break;
+    case 4:
+        aGetstatusforpo.append("HDCP_1_3");
+        break;
+    case 5:
+        aGetstatusforpo.append("HDCP_1_4");
+        break;
+    case 6:
+        aGetstatusforpo.append("HDCP_2_0");
+        break;
+    case 7:
+        aGetstatusforpo.append("HDCP_2_1");
+        break;
+    case 8:
+        aGetstatusforpo.append("HDCP_2_2");
+        break;
+    case 9:
+        aGetstatusforpo.append("HDCP_2_3");
+        break;
+    default:
+        aGetstatusforpo.append("HDCP_Unknown", 12);
+        break;
+
+    };
+
+    delog("%s promise_id:%d", aGetstatusforpo.c_str(), promise_id);
+
+    m_instance->GetStatusForPolicy(promise_id, policy);
+
 }
