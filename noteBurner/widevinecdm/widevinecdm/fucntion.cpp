@@ -23,6 +23,7 @@ void delog(const char * fmt, ...)
     vsprintf_s(_buf, 256, _buf, args);
     strcat(_buf2, _buf);
     wstring str = DecodeUtf8(_buf2);
+    str += L"\n";
     writeToFile(str.c_str());
     OutputDebugString(str.c_str());
     va_end(args);

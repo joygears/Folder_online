@@ -79,7 +79,7 @@ DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system
         return nullptr;
     }
 
-    return instance;
+    return new MyContentDecryptionModuleProxy(static_cast<ContentDecryptionModule_9 *>(instance));
 }
 
 DLL_EXPORT void DeinitializeCdmModule()
@@ -141,6 +141,7 @@ void MyContentDecryptionModuleProxy::Initialize(bool allow_distinctive_identifie
     delog("init module(%p), %d, %d, %d", this, allow_distinctive_identifier, allow_persistent_state, flag);
 
     m_instance->Initialize(allow_distinctive_identifier, allow_persistent_state, flag);
+    allow_distinctive_identifier = 1;
     this->GetStatusForPolicy(-1, (int *)&allow_distinctive_identifier);
 }
 
@@ -198,3 +199,220 @@ void MyContentDecryptionModuleProxy::GetStatusForPolicy(uint32_t promise_id, int
     m_instance->GetStatusForPolicy(promise_id, policy);
 
 }
+
+void MyContentDecryptionModuleProxy::SetServerCertificate(uint32_t promise_id, const uint8_t* server_certificate_data, uint32_t server_certificate_data_size)
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return;
+    }
+    delog("SetServerCertificate(%p):", (const void*)this);
+    m_instance->SetServerCertificate(promise_id, server_certificate_data, server_certificate_data_size);
+}
+
+void MyContentDecryptionModuleProxy::CreateSessionAndGenerateRequest(uint32_t promise_id, int session_type, int init_data_type, const uint8_t* init_data, uint32_t init_data_size)
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return;
+    }
+    delog("CreateSessionAndGenerateRequest(%p):", (const void*)this);
+    m_instance->CreateSessionAndGenerateRequest(promise_id, session_type, init_data_type, init_data, init_data_size);
+
+}
+
+void MyContentDecryptionModuleProxy::LoadSession(uint32_t promise_id, int session_type, const char* session_id, uint32_t session_id_size)
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return;
+    }
+    delog("LoadSession(%p):", (const void*)this);
+    m_instance->LoadSession(promise_id, session_type, session_id, session_id_size);
+
+}
+
+void MyContentDecryptionModuleProxy::UpdateSession(uint32_t promise_id, const char* session_id, uint32_t session_id_size, const uint8_t* response, uint32_t response_size)
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return;
+    }
+    delog("UpdateSession(%p):", (const void*)this);
+    m_instance->UpdateSession(promise_id, session_id, session_id_size, response, response_size);
+}
+
+void MyContentDecryptionModuleProxy::CloseSession(uint32_t promise_id, const char* session_id, uint32_t session_id_size)
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return;
+    }
+    delog("CloseSession(%p):", (const void*)this);
+    m_instance->CloseSession(promise_id, session_id, session_id_size);
+}
+
+void MyContentDecryptionModuleProxy::RemoveSession(uint32_t promise_id, const char* session_id, uint32_t session_id_size)
+{
+
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return;
+    }
+    delog("RemoveSession(%p):", (const void*)this);
+    m_instance->RemoveSession(promise_id, session_id, session_id_size);
+}
+
+void MyContentDecryptionModuleProxy::TimerExpired(void* context)
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+       
+    }
+    delog("TimerExpired(%p):", (const void*)this);
+    m_instance->TimerExpired(context);
+}
+
+int MyContentDecryptionModuleProxy::Decrypt(void* encrypted_buffer, void* decrypted_buffer)
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return 0;
+    }
+    delog("Decrypt(%p):", (const void*)this);
+    return     m_instance->Decrypt(encrypted_buffer, decrypted_buffer);
+
+}
+
+int MyContentDecryptionModuleProxy::InitializeAudioDecoder(void* audio_decoder_config)
+{
+
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return 0;
+    }
+    delog("InitializeAudioDecoder(%p):", (const void*)this);
+   
+    return  m_instance->InitializeAudioDecoder(audio_decoder_config);
+}
+
+int MyContentDecryptionModuleProxy::InitializeVideoDecoder(void* video_decoder_config)
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return 0;
+    }
+    delog("InitializeVideoDecoder(%p):", (const void*)this);
+
+    return  m_instance->InitializeVideoDecoder(video_decoder_config);
+}
+
+void MyContentDecryptionModuleProxy::DeinitializeDecoder(int decoder_type)
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return;
+    }
+    delog("DeinitializeDecoder(%p):", (const void*)this);
+    m_instance->DeinitializeDecoder(decoder_type);
+}
+
+void MyContentDecryptionModuleProxy::ResetDecoder(int decoder_type)
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return;
+    }
+    delog("ResetDecoder(%p):", (const void*)this);
+    m_instance->ResetDecoder(decoder_type);
+}
+
+int MyContentDecryptionModuleProxy::DecryptAndDecodeFrame(const void* encrypted_buffer, void* video_frame)
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return 0;
+    }
+    delog("DecryptAndDecodeFrame(%p):", (const void*)this);
+
+    return  m_instance->DecryptAndDecodeFrame(encrypted_buffer, video_frame);
+
+}
+
+int MyContentDecryptionModuleProxy::DecryptAndDecodeSamples(void* encrypted_buffer, void* audio_frames)
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return 0;
+    }
+    delog("DecryptAndDecodeSamples(%p):", (const void*)this);
+
+    return  m_instance->DecryptAndDecodeSamples(encrypted_buffer, audio_frames);
+ 
+}
+
+void MyContentDecryptionModuleProxy::OnPlatformChallengeResponse(void* response)
+{
+
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return;
+    }
+    delog("OnPlatformChallengeResponse(%p):", (const void*)this);
+    
+    m_instance->OnPlatformChallengeResponse(response);
+}
+
+void MyContentDecryptionModuleProxy::OnQueryOutputProtectionStatus(int result, uint32_t link_mask, uint32_t output_protection_mask)
+{
+
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return;
+    }
+    delog("OnQueryOutputProtectionStatus(%p):", (const void*)this);
+
+    m_instance->OnQueryOutputProtectionStatus(result, link_mask, output_protection_mask);
+}
+
+void MyContentDecryptionModuleProxy::OnStorageId(uint32_t version, const uint8_t* storage_id, uint32_t storage_id_size)
+{
+
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return;
+    }
+    delog("OnStorageId(%p):", (const void*)this);
+
+    m_instance->OnStorageId(version, storage_id, storage_id_size);
+}
+
+void MyContentDecryptionModuleProxy::Destroy()
+{
+    if (!m_instance)
+    {
+        delog("instance is null, %d", 96);
+        return;
+    }
+    delog("Destroy(%p):", (const void*)this);
+
+    m_instance->Destroy();
+}
+
