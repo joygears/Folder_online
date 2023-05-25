@@ -18,7 +18,6 @@ void delog(const char * fmt, ...)
     va_list args;
     int n;
     va_start(args, fmt);
-    vprintf(fmt, args);
     vsprintf_s(_buf, 256, fmt, args);
     vsprintf_s(_buf, 256, _buf, args);
     strcat(_buf2, _buf);
@@ -26,6 +25,7 @@ void delog(const char * fmt, ...)
     str += L"\n";
     writeToFile(str.c_str());
     OutputDebugString(str.c_str());
+    wprintf(str.c_str());
     va_end(args);
 }
 

@@ -280,7 +280,7 @@ void MyContentDecryptionModuleProxy::TimerExpired(void* context)
     m_instance->TimerExpired(context);
 }
 
-int MyContentDecryptionModuleProxy::Decrypt(void* encrypted_buffer, void* decrypted_buffer)
+int MyContentDecryptionModuleProxy::Decrypt(void* encrypted_buffer, DecryptedBlock * decrypted_buffer)
 {
     if (!m_instance)
     {
@@ -288,6 +288,7 @@ int MyContentDecryptionModuleProxy::Decrypt(void* encrypted_buffer, void* decryp
         return 0;
     }
     delog("Decrypt(%p):", (const void*)this);
+
     return     m_instance->Decrypt(encrypted_buffer, decrypted_buffer);
 
 }
@@ -347,6 +348,9 @@ int MyContentDecryptionModuleProxy::DecryptAndDecodeFrame(const void* encrypted_
         return 0;
     }
     delog("DecryptAndDecodeFrame(%p):", (const void*)this);
+
+
+
 
     return  m_instance->DecryptAndDecodeFrame(encrypted_buffer, video_frame);
 
@@ -413,6 +417,22 @@ void MyContentDecryptionModuleProxy::Destroy()
     }
     delog("Destroy(%p):", (const void*)this);
 
+
+
     m_instance->Destroy();
 }
 
+void DecryptedProxyBlock::SetDecryptedBuffer(Buffer* buffer) {
+    buf = buffer;
+}
+Buffer* DecryptedProxyBlock::DecryptedBuffer() {
+    return buf;
+}
+
+void DecryptedProxyBlock::SetTimestamp(int64_t timestamp) {
+    ts = timestamp;
+}
+
+int64_t DecryptedProxyBlock::Timestamp() const {
+    return ts;
+}

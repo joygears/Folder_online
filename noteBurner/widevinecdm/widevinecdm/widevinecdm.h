@@ -8,6 +8,54 @@ using namespace std;
 
 #define DLL_EXPORT extern "C" __declspec( dllexport )
 
+
+class Buffer {
+public:
+    // Destroys the buffer in the same context as it was created.
+    virtual void Destroy() = 0;
+    virtual uint32_t Capacity() const = 0;
+    virtual uint8_t* Data() = 0;
+    virtual void SetSize(uint32_t size) = 0;
+    virtual uint32_t Size() const = 0;
+protected:
+    Buffer() {}
+    virtual ~Buffer() {}
+private:
+    Buffer(const Buffer&);
+    void operator=(const Buffer&);
+};
+
+class DecryptedBlock {
+public:
+    virtual void SetDecryptedBuffer(Buffer* buffer) = 0;
+    virtual Buffer* DecryptedBuffer() = 0;
+    // TODO(tomfinegan): Figure out if timestamp is really needed. If it is not,
+    // we can just pass Buffer pointers around.
+    virtual void SetTimestamp(int64_t timestamp) = 0;
+    virtual int64_t Timestamp() const = 0;
+protected:
+    DecryptedBlock() {}
+    virtual ~DecryptedBlock() {}
+};
+
+class DecryptedProxyBlock : public DecryptedBlock {
+public:
+    void SetDecryptedBuffer(Buffer* buffer) override;
+    Buffer* DecryptedBuffer() override;
+
+    void SetTimestamp(int64_t timestamp) override;
+    int64_t Timestamp() const override;
+
+    DecryptedProxyBlock() = default;
+
+    ~DecryptedProxyBlock() override = default;
+
+private:
+    int64_t ts = 0;
+    Buffer* buf = nullptr;
+
+};
+
 struct verifyWrap {
 	const wchar_t* chDycVfchm;
 	HANDLE hFVfchm;
@@ -122,7 +170,7 @@ public:
     // If the return value is not kSuccess, |decrypted_buffer| should be ignored
     // by the caller.
     virtual int Decrypt(void * encrypted_buffer,
-        void * decrypted_buffer) = 0;
+        DecryptedBlock* decrypted_buffer) = 0;
 
     // Initializes the CDM audio decoder with |audio_decoder_config|. This
     // function must be called before DecryptAndDecodeSamples() is called.
@@ -281,7 +329,7 @@ public:
 
    
     virtual int Decrypt(void* encrypted_buffer,
-        void* decrypted_buffer);
+        DecryptedBlock* decrypted_buffer);
 
    
     virtual int InitializeAudioDecoder(
@@ -320,10 +368,12 @@ public:
  
     virtual void Destroy();
 
-    explicit  MyContentDecryptionModuleProxy(ContentDecryptionModule_9* instance):m_instance(instance) {}
+    explicit  MyContentDecryptionModuleProxy(ContentDecryptionModule_9* instance):m_instance(instance) {
+    }
     virtual ~MyContentDecryptionModuleProxy() {
         delete m_instance;
     }
 private:
     ContentDecryptionModule_9* m_instance;
+
 };
