@@ -9,3 +9,6 @@ ENDIF()
 
 
 add_executable(map map.cpp)
+
+
+target_include_directories(map PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
