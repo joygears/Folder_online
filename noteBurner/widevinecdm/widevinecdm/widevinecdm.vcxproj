@@ -146,10 +146,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cdmHost.cpp" />
     <ClCompile Include="fucntion.cpp" />
     <ClCompile Include="widevinecdm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cdmHost.h" />
     <ClInclude Include="fucntion.h" />
     <ClInclude Include="widevinecdm.h" />
   </ItemGroup>

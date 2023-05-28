@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-void delog(const char* fmt, ...);
+void Log(const char* fmt, ...);
 void writeToFile(const wchar_t* buf);
 
 int Write( LPTSTR lpPath, LPSTR lpText);

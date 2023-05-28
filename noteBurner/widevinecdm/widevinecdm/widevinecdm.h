@@ -80,6 +80,9 @@ void*  (*_CreateCdmInstance)(int interface_version, const char* key_system, uint
 	void* host_function, void* extra_data);
 void  (*_DeinitializeCdmModule)();
 char* (*_GetCdmVersion)();
+void* (*originHostFunction)(int host_version, void* user_data);
+void* HostFunction(int host_version, void* user_data);
+
 
 DLL_EXPORT void InitializeCdmModule_4();
 DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system, uint32_t key_system_len,
@@ -375,5 +378,13 @@ public:
     }
 private:
     ContentDecryptionModule_9* m_instance;
+
+};
+
+
+class CDMHost {
+
+
+
 
 };

@@ -5,13 +5,13 @@
 #include <mutex>
 
 
-void delog(const wchar_t* fmt)
+void Log(const wchar_t* fmt)
 { 
    
 }
 
 
-void delog(const char * fmt, ...)
+void Log(const char * fmt, ...)
 {
     CHAR _buf[256] = { 0 };
     CHAR _buf2[256] = "czl ";
@@ -53,7 +53,7 @@ int Write( LPTSTR lpPath, LPSTR lpText)
 
 	if (hFile == nullptr)
 	{
-		delog("hFile == nullptr getLastError %d", GetLastError());
+		Log("hFile == nullptr getLastError %d", GetLastError());
 		return -1;
 	}
 

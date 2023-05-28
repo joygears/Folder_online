@@ -18,7 +18,7 @@ void initializeApp() {
     HANDLE hFVfchm = CreateFile(dycVfchm.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
     HANDLE hSigVfchm = CreateFile(sigVfchm.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
 
-    delog("open file, %p, %p, %p, %p\n", HDycWidevinecdm, HSigWidevinecdm, hFVfchm, hSigVfchm);
+    Log("open file, %p, %p, %p, %p\n", HDycWidevinecdm, HSigWidevinecdm, hFVfchm, hSigVfchm);
 
 
     wrap.chDycVfchm = dycVfchm.c_str();
@@ -32,7 +32,7 @@ void initializeApp() {
     HMODULE hWidevine = LoadLibrary(dycWidevine.c_str());
 
     if(!hWidevine)
-    delog("LoadLibrary widevinecdm.dll error  GetLasterror %d\n", GetLastError());
+    Log("LoadLibrary widevinecdm.dll error  GetLasterror %d\n", GetLastError());
     
     VerifyCdmHost_0 = (bool (*)(verifyWrap*, int flag))GetProcAddress(hWidevine, "VerifyCdmHost_0");
     _InitializeCdmModule_4 = (void (*)())GetProcAddress(hWidevine, "InitializeCdmModule_4");
@@ -41,11 +41,11 @@ void initializeApp() {
     _DeinitializeCdmModule = (void (*)())GetProcAddress(hWidevine, "DeinitializeCdmModule");
     _GetCdmVersion = (char * (*)())GetProcAddress(hWidevine, "GetCdmVersion");
 
-    delog("load widevinecdm success, %p, %p, %p, %p \n", _InitializeCdmModule_4, _CreateCdmInstance, _DeinitializeCdmModule, _GetCdmVersion);
+    Log("load widevinecdm success, %p, %p, %p, %p \n", _InitializeCdmModule_4, _CreateCdmInstance, _DeinitializeCdmModule, _GetCdmVersion);
 
     bool retcode = VerifyCdmHost_0(&wrap, 2);
 
-    delog("widevine VerifyCdmHost_0 retcode value %d\n",retcode);
+    Log("widevine VerifyCdmHost_0 retcode value %d\n",retcode);
 }
 
 int main()
@@ -63,19 +63,30 @@ int main()
 
 
 
+void* HostFunction(int host_version, void* user_data)
+{
+    Log("GetCdmHost called, version %d, user_data %p", host_version, (const void*)user_data);
+    void * cdm_host = originHostFunction(host_version, user_data);
+
+    return nullptr;
+}
+
 DLL_EXPORT void InitializeCdmModule_4()
 {
-    delog("InitializeCdmModule_4\n");
+    Log("InitializeCdmModule_4\n");
     _InitializeCdmModule_4();
 }
 
 DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system, uint32_t key_system_len, void* host_function, void* extra_data)
 {
-    delog("CreateCdmInstance %d, %s, %lld, \n", interface_version, key_system, key_system_len);
-    void* instance = _CreateCdmInstance(interface_version, key_system, key_system_len, host_function, extra_data);
+    Log("CreateCdmInstance %d, %s, %lld, \n", interface_version, key_system, key_system_len);
+
+    originHostFunction = (void* (*)(int host_version, void* user_data))host_function;
+
+    void* instance = _CreateCdmInstance(interface_version, key_system, key_system_len, HostFunction, extra_data);
     if (!instance)
     {
-        delog("no origin instance created\n");
+        Log("no origin instance created\n");
         return nullptr;
     }
 
@@ -84,7 +95,7 @@ DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system
 
 DLL_EXPORT void DeinitializeCdmModule()
 {
-    delog("DeinitializeCdmModule\n");
+    Log("DeinitializeCdmModule\n");
     _DeinitializeCdmModule();
 }
 
@@ -134,11 +145,11 @@ void MyContentDecryptionModuleProxy::Initialize(bool allow_distinctive_identifie
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 76);
+        Log("instance is null, %d", 76);
         return;
     }
    
-    delog("init module(%p), %d, %d, %d", this, allow_distinctive_identifier, allow_persistent_state, flag);
+    Log("init module(%p), %d, %d, %d", this, allow_distinctive_identifier, allow_persistent_state, flag);
 
     m_instance->Initialize(allow_distinctive_identifier, allow_persistent_state, flag);
     allow_distinctive_identifier = 1;
@@ -147,11 +158,11 @@ void MyContentDecryptionModuleProxy::Initialize(bool allow_distinctive_identifie
 
 void MyContentDecryptionModuleProxy::GetStatusForPolicy(uint32_t promise_id, int* policy)
 {
-    delog("module(%p) GetStatusForPolicy", this);
+    Log("module(%p) GetStatusForPolicy", this);
     
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return;
     }
    
@@ -194,7 +205,7 @@ void MyContentDecryptionModuleProxy::GetStatusForPolicy(uint32_t promise_id, int
 
     };
 
-    delog("%s promise_id:%d", aGetstatusforpo.c_str(), promise_id);
+    Log("%s promise_id:%d", aGetstatusforpo.c_str(), promise_id);
 
     m_instance->GetStatusForPolicy(promise_id, policy);
 
@@ -204,10 +215,10 @@ void MyContentDecryptionModuleProxy::SetServerCertificate(uint32_t promise_id, c
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return;
     }
-    delog("SetServerCertificate(%p):", (const void*)this);
+    Log("SetServerCertificate(%p):", (const void*)this);
     m_instance->SetServerCertificate(promise_id, server_certificate_data, server_certificate_data_size);
 }
 
@@ -215,10 +226,10 @@ void MyContentDecryptionModuleProxy::CreateSessionAndGenerateRequest(uint32_t pr
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return;
     }
-    delog("CreateSessionAndGenerateRequest(%p):", (const void*)this);
+    Log("CreateSessionAndGenerateRequest(%p):", (const void*)this);
     m_instance->CreateSessionAndGenerateRequest(promise_id, session_type, init_data_type, init_data, init_data_size);
 
 }
@@ -227,10 +238,10 @@ void MyContentDecryptionModuleProxy::LoadSession(uint32_t promise_id, int sessio
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return;
     }
-    delog("LoadSession(%p):", (const void*)this);
+    Log("LoadSession(%p):", (const void*)this);
     m_instance->LoadSession(promise_id, session_type, session_id, session_id_size);
 
 }
@@ -239,10 +250,10 @@ void MyContentDecryptionModuleProxy::UpdateSession(uint32_t promise_id, const ch
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return;
     }
-    delog("UpdateSession(%p):", (const void*)this);
+    Log("UpdateSession(%p):", (const void*)this);
     m_instance->UpdateSession(promise_id, session_id, session_id_size, response, response_size);
 }
 
@@ -250,10 +261,10 @@ void MyContentDecryptionModuleProxy::CloseSession(uint32_t promise_id, const cha
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return;
     }
-    delog("CloseSession(%p):", (const void*)this);
+    Log("CloseSession(%p):", (const void*)this);
     m_instance->CloseSession(promise_id, session_id, session_id_size);
 }
 
@@ -262,10 +273,10 @@ void MyContentDecryptionModuleProxy::RemoveSession(uint32_t promise_id, const ch
 
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return;
     }
-    delog("RemoveSession(%p):", (const void*)this);
+    Log("RemoveSession(%p):", (const void*)this);
     m_instance->RemoveSession(promise_id, session_id, session_id_size);
 }
 
@@ -273,10 +284,10 @@ void MyContentDecryptionModuleProxy::TimerExpired(void* context)
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
        
     }
-    delog("TimerExpired(%p):", (const void*)this);
+    Log("TimerExpired(%p):", (const void*)this);
     m_instance->TimerExpired(context);
 }
 
@@ -284,10 +295,10 @@ int MyContentDecryptionModuleProxy::Decrypt(void* encrypted_buffer, DecryptedBlo
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return 0;
     }
-    delog("Decrypt(%p):", (const void*)this);
+    Log("Decrypt(%p):", (const void*)this);
 
     return     m_instance->Decrypt(encrypted_buffer, decrypted_buffer);
 
@@ -298,10 +309,10 @@ int MyContentDecryptionModuleProxy::InitializeAudioDecoder(void* audio_decoder_c
 
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return 0;
     }
-    delog("InitializeAudioDecoder(%p):", (const void*)this);
+    Log("InitializeAudioDecoder(%p):", (const void*)this);
    
     return  m_instance->InitializeAudioDecoder(audio_decoder_config);
 }
@@ -310,10 +321,10 @@ int MyContentDecryptionModuleProxy::InitializeVideoDecoder(void* video_decoder_c
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return 0;
     }
-    delog("InitializeVideoDecoder(%p):", (const void*)this);
+    Log("InitializeVideoDecoder(%p):", (const void*)this);
 
     return  m_instance->InitializeVideoDecoder(video_decoder_config);
 }
@@ -322,10 +333,10 @@ void MyContentDecryptionModuleProxy::DeinitializeDecoder(int decoder_type)
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return;
     }
-    delog("DeinitializeDecoder(%p):", (const void*)this);
+    Log("DeinitializeDecoder(%p):", (const void*)this);
     m_instance->DeinitializeDecoder(decoder_type);
 }
 
@@ -333,10 +344,10 @@ void MyContentDecryptionModuleProxy::ResetDecoder(int decoder_type)
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return;
     }
-    delog("ResetDecoder(%p):", (const void*)this);
+    Log("ResetDecoder(%p):", (const void*)this);
     m_instance->ResetDecoder(decoder_type);
 }
 
@@ -344,10 +355,10 @@ int MyContentDecryptionModuleProxy::DecryptAndDecodeFrame(const void* encrypted_
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return 0;
     }
-    delog("DecryptAndDecodeFrame(%p):", (const void*)this);
+    Log("DecryptAndDecodeFrame(%p):", (const void*)this);
 
 
 
@@ -360,10 +371,10 @@ int MyContentDecryptionModuleProxy::DecryptAndDecodeSamples(void* encrypted_buff
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return 0;
     }
-    delog("DecryptAndDecodeSamples(%p):", (const void*)this);
+    Log("DecryptAndDecodeSamples(%p):", (const void*)this);
 
     return  m_instance->DecryptAndDecodeSamples(encrypted_buffer, audio_frames);
  
@@ -374,10 +385,10 @@ void MyContentDecryptionModuleProxy::OnPlatformChallengeResponse(void* response)
 
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return;
     }
-    delog("OnPlatformChallengeResponse(%p):", (const void*)this);
+    Log("OnPlatformChallengeResponse(%p):", (const void*)this);
     
     m_instance->OnPlatformChallengeResponse(response);
 }
@@ -387,10 +398,10 @@ void MyContentDecryptionModuleProxy::OnQueryOutputProtectionStatus(int result, u
 
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return;
     }
-    delog("OnQueryOutputProtectionStatus(%p):", (const void*)this);
+    Log("OnQueryOutputProtectionStatus(%p):", (const void*)this);
 
     m_instance->OnQueryOutputProtectionStatus(result, link_mask, output_protection_mask);
 }
@@ -400,10 +411,10 @@ void MyContentDecryptionModuleProxy::OnStorageId(uint32_t version, const uint8_t
 
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return;
     }
-    delog("OnStorageId(%p):", (const void*)this);
+    Log("OnStorageId(%p):", (const void*)this);
 
     m_instance->OnStorageId(version, storage_id, storage_id_size);
 }
@@ -412,10 +423,10 @@ void MyContentDecryptionModuleProxy::Destroy()
 {
     if (!m_instance)
     {
-        delog("instance is null, %d", 96);
+        Log("instance is null, %d", 96);
         return;
     }
-    delog("Destroy(%p):", (const void*)this);
+    Log("Destroy(%p):", (const void*)this);
 
 
 
