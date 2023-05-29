@@ -2,7 +2,7 @@
 //
 #include "widevinecdm.h"
 #include "fucntion.h"
-
+#include "cdmHost.h"
 
 void initializeApp() {
     wstring dycWidevine = TEXT(R"(.\..\..\sig_files\widevinecdm.dll)");
@@ -66,9 +66,9 @@ int main()
 void* HostFunction(int host_version, void* user_data)
 {
     Log("GetCdmHost called, version %d, user_data %p", host_version, (const void*)user_data);
-    void * cdm_host = originHostFunction(host_version, user_data);
-
-    return nullptr;
+    Host* cdm_host = (Host *)originHostFunction(host_version, user_data);
+    g_CDMHost = new cdmHost(cdm_host);
+    return g_CDMHost;
 }
 
 DLL_EXPORT void InitializeCdmModule_4()
@@ -89,8 +89,17 @@ DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system
         Log("no origin instance created\n");
         return nullptr;
     }
+    Log("module version, %d", interface_version);
 
-    return new MyContentDecryptionModuleProxy(static_cast<ContentDecryptionModule_9 *>(instance));
+    if (interface_version != 10)
+    {
+        Log("unhandled version, %d", interface_version);
+        return instance;
+    }
+
+    MyContentDecryptionModuleProxy* proxy = new MyContentDecryptionModuleProxy(static_cast<ContentDecryptionModule_9*>(instance));
+    
+    return proxy;
 }
 
 DLL_EXPORT void DeinitializeCdmModule()
@@ -401,8 +410,15 @@ void MyContentDecryptionModuleProxy::OnQueryOutputProtectionStatus(int result, u
         Log("instance is null, %d", 96);
         return;
     }
-    Log("OnQueryOutputProtectionStatus(%p):", (const void*)this);
-
+    Log("OnQueryOutputProtectionStatus, %u, %u, %u", result, link_mask, output_protection_mask);
+    if (result)
+    {
+        Log("QueryOutputProtectionStatus failed");
+    }
+    else {
+        Log("output_link_type: %s", getLink_maskMean(link_mask));
+        Log( "output_protection: %s", getOutput_protection_mean(output_protection_mask));
+    }
     m_instance->OnQueryOutputProtectionStatus(result, link_mask, output_protection_mask);
 }
 
@@ -433,6 +449,62 @@ void MyContentDecryptionModuleProxy::Destroy()
     m_instance->Destroy();
 }
 
+std::string MyContentDecryptionModuleProxy::getLink_maskMean(int link_mask)
+{
+    string result;
+    switch (link_mask)
+    {
+    case 0:
+        result = "None";
+        break;
+    case 1:
+        result = "Unknown";
+
+        break;
+    case 2:
+        result = "Internal";
+
+        break;
+    case 4:
+        result = "VGA";
+        
+        break;
+    case 8:
+        result = "HDMI";
+       
+        break;
+    case 16:
+        result = "DVI";
+        
+        break;
+    case 32:
+        result = "DisplayPort";
+       
+        break;
+    case 64:
+        result = "Network";
+       
+        break;
+    default:
+        result = "Unknown";
+        break;
+    }
+    
+    return result;
+}
+
+std::string MyContentDecryptionModuleProxy::getOutput_protection_mean(int output_protection_mask)
+{
+    return output_protection_mask == 1 ? "HDCP" : "None";
+}
+
+MyContentDecryptionModuleProxy::MyContentDecryptionModuleProxy(ContentDecryptionModule_9* instance) :m_instance(instance) {
+    g_mtx.lock();
+    g_listInstance.push_back(instance);
+    Log("construct module, count: %d", g_listInstance.size());
+    g_mtx.unlock();
+}
+
 void DecryptedProxyBlock::SetDecryptedBuffer(Buffer* buffer) {
     buf = buffer;
 }
@@ -447,3 +519,6 @@ void DecryptedProxyBlock::SetTimestamp(int64_t timestamp) {
 int64_t DecryptedProxyBlock::Timestamp() const {
     return ts;
 }
+
+std::mutex MyContentDecryptionModuleProxy::g_mtx;
+std::list< ContentDecryptionModule_9*> MyContentDecryptionModuleProxy::g_listInstance;

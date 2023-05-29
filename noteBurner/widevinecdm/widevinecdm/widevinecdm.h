@@ -3,7 +3,8 @@
 
 #include <Windows.h>
 #include <iostream>
-
+#include <list>
+#include <mutex>
 using namespace std;
 
 #define DLL_EXPORT extern "C" __declspec( dllexport )
@@ -370,21 +371,16 @@ public:
 
  
     virtual void Destroy();
-
-    explicit  MyContentDecryptionModuleProxy(ContentDecryptionModule_9* instance):m_instance(instance) {
-    }
+    std::string getLink_maskMean(int link_mask);
+    std::string getOutput_protection_mean(int output_protection_mask);
+    explicit  MyContentDecryptionModuleProxy(ContentDecryptionModule_9* instance);
     virtual ~MyContentDecryptionModuleProxy() {
         delete m_instance;
     }
 private:
     ContentDecryptionModule_9* m_instance;
-
+    static std::list<ContentDecryptionModule_9 *> g_listInstance;
+    static std::mutex g_mtx;
 };
 
 
-class CDMHost {
-
-
-
-
-};

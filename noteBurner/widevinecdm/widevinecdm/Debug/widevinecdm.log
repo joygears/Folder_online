@@ -1,6 +1,3 @@
-﻿  fucntion.cpp
-D:\sourcetree\Folder_online\noteBurner\widevinecdm\widevinecdm\fucntion.cpp(19,9): warning C4101: “n”: 未引用的局部变量
-  widevinecdm.cpp
-  正在生成代码...
-    正在创建库 D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.lib 和对象 D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exp
-  widevinecdm.vcxproj -> D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.dll
+﻿  widevinecdm.cpp
+    正在创建库 D:\Users\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.lib 和对象 D:\Users\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exp
+  widevinecdm.vcxproj -> D:\Users\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.dll

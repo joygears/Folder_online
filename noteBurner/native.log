@@ -1,0 +1,1136 @@
+2023-05-29 15:08:15.119 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] ############### Initialize: NoteBurner Netflix Video Downloader ###############
+2023-05-29 15:08:15.120 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetEnv: APP_NATIVE_PATH = D:\app\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native
+2023-05-29 15:08:15.120 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] native_path:D:\app\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native
+2023-05-29 15:08:15.120 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetEnv: APP_VMP_VERIFY = 1
+2023-05-29 15:08:15.120 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] set verification: 1 1
+2023-05-29 15:08:15.139 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] load widevinecdm success, 7B842CC0, 7B842CF0, 7B842D10, 7B842E90 
+2023-05-29 15:08:15.140 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] open file, 000004AC, 000004B0, 0000048C, 000004A8
+2023-05-29 15:08:15.186 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] verification returned 1
+2023-05-29 15:08:17.206 INFO [NoteBurner Netflix Video Downloader.exe:21804:4e88] thread wsclient run
+2023-05-29 15:08:17.206 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] thread tid:0
+2023-05-29 15:08:17.207 INFO [NoteBurner Netflix Video Downloader.exe:21804:4e88] GetEnv: APP_IDENTIFIER = NoteBurner-netflix
+2023-05-29 15:08:17.207 INFO [NoteBurner Netflix Video Downloader.exe:21804:4e88] GetEnv: NoteBurner-netflix_IPC_PORT = 2265
+2023-05-29 15:08:17.207 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4e88] [IPC] Client keeper_21804 is going to connect ws://127.0.0.1:2265
+2023-05-29 15:08:17.207 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4e88] [IPC] Client keeper_21804 get connection to server ok.
+2023-05-29 15:08:17.212 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 connect to server open.
+2023-05-29 15:08:17.212 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 notify client id to server complete.
+2023-05-29 15:08:17.212 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received server id: mediaconvert_NoteBurner-netflix
+2023-05-29 15:08:17.212 INFO [NoteBurner Netflix Video Downloader.exe:21804:487c] connect suc mediaconvert_NoteBurner-netflix
+2023-05-29 15:08:17.212 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: mediaconvert_NoteBurner-netflix.
+2023-05-29 15:08:17.213 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_0 sender:mediaconvert_NoteBurner-netflix msg_type:Initialize
+2023-05-29 15:08:17.214 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Preprocess:Initialize
+2023-05-29 15:08:17.214 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:17.214 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:17.214 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Postprocess:Initialize
+2023-05-29 15:08:17.214 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:17.224 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] ipc initialize, 7B6A49E4 2990 1
+2023-05-29 15:08:17.224 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] InitializeCdmModule
+2023-05-29 15:08:17.224 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] CreateCdmInstance 10, com.widevine.alpha, 3004288666743865362, 
+2023-05-29 15:08:17.224 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] encrypted situation
+2023-05-29 15:08:17.225 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetCdmHost called, version 10, user_data 29A78E00
+2023-05-29 15:08:17.225 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:17.304 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module version, 10
+2023-05-29 15:08:17.304 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] construct module, count: 1
+2023-05-29 15:08:17.304 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module SetHost(0C5616B8)
+2023-05-29 15:08:17.304 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] init module(0C5922B0), 0, 1, 0
+2023-05-29 15:08:17.304 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:17.304 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:17.630 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:17.630 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::QueryOutputProtectionStatus
+2023-05-29 15:08:17.630 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnInitialized, 1
+2023-05-29 15:08:17.630 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module(0C5922B0) GetStatusForPolicy
+2023-05-29 15:08:17.630 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:17.637 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolveKeyStatusPromise, promise_id -1, 0
+2023-05-29 15:08:17.637 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] OnQueryOutputProtectionStatus, 0, 0, 0
+2023-05-29 15:08:17.637 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] output_link_type: None
+2023-05-29 15:08:17.637 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] output_protection: None
+2023-05-29 15:08:17.637 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:17.638 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] CreateCdmInstance 10, com.widevine.alpha, 3004301311127584786, 
+2023-05-29 15:08:17.638 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] encrypted situation
+2023-05-29 15:08:17.638 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetCdmHost called, version 10, user_data 29A79500
+2023-05-29 15:08:17.638 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:17.638 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module version, 10
+2023-05-29 15:08:17.638 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] construct module, count: 2
+2023-05-29 15:08:17.638 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module SetHost(0C561728)
+2023-05-29 15:08:17.638 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] init module(0C59C218), 0, 1, 0
+2023-05-29 15:08:17.638 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:17.638 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:17.720 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:17.721 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::QueryOutputProtectionStatus
+2023-05-29 15:08:17.721 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnInitialized, 1
+2023-05-29 15:08:17.721 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module(0C59C218) GetStatusForPolicy
+2023-05-29 15:08:17.721 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:17.721 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolveKeyStatusPromise, promise_id -1, 0
+2023-05-29 15:08:17.721 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] SetServerCertificate(0C5922B0): 944
+2023-05-29 15:08:17.725 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolvePromise, 00000002
+2023-05-29 15:08:17.725 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] OnQueryOutputProtectionStatus, 0, 0, 0
+2023-05-29 15:08:17.725 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] output_link_type: None
+2023-05-29 15:08:17.725 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] output_protection: None
+2023-05-29 15:08:17.725 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:17.726 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] SetServerCertificate(0C59C218): 944
+2023-05-29 15:08:17.729 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolvePromise, 00000002
+2023-05-29 15:08:17.731 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] CreateSessionAndGenerateRequest(0C59C218)
+2023-05-29 15:08:17.731 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:17.731 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:17.731 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:17.732 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: mediaconvert_NoteBurner-netflix.
+2023-05-29 15:08:17.732 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:21804_0 sender:mediaconvert_NoteBurner-netflix msg_type:GetGlobalInfoResult
+2023-05-29 15:08:17.732 INFO [NoteBurner Netflix Video Downloader.exe:21804:487c] token callback:21804_0
+2023-05-29 15:08:17.790 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] SendIpcCommandRpc complete
+2023-05-29 15:08:17.790 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] config SetConvertMode:
+2023-05-29 15:08:17.790 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetConvertMode :4 conver_mode:C
+2023-05-29 15:08:17.790 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] CreateSessionAndGenerateRequest(0C59C218): current convert mode: 4
+2023-05-29 15:08:17.790 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] init_data: 52, 00000034 70737368 00000000 edef8ba9 79d64ace a3c827dc d51d21ed 00000014 08011210 00000000 0589d3dc 00000000 00000000 
+2023-05-29 15:08:17.790 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] init_pssh: 1, AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAWJ09wAAAAAAAAAAA==
+2023-05-29 15:08:17.790 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] target_key_id: 00000000 0589d3dc 00000000 00000000
+2023-05-29 15:08:17.790 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] CreateSessionAndGenerateRequest(0C59C218): do not Launch Sheller: Current convert mode is normal
+2023-05-29 15:08:17.938 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::CreateFileIO
+2023-05-29 15:08:18.020 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::RequestStorageId, 0
+2023-05-29 15:08:18.024 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] OnStorageId called
+2023-05-29 15:08:18.086 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:18.178 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolveNewSessionPromise, 00000003, ADFECD9E3B6C7F1A4030599BB85660F3
+2023-05-29 15:08:18.178 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] [0c561728] Host::OnSessionMessage, session_id ADFECD9E3B6C7F1A4030599BB85660F3, session_id_size 32, message_type 0, message_size 3851, message 0C5E44F0 
+2023-05-29 15:08:18.178 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] [KREQ]cdm normal mode process OnSessionMessage!
+2023-05-29 15:08:18.178 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetConvertMode :4 conver_mode:C
+2023-05-29 15:08:18.178 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] OnSessionMessage(0C561728): invalid cdm_proxy or unsupported convert mode(4)
+2023-05-29 15:08:18.215 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4e88] [IPC] Client keeper_21804 connect to mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:18.215 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4e88] [IPC] Client keeper_21804 got server respond its id: mediaconvert_NoteBurner-netflix
+2023-05-29 15:08:18.215 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4e88] [IPC] Client keeper_21804 connect to server complete.
+2023-05-29 15:08:18.215 INFO [NoteBurner Netflix Video Downloader.exe:21804:4e88] thread wsclient run complete
+2023-05-29 15:08:21.406 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] CreateCdmInstance 10, com.widevine.alpha, 3004305571735142418, 
+2023-05-29 15:08:21.406 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] encrypted situation
+2023-05-29 15:08:21.406 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetCdmHost called, version 10, user_data 29A79420
+2023-05-29 15:08:21.406 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:21.406 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module version, 10
+2023-05-29 15:08:21.406 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] construct module, count: 3
+2023-05-29 15:08:21.406 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module SetHost(0C5615D8)
+2023-05-29 15:08:21.406 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] init module(0C5A1CF0), 0, 1, 0
+2023-05-29 15:08:21.406 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:21.406 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:21.484 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:21.484 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::QueryOutputProtectionStatus
+2023-05-29 15:08:21.484 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnInitialized, 1
+2023-05-29 15:08:21.484 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module(0C5A1CF0) GetStatusForPolicy
+2023-05-29 15:08:21.484 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:21.484 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolveKeyStatusPromise, promise_id -1, 0
+2023-05-29 15:08:21.484 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] OnQueryOutputProtectionStatus, 0, 0, 0
+2023-05-29 15:08:21.484 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] output_link_type: None
+2023-05-29 15:08:21.484 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] output_protection: None
+2023-05-29 15:08:21.484 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:21.485 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] SetServerCertificate(0C5A1CF0): 944
+2023-05-29 15:08:21.488 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolvePromise, 00000002
+2023-05-29 15:08:21.488 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] CreateSessionAndGenerateRequest(0C5A1CF0)
+2023-05-29 15:08:21.488 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:21.488 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:21.488 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:21.489 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: mediaconvert_NoteBurner-netflix.
+2023-05-29 15:08:21.489 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:21804_1 sender:mediaconvert_NoteBurner-netflix msg_type:GetGlobalInfoResult
+2023-05-29 15:08:21.489 INFO [NoteBurner Netflix Video Downloader.exe:21804:487c] token callback:21804_1
+2023-05-29 15:08:21.543 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] SendIpcCommandRpc complete
+2023-05-29 15:08:21.543 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] config SetConvertMode:
+2023-05-29 15:08:21.543 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetConvertMode :4 conver_mode:C
+2023-05-29 15:08:21.543 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] CreateSessionAndGenerateRequest(0C5A1CF0): current convert mode: 4
+2023-05-29 15:08:21.543 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] init_data: 52, 00000034 70737368 00000000 edef8ba9 79d64ace a3c827dc d51d21ed 00000014 08011210 00000000 056aacb8 00000000 00000000 
+2023-05-29 15:08:21.543 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] init_pssh: 1, AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAVqrLgAAAAAAAAAAA==
+2023-05-29 15:08:21.543 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] target_key_id: 00000000 056aacb8 00000000 00000000
+2023-05-29 15:08:21.543 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] CreateSessionAndGenerateRequest(0C5A1CF0): do not Launch Sheller: Current convert mode is normal
+2023-05-29 15:08:21.581 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::CreateFileIO
+2023-05-29 15:08:21.645 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::RequestStorageId, 0
+2023-05-29 15:08:21.648 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] OnStorageId called
+2023-05-29 15:08:21.702 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:21.787 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolveNewSessionPromise, 00000003, AFF1219BFD7C59996057987D27387D38
+2023-05-29 15:08:21.787 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] [0c5615d8] Host::OnSessionMessage, session_id AFF1219BFD7C59996057987D27387D38, session_id_size 32, message_type 0, message_size 3851, message 11CEF158 
+2023-05-29 15:08:21.787 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] [KREQ]cdm normal mode process OnSessionMessage!
+2023-05-29 15:08:21.787 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetConvertMode :4 conver_mode:C
+2023-05-29 15:08:21.787 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] OnSessionMessage(0C5615D8): invalid cdm_proxy or unsupported convert mode(4)
+2023-05-29 15:08:23.055 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] destroy module(0C5922B0)
+2023-05-29 15:08:23.066 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] destruct module. Remained count: 2
+2023-05-29 15:08:23.066 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module destructed(0C5922B0)
+2023-05-29 15:08:23.066 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] close session(0C59C218), 00000004, ADFECD9E3B6C7F1A4030599BB85660F3
+2023-05-29 15:08:23.079 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnSessionClosed, ADFECD9E3B6C7F1A4030599BB85660F3
+2023-05-29 15:08:23.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolvePromise, 00000004
+2023-05-29 15:08:23.083 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] close session(0C5A1CF0), 00000004, AFF1219BFD7C59996057987D27387D38
+2023-05-29 15:08:23.096 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnSessionClosed, AFF1219BFD7C59996057987D27387D38
+2023-05-29 15:08:23.096 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolvePromise, 00000004
+2023-05-29 15:08:23.099 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] destroy module(0C59C218)
+2023-05-29 15:08:23.111 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] destruct module. Remained count: 1
+2023-05-29 15:08:23.111 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module destructed(0C59C218)
+2023-05-29 15:08:23.111 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] destroy module(0C5A1CF0)
+2023-05-29 15:08:23.151 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] destruct module. Remained count: 0
+2023-05-29 15:08:23.151 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module destructed(0C5A1CF0)
+2023-05-29 15:08:27.642 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] CreateCdmInstance 10, com.widevine.alpha, 3004306671246770194, 
+2023-05-29 15:08:27.642 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] encrypted situation
+2023-05-29 15:08:27.642 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetCdmHost called, version 10, user_data 29A79420
+2023-05-29 15:08:27.642 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:27.643 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module version, 10
+2023-05-29 15:08:27.643 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] construct module, count: 1
+2023-05-29 15:08:27.643 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module SetHost(0C5613A8)
+2023-05-29 15:08:27.643 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] init module(0C59D128), 0, 1, 0
+2023-05-29 15:08:27.643 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:27.643 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:27.833 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:27.833 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::QueryOutputProtectionStatus
+2023-05-29 15:08:27.833 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnInitialized, 1
+2023-05-29 15:08:27.833 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module(0C59D128) GetStatusForPolicy
+2023-05-29 15:08:27.833 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:27.833 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolveKeyStatusPromise, promise_id -1, 0
+2023-05-29 15:08:27.834 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] CreateCdmInstance 10, com.widevine.alpha, 3004301860883398674, 
+2023-05-29 15:08:27.834 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] encrypted situation
+2023-05-29 15:08:27.834 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetCdmHost called, version 10, user_data 29A795E0
+2023-05-29 15:08:27.834 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:27.834 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module version, 10
+2023-05-29 15:08:27.834 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] construct module, count: 2
+2023-05-29 15:08:27.834 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module SetHost(0C5614F8)
+2023-05-29 15:08:27.834 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] init module(0C5A1B10), 0, 1, 0
+2023-05-29 15:08:27.834 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:27.834 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:27.928 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:27.928 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::QueryOutputProtectionStatus
+2023-05-29 15:08:27.928 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnInitialized, 1
+2023-05-29 15:08:27.928 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module(0C5A1B10) GetStatusForPolicy
+2023-05-29 15:08:27.928 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:27.928 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolveKeyStatusPromise, promise_id -1, 0
+2023-05-29 15:08:27.928 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] OnQueryOutputProtectionStatus, 0, 0, 0
+2023-05-29 15:08:27.928 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] output_link_type: None
+2023-05-29 15:08:27.928 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] output_protection: None
+2023-05-29 15:08:27.928 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:27.928 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] OnQueryOutputProtectionStatus, 0, 0, 0
+2023-05-29 15:08:27.928 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] output_link_type: None
+2023-05-29 15:08:27.928 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] output_protection: None
+2023-05-29 15:08:27.928 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:27.928 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] SetServerCertificate(0C59D128): 944
+2023-05-29 15:08:27.932 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolvePromise, 00000002
+2023-05-29 15:08:27.932 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] SetServerCertificate(0C5A1B10): 944
+2023-05-29 15:08:27.936 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolvePromise, 00000002
+2023-05-29 15:08:27.938 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] CreateSessionAndGenerateRequest(0C5A1B10)
+2023-05-29 15:08:27.938 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:27.938 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:27.938 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:27.938 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: mediaconvert_NoteBurner-netflix.
+2023-05-29 15:08:27.938 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:21804_2 sender:mediaconvert_NoteBurner-netflix msg_type:GetGlobalInfoResult
+2023-05-29 15:08:27.938 INFO [NoteBurner Netflix Video Downloader.exe:21804:487c] token callback:21804_2
+2023-05-29 15:08:27.994 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] SendIpcCommandRpc complete
+2023-05-29 15:08:27.994 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] config SetConvertMode:C
+2023-05-29 15:08:27.994 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetConvertMode :0 conver_mode:C
+2023-05-29 15:08:27.994 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] CreateSessionAndGenerateRequest(0C5A1B10): current convert mode: 0
+2023-05-29 15:08:27.994 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] init_data: 52, 00000034 70737368 00000000 edef8ba9 79d64ace a3c827dc d51d21ed 00000014 08011210 00000000 044728f4 00000000 00000000 
+2023-05-29 15:08:27.994 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] init_pssh: 1, AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAARHKPQAAAAAAAAAAA==
+2023-05-29 15:08:27.994 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] target_key_id: 00000000 044728f4 00000000 00000000
+2023-05-29 15:08:27.994 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetShellerByPssh: array size:0 input pssh:AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAARHKPQAAAAAAAAAAA==
+2023-05-29 15:08:27.995 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetEnv: APP_NATIVE_PATH = D:\app\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native
+2023-05-29 15:08:27.995 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] native_path: D:\app\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native
+2023-05-29 15:08:28.170 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] launch pid:14116
+2023-05-29 15:08:28.210 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::CreateFileIO
+2023-05-29 15:08:28.276 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::RequestStorageId, 0
+2023-05-29 15:08:28.279 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] OnStorageId called
+2023-05-29 15:08:28.333 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:28.422 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnResolveNewSessionPromise, 00000003, 37CFB9B7A006850478D4787F566CE922
+2023-05-29 15:08:28.422 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] session created(0C5A1B10), 00000003, 37CFB9B7A006850478D4787F566CE922
+2023-05-29 15:08:28.422 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] [0c5614f8] Host::OnSessionMessage, session_id 37CFB9B7A006850478D4787F566CE922, session_id_size 32, message_type 0, message_size 3851, message 0C5B6350 
+2023-05-29 15:08:28.422 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] [KREQ]cdm normal mode process OnSessionMessage!
+2023-05-29 15:08:28.422 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetConvertMode :0 conver_mode:C
+2023-05-29 15:08:28.423 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::OnSessionMessage type:1
+2023-05-29 15:08:28.423 WARN [NoteBurner Netflix Video Downloader.exe:21804:5afc] sheller ready fail. shell_pid: 14116. id: . reason: license request.
+2023-05-29 15:08:28.531 WARN [NoteBurner Netflix Video Downloader.exe:21804:5afc] sheller ready fail. shell_pid: 14116. id: . reason: license request.
+2023-05-29 15:08:28.640 WARN [NoteBurner Netflix Video Downloader.exe:21804:5afc] sheller ready fail. shell_pid: 14116. id: . reason: license request.
+2023-05-29 15:08:28.674 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:28.674 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:14116_0 sender:shell_14116 msg_type:Echo
+2023-05-29 15:08:28.674 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Preprocess:Echo
+2023-05-29 15:08:28.674 INFO [NoteBurner Netflix Video Downloader.exe:21804:17a4] OnEcho: id: shell_14116 pid: 14116
+2023-05-29 15:08:28.674 INFO [NoteBurner Netflix Video Downloader.exe:21804:17a4] GetShellerByPid shell_pid:14116  pid:14116
+2023-05-29 15:08:28.674 INFO [NoteBurner Netflix Video Downloader.exe:21804:17a4] found
+2023-05-29 15:08:28.674 INFO [NoteBurner Netflix Video Downloader.exe:21804:17a4] sheller setid shell_pid:14116 id: pssh:AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAARHKPQAAAAAAAAAAA==
+2023-05-29 15:08:28.674 INFO [NoteBurner Netflix Video Downloader.exe:21804:17a4] sheller setid 2
+2023-05-29 15:08:28.675 INFO [NoteBurner Netflix Video Downloader.exe:21804:17a4] CheckShellerActive: sheller array size: 1
+2023-05-29 15:08:28.675 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Postprocess:Echo
+2023-05-29 15:08:28.747 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] send licenseRequest 21804_3 to shell.
+2023-05-29 15:08:28.747 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Sheller::SendIpcCommandRpc: prepare to send IPC to shell. pid:14116 id:shell_14116 data:{
+   "opData" : {
+      "cert" : "Cr0CCAMSEOVEukALwQ8307Y2+LVP+0MYh/HPkwUijgIwggEKAoIBAQDm875btoWUbGqQD8eAGuBlGY+Pxo8YF1LQR+Ex0pDONMet8EHslcZRBKNQ/09RZFTP0vrYimyYiBmk9GG+S0wB3CRITgweNE15cD33MQYyS3zpBd4z+sCJam2+jj1ZA4uijE2dxGC+gRBRnw9WoPyw7D8RuhGSJ95OEtzg3Ho+mEsxuE5xg9LM4+Zuro/9msz2bFgJUjQUVHo5j+k4qLWu4ObugFmc9DLIAohL58UR5k0XnvizulOHbMMxdzna9lwTw/4SALadEV/CZXBmswUtBgATDKNqjXwokohncpdsWSauH6vfS6FXwizQoZJ9TdjSGC60rUB2t+aYDm74cIuxAgMBAAE6EHRlc3QubmV0ZmxpeC5jb20SgAOE0y8yWw2Win6M2/bw7+aqVuQPwzS/YG5ySYvwCGQd0Dltr3hpik98WijUODUr6PxMn1ZYXOLo3eED6xYGM7Riza8XskRdCfF8xjj7L7/THPbixyn4mULsttSmWFhexzXnSeKqQHuoKmerqu0nu39iW3pcxDV/K7E6aaSr5ID0SCi7KRcL9BCUCz1g9c43sNj46BhMCWJSm0mx1XFDcoKZWhpj5FAgU4Q4e6f+S8eX39nf6D6SJRb4ap7Znzn7preIvmS93xWjm75I6UBVQGo6pn4qWNCgLYlGGCQCUm5tg566j+/g5jvYZkTJvbiZFwtjMW5njbSRwB3W4CrKoyxw4qsJNSaZRTKAvSjTKdqVDXV/U5HK7SaBA6iJ981/aforXbd2vZlRXO/2S+Maa2mHULzsD+S5l4/YGpSt7PnkCe25F+nAovtl/ogZgjMeEdFyd/9YMYjOS4krYmwp3yJ7m9ZzYCQ6I8RQN4x/yLlHG5RH/+WNLNUs6JAZ0fFdCmw=",
+      "certMode" : "Set",
+      "pssh" : "AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAARHKPQAAAAAAAAAAA=="
+   },
+   "opType" : "LicenseRequest",
+   "token" : "21804_3"
+}
+
+2023-05-29 15:08:28.747 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:28.748 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to client shell_14116 complete.
+2023-05-29 15:08:28.748 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:29.188 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:29.188 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:21804_3 sender:shell_14116 msg_type:LicenseRequestResult
+2023-05-29 15:08:29.188 INFO [NoteBurner Netflix Video Downloader.exe:21804:487c] token callback:21804_3
+2023-05-29 15:08:29.243 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] SendIpcCommandRpc complete
+2023-05-29 15:08:29.243 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] licenseRequest res session_id len:32,license request len:5136, err code:0
+2023-05-29 15:08:29.243 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] host_ OnSessionMessage. Session ID: 37CFB9B7A006850478D4787F566CE922
+2023-05-29 15:08:29.835 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] UpdateSession(0C5A1B10). promise_id 00000004, session_id 37CFB9B7A006850478D4787F566CE922, session_id_size 32, response 29B78000, response_size 928
+2023-05-29 15:08:29.835 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] UpdateSession(0C5A1B10): message type: 2
+2023-05-29 15:08:29.835 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] GetConvertMode :0 conver_mode:C
+2023-05-29 15:08:29.835 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] UpdateSession(0C5A1B10) promise_id: 00000004. session_id: 37CFB9B7A006850478D4787F566CE922. Convert Mode: 0
+2023-05-29 15:08:29.835 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] UpdateSession(0C5A1B10) session_id_:37CFB9B7A006850478D4787F566CE922. pssh_:AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAARHKPQAAAAAAAAAAA==
+2023-05-29 15:08:29.835 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] [KREQ]cdm UpdateSession got message type is LICENSE.
+2023-05-29 15:08:29.835 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] send license 21804_4 to shell.
+2023-05-29 15:08:29.835 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] Sheller::SendIpcCommandRpc: prepare to send IPC to shell. pid:14116 id:shell_14116 data:{
+   "opData" : {
+      "license" : "CAISjQQKtgEKEKZOu4gio7LiApkUMbBBDHwSnQF7InZlcnNpb24iOiIxLjAiLCJlc24iOiJORkNEQ0gtMDItSzY2S0hYMUxDS05RMlFXODY2TDJHQzg1R0dWTTlOIiwic2FsdCI6IjIyMjg4NDg5NzA2Mzg1MjQ3ODE5ODIzMzA0NjQ4NTI4MTEiLCJpc3N1ZVRpbWUiOjE2ODUzNDQxMDkwMDAsIm1vdmllSWQiOiI2MDAzNDU4NyJ9IAEoABIUCAEQABgAIMDRAijA0QJYAGABeAEaZhIQB/2JwzrL1uqo+orFG2CgQxpQeAEHsFHasyq4OjtEPYEIHTC1hpEyQtoHZ0f7ww8ml+kuDBAoXtLCg9YfyicdW/zu3veNGCL+5H8UR5gIipfPzseFQcZLXQUWr+tqP/j8EYggARpkChAAAAAABJ5bTwAAAAAAAAAAEhB1qUMyIt5sz+jxmz4sGuyqGiBTxnJHixj31w61eFJ03M/Y2DpCDnfZuB7xRg8qRAgDzSACKAIyBAgAECpCEgoQa2MxNgAAAAD0jLC0pAAACBpkChAAAAAABEco9AAAAAAAAAAAEhCBxUenj72NGFT+/h6MssMwGiCwIbYSUub+b4QVpo4ej2doBrVGzs2IIRn4c8y7C5NuvSACKAI6BAgAECpCEgoQa2MxNgAAAAD0jLC0hAAACCDtntGjBjgAUAUaIMibNesqwdJD0zK0woBKWtoEsLRRwBsv7Akv7bYlHTTvIoABQYI7NUVbTNXQwsIr4eSzIFiYtw+jHi9Dw43Y/tMED78be2rdYlP83N/dVHanJKcQm6O0TrXPUDxIuXLAWo3vYIXI1h0v8ytlmro3EltJIas3rV+uA+9LAOohnEaF8j4PCqZPI8VtDdRTHMWflHBfwOUdfO9jWLru4KktAnY5zQQ6CAoGMTguMC4xQAFK2AEAAAACAAAA2AAFABD0jLC0I25kqgAAANMAAAAQAAAA5QAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAqMAAAAAAAACowAAAAAAAAAAAAAAAAgAAATsAAAAQAAABTQAAABAAAAFfAAAAEAAAAAAAAAAAAAABjQAAABAAAAGhAAAAEAAAAbMAAAAQAAABxQAAABAAAAAAAAAAAAAAAfMAAAAQS6wGkBNXeqD2gbNljs11klpS43lU/0tZ5WRORf5Xq0tYAQ==",
+      "sessionId" : "BF8C777F34DE4F612CE38CF650A6B267"
+   },
+   "opType" : "License",
+   "token" : "21804_4"
+}
+
+2023-05-29 15:08:29.835 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:29.836 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to client shell_14116 complete.
+2023-05-29 15:08:29.836 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:30.419 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:30.419 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:21804_4 sender:shell_14116 msg_type:LicenseResult
+2023-05-29 15:08:30.419 INFO [NoteBurner Netflix Video Downloader.exe:21804:487c] token callback:21804_4
+2023-05-29 15:08:30.455 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] SendIpcCommandRpc complete
+2023-05-29 15:08:30.455 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5afc] License session:BF8C777F34DE4F612CE38CF650A6B267 shellerpid:shell_14116 response code:0, keys:0
+2023-05-29 15:08:30.455 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] UpdateSession(0C5A1B10): license succeeded. session id: 37CFB9B7A006850478D4787F566CE922. shell pid: 14116.
+2023-05-29 15:08:32.772 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: mediaconvert_NoteBurner-netflix.
+2023-05-29 15:08:32.772 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:mediaconvert_NoteBurner-netflix msg_type:Convert
+2023-05-29 15:08:32.773 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Preprocess:Convert
+2023-05-29 15:08:32.773 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Preprocess:convert task
+2023-05-29 15:08:32.773 INFO [NoteBurner Netflix Video Downloader.exe:21804:1798] track size: 4. media_id: 60034587_HXQOGp
+2023-05-29 15:08:32.773 INFO [NoteBurner Netflix Video Downloader.exe:21804:1798] GetAllShellerByPssh: found 1 sheller by pssh AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAARHKPQAAAAAAAAAAA==
+2023-05-29 15:08:32.773 INFO [NoteBurner Netflix Video Downloader.exe:21804:1798] Sheller::IsLicenseComplete: is_license_request: 2. is_license: 2. pid: 14116.
+2023-05-29 15:08:32.773 INFO [NoteBurner Netflix Video Downloader.exe:21804:1798] OnConvert: sheller: 0C546AF0. pid: 14116
+2023-05-29 15:08:32.773 INFO [NoteBurner Netflix Video Downloader.exe:21804:1798] OnConvert: sheller found. pid: 14116. pssh:AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAARHKPQAAAAAAAAAAA==
+2023-05-29 15:08:32.774 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Sheller::SendIpcCommandAsync: prepare to send IPC to shell. pid:14116 id:shell_14116 info:Convert,24368_2,60034587_HXQOGp
+2023-05-29 15:08:32.774 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:32.774 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Postprocess:Convert
+2023-05-29 15:08:32.774 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to client shell_14116 complete.
+2023-05-29 15:08:32.774 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:35.956 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:35.956 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:35.956 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Preprocess:ConvertProgress
+2023-05-29 15:08:35.956 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:35.956 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:35.956 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:35.956 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Postprocess:ConvertProgress
+2023-05-29 15:08:35.956 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:36.967 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:36.967 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:36.967 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Preprocess:ConvertProgress
+2023-05-29 15:08:36.967 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:36.967 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:36.967 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:36.967 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Postprocess:ConvertProgress
+2023-05-29 15:08:36.967 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:37.428 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] destroy module(0C59D128)
+2023-05-29 15:08:37.442 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] destruct module. Remained count: 1
+2023-05-29 15:08:37.442 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module destructed(0C59D128)
+2023-05-29 15:08:37.982 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:37.982 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:37.982 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Preprocess:ConvertProgress
+2023-05-29 15:08:37.982 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:37.982 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:37.982 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:37.983 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Postprocess:ConvertProgress
+2023-05-29 15:08:37.983 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:38.989 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:38.989 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:38.989 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Preprocess:ConvertProgress
+2023-05-29 15:08:38.989 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:38.989 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:38.989 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:38.989 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Postprocess:ConvertProgress
+2023-05-29 15:08:38.989 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:39.607 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:39.607 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:39.607 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Preprocess:ConvertProgress
+2023-05-29 15:08:39.607 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:39.608 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:39.608 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:39.608 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Postprocess:ConvertProgress
+2023-05-29 15:08:39.608 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:40.996 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:40.996 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:40.997 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Preprocess:ConvertProgress
+2023-05-29 15:08:40.997 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:40.997 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:40.997 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:40.997 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Postprocess:ConvertProgress
+2023-05-29 15:08:40.997 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:42.001 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:42.001 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:42.002 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Preprocess:ConvertProgress
+2023-05-29 15:08:42.002 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:42.002 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:42.002 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:42.002 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Postprocess:ConvertProgress
+2023-05-29 15:08:42.002 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:43.003 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:43.003 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:43.003 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Preprocess:ConvertProgress
+2023-05-29 15:08:43.003 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:43.003 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:43.003 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:43.003 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Postprocess:ConvertProgress
+2023-05-29 15:08:43.003 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:44.017 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:44.017 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:44.017 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Preprocess:ConvertProgress
+2023-05-29 15:08:44.017 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:44.017 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:44.017 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:44.017 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Postprocess:ConvertProgress
+2023-05-29 15:08:44.017 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:45.019 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:45.019 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:45.019 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Preprocess:ConvertProgress
+2023-05-29 15:08:45.019 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:45.019 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:45.019 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:45.019 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:45.019 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Postprocess:ConvertProgress
+2023-05-29 15:08:45.932 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:45.932 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:45.932 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Preprocess:ConvertProgress
+2023-05-29 15:08:45.932 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:45.932 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:45.932 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:45.932 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Postprocess:ConvertProgress
+2023-05-29 15:08:45.933 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:47.030 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:47.030 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:47.030 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Preprocess:ConvertProgress
+2023-05-29 15:08:47.030 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:47.030 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:47.030 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:47.030 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Postprocess:ConvertProgress
+2023-05-29 15:08:47.030 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:48.035 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:48.035 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:48.035 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Preprocess:ConvertProgress
+2023-05-29 15:08:48.036 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:48.036 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:48.036 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:48.036 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Postprocess:ConvertProgress
+2023-05-29 15:08:48.036 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:49.047 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:49.047 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:49.047 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Preprocess:ConvertProgress
+2023-05-29 15:08:49.047 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:49.047 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:49.047 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:49.047 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Postprocess:ConvertProgress
+2023-05-29 15:08:49.048 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:50.051 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:50.051 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:50.051 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Preprocess:ConvertProgress
+2023-05-29 15:08:50.051 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:50.051 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:50.051 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Postprocess:ConvertProgress
+2023-05-29 15:08:50.051 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:50.051 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:51.052 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:51.052 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:51.053 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Preprocess:ConvertProgress
+2023-05-29 15:08:51.053 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:51.053 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:51.053 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:51.053 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Postprocess:ConvertProgress
+2023-05-29 15:08:51.053 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:52.057 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:52.057 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:52.057 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Preprocess:ConvertProgress
+2023-05-29 15:08:52.057 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:52.057 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:52.057 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Postprocess:ConvertProgress
+2023-05-29 15:08:52.057 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:52.057 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:53.058 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:53.058 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:53.058 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Preprocess:ConvertProgress
+2023-05-29 15:08:53.058 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:53.058 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:53.058 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:53.058 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Postprocess:ConvertProgress
+2023-05-29 15:08:53.058 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:54.058 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:54.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:54.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Preprocess:ConvertProgress
+2023-05-29 15:08:54.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:54.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:54.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:54.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Postprocess:ConvertProgress
+2023-05-29 15:08:54.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:55.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:55.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:55.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Preprocess:ConvertProgress
+2023-05-29 15:08:55.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:55.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:55.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:55.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:55.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Postprocess:ConvertProgress
+2023-05-29 15:08:56.059 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:56.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:56.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Preprocess:ConvertProgress
+2023-05-29 15:08:56.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:56.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:56.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:56.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Postprocess:ConvertProgress
+2023-05-29 15:08:56.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:57.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:57.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:57.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Preprocess:ConvertProgress
+2023-05-29 15:08:57.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:57.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:57.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:57.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Postprocess:ConvertProgress
+2023-05-29 15:08:57.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:58.060 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:58.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:58.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Preprocess:ConvertProgress
+2023-05-29 15:08:58.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:58.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:58.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:58.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Postprocess:ConvertProgress
+2023-05-29 15:08:58.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:58.284 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:08:58.286 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:08:58.286 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Preprocess:ConvertProgress
+2023-05-29 15:08:58.286 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] OnConvertProgress.. token:24368_2
+2023-05-29 15:08:58.286 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:08:58.286 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Postprocess:ConvertProgress
+2023-05-29 15:08:58.286 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:08:58.286 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:08:59.836 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] close session(0C5A1B10), 00000005, 37CFB9B7A006850478D4787F566CE922, abort: under converting
+2023-05-29 15:09:00.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:00.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:00.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Preprocess:ConvertProgress
+2023-05-29 15:09:00.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:00.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:00.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Postprocess:ConvertProgress
+2023-05-29 15:09:00.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:00.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:01.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:01.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:01.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Preprocess:ConvertProgress
+2023-05-29 15:09:01.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:01.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:01.061 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:01.062 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Postprocess:ConvertProgress
+2023-05-29 15:09:01.062 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:02.062 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:02.062 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:02.062 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Preprocess:ConvertProgress
+2023-05-29 15:09:02.062 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:02.062 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:02.062 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:02.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Postprocess:ConvertProgress
+2023-05-29 15:09:02.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:03.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:03.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:03.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Preprocess:ConvertProgress
+2023-05-29 15:09:03.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:03.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:03.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:03.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Postprocess:ConvertProgress
+2023-05-29 15:09:03.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:04.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:04.064 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:04.064 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Preprocess:ConvertProgress
+2023-05-29 15:09:04.064 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:04.064 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:04.064 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:04.064 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:04.064 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Postprocess:ConvertProgress
+2023-05-29 15:09:05.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:05.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:05.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Preprocess:ConvertProgress
+2023-05-29 15:09:05.063 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:05.064 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:05.064 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Postprocess:ConvertProgress
+2023-05-29 15:09:05.064 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:05.064 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:06.064 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:06.064 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:06.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Preprocess:ConvertProgress
+2023-05-29 15:09:06.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:06.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:06.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:06.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Postprocess:ConvertProgress
+2023-05-29 15:09:06.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:07.065 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:07.065 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:07.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Preprocess:ConvertProgress
+2023-05-29 15:09:07.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:07.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:07.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Postprocess:ConvertProgress
+2023-05-29 15:09:07.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:07.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:08.065 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:08.065 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:08.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Preprocess:ConvertProgress
+2023-05-29 15:09:08.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:08.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:08.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:08.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:08.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Postprocess:ConvertProgress
+2023-05-29 15:09:09.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:09.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:09.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Preprocess:ConvertProgress
+2023-05-29 15:09:09.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:09.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:09.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:09.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Postprocess:ConvertProgress
+2023-05-29 15:09:09.066 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:10.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:10.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:10.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Preprocess:ConvertProgress
+2023-05-29 15:09:10.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:10.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:10.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:10.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Postprocess:ConvertProgress
+2023-05-29 15:09:10.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:11.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:11.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:11.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Preprocess:ConvertProgress
+2023-05-29 15:09:11.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:11.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:11.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:11.067 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Postprocess:ConvertProgress
+2023-05-29 15:09:11.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:12.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:12.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:12.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Preprocess:ConvertProgress
+2023-05-29 15:09:12.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:12.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:12.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:12.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Postprocess:ConvertProgress
+2023-05-29 15:09:12.069 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:13.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:13.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:13.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Preprocess:ConvertProgress
+2023-05-29 15:09:13.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:13.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:13.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:13.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Postprocess:ConvertProgress
+2023-05-29 15:09:13.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:14.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:14.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:14.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Preprocess:ConvertProgress
+2023-05-29 15:09:14.068 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:14.069 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:14.069 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:14.069 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Postprocess:ConvertProgress
+2023-05-29 15:09:14.069 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:15.069 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:15.069 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:15.069 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Preprocess:ConvertProgress
+2023-05-29 15:09:15.069 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:15.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:15.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:15.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:15.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Postprocess:ConvertProgress
+2023-05-29 15:09:16.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:16.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:16.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Preprocess:ConvertProgress
+2023-05-29 15:09:16.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:16.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:16.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:16.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:16.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Postprocess:ConvertProgress
+2023-05-29 15:09:17.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:17.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:17.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Preprocess:ConvertProgress
+2023-05-29 15:09:17.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:17.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:17.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:17.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Postprocess:ConvertProgress
+2023-05-29 15:09:17.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:18.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:18.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:18.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Preprocess:ConvertProgress
+2023-05-29 15:09:18.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:18.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:18.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:18.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Postprocess:ConvertProgress
+2023-05-29 15:09:18.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:19.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:19.070 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:19.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Preprocess:ConvertProgress
+2023-05-29 15:09:19.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:19.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:19.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:19.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:19.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Postprocess:ConvertProgress
+2023-05-29 15:09:20.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:20.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:20.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Preprocess:ConvertProgress
+2023-05-29 15:09:20.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:20.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:20.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:20.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:20.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Postprocess:ConvertProgress
+2023-05-29 15:09:21.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:21.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:21.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Preprocess:ConvertProgress
+2023-05-29 15:09:21.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:21.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:21.071 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:21.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Postprocess:ConvertProgress
+2023-05-29 15:09:21.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:22.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:22.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:22.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Preprocess:ConvertProgress
+2023-05-29 15:09:22.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:22.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:22.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:22.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Postprocess:ConvertProgress
+2023-05-29 15:09:22.072 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:23.073 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:23.073 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:23.073 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Preprocess:ConvertProgress
+2023-05-29 15:09:23.073 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:23.073 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:23.073 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:23.073 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Postprocess:ConvertProgress
+2023-05-29 15:09:23.073 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:24.074 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:24.074 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:24.074 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Preprocess:ConvertProgress
+2023-05-29 15:09:24.074 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:24.074 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:24.074 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:24.075 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Postprocess:ConvertProgress
+2023-05-29 15:09:24.075 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:25.074 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:25.074 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:25.074 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Preprocess:ConvertProgress
+2023-05-29 15:09:25.074 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:25.074 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:25.074 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:25.074 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Postprocess:ConvertProgress
+2023-05-29 15:09:25.075 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:26.075 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:26.075 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:26.075 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Preprocess:ConvertProgress
+2023-05-29 15:09:26.075 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:26.075 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:26.075 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:26.075 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Postprocess:ConvertProgress
+2023-05-29 15:09:26.075 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:27.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:27.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:27.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Preprocess:ConvertProgress
+2023-05-29 15:09:27.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:27.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:27.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Postprocess:ConvertProgress
+2023-05-29 15:09:27.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:27.077 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:28.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:28.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:28.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Preprocess:ConvertProgress
+2023-05-29 15:09:28.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:28.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:28.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:28.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Postprocess:ConvertProgress
+2023-05-29 15:09:28.076 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:29.077 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:29.077 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:29.077 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Preprocess:ConvertProgress
+2023-05-29 15:09:29.077 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:29.077 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:29.077 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:29.078 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Postprocess:ConvertProgress
+2023-05-29 15:09:29.078 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:30.078 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:30.078 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:30.078 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Preprocess:ConvertProgress
+2023-05-29 15:09:30.078 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:30.078 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:30.078 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Postprocess:ConvertProgress
+2023-05-29 15:09:30.078 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:30.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:31.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:31.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:31.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Preprocess:ConvertProgress
+2023-05-29 15:09:31.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:31.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:31.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:31.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Postprocess:ConvertProgress
+2023-05-29 15:09:31.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:32.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:32.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:32.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Preprocess:ConvertProgress
+2023-05-29 15:09:32.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:32.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:32.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Postprocess:ConvertProgress
+2023-05-29 15:09:32.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:32.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:33.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:33.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:33.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Preprocess:ConvertProgress
+2023-05-29 15:09:33.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:33.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:33.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:33.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:33.079 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Postprocess:ConvertProgress
+2023-05-29 15:09:34.080 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:34.080 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:34.080 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Preprocess:ConvertProgress
+2023-05-29 15:09:34.080 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:34.081 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:34.081 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:34.081 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Postprocess:ConvertProgress
+2023-05-29 15:09:34.081 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:35.081 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:35.081 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:35.081 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Preprocess:ConvertProgress
+2023-05-29 15:09:35.081 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:35.081 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:35.081 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:35.081 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Postprocess:ConvertProgress
+2023-05-29 15:09:35.081 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:36.081 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:36.082 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:36.082 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Preprocess:ConvertProgress
+2023-05-29 15:09:36.082 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:36.082 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:36.082 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:36.082 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:36.082 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Postprocess:ConvertProgress
+2023-05-29 15:09:37.106 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:37.106 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:37.106 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Preprocess:ConvertProgress
+2023-05-29 15:09:37.106 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:37.106 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:37.106 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:37.106 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:37.106 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Postprocess:ConvertProgress
+2023-05-29 15:09:38.107 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:38.107 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:38.107 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Preprocess:ConvertProgress
+2023-05-29 15:09:38.107 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:38.107 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:38.107 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:38.107 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Postprocess:ConvertProgress
+2023-05-29 15:09:38.108 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:39.109 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:39.109 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:39.109 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Preprocess:ConvertProgress
+2023-05-29 15:09:39.109 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:39.109 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:39.109 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Postprocess:ConvertProgress
+2023-05-29 15:09:39.109 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:39.109 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:40.111 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:40.111 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:40.111 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Preprocess:ConvertProgress
+2023-05-29 15:09:40.111 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:40.111 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:40.111 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:40.112 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Postprocess:ConvertProgress
+2023-05-29 15:09:40.112 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:41.110 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:41.110 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:41.110 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Preprocess:ConvertProgress
+2023-05-29 15:09:41.110 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:41.110 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:41.110 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:41.110 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:41.110 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Postprocess:ConvertProgress
+2023-05-29 15:09:42.112 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:42.112 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:42.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Preprocess:ConvertProgress
+2023-05-29 15:09:42.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:42.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:42.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:42.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:42.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Postprocess:ConvertProgress
+2023-05-29 15:09:43.112 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:43.112 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:43.112 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Preprocess:ConvertProgress
+2023-05-29 15:09:43.112 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:43.112 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:43.112 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Postprocess:ConvertProgress
+2023-05-29 15:09:43.112 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:43.112 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:44.112 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:44.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:44.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Preprocess:ConvertProgress
+2023-05-29 15:09:44.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:44.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:44.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Postprocess:ConvertProgress
+2023-05-29 15:09:44.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:44.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:45.114 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:45.114 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:45.114 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Preprocess:ConvertProgress
+2023-05-29 15:09:45.114 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:45.114 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:45.115 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Postprocess:ConvertProgress
+2023-05-29 15:09:45.115 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:45.115 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:46.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:46.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:46.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Preprocess:ConvertProgress
+2023-05-29 15:09:46.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:46.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:46.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Postprocess:ConvertProgress
+2023-05-29 15:09:46.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:46.113 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:47.114 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:47.114 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:47.114 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Preprocess:ConvertProgress
+2023-05-29 15:09:47.114 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:47.114 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:47.114 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:47.114 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:47.114 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Postprocess:ConvertProgress
+2023-05-29 15:09:48.115 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:48.115 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:48.115 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Preprocess:ConvertProgress
+2023-05-29 15:09:48.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:48.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:48.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Postprocess:ConvertProgress
+2023-05-29 15:09:48.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:48.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:49.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:49.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:49.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Preprocess:ConvertProgress
+2023-05-29 15:09:49.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:49.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:49.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Postprocess:ConvertProgress
+2023-05-29 15:09:49.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:49.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:50.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:50.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:50.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Preprocess:ConvertProgress
+2023-05-29 15:09:50.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:50.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:50.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:50.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Postprocess:ConvertProgress
+2023-05-29 15:09:50.116 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:51.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:51.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:51.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Preprocess:ConvertProgress
+2023-05-29 15:09:51.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:51.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:51.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Postprocess:ConvertProgress
+2023-05-29 15:09:51.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:51.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:52.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:52.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:52.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Preprocess:ConvertProgress
+2023-05-29 15:09:52.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:52.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:52.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:52.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Postprocess:ConvertProgress
+2023-05-29 15:09:52.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:53.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:53.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:53.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Preprocess:ConvertProgress
+2023-05-29 15:09:53.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:53.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:53.117 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:53.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:53.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Postprocess:ConvertProgress
+2023-05-29 15:09:54.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:54.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:54.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Preprocess:ConvertProgress
+2023-05-29 15:09:54.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:54.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:54.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Postprocess:ConvertProgress
+2023-05-29 15:09:54.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:54.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:55.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:55.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:55.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Preprocess:ConvertProgress
+2023-05-29 15:09:55.118 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:55.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:55.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:55.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Postprocess:ConvertProgress
+2023-05-29 15:09:55.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:56.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:56.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:56.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Preprocess:ConvertProgress
+2023-05-29 15:09:56.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:56.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:56.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:56.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:56.120 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Postprocess:ConvertProgress
+2023-05-29 15:09:57.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:57.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:57.119 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Preprocess:ConvertProgress
+2023-05-29 15:09:57.120 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:57.120 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:57.120 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Postprocess:ConvertProgress
+2023-05-29 15:09:57.120 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:57.120 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:58.120 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:58.121 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:58.121 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Preprocess:ConvertProgress
+2023-05-29 15:09:58.121 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:58.121 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:58.121 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Postprocess:ConvertProgress
+2023-05-29 15:09:58.121 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:58.121 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:59.121 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:09:59.121 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:09:59.121 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Preprocess:ConvertProgress
+2023-05-29 15:09:59.121 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] OnConvertProgress.. token:24368_2
+2023-05-29 15:09:59.121 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:09:59.121 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:09:59.122 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:09:59.122 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Postprocess:ConvertProgress
+2023-05-29 15:10:00.123 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:00.123 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:00.123 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Preprocess:ConvertProgress
+2023-05-29 15:10:00.123 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:00.123 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:00.123 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Postprocess:ConvertProgress
+2023-05-29 15:10:00.125 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:00.125 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:01.124 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:01.124 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:01.124 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Preprocess:ConvertProgress
+2023-05-29 15:10:01.124 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:01.124 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:01.124 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:01.124 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:01.124 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Postprocess:ConvertProgress
+2023-05-29 15:10:02.125 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:02.125 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:02.125 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Preprocess:ConvertProgress
+2023-05-29 15:10:02.126 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:02.126 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:02.126 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Postprocess:ConvertProgress
+2023-05-29 15:10:02.126 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:02.126 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:03.126 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:03.126 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:03.126 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Preprocess:ConvertProgress
+2023-05-29 15:10:03.126 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:03.126 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:03.126 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Postprocess:ConvertProgress
+2023-05-29 15:10:03.127 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:03.127 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:04.128 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:04.128 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:04.128 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Preprocess:ConvertProgress
+2023-05-29 15:10:04.128 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:04.128 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:04.129 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:04.129 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Postprocess:ConvertProgress
+2023-05-29 15:10:04.129 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:05.128 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:05.129 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:05.129 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Preprocess:ConvertProgress
+2023-05-29 15:10:05.129 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:05.129 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:05.129 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:05.129 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:05.129 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Postprocess:ConvertProgress
+2023-05-29 15:10:06.129 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:06.129 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:06.130 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Preprocess:ConvertProgress
+2023-05-29 15:10:06.130 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:06.130 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:06.130 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:06.130 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Postprocess:ConvertProgress
+2023-05-29 15:10:06.130 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:07.130 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:07.130 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:07.130 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Preprocess:ConvertProgress
+2023-05-29 15:10:07.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:07.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:07.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:07.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:07.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:364c] Postprocess:ConvertProgress
+2023-05-29 15:10:08.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:08.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:08.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Preprocess:ConvertProgress
+2023-05-29 15:10:08.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:08.132 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:08.132 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:08.132 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:b38] Postprocess:ConvertProgress
+2023-05-29 15:10:08.132 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:09.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:09.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:09.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Preprocess:ConvertProgress
+2023-05-29 15:10:09.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:09.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:09.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:09.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5e1c] Postprocess:ConvertProgress
+2023-05-29 15:10:09.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:10.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:10.131 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:10.132 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Preprocess:ConvertProgress
+2023-05-29 15:10:10.132 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:10.132 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:10.132 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:10.132 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:10.132 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5168] Postprocess:ConvertProgress
+2023-05-29 15:10:10.278 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:10.278 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:10.279 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Preprocess:ConvertProgress
+2023-05-29 15:10:10.279 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:10.279 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:10.279 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:10.279 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:10.279 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5c88] Postprocess:ConvertProgress
+2023-05-29 15:10:11.357 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:11.357 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:11.357 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Preprocess:ConvertProgress
+2023-05-29 15:10:11.357 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:11.357 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:11.357 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:11.357 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:11.357 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:4a34] Postprocess:ConvertProgress
+2023-05-29 15:10:11.558 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:11.558 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:11.558 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Preprocess:ConvertProgress
+2023-05-29 15:10:11.558 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:11.558 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:11.558 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:11.558 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:11.558 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3ccc] Postprocess:ConvertProgress
+2023-05-29 15:10:11.635 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:11.635 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertProgress
+2023-05-29 15:10:11.635 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Preprocess:ConvertProgress
+2023-05-29 15:10:11.635 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] OnConvertProgress.. token:24368_2
+2023-05-29 15:10:11.635 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: shell_14116.
+2023-05-29 15:10:11.635 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:11.635 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_2 sender:shell_14116 msg_type:ConvertResult
+2023-05-29 15:10:11.635 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:11.635 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:17a4] Postprocess:ConvertProgress
+2023-05-29 15:10:11.635 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:11.635 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Preprocess:ConvertResult
+2023-05-29 15:10:11.636 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Postprocess:convert task
+2023-05-29 15:10:11.636 INFO [NoteBurner Netflix Video Downloader.exe:21804:1798] OnConvertResult..
+2023-05-29 15:10:11.636 INFO [NoteBurner Netflix Video Downloader.exe:21804:1798] GetShellerByPid shell_pid:14116  id:shell_14116
+2023-05-29 15:10:11.636 INFO [NoteBurner Netflix Video Downloader.exe:21804:1798] sheller:shell_14116 exit. Reason: on convert complete
+2023-05-29 15:10:11.636 INFO [NoteBurner Netflix Video Downloader.exe:21804:1798] sheller deinit exit id:shell_14116 reason:shell exit status:2 msg:,
+2023-05-29 15:10:11.636 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Sheller::SendIpcCommandSync: prepare to send IPC to shell. pid:14116 id:shell_14116 data:{
+   "opData" : {},
+   "opType" : "Exit"
+}
+
+2023-05-29 15:10:11.636 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] [IPC] Client keeper_21804 send message to client shell_14116 complete.
+2023-05-29 15:10:11.636 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 15:10:11.636 INFO [NoteBurner Netflix Video Downloader.exe:21804:1798] OnConvertResult Ack..
+2023-05-29 15:10:11.636 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] IpcManager::SendIpcCommandAsync complete
+2023-05-29 15:10:11.636 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 15:10:11.636 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:1798] Postprocess:ConvertResult
+2023-05-29 15:10:11.636 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 20:03:18.311 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 received message from client: mediaconvert_NoteBurner-netflix.
+2023-05-29 20:03:18.311 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] OnMsgReceived token:24368_3 sender:mediaconvert_NoteBurner-netflix msg_type:Exit
+2023-05-29 20:03:18.312 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:3098] Preprocess:Exit
+2023-05-29 20:03:18.313 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:51b8] Postprocess:Exit
+2023-05-29 20:03:18.313 INFO [NoteBurner Netflix Video Downloader.exe:21804:51b8] convert complte
+2023-05-29 20:03:18.313 INFO [NoteBurner Netflix Video Downloader.exe:21804:51b8] CloseAll: sheller arr size:0
+2023-05-29 20:03:18.313 INFO [NoteBurner Netflix Video Downloader.exe:21804:51b8] all task complte wait time:6000
+2023-05-29 20:03:18.314 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:51b8] IpcManager::SendIpcCommandAsync complete
+2023-05-29 20:03:18.314 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message to server mediaconvert_NoteBurner-netflix complete.
+2023-05-29 20:03:18.314 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:5868] [IPC] Client keeper_21804 send message return value: 0
+2023-05-29 20:03:18.806 DEBUG [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 connect close.
+2023-05-29 20:03:18.806 ERROR [NoteBurner Netflix Video Downloader.exe:21804:487c] [IPC] Client keeper_21804 lose connection to mediaconvert_NoteBurner-netflix. Close code: 1006. Close reason: .
+2023-05-29 20:03:18.806 ERROR [NoteBurner Netflix Video Downloader.exe:21804:487c] cdm shell disconnected
+2023-05-29 20:03:18.944 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] destroy module(0C5A1B10)
+2023-05-29 20:03:19.009 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] destruct module. Remained count: 0
+2023-05-29 20:03:19.009 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module destructed(0C5A1B10)

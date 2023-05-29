@@ -163,65 +163,68 @@ public:
 
     virtual void OnResolveNewSessionPromise(int promise_id,
         const char* session_id,
-        int session_id_size) = 0;
+        int session_id_size);
 
     // Called by the CDM when a session is updated or released.
-    virtual void OnResolvePromise(int promise_id) = 0;
+    virtual void OnResolvePromise(int promise_id);
 
     virtual void OnRejectPromise(uint32_t promise_id,
         int exception,
         uint32_t system_code,
         const char* error_message,
-        uint32_t error_message_size) = 0;
+        uint32_t error_message_size);
 
 
     virtual void OnSessionMessage(const char* session_id,
         uint32_t session_id_size,
         int message_type,
         const char* message,
-        uint32_t message_size) = 0;
+        uint32_t message_size);
 
 
     virtual void OnSessionKeysChange(const char* session_id,
         uint32_t session_id_size,
         bool has_additional_usable_key,
         const void* keys_info,
-        uint32_t keys_info_count) = 0;
+        uint32_t keys_info_count);
 
     virtual void OnExpirationChange(const char* session_id,
         uint32_t session_id_size,
-        __time64_t new_expiry_time) = 0;
+        __time64_t new_expiry_time);
 
     virtual void OnSessionClosed(const char* session_id,
-        uint32_t session_id_size) = 0;
+        uint32_t session_id_size);
 
 
     virtual void SendPlatformChallenge(const char* service_id,
         uint32_t service_id_size,
         const char* challenge,
-        uint32_t challenge_size) = 0;
+        uint32_t challenge_size);
 
 
-    virtual void EnableOutputProtection(uint32_t desired_protection_mask) = 0;
+    virtual void EnableOutputProtection(uint32_t desired_protection_mask);
 
 
-    virtual void QueryOutputProtectionStatus() = 0;
+    virtual void QueryOutputProtectionStatus();
 
     virtual void OnDeferredInitializationDone(int stream_type,
-        int decoder_status) = 0;
+        int decoder_status);
 
-    virtual void* CreateFileIO(void* client) = 0;
+    virtual void* CreateFileIO(void* client);
 
-    virtual void RequestStorageId(uint32_t version) = 0;
+    virtual void RequestStorageId(uint32_t version);
 
-protected:
+public:
     cdmHost(Host * host):m_host(host){}
     virtual ~cdmHost() {}
 private:
     Host* m_host;
     void* m_context;
+    std::string m_session_id;
     std::map<int, std::string> m_24;
     std::map<int, std::string> m_2C;
     std::mutex m_mtx;
+    void* m_64;
 };
 
+extern cdmHost* g_CDMHost;
