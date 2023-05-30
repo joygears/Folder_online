@@ -285,6 +285,7 @@ public:
  
 };
 
+class cdmHost;
 
 class  MyContentDecryptionModuleProxy:ContentDecryptionModule_9 {
 public:
@@ -373,12 +374,16 @@ public:
     virtual void Destroy();
     std::string getLink_maskMean(int link_mask);
     std::string getOutput_protection_mean(int output_protection_mask);
+    void setHost(cdmHost* host);
     explicit  MyContentDecryptionModuleProxy(ContentDecryptionModule_9* instance);
     virtual ~MyContentDecryptionModuleProxy() {
         delete m_instance;
     }
 private:
     ContentDecryptionModule_9* m_instance;
+    cdmHost* m_host;
+
+    MyContentDecryptionModuleProxy* m_MyProxy;
     static std::list<ContentDecryptionModule_9 *> g_listInstance;
     static std::mutex g_mtx;
 };

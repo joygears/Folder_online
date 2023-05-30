@@ -53,6 +53,8 @@ void cdmHost::OnResolveKeyStatusPromise(int promise_id, int key_status)
    
     m_mtx.lock();
 
+    m_mapIdHdcp.erase(promise_id);
+
     if (promise_id != -1)
     {
         if (m_host)
@@ -206,6 +208,13 @@ void cdmHost::RequestStorageId(uint32_t version)
     Log("Host::RequestStorageId, %u", version);
     if (m_host)
           m_host->RequestStorageId(version);
+}
+
+void cdmHost::setMapIdHdcp(int promise_id, std::string hdcp)
+{
+    m_mtx.lock();
+    m_mapIdHdcp[promise_id] = hdcp;
+    m_mtx.unlock();
 }
 
 

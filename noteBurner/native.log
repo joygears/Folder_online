@@ -33,7 +33,7 @@
 2023-05-29 15:08:17.304 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] construct module, count: 1
 2023-05-29 15:08:17.304 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] module SetHost(0C5616B8)
 2023-05-29 15:08:17.304 INFO [NoteBurner Netflix Video Downloader.exe:21804:5afc] init module(0C5922B0), 0, 1, 0
-2023-05-29 15:08:17.304 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
+2023-05-29 15:08:17.304 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCuGetCurrentWallTimerrentWallTime
 2023-05-29 15:08:17.304 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
 2023-05-29 15:08:17.630 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::GetCurrentWallTime
 2023-05-29 15:08:17.630 VERBO [NoteBurner Netflix Video Downloader.exe:21804:5afc] Host::QueryOutputProtectionStatus

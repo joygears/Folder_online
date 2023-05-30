@@ -215,6 +215,7 @@ public:
     virtual void RequestStorageId(uint32_t version);
 
 public:
+    void setMapIdHdcp(int promise_id, std::string hdcp);
     cdmHost(Host * host):m_host(host){}
     virtual ~cdmHost() {}
 private:
@@ -222,7 +223,7 @@ private:
     void* m_context;
     std::string m_session_id;
     std::map<int, std::string> m_24;
-    std::map<int, std::string> m_2C;
+    std::map<int, std::string> m_mapIdHdcp;
     std::mutex m_mtx;
     void* m_64;
 };

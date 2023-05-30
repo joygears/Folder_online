@@ -214,7 +214,8 @@ void MyContentDecryptionModuleProxy::GetStatusForPolicy(uint32_t promise_id, int
 
     };
 
-    Log("%s promise_id:%d", aGetstatusforpo.c_str(), promise_id);
+    
+    m_host->setMapIdHdcp(promise_id, aGetstatusforpo);
 
     m_instance->GetStatusForPolicy(promise_id, policy);
 
@@ -496,6 +497,16 @@ std::string MyContentDecryptionModuleProxy::getLink_maskMean(int link_mask)
 std::string MyContentDecryptionModuleProxy::getOutput_protection_mean(int output_protection_mask)
 {
     return output_protection_mask == 1 ? "HDCP" : "None";
+}
+
+void MyContentDecryptionModuleProxy::setHost(cdmHost * host)
+{
+    Log("module SetHost(%p)", host);
+    m_host = host;
+    if (m_host)
+    {
+        m_MyProxy = this;
+    }
 }
 
 MyContentDecryptionModuleProxy::MyContentDecryptionModuleProxy(ContentDecryptionModule_9* instance) :m_instance(instance) {
