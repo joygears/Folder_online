@@ -98,7 +98,7 @@ DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system
     }
 
     MyContentDecryptionModuleProxy* proxy = new MyContentDecryptionModuleProxy(static_cast<ContentDecryptionModule_9*>(instance));
-    
+    proxy->setHost(g_CDMHost);
     return proxy;
 }
 
@@ -417,8 +417,8 @@ void MyContentDecryptionModuleProxy::OnQueryOutputProtectionStatus(int result, u
         Log("QueryOutputProtectionStatus failed");
     }
     else {
-        Log("output_link_type: %s", getLink_maskMean(link_mask));
-        Log( "output_protection: %s", getOutput_protection_mean(output_protection_mask));
+        Log("output_link_type: %s", getLink_maskMean(link_mask).c_str());
+        Log( "output_protection: %s", getOutput_protection_mean(output_protection_mask).c_str());
     }
     m_instance->OnQueryOutputProtectionStatus(result, link_mask, output_protection_mask);
 }

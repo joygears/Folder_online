@@ -19,12 +19,12 @@ function std_string_c_str(str){
 const string_append = getTargetAddr(ptr(0x1005AD10));
 
 send(string_append)
-
+var pNode = ptr(0);
 
 Interceptor.attach(string_append, {
     onEnter(args) {
         console.log("sub_1005AD10 onEnter")
-        var pNode = ptr(ptr(this.context.ecx).readU32());
+        pNode = ptr(ptr(this.context.ecx).readU32());
 
         console.log("root------------------------------------: ",pNode);
         console.log("左节点: ",ptr(pNode.readU32()));
@@ -36,11 +36,15 @@ Interceptor.attach(string_append, {
         console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
         console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
         console.log("is Head: ",ptr(pNode.add(0xD).readU8()));
-
+        pNode = ptr(ptr(this.context.ecx).readU32());
       // console.log("第一个参数:"+args[0].readUtf8String()," this对象: ",std_string_c_str(this.context.ecx))
     },
     onLeave(retval){
         console.log("sub_1005AD10 onLeave")
+        console.log("root------------------------------------: ",pNode);
+        console.log("左节点: ",ptr(pNode.readU32()));
+        console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
+        console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
         //console.log("返回值：" + std_string_c_str(retval))
     }
 });
