@@ -3,6 +3,35 @@
 #include "widevinecdm.h"
 #include "fucntion.h"
 #include "cdmHost.h"
+#include "tool/base64.h"
+#include <json/json.h>
+
+
+void main_() {
+    Json::Value root;
+    Json::Value arrayObj;
+    Json::Value item;
+
+    root["key"] = "value1";
+    for (int i = 0; i < 10; i++)
+    {
+        item["arraykey"] = i;
+        arrayObj.append(item);  //添加新的数组成员
+    }
+    root["array"] = arrayObj;
+    std::string out = root.toStyledString();  //将Json对象序列化为字符串
+    std::cout << out << std::endl;
+
+}
+
+bool (*VerifyCdmHost_0)(verifyWrap*, int flag);
+void (*_InitializeCdmModule_4)();
+void* (*_CreateCdmInstance)(int interface_version, const char* key_system, uint32_t key_system_len,
+    void* host_function, void* extra_data);
+void  (*_DeinitializeCdmModule)();
+char* (*_GetCdmVersion)();
+void* (*originHostFunction)(int host_version, void* user_data);
+void* HostFunction(int host_version, void* user_data);
 
 void initializeApp() {
     wstring dycWidevine = TEXT(R"(.\..\..\sig_files\widevinecdm.dll)");
@@ -97,7 +126,7 @@ DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system
         return instance;
     }
 
-    MyContentDecryptionModuleProxy* proxy = new MyContentDecryptionModuleProxy(static_cast<ContentDecryptionModule_9*>(instance));
+    MyContentDecryptionModuleProxy* proxy = new MyContentDecryptionModuleProxy(static_cast<ContentDecryptionModule_10*>(instance));
     proxy->setHost(g_CDMHost);
     return proxy;
 }
@@ -228,7 +257,11 @@ void MyContentDecryptionModuleProxy::SetServerCertificate(uint32_t promise_id, c
         Log("instance is null, %d", 96);
         return;
     }
-    Log("SetServerCertificate(%p):", (const void*)this);
+    string strCertificateData((const char *)server_certificate_data, server_certificate_data_size);
+    string base64Data = base64_encode(strCertificateData);
+    Log("SetServerCertificate(%p): %d",this, base64Data.size());
+    m_d4 = string("Set", 3);
+    m_baseServerCertificate = base64Data;
     m_instance->SetServerCertificate(promise_id, server_certificate_data, server_certificate_data_size);
 }
 
@@ -239,7 +272,8 @@ void MyContentDecryptionModuleProxy::CreateSessionAndGenerateRequest(uint32_t pr
         Log("instance is null, %d", 96);
         return;
     }
-    Log("CreateSessionAndGenerateRequest(%p):", (const void*)this);
+    Log("CreateSessionAndGenerateRequest(%p)", this);
+
     m_instance->CreateSessionAndGenerateRequest(promise_id, session_type, init_data_type, init_data, init_data_size);
 
 }
@@ -505,14 +539,26 @@ void MyContentDecryptionModuleProxy::setHost(cdmHost * host)
     m_host = host;
     if (m_host)
     {
-        m_MyProxy = this;
+        m_host->m_MyProxy = this;
     }
 }
 
-MyContentDecryptionModuleProxy::MyContentDecryptionModuleProxy(ContentDecryptionModule_9* instance) :m_instance(instance) {
+MyContentDecryptionModuleProxy::MyContentDecryptionModuleProxy(ContentDecryptionModule_10* instance) :m_instance(instance) {
     g_mtx.lock();
-    g_listInstance.push_back(instance);
+    g_listInstance.push_back(this);
     Log("construct module, count: %d", g_listInstance.size());
+    g_mtx.unlock();
+}
+
+MyContentDecryptionModuleProxy::~MyContentDecryptionModuleProxy()
+{
+    g_mtx.lock();
+    for (std::list<MyContentDecryptionModuleProxy*>::iterator it = g_listInstance.begin(); it != g_listInstance.end(); ++it) {
+        if (*it == this)
+            g_listInstance.erase(it);
+    }
+    Log( "destruct module. Remained count: %d", g_listInstance.size());
+
     g_mtx.unlock();
 }
 
@@ -532,4 +578,4 @@ int64_t DecryptedProxyBlock::Timestamp() const {
 }
 
 std::mutex MyContentDecryptionModuleProxy::g_mtx;
-std::list< ContentDecryptionModule_9*> MyContentDecryptionModuleProxy::g_listInstance;
+std::list< MyContentDecryptionModuleProxy*> MyContentDecryptionModuleProxy::g_listInstance;

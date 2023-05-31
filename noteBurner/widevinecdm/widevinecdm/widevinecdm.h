@@ -75,14 +75,14 @@ struct verifyWrap {
 
 
 
-bool (*VerifyCdmHost_0)(verifyWrap*, int flag);
-void (*_InitializeCdmModule_4)();
-void*  (*_CreateCdmInstance)(int interface_version, const char* key_system, uint32_t key_system_len,
+extern bool (*VerifyCdmHost_0)(verifyWrap*, int flag);
+extern void (*_InitializeCdmModule_4)();
+extern void*  (*_CreateCdmInstance)(int interface_version, const char* key_system, uint32_t key_system_len,
 	void* host_function, void* extra_data);
-void  (*_DeinitializeCdmModule)();
-char* (*_GetCdmVersion)();
-void* (*originHostFunction)(int host_version, void* user_data);
-void* HostFunction(int host_version, void* user_data);
+extern void  (*_DeinitializeCdmModule)();
+extern char* (*_GetCdmVersion)();
+extern void* (*originHostFunction)(int host_version, void* user_data);
+extern void* HostFunction(int host_version, void* user_data);
 
 
 DLL_EXPORT void InitializeCdmModule_4();
@@ -93,7 +93,7 @@ DLL_EXPORT char* GetCdmVersion();
 
 
 
-class  ContentDecryptionModule_9 {
+class  ContentDecryptionModule_10 {
 public:
     
     virtual void Initialize(bool allow_distinctive_identifier,
@@ -280,14 +280,14 @@ public:
     // Destroys the object in the same context as it was created.
     virtual void Destroy() = 0;
 
-    ContentDecryptionModule_9() {}
-    virtual ~ContentDecryptionModule_9() {};
+    ContentDecryptionModule_10() {}
+    virtual ~ContentDecryptionModule_10() {};
  
 };
 
 class cdmHost;
 
-class  MyContentDecryptionModuleProxy:ContentDecryptionModule_9 {
+class  MyContentDecryptionModuleProxy:ContentDecryptionModule_10 {
 public:
 
     virtual void Initialize(bool allow_distinctive_identifier,
@@ -375,16 +375,16 @@ public:
     std::string getLink_maskMean(int link_mask);
     std::string getOutput_protection_mean(int output_protection_mask);
     void setHost(cdmHost* host);
-    explicit  MyContentDecryptionModuleProxy(ContentDecryptionModule_9* instance);
-    virtual ~MyContentDecryptionModuleProxy() {
-        delete m_instance;
-    }
+    explicit  MyContentDecryptionModuleProxy(ContentDecryptionModule_10* instance);
+    virtual ~MyContentDecryptionModuleProxy();
 private:
-    ContentDecryptionModule_9* m_instance;
+    ContentDecryptionModule_10* m_instance;
     cdmHost* m_host;
 
-    MyContentDecryptionModuleProxy* m_MyProxy;
-    static std::list<ContentDecryptionModule_9 *> g_listInstance;
+    std::string m_d4;
+    std::string m_baseServerCertificate;
+private:
+    static std::list<MyContentDecryptionModuleProxy*> g_listInstance;
     static std::mutex g_mtx;
 };
 

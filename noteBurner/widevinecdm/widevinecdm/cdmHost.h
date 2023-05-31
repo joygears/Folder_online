@@ -5,6 +5,7 @@
 
 typedef unsigned int uint32_t;
 
+
 class  Host {
 public:
     // Returns a Buffer* containing non-zero members upon success, or NULL on
@@ -141,6 +142,7 @@ protected:
     virtual ~Host() {}
 };
 
+class MyContentDecryptionModuleProxy;
 class cdmHost
 {
 public:
@@ -225,7 +227,8 @@ private:
     std::map<int, std::string> m_24;
     std::map<int, std::string> m_mapIdHdcp;
     std::mutex m_mtx;
-    void* m_64;
+public:
+    MyContentDecryptionModuleProxy* m_MyProxy;
 };
 
 extern cdmHost* g_CDMHost;

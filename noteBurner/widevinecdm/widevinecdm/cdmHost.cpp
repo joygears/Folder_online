@@ -1,5 +1,6 @@
 #include "cdmHost.h"
 #include "fucntion.h"
+#include "widevinecdm.h"
 
 void* cdmHost::Allocate(int capacity)
 {
@@ -75,10 +76,7 @@ void cdmHost::OnResolveNewSessionPromise(int promise_id, const char* session_id,
     }
  
  
-    if (m_64)
-    {
-      
-    }
+    
     
     m_host->OnResolveNewSessionPromise(promise_id,session_id,session_id_size);
 }
