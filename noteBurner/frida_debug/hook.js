@@ -16,14 +16,86 @@ function std_string_c_str(str){
 
 
 
-const string_append = getTargetAddr(ptr(0x1006F7F0));
+// const json__toStyledString = getTargetAddr(ptr(0x10052060));
 
-send(string_append)
-var pNode = ptr(0);
+// send(json__toStyledString)
 
-Interceptor.attach(string_append, {
+
+// Interceptor.attach(json__toStyledString, {
+//     onEnter(args) {
+//         console.log("json__toStyledString onEnter")
+//         // pNode = ptr(ptr(this.context.ecx).readU32());
+
+//         // console.log("root------------------------------------: ",pNode);
+//         // console.log("左节点: ",ptr(pNode.readU32()));
+//         // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
+//         // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
+//         // pNode = ptr(pNode.readU32());
+//         // console.log("head ------------------------------------: ",pNode);
+//         // console.log("左节点: ",ptr(pNode.readU32()));
+//         // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
+//         // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
+//         // console.log("is Head: ",ptr(pNode.add(0xD).readU8()));
+//         // pNode = ptr(ptr(this.context.ecx).readU32());
+//       // console.log("第一个参数:"+args[0].readUtf8String()," this对象: ",std_string_c_str(this.context.ecx))
+//       //console.log("第一个参数:"+std_string_c_str(args[1]))
+//       //console.log("第二个参数:"+std_string_c_str(args[2]))
+//     },
+//     onLeave(retval){
+//         console.log("json__toStyledString onLeave")
+//         // console.log("root------------------------------------: ",pNode);
+//         // console.log("左节点: ",ptr(pNode.readU32()));
+//         // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
+//         // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
+//         console.log("send：" + std_string_c_str(retval))
+//     }
+// });
+
+
+// const getJosnFromString = getTargetAddr(ptr(0x1006FC90));
+
+// send(getJosnFromString)
+
+
+// Interceptor.attach(getJosnFromString, {
+//     onEnter(args) {
+//         console.log("getJosnFromString onEnter")
+//         // pNode = ptr(ptr(this.context.ecx).readU32());
+
+//         // console.log("root------------------------------------: ",pNode);
+//         // console.log("左节点: ",ptr(pNode.readU32()));
+//         // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
+//         // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
+//         // pNode = ptr(pNode.readU32());
+//         // console.log("head ------------------------------------: ",pNode);
+//         // console.log("左节点: ",ptr(pNode.readU32()));
+//         // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
+//         // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
+//         // console.log("is Head: ",ptr(pNode.add(0xD).readU8()));
+//         // pNode = ptr(ptr(this.context.ecx).readU32());
+//       // console.log("第一个参数:"+args[0].readUtf8String()," this对象: ",std_string_c_str(this.context.ecx))
+//       console.log("recv: "+std_string_c_str(args[1]))
+//       //console.log("第二个参数:"+std_string_c_str(args[2]))
+//     },
+//     onLeave(retval){
+//         console.log("getJosnFromString onLeave")
+//         // console.log("root------------------------------------: ",pNode);
+//         // console.log("左节点: ",ptr(pNode.readU32()));
+//         // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
+//         // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
+//         //console.log("返回值：" + std_string_c_str(retval))
+//     }
+// });
+
+
+const sub_10057C10 = getTargetAddr(ptr(0x10057C10));
+
+send(sub_10057C10)
+
+
+Interceptor.attach(sub_10057C10, {
     onEnter(args) {
-        console.log("0x1006F7F0 onEnter")
+        console.log("sub_10057C10 onEnter")
         // pNode = ptr(ptr(this.context.ecx).readU32());
 
         // console.log("root------------------------------------: ",pNode);
@@ -38,18 +110,21 @@ Interceptor.attach(string_append, {
         // console.log("is Head: ",ptr(pNode.add(0xD).readU8()));
         // pNode = ptr(ptr(this.context.ecx).readU32());
       // console.log("第一个参数:"+args[0].readUtf8String()," this对象: ",std_string_c_str(this.context.ecx))
-      console.log("第一个参数:"+std_string_c_str(args[1]))
-      console.log("第二个参数:"+std_string_c_str(args[2]))
+      console.log("第一个参数: "+std_string_c_str(args[0]))
+      console.log("第二个参数: "+ args[1].readUtf8String())
     },
     onLeave(retval){
-        console.log("0x1006F7F0 onLeave")
+        console.log("sub_10057C10 onLeave")
         // console.log("root------------------------------------: ",pNode);
         // console.log("左节点: ",ptr(pNode.readU32()));
         // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
         // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
-        console.log("返回值：" + std_string_c_str(retval))
+        console.log("返回值：" + !retval.isNull())
     }
 });
+
+
+
 
 //---------------------------------------- CreateProcess -----------------------------------------------
 // var CreateProcess = Module.findExportByName("kernel32.dll","CreateProcessW");
@@ -66,5 +141,30 @@ Interceptor.attach(string_append, {
 //         //console.log("返回值：" + std_string_c_str(retval))
 //     }
 // });
+
+//----------------------------------------ws2_32.dll send() -----------------------------------------------
+// var CreateProcess = Module.findExportByName("ws2_32.dll","WSASend");
+
+
+// Interceptor.attach(CreateProcess, {
+//     onEnter(args) {
+//         console.log("WSASend onEnter")
+//     var dwBufferCount = args[2].toInt32();
+//     var lpBuffer = args[1];
+//     console.log("dwBufferCount: ",dwBufferCount);
+
+//     for(var i = 0;i<dwBufferCount;i++){
+//         var len = lpBuffer.readU32();
+//         console.log("send to  Server: ",ptr(lpBuffer.add(0x4).readU32()).readByteArray(len));
+//         lpBuffer=lpBuffer.add(8);
+//     }
+
+//     },
+//     onLeave(retval){
+//         console.log("WSASend onLeave")
+//         //console.log("返回值：" + std_string_c_str(retval))
+//     }
+// });
+
 
 

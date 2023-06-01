@@ -1,0 +1,1367 @@
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {},
+   "opType" : "Exit"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {},\n   \"opType\" : \"Exit\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "shell_2560"
+   }
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {},
+   "opType" : "GetGlobalInfo",
+   "token" : "21688_16"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {},\n   \"opType\" : \"GetGlobalInfo\",\n   \"token\" : \"21688_16\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "mediaconvert_NoteBurner-netflix"
+   }
+}
+
+getJosnFromString onEnter
+recv: {"opData":{"data":{"convertMode":"C","deviceInfo":{"ap":"com.noteburner.netflix","apv":"2.0.3","guid":"0217d8e9-805c-4a82-8a01-e5e12324fb26","uid":"00:50:56:c0:00:01","website":"netflix"},"hwaccel":3,"nodePath":"\"D:\\app\\NoteBurner Netflix Video Downloader\\NoteBurner Netflix Video Downloader.exe\""},"error":false,"errorCode":0},"opType":"GetGlobalInfoResult","token":"21688_16"}
+
+getJosnFromString onLeave
+getJosnFromString onEnter
+recv: {"opData":{"data":{"convertMode":"C","deviceInfo":{"ap":"com.noteburner.netflix","apv":"2.0.3","guid":"0217d8e9-805c-4a82-8a01-e5e12324fb26","uid":"00:50:56:c0:00:01","website":"netflix"},"hwaccel":3,"nodePath":"\"D:\\app\\NoteBurner Netflix Video Downloader\\NoteBurner Netflix Video Downloader.exe\""},"error":false,"errorCode":0},"opType":"GetGlobalInfoResult","token":"21688_16"}
+
+getJosnFromString onLeave
+getJosnFromString onEnter
+recv: {
+   "opData" : {
+      "id" : "shell_18380",
+      "pid" : 18380
+   },
+   "opType" : "Echo",
+   "token" : "18380_0"
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "id" : "shell_18380",
+   "pid" : 18380
+}
+
+getJosnFromString onEnter
+recv: {
+   "id" : "shell_18380",
+   "pid" : 18380
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {
+      "cert" : "Cr0CCAMSEOVEukALwQ8307Y2+LVP+0MYh/HPkwUijgIwggEKAoIBAQDm875btoWUbGqQD8eAGuBlGY+Pxo8YF1LQR+Ex0pDONMet8EHslcZRBKNQ/09RZFTP0vrYimyYiBmk9GG+S0wB3CRITgweNE15cD33MQYyS3zpBd4z+sCJam2+jj1ZA4uijE2dxGC+gRBRnw9WoPyw7D8RuhGSJ95OEtzg3Ho+mEsxuE5xg9LM4+Zuro/9msz2bFgJUjQUVHo5j+k4qLWu4ObugFmc9DLIAohL58UR5k0XnvizulOHbMMxdzna9lwTw/4SALadEV/CZXBmswUtBgATDKNqjXwokohncpdsWSauH6vfS6FXwizQoZJ9TdjSGC60rUB2t+aYDm74cIuxAgMBAAE6EHRlc3QubmV0ZmxpeC5jb20SgAOE0y8yWw2Win6M2/bw7+aqVuQPwzS/YG5ySYvwCGQd0Dltr3hpik98WijUODUr6PxMn1ZYXOLo3eED6xYGM7Riza8XskRdCfF8xjj7L7/THPbixyn4mULsttSmWFhexzXnSeKqQHuoKmerqu0nu39iW3pcxDV/K7E6aaSr5ID0SCi7KRcL9BCUCz1g9c43sNj46BhMCWJSm0mx1XFDcoKZWhpj5FAgU4Q4e6f+S8eX39nf6D6SJRb4ap7Znzn7preIvmS93xWjm75I6UBVQGo6pn4qWNCgLYlGGCQCUm5tg566j+/g5jvYZkTJvbiZFwtjMW5njbSRwB3W4CrKoyxw4qsJNSaZRTKAvSjTKdqVDXV/U5HK7SaBA6iJ981/aforXbd2vZlRXO/2S+Maa2mHULzsD+S5l4/YGpSt7PnkCe25F+nAovtl/ogZgjMeEdFyd/9YMYjOS4krYmwp3yJ7m9ZzYCQ6I8RQN4x/yLlHG5RH/+WNLNUs6JAZ0fFdCmw=",
+      "certMode" : "Set",
+      "pssh" : "AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAaxnlwAAAAAAAAAAA=="
+   },
+   "opType" : "LicenseRequest",
+   "token" : "21688_17"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {\n      \"cert\" : \"Cr0CCAMSEOVEukALwQ8307Y2+LVP+0MYh/HPkwUijgIwggEKAoIBAQDm875btoWUbGqQD8eAGuBlGY+Pxo8YF1LQR+Ex0pDONMet8EHslcZRBKNQ/09RZFTP0vrYimyYiBmk9GG+S0wB3CRITgweNE15cD33MQYyS3zpBd4z+sCJam2+jj1ZA4uijE2dxGC+gRBRnw9WoPyw7D8RuhGSJ95OEtzg3Ho+mEsxuE5xg9LM4+Zuro/9msz2bFgJUjQUVHo5j+k4qLWu4ObugFmc9DLIAohL58UR5k0XnvizulOHbMMxdzna9lwTw/4SALadEV/CZXBmswUtBgATDKNqjXwokohncpdsWSauH6vfS6FXwizQoZJ9TdjSGC60rUB2t+aYDm74cIuxAgMBAAE6EHRlc3QubmV0ZmxpeC5jb20SgAOE0y8yWw2Win6M2/bw7+aqVuQPwzS/YG5ySYvwCGQd0Dltr3hpik98WijUODUr6PxMn1ZYXOLo3eED6xYGM7Riza8XskRdCfF8xjj7L7/THPbixyn4mULsttSmWFhexzXnSeKqQHuoKmerqu0nu39iW3pcxDV/K7E6aaSr5ID0SCi7KRcL9BCUCz1g9c43sNj46BhMCWJSm0mx1XFDcoKZWhpj5FAgU4Q4e6f+S8eX39nf6D6SJRb4ap7Znzn7preIvmS93xWjm75I6UBVQGo6pn4qWNCgLYlGGCQCUm5tg566j+/g5jvYZkTJvbiZFwtjMW5njbSRwB3W4CrKoyxw4qsJNSaZRTKAvSjTKdqVDXV/U5HK7SaBA6iJ981/aforXbd2vZlRXO/2S+Maa2mHULzsD+S5l4/YGpSt7PnkCe25F+nAovtl/ogZgjMeEdFyd/9YMYjOS4krYmwp3yJ7m9ZzYCQ6I8RQN4x/yLlHG5RH/+WNLNUs6JAZ0fFdCmw=\",\n      \"certMode\" : \"Set\",\n      \"pssh\" : \"AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAaxnlwAAAAAAAAAAA==\"\n   },\n   \"opType\" : \"LicenseRequest\",\n   \"token\" : \"21688_17\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "shell_18380"
+   }
+}
+
+getJosnFromString onEnter
+recv: {
+   "opData" : {
+      "data" : {
+         "licenseRequest" : "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",
+         "sessionId" : "AE21B3397FF21CCC6EB10CDCE62C2B94"
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "LicenseRequestResult",
+   "token" : "21688_17"
+}
+
+getJosnFromString onLeave
+getJosnFromString onEnter
+recv: {
+   "opData" : {
+      "data" : {
+         "licenseRequest" : "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",
+         "sessionId" : "AE21B3397FF21CCC6EB10CDCE62C2B94"
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "LicenseRequestResult",
+   "token" : "21688_17"
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {
+      "license" : "CAISjAQKtQEKECSRSglJhiRW32nLKjcvrfsSnAF7InZlcnNpb24iOiIxLjAiLCJlc24iOiJORkNEQ0gtMDItSzY2S0hYMUxDS05RMlFXODY2TDJHQzg1R0dWTTlOIiwic2FsdCI6IjY5NDEwOTUzMzgzMDg5MTMzMTQxNjMzMjY1OTAzMDkxMSIsImlzc3VlVGltZSI6MTY4NTYwODI1NjAwMCwibW92aWVJZCI6IjgxMTYxNjI2In0gASgAEhQIARAAGAAgwNECKMDRAlgAYAF4ARpmEhDu0ChODIkp+2NeUT5GmCOKGlBMMFHTcxxmHVfrM1kuwyrtJIs1wZSuguE53Tk+/xIv37Pz3uz/h7Qol03xFcDL7I6RD9AmzVIXKKudfIGvEMgcWjHjV1t56APFf/HY1DYJQyABGmQKEAAAAAAGsZ5gAAAAAAAAAAASELQ/TkV9Z4v/wPxr0dyXwtAaIFC3fQMbPk9wPwDK8pPH/HpCHUFbucyyTsu/ZWaK3TS/IAIoAjoECAAQKkISChBrYzE2AAAAAF+voG6EAAAIGmQKEAAAAAAGsZ5cAAAAAAAAAAASEKMKZCQkIGPsk7A5z2vhPgsaIG6KVAehR3EOv6E1i7khNlYMTZqsdvWqMz2QwT/oUIjCIAIoAjoECAAQKkISChBrYzE2AAAAAF+voG6EAAAIIMCu4aMGOABQBRog+DMkO7D392y6/1gzv9ngMxx4sRQv/UAuMy/4k5tlIloigAEgPtwgH/XOeeIYS3nIVnclTSSCSttkOWiciQ3lynbusGWmJyW1QXUFAkRyBWAhN25MIOYtloyz4dvdbJTTxYMsEaGAlf7Xg/7YJPpD6ArA/7U/PbpqCTeZj/G3gWzr2v0+OjZTYImONp6I9ahFl0vD9tiP4zcHiPYGxjlwxCms4ToICgYxOC4wLjFAAUrYAQAAAAIAAADYAAUAEF+voG6X4KqHAAAA0gAAABAAAADkAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAACowAAAAAAAAKjAAAAAAAAAAAAAAAACAAABOgAAABAAAAFMAAAAEAAAAV4AAAAQAAAAAAAAAAAAAAGMAAAAEAAAAaAAAAAQAAABsgAAABAAAAHEAAAAEAAAAAAAAAAAAAABjAAAABDUZOF7yAu+3W7sJxGGFnlPP4jv02+QjSp72nfaqzePuFgB",
+      "sessionId" : "AE21B3397FF21CCC6EB10CDCE62C2B94"
+   },
+   "opType" : "License",
+   "token" : "21688_18"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {\n      \"license\" : \"CAISjAQKtQEKECSRSglJhiRW32nLKjcvrfsSnAF7InZlcnNpb24iOiIxLjAiLCJlc24iOiJORkNEQ0gtMDItSzY2S0hYMUxDS05RMlFXODY2TDJHQzg1R0dWTTlOIiwic2FsdCI6IjY5NDEwOTUzMzgzMDg5MTMzMTQxNjMzMjY1OTAzMDkxMSIsImlzc3VlVGltZSI6MTY4NTYwODI1NjAwMCwibW92aWVJZCI6IjgxMTYxNjI2In0gASgAEhQIARAAGAAgwNECKMDRAlgAYAF4ARpmEhDu0ChODIkp+2NeUT5GmCOKGlBMMFHTcxxmHVfrM1kuwyrtJIs1wZSuguE53Tk+/xIv37Pz3uz/h7Qol03xFcDL7I6RD9AmzVIXKKudfIGvEMgcWjHjV1t56APFf/HY1DYJQyABGmQKEAAAAAAGsZ5gAAAAAAAAAAASELQ/TkV9Z4v/wPxr0dyXwtAaIFC3fQMbPk9wPwDK8pPH/HpCHUFbucyyTsu/ZWaK3TS/IAIoAjoECAAQKkISChBrYzE2AAAAAF+voG6EAAAIGmQKEAAAAAAGsZ5cAAAAAAAAAAASEKMKZCQkIGPsk7A5z2vhPgsaIG6KVAehR3EOv6E1i7khNlYMTZqsdvWqMz2QwT/oUIjCIAIoAjoECAAQKkISChBrYzE2AAAAAF+voG6EAAAIIMCu4aMGOABQBRog+DMkO7D392y6/1gzv9ngMxx4sRQv/UAuMy/4k5tlIloigAEgPtwgH/XOeeIYS3nIVnclTSSCSttkOWiciQ3lynbusGWmJyW1QXUFAkRyBWAhN25MIOYtloyz4dvdbJTTxYMsEaGAlf7Xg/7YJPpD6ArA/7U/PbpqCTeZj/G3gWzr2v0+OjZTYImONp6I9ahFl0vD9tiP4zcHiPYGxjlwxCms4ToICgYxOC4wLjFAAUrYAQAAAAIAAADYAAUAEF+voG6X4KqHAAAA0gAAABAAAADkAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAACowAAAAAAAAKjAAAAAAAAAAAAAAAACAAABOgAAABAAAAFMAAAAEAAAAV4AAAAQAAAAAAAAAAAAAAGMAAAAEAAAAaAAAAAQAAABsgAAABAAAAHEAAAAEAAAAAAAAAAAAAABjAAAABDUZOF7yAu+3W7sJxGGFnlPP4jv02+QjSp72nfaqzePuFgB\",\n      \"sessionId\" : \"AE21B3397FF21CCC6EB10CDCE62C2B94\"\n   },\n   \"opType\" : \"License\",\n   \"token\" : \"21688_18\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "shell_18380"
+   }
+}
+
+getJosnFromString onEnter
+recv: {
+   "opData" : {
+      "data" : {},
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "LicenseResult",
+   "token" : "21688_18"
+}
+
+getJosnFromString onLeave
+getJosnFromString onEnter
+recv: {
+   "opData" : {
+      "data" : {},
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "LicenseResult",
+   "token" : "21688_18"
+}
+
+getJosnFromString onLeave
+getJosnFromString onEnter
+recv: {"opData":{"input":{"tracks":[{"bitRate":128000,"bitrate":128000,"channels":"2.0","codec":"AAC HQ","content_profile":"heaac-2hq-dash","desc":"English (Original)_en_undefined_116138588_128000_ad_false_5.1_false_codec","headUrl":{"length":73139,"offset":0,"url":"https://ipv6-c069-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=16&e=1685651452&t=XI4GY5_v3twZF2aRaQDMuT9gR4iEFuC9hWAsDyv6przeT5zJOyMTFUb7ENe7LmwuF7P2CIOWkI535wSN3LGJmTOZQN11kOfZDplm1d5v6w3BkyTstQ2-L5V0IyH8ry0OigjYRhdQjOm3pySo79aMTBKI2SC5c9aV01Ul8Azt3tQhvsD-2jYfE1i2iM5EkKcUny2BAnFJwFJSFdCk4aDfC9M8KI9Otd8lU0i4LIXnwEUjPN5XiO-lr1EhSCynJ7nFw5G4gDs"},"is5_1":false,"isAD":false,"isDefault":false,"isDrm":false,"isOriginal":true,"language":"en","languageDescription":"英语 [原始]","languageLabel":"English (Original)","new_track_id":"A:2:1;2;en;1;0;","oriLanguage":"en","size":116138588,"trackId":"A:2:1;2;en;1;0;-128-116138588","type":0,"uri":"A:2:1;2;en;1;0;-128-116138588"},{"bitRate":640000,"bitrate":640000,"channels":"5.1","codec":"DD+ 5.1 HQ","content_profile":"ddplus-5.1hq-dash","desc":"English (Original)_en_undefined_570313181_640000_ad_false_5.1_true_codec","headUrl":{"length":67234,"offset":0,"url":"https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=I1-SEjpYt94o-1FeXmYYIjpfZM7ucRJMI9_xcuUyVoZMov6IRXbshhOqcBwdqQbKzJx9S2bZuXutX7OS-yEyB9clCevYaEwRWfir-ysMfBmIeaIwIpcxdAP-qEqVEjBhoJ0QPkxYttEyrb73uVG7Bxs25HdeqmUGujMbJHDjR80arrD6VsU58N7XpPpxExi62v9H6T76ZWfXl-i_7emHyIjYDo9ht9oh0Mi-5NLogjt3vEuRLnIV5xd0NwzZmh7c9wMn2OQ"},"is5_1":true,"isAD":false,"isDefault":true,"isDrm":false,"isOriginal":true,"language":"en","languageDescription":"英语 [原始]","languageLabel":"English (Original)","new_track_id":"A:2:1;6;en;1;0;","oriLanguage":"en","size":570313181,"trackId":"A:2:1;6;en;1;0;-640-570313181","type":0,"uri":"A:2:1;6;en;1;0;-640-570313181"},{"bitRate":2273000,"bitrate":2273000,"codec":"","desc":"1920x1080_1080P_2273_undefined_24/1","frameRate":"24/1","headUrl":{"length":59830,"offset":0,"url":"https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=BjGaLPAzovXYDaihBOz1gIKEzDXOWMUOAVpmjBvPc2_ZL6ZyXLpA7Vu_OkGSCTboJkHIa5P7TlZWkrMxSFmdGqigxv_qJLmTjYUzUJu71C67QkSpZQ643nbkzjGfkwCQGuLpubz-mqWHmM9PxjoZmtmOD7EhWgZYfqBbCJOeHVLEKF1fRnjeVcxCLYZA1f1JPHDC8aAXmBbE1DbG5qMjXlMDijx55Or-LzxzHe6Rj2CdOqFO9up2WCb6CfkOqoh3vKDRwdvg"},"isDrm":true,"pssh":"AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAaxnlwAAAAAAAAAAA==","qualityIcon":"1080P","sar":"1:1","size":1980381229,"trackId":"V:2:1;2;;default;-1;none;-1;-2273","type":1,"uri":"V:2:1;2;;default;-1;none;-1;-2273"},{"cdnlist":[{"id":73139,"key":"1-41378-high","lowgrade":false,"name":"c069.hkg001.ix.nflxvideo.net","rank":1,"type":"OPEN_CONNECT_APPLIANCE"},{"id":67234,"key":"1-41378-high","lowgrade":false,"name":"c055.hkg001.ix.nflxvideo.net","rank":2,"type":"OPEN_CONNECT_APPLIANCE"},{"id":73144,"key":"1-41378-high","lowgrade":false,"name":"c076.hkg001.ix.nflxvideo.net","rank":5,"type":"OPEN_CONNECT_APPLIANCE"},{"id":72384,"key":"2-41378-high","lowgrade":false,"name":"c233.sea001.ix.nflxvideo.net","rank":7,"type":"OPEN_CONNECT_APPLIANCE"}],"codec":"ttml-image","desc":"Chinese (Simplified)_zh-Hans_cc_false_forced_false_uriT:2:0;1;zh-Hans;0;0;0;_ttml-image","downloadableIds":{"nflx-cmisc":"1999130145","webvtt-lssdh-ios8":"1999129921"},"encodingProfileNames":["nflx-cmisc","webvtt-lssdh-ios8"],"headUrl":{"length":0,"offset":0,"url":"https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=re37C1yNtrIhcuph3XYGwRGpk4cutqDIZANG1poicEECI7pSm5oH0oMt7LGq_y8SiwAH6nYRrHh8aPZlpJKFZWIBg5QAltEavUuxbILs08kBhBfOhYvmKEoKdXPLTQ-HctPdP78PW3CTLv6Ho9BJpMId5w78WHuYMGOzdhsYgEqO97uyZvtcanIF5qUT0RW3WmfkmdFarda0vgJOuzCLH_ZdRaUD3OdmdYxShBqG5i77_fIMgIFqeXgf4IskgpHPwGc"},"hydrated":true,"id":"T:2:0;1;zh-Hans;0;0;0;","isCC":false,"isDefault":false,"isForced":false,"isForcedNarrative":false,"isImage":true,"isLanguageLeftToRight":true,"isNoneTrack":false,"language":"zh","languageDescription":"Chinese (Simplified)","languageLabel":"Chinese (Simplified)","new_track_id":"T:2:0;1;zh-Hans;0;0;0;","oriLanguage":"zh-Hans","rank":1,"rawTrackType":"subtitles","size":36030078,"trackId":"T:2:0;1;zh-Hans;0;0;0;_ttml-image","trackType":"PRIMARY","ttDownloadables":{"nflx-cmisc":{"downloadUrls":{"67234":"https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=re37C1yNtrIhcuph3XYGwRGpk4cutqDIZANG1poicEECI7pSm5oH0oMt7LGq_y8SiwAH6nYRrHh8aPZlpJKFZWIBg5QAltEavUuxbILs08kBhBfOhYvmKEoKdXPLTQ-HctPdP78PW3CTLv6Ho9BJpMId5w78WHuYMGOzdhsYgEqO97uyZvtcanIF5qUT0RW3WmfkmdFarda0vgJOuzCLH_ZdRaUD3OdmdYxShBqG5i77_fIMgIFqeXgf4IskgpHPwGc","72384":"https://ipv6-c233-sea001-ix.1.oca.nflxvideo.net/?o=1&v=30&e=1685651452&t=FLrwZ3FrjqBhmHg34u_3Hd2-Rj8xrhiBsnyHKveku4dnEkiTYG9sgf4Pt293mdwHr-1h5X0VJ_4mkIAvW6atghvQFZVQ2a0F3qT3xxigrjAoLlfkLjO8cHLl8ZcuKLt2ZZf0jkxuTitwS1lcHZeqM1Q94aqMS52NbQMoMEhZAo048nPqVIADKNj4zmsseGkvhyS7vrt0s65JXc9xYHDwTqcAfiQmMXLlXL5EBIwGibbjd_HajpFA9_3aVT78Qlj_PLA","73144":"https://ipv4-c076-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=15&e=1685651452&t=DR3IEGckRCC1jbX7tpnel3X6tdJ9aAhPvgmUHo5BlYpdSj5j0qxuBEfRZDrZMeULpKxHeaUqsAmT5YbTSTocxCOoVJONgOx18wf7Ig0Y7LvmyFsfXYYIFCBO4g8KgUi8O8az1CumjcF5jwWu1gircW0JgnzH3I9ZUyAIP078fJJs2Gu391nCtjfPOml5jF-cZ5loXxn58ql1EAKYFQWl4apGK6e92h79wGEr9ILZ9i4s5RNM-JHgpbzL432iJQdvWas"},"hashAlgo":"sha1","hashValue":"66XTlNmrAHuyKcmOqkGx3kFT5Dw=","height":1080,"id":"1999130145","isImage":true,"midxOffset":35953280,"midxSize":810,"size":36030078,"sortValue":3,"subType":"nflx-cmisc","textKey":null,"width":1920},"webvtt-lssdh-ios8":{"downloadUrls":{"72384":"https://ipv6-c233-sea001-ix.1.oca.nflxvideo.net/?o=1&v=30&e=1685651452&t=ihI7i-UKQoYVsI2B2RqW_RQ2zTJ5P7_JXXl-THrg3IIqT27ZB9ZIlvJ4RZpSmQKh2vSxV3FvklnDbjMUS8zjp2ER6_350MfH2hH3WiyqvvKUCp-WcA5eWLtJOcf6yn9VyVOoJUl8BjGQ-TQ-qB8XYotKMjfDa-Ycwnc-H8_LZSgDZN4s1SRk01npmD350gdnLQcfwM5SW8WRIM5nBfyj-KuFcDnvqzg2qWwSnCCGAsI8SQ6Riw5Yaherao9qq25FG-o","73139":"https://ipv6-c069-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=16&e=1685651452&t=GWgsnL2-GW4ktMEHHcrAVdOcXDxZELP91REzTPwTXFhkZf1Uz52ItpCcXAYos_vEjFQRM9Msgi_rASgiFkn_K9QOLV57Y2U1hs6N6P4x-Sc6EkpaqRDH3DUjzaaQzta7kLr6oVQYA_D14QAuidkF10JHrINwGEjQs70EBOttc7FsLLNDTWG3kQyNMyfMb2L83IUz7yhphK1j-sjH-CmlOEBNFvZnAfwl449JvJc4Ky-jLLLIWfY_vVQtZESGoiqu4Iw","73144":"https://ipv4-c076-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=15&e=1685651452&t=1ItfiOvI9zjdKStWHN4brfxQf0ZbFAk2VipoHU70FT4JTTmqqtKIUXzOf1pEyNrCAOqR9lA2CCXQdnRTP8L_IF1whFUYpK7wFKiMp_rFi-CPcn0L8nXsXUjssDHryLp4Pr2usYU33UC2fHq3YpQjtJxCWcRCwxfBluMoHslTgW3e82yx6s-6-h6CuTBz_wKmTScT-ZhW2W7ACZsse0mNM174h6R2YO0N01ZiwAbfFUCVvCbmzqf6V96MnlN0Klqp_jU"},"hashAlgo":"sha1","hashValue":"VZ8I6+xWA2noSO29kANFWFDeRvQ=","isImage":false,"size":323289,"sortValue":3,"subType":"webvtt-lssdh-ios8","textKey":null}},"type":2,"uri":"T:2:0;1;zh-Hans;0;0;0;_ttml-image"}]},"isTrial":true,"mediaId":"81161626_c7Z9tc","metaData":{"description":"一名联邦调查局侧写员奉命追踪世界头号艺术品窃贼，殊不知窃贼却变为了他的同伴。不情不愿的他要与之联手逮捕一个总是领先一步且神出鬼没的诈骗犯。","thumbnail":"C:\\Users\\Administrator\\AppData\\Roaming\\NoteBurner Netflix Video Downloader\\Library\\81161626_1.jpg","thumbnailType":"url","title":"红色通缉令","year":2021},"output":{"folder":"D:\\Users\\Documents\\NoteBurner Netflix Video Downloader","format":"mp4","hwaccel":true,"ignorPartialFail":true,"path":"D:\\Users\\Documents\\NoteBurner Netflix Video Downloader\\红色通缉令.mp4","subtitleForm":2,"subtitleFormat":0,"videoCodec":"h264"}},"opType":"Convert","token":"22024_42"}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "input" : {
+      "tracks" : [
+         {
+            "bitRate" : 128000,
+            "bitrate" : 128000,
+            "channels" : "2.0",
+            "codec" : "AAC HQ",
+            "content_profile" : "heaac-2hq-dash",
+            "desc" : "English (Original)_en_undefined_116138588_128000_ad_false_5.1_false_codec",
+            "headUrl" : {
+               "length" : 73139,
+               "offset" : 0,
+               "url" : "https://ipv6-c069-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=16&e=1685651452&t=XI4GY5_v3twZF2aRaQDMuT9gR4iEFuC9hWAsDyv6przeT5zJOyMTFUb7ENe7LmwuF7P2CIOWkI535wSN3LGJmTOZQN11kOfZDplm1d5v6w3BkyTstQ2-L5V0IyH8ry0OigjYRhdQjOm3pySo79aMTBKI2SC5c9aV01Ul8Azt3tQhvsD-2jYfE1i2iM5EkKcUny2BAnFJwFJSFdCk4aDfC9M8KI9Otd8lU0i4LIXnwEUjPN5XiO-lr1EhSCynJ7nFw5G4gDs"
+            },
+            "is5_1" : false,
+            "isAD" : false,
+            "isDefault" : false,
+            "isDrm" : false,
+            "isOriginal" : true,
+            "language" : "en",
+            "languageDescription" : "英语 [原始]",
+            "languageLabel" : "English (Original)",
+            "new_track_id" : "A:2:1;2;en;1;0;",
+            "oriLanguage" : "en",
+            "size" : 116138588,
+            "trackId" : "A:2:1;2;en;1;0;-128-116138588",
+            "type" : 0,
+            "uri" : "A:2:1;2;en;1;0;-128-116138588"
+         },
+         {
+            "bitRate" : 640000,
+            "bitrate" : 640000,
+            "channels" : "5.1",
+            "codec" : "DD+ 5.1 HQ",
+            "content_profile" : "ddplus-5.1hq-dash",
+            "desc" : "English (Original)_en_undefined_570313181_640000_ad_false_5.1_true_codec",
+            "headUrl" : {
+               "length" : 67234,
+               "offset" : 0,
+               "url" : "https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=I1-SEjpYt94o-1FeXmYYIjpfZM7ucRJMI9_xcuUyVoZMov6IRXbshhOqcBwdqQbKzJx9S2bZuXutX7OS-yEyB9clCevYaEwRWfir-ysMfBmIeaIwIpcxdAP-qEqVEjBhoJ0QPkxYttEyrb73uVG7Bxs25HdeqmUGujMbJHDjR80arrD6VsU58N7XpPpxExi62v9H6T76ZWfXl-i_7emHyIjYDo9ht9oh0Mi-5NLogjt3vEuRLnIV5xd0NwzZmh7c9wMn2OQ"
+            },
+            "is5_1" : true,
+            "isAD" : false,
+            "isDefault" : true,
+            "isDrm" : false,
+            "isOriginal" : true,
+            "language" : "en",
+            "languageDescription" : "英语 [原始]",
+            "languageLabel" : "English (Original)",
+            "new_track_id" : "A:2:1;6;en;1;0;",
+            "oriLanguage" : "en",
+            "size" : 570313181,
+            "trackId" : "A:2:1;6;en;1;0;-640-570313181",
+            "type" : 0,
+            "uri" : "A:2:1;6;en;1;0;-640-570313181"
+         },
+         {
+            "bitRate" : 2273000,
+            "bitrate" : 2273000,
+            "codec" : "",
+            "desc" : "1920x1080_1080P_2273_undefined_24/1",
+            "frameRate" : "24/1",
+            "headUrl" : {
+               "length" : 59830,
+               "offset" : 0,
+               "url" : "https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=BjGaLPAzovXYDaihBOz1gIKEzDXOWMUOAVpmjBvPc2_ZL6ZyXLpA7Vu_OkGSCTboJkHIa5P7TlZWkrMxSFmdGqigxv_qJLmTjYUzUJu71C67QkSpZQ643nbkzjGfkwCQGuLpubz-mqWHmM9PxjoZmtmOD7EhWgZYfqBbCJOeHVLEKF1fRnjeVcxCLYZA1f1JPHDC8aAXmBbE1DbG5qMjXlMDijx55Or-LzxzHe6Rj2CdOqFO9up2WCb6CfkOqoh3vKDRwdvg"
+            },
+            "isDrm" : true,
+            "pssh" : "AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAaxnlwAAAAAAAAAAA==",
+            "qualityIcon" : "1080P",
+            "sar" : "1:1",
+            "size" : 1980381229,
+            "trackId" : "V:2:1;2;;default;-1;none;-1;-2273",
+            "type" : 1,
+            "uri" : "V:2:1;2;;default;-1;none;-1;-2273"
+         },
+         {
+            "cdnlist" : [
+               {
+                  "id" : 73139,
+                  "key" : "1-41378-high",
+                  "lowgrade" : false,
+                  "name" : "c069.hkg001.ix.nflxvideo.net",
+                  "rank" : 1,
+                  "type" : "OPEN_CONNECT_APPLIANCE"
+               },
+               {
+                  "id" : 67234,
+                  "key" : "1-41378-high",
+                  "lowgrade" : false,
+                  "name" : "c055.hkg001.ix.nflxvideo.net",
+                  "rank" : 2,
+                  "type" : "OPEN_CONNECT_APPLIANCE"
+               },
+               {
+                  "id" : 73144,
+                  "key" : "1-41378-high",
+                  "lowgrade" : false,
+                  "name" : "c076.hkg001.ix.nflxvideo.net",
+                  "rank" : 5,
+                  "type" : "OPEN_CONNECT_APPLIANCE"
+               },
+               {
+                  "id" : 72384,
+                  "key" : "2-41378-high",
+                  "lowgrade" : false,
+                  "name" : "c233.sea001.ix.nflxvideo.net",
+                  "rank" : 7,
+                  "type" : "OPEN_CONNECT_APPLIANCE"
+               }
+            ],
+            "codec" : "ttml-image",
+            "desc" : "Chinese (Simplified)_zh-Hans_cc_false_forced_false_uriT:2:0;1;zh-Hans;0;0;0;_ttml-image",
+            "downloadableIds" : {
+               "nflx-cmisc" : "1999130145",
+               "webvtt-lssdh-ios8" : "1999129921"
+            },
+            "encodingProfileNames" : [ "nflx-cmisc", "webvtt-lssdh-ios8" ],
+            "headUrl" : {
+               "length" : 0,
+               "offset" : 0,
+               "url" : "https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=re37C1yNtrIhcuph3XYGwRGpk4cutqDIZANG1poicEECI7pSm5oH0oMt7LGq_y8SiwAH6nYRrHh8aPZlpJKFZWIBg5QAltEavUuxbILs08kBhBfOhYvmKEoKdXPLTQ-HctPdP78PW3CTLv6Ho9BJpMId5w78WHuYMGOzdhsYgEqO97uyZvtcanIF5qUT0RW3WmfkmdFarda0vgJOuzCLH_ZdRaUD3OdmdYxShBqG5i77_fIMgIFqeXgf4IskgpHPwGc"
+            },
+            "hydrated" : true,
+            "id" : "T:2:0;1;zh-Hans;0;0;0;",
+            "isCC" : false,
+            "isDefault" : false,
+            "isForced" : false,
+            "isForcedNarrative" : false,
+            "isImage" : true,
+            "isLanguageLeftToRight" : true,
+            "isNoneTrack" : false,
+            "language" : "zh",
+            "languageDescription" : "Chinese (Simplified)",
+            "languageLabel" : "Chinese (Simplified)",
+            "new_track_id" : "T:2:0;1;zh-Hans;0;0;0;",
+            "oriLanguage" : "zh-Hans",
+            "rank" : 1,
+            "rawTrackType" : "subtitles",
+            "size" : 36030078,
+            "trackId" : "T:2:0;1;zh-Hans;0;0;0;_ttml-image",
+            "trackType" : "PRIMARY",
+            "ttDownloadables" : {
+               "nflx-cmisc" : {
+                  "downloadUrls" : {
+                     "67234" : "https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=re37C1yNtrIhcuph3XYGwRGpk4cutqDIZANG1poicEECI7pSm5oH0oMt7LGq_y8SiwAH6nYRrHh8aPZlpJKFZWIBg5QAltEavUuxbILs08kBhBfOhYvmKEoKdXPLTQ-HctPdP78PW3CTLv6Ho9BJpMId5w78WHuYMGOzdhsYgEqO97uyZvtcanIF5qUT0RW3WmfkmdFarda0vgJOuzCLH_ZdRaUD3OdmdYxShBqG5i77_fIMgIFqeXgf4IskgpHPwGc",
+                     "72384" : "https://ipv6-c233-sea001-ix.1.oca.nflxvideo.net/?o=1&v=30&e=1685651452&t=FLrwZ3FrjqBhmHg34u_3Hd2-Rj8xrhiBsnyHKveku4dnEkiTYG9sgf4Pt293mdwHr-1h5X0VJ_4mkIAvW6atghvQFZVQ2a0F3qT3xxigrjAoLlfkLjO8cHLl8ZcuKLt2ZZf0jkxuTitwS1lcHZeqM1Q94aqMS52NbQMoMEhZAo048nPqVIADKNj4zmsseGkvhyS7vrt0s65JXc9xYHDwTqcAfiQmMXLlXL5EBIwGibbjd_HajpFA9_3aVT78Qlj_PLA",
+                     "73144" : "https://ipv4-c076-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=15&e=1685651452&t=DR3IEGckRCC1jbX7tpnel3X6tdJ9aAhPvgmUHo5BlYpdSj5j0qxuBEfRZDrZMeULpKxHeaUqsAmT5YbTSTocxCOoVJONgOx18wf7Ig0Y7LvmyFsfXYYIFCBO4g8KgUi8O8az1CumjcF5jwWu1gircW0JgnzH3I9ZUyAIP078fJJs2Gu391nCtjfPOml5jF-cZ5loXxn58ql1EAKYFQWl4apGK6e92h79wGEr9ILZ9i4s5RNM-JHgpbzL432iJQdvWas"
+                  },
+                  "hashAlgo" : "sha1",
+                  "hashValue" : "66XTlNmrAHuyKcmOqkGx3kFT5Dw=",
+                  "height" : 1080,
+                  "id" : "1999130145",
+                  "isImage" : true,
+                  "midxOffset" : 35953280,
+                  "midxSize" : 810,
+                  "size" : 36030078,
+                  "sortValue" : 3,
+                  "subType" : "nflx-cmisc",
+                  "textKey" : null,
+                  "width" : 1920
+               },
+               "webvtt-lssdh-ios8" : {
+                  "downloadUrls" : {
+                     "72384" : "https://ipv6-c233-sea001-ix.1.oca.nflxvideo.net/?o=1&v=30&e=1685651452&t=ihI7i-UKQoYVsI2B2RqW_RQ2zTJ5P7_JXXl-THrg3IIqT27ZB9ZIlvJ4RZpSmQKh2vSxV3FvklnDbjMUS8zjp2ER6_350MfH2hH3WiyqvvKUCp-WcA5eWLtJOcf6yn9VyVOoJUl8BjGQ-TQ-qB8XYotKMjfDa-Ycwnc-H8_LZSgDZN4s1SRk01npmD350gdnLQcfwM5SW8WRIM5nBfyj-KuFcDnvqzg2qWwSnCCGAsI8SQ6Riw5Yaherao9qq25FG-o",
+                     "73139" : "https://ipv6-c069-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=16&e=1685651452&t=GWgsnL2-GW4ktMEHHcrAVdOcXDxZELP91REzTPwTXFhkZf1Uz52ItpCcXAYos_vEjFQRM9Msgi_rASgiFkn_K9QOLV57Y2U1hs6N6P4x-Sc6EkpaqRDH3DUjzaaQzta7kLr6oVQYA_D14QAuidkF10JHrINwGEjQs70EBOttc7FsLLNDTWG3kQyNMyfMb2L83IUz7yhphK1j-sjH-CmlOEBNFvZnAfwl449JvJc4Ky-jLLLIWfY_vVQtZESGoiqu4Iw",
+                     "73144" : "https://ipv4-c076-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=15&e=1685651452&t=1ItfiOvI9zjdKStWHN4brfxQf0ZbFAk2VipoHU70FT4JTTmqqtKIUXzOf1pEyNrCAOqR9lA2CCXQdnRTP8L_IF1whFUYpK7wFKiMp_rFi-CPcn0L8nXsXUjssDHryLp4Pr2usYU33UC2fHq3YpQjtJxCWcRCwxfBluMoHslTgW3e82yx6s-6-h6CuTBz_wKmTScT-ZhW2W7ACZsse0mNM174h6R2YO0N01ZiwAbfFUCVvCbmzqf6V96MnlN0Klqp_jU"
+                  },
+                  "hashAlgo" : "sha1",
+                  "hashValue" : "VZ8I6+xWA2noSO29kANFWFDeRvQ=",
+                  "isImage" : false,
+                  "size" : 323289,
+                  "sortValue" : 3,
+                  "subType" : "webvtt-lssdh-ios8",
+                  "textKey" : null
+               }
+            },
+            "type" : 2,
+            "uri" : "T:2:0;1;zh-Hans;0;0;0;_ttml-image"
+         }
+      ]
+   },
+   "isTrial" : true,
+   "mediaId" : "81161626_c7Z9tc",
+   "metaData" : {
+      "description" : "一名联邦调查局侧写员奉命追踪世界头号艺术品窃贼，殊不知窃贼却变为了他的同伴。不情不愿的他要与之联手逮捕一个总是领先一步且神出鬼没的诈骗犯。",
+      "thumbnail" : "C:\\Users\\Administrator\\AppData\\Roaming\\NoteBurner Netflix Video Downloader\\Library\\81161626_1.jpg",
+      "thumbnailType" : "url",
+      "title" : "红色通缉令",
+      "year" : 2021
+   },
+   "output" : {
+      "folder" : "D:\\Users\\Documents\\NoteBurner Netflix Video Downloader",
+      "format" : "mp4",
+      "hwaccel" : true,
+      "ignorPartialFail" : true,
+      "path" : "D:\\Users\\Documents\\NoteBurner Netflix Video Downloader\\红色通缉令.mp4",
+      "subtitleForm" : 2,
+      "subtitleFormat" : 0,
+      "videoCodec" : "h264"
+   }
+}
+
+getJosnFromString onEnter
+recv: {
+   "input" : {
+      "tracks" : [
+         {
+            "bitRate" : 128000,
+            "bitrate" : 128000,
+            "channels" : "2.0",
+            "codec" : "AAC HQ",
+            "content_profile" : "heaac-2hq-dash",
+            "desc" : "English (Original)_en_undefined_116138588_128000_ad_false_5.1_false_codec",
+            "headUrl" : {
+               "length" : 73139,
+               "offset" : 0,
+               "url" : "https://ipv6-c069-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=16&e=1685651452&t=XI4GY5_v3twZF2aRaQDMuT9gR4iEFuC9hWAsDyv6przeT5zJOyMTFUb7ENe7LmwuF7P2CIOWkI535wSN3LGJmTOZQN11kOfZDplm1d5v6w3BkyTstQ2-L5V0IyH8ry0OigjYRhdQjOm3pySo79aMTBKI2SC5c9aV01Ul8Azt3tQhvsD-2jYfE1i2iM5EkKcUny2BAnFJwFJSFdCk4aDfC9M8KI9Otd8lU0i4LIXnwEUjPN5XiO-lr1EhSCynJ7nFw5G4gDs"
+            },
+            "is5_1" : false,
+            "isAD" : false,
+            "isDefault" : false,
+            "isDrm" : false,
+            "isOriginal" : true,
+            "language" : "en",
+            "languageDescription" : "英语 [原始]",
+            "languageLabel" : "English (Original)",
+            "new_track_id" : "A:2:1;2;en;1;0;",
+            "oriLanguage" : "en",
+            "size" : 116138588,
+            "trackId" : "A:2:1;2;en;1;0;-128-116138588",
+            "type" : 0,
+            "uri" : "A:2:1;2;en;1;0;-128-116138588"
+         },
+         {
+            "bitRate" : 640000,
+            "bitrate" : 640000,
+            "channels" : "5.1",
+            "codec" : "DD+ 5.1 HQ",
+            "content_profile" : "ddplus-5.1hq-dash",
+            "desc" : "English (Original)_en_undefined_570313181_640000_ad_false_5.1_true_codec",
+            "headUrl" : {
+               "length" : 67234,
+               "offset" : 0,
+               "url" : "https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=I1-SEjpYt94o-1FeXmYYIjpfZM7ucRJMI9_xcuUyVoZMov6IRXbshhOqcBwdqQbKzJx9S2bZuXutX7OS-yEyB9clCevYaEwRWfir-ysMfBmIeaIwIpcxdAP-qEqVEjBhoJ0QPkxYttEyrb73uVG7Bxs25HdeqmUGujMbJHDjR80arrD6VsU58N7XpPpxExi62v9H6T76ZWfXl-i_7emHyIjYDo9ht9oh0Mi-5NLogjt3vEuRLnIV5xd0NwzZmh7c9wMn2OQ"
+            },
+            "is5_1" : true,
+            "isAD" : false,
+            "isDefault" : true,
+            "isDrm" : false,
+            "isOriginal" : true,
+            "language" : "en",
+            "languageDescription" : "英语 [原始]",
+            "languageLabel" : "English (Original)",
+            "new_track_id" : "A:2:1;6;en;1;0;",
+            "oriLanguage" : "en",
+            "size" : 570313181,
+            "trackId" : "A:2:1;6;en;1;0;-640-570313181",
+            "type" : 0,
+            "uri" : "A:2:1;6;en;1;0;-640-570313181"
+         },
+         {
+            "bitRate" : 2273000,
+            "bitrate" : 2273000,
+            "codec" : "",
+            "desc" : "1920x1080_1080P_2273_undefined_24/1",
+            "frameRate" : "24/1",
+            "headUrl" : {
+               "length" : 59830,
+               "offset" : 0,
+               "url" : "https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=BjGaLPAzovXYDaihBOz1gIKEzDXOWMUOAVpmjBvPc2_ZL6ZyXLpA7Vu_OkGSCTboJkHIa5P7TlZWkrMxSFmdGqigxv_qJLmTjYUzUJu71C67QkSpZQ643nbkzjGfkwCQGuLpubz-mqWHmM9PxjoZmtmOD7EhWgZYfqBbCJOeHVLEKF1fRnjeVcxCLYZA1f1JPHDC8aAXmBbE1DbG5qMjXlMDijx55Or-LzxzHe6Rj2CdOqFO9up2WCb6CfkOqoh3vKDRwdvg"
+            },
+            "isDrm" : true,
+            "pssh" : "AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAaxnlwAAAAAAAAAAA==",
+            "qualityIcon" : "1080P",
+            "sar" : "1:1",
+            "size" : 1980381229,
+            "trackId" : "V:2:1;2;;default;-1;none;-1;-2273",
+            "type" : 1,
+            "uri" : "V:2:1;2;;default;-1;none;-1;-2273"
+         },
+         {
+            "cdnlist" : [
+               {
+                  "id" : 73139,
+                  "key" : "1-41378-high",
+                  "lowgrade" : false,
+                  "name" : "c069.hkg001.ix.nflxvideo.net",
+                  "rank" : 1,
+                  "type" : "OPEN_CONNECT_APPLIANCE"
+               },
+               {
+                  "id" : 67234,
+                  "key" : "1-41378-high",
+                  "lowgrade" : false,
+                  "name" : "c055.hkg001.ix.nflxvideo.net",
+                  "rank" : 2,
+                  "type" : "OPEN_CONNECT_APPLIANCE"
+               },
+               {
+                  "id" : 73144,
+                  "key" : "1-41378-high",
+                  "lowgrade" : false,
+                  "name" : "c076.hkg001.ix.nflxvideo.net",
+                  "rank" : 5,
+                  "type" : "OPEN_CONNECT_APPLIANCE"
+               },
+               {
+                  "id" : 72384,
+                  "key" : "2-41378-high",
+                  "lowgrade" : false,
+                  "name" : "c233.sea001.ix.nflxvideo.net",
+                  "rank" : 7,
+                  "type" : "OPEN_CONNECT_APPLIANCE"
+               }
+            ],
+            "codec" : "ttml-image",
+            "desc" : "Chinese (Simplified)_zh-Hans_cc_false_forced_false_uriT:2:0;1;zh-Hans;0;0;0;_ttml-image",
+            "downloadableIds" : {
+               "nflx-cmisc" : "1999130145",
+               "webvtt-lssdh-ios8" : "1999129921"
+            },
+            "encodingProfileNames" : [ "nflx-cmisc", "webvtt-lssdh-ios8" ],
+            "headUrl" : {
+               "length" : 0,
+               "offset" : 0,
+               "url" : "https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=re37C1yNtrIhcuph3XYGwRGpk4cutqDIZANG1poicEECI7pSm5oH0oMt7LGq_y8SiwAH6nYRrHh8aPZlpJKFZWIBg5QAltEavUuxbILs08kBhBfOhYvmKEoKdXPLTQ-HctPdP78PW3CTLv6Ho9BJpMId5w78WHuYMGOzdhsYgEqO97uyZvtcanIF5qUT0RW3WmfkmdFarda0vgJOuzCLH_ZdRaUD3OdmdYxShBqG5i77_fIMgIFqeXgf4IskgpHPwGc"
+            },
+            "hydrated" : true,
+            "id" : "T:2:0;1;zh-Hans;0;0;0;",
+            "isCC" : false,
+            "isDefault" : false,
+            "isForced" : false,
+            "isForcedNarrative" : false,
+            "isImage" : true,
+            "isLanguageLeftToRight" : true,
+            "isNoneTrack" : false,
+            "language" : "zh",
+            "languageDescription" : "Chinese (Simplified)",
+            "languageLabel" : "Chinese (Simplified)",
+            "new_track_id" : "T:2:0;1;zh-Hans;0;0;0;",
+            "oriLanguage" : "zh-Hans",
+            "rank" : 1,
+            "rawTrackType" : "subtitles",
+            "size" : 36030078,
+            "trackId" : "T:2:0;1;zh-Hans;0;0;0;_ttml-image",
+            "trackType" : "PRIMARY",
+            "ttDownloadables" : {
+               "nflx-cmisc" : {
+                  "downloadUrls" : {
+                     "67234" : "https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=re37C1yNtrIhcuph3XYGwRGpk4cutqDIZANG1poicEECI7pSm5oH0oMt7LGq_y8SiwAH6nYRrHh8aPZlpJKFZWIBg5QAltEavUuxbILs08kBhBfOhYvmKEoKdXPLTQ-HctPdP78PW3CTLv6Ho9BJpMId5w78WHuYMGOzdhsYgEqO97uyZvtcanIF5qUT0RW3WmfkmdFarda0vgJOuzCLH_ZdRaUD3OdmdYxShBqG5i77_fIMgIFqeXgf4IskgpHPwGc",
+                     "72384" : "https://ipv6-c233-sea001-ix.1.oca.nflxvideo.net/?o=1&v=30&e=1685651452&t=FLrwZ3FrjqBhmHg34u_3Hd2-Rj8xrhiBsnyHKveku4dnEkiTYG9sgf4Pt293mdwHr-1h5X0VJ_4mkIAvW6atghvQFZVQ2a0F3qT3xxigrjAoLlfkLjO8cHLl8ZcuKLt2ZZf0jkxuTitwS1lcHZeqM1Q94aqMS52NbQMoMEhZAo048nPqVIADKNj4zmsseGkvhyS7vrt0s65JXc9xYHDwTqcAfiQmMXLlXL5EBIwGibbjd_HajpFA9_3aVT78Qlj_PLA",
+                     "73144" : "https://ipv4-c076-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=15&e=1685651452&t=DR3IEGckRCC1jbX7tpnel3X6tdJ9aAhPvgmUHo5BlYpdSj5j0qxuBEfRZDrZMeULpKxHeaUqsAmT5YbTSTocxCOoVJONgOx18wf7Ig0Y7LvmyFsfXYYIFCBO4g8KgUi8O8az1CumjcF5jwWu1gircW0JgnzH3I9ZUyAIP078fJJs2Gu391nCtjfPOml5jF-cZ5loXxn58ql1EAKYFQWl4apGK6e92h79wGEr9ILZ9i4s5RNM-JHgpbzL432iJQdvWas"
+                  },
+                  "hashAlgo" : "sha1",
+                  "hashValue" : "66XTlNmrAHuyKcmOqkGx3kFT5Dw=",
+                  "height" : 1080,
+                  "id" : "1999130145",
+                  "isImage" : true,
+                  "midxOffset" : 35953280,
+                  "midxSize" : 810,
+                  "size" : 36030078,
+                  "sortValue" : 3,
+                  "subType" : "nflx-cmisc",
+                  "textKey" : null,
+                  "width" : 1920
+               },
+               "webvtt-lssdh-ios8" : {
+                  "downloadUrls" : {
+                     "72384" : "https://ipv6-c233-sea001-ix.1.oca.nflxvideo.net/?o=1&v=30&e=1685651452&t=ihI7i-UKQoYVsI2B2RqW_RQ2zTJ5P7_JXXl-THrg3IIqT27ZB9ZIlvJ4RZpSmQKh2vSxV3FvklnDbjMUS8zjp2ER6_350MfH2hH3WiyqvvKUCp-WcA5eWLtJOcf6yn9VyVOoJUl8BjGQ-TQ-qB8XYotKMjfDa-Ycwnc-H8_LZSgDZN4s1SRk01npmD350gdnLQcfwM5SW8WRIM5nBfyj-KuFcDnvqzg2qWwSnCCGAsI8SQ6Riw5Yaherao9qq25FG-o",
+                     "73139" : "https://ipv6-c069-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=16&e=1685651452&t=GWgsnL2-GW4ktMEHHcrAVdOcXDxZELP91REzTPwTXFhkZf1Uz52ItpCcXAYos_vEjFQRM9Msgi_rASgiFkn_K9QOLV57Y2U1hs6N6P4x-Sc6EkpaqRDH3DUjzaaQzta7kLr6oVQYA_D14QAuidkF10JHrINwGEjQs70EBOttc7FsLLNDTWG3kQyNMyfMb2L83IUz7yhphK1j-sjH-CmlOEBNFvZnAfwl449JvJc4Ky-jLLLIWfY_vVQtZESGoiqu4Iw",
+                     "73144" : "https://ipv4-c076-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=15&e=1685651452&t=1ItfiOvI9zjdKStWHN4brfxQf0ZbFAk2VipoHU70FT4JTTmqqtKIUXzOf1pEyNrCAOqR9lA2CCXQdnRTP8L_IF1whFUYpK7wFKiMp_rFi-CPcn0L8nXsXUjssDHryLp4Pr2usYU33UC2fHq3YpQjtJxCWcRCwxfBluMoHslTgW3e82yx6s-6-h6CuTBz_wKmTScT-ZhW2W7ACZsse0mNM174h6R2YO0N01ZiwAbfFUCVvCbmzqf6V96MnlN0Klqp_jU"
+                  },
+                  "hashAlgo" : "sha1",
+                  "hashValue" : "VZ8I6+xWA2noSO29kANFWFDeRvQ=",
+                  "isImage" : false,
+                  "size" : 323289,
+                  "sortValue" : 3,
+                  "subType" : "webvtt-lssdh-ios8",
+                  "textKey" : null
+               }
+            },
+            "type" : 2,
+            "uri" : "T:2:0;1;zh-Hans;0;0;0;_ttml-image"
+         }
+      ]
+   },
+   "isTrial" : true,
+   "mediaId" : "81161626_c7Z9tc",
+   "metaData" : {
+      "description" : "一名联邦调查局侧写员奉命追踪世界头号艺术品窃贼，殊不知窃贼却变为了他的同伴。不情不愿的他要与之联手逮捕一个总是领先一步且神出鬼没的诈骗犯。",
+      "thumbnail" : "C:\\Users\\Administrator\\AppData\\Roaming\\NoteBurner Netflix Video Downloader\\Library\\81161626_1.jpg",
+      "thumbnailType" : "url",
+      "title" : "红色通缉令",
+      "year" : 2021
+   },
+   "output" : {
+      "folder" : "D:\\Users\\Documents\\NoteBurner Netflix Video Downloader",
+      "format" : "mp4",
+      "hwaccel" : true,
+      "ignorPartialFail" : true,
+      "path" : "D:\\Users\\Documents\\NoteBurner Netflix Video Downloader\\红色通缉令.mp4",
+      "subtitleForm" : 2,
+      "subtitleFormat" : 0,
+      "videoCodec" : "h264"
+   }
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {
+      "input" : {
+         "tracks" : [
+            {
+               "bitRate" : 128000,
+               "bitrate" : 128000,
+               "channels" : "2.0",
+               "codec" : "AAC HQ",
+               "content_profile" : "heaac-2hq-dash",
+               "desc" : "English (Original)_en_undefined_116138588_128000_ad_false_5.1_false_codec",
+               "headUrl" : {
+                  "length" : 73139,
+                  "offset" : 0,
+                  "url" : "https://ipv6-c069-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=16&e=1685651452&t=XI4GY5_v3twZF2aRaQDMuT9gR4iEFuC9hWAsDyv6przeT5zJOyMTFUb7ENe7LmwuF7P2CIOWkI535wSN3LGJmTOZQN11kOfZDplm1d5v6w3BkyTstQ2-L5V0IyH8ry0OigjYRhdQjOm3pySo79aMTBKI2SC5c9aV01Ul8Azt3tQhvsD-2jYfE1i2iM5EkKcUny2BAnFJwFJSFdCk4aDfC9M8KI9Otd8lU0i4LIXnwEUjPN5XiO-lr1EhSCynJ7nFw5G4gDs"
+               },
+               "is5_1" : false,
+               "isAD" : false,
+               "isDefault" : false,
+               "isDrm" : false,
+               "isOriginal" : true,
+               "language" : "en",
+               "languageDescription" : "英语 [原始]",
+               "languageLabel" : "English (Original)",
+               "new_track_id" : "A:2:1;2;en;1;0;",
+               "oriLanguage" : "en",
+               "size" : 116138588,
+               "trackId" : "A:2:1;2;en;1;0;-128-116138588",
+               "type" : 0,
+               "uri" : "A:2:1;2;en;1;0;-128-116138588"
+            },
+            {
+               "bitRate" : 640000,
+               "bitrate" : 640000,
+               "channels" : "5.1",
+               "codec" : "DD+ 5.1 HQ",
+               "content_profile" : "ddplus-5.1hq-dash",
+               "desc" : "English (Original)_en_undefined_570313181_640000_ad_false_5.1_true_codec",
+               "headUrl" : {
+                  "length" : 67234,
+                  "offset" : 0,
+                  "url" : "https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=I1-SEjpYt94o-1FeXmYYIjpfZM7ucRJMI9_xcuUyVoZMov6IRXbshhOqcBwdqQbKzJx9S2bZuXutX7OS-yEyB9clCevYaEwRWfir-ysMfBmIeaIwIpcxdAP-qEqVEjBhoJ0QPkxYttEyrb73uVG7Bxs25HdeqmUGujMbJHDjR80arrD6VsU58N7XpPpxExi62v9H6T76ZWfXl-i_7emHyIjYDo9ht9oh0Mi-5NLogjt3vEuRLnIV5xd0NwzZmh7c9wMn2OQ"
+               },
+               "is5_1" : true,
+               "isAD" : false,
+               "isDefault" : true,
+               "isDrm" : false,
+               "isOriginal" : true,
+               "language" : "en",
+               "languageDescription" : "英语 [原始]",
+               "languageLabel" : "English (Original)",
+               "new_track_id" : "A:2:1;6;en;1;0;",
+               "oriLanguage" : "en",
+               "size" : 570313181,
+               "trackId" : "A:2:1;6;en;1;0;-640-570313181",
+               "type" : 0,
+               "uri" : "A:2:1;6;en;1;0;-640-570313181"
+            },
+            {
+               "bitRate" : 2273000,
+               "bitrate" : 2273000,
+               "codec" : "",
+               "desc" : "1920x1080_1080P_2273_undefined_24/1",
+               "frameRate" : "24/1",
+               "headUrl" : {
+                  "length" : 59830,
+                  "offset" : 0,
+                  "url" : "https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=BjGaLPAzovXYDaihBOz1gIKEzDXOWMUOAVpmjBvPc2_ZL6ZyXLpA7Vu_OkGSCTboJkHIa5P7TlZWkrMxSFmdGqigxv_qJLmTjYUzUJu71C67QkSpZQ643nbkzjGfkwCQGuLpubz-mqWHmM9PxjoZmtmOD7EhWgZYfqBbCJOeHVLEKF1fRnjeVcxCLYZA1f1JPHDC8aAXmBbE1DbG5qMjXlMDijx55Or-LzxzHe6Rj2CdOqFO9up2WCb6CfkOqoh3vKDRwdvg"
+               },
+               "isDrm" : true,
+               "pssh" : "AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAaxnlwAAAAAAAAAAA==",
+               "qualityIcon" : "1080P",
+               "sar" : "1:1",
+               "size" : 1980381229,
+               "trackId" : "V:2:1;2;;default;-1;none;-1;-2273",
+               "type" : 1,
+               "uri" : "V:2:1;2;;default;-1;none;-1;-2273"
+            },
+            {
+               "cdnlist" : [
+                  {
+                     "id" : 73139,
+                     "key" : "1-41378-high",
+                     "lowgrade" : false,
+                     "name" : "c069.hkg001.ix.nflxvideo.net",
+                     "rank" : 1,
+                     "type" : "OPEN_CONNECT_APPLIANCE"
+                  },
+                  {
+                     "id" : 67234,
+                     "key" : "1-41378-high",
+                     "lowgrade" : false,
+                     "name" : "c055.hkg001.ix.nflxvideo.net",
+                     "rank" : 2,
+                     "type" : "OPEN_CONNECT_APPLIANCE"
+                  },
+                  {
+                     "id" : 73144,
+                     "key" : "1-41378-high",
+                     "lowgrade" : false,
+                     "name" : "c076.hkg001.ix.nflxvideo.net",
+                     "rank" : 5,
+                     "type" : "OPEN_CONNECT_APPLIANCE"
+                  },
+                  {
+                     "id" : 72384,
+                     "key" : "2-41378-high",
+                     "lowgrade" : false,
+                     "name" : "c233.sea001.ix.nflxvideo.net",
+                     "rank" : 7,
+                     "type" : "OPEN_CONNECT_APPLIANCE"
+                  }
+               ],
+               "codec" : "ttml-image",
+               "desc" : "Chinese (Simplified)_zh-Hans_cc_false_forced_false_uriT:2:0;1;zh-Hans;0;0;0;_ttml-image",
+               "downloadableIds" : {
+                  "nflx-cmisc" : "1999130145",
+                  "webvtt-lssdh-ios8" : "1999129921"
+               },
+               "encodingProfileNames" : [ "nflx-cmisc", "webvtt-lssdh-ios8" ],
+               "headUrl" : {
+                  "length" : 0,
+                  "offset" : 0,
+                  "url" : "https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=re37C1yNtrIhcuph3XYGwRGpk4cutqDIZANG1poicEECI7pSm5oH0oMt7LGq_y8SiwAH6nYRrHh8aPZlpJKFZWIBg5QAltEavUuxbILs08kBhBfOhYvmKEoKdXPLTQ-HctPdP78PW3CTLv6Ho9BJpMId5w78WHuYMGOzdhsYgEqO97uyZvtcanIF5qUT0RW3WmfkmdFarda0vgJOuzCLH_ZdRaUD3OdmdYxShBqG5i77_fIMgIFqeXgf4IskgpHPwGc"
+               },
+               "hydrated" : true,
+               "id" : "T:2:0;1;zh-Hans;0;0;0;",
+               "isCC" : false,
+               "isDefault" : false,
+               "isForced" : false,
+               "isForcedNarrative" : false,
+               "isImage" : true,
+               "isLanguageLeftToRight" : true,
+               "isNoneTrack" : false,
+               "language" : "zh",
+               "languageDescription" : "Chinese (Simplified)",
+               "languageLabel" : "Chinese (Simplified)",
+               "new_track_id" : "T:2:0;1;zh-Hans;0;0;0;",
+               "oriLanguage" : "zh-Hans",
+               "rank" : 1,
+               "rawTrackType" : "subtitles",
+               "size" : 36030078,
+               "trackId" : "T:2:0;1;zh-Hans;0;0;0;_ttml-image",
+               "trackType" : "PRIMARY",
+               "ttDownloadables" : {
+                  "nflx-cmisc" : {
+                     "downloadUrls" : {
+                        "67234" : "https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=re37C1yNtrIhcuph3XYGwRGpk4cutqDIZANG1poicEECI7pSm5oH0oMt7LGq_y8SiwAH6nYRrHh8aPZlpJKFZWIBg5QAltEavUuxbILs08kBhBfOhYvmKEoKdXPLTQ-HctPdP78PW3CTLv6Ho9BJpMId5w78WHuYMGOzdhsYgEqO97uyZvtcanIF5qUT0RW3WmfkmdFarda0vgJOuzCLH_ZdRaUD3OdmdYxShBqG5i77_fIMgIFqeXgf4IskgpHPwGc",
+                        "72384" : "https://ipv6-c233-sea001-ix.1.oca.nflxvideo.net/?o=1&v=30&e=1685651452&t=FLrwZ3FrjqBhmHg34u_3Hd2-Rj8xrhiBsnyHKveku4dnEkiTYG9sgf4Pt293mdwHr-1h5X0VJ_4mkIAvW6atghvQFZVQ2a0F3qT3xxigrjAoLlfkLjO8cHLl8ZcuKLt2ZZf0jkxuTitwS1lcHZeqM1Q94aqMS52NbQMoMEhZAo048nPqVIADKNj4zmsseGkvhyS7vrt0s65JXc9xYHDwTqcAfiQmMXLlXL5EBIwGibbjd_HajpFA9_3aVT78Qlj_PLA",
+                        "73144" : "https://ipv4-c076-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=15&e=1685651452&t=DR3IEGckRCC1jbX7tpnel3X6tdJ9aAhPvgmUHo5BlYpdSj5j0qxuBEfRZDrZMeULpKxHeaUqsAmT5YbTSTocxCOoVJONgOx18wf7Ig0Y7LvmyFsfXYYIFCBO4g8KgUi8O8az1CumjcF5jwWu1gircW0JgnzH3I9ZUyAIP078fJJs2Gu391nCtjfPOml5jF-cZ5loXxn58ql1EAKYFQWl4apGK6e92h79wGEr9ILZ9i4s5RNM-JHgpbzL432iJQdvWas"
+                     },
+                     "hashAlgo" : "sha1",
+                     "hashValue" : "66XTlNmrAHuyKcmOqkGx3kFT5Dw=",
+                     "height" : 1080,
+                     "id" : "1999130145",
+                     "isImage" : true,
+                     "midxOffset" : 35953280,
+                     "midxSize" : 810,
+                     "size" : 36030078,
+                     "sortValue" : 3,
+                     "subType" : "nflx-cmisc",
+                     "textKey" : null,
+                     "width" : 1920
+                  },
+                  "webvtt-lssdh-ios8" : {
+                     "downloadUrls" : {
+                        "72384" : "https://ipv6-c233-sea001-ix.1.oca.nflxvideo.net/?o=1&v=30&e=1685651452&t=ihI7i-UKQoYVsI2B2RqW_RQ2zTJ5P7_JXXl-THrg3IIqT27ZB9ZIlvJ4RZpSmQKh2vSxV3FvklnDbjMUS8zjp2ER6_350MfH2hH3WiyqvvKUCp-WcA5eWLtJOcf6yn9VyVOoJUl8BjGQ-TQ-qB8XYotKMjfDa-Ycwnc-H8_LZSgDZN4s1SRk01npmD350gdnLQcfwM5SW8WRIM5nBfyj-KuFcDnvqzg2qWwSnCCGAsI8SQ6Riw5Yaherao9qq25FG-o",
+                        "73139" : "https://ipv6-c069-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=16&e=1685651452&t=GWgsnL2-GW4ktMEHHcrAVdOcXDxZELP91REzTPwTXFhkZf1Uz52ItpCcXAYos_vEjFQRM9Msgi_rASgiFkn_K9QOLV57Y2U1hs6N6P4x-Sc6EkpaqRDH3DUjzaaQzta7kLr6oVQYA_D14QAuidkF10JHrINwGEjQs70EBOttc7FsLLNDTWG3kQyNMyfMb2L83IUz7yhphK1j-sjH-CmlOEBNFvZnAfwl449JvJc4Ky-jLLLIWfY_vVQtZESGoiqu4Iw",
+                        "73144" : "https://ipv4-c076-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=15&e=1685651452&t=1ItfiOvI9zjdKStWHN4brfxQf0ZbFAk2VipoHU70FT4JTTmqqtKIUXzOf1pEyNrCAOqR9lA2CCXQdnRTP8L_IF1whFUYpK7wFKiMp_rFi-CPcn0L8nXsXUjssDHryLp4Pr2usYU33UC2fHq3YpQjtJxCWcRCwxfBluMoHslTgW3e82yx6s-6-h6CuTBz_wKmTScT-ZhW2W7ACZsse0mNM174h6R2YO0N01ZiwAbfFUCVvCbmzqf6V96MnlN0Klqp_jU"
+                     },
+                     "hashAlgo" : "sha1",
+                     "hashValue" : "VZ8I6+xWA2noSO29kANFWFDeRvQ=",
+                     "isImage" : false,
+                     "size" : 323289,
+                     "sortValue" : 3,
+                     "subType" : "webvtt-lssdh-ios8",
+                     "textKey" : null
+                  }
+               },
+               "type" : 2,
+               "uri" : "T:2:0;1;zh-Hans;0;0;0;_ttml-image"
+            }
+         ]
+      },
+      "isTrial" : true,
+      "mediaId" : "81161626_c7Z9tc",
+      "metaData" : {
+         "description" : "一名联邦调查局侧写员奉命追踪世界头号艺术品窃贼，殊不知窃贼却变为了他的同伴。不情不愿的他要与之联手逮捕一个总是领先一步且神出鬼没的诈骗犯。",
+         "thumbnail" : "C:\\Users\\Administrator\\AppData\\Roaming\\NoteBurner Netflix Video Downloader\\Library\\81161626_1.jpg",
+         "thumbnailType" : "url",
+         "title" : "红色通缉令",
+         "year" : 2021
+      },
+      "output" : {
+         "folder" : "D:\\Users\\Documents\\NoteBurner Netflix Video Downloader",
+         "format" : "mp4",
+         "hwaccel" : true,
+         "ignorPartialFail" : true,
+         "path" : "D:\\Users\\Documents\\NoteBurner Netflix Video Downloader\\红色通缉令.mp4",
+         "subtitleForm" : 2,
+         "subtitleFormat" : 0,
+         "videoCodec" : "h264"
+      }
+   },
+   "opType" : "Convert",
+   "token" : "22024_42"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {\n      \"input\" : {\n         \"tracks\" : [\n            {\n               \"bitRate\" : 128000,\n               \"bitrate\" : 128000,\n               \"channels\" : \"2.0\",\n               \"codec\" : \"AAC HQ\",\n               \"content_profile\" : \"heaac-2hq-dash\",\n               \"desc\" : \"English (Original)_en_undefined_116138588_128000_ad_false_5.1_false_codec\",\n               \"headUrl\" : {\n                  \"length\" : 73139,\n                  \"offset\" : 0,\n                  \"url\" : \"https://ipv6-c069-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=16&e=1685651452&t=XI4GY5_v3twZF2aRaQDMuT9gR4iEFuC9hWAsDyv6przeT5zJOyMTFUb7ENe7LmwuF7P2CIOWkI535wSN3LGJmTOZQN11kOfZDplm1d5v6w3BkyTstQ2-L5V0IyH8ry0OigjYRhdQjOm3pySo79aMTBKI2SC5c9aV01Ul8Azt3tQhvsD-2jYfE1i2iM5EkKcUny2BAnFJwFJSFdCk4aDfC9M8KI9Otd8lU0i4LIXnwEUjPN5XiO-lr1EhSCynJ7nFw5G4gDs\"\n               },\n               \"is5_1\" : false,\n               \"isAD\" : false,\n               \"isDefault\" : false,\n               \"isDrm\" : false,\n               \"isOriginal\" : true,\n               \"language\" : \"en\",\n               \"languageDescription\" : \"英语 [原始]\",\n               \"languageLabel\" : \"English (Original)\",\n               \"new_track_id\" : \"A:2:1;2;en;1;0;\",\n               \"oriLanguage\" : \"en\",\n               \"size\" : 116138588,\n               \"trackId\" : \"A:2:1;2;en;1;0;-128-116138588\",\n               \"type\" : 0,\n               \"uri\" : \"A:2:1;2;en;1;0;-128-116138588\"\n            },\n            {\n               \"bitRate\" : 640000,\n               \"bitrate\" : 640000,\n               \"channels\" : \"5.1\",\n               \"codec\" : \"DD+ 5.1 HQ\",\n               \"content_profile\" : \"ddplus-5.1hq-dash\",\n               \"desc\" : \"English (Original)_en_undefined_570313181_640000_ad_false_5.1_true_codec\",\n               \"headUrl\" : {\n                  \"length\" : 67234,\n                  \"offset\" : 0,\n                  \"url\" : \"https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=I1-SEjpYt94o-1FeXmYYIjpfZM7ucRJMI9_xcuUyVoZMov6IRXbshhOqcBwdqQbKzJx9S2bZuXutX7OS-yEyB9clCevYaEwRWfir-ysMfBmIeaIwIpcxdAP-qEqVEjBhoJ0QPkxYttEyrb73uVG7Bxs25HdeqmUGujMbJHDjR80arrD6VsU58N7XpPpxExi62v9H6T76ZWfXl-i_7emHyIjYDo9ht9oh0Mi-5NLogjt3vEuRLnIV5xd0NwzZmh7c9wMn2OQ\"\n               },\n               \"is5_1\" : true,\n               \"isAD\" : false,\n               \"isDefault\" : true,\n               \"isDrm\" : false,\n               \"isOriginal\" : true,\n               \"language\" : \"en\",\n               \"languageDescription\" : \"英语 [原始]\",\n               \"languageLabel\" : \"English (Original)\",\n               \"new_track_id\" : \"A:2:1;6;en;1;0;\",\n               \"oriLanguage\" : \"en\",\n               \"size\" : 570313181,\n               \"trackId\" : \"A:2:1;6;en;1;0;-640-570313181\",\n               \"type\" : 0,\n               \"uri\" : \"A:2:1;6;en;1;0;-640-570313181\"\n            },\n            {\n               \"bitRate\" : 2273000,\n               \"bitrate\" : 2273000,\n               \"codec\" : \"\",\n               \"desc\" : \"1920x1080_1080P_2273_undefined_24/1\",\n               \"frameRate\" : \"24/1\",\n               \"headUrl\" : {\n                  \"length\" : 59830,\n                  \"offset\" : 0,\n                  \"url\" : \"https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=BjGaLPAzovXYDaihBOz1gIKEzDXOWMUOAVpmjBvPc2_ZL6ZyXLpA7Vu_OkGSCTboJkHIa5P7TlZWkrMxSFmdGqigxv_qJLmTjYUzUJu71C67QkSpZQ643nbkzjGfkwCQGuLpubz-mqWHmM9PxjoZmtmOD7EhWgZYfqBbCJOeHVLEKF1fRnjeVcxCLYZA1f1JPHDC8aAXmBbE1DbG5qMjXlMDijx55Or-LzxzHe6Rj2CdOqFO9up2WCb6CfkOqoh3vKDRwdvg\"\n               },\n               \"isDrm\" : true,\n               \"pssh\" : \"AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAaxnlwAAAAAAAAAAA==\",\n               \"qualityIcon\" : \"1080P\",\n               \"sar\" : \"1:1\",\n               \"size\" : 1980381229,\n               \"trackId\" : \"V:2:1;2;;default;-1;none;-1;-2273\",\n               \"type\" : 1,\n               \"uri\" : \"V:2:1;2;;default;-1;none;-1;-2273\"\n            },\n            {\n               \"cdnlist\" : [\n                  {\n                     \"id\" : 73139,\n                     \"key\" : \"1-41378-high\",\n                     \"lowgrade\" : false,\n                     \"name\" : \"c069.hkg001.ix.nflxvideo.net\",\n                     \"rank\" : 1,\n                     \"type\" : \"OPEN_CONNECT_APPLIANCE\"\n                  },\n                  {\n                     \"id\" : 67234,\n                     \"key\" : \"1-41378-high\",\n                     \"lowgrade\" : false,\n                     \"name\" : \"c055.hkg001.ix.nflxvideo.net\",\n                     \"rank\" : 2,\n                     \"type\" : \"OPEN_CONNECT_APPLIANCE\"\n                  },\n                  {\n                     \"id\" : 73144,\n                     \"key\" : \"1-41378-high\",\n                     \"lowgrade\" : false,\n                     \"name\" : \"c076.hkg001.ix.nflxvideo.net\",\n                     \"rank\" : 5,\n                     \"type\" : \"OPEN_CONNECT_APPLIANCE\"\n                  },\n                  {\n                     \"id\" : 72384,\n                     \"key\" : \"2-41378-high\",\n                     \"lowgrade\" : false,\n                     \"name\" : \"c233.sea001.ix.nflxvideo.net\",\n                     \"rank\" : 7,\n                     \"type\" : \"OPEN_CONNECT_APPLIANCE\"\n                  }\n               ],\n               \"codec\" : \"ttml-image\",\n               \"desc\" : \"Chinese (Simplified)_zh-Hans_cc_false_forced_false_uriT:2:0;1;zh-Hans;0;0;0;_ttml-image\",\n               \"downloadableIds\" : {\n                  \"nflx-cmisc\" : \"1999130145\",\n                  \"webvtt-lssdh-ios8\" : \"1999129921\"\n               },\n               \"encodingProfileNames\" : [ \"nflx-cmisc\", \"webvtt-lssdh-ios8\" ],\n               \"headUrl\" : {\n                  \"length\" : 0,\n                  \"offset\" : 0,\n                  \"url\" : \"https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=re37C1yNtrIhcuph3XYGwRGpk4cutqDIZANG1poicEECI7pSm5oH0oMt7LGq_y8SiwAH6nYRrHh8aPZlpJKFZWIBg5QAltEavUuxbILs08kBhBfOhYvmKEoKdXPLTQ-HctPdP78PW3CTLv6Ho9BJpMId5w78WHuYMGOzdhsYgEqO97uyZvtcanIF5qUT0RW3WmfkmdFarda0vgJOuzCLH_ZdRaUD3OdmdYxShBqG5i77_fIMgIFqeXgf4IskgpHPwGc\"\n               },\n               \"hydrated\" : true,\n               \"id\" : \"T:2:0;1;zh-Hans;0;0;0;\",\n               \"isCC\" : false,\n               \"isDefault\" : false,\n               \"isForced\" : false,\n               \"isForcedNarrative\" : false,\n               \"isImage\" : true,\n               \"isLanguageLeftToRight\" : true,\n               \"isNoneTrack\" : false,\n               \"language\" : \"zh\",\n               \"languageDescription\" : \"Chinese (Simplified)\",\n               \"languageLabel\" : \"Chinese (Simplified)\",\n               \"new_track_id\" : \"T:2:0;1;zh-Hans;0;0;0;\",\n               \"oriLanguage\" : \"zh-Hans\",\n               \"rank\" : 1,\n               \"rawTrackType\" : \"subtitles\",\n               \"size\" : 36030078,\n               \"trackId\" : \"T:2:0;1;zh-Hans;0;0;0;_ttml-image\",\n               \"trackType\" : \"PRIMARY\",\n               \"ttDownloadables\" : {\n                  \"nflx-cmisc\" : {\n                     \"downloadUrls\" : {\n                        \"67234\" : \"https://ipv6-c055-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=114&e=1685651452&t=re37C1yNtrIhcuph3XYGwRGpk4cutqDIZANG1poicEECI7pSm5oH0oMt7LGq_y8SiwAH6nYRrHh8aPZlpJKFZWIBg5QAltEavUuxbILs08kBhBfOhYvmKEoKdXPLTQ-HctPdP78PW3CTLv6Ho9BJpMId5w78WHuYMGOzdhsYgEqO97uyZvtcanIF5qUT0RW3WmfkmdFarda0vgJOuzCLH_ZdRaUD3OdmdYxShBqG5i77_fIMgIFqeXgf4IskgpHPwGc\",\n                        \"72384\" : \"https://ipv6-c233-sea001-ix.1.oca.nflxvideo.net/?o=1&v=30&e=1685651452&t=FLrwZ3FrjqBhmHg34u_3Hd2-Rj8xrhiBsnyHKveku4dnEkiTYG9sgf4Pt293mdwHr-1h5X0VJ_4mkIAvW6atghvQFZVQ2a0F3qT3xxigrjAoLlfkLjO8cHLl8ZcuKLt2ZZf0jkxuTitwS1lcHZeqM1Q94aqMS52NbQMoMEhZAo048nPqVIADKNj4zmsseGkvhyS7vrt0s65JXc9xYHDwTqcAfiQmMXLlXL5EBIwGibbjd_HajpFA9_3aVT78Qlj_PLA\",\n                        \"73144\" : \"https://ipv4-c076-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=15&e=1685651452&t=DR3IEGckRCC1jbX7tpnel3X6tdJ9aAhPvgmUHo5BlYpdSj5j0qxuBEfRZDrZMeULpKxHeaUqsAmT5YbTSTocxCOoVJONgOx18wf7Ig0Y7LvmyFsfXYYIFCBO4g8KgUi8O8az1CumjcF5jwWu1gircW0JgnzH3I9ZUyAIP078fJJs2Gu391nCtjfPOml5jF-cZ5loXxn58ql1EAKYFQWl4apGK6e92h79wGEr9ILZ9i4s5RNM-JHgpbzL432iJQdvWas\"\n                     },\n                     \"hashAlgo\" : \"sha1\",\n                     \"hashValue\" : \"66XTlNmrAHuyKcmOqkGx3kFT5Dw=\",\n                     \"height\" : 1080,\n                     \"id\" : \"1999130145\",\n                     \"isImage\" : true,\n                     \"midxOffset\" : 35953280,\n                     \"midxSize\" : 810,\n                     \"size\" : 36030078,\n                     \"sortValue\" : 3,\n                     \"subType\" : \"nflx-cmisc\",\n                     \"textKey\" : null,\n                     \"width\" : 1920\n                  },\n                  \"webvtt-lssdh-ios8\" : {\n                     \"downloadUrls\" : {\n                        \"72384\" : \"https://ipv6-c233-sea001-ix.1.oca.nflxvideo.net/?o=1&v=30&e=1685651452&t=ihI7i-UKQoYVsI2B2RqW_RQ2zTJ5P7_JXXl-THrg3IIqT27ZB9ZIlvJ4RZpSmQKh2vSxV3FvklnDbjMUS8zjp2ER6_350MfH2hH3WiyqvvKUCp-WcA5eWLtJOcf6yn9VyVOoJUl8BjGQ-TQ-qB8XYotKMjfDa-Ycwnc-H8_LZSgDZN4s1SRk01npmD350gdnLQcfwM5SW8WRIM5nBfyj-KuFcDnvqzg2qWwSnCCGAsI8SQ6Riw5Yaherao9qq25FG-o\",\n                        \"73139\" : \"https://ipv6-c069-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=16&e=1685651452&t=GWgsnL2-GW4ktMEHHcrAVdOcXDxZELP91REzTPwTXFhkZf1Uz52ItpCcXAYos_vEjFQRM9Msgi_rASgiFkn_K9QOLV57Y2U1hs6N6P4x-Sc6EkpaqRDH3DUjzaaQzta7kLr6oVQYA_D14QAuidkF10JHrINwGEjQs70EBOttc7FsLLNDTWG3kQyNMyfMb2L83IUz7yhphK1j-sjH-CmlOEBNFvZnAfwl449JvJc4Ky-jLLLIWfY_vVQtZESGoiqu4Iw\",\n                        \"73144\" : \"https://ipv4-c076-hkg001-ix.1.oca.nflxvideo.net/?o=1&v=15&e=1685651452&t=1ItfiOvI9zjdKStWHN4brfxQf0ZbFAk2VipoHU70FT4JTTmqqtKIUXzOf1pEyNrCAOqR9lA2CCXQdnRTP8L_IF1whFUYpK7wFKiMp_rFi-CPcn0L8nXsXUjssDHryLp4Pr2usYU33UC2fHq3YpQjtJxCWcRCwxfBluMoHslTgW3e82yx6s-6-h6CuTBz_wKmTScT-ZhW2W7ACZsse0mNM174h6R2YO0N01ZiwAbfFUCVvCbmzqf6V96MnlN0Klqp_jU\"\n                     },\n                     \"hashAlgo\" : \"sha1\",\n                     \"hashValue\" : \"VZ8I6+xWA2noSO29kANFWFDeRvQ=\",\n                     \"isImage\" : false,\n                     \"size\" : 323289,\n                     \"sortValue\" : 3,\n                     \"subType\" : \"webvtt-lssdh-ios8\",\n                     \"textKey\" : null\n                  }\n               },\n               \"type\" : 2,\n               \"uri\" : \"T:2:0;1;zh-Hans;0;0;0;_ttml-image\"\n            }\n         ]\n      },\n      \"isTrial\" : true,\n      \"mediaId\" : \"81161626_c7Z9tc\",\n      \"metaData\" : {\n         \"description\" : \"一名联邦调查局侧写员奉命追踪世界头号艺术品窃贼，殊不知窃贼却变 为了他的同伴。不情不愿的他要与之联手逮捕一个总是领先一步且神出鬼没的诈骗犯。\",\n         \"thumbnail\" : \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Roaming\\\\NoteBurner Netflix Video Downloader\\\\Library\\\\81161626_1.jpg\",\n         \"thumbnailType\" : \"url\",\n         \"title\" : \"红色通缉令\",\n         \"year\" : 2021\n      },\n      \"output\" : {\n         \"folder\" : \"D:\\\\Users\\\\Documents\\\\NoteBurner Netflix Video Downloader\",\n         \"format\" : \"mp4\",\n         \"hwaccel\" : true,\n         \"ignorPartialFail\" : true,\n         \"path\" : \"D:\\\\Users\\\\Documents\\\\NoteBurner Netflix Video Downloader\\\\红色通缉令.mp4\",\n         \"subtitleForm\" : 2,\n         \"subtitleFormat\" : 0,\n         \"videoCodec\" : \"h264\"\n      }\n   },\n   \"opType\" : \"Convert\",\n   \"token\" : \"22024_42\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "shell_18380"
+   }
+}
+
+getJosnFromString onEnter
+recv: {
+   "opData" : {
+      "data" : {
+         "progress" : {
+            "leftTime" : 0,
+            "speed" : 0,
+            "state" : 0,
+            "value" : 406
+         }
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "ConvertProgress",
+   "token" : "22024_42"
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "data" : {
+      "progress" : {
+         "leftTime" : 0,
+         "speed" : 0,
+         "state" : 0,
+         "value" : 406
+      }
+   },
+   "error" : false,
+   "errorCode" : 0
+}
+
+getJosnFromString onEnter
+recv: {
+   "data" : {
+      "progress" : {
+         "leftTime" : 0,
+         "speed" : 0,
+         "state" : 0,
+         "value" : 406
+      }
+   },
+   "error" : false,
+   "errorCode" : 0
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {
+      "data" : {
+         "progress" : {
+            "leftTime" : 0,
+            "speed" : 0,
+            "state" : 0,
+            "value" : 406
+         }
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "ConvertProgress",
+   "token" : "22024_42"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {\n      \"data\" : {\n         \"progress\" : {\n            \"leftTime\" : 0,\n            \"speed\" : 0,\n            \"state\" : 0,\n            \"value\" : 406\n         }\n      },\n      \"error\" : false,\n      \"errorCode\" : 0\n   },\n   \"opType\" : \"ConvertProgress\",\n   \"token\" : \"22024_42\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "mediaconvert_NoteBurner-netflix"
+   }
+}
+
+getJosnFromString onEnter
+recv: {
+   "opData" : {
+      "data" : {
+         "progress" : {
+            "leftTime" : 0,
+            "speed" : 24,
+            "state" : 0,
+            "value" : 406
+         }
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "ConvertProgress",
+   "token" : "22024_42"
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "data" : {
+      "progress" : {
+         "leftTime" : 0,
+         "speed" : 24,
+         "state" : 0,
+         "value" : 406
+      }
+   },
+   "error" : false,
+   "errorCode" : 0
+}
+
+getJosnFromString onEnter
+recv: {
+   "data" : {
+      "progress" : {
+         "leftTime" : 0,
+         "speed" : 24,
+         "state" : 0,
+         "value" : 406
+      }
+   },
+   "error" : false,
+   "errorCode" : 0
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {
+      "data" : {
+         "progress" : {
+            "leftTime" : 0,
+            "speed" : 24,
+            "state" : 0,
+            "value" : 406
+         }
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "ConvertProgress",
+   "token" : "22024_42"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {\n      \"data\" : {\n         \"progress\" : {\n            \"leftTime\" : 0,\n            \"speed\" : 24,\n            \"state\" : 0,\n            \"value\" : 406\n         }\n      },\n      \"error\" : false,\n      \"errorCode\" : 0\n   },\n   \"opType\" : \"ConvertProgress\",\n   \"token\" : \"22024_42\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "mediaconvert_NoteBurner-netflix"
+   }
+}
+
+getJosnFromString onEnter
+recv: {
+   "opData" : {
+      "data" : {
+         "progress" : {
+            "leftTime" : 0,
+            "speed" : 12,
+            "state" : 0,
+            "value" : 406
+         }
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "ConvertProgress",
+   "token" : "22024_42"
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "data" : {
+      "progress" : {
+         "leftTime" : 0,
+         "speed" : 12,
+         "state" : 0,
+         "value" : 406
+      }
+   },
+   "error" : false,
+   "errorCode" : 0
+}
+
+getJosnFromString onEnter
+recv: {
+   "data" : {
+      "progress" : {
+         "leftTime" : 0,
+         "speed" : 12,
+         "state" : 0,
+         "value" : 406
+      }
+   },
+   "error" : false,
+   "errorCode" : 0
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {
+      "data" : {
+         "progress" : {
+            "leftTime" : 0,
+            "speed" : 12,
+            "state" : 0,
+            "value" : 406
+         }
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "ConvertProgress",
+   "token" : "22024_42"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {\n      \"data\" : {\n         \"progress\" : {\n            \"leftTime\" : 0,\n            \"speed\" : 12,\n            \"state\" : 0,\n            \"value\" : 406\n         }\n      },\n      \"error\" : false,\n      \"errorCode\" : 0\n   },\n   \"opType\" : \"ConvertProgress\",\n   \"token\" : \"22024_42\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "mediaconvert_NoteBurner-netflix"
+   }
+}
+
+getJosnFromString onEnter
+recv: {
+   "opData" : {
+      "data" : {
+         "progress" : {
+            "leftTime" : 0,
+            "speed" : 22463,
+            "state" : 0,
+            "value" : 406
+         }
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "ConvertProgress",
+   "token" : "22024_42"
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "data" : {
+      "progress" : {
+         "leftTime" : 0,
+         "speed" : 22463,
+         "state" : 0,
+         "value" : 406
+      }
+   },
+   "error" : false,
+   "errorCode" : 0
+}
+
+getJosnFromString onEnter
+recv: {
+   "data" : {
+      "progress" : {
+         "leftTime" : 0,
+         "speed" : 22463,
+         "state" : 0,
+         "value" : 406
+      }
+   },
+   "error" : false,
+   "errorCode" : 0
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {
+      "data" : {
+         "progress" : {
+            "leftTime" : 0,
+            "speed" : 22463,
+            "state" : 0,
+            "value" : 406
+         }
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "ConvertProgress",
+   "token" : "22024_42"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {\n      \"data\" : {\n         \"progress\" : {\n            \"leftTime\" : 0,\n            \"speed\" : 22463,\n            \"state\" : 0,\n            \"value\" : 406\n         }\n      },\n      \"error\" : false,\n      \"errorCode\" : 0\n   },\n   \"opType\" : \"ConvertProgress\",\n   \"token\" : \"22024_42\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "mediaconvert_NoteBurner-netflix"
+   }
+}
+
+getJosnFromString onEnter
+recv: {
+   "opData" : {
+      "data" : {
+         "progress" : {
+            "leftTime" : 0,
+            "speed" : 22463,
+            "state" : 0,
+            "value" : 407
+         }
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "ConvertProgress",
+   "token" : "22024_42"
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "data" : {
+      "progress" : {
+         "leftTime" : 0,
+         "speed" : 22463,
+         "state" : 0,
+         "value" : 407
+      }
+   },
+   "error" : false,
+   "errorCode" : 0
+}
+
+getJosnFromString onEnter
+recv: {
+   "data" : {
+      "progress" : {
+         "leftTime" : 0,
+         "speed" : 22463,
+         "state" : 0,
+         "value" : 407
+      }
+   },
+   "error" : false,
+   "errorCode" : 0
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {
+      "data" : {
+         "progress" : {
+            "leftTime" : 0,
+            "speed" : 22463,
+            "state" : 0,
+            "value" : 407
+         }
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "ConvertProgress",
+   "token" : "22024_42"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {\n      \"data\" : {\n         \"progress\" : {\n            \"leftTime\" : 0,\n            \"speed\" : 22463,\n            \"state\" : 0,\n            \"value\" : 407\n         }\n      },\n      \"error\" : false,\n      \"errorCode\" : 0\n   },\n   \"opType\" : \"ConvertProgress\",\n   \"token\" : \"22024_42\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "mediaconvert_NoteBurner-netflix"
+   }
+}
+
+getJosnFromString onEnter
+recv: {
+   "opData" : {
+      "data" : {
+         "progress" : {
+            "leftTime" : 0,
+            "speed" : 33688,
+            "state" : 0,
+            "value" : 411
+         }
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "ConvertProgress",
+   "token" : "22024_42"
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "data" : {
+      "progress" : {
+         "leftTime" : 0,
+         "speed" : 33688,
+         "state" : 0,
+         "value" : 411
+      }
+   },
+   "error" : false,
+   "errorCode" : 0
+}
+
+getJosnFromString onEnter
+recv: {
+   "data" : {
+      "progress" : {
+         "leftTime" : 0,
+         "speed" : 33688,
+         "state" : 0,
+         "value" : 411
+      }
+   },
+   "error" : false,
+   "errorCode" : 0
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {
+      "data" : {
+         "progress" : {
+            "leftTime" : 0,
+            "speed" : 33688,
+            "state" : 0,
+            "value" : 411
+         }
+      },
+      "error" : false,
+      "errorCode" : 0
+   },
+   "opType" : "ConvertProgress",
+   "token" : "22024_42"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {\n      \"data\" : {\n         \"progress\" : {\n            \"leftTime\" : 0,\n            \"speed\" : 33688,\n            \"state\" : 0,\n            \"value\" : 411\n         }\n      },\n      \"error\" : false,\n      \"errorCode\" : 0\n   },\n   \"opType\" : \"ConvertProgress\",\n   \"token\" : \"22024_42\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "mediaconvert_NoteBurner-netflix"
+   }
+}
+
+getJosnFromString onEnter
+recv: {"opData":{"mediaId":"81161626_c7Z9tc"},"opType":"Suspend","token":"22024_43"}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "mediaId" : "81161626_c7Z9tc"
+}
+
+getJosnFromString onEnter
+recv: {
+   "mediaId" : "81161626_c7Z9tc"
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {
+      "mediaId" : "81161626_c7Z9tc"
+   },
+   "opType" : "Suspend",
+   "token" : "22024_43"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {\n      \"mediaId\" : \"81161626_c7Z9tc\"\n   },\n   \"opType\" : \"Suspend\",\n   \"token\" : \"22024_43\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "shell_18380"
+   }
+}
+
+getJosnFromString onEnter
+recv: {
+   "opData" : {
+      "error" : true,
+      "errorCode" : 1601
+   },
+   "opType" : "ConvertResult",
+   "token" : "22024_42"
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "error" : true,
+   "errorCode" : 1601
+}
+
+getJosnFromString onEnter
+recv: {
+   "error" : true,
+   "errorCode" : 1601
+}
+
+getJosnFromString onLeave
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {},
+   "opType" : "Exit"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {},\n   \"opType\" : \"Exit\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "shell_18380"
+   }
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "opData" : {
+      "error" : true,
+      "errorCode" : 1601
+   },
+   "opType" : "ConvertResult",
+   "token" : "22024_42"
+}
+
+json__toStyledString onEnter
+json__toStyledString onLeave
+send：{
+   "content" : "{\n   \"opData\" : {\n      \"error\" : true,\n      \"errorCode\" : 1601\n   },\n   \"opType\" : \"ConvertResult\",\n   \"token\" : \"22024_42\"\n}\n",
+   "header" : {
+      "from" : "keeper_21688",
+      "to" : "mediaconvert_NoteBurner-netflix"
+   }
+}
