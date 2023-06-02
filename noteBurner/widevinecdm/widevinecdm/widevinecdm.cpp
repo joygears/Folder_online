@@ -82,8 +82,9 @@ int main()
 	
     initializeApp();
     InitializeCdmModule_4();
-
-    DeinitializeCdmModule();
+    string key_system("com.widevine.alpha");
+    CreateCdmInstance(10, key_system.c_str(), key_system.size(), HostFunction, 0);
+    
 
     return 0;
 

@@ -381,8 +381,10 @@ private:
     ContentDecryptionModule_10* m_instance;
     cdmHost* m_host;
 
+    std::mutex m_mtx;
     std::string m_d4;
     std::string m_baseServerCertificate;
+    friend class cdmHost;
 private:
     static std::list<MyContentDecryptionModuleProxy*> g_listInstance;
     static std::mutex g_mtx;

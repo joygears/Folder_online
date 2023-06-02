@@ -74,10 +74,11 @@ void cdmHost::OnResolveNewSessionPromise(int promise_id, const char* session_id,
         m_session_id = promise_id;
         return;
     }
+    m_MyProxy->m_mtx.lock();
  
- 
+
     
-    
+    m_MyProxy->m_mtx.unlock();
     m_host->OnResolveNewSessionPromise(promise_id,session_id,session_id_size);
 }
 
@@ -120,7 +121,7 @@ void cdmHost::OnSessionMessage(const char* session_id, uint32_t session_id_size,
     Log("[KREQ]cdm normal mode process OnSessionMessage!");
 
     if (m_host) {
-
+        
         m_host->OnSessionMessage(session_id,session_id_size,message_type, message,message_size);
     }
 }
