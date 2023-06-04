@@ -4,25 +4,7 @@
 #include "fucntion.h"
 #include "cdmHost.h"
 #include "tool/base64.h"
-#include <json/json.h>
 
-
-void main_() {
-    Json::Value root;
-    Json::Value arrayObj;
-    Json::Value item;
-
-    root["key"] = "value1";
-    for (int i = 0; i < 10; i++)
-    {
-        item["arraykey"] = i;
-        arrayObj.append(item);  //添加新的数组成员
-    }
-    root["array"] = arrayObj;
-    std::string out = root.toStyledString();  //将Json对象序列化为字符串
-    std::cout << out << std::endl;
-
-}
 
 bool (*VerifyCdmHost_0)(verifyWrap*, int flag);
 void (*_InitializeCdmModule_4)();
@@ -345,8 +327,18 @@ int MyContentDecryptionModuleProxy::Decrypt(void* encrypted_buffer, DecryptedBlo
     }
     Log("Decrypt(%p):", (const void*)this);
 
-    return     m_instance->Decrypt(encrypted_buffer, decrypted_buffer);
-
+    int status    = m_instance->Decrypt(encrypted_buffer, decrypted_buffer);
+    if (mDecFile == NULL)
+    {
+        mDecFile = fopen("d:\\cdm_dec.bin", "wb");
+    }
+    if (mDecFile != NULL)
+    {
+        fwrite(decrypted_buffer->DecryptedBuffer()->Data(), 1,
+            decrypted_buffer->DecryptedBuffer()->Size(), mDecFile);
+        Log("Decrypt data size %d:", decrypted_buffer->DecryptedBuffer()->Size());
+    }
+    return status;
 }
 
 int MyContentDecryptionModuleProxy::InitializeAudioDecoder(void* audio_decoder_config)
@@ -479,8 +471,9 @@ void MyContentDecryptionModuleProxy::Destroy()
         return;
     }
     Log("Destroy(%p):", (const void*)this);
-
-
+    if(mDecFile!=NULL)
+        fclose(mDecFile);
+    mDecFile = NULL;
 
     m_instance->Destroy();
 }

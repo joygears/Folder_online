@@ -1,9 +1,2 @@
-﻿  cdmHost.cpp
-  fucntion.cpp
-D:\Users\st\Folder_online\noteBurner\widevinecdm\widevinecdm\fucntion.cpp(19,9): warning C4101: “n”: 未引用的局部变量
-  base64.cpp
-  widevinecdm.cpp
-  正在生成代码...
-  LINK : 没有找到 D:\Users\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe 或上一个增量链接没有生成它；正在执行完全链接
-    正在创建库 D:\Users\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.lib 和对象 D:\Users\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exp
-  widevinecdm.vcxproj -> D:\Users\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+﻿  widevinecdm.cpp
+  widevinecdm.vcxproj -> D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.dll
