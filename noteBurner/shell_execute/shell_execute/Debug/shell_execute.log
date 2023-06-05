@@ -1,0 +1,4 @@
+﻿  shell_execute.cpp
+D:\Users\st\Folder_online\noteBurner\shell_execute\shell_execute\shell_execute.cpp(26,25): warning C4566: 由通用字符名称“\uF560”表示的字符不能在当前代码页(936)中表示出来
+D:\Users\st\Folder_online\noteBurner\shell_execute\shell_execute\shell_execute.cpp(29,25): warning C4566: 由通用字符名称“\uF560”表示的字符不能在当前代码页(936)中表示出来
+  shell_execute.vcxproj -> D:\Users\st\Folder_online\noteBurner\shell_execute\Debug\wv_shell.exe
