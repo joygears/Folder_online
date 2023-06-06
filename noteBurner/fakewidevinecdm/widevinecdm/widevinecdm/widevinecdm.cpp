@@ -86,7 +86,7 @@ void* HostFunction(int host_version, void* user_data)
 DLL_EXPORT void InitializeCdmModule_4()
 {
     Log("InitializeCdmModule_4\n");
-    _InitializeCdmModule_4();
+   // _InitializeCdmModule_4();
 }
 
 DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system, uint32_t key_system_len, void* host_function, void* extra_data)
@@ -94,8 +94,8 @@ DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system
     Log("CreateCdmInstance %d, %s, %lld, \n", interface_version, key_system, key_system_len);
 
     originHostFunction = (void* (*)(int host_version, void* user_data))host_function;
-
-    void* instance = _CreateCdmInstance(interface_version, key_system, key_system_len, HostFunction, extra_data);
+    void* instance = nullptr;
+   // void* instance = _CreateCdmInstance(interface_version, key_system, key_system_len, HostFunction, extra_data);
     if (!instance)
     {
         Log("no origin instance created\n");
@@ -117,7 +117,7 @@ DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system
 DLL_EXPORT void DeinitializeCdmModule()
 {
     Log("DeinitializeCdmModule\n");
-    _DeinitializeCdmModule();
+    //_DeinitializeCdmModule();
 }
 
 DLL_EXPORT char* GetCdmVersion()

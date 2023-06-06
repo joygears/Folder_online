@@ -10,6 +10,7 @@ int main()
 
     BOOL result = SHSetFolderPathW(CSIDL_APPDATA, NULL, 0, newPath);
     SetEnvironmentVariable(TEXT("APP_VMP_VERIFY"), TEXT("1"));
+    SetEnvironmentVariable(TEXT("KEEPER_ID"), TEXT("1321"));
     LoadLibrary(TEXT("cshell.dll"));
     char ch;
     std::cin >> ch;
