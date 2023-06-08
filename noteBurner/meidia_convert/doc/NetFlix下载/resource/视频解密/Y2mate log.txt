@@ -1,0 +1,8 @@
+17844 2022:05:25-12:00:17 Info: GetDecryptSize : 80798369
+17844 2022:05:25-12:00:17 Info: DecryptStream src path : "D:/Users/Documents/Y2mate/Y2mate Downloader/Temp/outputTemp/Netflix/2022_05_25_12_00_09_70176435/video/1545260628.tmp"
+17844 2022:05:25-12:00:17 Info: DecryptStream dst path : "D:/Users/Documents/Y2mate/Y2mate Downloader/Temp/outputTemp/Netflix/2022_05_25_12_00_09_70176435/video/1545260628"
+17844 2022:05:25-12:00:17 Info: DecryptStream streamIter->keyid : 
+17844 2022:05:25-12:00:17 Info: Get file default kid : 00000000043bc0e60000000000000000
+17844 2022:05:25-12:00:17 Info: "ProcessedStreamFile. (00000000043bc0e60000000000000000)"
+17844 2022:05:25-12:00:17 Info: mp4 decrypt trackID : 1
+17844 2022:05:25-12:00:17 Info: mp4 decrypt strNewKey : 1:4f3b232fe78d31224ccc3965c5ab601c

@@ -1,0 +1,285 @@
+<html>
+ 
+<head>
+    <title>MSE EME Demo</title>
+    <style>
+        video {
+            max-width: 100%;
+        }
+    </style>
+ 
+    <script type="text/javascript">
+        // "keyid" : "key"
+        var keys = {
+            "2fef8ad812df429783e9bf6e5e493e53": "7f412f0575f44f718259beef56ec7771",
+            "7eaa636ee7d142fd945d1f764877d8db": "624db3d757bb496fb93e51f341d11716",
+        };
+ 
+        var audioFragments = [
+            "media/audio/init.mp4",
+            "media/audio/seg-1.mp4",
+            "media/audio/seg-2.mp4",
+            "media/audio/seg-3.mp4",
+            "media/audio/seg-4.mp4",
+            "media/audio/seg-5.mp4",
+            "media/audio/seg-6.mp4",
+            "media/audio/seg-7.mp4",
+        ];
+        var videoFragments = [
+            "media/video/init.mp4",
+            "media/video/seg-1.mp4",
+            "media/video/seg-2.mp4",
+            "media/video/seg-3.mp4",
+            "media/video/seg-4.mp4",
+            "media/video/seg-5.mp4",
+            "media/video/seg-6.mp4",
+            "media/video/seg-7.mp4",
+        ];
+ 
+        // mediasource extension ========================================================
+        function MSELoadTrack(fragments, type, mediaSource, name) {
+            return new Promise(function (resolve, reject) {
+                var sourceBuffer;
+                var curFragment = 0;
+ 
+                function addNextFragment() {
+                    if (mediaSource.readyState == "closed") {
+                        return;
+                    }
+                    if (curFragment >= fragments.length) {
+                        resolve();
+                        return;
+                    }
+ 
+                    var fragmentFile = fragments[curFragment++];
+ 
+                    var req = new XMLHttpRequest();
+                    req.open("GET", fragmentFile);
+                    req.responseType = "arraybuffer";
+ 
+                    req.addEventListener("load", function () {
+                        sourceBuffer.appendBuffer(new Uint8Array(req.response));
+                    });
+ 
+                    req.addEventListener("error", function () {
+                        reject();
+                    });
+                    req.addEventListener("abort", function () {
+                        reject();
+                    });
+ 
+                    req.send(null);
+                }
+ 
+                sourceBuffer = mediaSource.addSourceBuffer(type);
+                sourceBuffer.addEventListener("updateend", addNextFragment);
+                addNextFragment();
+ 
+            });
+        }
+ 
+        // encrypted media extension ========================================================
+ 
+        function bail(message) {
+            return function (err) {
+                console.error(message + (err ? " " + err : ""));
+            }
+        }
+ 
+        function ArrayBufferToString(arr) {
+            var str = '';
+            var view = new Uint8Array(arr);
+            for (var i = 0; i < view.length; i++) {
+                str += String.fromCharCode(view[i]);
+            }
+            return str;
+        }
+ 
+        function StringToArrayBuffer(str) {
+            var arr = new ArrayBuffer(str.length);
+            var view = new Uint8Array(arr);
+            for (var i = 0; i < str.length; i++) {
+                view[i] = str.charCodeAt(i);
+            }
+            return arr;
+        }
+ 
+        function Base64ToHex(str) {
+            var bin = window.atob(str.replace(/-/g, "+").replace(/_/g, "/"));
+            var res = "";
+            for (var i = 0; i < bin.length; i++) {
+                res += ("0" + bin.charCodeAt(i).toString(16)).substr(-2);
+            }
+            return res;
+        }
+ 
+        function HexToBase64(hex) {
+            var bin = "";
+            for (var i = 0; i < hex.length; i += 2) {
+                bin += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+            }
+            return window.btoa(bin).replace(/=/g, "").replace(/\+/g, "-").replace(/\//g, "_");
+        }
+ 
+        /*
+        *  clearkey的kid、key是写在代码里的，没有向服务器发起请求
+        */
+        function UpdateSessionFunc(name, keys) {
+            return function (ev) {
+                var msgStr = ArrayBufferToString(ev.message);
+                var msg = JSON.parse(msgStr);
+                var outKeys = [];
+ 
+                for (var i = 0; i < msg.kids.length; i++) {
+                    var id64 = msg.kids[i];
+                    var idHex = Base64ToHex(msg.kids[i]).toLowerCase();
+                    var key = keys[idHex];
+ 
+                    if (key) {
+                        outKeys.push({
+                            "kty": "oct",
+                            "alg": "A128KW",
+                            "kid": id64,
+                            "k": HexToBase64(key)
+                        });
+                    } else {
+                        bail(name + " couldn't find key for key id " + idHex);
+                    }
+                }
+ 
+                var update = JSON.stringify({
+                    "keys": outKeys,
+                    "type": msg.type
+                });
+ 
+                /*
+                *  调用session的update方法，传入license数据(包含key),license数据格式与initdatatype相关
+                */
+                ev.target.update(StringToArrayBuffer(update)).then(function () {
+                    console.log(name + " MediaKeySession update ok!");
+                }, bail(name + " MediaKeySession update failed"));
+            }
+        }
+ 
+        function KeysChange(event) {
+            var session = event.target;
+            console.log("keystatuseschange event on session" + session.sessionId);
+            var map = session.keyStatuses;
+            for (var entry of map.entries()) {
+                var keyId = entry[0];
+                var status = entry[1];
+                var base64KeyId = Base64ToHex(window.btoa(ArrayBufferToString(keyId)));
+                console.log("SessionId=" + session.sessionId + " keyId=" + base64KeyId + " status=" + status);
+            }
+        }
+ 
+        var ensurePromise;
+ 
+        function EnsureMediaKeysCreated(video, keySystem, options, encryptedEvent) {
+            // We may already have a MediaKeys object if we initialized EME for a
+            // different MSE SourceBuffer's "encrypted" event, or the initialization
+            // may still be in progress.
+            if (ensurePromise) {
+                return ensurePromise;
+            }
+ 
+            /*
+            *  通过navigator.requestMediaKeySystemAccess 获取 mediaKeySystemAccess
+            *  通过mediaKeySystemAccess.createMediaKeys 获取 mediaKeys
+            *  设置mediaKeys和HTMLMediaElement对象绑定
+            */
+            ensurePromise = navigator.requestMediaKeySystemAccess(keySystem, options)
+                .then(function (keySystemAccess) {
+                    return keySystemAccess.createMediaKeys();
+                }, bail(name + " Failed to request key system access."))
+            .then(function (mediaKeys) {
+                return video.setMediaKeys(mediaKeys);
+            }, bail(name + " failed to create MediaKeys object"))
+ 
+            return ensurePromise;
+        }
+ 
+        function SetupEME(video, keySystem, name, keys, options) {
+            video.sessions = [];
+ 
+            /*
+            *   监听到 video 的 encrypted事件后，开始同底层CDM交互，并获取密钥
+            */
+            video.addEventListener("encrypted", function (ev) {
+ 
+                EnsureMediaKeysCreated(video, keySystem, options, ev)
+                    .then(function () {
+                        /*
+                        * 通过video.mediaKeys.createSession 获取一个MediaKeySession session对象
+                        * 调用session.generateRequest 通知底层CDM发起一条获取key的请求，传入参数来自于音视频片段文件头，其中包含kid
+                        * 监听CDM发送的 message 通知(message消息通知中返回的参数 用来js向License服务器请求key信息)
+                        * 监听CDM发送的 keystatuseschange 通知
+                        */
+                        var session = video.mediaKeys.createSession();
+                        video.sessions.push(session);
+                        session.addEventListener("message", UpdateSessionFunc(name, keys));
+                        session.addEventListener("keystatuseschange", KeysChange);
+                        return session.generateRequest(ev.initDataType, ev.initData);
+                    }, bail(name + " failed to ensure MediaKeys on HTMLMediaElement"))
+ 
+                .then(function () {
+                    console.log(name + " generated request");
+                }, bail(name + " Failed to generate request."));
+            });
+        }
+    </script>
+ 
+</head>
+ 
+<body>
+    <h1>Media Source Extensions + ClearKey Encrypted Media Extension Demo</h1>
+ 
+    <video id="v" controls preload="auto"></video>
+ 
+    <script>
+        function Load() {
+            const KEYSYSTEM_TYPE = "org.w3.clearkey"; //com.widevine.alpha, com.micorsoft.playready
+ 
+            var video = document.getElementById("v");
+ 
+            var options = [];
+            const audioContentType = 'audio/mp4; codecs="mp4a.40.2"'; // AAC-LC
+            const videoContentType = 'video/mp4; codecs="avc1.64001F"'; // High profile level 3.1
+ 
+            if (typeof (MediaKeySystemAccess.prototype.getConfiguration) == "undefined") {
+                console.log("Detected obsolete navigator.requestMediaKeySystem options style.");
+                options = [{
+                    initDataType: "cenc",
+                    videoType: videoContentType,
+                    audioType: audioContentType,
+                }];
+            } else {
+                options = [{
+                    /*
+                    * initDataType主要有三个值， cenc， kids, webm
+                    */
+                    initDataTypes: ["cenc"],
+                    videoCapabilities: [{
+                        contentType: videoContentType
+                    }],
+                    audioCapabilities: [{
+                        contentType: audioContentType
+                    }],
+                }];
+            }
+ 
+            SetupEME(video, KEYSYSTEM_TYPE, "video", keys, options);
+ 
+            var ms = new MediaSource();
+            video.src = URL.createObjectURL(ms);
+ 
+            var SourceOpen = function () {
+                ms.removeEventListener("sourceopen", SourceOpen);
+                Promise.all([MSELoadTrack(videoFragments, videoContentType, ms, "video"), MSELoadTrack(audioFragments, audioContentType, ms, "audio")]).then(function () {
+                    ms.endOfStream();
+                });
+            }
+ 
+            ms.addEventListener("sourceopen", SourceOpen);
+            video.addEventListener("canplay", function () {
+                video.play();

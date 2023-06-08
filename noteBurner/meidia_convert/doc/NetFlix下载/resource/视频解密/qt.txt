@@ -1,0 +1,12 @@
+QMetaObject::<unnamed_type_d> struc ; (sizeof=0x30, align=0x8, copyof_2818)
+00000000                                         ; XREF: QMetaObject/r
+00000000 superdata       QMetaObject::SuperData ?
+00000008 stringdata      dq ?                    ; offset
+00000010 data            dq ?                    ; offset
+00000018 static_metacall dq ?                    ; offset
+00000020 relatedMetaObjects dq ?                 ; offset
+00000028 extradata       dq ?                    ; offset
+
+
+
+[data + 0x34] == signalCount

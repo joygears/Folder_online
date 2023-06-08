@@ -1,0 +1,20 @@
+{
+	"capabilities":{
+		"compressionalgos":[
+			"LZW"
+		],
+		"languages":[]
+	},
+	"keyrequestdata":[
+		{
+			"keydata":{
+				"keypairid":"rsaKeypairId",
+				"mechanism":"JWK_RSA",
+				"publickey":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsS6wNfHPy4UD5LuxLuBfM2wRH5Bk7kb+/Vg4BJxcU+n9n3/Qs+YQH59rQG/YEsC1MaS6jWJnieRZe+hqf445NIffBltpiEP/cr22c1LXj0qPiA2CLTs+bG5eSKBR6xPc9ncTbFwsXUZgCek6GoJtuX00E3ix1eMYKqC/Xqh83ljvSPRbo8gI5vbzyO/RHkRy1daIEwW/BTs29Fl1n0cDxv3elOyDax2H3Gl1pkz/gAlygnNvXgbw//ybfk5CqbpIH9fTCu23bwwTgu8IaM5z6YKhzhNs0+//bc1NY7KmWirzeNhd5VKSLLv+Zhzhs+Rw/ko81gAUkZ2eBMM74oOskwIDAQAB"
+			},
+			"scheme":"ASYMMETRIC_WRAPPED"
+		}
+	],
+	"messageid":2282822966084669,
+	"renewable":true
+}

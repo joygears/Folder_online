@@ -1,0 +1,1237 @@
+线程 4CAC 已启动，入口： libcef.120F3310
+线程 4414 已启动，入口： ucrtbase.76735020
+线程 1210 已启动，入口： libcef.120F3310
+线程 53E0 已退出
+线程 F70 已退出
+线程 1508 已退出
+SetThreadName(4CAC, "ThreadPoolForegroundWorker")
+EXCEPTION_DEBUG_INFO:
+           dwFirstChance: 1
+           ExceptionCode: 406D1388 (MS_VC_EXCEPTION)
+          ExceptionFlags: 00000000
+        ExceptionAddress: 75439862 kernelbase.75439862
+        NumberParameters: 4
+ExceptionInformation[00]: 00001000
+ExceptionInformation[01]: 17D22A50
+ExceptionInformation[02]: 00004CAC
+ExceptionInformation[03]: 00000000
+第一次异常于 75439862 (406D1388, MS_VC_EXCEPTION)！
+线程 5288 已启动，入口： libcef.120F3310
+线程 5404 已退出
+线程 51D8 已退出
+SetThreadName(1210, "ThreadPoolForegroundWorker")
+EXCEPTION_DEBUG_INFO:
+           dwFirstChance: 1
+           ExceptionCode: 406D1388 (MS_VC_EXCEPTION)
+          ExceptionFlags: 00000000
+        ExceptionAddress: 75439862 kernelbase.75439862
+        NumberParameters: 4
+ExceptionInformation[00]: 00001000
+ExceptionInformation[01]: 17F6B618
+ExceptionInformation[02]: 00001210
+ExceptionInformation[03]: 00000000
+第一次异常于 75439862 (406D1388, MS_VC_EXCEPTION)！
+线程 2D78 已启动，入口： libcef.120F3310
+SetThreadName(5288, "ThreadPoolForegroundWorker")
+EXCEPTION_DEBUG_INFO:
+           dwFirstChance: 1
+           ExceptionCode: 406D1388 (MS_VC_EXCEPTION)
+          ExceptionFlags: 00000000
+        ExceptionAddress: 75439862 kernelbase.75439862
+        NumberParameters: 4
+ExceptionInformation[00]: 00001000
+ExceptionInformation[01]: 1796DF78
+ExceptionInformation[02]: 00005288
+ExceptionInformation[03]: 00000000
+第一次异常于 75439862 (406D1388, MS_VC_EXCEPTION)！
+SetThreadName(2D78, "ThreadPoolForegroundWorker")
+EXCEPTION_DEBUG_INFO:
+           dwFirstChance: 1
+           ExceptionCode: 406D1388 (MS_VC_EXCEPTION)
+          ExceptionFlags: 00000000
+        ExceptionAddress: 75439862 kernelbase.75439862
+        NumberParameters: 4
+ExceptionInformation[00]: 00001000
+ExceptionInformation[01]: 1753E850
+ExceptionInformation[02]: 00002D78
+ExceptionInformation[03]: 00000000
+第一次异常于 75439862 (406D1388, MS_VC_EXCEPTION)！
+线程 4414 已退出
+线程 5640 已启动，入口： libcef.120F3310
+SetThreadName(5640, "ThreadPoolBackgroundWorker")
+EXCEPTION_DEBUG_INFO:
+           dwFirstChance: 1
+           ExceptionCode: 406D1388 (MS_VC_EXCEPTION)
+          ExceptionFlags: 00000000
+        ExceptionAddress: 75439862 kernelbase.75439862
+        NumberParameters: 4
+ExceptionInformation[00]: 00001000
+ExceptionInformation[01]: 0B5CB278
+ExceptionInformation[02]: 00005640
+ExceptionInformation[03]: 00000000
+第一次异常于 75439862 (406D1388, MS_VC_EXCEPTION)！
+线程 4D4C 已退出
+线程 4260 已退出
+线程 4FA0 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 41C 已启动，入口： ucrtbase.76735020
+线程 41C 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 1048 已启动，入口： ucrtbase.76735020
+线程 1048 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 1578 已启动，入口： ucrtbase.76735020
+线程 1578 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini"
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini.lock"
+DLL已载入： 76460000 C:\Windows\SysWOW64\psapi.dll
+DLL已卸载： 76460000 psapi.dll
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini.VjaSbe"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+eax:???
+eax:???
+eax:???
+线程 3EBC 已启动，入口： qt5core.58B97420
+线程 4E58 已启动，入口： msvcr120.581CBFB4
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini"
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini.lock"
+DLL已载入： 76460000 C:\Windows\SysWOW64\psapi.dll
+DLL已卸载： 76460000 psapi.dll
+线程 4E58 已退出
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini.ceQCty"
+eax:???
+eax:???
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 417C 已启动，入口： ucrtbase.76735020
+线程 417C 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+eax:???
+eax:???
+eax:???
+线程 1398 已启动，入口： msvcr120.581CBFB4
+线程 1398 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini"
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini.lock"
+DLL已载入： 76460000 C:\Windows\SysWOW64\psapi.dll
+DLL已卸载： 76460000 psapi.dll
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini.FgiAKv"
+eax:???
+eax:???
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 3978 已启动，入口： ucrtbase.76735020
+线程 3978 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4BCC 已启动，入口： qt5core.58B97420
+线程 57E4 已启动，入口： ucrtbase.76735020
+线程 57E4 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4BE8 已启动，入口： ucrtbase.76735020
+线程 4BE8 已退出
+eax:L"\\\\.\\pipe\\mojo.10328.22364.8657574717420835704"
+eax:???
+eax:???
+eax:???
+eax:L"\\\\.\\pipe\\mojo.10328.4592.1170308345994406953"
+eax:???
+eax:???
+eax:???
+eax:L"\\\\.\\pipe\\mojo.10328.4592.6842664252866160616"
+eax:???
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+调试字符串： "[0525/202724.563:INFO:CONSOLE(4)] "No cast extension found", source: https://codex.nflxext.com/%5E3.0.0/truthBundle/webui/1.22.5-akira-js-va4711203/js/js/akira%7CakiraClient.js/2/092Z032E2M2Y050j002_2L2V062G2O2J2U2N070K/l/true/none (4)
+"
+线程 27F4 已启动，入口： ucrtbase.76735020
+线程 27F4 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 1258 已启动，入口： qt5core.58B97420
+线程 AD0 已启动，入口： ucrtbase.76735020
+线程 AD0 已退出
+eax:???
+eax:???
+线程 4448 已启动，入口： shcore.76C69350
+eax:L"\\\\.\\pipe\\mojo.10328.4592.969041953936478855"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 3540 已启动，入口： ucrtbase.76735020
+线程 3540 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 1258 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+eax:???
+eax:???
+eax:???
+线程 4D38 已启动，入口： qt5core.58B97420
+线程 49B4 已启动，入口： msvcr120.581CBFB4
+线程 49B4 已退出
+eax:???
+eax:???
+线程 41A0 已启动，入口： msvcr120.581CBFB4
+线程 41A0 已退出
+eax:???
+eax:???
+线程 26B0 已启动，入口： ucrtbase.76735020
+线程 26B0 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 53D0 已启动，入口： ucrtbase.76735020
+线程 53D0 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+eax:???
+eax:???
+线程 36DC 已启动，入口： ucrtbase.76735020
+线程 36DC 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 1858 已启动，入口： qt5core.58B97420
+线程 34E0 已启动，入口： ucrtbase.76735020
+线程 34E0 已退出
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini"
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini.lock"
+DLL已载入： 76460000 C:\Windows\SysWOW64\psapi.dll
+DLL已卸载： 76460000 psapi.dll
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini.QPFkwV"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 23F0 已启动，入口： ucrtbase.76735020
+线程 23F0 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 1248 已启动，入口： ucrtbase.76735020
+线程 1248 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 54B4 已启动，入口： ucrtbase.76735020
+线程 54B4 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 5210 已启动，入口： qt5core.58B97420
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 47B8 已启动，入口： ucrtbase.76735020
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 47B8 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4F40 已启动，入口： qt5core.58B97420
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\.\\pipe\\mojo.10328.22364.18280235740183204067"
+eax:???
+eax:???
+eax:???
+eax:L"\\\\.\\pipe\\mojo.10328.4592.932256944586850628"
+eax:L"\\\\.\\pipe\\mojo.10328.4592.5056957413013250305"
+eax:???
+eax:???
+eax:???
+调试字符串： "[0525/202732.738:INFO:CONSOLE(4)] "No cast extension found", source: https://codex.nflxext.com/%5E3.0.0/truthBundle/webui/1.22.5-akira-js-va4711203/js/js/akira%7CakiraClient.js/2/092Z032E2M2Y050j002_2L2V062G2O2J2U2N070K/l/true/none (4)
+"
+eax:???
+eax:???
+线程 56BC 已启动，入口： ucrtbase.76735020
+线程 56BC 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 5360 已启动，入口： ucrtbase.76735020
+线程 5360 已退出
+调试字符串： "[0525/202732.893:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot read property 'click' of undefined", source: https://www.netflix.com/browse (1)
+"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\.\\pipe\\mojo.10328.4592.9100120893296030435"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\mp4header.dat"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 1598 已启动，入口： ucrtbase.76735020
+线程 1598 已退出
+线程 5210 已退出
+线程 31C8 已启动，入口： ucrtbase.76735020
+线程 31C8 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 13D4 已启动，入口： qt5core.58B97420
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 5290 已启动，入口： qt5core.58B97420
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\outputTemp\\Netflix\\2022_05_25_20_27_32_80994707\\video\\1627523949.tmp_tmp"
+线程 500C 已启动，入口： qt5core.58B97420
+线程 4DD4 已启动，入口： ucrtbase.76735020
+线程 4DD4 已退出
+eax:???
+eax:???
+eax:???
+eax:???
+线程 1774 已启动，入口： msvcr120.581CBFB4
+线程 1774 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+eax:???
+eax:???
+eax:???
+线程 5E0 已启动，入口： msvcr120.581CBFB4
+线程 5E0 已退出
+eax:???
+eax:???
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 1DE8 已启动，入口： ucrtbase.76735020
+线程 1DE8 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\outputTemp\\Netflix\\2022_05_25_20_27_32_80994707\\video\\1627523949.tmp"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 5290 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 500C 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4164 已启动，入口： qt5core.58B97420
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\outputTemp\\Netflix\\2022_05_25_20_27_32_80994707\\audio\\933846429_tmp"
+线程 11B4 已启动，入口： qt5core.58B97420
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\outputTemp\\Netflix\\2022_05_25_20_27_32_80994707\\audio\\933846429"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4164 已退出
+线程 CC8 已启动，入口： ucrtbase.76735020
+线程 CC8 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 11B4 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 40B4 已启动，入口： qt5core.58B97420
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\outputTemp\\Netflix\\2022_05_25_20_27_32_80994707\\subtitle\\1203146980.vtt_tmp"
+线程 123C 已启动，入口： qt5core.58B97420
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\outputTemp\\Netflix\\2022_05_25_20_27_32_80994707\\subtitle\\1203146980.vtt"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 40B4 已退出
+eax:???
+eax:???
+eax:???
+线程 4E24 已启动，入口： ucrtbase.76735020
+线程 4E24 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 123C 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4C78 已启动，入口： qt5core.58B97420
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\outputTemp\\Netflix\\2022_05_25_20_27_32_80994707\\subtitle\\1203150539.vtt_tmp"
+线程 634 已启动，入口： qt5core.58B97420
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\outputTemp\\Netflix\\2022_05_25_20_27_32_80994707\\subtitle\\1203150539.vtt"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4C78 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 634 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4DFC 已启动，入口： qt5core.58B97420
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\outputTemp\\Netflix\\2022_05_25_20_27_32_80994707\\subtitle\\1203147968.vtt_tmp"
+线程 1D1C 已启动，入口： qt5core.58B97420
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\outputTemp\\Netflix\\2022_05_25_20_27_32_80994707\\subtitle\\1203147968.vtt"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4DFC 已退出
+线程 1060 已启动，入口： ucrtbase.76735020
+线程 1060 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 1D1C 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 13D4 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\outputTemp\\Netflix\\2022_05_25_20_27_32_80994707\\subtitle\\1203146980.zh-Hans.vtt"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\outputTemp\\Netflix\\2022_05_25_20_27_32_80994707\\subtitle\\1203150539.zh-Hant.vtt"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:???
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\outputTemp\\Netflix\\2022_05_25_20_27_32_80994707\\subtitle\\1203147968.zh-Hant.vtt"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 531C 已启动，入口： ucrtbase.76735020
+线程 531C 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 11DC 已启动，入口： ucrtbase.76735020
+线程 11DC 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 1608 已启动，入口： ucrtbase.76735020
+线程 1608 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4F40 已退出
+线程 4E38 已启动，入口： ucrtbase.76735020
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 5740 已启动，入口： shcore.76C78860
+调试字符串： "onecore\com\combase\catalog\catalog.cxx(1026)\combase.dll!75DD1871: (caller: 75CD6D8A) ReturnHr(13) tid(5740) 80070716 \xD5Ҳ\xBB\xB5\xBDӳ\xCF\xF1\xCEļ\xFE\xD6\xD0ָ\xB6\xA8\xB5\xC4\xD7\xCAԴ\xC3\xFB\xA1\xA3 
+"
+调试字符串： "onecore\com\combase\catalog\catalog.cxx(1026)\combase.dll!75DD1871: (caller: 75CD6D8A) ReturnHr(13) tid(5740) 80070716 \xD5Ҳ\xBB\xB5\xBDӳ\xCF\xF1\xCEļ\xFE\xD6\xD0ָ\xB6\xA8\xB5\xC4\xD7\xCAԴ\xC3\xFB\xA1\xA3 
+"
+调试字符串： "onecore\com\combase\inc\ComCatalogHelpers.hpp(60)\combase.dll!75DC2E00: (caller: 75CD6797) ReturnHr(14) tid(5740) 80070716 \xD5Ҳ\xBB\xB5\xBDӳ\xCF\xF1\xCEļ\xFE\xD6\xD0ָ\xB6\xA8\xB5\xC4\xD7\xCAԴ\xC3\xFB\xA1\xA3 
+"
+调试字符串： "onecore\com\combase\inc\ComCatalogHelpers.hpp(60)\combase.dll!75DC2E00: (caller: 75CD6797) ReturnHr(14) tid(5740) 80070716 \xD5Ҳ\xBB\xB5\xBDӳ\xCF\xF1\xCEļ\xFE\xD6\xD0ָ\xB6\xA8\xB5\xC4\xD7\xCAԴ\xC3\xFB\xA1\xA3 
+"
+DLL已载入： 7A2F0000 C:\Windows\SysWOW64\ieframe.dll
+调试字符串： "onecore\com\combase\objact\dllcache.cxx(2130)\combase.dll!75DC20F9: (caller: 75D03625) ReturnHr(15) tid(5740) 8007007E \xD5Ҳ\xBB\xB5\xBDָ\xB6\xA8\xB5\xC4ģ\xBF顣 
+"
+调试字符串： "onecore\com\combase\objact\dllcache.cxx(2130)\combase.dll!75DC20F9: (caller: 75D03625) ReturnHr(15) tid(5740) 8007007E \xD5Ҳ\xBB\xB5\xBDָ\xB6\xA8\xB5\xC4ģ\xBF顣 
+"
+调试字符串： "onecore\com\combase\objact\dllcache.cxx(4632)\combase.dll!75D0368E: (caller: 75D000B7) ReturnHr(16) tid(5740) 8007007E \xD5Ҳ\xBB\xB5\xBDָ\xB6\xA8\xB5\xC4ģ\xBF顣 
+"
+调试字符串： "onecore\com\combase\objact\dllcache.cxx(4632)\combase.dll!75D0368E: (caller: 75D000B7) ReturnHr(16) tid(5740) 8007007E \xD5Ҳ\xBB\xB5\xBDָ\xB6\xA8\xB5\xC4ģ\xBF顣 
+"
+调试字符串： "onecore\com\combase\objact\dllcache.cxx(4764)\combase.dll!75DCFB4C: (caller: 75D000B7) ReturnHr(17) tid(5740) 8007007E \xD5Ҳ\xBB\xB5\xBDָ\xB6\xA8\xB5\xC4ģ\xBF顣 
+"
+调试字符串： "onecore\com\combase\objact\dllcache.cxx(4764)\combase.dll!75DCFB4C: (caller: 75D000B7) ReturnHr(17) tid(5740) 8007007E \xD5Ҳ\xBB\xB5\xBDָ\xB6\xA8\xB5\xC4ģ\xBF顣 
+"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+DLL已卸载： 7A2F0000 ieframe.dll
+线程 5740 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+eax:???
+eax:???
+eax:???
+线程 5300 已启动，入口： msvcr120.581CBFB4
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini"
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini.lock"
+线程 5300 已退出
+DLL已载入： 76460000 C:\Windows\SysWOW64\psapi.dll
+DLL已卸载： 76460000 psapi.dll
+eax:L"\\\\?\\C:\\Users\\Administrator\\AppData\\Roaming\\Y2mate\\Y2mate Downloader\\Y2mate Downloader.ini.cwzfAP"
+线程 5078 已启动，入口： ucrtbase.76735020
+线程 5078 已退出
+eax:???
+eax:???
+线程 3E8C 已启动，入口： msvcr120.581CBFB4
+线程 3E8C 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+eax:???
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4FF0 已启动，入口： ucrtbase.76735020
+线程 4FF0 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\Temp\\MetaPicture\\2022-05-25-20-27-47.png"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4D90 已启动，入口： ucrtbase.76735020
+线程 4D90 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4E38 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 384C 已启动，入口： ucrtbase.76735020
+线程 4638 已启动，入口： ucrtbase.76735020
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 4638 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 50C4 已启动，入口： wdmaud.6B237620
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 384C 已退出
+线程 4CAC 已退出
+线程 2D78 已退出
+线程 5640 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 50C4 已退出
+线程 4DD0 已启动，入口： ucrtbase.76735020
+线程 4DD0 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+线程 2950 已启动，入口： libcef.120F3310
+SetThreadName(2950, "ThreadPoolBackgroundWorker")
+EXCEPTION_DEBUG_INFO:
+           dwFirstChance: 1
+           ExceptionCode: 406D1388 (MS_VC_EXCEPTION)
+          ExceptionFlags: 00000000
+        ExceptionAddress: 75439862 kernelbase.75439862
+        NumberParameters: 4
+ExceptionInformation[00]: 00001000
+ExceptionInformation[01]: 17A67430
+ExceptionInformation[02]: 00002950
+ExceptionInformation[03]: 00000000
+第一次异常于 75439862 (406D1388, MS_VC_EXCEPTION)！
+线程 501C 已启动，入口： ucrtbase.76735020
+线程 501C 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"
+eax:???
+线程 48F0 已启动，入口： ucrtbase.76735020
+线程 48F0 已退出
+eax:L"\\\\?\\D:\\Users\\Documents\\Y2mate\\Y2mate Downloader\\log\\Y2mate_Downloader.log"

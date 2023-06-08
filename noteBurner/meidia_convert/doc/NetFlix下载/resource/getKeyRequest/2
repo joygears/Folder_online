@@ -1,0 +1,25 @@
+{
+	"capabilities":{
+		"compressionalgos":[
+			"LZW"
+		],
+		"encoderformats":[],
+		"languages":[]
+	},
+	"handshake":false,
+	"keyresponsedata":{
+		"keydata":{
+			"encryptionkey":"gGd7p4QEFxnFlWnsOVldLzmtnfcAOYa2VVlErMu2xO8BzJYZJTapvS0NidfHFVOxwZqZptMdQAnVIgbgIY00R11V8Uy+qAesgvw/IvyL7ZLxsfvQFWVK9fRSR4hca43eZtLMIE+gLJ5e1d/PZfqZGQKAe8oVkwavLPPMqx4DK5NRhkHFnbcn/0VPTFIDIWVFW1/SHN/ABgVpBD1PiwD112VEqKk/Q858QRVmtqcJ16jMd1DwNUOhHhwoJTSuwX632G5A6ulJJ+N7abfxk0hWBwqSIB+oPfhqSpBoNacXQZAwFw7v8FJyQXNwPyAYHx1F38+WvCytLZeskYB4tSun3w==",
+			"hmackey":"Jn0GIObH0e9P/QMA4FqsS+uYdzOC7tHqaRpwv3wmUxbfXoeOf2lxDW9Y2S+kmBkEgofpgzs81lfWAM9NYzRTCEcr1zDuurrtfmGwoioeEc0ovqTbMT3n04Pk5udWpZ/8J0uo8t0bqLI6Lhyi7v27+jrJ9q5aReeOlYbENxxki4uFD4D0wHNZd4evfT8j7eZGhScv8wGnO8nxP794agA9+hYNU2yLux7i2okEPSUx18kQwWtip4Mb7zZ30JKBxswDAswBRlEDRkQicXL3xOuvZhNT6/hPJ8g6/ihsGQt9pxra1IJ7dwTQhP0W13EmuiemyoWIa8/9Ka10rlcBNf4rpw==",
+			"keypairid":"rsaKeypairId"
+		},
+		"mastertoken":{
+			"signature":"AQEAgQABASDvEHV92m8JWCni+uAObq1F+msHDLimaTgdJIQG8JAsbyNTBNk=",
+			"tokendata":"eyJzZXNzaW9uZGF0YSI6IkJRQ0FBQUVCRUJCNU1EdjU4VWdXdkJDTjZOQW14dFdCUUI5bXZ6TzU4TVRUN2xBdXVFMzBLazVzZUFWaTNMcEhnaEYyeHVoTzA0Z29aeWpnRXNBL1VzQ0ZiUDhJcVpDZ21VZCtUK3F6THcrVVFzVGNwTUJoNmxJaWU0dWg1Z3dHaE5FKzg2MFRzd2c0czE0M0x3b2FndFg4NktrVlNBblNad1Nnc0pONEk2dGhkOVUyNkRjd095UitEbFpEQU1aYWh0dmJqQTl2MU8yTmtET3JhQWpOc09VUDJBRE84R2xFZmNtcFVWM1NHb3B1Y2NpNHdCTmo4TllRN0RUMmJsVlB4czBQWnJ1WUgwelk0N3ZMVWNYcE94RHp1V0tvMVpIcUp3YmJCU1MwQjQyUzYzZGVMbHFzWXI0a1BqeFpHRHgyMEVJemhvTVA3OGsvWGJ5d2ZDYXJYaUZBcEd1YUcxWnp3SklVUEpZd2dDQzB0aG5RT2lMY25ZUWZRamFheGtCd0w0VE92ZkN5cld3LzhFYm8rbVlkRVRPRlJ4RXUycnR2R1J5SEdHbHYzVC8vM2Rmd3hveUU1eE1LbnFtZXhxV3RsOVlzeElDTTJqTVoiLCJyZW5ld2Fsd2luZG93IjoxNjUzMjA0MDQ5LCJzZXJpYWxudW1iZXIiOjI2ODI0MjAwOTU5NjgzMDksImV4cGlyYXRpb24iOjE2NTQzMjcyNDksInNlcXVlbmNlbnVtYmVyIjo4Mn0="
+		},
+		"scheme":"ASYMMETRIC_WRAPPED"
+	},
+	"messageid":2282822966084670,
+	"renewable":false,
+	"timestamp":1653117649
+}
