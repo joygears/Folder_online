@@ -165,7 +165,7 @@ class NetflixClient(object):
         req = self.session.post('https://www.netflix.com/login', post_data)
         return req.cookies'''
 
-    def get_track_and_init_info(self,cookie):
+    def get_track_and_init_info(self,cookie,session_id="",challengeBase64=""):
         config_dict = self.client_config.config
         id = int(time.time() * 10000)
         xid = int(time.time() * 10000)
@@ -227,6 +227,113 @@ class NetflixClient(object):
             "url": "/manifest",
             "version": 2
         }
+        if session_id!="" and challengeBase64!="":
+            manifest_request_data = {
+                "id": id,
+                "languages": [
+                    "en-TW"
+                ],
+                "params": {
+                    "challenges": {
+                        "default": [
+                            {
+                                "challengeBase64": challengeBase64,
+                                "clientTime": int(id / 10000),
+                                "drmSessionId": session_id
+                            }
+                        ]
+                    },
+                    "clientVersion": "6.0035.231.911",
+                    "contentPlaygraph": [
+                        "start"
+                    ],
+                    "desiredSegmentVmaf": "plus_lts",
+                    "desiredVmaf": "plus_lts",
+                    "drmType": "widevine",
+                    "drmVersion": 25,
+                    "flavor": "STANDARD",
+                    "imageSubtitleHeight": 1080,
+                    "isBranching": False,
+                    "isNonMember": False,
+                    "isUIAutoPlay": False,
+                    "licenseType": "standard",
+                    "manifestVersion": "v2",
+                    "preferAssistiveAudio": False,
+                    "profileGroups": [
+                        {
+                            "name": "default",
+                            "profiles": [
+                                "webvtt-lssdh-ios8",
+                                "webvtt-lssdh-ios8",
+                                "heaac-2-dash",
+                                "heaac-2hq-dash",
+                                "playready-h264mpl30-dash",
+                                "playready-h264mpl31-dash",
+                                "playready-h264hpl30-dash",
+                                "playready-h264hpl31-dash",
+                                "vp9-profile0-L30-dash-cenc",
+                                "vp9-profile0-L31-dash-cenc",
+                                "av1-main-L30-dash-cbcs-prk",
+                                "av1-main-L31-dash-cbcs-prk",
+                                "dfxp-ls-sdh",
+                                "simplesdh",
+                                "nflx-cmisc",
+                                "imsc1.1",
+                                "BIF240",
+                                "BIF320"
+                            ]
+                        }
+                    ],
+                    "profiles": [
+                        "webvtt-lssdh-ios8",
+                        "webvtt-lssdh-ios8",
+                        "heaac-2-dash",
+                        "heaac-2hq-dash",
+                        "playready-h264mpl30-dash",
+                        "playready-h264mpl31-dash",
+                        "playready-h264hpl30-dash",
+                        "playready-h264hpl31-dash",
+                        "vp9-profile0-L30-dash-cenc",
+                        "vp9-profile0-L31-dash-cenc",
+                        "av1-main-L30-dash-cbcs-prk",
+                        "av1-main-L31-dash-cbcs-prk",
+                        "dfxp-ls-sdh",
+                        "simplesdh",
+                        "nflx-cmisc",
+                        "imsc1.1",
+                        "BIF240",
+                        "BIF320"
+                    ],
+                    "requestSegmentVmaf": False,
+                    "showAllSubDubTracks": True,
+                    "supportsPartialHydration": False,
+                    "supportsPreReleasePin": True,
+                    "supportsUnequalizedDownloadables": True,
+                    "supportsWatermark": True,
+                    "titleSpecificData": {
+                        str(self.client_config.viewable_id): {
+                            "unletterboxed": False
+                        }
+                    },
+                    "type": "standard",
+                    "uiPlatform": "SHAKTI",
+                    "uiVersion": "shakti-v0f92b626",
+                    "useHttpsStreams": True,
+                    "usePsshBox": True,
+                    "videoOutputInfo": [
+                        {
+                            "isHdcpEngaged": False,
+                            "outputType": "unknown",
+                            "supportedHdcpVersions": [],
+                            "type": "DigitalVideoOutputDescriptor"
+                        }
+                    ],
+                    "viewableId": self.client_config.viewable_id,
+                    "xid": xid
+                },
+                "url": "licensedManifest",
+                "version": 2
+            }
 
         self.logger.debug("requesting manifest")
         request_data = self.__generate_msl_request_data(manifest_request_data)

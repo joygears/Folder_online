@@ -17,11 +17,7 @@ send：{
 
 json__toStyledString onEnter
 json__toStyledString onLeave
-send：{
-   "opData" : {},
-   "opType" : "GetGlobalInfo",
-   "token" : "21688_16"
-}
+/
 
 json__toStyledString onEnter
 json__toStyledString onLeave

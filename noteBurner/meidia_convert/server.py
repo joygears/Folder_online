@@ -7,6 +7,9 @@ from netFlixParser import getTrackInfo
 PSSH = ""
 licenseRequest=""
 sessionId=""
+url = "https://www.netflix.com/watch/80142058?trackId=255824129&tctx=0%2C0%2CNAPA%40%40%7C7d73b5e8-cd7b-4737-988e-1c504b531ab4-98736352_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2CNAPA%40%40%7C7d73b5e8-cd7b-4737-988e-1c504b531ab4-98736352_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2Cunknown%2C%2C7d73b5e8-cd7b-4737-988e-1c504b531ab4-98736352%7C1%2CtitlesResults%2C80142058%2CVideo%3A80142058%2CminiDpPlayButton"
+license=""
+
 def packMessage(fro, to, message):
     data = {
         "content": json.dumps(message),
@@ -71,16 +74,34 @@ async def handle_client(websocket, path):
                 elif opType == "LicenseRequestResult":
                     licenseRequest = opData['data']['licenseRequest']
                     sessionId = opData['data']['sessionId']
-
-
+                    request_license()
+                    message = {
+                        "opData": {
+                            "license": license,
+                            "sessionId": sessionId
+                        },
+                        "opType": "License",
+                        "token":  KEEP_ID+"_1"
+                    }
+                    response = packMessage("keeper_" + KEEP_ID, id, message)
+                    await websocket.send(response)
 
         except websockets.exceptions.ConnectionClosedOK:
             # 客户端断开连接
             print("Client disconnected")
             break
+def request_license():
+    global url
+    global sessionId
+    global licenseRequest
+    global license
+    track_info = getTrackInfo(url,sessionId,licenseRequest)
+    license = track_info['result']['video_tracks'][0]['license']['licenseResponseBase64']
+    print("license get susscess %s " % license)
 def initConfig():
     global PSSH
-    url = "https://www.netflix.com/watch/60034587?trackId=255824129&tctx=0%2C0%2CNAPA%40%40%7C01fa823c-2c60-4711-9729-ce2dd8af52a1-291837750_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2CNAPA%40%40%7C01fa823c-2c60-4711-9729-ce2dd8af52a1-291837750_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2Cunknown%2C%2C01fa823c-2c60-4711-9729-ce2dd8af52a1-291837750%7C1%2CtitlesResults%2C60034587%2CVideo%3A60034587%2CminiDpPlayButton"
+    global url
+
 
     track_info = getTrackInfo(url)
     PSSH = track_info['result']['video_tracks'][0]['drmHeader']['bytes']
