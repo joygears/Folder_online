@@ -49,6 +49,6 @@ if __name__ =="__main__":
     cookies = get_cookie(url)
     parser = NetflixParser(url,cookies[0])
     #data = parser.fetch_metadata_movie()
-    track_info = parser.get_track_and_init_info(session_id,challengeBase64)
+    track_info = parser.get_track_and_init_info()
     #print(data)
-    print(track_info)
+    print(json.dumps(track_info))

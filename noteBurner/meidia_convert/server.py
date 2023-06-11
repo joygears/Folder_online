@@ -9,7 +9,9 @@ licenseRequest=""
 sessionId=""
 url = "https://www.netflix.com/watch/80142058?trackId=255824129&tctx=0%2C0%2CNAPA%40%40%7C7d73b5e8-cd7b-4737-988e-1c504b531ab4-98736352_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2CNAPA%40%40%7C7d73b5e8-cd7b-4737-988e-1c504b531ab4-98736352_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2Cunknown%2C%2C7d73b5e8-cd7b-4737-988e-1c504b531ab4-98736352%7C1%2CtitlesResults%2C80142058%2CVideo%3A80142058%2CminiDpPlayButton"
 license=""
-
+track_info=""
+KEEP_ID = None
+id = None
 def packMessage(fro, to, message):
     data = {
         "content": json.dumps(message),
@@ -25,10 +27,11 @@ async def handle_client(websocket, path):
     global PSSH
     global licenseRequest
     global  sessionId
+    global  KEEP_ID
+    global id
     # 这是处理每个客户端连接的函数
     # 在这里编写服务器与客户端交互的逻辑
-    KEEP_ID = None
-    id = None
+
     while True:
         try:
             # 接收客户端消息
@@ -86,10 +89,169 @@ async def handle_client(websocket, path):
                     response = packMessage("keeper_" + KEEP_ID, id, message)
                     await websocket.send(response)
 
+                elif opType == "LicenseResult":
+                    message = tanstoDownloadInfo()
+                    response = packMessage("keeper_" + KEEP_ID, id, message)
+                    await websocket.send(response)
+                elif opType == "GetGlobalInfo":
+                    message = {
+    "opData":{
+        "data":{
+            "convertMode":"C",
+            "deviceInfo":{
+                "ap":"com.noteburner.netflix",
+                "apv":"2.0.3",
+                "guid":"ae2d05e8-b1eb-4345-998b-e59df5b1be19",
+                "uid":"00:0c:29:22:b0:e6",
+                "website":"netflix"
+            },
+            "hwaccel":0,
+            "nodePath":"\"C:\\Program Files (x86)\\NoteBurner\\NoteBurner Netflix Video Downloader\\NoteBurner Netflix Video Downloader.exe\""
+        },
+        "error":False,
+        "errorCode":0
+    },
+    "opType":"GetGlobalInfoResult",
+    "token":KEEP_ID+"_1"
+}
+                    response = packMessage("mediaconvert_NoteBurner-netflix", id, message)
+                    await websocket.send(response)
         except websockets.exceptions.ConnectionClosedOK:
             # 客户端断开连接
             print("Client disconnected")
             break
+def tanstoDownloadInfo():
+    global  track_info
+    global PSSH
+    result = track_info['result']
+    audio_tracks = result['audio_tracks']
+    audio_track = audio_tracks[0]
+    stream = audio_track['streams'][-1]
+    audio_url = stream['urls'][0]['url']
+
+    video_track = result['video_tracks'][0]
+    video_stream = video_track['streams'][-1]
+    video_url =  video_stream['urls'][0]['url']
+
+    timedtexttrack= result['timedtexttracks'][0]
+
+    download_info = {
+    "opData":{
+        "input":{
+            "tracks":[
+                {
+                    "bitRate":stream['bitrate'] * 1000,
+                    "bitrate":stream['bitrate'] * 1000,
+                    "channels":stream['channels'],
+                    "codec":audio_track['codecName']+" HQ",
+                    "content_profile":audio_track['profile'],
+                    "desc":audio_track['languageDescription'],
+                    "headUrl":{
+                        "length":stream['size'],
+                        "offset":0,
+                        "url":audio_url
+                    },
+                    "is5_1": True if stream['channels'] == "5.1" else False,
+                    "isAD":False,
+                    "isDefault":audio_track['isNative'],
+                    "isDrm":stream['isDrm'],
+                    "isOriginal":False,
+                    "language":"en",
+                    "languageDescription":audio_track['languageDescription'],
+                    "languageLabel":"English (Original)",
+                    "new_track_id":audio_track['new_track_id'],
+                    "oriLanguage":audio_track["language"],
+                    "size":stream['size'],
+                    "trackId":"A:2:1;2;en;1;0;-128-107280467",
+                    "type":0,
+                    "uri":"A:2:1;2;en;1;0;-128-107280467"
+                },
+                {
+                    "bitRate":video_stream['bitrate'] * 1000,
+                    "bitrate":video_stream['bitrate'] * 1000,
+                    "codec":"",
+                    "desc":"1920x1080_1080P_6773_undefined_24000/1001",
+                    "frameRate":str(video_stream['framerate_value'])+"/"+str(video_stream['framerate_scale']),
+                    "headUrl":{
+                        "length":video_stream['size'],
+                        "offset":0,
+                        "url":video_url
+                    },
+                    "isDrm":video_stream['isDrm'],
+                    "pssh":PSSH,
+                    "qualityIcon":"1080P",
+                    "sar":"1:1",
+                    "size":video_stream['size'],
+                    "trackId":"V:2:1;2;;default;-1;none;-1;-6773",
+                    "type":1,
+                    "uri":"V:2:1;2;;default;-1;none;-1;-6773"
+                },
+                {
+                    "cdnlist":timedtexttrack['cdnlist'],
+                    "codec":"ttml-image",
+                    "desc":"Chinese (Simplified)_zh-Hans_cc_false_forced_false_uriT:2:0;1;zh-Hans;0;0;0;_ttml-image",
+                    "downloadableIds":{
+                        "nflx-cmisc":"2070723521",
+                        "webvtt-lssdh-ios8":"2070720789"
+                    },
+                    "encodingProfileNames":[
+                        "nflx-cmisc",
+                        "webvtt-lssdh-ios8"
+                    ],
+                    "headUrl":{
+                        "length":0,
+                        "offset":0,
+                        "url":"http://23.246.55.165/?o=1&v=22&e=1686522996&t=sG76IZhq0JRQNt7wKstWU_E8mm0fWfCeLhC64_2PzKLnh1MqxATeiZBwhs_9tFcsNC5Ru5JwjIOhzan-ADdtlwB-cEsXUwP-DA8iEoHnnN_lf8M3OtdzpC96nhjnLbzZEkx8J53CdY2mV_-S3v_xsQ3Pszl7NPcHieJL9OE5HRN_dAWSFFJgyELUT6rLWe1p0MNYoDCKNfEcKF-xJ5FggbucnCo5TRlWQTup34J88_kCot4jfMLShQ"
+                    },
+                    "hydrated":True,
+                    "id":"T:2:0;1;zh-Hans;0;0;0;",
+                    "isCC":True,
+                    "isDefault":True,
+                    "isForced":False,
+                    "isForcedNarrative":False,
+                    "isImage":False,
+                    "isLanguageLeftToRight":True,
+                    "isNoneTrack":False,
+                    "language":"zh",
+                    "languageDescription":"Chinese (Simplified)",
+                    "languageLabel":"Chinese (Simplified)",
+                    "new_track_id":"T:2:0;1;zh-Hans;0;0;0;",
+                    "oriLanguage":"zh-Hans",
+                    "rank":1,
+                    "rawTrackType":"subtitles",
+                    "size":31209667,
+                    "trackId":"T:2:0;1;zh-Hans;0;0;0;_ttml-image",
+                    "trackType":"PRIMARY",
+                    "ttDownloadables":timedtexttrack['ttDownloadables'],
+                    "type":2,
+                    "uri":"T:2:0;1;zh-Hans;0;0;0;_ttml-image"
+                }
+            ]
+        },
+        "isTrial":True,
+        "mediaId":str(result['movieId']),
+        "metaData":{
+            "description":"两名黑人 FBI 警探受命保护一对头脑简单的上流社会姐妹，他们把自己化妆成这对白人姐妹，出入各种派对，试图搜捕想要绑架她们的绑匪。",
+            "thumbnail":r"C:\Users\Administrator\Desktop\meidia_convert\81004276_1.jpg",
+            "thumbnailType":"url",
+            "title":"小姐好白",
+            "year":2004
+        },
+        "output":{
+            "folder":"C:\\Users\\Administrator\\Documents\\NoteBurner Netflix Video Downloader",
+            "format":"mp4",
+            "hwaccel":True,
+            "ignorPartialFail":True,
+            "path":"C:\\Users\\Administrator\\Documents\\NoteBurner Netflix Video Downloader\\小姐好白_9.mp4",
+            "subtitleForm":2,
+            "subtitleFormat":0,
+            "videoCodec":"h264"
+        }
+    },
+    "opType":"Convert",
+    "token":KEEP_ID+"_1"
+}
+    return download_info
 def request_license():
     global url
     global sessionId
@@ -101,11 +263,13 @@ def request_license():
 def initConfig():
     global PSSH
     global url
-
+    global  track_info
 
     track_info = getTrackInfo(url)
     PSSH = track_info['result']['video_tracks'][0]['drmHeader']['bytes']
     print("pssh get susscess %s " % PSSH)
+
+
 if __name__ == "__main__":
     initConfig()
 
