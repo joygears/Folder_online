@@ -1,2 +1,8 @@
-﻿  widevinecdm.cpp
-  widevinecdm.vcxproj -> D:\Users\Downloads\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\Debug\widevinecdm.dll
+﻿  cdmHost.cpp
+  fucntion.cpp
+D:\sourcetree\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\fucntion.cpp(19,9): warning C4101: “n”: 未引用的局部变量
+  base64.cpp
+  widevinecdm.cpp
+  正在生成代码...
+    正在创建库 D:\sourcetree\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\Debug\widevinecdm.lib 和对象 D:\sourcetree\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\Debug\widevinecdm.exp
+  widevinecdm.vcxproj -> D:\sourcetree\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\Debug\widevinecdm.dll
