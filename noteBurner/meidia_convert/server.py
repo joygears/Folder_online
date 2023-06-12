@@ -29,6 +29,7 @@ async def handle_client(websocket, path):
     global  sessionId
     global  KEEP_ID
     global id
+    global license
     # 这是处理每个客户端连接的函数
     # 在这里编写服务器与客户端交互的逻辑
 
@@ -77,6 +78,7 @@ async def handle_client(websocket, path):
                 elif opType == "LicenseRequestResult":
                     licenseRequest = opData['data']['licenseRequest']
                     sessionId = opData['data']['sessionId']
+                    #license = "CAISjAQKtQEKEKZuunXS6IKoTGb0Ii+gK58SnAF7InZlcnNpb24iOiIxLjAiLCJlc24iOiJORkNEQ0gtMDItSzNFWjM0UVZWRk5BM0UyN0dFNjZGUU44QUFLV1dBIiwic2FsdCI6Ijk3Nzk5MTc2MzY0ODg4MTMxOTYwODM3NjI0NzU1OTYwOCIsImlzc3VlVGltZSI6MTY4NTcyODY0NDAwMCwibW92aWVJZCI6IjYwMDM0NTg3In0gASgAEhQIARAAGAAgwNECKMDRAlgAYAF4ARpmEhC7UIvzBj/LltnpNIA6Zp5gGlCN/3axROQ3HKZ2lfHiUSWqk8ozgVGqFccmhrGbypGtHUc/7I0ZPM33jQZGSfdk+aHaEPkZ1hr8xMXSFo4YH9/VdBDa1jeFeHXQU5ghhpDLNiABGmQKEAAAAAAEnltPAAAAAAAAAAASEKbPHKHeQEph3s9TGn2GKFwaIKlfoNV1mIDdBVnaQIuy7N6AaqRYT4LyeTZapgMjLgjgIAIoAjIECAAQKkISChBrYzE2AAAAAFMSH56kAAAIGmQKEAAAAAAERyj0AAAAAAAAAAASEDmGEgbDz+SW8y2QfkWN/+EaIEfWWoiTgAmiKTvInSuY7tNgKBj5V8h44urss+amAJ3pIAIoAjoECAAQKkISChBrYzE2AAAAAFMSH56EAAAIIITb6KMGOABQBRogDcptt1XQJpoES16vJIswZjh2rVtxAlg1RKekQfe/bjcigAEyVqbdUN7bv0kQJT8SyxFc20QPTct7n8CdWqSMGFQmD7WvK+fBZIPFFOAEUTQiQQVzZKtdC+MKfVP437e8L/ppHwqKcGllSfnUH4dHWhCTIvS7FsOJ+YvmBpvlBT3oI2+vDuNCMLJYfWsLhFfMIDq9z7SxbKbbPtaF6sJD9EJkHjoICgYxOC4wLjFAAUrYAQAAAAIAAADYAAUAEFMSH57hdbeqAAAA0gAAABAAAADkAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAACowAAAAAAAAKjAAAAAAAAAAAAAAAACAAABOgAAABAAAAFMAAAAEAAAAV4AAAAQAAAAAAAAAAAAAAGMAAAAEAAAAaAAAAAQAAABsgAAABAAAAHEAAAAEAAAAAAAAAAAAAAB8gAAABAHfxawYqBd+LZn4NCPsmv3lvrUfgB9zGgvOapiI/HAL1gB"
                     request_license()
                     message = {
                         "opData": {
@@ -94,6 +96,7 @@ async def handle_client(websocket, path):
                     response = packMessage("keeper_" + KEEP_ID, id, message)
                     await websocket.send(response)
                 elif opType == "GetGlobalInfo":
+                    token = content['token']
                     message = {
     "opData":{
         "data":{
@@ -112,7 +115,7 @@ async def handle_client(websocket, path):
         "errorCode":0
     },
     "opType":"GetGlobalInfoResult",
-    "token":KEEP_ID+"_1"
+    "token":token
 }
                     response = packMessage("mediaconvert_NoteBurner-netflix", id, message)
                     await websocket.send(response)
@@ -266,7 +269,9 @@ def initConfig():
     global  track_info
 
     track_info = getTrackInfo(url)
+    #PSSH = "AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAARHKPQAAAAAAAAAAA=="
     PSSH = track_info['result']['video_tracks'][0]['drmHeader']['bytes']
+
     print("pssh get susscess %s " % PSSH)
 
 
