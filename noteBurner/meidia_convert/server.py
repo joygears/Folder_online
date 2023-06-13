@@ -82,7 +82,7 @@ async def handle_client(websocket, path):
                     licenseRequest = opData['data']['licenseRequest']
                     sessionId = opData['data']['sessionId']
                     license = "CAISjAQKtQEKEKZuunXS6IKoTGb0Ii+gK58SnAF7InZlcnNpb24iOiIxLjAiLCJlc24iOiJORkNEQ0gtMDItSzNFWjM0UVZWRk5BM0UyN0dFNjZGUU44QUFLV1dBIiwic2FsdCI6Ijk3Nzk5MTc2MzY0ODg4MTMxOTYwODM3NjI0NzU1OTYwOCIsImlzc3VlVGltZSI6MTY4NTcyODY0NDAwMCwibW92aWVJZCI6IjYwMDM0NTg3In0gASgAEhQIARAAGAAgwNECKMDRAlgAYAF4ARpmEhC7UIvzBj/LltnpNIA6Zp5gGlCN/3axROQ3HKZ2lfHiUSWqk8ozgVGqFccmhrGbypGtHUc/7I0ZPM33jQZGSfdk+aHaEPkZ1hr8xMXSFo4YH9/VdBDa1jeFeHXQU5ghhpDLNiABGmQKEAAAAAAEnltPAAAAAAAAAAASEKbPHKHeQEph3s9TGn2GKFwaIKlfoNV1mIDdBVnaQIuy7N6AaqRYT4LyeTZapgMjLgjgIAIoAjIECAAQKkISChBrYzE2AAAAAFMSH56kAAAIGmQKEAAAAAAERyj0AAAAAAAAAAASEDmGEgbDz+SW8y2QfkWN/+EaIEfWWoiTgAmiKTvInSuY7tNgKBj5V8h44urss+amAJ3pIAIoAjoECAAQKkISChBrYzE2AAAAAFMSH56EAAAIIITb6KMGOABQBRogDcptt1XQJpoES16vJIswZjh2rVtxAlg1RKekQfe/bjcigAEyVqbdUN7bv0kQJT8SyxFc20QPTct7n8CdWqSMGFQmD7WvK+fBZIPFFOAEUTQiQQVzZKtdC+MKfVP437e8L/ppHwqKcGllSfnUH4dHWhCTIvS7FsOJ+YvmBpvlBT3oI2+vDuNCMLJYfWsLhFfMIDq9z7SxbKbbPtaF6sJD9EJkHjoICgYxOC4wLjFAAUrYAQAAAAIAAADYAAUAEFMSH57hdbeqAAAA0gAAABAAAADkAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAACowAAAAAAAAKjAAAAAAAAAAAAAAAACAAABOgAAABAAAAFMAAAAEAAAAV4AAAAQAAAAAAAAAAAAAAGMAAAAEAAAAaAAAAAQAAABsgAAABAAAAHEAAAAEAAAAAAAAAAAAAAB8gAAABAHfxawYqBd+LZn4NCPsmv3lvrUfgB9zGgvOapiI/HAL1gB"
-                    # request_license()
+                    #request_license()
                     message = {
                         "opData": {
                             "license": license,
@@ -130,7 +130,7 @@ async def handle_client(websocket, path):
                     url = opData['url']
                     if length != 0:
                         parsed_url = urlparse(url)
-                        new_path = f'range/{offset}-{offset + length}' + parsed_url.path[1:]
+                        new_path = f'range/{offset}-{offset + 12}' + parsed_url.path[1:]
                         new_url = urlunparse((parsed_url.scheme, parsed_url.netloc, new_path, parsed_url.params,
                                               parsed_url.query, parsed_url.fragment))
                         response = requests.get(new_url, stream=True)
