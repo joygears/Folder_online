@@ -1,67 +1,7 @@
-this
-Base
-       0 -4 0
-       4 - 8 0
-       8 - c 0
-       c-10 pMyproxy
-       10-14 0
-       14-18 0
-       18-1c 0
-       1c-20 0
-              Mutex 
-       	20 - 50
-             Condtion_var
+'aes-128-cbc'
+key
+'ec426dd15fd85542'
+iv
+'9dd03c4d65be87de'
 
-       0x78 0
-       0x7c - 0x80 1
-       0x80 
-0x84 - 0x88 buf2 + 0xc
-0x88 - 0x8C &buf2 
-
-       Mutex 
-	8C - bc
-bc - c0 0
-c0 - c4 0
-     Mutex 
-	c4 - f4
-0xF4 - F8 &buf
-0xF8 - Fc 0
-Fc 0
-
-
-Myproxy
-0- 4 this+0xc
-4 - 8 0
-
-buf(0x50)
-0 - 4 &m_4
-4 - 8 &m_4
-8 - c &m_4
-c - e 0x0101
-
-10064FB2
-buf2(0x90)
-0 - 4 vtf
-4 - 8 0
-8 - c 1
-Base
-       0 -4 0
-       4 - 8 0
-       8 - c 0
-       c-10 pMyproxy
-       10-14 0
-       14-18 0
-       18-1c 0
-       1c-20 0
-              Mutex 
-              20 - 50
-             Condtion_var
-
-       0x78 0
-       0x7c - 0x80 0x10
-       0x80 0
-  
-
-var_4C
-0 - 4 buf2 + 0xc
-4 -8 &buf2
+C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\main\main.data
