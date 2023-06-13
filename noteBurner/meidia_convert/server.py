@@ -82,7 +82,7 @@ async def handle_client(websocket, path):
                     licenseRequest = opData['data']['licenseRequest']
                     sessionId = opData['data']['sessionId']
                     license = "CAISjAQKtQEKEKZuunXS6IKoTGb0Ii+gK58SnAF7InZlcnNpb24iOiIxLjAiLCJlc24iOiJORkNEQ0gtMDItSzNFWjM0UVZWRk5BM0UyN0dFNjZGUU44QUFLV1dBIiwic2FsdCI6Ijk3Nzk5MTc2MzY0ODg4MTMxOTYwODM3NjI0NzU1OTYwOCIsImlzc3VlVGltZSI6MTY4NTcyODY0NDAwMCwibW92aWVJZCI6IjYwMDM0NTg3In0gASgAEhQIARAAGAAgwNECKMDRAlgAYAF4ARpmEhC7UIvzBj/LltnpNIA6Zp5gGlCN/3axROQ3HKZ2lfHiUSWqk8ozgVGqFccmhrGbypGtHUc/7I0ZPM33jQZGSfdk+aHaEPkZ1hr8xMXSFo4YH9/VdBDa1jeFeHXQU5ghhpDLNiABGmQKEAAAAAAEnltPAAAAAAAAAAASEKbPHKHeQEph3s9TGn2GKFwaIKlfoNV1mIDdBVnaQIuy7N6AaqRYT4LyeTZapgMjLgjgIAIoAjIECAAQKkISChBrYzE2AAAAAFMSH56kAAAIGmQKEAAAAAAERyj0AAAAAAAAAAASEDmGEgbDz+SW8y2QfkWN/+EaIEfWWoiTgAmiKTvInSuY7tNgKBj5V8h44urss+amAJ3pIAIoAjoECAAQKkISChBrYzE2AAAAAFMSH56EAAAIIITb6KMGOABQBRogDcptt1XQJpoES16vJIswZjh2rVtxAlg1RKekQfe/bjcigAEyVqbdUN7bv0kQJT8SyxFc20QPTct7n8CdWqSMGFQmD7WvK+fBZIPFFOAEUTQiQQVzZKtdC+MKfVP437e8L/ppHwqKcGllSfnUH4dHWhCTIvS7FsOJ+YvmBpvlBT3oI2+vDuNCMLJYfWsLhFfMIDq9z7SxbKbbPtaF6sJD9EJkHjoICgYxOC4wLjFAAUrYAQAAAAIAAADYAAUAEFMSH57hdbeqAAAA0gAAABAAAADkAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAACowAAAAAAAAKjAAAAAAAAAAAAAAAACAAABOgAAABAAAAFMAAAAEAAAAV4AAAAQAAAAAAAAAAAAAAGMAAAAEAAAAaAAAAAQAAABsgAAABAAAAHEAAAAEAAAAAAAAAAAAAAB8gAAABAHfxawYqBd+LZn4NCPsmv3lvrUfgB9zGgvOapiI/HAL1gB"
-                    request_license()
+                    # request_license()
                     message = {
                         "opData": {
                             "license": license,
@@ -107,11 +107,11 @@ async def handle_client(websocket, path):
                                 "deviceInfo": {
                                     "ap": "com.noteburner.netflix",
                                     "apv": "2.0.3",
-                                    "guid": "ae2d05e8-b1eb-4345-998b-e59df5b1be19",
-                                    "uid": "00:0c:29:22:b0:e6",
+                                    "guid": "3ad6f53a-8dd1-4a6a-978c-664327a8cdb7",
+                                    "uid": "00:e0:4c:06:91:8c",
                                     "website": "netflix"
                                 },
-                                "hwaccel": 0,
+                                "hwaccel": 3,
                                 "nodePath": "\"C:\\Program Files (x86)\\NoteBurner\\NoteBurner Netflix Video Downloader\\NoteBurner Netflix Video Downloader.exe\""
                             },
                             "error": False,
@@ -232,7 +232,7 @@ def tanstoDownloadInfo():
                         "type": 1,
                         "uri": "V:2:1;2;;default;-1;none;-1;-6773"
                     }
-                    #,
+                    # ,
                     # {
                     #     "cdnlist": timedtexttrack['cdnlist'],
                     #     "codec": "ttml-image",
@@ -285,11 +285,11 @@ def tanstoDownloadInfo():
                 "year": 2004
             },
             "output": {
-                "folder": "C:\\Users\\Administrator\\Documents\\NoteBurner Netflix Video Downloader",
+                "folder": r"D:\Users\Documents\NoteBurner Netflix Video Downloader",
                 "format": "mp4",
                 "hwaccel": True,
                 "ignorPartialFail": True,
-                "path": "C:\\Users\\Administrator\\Documents\\NoteBurner Netflix Video Downloader\\小姐好白_9.mp4",
+                "path": r"D:\Users\Documents\NoteBurner Netflix Video Downloader\小姐好白_9.mp4",
                 "subtitleForm": 2,
                 "subtitleFormat": 0,
                 "videoCodec": "h264"
@@ -315,7 +315,7 @@ def initConfig():
     global PSSH
     global url
     global track_info
-    PSSH = "AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAARHKPQAAAAAAAAAAA=="
+
     track_info = getTrackInfo(url)
     PSSH = track_info['result']['video_tracks'][0]['drmHeader']['bytes']
 
