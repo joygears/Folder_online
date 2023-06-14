@@ -5,14 +5,17 @@ import requests
 from urllib.parse import urlparse, urlunparse
 from netFlixParser import getTrackInfo
 
+from  gloVar import defalut_lan_map,language_map
+
 PSSH = ""
 licenseRequest = ""
 sessionId = ""
-url = "https://www.netflix.com/watch/80142058?trackId=255824129&tctx=0%2C0%2CNAPA%40%40%7C7d73b5e8-cd7b-4737-988e-1c504b531ab4-98736352_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2CNAPA%40%40%7C7d73b5e8-cd7b-4737-988e-1c504b531ab4-98736352_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2Cunknown%2C%2C7d73b5e8-cd7b-4737-988e-1c504b531ab4-98736352%7C1%2CtitlesResults%2C80142058%2CVideo%3A80142058%2CminiDpPlayButton"
+url = "https://www.netflix.com/watch/60034587?trackId=255824129&tctx=0%2C0%2CNAPA%40%40%7Ce8b3ba74-0e8c-42a7-8fb4-65da324e0a37-282234721_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2CNAPA%40%40%7Ce8b3ba74-0e8c-42a7-8fb4-65da324e0a37-282234721_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2Cunknown%2C%2Ce8b3ba74-0e8c-42a7-8fb4-65da324e0a37-282234721%7C1%2CtitlesResults%2C60034587%2CVideo%3A60034587%2CminiDpPlayButton"
 license = ""
 track_info = ""
 KEEP_ID = None
 id = None
+
 
 
 def packMessage(fro, to, message):
@@ -82,7 +85,7 @@ async def handle_client(websocket, path):
                     licenseRequest = opData['data']['licenseRequest']
                     sessionId = opData['data']['sessionId']
                     license = "CAISjAQKtQEKEKZuunXS6IKoTGb0Ii+gK58SnAF7InZlcnNpb24iOiIxLjAiLCJlc24iOiJORkNEQ0gtMDItSzNFWjM0UVZWRk5BM0UyN0dFNjZGUU44QUFLV1dBIiwic2FsdCI6Ijk3Nzk5MTc2MzY0ODg4MTMxOTYwODM3NjI0NzU1OTYwOCIsImlzc3VlVGltZSI6MTY4NTcyODY0NDAwMCwibW92aWVJZCI6IjYwMDM0NTg3In0gASgAEhQIARAAGAAgwNECKMDRAlgAYAF4ARpmEhC7UIvzBj/LltnpNIA6Zp5gGlCN/3axROQ3HKZ2lfHiUSWqk8ozgVGqFccmhrGbypGtHUc/7I0ZPM33jQZGSfdk+aHaEPkZ1hr8xMXSFo4YH9/VdBDa1jeFeHXQU5ghhpDLNiABGmQKEAAAAAAEnltPAAAAAAAAAAASEKbPHKHeQEph3s9TGn2GKFwaIKlfoNV1mIDdBVnaQIuy7N6AaqRYT4LyeTZapgMjLgjgIAIoAjIECAAQKkISChBrYzE2AAAAAFMSH56kAAAIGmQKEAAAAAAERyj0AAAAAAAAAAASEDmGEgbDz+SW8y2QfkWN/+EaIEfWWoiTgAmiKTvInSuY7tNgKBj5V8h44urss+amAJ3pIAIoAjoECAAQKkISChBrYzE2AAAAAFMSH56EAAAIIITb6KMGOABQBRogDcptt1XQJpoES16vJIswZjh2rVtxAlg1RKekQfe/bjcigAEyVqbdUN7bv0kQJT8SyxFc20QPTct7n8CdWqSMGFQmD7WvK+fBZIPFFOAEUTQiQQVzZKtdC+MKfVP437e8L/ppHwqKcGllSfnUH4dHWhCTIvS7FsOJ+YvmBpvlBT3oI2+vDuNCMLJYfWsLhFfMIDq9z7SxbKbbPtaF6sJD9EJkHjoICgYxOC4wLjFAAUrYAQAAAAIAAADYAAUAEFMSH57hdbeqAAAA0gAAABAAAADkAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAACowAAAAAAAAKjAAAAAAAAAAAAAAAACAAABOgAAABAAAAFMAAAAEAAAAV4AAAAQAAAAAAAAAAAAAAGMAAAAEAAAAaAAAAAQAAABsgAAABAAAAHEAAAAEAAAAAAAAAAAAAAB8gAAABAHfxawYqBd+LZn4NCPsmv3lvrUfgB9zGgvOapiI/HAL1gB"
-                    #request_license()
+                    request_license()
                     message = {
                         "opData": {
                             "license": license,
@@ -130,7 +133,7 @@ async def handle_client(websocket, path):
                     url = opData['url']
                     if length != 0:
                         parsed_url = urlparse(url)
-                        new_path = f'range/{offset}-{offset + 12}' + parsed_url.path[1:]
+                        new_path = f'range/{offset}-{offset + length}' + parsed_url.path[1:]
                         new_url = urlunparse((parsed_url.scheme, parsed_url.netloc, new_path, parsed_url.params,
                                               parsed_url.query, parsed_url.fragment))
                         response = requests.get(new_url, stream=True)
@@ -181,6 +184,8 @@ def tanstoDownloadInfo():
 
     timedtexttrack = result['timedtexttracks'][0]
 
+    lanLabel = ""
+    qualityIcon = getVideoQuality(video_stream['res_w'],video_stream['res_h'])
     download_info = {
         "opData": {
             "input": {
@@ -189,48 +194,48 @@ def tanstoDownloadInfo():
                         "bitRate": stream['bitrate'] * 1000,
                         "bitrate": stream['bitrate'] * 1000,
                         "channels": stream['channels'],
-                        "codec": audio_track['codecName'] + " HQ",
+                        "codec": codecTrans(stream['content_profile']),
                         "content_profile": audio_track['profile'],
                         "desc": audio_track['languageDescription'],
                         "headUrl": {
-                            "length": stream['size'],
+                            "length": stream['urls'][0]['cdn_id'],
                             "offset": 0,
                             "url": audio_url
                         },
                         "is5_1": True if stream['channels'] == "5.1" else False,
-                        "isAD": False,
+                        "isAD": True if stream['trackType'] == "ASSISTIVE" else False,
                         "isDefault": audio_track['isNative'],
                         "isDrm": stream['isDrm'],
-                        "isOriginal": False,
-                        "language": "en",
+                        "isOriginal":  audio_track['isNative'],
+                        "language": (lambda e: e.split("-")[0] if e and "-" in e else "")(stream['language']),
                         "languageDescription": audio_track['languageDescription'],
-                        "languageLabel": "English (Original)",
+                        "languageLabel": lanLabel,
                         "new_track_id": audio_track['new_track_id'],
                         "oriLanguage": audio_track["language"],
                         "size": stream['size'],
-                        "trackId": "A:2:1;2;en;1;0;-128-107280467",
+                        "trackId": f"{audio_track['new_track_id']}-{stream['bitrate']}-{stream['size']}",
                         "type": 0,
-                        "uri": "A:2:1;2;en;1;0;-128-107280467"
+                        "uri":f"{audio_track['new_track_id']}-{stream['bitrate']}-{stream['size']}"
                     },
                     {
                         "bitRate": video_stream['bitrate'] * 1000,
                         "bitrate": video_stream['bitrate'] * 1000,
                         "codec": "",
-                        "desc": "1920x1080_1080P_6773_undefined_24000/1001",
+                        "desc": str(video_stream['res_w']) + "x" + str(video_stream['res_h']) + "_" + qualityIcon + "_" + str(video_stream['bitrate']) + "_" + str(video_stream['crop_h'])  + "_" + str(video_stream['framerate_value']) + "/" + str(video_stream['framerate_scale']),
                         "frameRate": str(video_stream['framerate_value']) + "/" + str(video_stream['framerate_scale']),
                         "headUrl": {
-                            "length": video_stream['size'],
+                            "length": video_stream['startByteOffset'],
                             "offset": 0,
                             "url": video_url
                         },
                         "isDrm": video_stream['isDrm'],
                         "pssh": PSSH,
-                        "qualityIcon": "1080P",
-                        "sar": "1:1",
+                        "qualityIcon": qualityIcon,
+                        "sar": f"{video_track['pixelAspectX']}:{video_track['pixelAspectY']}",
                         "size": video_stream['size'],
-                        "trackId": "V:2:1;2;;default;-1;none;-1;-6773",
+                        "trackId": f"{video_track['new_track_id']}-{video_stream['bitrate']}",
                         "type": 1,
-                        "uri": "V:2:1;2;;default;-1;none;-1;-6773"
+                        "uri": f"{video_track['new_track_id']}-{video_stream['bitrate']}"
                     }
                     # ,
                     # {
@@ -279,7 +284,7 @@ def tanstoDownloadInfo():
             "mediaId": str(result['movieId']),
             "metaData": {
                 "description": "两名黑人 FBI 警探受命保护一对头脑简单的上流社会姐妹，他们把自己化妆成这对白人姐妹，出入各种派对，试图搜捕想要绑架她们的绑匪。",
-                "thumbnail": r"C:\Users\Administrator\Desktop\meidia_convert\81004276_1.jpg",
+                "thumbnail": r"D:\Users\Downloads\st\Folder_online\noteBurner\meidia_convert\81004276_1.jpg",
                 "thumbnailType": "url",
                 "title": "小姐好白",
                 "year": 2004
@@ -301,6 +306,48 @@ def tanstoDownloadInfo():
     return download_info
 
 
+def getVideoQuality(e, t):
+    n = "720P"
+    try:
+        a = e * t
+        r = ["240P", "360P", "480P", "720P", "1080P"]
+        o = [84480, 172800, 411840, 921600, 2073600]
+        s = next((i for i, val in enumerate(o) if val > a), -1)
+
+        if s == -1:
+            n = r[-1]
+        elif s == 0:
+            n = r[0]
+        else:
+            l = s - 1
+            n = r[l] if o[s] - a > a - o[l] else r[s]
+    except Exception as e:
+        print("getVideoQuality error:", e)
+        n = "720P"
+
+    return n
+
+def codecTrans(e):
+    t = "AAC"
+    if e == "heaac-2-dash":
+        t = "AAC"
+    elif e == "heaac-2hq-dash":
+        t = "AAC HQ"
+    elif e == "heaac-5.1-dash":
+        t = "AAC 5.1"
+    elif e == "heaac-5.1hq-dash":
+        t = "AAC 5.1 HQ"
+    elif e == "ddplus-2-dash":
+        t = "DD+"
+    elif e == "ddplus-2hq-dash":
+        t = "DD+ HQ"
+    elif e == "ddplus-5.1-dash":
+        t = "DD+ 5.1"
+    elif e == "ddplus-5.1hq-dash":
+        t = "DD+ 5.1 HQ"
+    else:
+        t = "AAC"
+    return t
 def request_license():
     global url
     global sessionId
