@@ -4,6 +4,7 @@ import json
 import requests
 from urllib.parse import urlparse, urlunparse
 from netFlixParser import getTrackInfo
+import threading
 
 from  gloVar import defalut_lan_map,language_map
 
@@ -27,8 +28,136 @@ def packMessage(fro, to, message):
         }
     }
     return json.dumps(data)
+# 定义一个线程函数
+async def my_thread_function(message,websocket):
+    global PSSH
+    global licenseRequest
+    global sessionId
+    global KEEP_ID
+    global id
+    global license
 
+    print("Received message:", message)
 
+    # 处理收到的消息
+    if message.startswith("shell_"):
+        id = message
+        print("connect %s succsess" % id)
+        # 发送响应消息给客户端
+        response = "mediaconvert_NoteBurner-netflix"
+        await websocket.send(response)
+        message = {
+            "opData": {
+                "appIdentify": "com.noteburner.netflix"
+            },
+            "opType": "Initialize",
+            "token": "4224_1"
+        }
+        response = packMessage("mediaconvert_NoteBurner-netflix", id, message)
+        await websocket.send(response)
+    else:
+        data = json.loads(message)
+        content = json.loads(data['content'])
+        header = data['header']
+        opType = content['opType']
+        opData = content['opData']
+        if opType == "Echo":
+            KEEP_ID = header['to'].split("_")[1]
+            print("get connnect to keeper_%s" % KEEP_ID)
+            message = {
+                "opData": {
+                    "cert": "Cr0CCAMSEOVEukALwQ8307Y2+LVP+0MYh/HPkwUijgIwggEKAoIBAQDm875btoWUbGqQD8eAGuBlGY+Pxo8YF1LQR+Ex0pDONMet8EHslcZRBKNQ/09RZFTP0vrYimyYiBmk9GG+S0wB3CRITgweNE15cD33MQYyS3zpBd4z+sCJam2+jj1ZA4uijE2dxGC+gRBRnw9WoPyw7D8RuhGSJ95OEtzg3Ho+mEsxuE5xg9LM4+Zuro/9msz2bFgJUjQUVHo5j+k4qLWu4ObugFmc9DLIAohL58UR5k0XnvizulOHbMMxdzna9lwTw/4SALadEV/CZXBmswUtBgATDKNqjXwokohncpdsWSauH6vfS6FXwizQoZJ9TdjSGC60rUB2t+aYDm74cIuxAgMBAAE6EHRlc3QubmV0ZmxpeC5jb20SgAOE0y8yWw2Win6M2/bw7+aqVuQPwzS/YG5ySYvwCGQd0Dltr3hpik98WijUODUr6PxMn1ZYXOLo3eED6xYGM7Riza8XskRdCfF8xjj7L7/THPbixyn4mULsttSmWFhexzXnSeKqQHuoKmerqu0nu39iW3pcxDV/K7E6aaSr5ID0SCi7KRcL9BCUCz1g9c43sNj46BhMCWJSm0mx1XFDcoKZWhpj5FAgU4Q4e6f+S8eX39nf6D6SJRb4ap7Znzn7preIvmS93xWjm75I6UBVQGo6pn4qWNCgLYlGGCQCUm5tg566j+/g5jvYZkTJvbiZFwtjMW5njbSRwB3W4CrKoyxw4qsJNSaZRTKAvSjTKdqVDXV/U5HK7SaBA6iJ981/aforXbd2vZlRXO/2S+Maa2mHULzsD+S5l4/YGpSt7PnkCe25F+nAovtl/ogZgjMeEdFyd/9YMYjOS4krYmwp3yJ7m9ZzYCQ6I8RQN4x/yLlHG5RH/+WNLNUs6JAZ0fFdCmw=",
+                    "certMode": "Set",
+                    "pssh": PSSH
+                },
+                "opType": "LicenseRequest",
+                "token": KEEP_ID + "_1"
+            }
+            response = packMessage("keeper_" + KEEP_ID, id, message)
+            await websocket.send(response)
+        elif opType == "LicenseRequestResult":
+            licenseRequest = opData['data']['licenseRequest']
+            sessionId = opData['data']['sessionId']
+            license = "CAISjAQKtQEKEKZuunXS6IKoTGb0Ii+gK58SnAF7InZlcnNpb24iOiIxLjAiLCJlc24iOiJORkNEQ0gtMDItSzNFWjM0UVZWRk5BM0UyN0dFNjZGUU44QUFLV1dBIiwic2FsdCI6Ijk3Nzk5MTc2MzY0ODg4MTMxOTYwODM3NjI0NzU1OTYwOCIsImlzc3VlVGltZSI6MTY4NTcyODY0NDAwMCwibW92aWVJZCI6IjYwMDM0NTg3In0gASgAEhQIARAAGAAgwNECKMDRAlgAYAF4ARpmEhC7UIvzBj/LltnpNIA6Zp5gGlCN/3axROQ3HKZ2lfHiUSWqk8ozgVGqFccmhrGbypGtHUc/7I0ZPM33jQZGSfdk+aHaEPkZ1hr8xMXSFo4YH9/VdBDa1jeFeHXQU5ghhpDLNiABGmQKEAAAAAAEnltPAAAAAAAAAAASEKbPHKHeQEph3s9TGn2GKFwaIKlfoNV1mIDdBVnaQIuy7N6AaqRYT4LyeTZapgMjLgjgIAIoAjIECAAQKkISChBrYzE2AAAAAFMSH56kAAAIGmQKEAAAAAAERyj0AAAAAAAAAAASEDmGEgbDz+SW8y2QfkWN/+EaIEfWWoiTgAmiKTvInSuY7tNgKBj5V8h44urss+amAJ3pIAIoAjoECAAQKkISChBrYzE2AAAAAFMSH56EAAAIIITb6KMGOABQBRogDcptt1XQJpoES16vJIswZjh2rVtxAlg1RKekQfe/bjcigAEyVqbdUN7bv0kQJT8SyxFc20QPTct7n8CdWqSMGFQmD7WvK+fBZIPFFOAEUTQiQQVzZKtdC+MKfVP437e8L/ppHwqKcGllSfnUH4dHWhCTIvS7FsOJ+YvmBpvlBT3oI2+vDuNCMLJYfWsLhFfMIDq9z7SxbKbbPtaF6sJD9EJkHjoICgYxOC4wLjFAAUrYAQAAAAIAAADYAAUAEFMSH57hdbeqAAAA0gAAABAAAADkAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAACowAAAAAAAAKjAAAAAAAAAAAAAAAACAAABOgAAABAAAAFMAAAAEAAAAV4AAAAQAAAAAAAAAAAAAAGMAAAAEAAAAaAAAAAQAAABsgAAABAAAAHEAAAAEAAAAAAAAAAAAAAB8gAAABAHfxawYqBd+LZn4NCPsmv3lvrUfgB9zGgvOapiI/HAL1gB"
+            request_license()
+            message = {
+                "opData": {
+                    "license": license,
+                    "sessionId": sessionId
+                },
+                "opType": "License",
+                "token": KEEP_ID + "_1"
+            }
+            response = packMessage("keeper_" + KEEP_ID, id, message)
+            await websocket.send(response)
+
+        elif opType == "LicenseResult":
+            message = tanstoDownloadInfo()
+            response = packMessage("keeper_" + KEEP_ID, id, message)
+            await websocket.send(response)
+        elif opType == "GetGlobalInfo":
+            token = content['token']
+            message = {
+                "opData": {
+                    "data": {
+                        "convertMode": "C",
+                        "deviceInfo": {
+                            "ap": "com.noteburner.netflix",
+                            "apv": "2.0.3",
+                            "guid": "3ad6f53a-8dd1-4a6a-978c-664327a8cdb7",
+                            "uid": "00:e0:4c:06:91:8c",
+                            "website": "netflix"
+                        },
+                        "hwaccel": 3,
+                        "nodePath": "\"C:\\Program Files (x86)\\NoteBurner\\NoteBurner Netflix Video Downloader\\NoteBurner Netflix Video Downloader.exe\""
+                    },
+                    "error": False,
+                    "errorCode": 0
+                },
+                "opType": "GetGlobalInfoResult",
+                "token": token
+            }
+            response = packMessage("mediaconvert_NoteBurner-netflix", id, message)
+            await websocket.send(response)
+        elif opType == "Download":
+            token = content['token']
+            path = opData['path']
+            offset = opData['offset']
+            length = opData['length']
+            url = opData['url']
+            if length != 0:
+                parsed_url = urlparse(url)
+                new_path = f'range/{offset}-{offset + length}' + parsed_url.path[1:]
+                new_url = urlunparse((parsed_url.scheme, parsed_url.netloc, new_path, parsed_url.params,
+                                      parsed_url.query, parsed_url.fragment))
+                response = requests.get(new_url, stream=True)
+                response.raise_for_status()
+                with open(path, 'wb') as file:
+                    file.write(response.content)
+                print('File downloaded and saved successfully. url %s to path %s' % (new_url, path))
+            else:
+                print('Length is 0. No file download required.')
+
+            message = {
+                "opData": {
+                    "data": {
+                        "context": opData['context'],
+                        "path": path,
+                        "progress": 1000,
+                        "reqId": opData['reqId'],
+                        "token": token,
+                        "url": url
+                    },
+                    "error": False,
+                    "errorCode": 0
+                },
+                "opType": "DownloadResult",
+                "token": token
+            }
+            response = packMessage("mediaconvert_NoteBurner-netflix", id, message)
+            await websocket.send(response)
+
+mutex = asyncio.Lock()
 async def handle_client(websocket, path):
     global PSSH
     global licenseRequest
@@ -38,11 +167,9 @@ async def handle_client(websocket, path):
     global license
     # 这是处理每个客户端连接的函数
     # 在这里编写服务器与客户端交互的逻辑
-
-    while True:
-        try:
-            # 接收客户端消息
-            message = await websocket.recv()
+    async with mutex:
+        async for message in websocket:
+            response = None
             print("Received message:", message)
 
             # 处理收到的消息
@@ -60,7 +187,6 @@ async def handle_client(websocket, path):
                     "token": "4224_1"
                 }
                 response = packMessage("mediaconvert_NoteBurner-netflix", id, message)
-                await websocket.send(response)
             else:
                 data = json.loads(message)
                 content = json.loads(data['content'])
@@ -80,12 +206,11 @@ async def handle_client(websocket, path):
                         "token": KEEP_ID + "_1"
                     }
                     response = packMessage("keeper_" + KEEP_ID, id, message)
-                    await websocket.send(response)
                 elif opType == "LicenseRequestResult":
                     licenseRequest = opData['data']['licenseRequest']
                     sessionId = opData['data']['sessionId']
                     license = "CAISjAQKtQEKEKZuunXS6IKoTGb0Ii+gK58SnAF7InZlcnNpb24iOiIxLjAiLCJlc24iOiJORkNEQ0gtMDItSzNFWjM0UVZWRk5BM0UyN0dFNjZGUU44QUFLV1dBIiwic2FsdCI6Ijk3Nzk5MTc2MzY0ODg4MTMxOTYwODM3NjI0NzU1OTYwOCIsImlzc3VlVGltZSI6MTY4NTcyODY0NDAwMCwibW92aWVJZCI6IjYwMDM0NTg3In0gASgAEhQIARAAGAAgwNECKMDRAlgAYAF4ARpmEhC7UIvzBj/LltnpNIA6Zp5gGlCN/3axROQ3HKZ2lfHiUSWqk8ozgVGqFccmhrGbypGtHUc/7I0ZPM33jQZGSfdk+aHaEPkZ1hr8xMXSFo4YH9/VdBDa1jeFeHXQU5ghhpDLNiABGmQKEAAAAAAEnltPAAAAAAAAAAASEKbPHKHeQEph3s9TGn2GKFwaIKlfoNV1mIDdBVnaQIuy7N6AaqRYT4LyeTZapgMjLgjgIAIoAjIECAAQKkISChBrYzE2AAAAAFMSH56kAAAIGmQKEAAAAAAERyj0AAAAAAAAAAASEDmGEgbDz+SW8y2QfkWN/+EaIEfWWoiTgAmiKTvInSuY7tNgKBj5V8h44urss+amAJ3pIAIoAjoECAAQKkISChBrYzE2AAAAAFMSH56EAAAIIITb6KMGOABQBRogDcptt1XQJpoES16vJIswZjh2rVtxAlg1RKekQfe/bjcigAEyVqbdUN7bv0kQJT8SyxFc20QPTct7n8CdWqSMGFQmD7WvK+fBZIPFFOAEUTQiQQVzZKtdC+MKfVP437e8L/ppHwqKcGllSfnUH4dHWhCTIvS7FsOJ+YvmBpvlBT3oI2+vDuNCMLJYfWsLhFfMIDq9z7SxbKbbPtaF6sJD9EJkHjoICgYxOC4wLjFAAUrYAQAAAAIAAADYAAUAEFMSH57hdbeqAAAA0gAAABAAAADkAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAACowAAAAAAAAKjAAAAAAAAAAAAAAAACAAABOgAAABAAAAFMAAAAEAAAAV4AAAAQAAAAAAAAAAAAAAGMAAAAEAAAAaAAAAAQAAABsgAAABAAAAHEAAAAEAAAAAAAAAAAAAAB8gAAABAHfxawYqBd+LZn4NCPsmv3lvrUfgB9zGgvOapiI/HAL1gB"
-                    request_license()
+                    #request_license()
                     message = {
                         "opData": {
                             "license": license,
@@ -95,12 +220,9 @@ async def handle_client(websocket, path):
                         "token": KEEP_ID + "_1"
                     }
                     response = packMessage("keeper_" + KEEP_ID, id, message)
-                    await websocket.send(response)
-
                 elif opType == "LicenseResult":
                     message = tanstoDownloadInfo()
                     response = packMessage("keeper_" + KEEP_ID, id, message)
-                    await websocket.send(response)
                 elif opType == "GetGlobalInfo":
                     token = content['token']
                     message = {
@@ -124,7 +246,6 @@ async def handle_client(websocket, path):
                         "token": token
                     }
                     response = packMessage("mediaconvert_NoteBurner-netflix", id, message)
-                    await websocket.send(response)
                 elif opType == "Download":
                     token = content['token']
                     path = opData['path']
@@ -161,12 +282,8 @@ async def handle_client(websocket, path):
                         "token": token
                     }
                     response = packMessage("mediaconvert_NoteBurner-netflix", id, message)
+            if response is not None:
                     await websocket.send(response)
-
-        except websockets.exceptions.ConnectionClosedOK:
-            # 客户端断开连接
-            print("Client disconnected")
-            break
 
 
 def tanstoDownloadInfo():
