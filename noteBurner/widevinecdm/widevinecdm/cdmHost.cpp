@@ -2,15 +2,16 @@
 #include "fucntion.h"
 #include "widevinecdm.h"
 
-void* cdmHost::Allocate(int capacity)
+CDMHostBuffer* cdmHost::Allocate(int capacity)
 {
 
     if (m_host) {
-        void* buf =  m_host->Allocate(capacity);
+        CDMHostBuffer* buf = (CDMHostBuffer*)m_host->Allocate(capacity);
         Log("Host::Allocate, %u, %p", capacity, buf);
         return buf;
     }
-    return nullptr;
+
+    return new CDMHostBuffer(capacity);
 }
 
 void cdmHost::SetTimer(__int64 delay_ms, void* context)
@@ -22,16 +23,16 @@ void cdmHost::SetTimer(__int64 delay_ms, void* context)
     else {
         m_context = context;
     }
-  
+
 }
 
 __time64_t cdmHost::GetCurrentWallTime()
 {
     Log("Host::GetCurrentWallTime");
-   
+
     if (!m_host)
         return _time64(0);
-    
+
     return m_host->GetCurrentWallTime();
 }
 
@@ -39,7 +40,7 @@ void cdmHost::OnInitialized(bool success)
 {
 
     Log("Host::OnInitialized, %d", success);
-  
+
     if (m_host)
         m_host->OnInitialized(success);
 
@@ -47,11 +48,11 @@ void cdmHost::OnInitialized(bool success)
 
 void cdmHost::OnResolveKeyStatusPromise(int promise_id, int key_status)
 {
-    
+
 
 
     Log("Host::OnResolveKeyStatusPromise, promise_id %d, %d", promise_id, key_status);
-   
+
     m_mtx.lock();
 
     m_mapIdHdcp.erase(promise_id);
@@ -68,36 +69,36 @@ void cdmHost::OnResolveKeyStatusPromise(int promise_id, int key_status)
 void cdmHost::OnResolveNewSessionPromise(int promise_id, const char* session_id, int session_id_size)
 {
 
-  
+
     Log("Host::OnResolveNewSessionPromise, %08x, %s", promise_id, (const char*)session_id);
     if (!m_host) {
         m_session_id = promise_id;
         return;
     }
     m_MyProxy->m_mtx.lock();
- 
 
-    
+
+
     m_MyProxy->m_mtx.unlock();
-    m_host->OnResolveNewSessionPromise(promise_id,session_id,session_id_size);
+    m_host->OnResolveNewSessionPromise(promise_id, session_id, session_id_size);
 }
 
 void cdmHost::OnResolvePromise(int promise_id)
 {
-   
+
 
     Log("Host::OnResolvePromise, %08x", promise_id);
-   
+
     if (m_host)
         m_host->OnResolvePromise(promise_id);
 }
 
 void cdmHost::OnRejectPromise(uint32_t promise_id, int exception, uint32_t system_code, const char* error_message, uint32_t error_message_size)
 {
-    
+
 
     Log("Host::OnRejectPromise, %08x %s", promise_id, (const char*)error_message);
-   
+
     if (m_host)
         m_host->OnRejectPromise(
             promise_id,
@@ -121,8 +122,8 @@ void cdmHost::OnSessionMessage(const char* session_id, uint32_t session_id_size,
     Log("[KREQ]cdm normal mode process OnSessionMessage!");
 
     if (m_host) {
-        
-        m_host->OnSessionMessage(session_id,session_id_size,message_type, message,message_size);
+
+        m_host->OnSessionMessage(session_id, session_id_size, message_type, message, message_size);
     }
 }
 
@@ -144,7 +145,7 @@ void cdmHost::OnSessionKeysChange(const char* session_id, uint32_t session_id_si
 
 void cdmHost::OnExpirationChange(const char* session_id, uint32_t session_id_size, __time64_t new_expiry_time)
 {
-    
+
     Log("Host::OnExpirationChange, %s, %s", session_id, asctime(_gmtime64(&new_expiry_time)));
     if (m_host) {
 
@@ -154,7 +155,7 @@ void cdmHost::OnExpirationChange(const char* session_id, uint32_t session_id_siz
 
 void cdmHost::OnSessionClosed(const char* session_id, uint32_t session_id_size)
 {
-    Log( "Host::OnSessionClosed, %s", session_id);
+    Log("Host::OnSessionClosed, %s", session_id);
     if (m_host) {
 
         m_host->OnSessionClosed(session_id, session_id_size);
@@ -181,15 +182,15 @@ void cdmHost::EnableOutputProtection(uint32_t desired_protection_mask)
 
 void cdmHost::QueryOutputProtectionStatus()
 {
-    Log( "Host::QueryOutputProtectionStatus");
-   
+    Log("Host::QueryOutputProtectionStatus");
+
     if (m_host)
         m_host->QueryOutputProtectionStatus();
 }
 
 void cdmHost::OnDeferredInitializationDone(int stream_type, int decoder_status)
 {
-    Log( "Host::OnDeferredInitializationDone, %u, %u", stream_type, decoder_status);
+    Log("Host::OnDeferredInitializationDone, %u, %u", stream_type, decoder_status);
     if (m_host)
         m_host->OnDeferredInitializationDone(stream_type, decoder_status);
 }
@@ -198,7 +199,7 @@ void* cdmHost::CreateFileIO(void* client)
 {
     Log("Host::CreateFileIO");
     if (m_host)
-       return  m_host->CreateFileIO(client);
+        return  m_host->CreateFileIO(client);
     return nullptr;
 }
 
@@ -206,7 +207,7 @@ void cdmHost::RequestStorageId(uint32_t version)
 {
     Log("Host::RequestStorageId, %u", version);
     if (m_host)
-          m_host->RequestStorageId(version);
+        m_host->RequestStorageId(version);
 }
 
 void cdmHost::setMapIdHdcp(int promise_id, std::string hdcp)
@@ -218,3 +219,43 @@ void cdmHost::setMapIdHdcp(int promise_id, std::string hdcp)
 
 
 cdmHost* g_CDMHost = 0;
+
+CDMHostBuffer::CDMHostBuffer(size_t capacity)
+{
+    m_buffer = malloc(capacity);
+    m_size = 0;
+    m_capacity = capacity;
+
+}
+
+CDMHostBuffer::~CDMHostBuffer()
+{
+    free(m_buffer);
+    m_buffer = 0;
+}
+
+void CDMHostBuffer::Destroy()
+{
+    delete this;
+}
+
+uint32_t CDMHostBuffer::Capacity() const
+{
+    return m_capacity;
+}
+
+uint8_t* CDMHostBuffer::Data()
+{
+    return (uint8_t*)m_buffer;
+}
+
+void CDMHostBuffer::SetSize(uint32_t size)
+{
+    m_size = size;
+
+}
+
+uint32_t CDMHostBuffer::Size() const
+{
+    return m_size;
+}

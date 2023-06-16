@@ -5,6 +5,23 @@
 
 typedef unsigned int uint32_t;
 
+class CDMHostBuffer {
+public:
+
+   
+    virtual void Destroy();
+    virtual uint32_t Capacity() const;
+    virtual uint8_t* Data();
+    virtual void SetSize(uint32_t size);
+    virtual uint32_t Size() const;
+
+    CDMHostBuffer(size_t capacity);
+    virtual ~CDMHostBuffer();
+private:
+    void* m_buffer;
+    int m_size;
+    size_t m_capacity;
+};
 
 class  Host {
 public:
@@ -12,7 +29,7 @@ public:
     // failure. The caller owns the Buffer* after this call. The buffer is not
     // guaranteed to be zero initialized. The capacity of the allocated Buffer
     // is guaranteed to be not less than |capacity|.
-    virtual void * Allocate(int capacity) = 0;
+    virtual CDMHostBuffer * Allocate(int capacity) = 0;
 
     // Requests the host to call ContentDecryptionModule::TimerFired() |delay_ms|
     // from now with |context|.
@@ -147,7 +164,7 @@ class cdmHost
 {
 public:
 
-    virtual void* Allocate(int capacity);
+    virtual CDMHostBuffer* Allocate(int capacity);
 
     // Requests the host to call ContentDecryptionModule::TimerFired() |delay_ms|
     // from now with |context|.

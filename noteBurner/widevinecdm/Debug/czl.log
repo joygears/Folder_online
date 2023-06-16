@@ -8,3 +8,35 @@ czl widevine VerifyCdmHost_0 retcode value 1
 
 czl InitializeCdmModule_4
 
+czl open file, 000003A8, 00000390, 00000394, 0000039C
+
+czl load widevinecdm success, 036F2CC0, 036F2D10, 036F2CF0, 036F2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 67547586319351826, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 00F4BA68
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00F4BA68)
+czl open file, 0000038C, 00000370, 00000374, 00000378
+
+czl load widevinecdm success, 7AC32CC0, 7AC32D10, 7AC32CF0, 7AC32E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 41651888461971474, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 00CF6EA8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00CF6EA8)

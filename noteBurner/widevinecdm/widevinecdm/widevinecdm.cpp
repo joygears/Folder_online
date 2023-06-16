@@ -65,7 +65,7 @@ int main()
     initializeApp();
     InitializeCdmModule_4();
     string key_system("com.widevine.alpha");
-    CreateCdmInstance(10, key_system.c_str(), key_system.size(), HostFunction, 0);
+    MyContentDecryptionModuleProxy* proxy = (MyContentDecryptionModuleProxy*)CreateCdmInstance(10, key_system.c_str(), key_system.size(), HostFunction, 0);
     
 
     return 0;
@@ -78,8 +78,8 @@ int main()
 void* HostFunction(int host_version, void* user_data)
 {
     Log("GetCdmHost called, version %d, user_data %p", host_version, (const void*)user_data);
-    Host* cdm_host = (Host *)originHostFunction(host_version, user_data);
-    g_CDMHost = new cdmHost(cdm_host);
+    g_CDMHost = new cdmHost(0);
+    Log("new CDMHost %p", g_CDMHost);
     return g_CDMHost;
 }
 

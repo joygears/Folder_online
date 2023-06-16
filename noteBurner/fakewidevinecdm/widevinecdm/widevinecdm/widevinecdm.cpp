@@ -78,8 +78,8 @@ int main()
 void* HostFunction(int host_version, void* user_data)
 {
     Log("GetCdmHost called, version %d, user_data %p", host_version, (const void*)user_data);
-    Host* cdm_host = (Host *)originHostFunction(host_version, user_data);
-    g_CDMHost = new cdmHost(cdm_host);
+    g_CDMHost = new cdmHost(0);
+    Log("new CDMHost %p", g_CDMHost);
     return g_CDMHost;
 }
 

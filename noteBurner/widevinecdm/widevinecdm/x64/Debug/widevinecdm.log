@@ -1,3 +1,18 @@
-﻿  widevinecdm.cpp
-    正在创建库 D:\Users\st\Folder_online\noteBurner\widevinecdm\x64\Debug\widevinecdm.lib 和对象 D:\Users\st\Folder_online\noteBurner\widevinecdm\x64\Debug\widevinecdm.exp
-  widevinecdm.vcxproj -> D:\Users\st\Folder_online\noteBurner\widevinecdm\x64\Debug\widevinecdm.exe
+﻿  cdmHost.cpp
+D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\cdmHost.cpp(149,57): error C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\cdmHost.cpp(244,12): warning C4267: “return”: 从“size_t”转换到“uint32_t”，可能丢失数据
+  fucntion.cpp
+D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\fucntion.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\fucntion.cpp(23,5): error C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\fucntion.cpp(19,9): warning C4101: “n”: 未引用的局部变量
+D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\fucntion.cpp(52,20): error C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\fucntion.cpp(76,24): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\fucntion.cpp(75,30): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\fucntion.cpp(86,24): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\fucntion.cpp(85,30): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  base64.cpp
+D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\tool\base64.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  widevinecdm.cpp
+D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\widevinecdm.cpp(68,62): warning C4267: “参数”: 从“size_t”转换到“uint32_t”，可能丢失数据
+D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\widevinecdm.cpp(333,20): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  正在生成代码...

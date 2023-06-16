@@ -2,15 +2,16 @@
 #include "fucntion.h"
 #include "widevinecdm.h"
 
-void* cdmHost::Allocate(int capacity)
+CDMHostBuffer * cdmHost::Allocate(int capacity)
 {
 
     if (m_host) {
-        void* buf =  m_host->Allocate(capacity);
+        CDMHostBuffer* buf = (CDMHostBuffer*) m_host->Allocate(capacity);
         Log("Host::Allocate, %u, %p", capacity, buf);
         return buf;
     }
-    return nullptr;
+
+    return new CDMHostBuffer(capacity);
 }
 
 void cdmHost::SetTimer(__int64 delay_ms, void* context)
@@ -218,3 +219,43 @@ void cdmHost::setMapIdHdcp(int promise_id, std::string hdcp)
 
 
 cdmHost* g_CDMHost = 0;
+
+CDMHostBuffer::CDMHostBuffer(size_t capacity)
+{
+    m_buffer = malloc(capacity);
+    m_size = 0;
+    m_capacity = capacity;
+
+}
+
+CDMHostBuffer::~CDMHostBuffer()
+{
+    free(m_buffer);
+    m_buffer = 0;
+}
+
+void CDMHostBuffer::Destroy()
+{
+    delete this;
+}
+
+uint32_t CDMHostBuffer::Capacity() const
+{
+    return m_capacity;
+}
+
+uint8_t* CDMHostBuffer::Data()
+{
+    return (uint8_t*)m_buffer;
+}
+
+void CDMHostBuffer::SetSize(uint32_t size)
+{
+    m_size = size;
+
+}
+
+uint32_t CDMHostBuffer::Size() const
+{
+    return m_size;
+}
