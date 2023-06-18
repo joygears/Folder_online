@@ -15,6 +15,9 @@ char* (*_GetCdmVersion)();
 void* (*originHostFunction)(int host_version, void* user_data);
 void* HostFunction(int host_version, void* user_data);
 
+
+
+
 void initializeApp() {
     wstring dycWidevine = TEXT(R"(.\..\..\sig_files\widevinecdm.dll)");
     wstring sigWidevine = TEXT(R"(.\..\..\sig_files\widevinecdm.dll.sig)");
@@ -39,7 +42,9 @@ void initializeApp() {
     wrap.HDycWidevinecdm = HDycWidevinecdm;
     wrap.HSigWidevinecdm = HSigWidevinecdm;
 
-   
+    
+
+
     HMODULE hWidevine = LoadLibrary(dycWidevine.c_str());
 
     if(!hWidevine)
