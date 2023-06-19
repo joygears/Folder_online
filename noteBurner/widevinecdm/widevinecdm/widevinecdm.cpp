@@ -4,7 +4,7 @@
 #include "fucntion.h"
 #include "cdmHost.h"
 #include "tool/base64.h"
-
+#include "InlineHook.hpp"
 
 bool (*VerifyCdmHost_0)(verifyWrap*, int flag);
 void (*_InitializeCdmModule_4)();
@@ -15,17 +15,30 @@ char* (*_GetCdmVersion)();
 void* (*originHostFunction)(int host_version, void* user_data);
 void* HostFunction(int host_version, void* user_data);
 
+typedef DWORD(__stdcall* MyGetFileAttributes)(LPCWSTR lpFileName);
+typedef DWORD(__stdcall* MyGetModuleFileName)(HMODULE hModule,LPWSTR  lpFilename,DWORD  nSize);
+
+DWORD __stdcall fake_GetFileAttributesW(LPCWSTR lpFileName);
+hook::InlineHook GetFileAttributeshooker = hook::InlineHook();
+hook::InlineHook GetModuleFileNamehooker = hook::InlineHook();
 
 
 
 void initializeApp() {
+
+    
+   
+   
+    GetFileAttributeshooker.hook(::GetFileAttributesW, fake_GetFileAttributesW);
+    GetModuleFileNamehooker.hook(::GetModuleFileNameW, fake_GetFileAttributesW);
+
     wstring dycWidevine = TEXT(R"(.\..\..\sig_files\widevinecdm.dll)");
     wstring sigWidevine = TEXT(R"(.\..\..\sig_files\widevinecdm.dll.sig)");
     wstring dycVfchm = TEXT(R"(.\..\..\sig_files\vfchm.dll)");
     wstring sigVfchm = TEXT(R"(.\..\..\sig_files\vfchm.dll.sig)");
     verifyWrap wrap;
    
- 
+   
     
     HANDLE HDycWidevinecdm = CreateFile(dycWidevine.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
     HANDLE HSigWidevinecdm = CreateFile(sigWidevine.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
@@ -66,7 +79,7 @@ void initializeApp() {
 
 int main()
 {
-	
+    
     initializeApp();
     InitializeCdmModule_4();
     string key_system("com.widevine.alpha");
@@ -578,3 +591,36 @@ int64_t DecryptedProxyBlock::Timestamp() const {
 
 std::mutex MyContentDecryptionModuleProxy::g_mtx;
 std::list< MyContentDecryptionModuleProxy*> MyContentDecryptionModuleProxy::g_listInstance;
+
+
+
+DWORD __stdcall fake_GetFileAttributesW(LPCWSTR lpFileName) {
+    if (lpFileName)
+        Log("GetFileAttributesW called, file %S", lpFileName);
+    if (wcsstr(lpFileName, TEXT("cshell.dll"))==0 && wcsstr(lpFileName, TEXT("decrypt.dll"))==0 && wcsstr(lpFileName, TEXT("widevinecdm.dll"))==0) {
+       return  ((MyGetFileAttributes)GetFileAttributeshooker.originalFunction())(lpFileName);
+    }
+    Log("GetFileAttributesW called, file %S, %08x", lpFileName, ((MyGetFileAttributes)GetFileAttributeshooker.originalFunction())(lpFileName));
+
+    return 0x80;
+}
+
+DWORD fake_GetModuleFileNameW(
+    HMODULE hModule,
+    LPWSTR  lpFilename,
+    DWORD   nSize
+) {
+    DWORD result = ((MyGetModuleFileName)GetModuleFileNamehooker.originalFunction())(hModule, lpFilename, nSize);
+    if (result) {
+
+
+
+    }
+
+}
+
+
+
+
+
+
