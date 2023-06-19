@@ -14,3 +14,267 @@ czl Host::GetCurrentWallTime
 czl module version, 10
 czl construct module, count: 1
 czl module SetHost(0101B8F8)
+czl open file, 000000E0, 000000EC, 000000F0, 000000F4
+
+czl LoadLibrary widevinecdm.dll error  GetLasterror 1114
+
+czl load widevinecdm success, 001A2203, 001A2B8B, 001A273A, 001A20B4 
+
+czl open file, 000000D8, 000000DC, 000000E0, 000000E4
+
+czl open file, 000000DC, 000000E0, 000000E4, 000000E8
+
+czl open file, 000000DC, 000000E8, 000000EC, 000000F0
+
+czl load widevinecdm success, 78D42CC0, 78D42D10, 78D42CF0, 78D42E90 
+
+czl open file, 000000EC, 000000F0, 000000F4, 000000F8
+
+czl load widevinecdm success, 78D42CC0, 78D42D10, 78D42CF0, 78D42E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 87813217706835986, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 014627E8
+czl Host::GetCurrentWallTime
+czl 
+czl open file, 000000EC, 000000F0, 000000F4, 000000F8
+
+czl load widevinecdm success, 78D42CC0, 78D42D10, 78D42CF0, 78D42E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 45314533492785170, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 00F61708
+czl Host::GetCurrentWallTime
+czl 
+czl open file, 000000E0, 000000EC, 000000F0, 000000F4
+
+czl load widevinecdm success, 78D42CC0, 78D42D10, 78D42CF0, 78D42E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 50660908782845970, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 00CA0F60
+czl Host::GetCurrentWallTime
+czl 
+czl open file, 000000EC, 000000F0, 000000F4, 000000F8
+
+czl load widevinecdm success, 78D42CC0, 78D42D10, 78D42CF0, 78D42E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 51500592069083154, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 00D996F8
+czl Host::GetCurrentWallTime
+czl 
+czl open file, 000000DC, 000000E4, 000000E8, 000000EC
+
+czl load widevinecdm success, 78D42CC0, 78D42D10, 78D42CF0, 78D42E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 22511641585254418, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 005322C8
+czl Host::GetCurrentWallTime
+czl 
+czl open file, 000000D8, 000000DC, 000000E0, 000000E4
+
+czl open file, 000000DC, 000000E0, 000000E4, 000000E8
+
+czl open file, 000000DC, 000000E0, 000000E4, 000000D8
+
+czl GetModuleFileNameW called, file
+czl 
+czl load widevinecdm success, 78D42CC0, 78D42D10, 78D42CF0, 78D42E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 51218704775512082, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 00D9FC00
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, file
+czl 
+czl open file, 000000D8, 000000DC, 000000E0, 000000E4
+
+czl open file, 000000DC, 000000E0, 000000E4, 000000E8
+
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl open file, 000000D8, 000000DC, 000000E0, 000000E4
+
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl load widevinecdm success, 01072CC0, 01072D10, 01072CF0, 01072E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 40528565535506450, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 00A71718
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl open file, 000000D4, 000000D8, 000000E0, 000000E4
+
+czl open file, 000000DC, 000000E0, 000000E4, 000000E8
+
+czl load widevinecdm success, 00D22CC0, 00D22D10, 00D22CF0, 00D22E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 16036188112551954, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 007DCD10
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(007DCD10)
+czl open file, 00000098, 0000009C, 000000E0, 000000E4
+
+czl open file, 000000D8, 000000E8, 000000DC, 000000E0
+
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl load widevinecdm success, 78D42CC0, 78D42D10, 78D42CF0, 78D42E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 40529390169227282, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 009E05D8
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl open file, 000000E8, 000000DC, 000000E0, 000000EC
+
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl load widevinecdm success, 78D42CC0, 78D42D10, 78D42CF0, 78D42E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 22515747573989394, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 005F1ED0
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl open file, 0000009C, 000000A0, 000000E0, 000000E4
+
+czl open file, 000000D8, 000000E4, 000000E8, 000000DC
+
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl load widevinecdm success, 01372CC0, 01372D10, 01372CF0, 01372E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 58540679122386962, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 00FF2B00
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file C:\Windows\System32\KERNEL32.DLL
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file C:\Windows\SYSTEM32\ntdll.dll
+czl GetModuleFileNameW called
+czl GetModuleFileNameW called, file C:\Windows\SYSTEM32\ntdll.dll
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00FF2B00)
+czl open file, 000000F0, 000000F4, 000000F8, 000000FC
+
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl load widevinecdm success, 78D42CC0, 78D42D10, 78D42CF0, 78D42E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 26174492774498322, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 009A2038
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\sig_files\widevinecdm.dll
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl GetModuleFileNameW called, file D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+czl GetModuleFileNameW called, file C:\Windows\System32\KERNEL32.DLL
+czl GetModuleFileNameW called, file C:\Windows\SYSTEM32\ntdll.dll
+czl GetModuleFileNameW called, file C:\Windows\SYSTEM32\ntdll.dll
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(009A2038)

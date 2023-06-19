@@ -15,6 +15,7 @@ int main()
     SetEnvironmentVariable(TEXT("NoteBurner-netflix_IPC_PORT"), TEXT("8012"));
     
     LoadLibrary(TEXT("cshell.dll"));
+
     char ch;
     std::cin >> ch;
 }
