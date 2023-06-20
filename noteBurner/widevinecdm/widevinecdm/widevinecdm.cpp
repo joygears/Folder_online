@@ -26,7 +26,7 @@ DWORD __stdcall fake_GetFileAttributesW(LPCWSTR lpFileName);
 hook::InlineHook GetFileAttributeshooker = hook::InlineHook();
 hook::InlineHook GetModuleFileNamehooker = hook::InlineHook();
 
-
+wstring dycVfchm;
 
 void initializeApp() {
 
@@ -38,7 +38,7 @@ void initializeApp() {
 
     wstring dycWidevine = TEXT(R"(.\..\..\sig_files\widevinecdm.dll)");
     wstring sigWidevine = TEXT(R"(.\..\..\sig_files\widevinecdm.dll.sig)");
-    wstring dycVfchm = TEXT(R"(.\..\..\sig_files\vfchm.dll)");
+    dycVfchm = TEXT(R"(.\..\..\sig_files\vfchm.dll)");
     wstring sigVfchm = TEXT(R"(.\..\..\sig_files\vfchm.dll.sig)");
     verifyWrap wrap;
    
@@ -615,12 +615,17 @@ DWORD __stdcall  fake_GetModuleFileNameW(
     LPWSTR  lpFilename,
     DWORD   nSize
 ) {
-   
+    wchar_t absolutePath[MAX_PATH];
+     GetFullPathName(dycVfchm.c_str(), MAX_PATH, absolutePath, nullptr);
+
     DWORD result = ((MyGetModuleFileName)GetModuleFileNamehooker.originalFunction())(hModule, lpFilename, nSize);
     if (result) {
-
-        Log("GetModuleFileNameW called, file %S", lpFilename);
-
+        wstring originFileName = lpFilename;
+        
+        if (wcsstr(lpFilename, L"")) {
+            Log("GetModuleFileNameW called, hook %S to %S", originFileName.c_str(), absolutePath);
+            wcscpy(lpFilename, absolutePath);
+        }
     }
     return result;
 }
