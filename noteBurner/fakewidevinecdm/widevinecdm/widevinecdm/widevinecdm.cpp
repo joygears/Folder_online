@@ -189,6 +189,7 @@ void MyContentDecryptionModuleProxy::GetStatusForPolicy(uint32_t promise_id, int
 {
     Log("module(%p) GetStatusForPolicy", this);
     
+    m_host->OnResolveKeyStatusPromise(promise_id, 0);
     if (!m_instance)
     {
         Log("instance is null, %d", 96);

@@ -241,7 +241,7 @@ private:
     Host* m_host;
     void* m_context;
     std::string m_session_id;
-    std::map<int, std::string> m_24;
+    std::map<std::string,int> m_hdcpStatus;
     std::map<int, std::string> m_mapIdHdcp;
     std::mutex m_mtx;
 public:

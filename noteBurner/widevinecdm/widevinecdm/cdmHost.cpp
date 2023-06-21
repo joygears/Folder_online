@@ -55,7 +55,12 @@ void cdmHost::OnResolveKeyStatusPromise(int promise_id, int key_status)
 
     m_mtx.lock();
 
-    m_mapIdHdcp.erase(promise_id);
+    std::map<int, std::string>::iterator it = m_mapIdHdcp.find(promise_id);
+    if (it != m_mapIdHdcp.end()) {
+        Log( "%p, %08x, %s, status:%u", m_MyProxy, promise_id, it->second.c_str(), key_status);
+        m_hdcpStatus[it->second] = key_status;
+        m_mapIdHdcp.erase(it);
+    }
 
     if (promise_id != -1)
     {

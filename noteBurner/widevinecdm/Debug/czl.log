@@ -377,3 +377,318 @@ czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Do
 czl module version, 10
 czl construct module, count: 1
 czl module SetHost(01237828)
+czl open file, 00000378, 00000384, 00000388, 0000038C
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl load widevinecdm success, 78822CC0, 78822D10, 78822CF0, 78822E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 31523874541666322, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 009762C0
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNEL32.DLL to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(009762C0)
+czl init module(00972288), 0, 0, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(00972288) GetStatusForPolicy
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl open file, 0000038C, 00000368, 0000036C, 00000378
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl load widevinecdm success, 79A12CC0, 79A12D10, 79A12CF0, 79A12E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 16322593711718418, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 00623E60
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNEL32.DLL to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00623E60)
+czl init module(00637400), 0, 0, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(00637400) GetStatusForPolicy
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl 00637400, ffffffff, czl open file, 0000038C, 0000036C, 00000370, 00000374
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl load widevinecdm success, 79A12CC0, 79A12D10, 79A12CF0, 79A12E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 55441946117668882, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 011F5B78
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNEL32.DLL to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(011F5B78)
+czl init module(0121FFA0), 0, 0, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0121FFA0) GetStatusForPolicy
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl 0121FFA0, ffffffff, #, status:18991392
+czl open file, 00000398, 0000039C, 000003A0, 000003A4
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl load widevinecdm success, 79A12CC0, 79A12D10, 79A12CF0, 79A12E90 
+
+czl open file, 00000394, 00000388, 00000374, 00000384
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl load widevinecdm success, 79A12CC0, 79A12D10, 79A12CF0, 79A12E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 76555318150037522, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 01475B78
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNEL32.DLL to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(01475B78)
+czl init module(014722A8), 0, 0, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(014722A8) GetStatusForPolicy
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl 014722A8, ffffffff, GetStatusForPolicy_HDCP_1_0, status:0
+czl open file, 0000038C, 00000368, 0000036C, 00000370
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl load widevinecdm success, 79A12CC0, 79A12D10, 79A12CF0, 79A12E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 33768390090817554, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 0086C5F8
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNEL32.DLL to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0086C5F8)
+czl init module(00873018), 0, 0, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(00873018) GetStatusForPolicy
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl 00873018, ffffffff, GetStatusForPolicy_HDCP_1_0, status:0
+czl open file, 0000038C, 00000374, 0000036C, 0000037C
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl load widevinecdm success, 03832CC0, 03832D10, 03832CF0, 03832E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 70364655368798226, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 010D4E08
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNEL32.DLL to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(010D4E08)
+czl init module(01100DF8), 0, 0, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(01100DF8) GetStatusForPolicy
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl 01100DF8, ffffffff, GetStatusForPolicy_HDCP_1_0, status:0
+czl SetServerCertificate(01100DF8): 944
+czl Host::OnResolvePromise, 00000001
+czl open file, 00000394, 00000374, 00000378, 00000370
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl load widevinecdm success, 031F2CC0, 031F2D10, 031F2CF0, 031F2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 41655290076069906, 
+
+czl GetCdmHost called, version 10, user_data 00000000
+czl new CDMHost 00969750
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\widevinecdm.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNEL32.DLL to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00969750)
+czl init module(00994E48), 0, 0, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe to D:\Users\Downloads\st\Folder_online\noteBurner\sig_files\vfchm.dll
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(00994E48) GetStatusForPolicy
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl 00994E48, ffffffff, GetStatusForPolicy_HDCP_1_0, status:0
+czl SetServerCertificate(00994E48): 944
+czl Host::OnResolvePromise, 00000001
