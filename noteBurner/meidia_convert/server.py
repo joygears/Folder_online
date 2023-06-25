@@ -410,11 +410,11 @@ def tanstoDownloadInfo():
                 "year": 2004
             },
             "output": {
-                "folder": r"C:\Users\Administrator\Documents\NoteBurner Netflix Video Downloader",
+                "folder": r"D:\Users\Documents\NoteBurner Netflix Video Downloader",
                 "format": "mp4",
                 "hwaccel": True,
                 "ignorPartialFail": True,
-                "path": r"C:\Users\Administrator\Documents\NoteBurner Netflix Video Downloader\小姐好白_9.mp4",
+                "path": r"D:\Users\Documents\NoteBurner Netflix Video Downloader\小姐好白_9.mp4",
                 "subtitleForm": 2,
                 "subtitleFormat": 0,
                 "videoCodec": "h264"
