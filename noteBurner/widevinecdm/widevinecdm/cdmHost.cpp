@@ -1,6 +1,22 @@
 #include "cdmHost.h"
 #include "fucntion.h"
 #include "widevinecdm.h"
+#include "base64.h"
+
+string getLicense(string session_id, string challeageBase64) {
+    std::string command = "getLicense.exe " + session_id + " " + challeageBase64;
+    std::string output = getCommandOutput(command);
+
+    std::vector<std::string> lines = splitString(output, '\n');
+    string license;
+   
+    for (const std::string& line : lines) {
+        if (line.substr(0, 8) == "license:") {
+            license = splitString(line, ':')[1];
+        }
+    }
+    return license;
+}
 
 CDMHostBuffer* cdmHost::Allocate(int capacity)
 {
@@ -26,12 +42,12 @@ void cdmHost::SetTimer(__int64 delay_ms, void* context)
 
 }
 
-__time64_t cdmHost::GetCurrentWallTime()
+double cdmHost::GetCurrentWallTime()
 {
     Log("Host::GetCurrentWallTime");
 
     if (!m_host)
-        return _time64(0);
+        return (double)_time64(0);
 
     return m_host->GetCurrentWallTime();
 }
@@ -123,9 +139,11 @@ void cdmHost::OnSessionMessage(const char* session_id, uint32_t session_id_size,
         message_type,
         message_size,
         (const void*)message);
-
-    Log("[KREQ]cdm normal mode process OnSessionMessage!");
-
+    string licenseRequest = base64_encode(string(message, message_size));
+    Log("licenseRequest: %s",licenseRequest.c_str());
+    g_session_id = session_id;
+    license = getLicense(session_id, licenseRequest);
+    Log("license: %s", license.c_str());
     if (m_host) {
 
         m_host->OnSessionMessage(session_id, session_id_size, message_type, message, message_size);
@@ -148,10 +166,18 @@ void cdmHost::OnSessionKeysChange(const char* session_id, uint32_t session_id_si
     }
 }
 
-void cdmHost::OnExpirationChange(const char* session_id, uint32_t session_id_size, __time64_t new_expiry_time)
+void cdmHost::OnExpirationChange(const char* session_id, uint32_t session_id_size, __int64  new_expiry_time)
 {
+    
+    __int64 timestamp = (__int64)*(double*)&new_expiry_time;
 
-    Log("Host::OnExpirationChange, %s, %s", session_id, asctime(_gmtime64(&new_expiry_time)));
+ /*   __time64_t ttimestamp = (__int64)*(double*)&timestamp;
+    struct tm* timeinfo = _gmtime64(&ttimestamp);
+    int a = GetLastError();
+    char buffer[80];
+
+    strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", timeinfo);*/
+    Log("Host::OnExpirationChange, %s, %s", session_id, asctime(_gmtime64(&timestamp)));
     if (m_host) {
 
         m_host->OnExpirationChange(session_id, session_id_size, new_expiry_time);

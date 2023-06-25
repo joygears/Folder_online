@@ -1,4 +1,6 @@
 import asyncio
+import time
+
 import websockets
 import json
 import requests
@@ -11,7 +13,7 @@ from  gloVar import defalut_lan_map,language_map
 PSSH = ""
 licenseRequest = ""
 sessionId = ""
-url = "https://www.netflix.com/watch/60034587?trackId=255824129&tctx=0%2C0%2CNAPA%40%40%7Ce8b3ba74-0e8c-42a7-8fb4-65da324e0a37-282234721_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2CNAPA%40%40%7Ce8b3ba74-0e8c-42a7-8fb4-65da324e0a37-282234721_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2Cunknown%2C%2Ce8b3ba74-0e8c-42a7-8fb4-65da324e0a37-282234721%7C1%2CtitlesResults%2C60034587%2CVideo%3A60034587%2CminiDpPlayButton"
+url = "https://www.netflix.com/watch/80231419?trackId=255824129&tctx=0%2C0%2CNAPA%40%40%7C2db68cf5-fe67-4ebb-a961-2b48bac932c1-1511764_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2CNAPA%40%40%7C2db68cf5-fe67-4ebb-a961-2b48bac932c1-1511764_titles%2F1%2F%2F%E5%B0%8F%E5%A7%90%E5%A5%BD%E7%99%BD%2F0%2F0%2Cunknown%2C%2C2db68cf5-fe67-4ebb-a961-2b48bac932c1-1511764%7C1%2CtitlesResults%2C80231419%2CVideo%3A80231419%2CminiDpPlayButton"
 license = ""
 track_info = ""
 KEEP_ID = None
@@ -108,7 +110,7 @@ async def my_thread_function(message,websocket):
                             "uid": "00:e0:4c:06:91:8c",
                             "website": "netflix"
                         },
-                        "hwaccel": 3,
+                        "hwaccel": 0,
                         "nodePath": "\"C:\\Program Files (x86)\\NoteBurner\\NoteBurner Netflix Video Downloader\\NoteBurner Netflix Video Downloader.exe\""
                     },
                     "error": False,
@@ -211,6 +213,7 @@ async def handle_client(websocket, path):
                     sessionId = opData['data']['sessionId']
                     license = "CAISjAQKtQEKEKZuunXS6IKoTGb0Ii+gK58SnAF7InZlcnNpb24iOiIxLjAiLCJlc24iOiJORkNEQ0gtMDItSzNFWjM0UVZWRk5BM0UyN0dFNjZGUU44QUFLV1dBIiwic2FsdCI6Ijk3Nzk5MTc2MzY0ODg4MTMxOTYwODM3NjI0NzU1OTYwOCIsImlzc3VlVGltZSI6MTY4NTcyODY0NDAwMCwibW92aWVJZCI6IjYwMDM0NTg3In0gASgAEhQIARAAGAAgwNECKMDRAlgAYAF4ARpmEhC7UIvzBj/LltnpNIA6Zp5gGlCN/3axROQ3HKZ2lfHiUSWqk8ozgVGqFccmhrGbypGtHUc/7I0ZPM33jQZGSfdk+aHaEPkZ1hr8xMXSFo4YH9/VdBDa1jeFeHXQU5ghhpDLNiABGmQKEAAAAAAEnltPAAAAAAAAAAASEKbPHKHeQEph3s9TGn2GKFwaIKlfoNV1mIDdBVnaQIuy7N6AaqRYT4LyeTZapgMjLgjgIAIoAjIECAAQKkISChBrYzE2AAAAAFMSH56kAAAIGmQKEAAAAAAERyj0AAAAAAAAAAASEDmGEgbDz+SW8y2QfkWN/+EaIEfWWoiTgAmiKTvInSuY7tNgKBj5V8h44urss+amAJ3pIAIoAjoECAAQKkISChBrYzE2AAAAAFMSH56EAAAIIITb6KMGOABQBRogDcptt1XQJpoES16vJIswZjh2rVtxAlg1RKekQfe/bjcigAEyVqbdUN7bv0kQJT8SyxFc20QPTct7n8CdWqSMGFQmD7WvK+fBZIPFFOAEUTQiQQVzZKtdC+MKfVP437e8L/ppHwqKcGllSfnUH4dHWhCTIvS7FsOJ+YvmBpvlBT3oI2+vDuNCMLJYfWsLhFfMIDq9z7SxbKbbPtaF6sJD9EJkHjoICgYxOC4wLjFAAUrYAQAAAAIAAADYAAUAEFMSH57hdbeqAAAA0gAAABAAAADkAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAACowAAAAAAAAKjAAAAAAAAAAAAAAAACAAABOgAAABAAAAFMAAAAEAAAAV4AAAAQAAAAAAAAAAAAAAGMAAAAEAAAAaAAAAAQAAABsgAAABAAAAHEAAAAEAAAAAAAAAAAAAAB8gAAABAHfxawYqBd+LZn4NCPsmv3lvrUfgB9zGgvOapiI/HAL1gB"
                     #request_license()
+                    time.sleep(5)
                     message = {
                         "opData": {
                             "license": license,
@@ -236,7 +239,7 @@ async def handle_client(websocket, path):
                                     "uid": "00:e0:4c:06:91:8c",
                                     "website": "netflix"
                                 },
-                                "hwaccel": 3,
+                                "hwaccel": 0,
                                 "nodePath": "\"C:\\Program Files (x86)\\NoteBurner\\NoteBurner Netflix Video Downloader\\NoteBurner Netflix Video Downloader.exe\""
                             },
                             "error": False,
@@ -307,33 +310,33 @@ def tanstoDownloadInfo():
         "opData": {
             "input": {
                 "tracks": [
-                    {
-                        "bitRate": stream['bitrate'] * 1000,
-                        "bitrate": stream['bitrate'] * 1000,
-                        "channels": stream['channels'],
-                        "codec": codecTrans(stream['content_profile']),
-                        "content_profile": audio_track['profile'],
-                        "desc": audio_track['languageDescription'],
-                        "headUrl": {
-                            "length": stream['urls'][0]['cdn_id'],
-                            "offset": 0,
-                            "url": audio_url
-                        },
-                        "is5_1": True if stream['channels'] == "5.1" else False,
-                        "isAD": True if stream['trackType'] == "ASSISTIVE" else False,
-                        "isDefault": audio_track['isNative'],
-                        "isDrm": stream['isDrm'],
-                        "isOriginal":  audio_track['isNative'],
-                        "language": (lambda e: e.split("-")[0] if e and "-" in e else "")(stream['language']),
-                        "languageDescription": audio_track['languageDescription'],
-                        "languageLabel": lanLabel,
-                        "new_track_id": audio_track['new_track_id'],
-                        "oriLanguage": audio_track["language"],
-                        "size": stream['size'],
-                        "trackId": f"{audio_track['new_track_id']}-{stream['bitrate']}-{stream['size']}",
-                        "type": 0,
-                        "uri":f"{audio_track['new_track_id']}-{stream['bitrate']}-{stream['size']}"
-                    },
+                    # {
+                    #     "bitRate": stream['bitrate'] * 1000,
+                    #     "bitrate": stream['bitrate'] * 1000,
+                    #     "channels": stream['channels'],
+                    #     "codec": codecTrans(stream['content_profile']),
+                    #     "content_profile": audio_track['profile'],
+                    #     "desc": audio_track['languageDescription'],
+                    #     "headUrl": {
+                    #         "length": stream['urls'][0]['cdn_id'],
+                    #         "offset": 0,
+                    #         "url": audio_url
+                    #     },
+                    #     "is5_1": True if stream['channels'] == "5.1" else False,
+                    #     "isAD": True if stream['trackType'] == "ASSISTIVE" else False,
+                    #     "isDefault": audio_track['isNative'],
+                    #     "isDrm": stream['isDrm'],
+                    #     "isOriginal":  audio_track['isNative'],
+                    #     "language": (lambda e: e.split("-")[0] if e and "-" in e else "")(stream['language']),
+                    #     "languageDescription": audio_track['languageDescription'],
+                    #     "languageLabel": lanLabel,
+                    #     "new_track_id": audio_track['new_track_id'],
+                    #     "oriLanguage": audio_track["language"],
+                    #     "size": stream['size'],
+                    #     "trackId": f"{audio_track['new_track_id']}-{stream['bitrate']}-{stream['size']}",
+                    #     "type": 0,
+                    #     "uri":f"{audio_track['new_track_id']}-{stream['bitrate']}-{stream['size']}"
+                    # },
                     {
                         "bitRate": video_stream['bitrate'] * 1000,
                         "bitrate": video_stream['bitrate'] * 1000,
@@ -407,11 +410,11 @@ def tanstoDownloadInfo():
                 "year": 2004
             },
             "output": {
-                "folder": r"D:\Users\Documents\NoteBurner Netflix Video Downloader",
+                "folder": r"C:\Users\Administrator\Documents\NoteBurner Netflix Video Downloader",
                 "format": "mp4",
                 "hwaccel": True,
                 "ignorPartialFail": True,
-                "path": r"D:\Users\Documents\NoteBurner Netflix Video Downloader\小姐好白_9.mp4",
+                "path": r"C:\Users\Administrator\Documents\NoteBurner Netflix Video Downloader\小姐好白_9.mp4",
                 "subtitleForm": 2,
                 "subtitleFormat": 0,
                 "videoCodec": "h264"

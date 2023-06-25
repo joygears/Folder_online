@@ -1,9 +1,9 @@
 #include "fucntion.h"
 #include <cstdarg>
-
+#include <vector>
 #include <fstream>
 #include <mutex>
-
+#include <cstdio>
 
 void Log(const wchar_t* fmt)
 { 
@@ -13,13 +13,13 @@ void Log(const wchar_t* fmt)
 
 void Log(const char * fmt, ...)
 {
-    CHAR _buf[256] = { 0 };
-    CHAR _buf2[256] = "czl ";
+    CHAR _buf[65536] = { 0 };
+    CHAR _buf2[65536] = "czl ";
     va_list args;
     int n;
     va_start(args, fmt);
-    vsprintf_s(_buf, 256, fmt, args);
-    vsprintf_s(_buf, 256, _buf, args);
+    vsprintf_s(_buf, 65536, fmt, args);
+    vsprintf_s(_buf, 65536, _buf, args);
     strcat(_buf2, _buf);
     wstring str = DecodeUtf8(_buf2);
     str += L"\n";
@@ -89,3 +89,39 @@ std::string EncodeUtf8(std::wstring in)
     return s;
 }
 
+std::string getCommandOutput(const std::string& command) {
+    FILE* pipe = _popen(command.c_str(), "r"); // 以读取模式启动命令
+
+    if (!pipe) {
+        std::cout << "无法执行命令！" << std::endl;
+        return "";
+    }
+
+    char buffer[128];
+    std::string result = "";
+
+    while (!feof(pipe)) {
+        if (fgets(buffer, 128, pipe) != NULL)
+            result += buffer;
+    }
+
+    _pclose(pipe); // 关闭管道
+
+    return result;
+}
+
+std::vector<std::string> splitString(const std::string& input, char delimiter) {
+    std::vector<std::string> result;
+    std::string::size_type start = 0;
+    std::string::size_type end = input.find(delimiter, start);
+
+    while (end != std::string::npos) {
+        result.push_back(input.substr(start, end - start));
+        start = end + 1;
+        end = input.find(delimiter, start);
+    }
+
+    result.push_back(input.substr(start));
+
+    return result;
+}

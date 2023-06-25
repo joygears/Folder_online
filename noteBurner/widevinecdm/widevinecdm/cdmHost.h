@@ -36,7 +36,7 @@ public:
     virtual void SetTimer(__int64 delay_ms, void* context) = 0;
 
     // Returns the current wall time.
-    virtual __time64_t GetCurrentWallTime() = 0;
+    virtual double GetCurrentWallTime() = 0;
 
     // Called by the CDM with the result after the CDM instance was initialized.
     virtual void OnInitialized(bool success) = 0;
@@ -102,7 +102,7 @@ public:
     // termination.
     virtual void OnExpirationChange(const char* session_id,
         uint32_t session_id_size,
-        __time64_t new_expiry_time) = 0;
+        __int64  new_expiry_time) = 0;
 
     // Called by the CDM when session |session_id| is closed. Size
     // parameter should not include null termination.
@@ -171,7 +171,7 @@ public:
     virtual void SetTimer(__int64 delay_ms, void* context);
 
     // Returns the current wall time.
-    virtual __time64_t GetCurrentWallTime();
+    virtual double GetCurrentWallTime();
 
     // Called by the CDM with the result after the CDM instance was initialized.
     virtual void OnInitialized(bool success);
@@ -209,7 +209,7 @@ public:
 
     virtual void OnExpirationChange(const char* session_id,
         uint32_t session_id_size,
-        __time64_t new_expiry_time);
+        __int64  new_expiry_time);
 
     virtual void OnSessionClosed(const char* session_id,
         uint32_t session_id_size);

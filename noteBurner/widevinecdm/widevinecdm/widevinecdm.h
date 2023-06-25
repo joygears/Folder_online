@@ -9,7 +9,8 @@ using namespace std;
 
 #define DLL_EXPORT extern "C" __declspec( dllexport )
 
-
+extern string license;
+extern string g_session_id;
 class Buffer {
 public:
     // Destroys the buffer in the same context as it was created.
