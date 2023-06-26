@@ -103,12 +103,17 @@ int main() {
 			AP4_UI08 profile = AvcSampleDescription->GetProfile();
 			AP4_UI08 level = AvcSampleDescription->GetLevel();
 			int videoProfile = transToVideoProfile(profile);
-			return 0;
+			
 		}
 
 	}
 	
-	
+	AP4_List<AP4_Atom>::Item*  curItem = file.GetTopLevelAtoms().FirstItem();
+	AP4_List<AP4_TrakAtom>::Item* trakAtomitem =  moovAtom->GetTrakAtoms().FirstItem();
+	AP4_TrakAtom* trakAtom = trakAtomitem->GetData();
+	 AP4_MdhdAtom* MdhdAtom = (AP4_MdhdAtom*)*(int*)((char*)trakAtom + 0x44);
+	 AP4_UI32  TimeScale = MdhdAtom->GetTimeScale();
+
 	return 0;
 }
 
