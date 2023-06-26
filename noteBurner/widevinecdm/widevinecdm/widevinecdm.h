@@ -11,6 +11,19 @@ using namespace std;
 
 extern string license;
 extern string g_session_id;
+
+struct VideoDecoderConfig {
+    int codec;
+    int profile;
+    int alpha_mode;
+    int color_space;
+    int width;
+    int height;
+    int m_18;
+    int m_1C;
+    int m_20;
+};
+
 class Buffer {
 public:
     // Destroys the buffer in the same context as it was created.

@@ -1,7 +1,6 @@
 ﻿// widevinecdm.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 #include "widevinecdm.h"
-#include <opencv2/opencv.hpp>
 #include "fucntion.h"
 #include "cdmHost.h"
 #include "tool/base64.h"
@@ -93,34 +92,17 @@ int main()
     string cert = "Cr0CCAMSEOVEukALwQ8307Y2+LVP+0MYh/HPkwUijgIwggEKAoIBAQDm875btoWUbGqQD8eAGuBlGY+Pxo8YF1LQR+Ex0pDONMet8EHslcZRBKNQ/09RZFTP0vrYimyYiBmk9GG+S0wB3CRITgweNE15cD33MQYyS3zpBd4z+sCJam2+jj1ZA4uijE2dxGC+gRBRnw9WoPyw7D8RuhGSJ95OEtzg3Ho+mEsxuE5xg9LM4+Zuro/9msz2bFgJUjQUVHo5j+k4qLWu4ObugFmc9DLIAohL58UR5k0XnvizulOHbMMxdzna9lwTw/4SALadEV/CZXBmswUtBgATDKNqjXwokohncpdsWSauH6vfS6FXwizQoZJ9TdjSGC60rUB2t+aYDm74cIuxAgMBAAE6EHRlc3QubmV0ZmxpeC5jb20SgAOE0y8yWw2Win6M2/bw7+aqVuQPwzS/YG5ySYvwCGQd0Dltr3hpik98WijUODUr6PxMn1ZYXOLo3eED6xYGM7Riza8XskRdCfF8xjj7L7/THPbixyn4mULsttSmWFhexzXnSeKqQHuoKmerqu0nu39iW3pcxDV/K7E6aaSr5ID0SCi7KRcL9BCUCz1g9c43sNj46BhMCWJSm0mx1XFDcoKZWhpj5FAgU4Q4e6f+S8eX39nf6D6SJRb4ap7Znzn7preIvmS93xWjm75I6UBVQGo6pn4qWNCgLYlGGCQCUm5tg566j+/g5jvYZkTJvbiZFwtjMW5njbSRwB3W4CrKoyxw4qsJNSaZRTKAvSjTKdqVDXV/U5HK7SaBA6iJ981/aforXbd2vZlRXO/2S+Maa2mHULzsD+S5l4/YGpSt7PnkCe25F+nAovtl/ogZgjMeEdFyd/9YMYjOS4krYmwp3yJ7m9ZzYCQ6I8RQN4x/yLlHG5RH/+WNLNUs6JAZ0fFdCmw=";
     string pssh = "AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAVvYDgAAAAAAAAAAA==";
     cert = base64_decode(cert);
-    pssh =  (pssh);
-   
-    //cv::VideoCapture video(R"(D:\sourcetree\Folder_online\noteBurner\widevinecdm\Debug\video.mp4)");
-    //if (!video.isOpened()) {
-    //    std::cout << "无法打开视频文件" << std::endl;
-    //    return -1;
-    //}
-    //while (true) {
-    //    cv::Mat frame;
-    //    bool success = video.read(frame);
-
-    //    // 判断是否成功读取帧
-    //    if (!success) {
-    //        std::cout << "无法读取视频帧" << std::endl;
-    //        break;
-    //    }
-
-    //    // 在这里对每一帧进行处理
-    //    // ...
-
-    //    // 显示当前帧
-    //    cv::imshow("Frame", frame);
-
-    //    // 按下 ESC 键退出循环
-    //    if (cv::waitKey(1) == 27) {
-    //        break;
-    //    }
-    //}
+    pssh = base64_decode(pssh);
+    VideoDecoderConfig video_decoder_config;
+    video_decoder_config.codec = 2;
+    video_decoder_config.profile = 5;
+    video_decoder_config.alpha_mode = 2;
+    video_decoder_config.color_space = 0;
+    video_decoder_config.width = 0x3c0;
+    video_decoder_config.height = 0x21c;
+    video_decoder_config.m_18 = 0;
+    video_decoder_config.m_1C = 0;
+    video_decoder_config.m_20 = 0xF;
 
     initializeApp();
     InitializeCdmModule_4();
@@ -131,6 +113,8 @@ int main()
     proxy->CreateSessionAndGenerateRequest(1, 0, 0, (const UINT8*)pssh.c_str(), pssh.size());
     license = base64_decode(license);
     proxy->UpdateSession(1, g_session_id.c_str(), g_session_id.size(), (uint8_t*)license.c_str(), license.size());
+    proxy->InitializeVideoDecoder(&video_decoder_config);
+
     
     return 0;
 
