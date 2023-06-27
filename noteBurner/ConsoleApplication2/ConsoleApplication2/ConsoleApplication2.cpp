@@ -1,13 +1,13 @@
 ﻿#include <iostream>
 #include <bento4/Ap4.h>
 #include "bento4/Ap4Atom.h"
-
+#include <map>
 int __cdecl transToVideoProfile(char a1);
 
 int main() {
 
 	AP4_ByteStream* input_stream = NULL;
-	AP4_Result result = AP4_FileByteStream::Create(R"(0-44462.mp4)",
+	AP4_Result result = AP4_FileByteStream::Create(R"(0-44306.mp4)",
 		AP4_FileByteStream::STREAM_MODE_READ,
 		input_stream);
 
@@ -90,13 +90,14 @@ int main() {
 		AP4_UI16 width = VideoSampleDescription->GetWidth();
 		AP4_UI16 hegiht = VideoSampleDescription->GetHeight();
 		std:: string codecStr = codec.GetChars();
-		if (codecStr.find_first_of("avc1", 0) == -1) {
+		if (codecStr.find("avc1",0) == std::string::npos) {
 
-			if(codecStr.find_first_of("vp09", 0) == -1)
+			if(codecStr.find("vp09",0) == std::string::npos)
 				printf( "codec %s not yet handled ", codecStr.c_str());
 			/*video_decoder_config[1] = 1;
 			video_decoder_config[0] = 3;
 			video_decoder_config[2] = 2;*/
+		
 		}
 		else {
 			AP4_AvcSampleDescription * AvcSampleDescription = dynamic_cast<AP4_AvcSampleDescription*>(OriginalSampleDescription);
@@ -113,6 +114,65 @@ int main() {
 	AP4_TrakAtom* trakAtom = trakAtomitem->GetData();
 	 AP4_MdhdAtom* MdhdAtom = (AP4_MdhdAtom*)*(int*)((char*)trakAtom + 0x44);
 	 AP4_UI32  TimeScale = MdhdAtom->GetTimeScale();
+
+	 while (curItem) {
+
+		 if (curItem->GetData()->GetType() == AP4_ATOM_TYPE_SIDX) {
+			 AP4_SidxAtom* SidxAtom = dynamic_cast<AP4_SidxAtom*>(curItem->GetData());
+			
+			
+		 }
+		 else if (curItem->GetData()->GetType() == AP4_ATOM_TYPE_SSIX) {
+			 
+		 }
+		 curItem = curItem->GetNext();
+	 }
+
+
+
+	 AP4_ByteStream* input_stream2 = NULL;
+	  result = AP4_FileByteStream::Create(R"(0-44306.mp4)",
+		 AP4_FileByteStream::STREAM_MODE_READ,
+		  input_stream2);
+
+	 AP4_AtomFactory factory;
+	 AP4_Atom * currentAtom;
+	 AP4_SidxAtom* SidxAtom = 0;;
+	 AP4_LargeSize size = 0;
+	 AP4_Position pos = 0;
+	 AP4_UI64 FirstOffset = 0;
+	 while (!factory.CreateAtomFromStream(*input_stream2, currentAtom)) {
+
+		 if (currentAtom->GetType() == AP4_ATOM_TYPE_SIDX) {
+			 SidxAtom = dynamic_cast<AP4_SidxAtom*>(currentAtom);
+			 size = SidxAtom->GetSize();
+			 FirstOffset = SidxAtom->GetFirstOffset();
+			 SidxAtom->GetReferences();
+			 break;
+		 }
+		 else if (currentAtom->GetType() == AP4_ATOM_TYPE_SSIX) {
+
+		 }
+		 input_stream2->Tell(pos);
+	 }
+
+	 AP4_UI64 segPos = pos + size + FirstOffset;
+
+	 const AP4_Array<AP4_SidxAtom::Reference>& References = SidxAtom->GetReferences();
+	 std::map<AP4_UI32, AP4_UI32> segs;
+	 AP4_UI32 curOffset = segPos;
+	 AP4_UI32 segsSize = 0;
+	 for (int i = 0; i < References.ItemCount(); i++) {
+		 segsSize += References[i].m_ReferencedSize;
+		if (segsSize >= 0x100000)
+		 {
+			segs[curOffset] = segsSize;
+			 printf("seg  offset %d  length %d\n", curOffset, segsSize);
+			 curOffset += segsSize;
+			 segsSize = 0;
+			 
+		 }
+	 }
 
 	return 0;
 }
