@@ -170,63 +170,102 @@ class NetflixClient(object):
         id = int(time.time() * 10000)
         xid = int(time.time() * 10000)
         manifest_request_data = {
-            "clientVersion": "6.0035.281.911",
-            "esn": "NFCDIE-03-J7K735E5XQ17EHRLGQQ8CVWPD5AMEP",
-            "id": id,
-            "languages": [
-                "en-TW"
-            ],
-            "params": {
-                "drmType": "widevine",
-                "drmVersion": 25,
-                "flavor": "PRE_FETCH",
-                "imageSubtitleHeight": 1080,
-                "isBranching": False,
-                "isNonMember": False,
-                "preferAssistiveAudio": False,
-                "profiles": [
-                    "playready-h264mpl30-dash",
-                    "playready-h264mpl31-dash",
-                    "playready-h264mpl40-dash",
-                    "playready-h264hpl30-dash",
-                    "playready-h264hpl31-dash",
-                    "playready-h264hpl40-dash",
-                    "BIF240",
-                    "BIF320",
-                    "webvtt-lssdh-ios8",
-                    "simplesdh",
-                    "ddplus-5.1hq-dash",
-                    "ddplus-5.1-dash",
-                    "ddplus-2.0hq-dash",
-                    "ddplus-2.0-dash"
+                "id": id,
+                "languages": [
+                    "en-TW"
                 ],
-                "showAllSubDubTracks": True,
-                "supportsPreReleasePin": True,
-                "supportsWatermark": False,
-                "titleSpecificData": {
-                    str(self.client_config.viewable_id): {
-                        "unletterboxed": False
-                    }
+                "params": {
+                    "clientVersion": "6.0035.231.911",
+                    "contentPlaygraph": [
+                        "start"
+                    ],
+                    "desiredSegmentVmaf": "plus_lts",
+                    "desiredVmaf": "plus_lts",
+                    "drmType": "widevine",
+                    "drmVersion": 25,
+                    "flavor": "STANDARD",
+                    "imageSubtitleHeight": 1080,
+                    "isBranching": False,
+                    "isNonMember": False,
+                    "isUIAutoPlay": False,
+                    "licenseType": "standard",
+                    "manifestVersion": "v2",
+                    "preferAssistiveAudio": False,
+                    "profileGroups": [
+                        {
+                            "name": "default",
+                            "profiles": [
+                                "webvtt-lssdh-ios8",
+                                "webvtt-lssdh-ios8",
+                                "heaac-2-dash",
+                                "heaac-2hq-dash",
+                                "playready-h264mpl30-dash",
+                                "playready-h264mpl31-dash",
+                                "playready-h264hpl30-dash",
+                                "playready-h264hpl31-dash",
+                                "vp9-profile0-L30-dash-cenc",
+                                "vp9-profile0-L31-dash-cenc",
+                                "av1-main-L30-dash-cbcs-prk",
+                                "av1-main-L31-dash-cbcs-prk",
+                                "dfxp-ls-sdh",
+                                "simplesdh",
+                                "nflx-cmisc",
+                                "imsc1.1",
+                                "BIF240",
+                                "BIF320"
+                            ]
+                        }
+                    ],
+                    "profiles": [
+                        "webvtt-lssdh-ios8",
+                        "webvtt-lssdh-ios8",
+                        "heaac-2-dash",
+                        "heaac-2hq-dash",
+                        "playready-h264mpl30-dash",
+                        "playready-h264mpl31-dash",
+                        "playready-h264hpl30-dash",
+                        "playready-h264hpl31-dash",
+                        "vp9-profile0-L30-dash-cenc",
+                        "vp9-profile0-L31-dash-cenc",
+                        "av1-main-L30-dash-cbcs-prk",
+                        "av1-main-L31-dash-cbcs-prk",
+                        "dfxp-ls-sdh",
+                        "simplesdh",
+                        "nflx-cmisc",
+                        "imsc1.1",
+                        "BIF240",
+                        "BIF320"
+                    ],
+                    "requestSegmentVmaf": False,
+                    "showAllSubDubTracks": True,
+                    "supportsPartialHydration": False,
+                    "supportsPreReleasePin": True,
+                    "supportsUnequalizedDownloadables": True,
+                    "supportsWatermark": True,
+                    "titleSpecificData": {
+                        str(self.client_config.viewable_id): {
+                            "unletterboxed": False
+                        }
+                    },
+                    "type": "standard",
+                    "uiPlatform": "SHAKTI",
+                    "uiVersion": "shakti-v0f92b626",
+                    "useHttpsStreams": True,
+                    "usePsshBox": True,
+                    "videoOutputInfo": [
+                        {
+                            "isHdcpEngaged": False,
+                            "outputType": "unknown",
+                            "supportedHdcpVersions": [],
+                            "type": "DigitalVideoOutputDescriptor"
+                        }
+                    ],
+                    "viewableId": self.client_config.viewable_id,
+                    "xid": xid
                 },
-                "type": "standard",
-                "useHttpsStreams": False,
-                "usePsshBox": True,
-                "videoOutputInfo": [
-                    {
-                        "isHdcpEngaged": True,
-                        "outputType": "unknown",
-                        "supportedHdcpVersions": [
-                            ""
-                        ],
-                        "type": "DigitalVideoOutputDescriptor"
-                    }
-                ],
-                "viewableId": self.client_config.viewable_id
-            },
-            "uiVersion": "shakti-vd12dd2ca",
-            "url": "/manifest",
-            "version": 2
-        }
+                "url": "licensedManifest",
+                "version": 2
+            }
         if session_id!="" and challengeBase64!="":
             manifest_request_data = {
                 "id": id,
