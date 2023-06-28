@@ -183,7 +183,12 @@ int main() {
 	 
 	 AP4_LinearReader LinearReader(*movie, input_stream3);
 	 LinearReader.EnableTrack(pTrack->GetId());
-	 LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data);
+	 AP4_ByteStream* m_FragmentStream = *(AP4_ByteStream**)(((char*)&LinearReader) + 0x14);
+	 AP4_Atom *pAtom;
+	 AP4_AtomFactory factory2;
+	 factory2.CreateAtomFromStream(*m_FragmentStream, pAtom);
+	 AP4_ContainerAtom* moov = dynamic_cast<AP4_ContainerAtom*>(pAtom);
+	 //LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data);
 	 
 	return 0;
 }

@@ -1,7 +1,99 @@
-'aes-128-cbc'
-key
-'ec426dd15fd85542'
-iv
-'9dd03c4d65be87de'
+.text:1006BA90 ; 0x5C string title;
+.text:1006BA90 ; 0x6E int trackNum;
+.text:1006BA90 ; 0x74 string artist;
+.text:1006BA90 ; 0x75 int year;
+.text:1006BA90 ; 0x8C string album;
+.text:1006BA90 ; 0xA8 string genre;
+.text:1006BA90 ; 0xB2 int discNum;
+.text:1006BA90 ; 0xC4 string thumbnail;
+.text:1006BA90 ; 0xDC string thumbnailType;
+.text:1006BA90 ; 0xEA __time64_t timestamp;
+.text:1006BA90 ; 0xF4 string lyrics;
+.text:1006BA90 ; 0x10C string date;
+.text:1006BA90 ; 0x124 string albumArtist;
+.text:1006BA90 ; 0x13C string composer;
+.text:1006BA90 ; 0x154 string show;
+.text:1006BA90 ; 0x16C string seasonNum;
+.text:1006BA90 ; 0x184 string episodeId;
+.text:1006BA90 ; 0x19C string description;
+.text:1006BA90 ; 0x1B8 vector<trackinfo_t *> tracks;
+.text:1006BA90 ; 0x1C4 string path; // mp4的输出路径
+.text:1006BA90 ; 0x1DC string dirname; //输出路径的所在目录
+.text:1006BA90 ; 0x1F4 string pathTitle; //path的文件名，不带ext
+.text:1006BA90 ; 0x20C string PathExtension; //path的ext
+.text:1006BA90 ; 0x224 string format;  //mp4
+.text:1006BA90 ; 0x23C string m_temp;
+.text:1006BA90 ; 0x24c string temp_name;  在MediaProcessor_ctor创建的临时名字
+.text:1006BA90 ; 0x254 string meida_Id;
+.text:1006BA90 ; 0x26C string ConvertJson;
+.text:1006BA90 ; 0x288 __int64 bitrate;
+.text:1006BA90 ; 0x290 int samplerate;
+.text:1006BA90 ; 0x298 int subtitleForm;
+.text:1006BA90 ; 0x29C int subtitleFormat;
+.text:1006BA90 ; 0x2A0 bool hwaccel;
+.text:1006BA90 ; 0x2A1 bool ignorPartialFail
+.text:1006BA90 ; 0x2A4 string videoCodec;
+.text:1006BA90 ; 0x314 std::map<string,MyFileByteStream *> path_stream_map;
+.text:1006BA90 ; 0x400 int width;
+.text:1006BA90 ; 0x404 int height;
+.text:1006BA90 ; 0x408 int profile
+.text:1006BA90 ; 0x40c int level;
+.text:1006BA90 ; 0x41c string pssh;
 
-C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\main\main.data
+
+.text:100C8C80 ; 0x4 type; //媒体的类型  0 是音频  1 是视频 2 是字幕
+.text:100C8C80 ; 0x11 bool isDrm;
+.text:100C8C80 ; 0x12 bool isDefault;
+.text:100C8C80 ; 0x14 string trackId;
+.text:100C8C80 ; 0x2c string filePath;
+.text:100C8C80 ; 0x5c string pssh
+.text:100C8C80 ; 0x74 string codec;
+.text:100C8C80 ; 0x8C string language;
+.text:100C8C80 ; 0xA4 string languageDescription;
+.text:100C8C80 ; 0xBC string sar;
+.text:100C8C80 ; 0x0D4 string frameRate;
+.text:100C8C80 ; 0x120 __int64 size; //媒体的大小
+.text:100C8C80 ; 0x128 __int64 biterate;
+.text:100C8C80 ; 0x130 __int64 height;
+.text:100C8C80 ; 0x138 __int64 actualDownloadSize;  //实际上要下载的大小
+
+.text:1006AFE0 ; 0x0 MediaProcessor * pMediaProcessor;
+.text:1006AFE0 ; 0x4 shard_ptr<TrackInfo_t> trackInfo;
+.text:1006AFE0 ; 0xC string strFilePath;
+.text:1006AFE0 ; 0x24 string strSegmentPath;
+.text:1006AFE0 ; Attributes: bp-based frame
+.text:1006AFE0
+.text:1006AFE0 ; _DWORD *__thiscall SegMentProcess_ctor(_DWORD *this, int pMediaProcessor, int *ppTrackInfo, _DWORD *pStrFilePath, _DWORD *pStrSegmentPath)
+.text:1006AFE0 SegMentProcess_ctor proc near  
+
+
+0xc bool m_HasFragments;
+0x14 AP4_ByteStream * m_FragmentStream;
+0x18 m_CurrentFragmentPosition	0x0000000000000000	unsigned __int64
+0x20 unsigned __int64  m_NextFragmentPosition	
+0x30 int m_Tracks.m_ItemCount //该媒体track的数量
+0x34 AP4_LinearReader::Tracker * * m_items;
+0x38 int LinearReader.m_BufferFullness
+0x40 int LinearReader.m_BufferFullnessPeak
+
+
+.text:100D7AF0 ; Attributes: bp-based frame
+.text:100D7AF0
+.text:100D7AF0 ; _DWORD *__thiscall MyLinearReader_ctor(_DWORD *this, int file_m_Movie, int SampleFilePathStream, char a4, int a5, int a6, int a7, int a8, int a9, int a10, int a11, int a12, char *func_int_struct_cdmDecryptor__pEncryptedBuffer, int a14, int a15)
+.text:100D7AF0 MyLinearReader_ctor proc near  
+
+
+0x10		m_Position	0x0000000000000000	unsigned __int64
+
+MyFileByteStream
+
+
+
+
+AP4_ContainerAtom
+
+
+0xC		m_Size32	0x000006cd	unsigned int
+
+AP4_Atom	
+
