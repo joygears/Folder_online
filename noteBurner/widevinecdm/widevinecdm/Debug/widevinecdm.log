@@ -1,4 +1,5 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1091,5): warning MSB8027: 名为 base64.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 base64.cpp, tool\base64.cpp。
+  cdmHost.cpp
   widevinecdm.cpp
 D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1136,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
 D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1137,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
@@ -178,4 +179,5 @@ D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHoo
 D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1385,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
 D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1386,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
 D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1387,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+  正在生成代码...
   widevinecdm.vcxproj -> D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe

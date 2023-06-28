@@ -174,6 +174,17 @@ int main() {
 		 }
 	 }
 
+	 AP4_ByteStream* input_stream3 = NULL;
+	 result = AP4_FileByteStream::Create(R"(44306-1993788.mp4)",
+		 AP4_FileByteStream::STREAM_MODE_READ,
+		 input_stream3);
+	 AP4_Sample sample;
+	 AP4_DataBuffer sample_data;
+	 
+	 AP4_LinearReader LinearReader(*movie, input_stream3);
+	 LinearReader.EnableTrack(pTrack->GetId());
+	 LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data);
+	 
 	return 0;
 }
 

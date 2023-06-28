@@ -12,6 +12,47 @@ using namespace std;
 extern string license;
 extern string g_session_id;
 
+
+
+// The encryption scheme. The definitions are from ISO/IEC 23001-7:2016.
+enum class EncryptionScheme : uint32_t {
+    kUnencrypted = 0,
+    kCenc,  // 'cenc' subsample encryption using AES-CTR mode.
+    kCbcs   // 'cbcs' pattern encryption using AES-CBC mode.
+};
+struct SubsampleEntry {
+    uint32_t clear_bytes;
+    uint32_t cipher_bytes;
+};
+struct Pattern {
+    uint32_t crypt_byte_block;  // Count of the encrypted blocks.
+    uint32_t skip_byte_block;   // Count of the unencrypted blocks.
+};
+struct InputBuffer_2 {
+    const uint8_t* data;  // Pointer to the beginning of the input data.
+    uint32_t data_size;   // Size (in bytes) of |data|.
+
+    EncryptionScheme encryption_scheme;
+
+    const uint8_t* key_id;  // Key ID to identify the decryption key.
+    uint32_t key_id_size;   // Size (in bytes) of |key_id|.
+    uint32_t : 32;          // Padding.
+
+    const uint8_t* iv;  // Initialization vector.
+    uint32_t iv_size;   // Size (in bytes) of |iv|.
+    uint32_t : 32;      // Padding.
+
+    const struct SubsampleEntry* subsamples;
+    uint32_t num_subsamples;  // Number of subsamples in |subsamples|.
+    uint32_t : 32;            // Padding.
+
+                              // |pattern| is required if |encryption_scheme| specifies pattern encryption.
+    Pattern pattern;
+
+    int64_t timestamp;  // Presentation timestamp in microseconds.
+};
+
+
 struct VideoDecoderConfig {
     int codec;
     int profile;
