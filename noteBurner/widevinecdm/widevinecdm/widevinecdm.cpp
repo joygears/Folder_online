@@ -1,5 +1,6 @@
 ﻿// widevinecdm.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
+#include <fstream>
 #include "widevinecdm.h"
 #include "fucntion.h"
 #include "cdmHost.h"
@@ -93,7 +94,7 @@ int main()
     string pssh = "AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAVvYDgAAAAAAAAAAA==";
     cert = base64_decode(cert);
     pssh = base64_decode(pssh);
-    VideoDecoderConfig video_decoder_config;
+  /*  VideoDecoderConfig video_decoder_config;
     video_decoder_config.codec = 2;
     video_decoder_config.profile = 5;
     video_decoder_config.alpha_mode = 2;
@@ -102,7 +103,9 @@ int main()
     video_decoder_config.height = 0x21c;
     video_decoder_config.m_18 = 0;
     video_decoder_config.m_1C = 0;
-    video_decoder_config.m_20 = 0xF;
+    video_decoder_config.m_20 = 0xF;*/
+
+    char video_decoder_config[] = { 0x03,0x00,0x00,0x00,0x01,0x00,0x00,0x00,0x02,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xC0,0x03,0x00,0x00,0x1C,0x02,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x0F,0x00,0x00,0x00 };
 
     initializeApp();
     InitializeCdmModule_4();
@@ -113,9 +116,45 @@ int main()
     proxy->CreateSessionAndGenerateRequest(1, 0, 0, (const UINT8*)pssh.c_str(), pssh.size());
     license = base64_decode(license);
     proxy->UpdateSession(1, g_session_id.c_str(), g_session_id.size(), (uint8_t*)license.c_str(), license.size());
-    proxy->InitializeVideoDecoder(&video_decoder_config);
+    proxy->InitializeVideoDecoder((void *)video_decoder_config);
 
+    char ecryptBuffer[0x49d1] = { 0, };
+    ifstream inFile("MEM_11F971D8_000049D1.mem", ios::in | ios::binary); //二进制读方式打开
+    if (!inFile) {
+        cout << "error" << endl;
+        return 0;
+    }
+    while (inFile.read((char*)ecryptBuffer, sizeof(ecryptBuffer))) { //一直读到文件结束
+        int readedBytes = inFile.gcount(); //看刚才读了多少字节
+        return 0;
+    }
+    inFile.close();
+    char key_id[] = {
+        0x00, 0x00, 0x00, 0x00, 0x05, 0x6F, 0x60, 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+    };
+    unsigned char iv[] = {
+0x01, 0xAC, 0x60, 0x6C, 0x64, 0x88, 0x37, 0xBE
+    };
     
+    SubsampleEntry subsamples[1];
+    subsamples->clear_bytes = 0x21;
+    subsamples->cipher_bytes = 0x49b0;
+
+    InputBuffer_2 input;
+    input.data = (uint8_t *)ecryptBuffer;
+    input.data_size = 0x49d1;
+    input.encryption_scheme = EncryptionScheme::kCenc;
+    input.key_id = (uint8_t*)key_id;
+    input.key_id_size = 0x10;
+    input.iv = iv;
+    input.iv_size = 0x8;
+    input.subsamples = subsamples;
+    input.num_subsamples = 1;
+    input.pattern.crypt_byte_block = 0;
+    input.pattern.skip_byte_block = 0;
+    input.timestamp = 0x073A393;
+
+    proxy->DecryptAndDecodeFrame(input,)
     return 0;
 
 }
