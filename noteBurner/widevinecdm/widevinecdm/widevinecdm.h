@@ -5,6 +5,8 @@
 #include <iostream>
 #include <list>
 #include <mutex>
+#include "cdmapi.h"
+
 using namespace std;
 
 #define DLL_EXPORT extern "C" __declspec( dllexport )
@@ -65,34 +67,40 @@ struct VideoDecoderConfig {
     int m_20;
 };
 
-class Buffer {
+
+class MyVideoFrame:VideoFrame {
 public:
-    // Destroys the buffer in the same context as it was created.
-    virtual void Destroy() = 0;
-    virtual uint32_t Capacity() const = 0;
-    virtual uint8_t* Data() = 0;
-    virtual void SetSize(uint32_t size) = 0;
-    virtual uint32_t Size() const = 0;
-protected:
-    Buffer() {}
-    virtual ~Buffer() {}
-private:
-    Buffer(const Buffer&);
-    void operator=(const Buffer&);
+    virtual void SetFormat(VideoFormat format);
+    virtual VideoFormat Format() const;
+
+    virtual void SetSize(Size size);
+    virtual Size SSize() const;
+
+    virtual void SetFrameBuffer(Buffer* frame_buffer);
+    virtual Buffer* FrameBuffer();
+
+    virtual void SetPlaneOffset(VideoPlane plane, uint32_t offset);
+    virtual uint32_t PlaneOffset(VideoPlane plane);
+
+    virtual void SetStride(VideoPlane plane, uint32_t stride);
+    virtual uint32_t Stride(VideoPlane plane);
+
+    virtual void SetTimestamp(int64_t timestamp);
+    virtual int64_t Timestamp() const;
+
+public:
+    MyVideoFrame() {}
+    virtual ~MyVideoFrame() {}
+    VideoFormat m_format;
+    Size m_size;
+    int64_t m_timestamp;
+    Buffer* m_frame_buffer = nullptr;
+    uint32_t m_planeOffsets[VideoFrame::VideoPlane::kMaxPlanes];
+    uint32_t m_stride[VideoPlane::kMaxPlanes];
+
 };
 
-class DecryptedBlock {
-public:
-    virtual void SetDecryptedBuffer(Buffer* buffer) = 0;
-    virtual Buffer* DecryptedBuffer() = 0;
-    // TODO(tomfinegan): Figure out if timestamp is really needed. If it is not,
-    // we can just pass Buffer pointers around.
-    virtual void SetTimestamp(int64_t timestamp) = 0;
-    virtual int64_t Timestamp() const = 0;
-protected:
-    DecryptedBlock() {}
-    virtual ~DecryptedBlock() {}
-};
+
 
 class DecryptedProxyBlock : public DecryptedBlock {
 public:

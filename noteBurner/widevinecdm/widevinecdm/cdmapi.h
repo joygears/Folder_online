@@ -1,5 +1,13 @@
 #include <iostream>
 
+class Size {
+public:
+    Size() : width(0), height(0) {}
+    Size(int32_t width, int32_t height) : width(width), height(height) {}
+
+    int32_t width;
+    int32_t height;
+};
 // Surface formats based on FOURCC labels, see: http://www.fourcc.org/yuv.php
 // Values are chosen to be consistent with Chromium's VideoPixelFormat values.
 enum VideoFormat {
@@ -54,13 +62,7 @@ protected:
     DecryptedBlock() {}
     virtual ~DecryptedBlock() {}
 };
-struct Size {
-    Size() : width(0), height(0) {}
-    Size(int32_t width, int32_t height) : width(width), height(height) {}
 
-    int32_t width;
-    int32_t height;
-};
 class  VideoFrame {
 public:
     enum VideoPlane {
@@ -74,7 +76,7 @@ public:
     virtual VideoFormat Format() const = 0;
 
     virtual void SetSize(Size size) = 0;
-    virtual Size Size() const = 0;
+    virtual Size SSize() const = 0;
 
     virtual void SetFrameBuffer(Buffer* frame_buffer) = 0;
     virtual Buffer* FrameBuffer() = 0;
@@ -88,7 +90,7 @@ public:
     virtual void SetTimestamp(int64_t timestamp) = 0;
     virtual int64_t Timestamp() const = 0;
 
-protected:
+    public:
     VideoFrame() {}
     virtual ~VideoFrame() {}
 };

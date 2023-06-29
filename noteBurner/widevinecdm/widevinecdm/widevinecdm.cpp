@@ -108,15 +108,15 @@ int main()
     char video_decoder_config[] = { 0x03,0x00,0x00,0x00,0x01,0x00,0x00,0x00,0x02,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xC0,0x03,0x00,0x00,0x1C,0x02,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x0F,0x00,0x00,0x00 };
 
     initializeApp();
-    InitializeCdmModule_4();
+   InitializeCdmModule_4();
     string key_system("com.widevine.alpha");
-    MyContentDecryptionModuleProxy* proxy = (MyContentDecryptionModuleProxy*)CreateCdmInstance(10, key_system.c_str(), key_system.size(), HostFunction, 0);
-    proxy->Initialize(0, 0, 0);
-    proxy->SetServerCertificate(1, (const UINT8*)cert.c_str(), cert.size());
-    proxy->CreateSessionAndGenerateRequest(1, 0, 0, (const UINT8*)pssh.c_str(), pssh.size());
+  MyContentDecryptionModuleProxy* proxy = (MyContentDecryptionModuleProxy*)CreateCdmInstance(10, key_system.c_str(), key_system.size(), HostFunction, 0);
+   proxy->Initialize(0, 0, 0);
+   proxy->SetServerCertificate(1, (const UINT8*)cert.c_str(), cert.size());
+   proxy->CreateSessionAndGenerateRequest(1, 0, 0, (const UINT8*)pssh.c_str(), pssh.size());
     license = base64_decode(license);
     proxy->UpdateSession(1, g_session_id.c_str(), g_session_id.size(), (uint8_t*)license.c_str(), license.size());
-    proxy->InitializeVideoDecoder((void *)video_decoder_config);
+   proxy->InitializeVideoDecoder((void *)video_decoder_config);
 
     char ecryptBuffer[0x49d1] = { 0, };
     ifstream inFile("MEM_11F971D8_000049D1.mem", ios::in | ios::binary); //二进制读方式打开
@@ -126,7 +126,7 @@ int main()
     }
     while (inFile.read((char*)ecryptBuffer, sizeof(ecryptBuffer))) { //一直读到文件结束
         int readedBytes = inFile.gcount(); //看刚才读了多少字节
-        return 0;
+       
     }
     inFile.close();
     char key_id[] = {
@@ -153,8 +153,11 @@ int main()
     input.pattern.crypt_byte_block = 0;
     input.pattern.skip_byte_block = 0;
     input.timestamp = 0x073A393;
+    MyVideoFrame videoFrame;
+   int result = proxy->DecryptAndDecodeFrame(&input, &videoFrame);
+    Log("DecryptAndDecodeFrame result %d", result);
 
-    proxy->DecryptAndDecodeFrame(input,)
+    
     return 0;
 
 }
@@ -431,18 +434,18 @@ int MyContentDecryptionModuleProxy::Decrypt(void* encrypted_buffer, DecryptedBlo
     }
     Log("Decrypt(%p):", (const void*)this);
 
-    int status    = m_instance->Decrypt(encrypted_buffer, decrypted_buffer);
-    if (mDecFile == NULL)
-    {
-        mDecFile = fopen("d:\\cdm_dec.bin", "wb");
-    }
-    if (mDecFile != NULL)
-    {
-        fwrite(decrypted_buffer->DecryptedBuffer()->Data(), 1,
-            decrypted_buffer->DecryptedBuffer()->Size(), mDecFile);
-        Log("Decrypt data size %d:", decrypted_buffer->DecryptedBuffer()->Size());
-    }
-    return status;
+    //int status    = m_instance->Decrypt(encrypted_buffer, decrypted_buffer);
+    //if (mDecFile == NULL)
+    //{
+    //    mDecFile = fopen("d:\\cdm_dec.bin", "wb");
+    //}
+    //if (mDecFile != NULL)
+    //{
+    //    fwrite(decrypted_buffer->DecryptedBuffer()->Data(), 1,
+    //        decrypted_buffer->DecryptedBuffer()->Size(), mDecFile);
+    //    Log("Decrypt data size %d:", decrypted_buffer->DecryptedBuffer()->Size());
+    //}
+    return 1;
 }
 
 int MyContentDecryptionModuleProxy::InitializeAudioDecoder(void* audio_decoder_config)
@@ -712,8 +715,62 @@ DWORD __stdcall  fake_GetModuleFileNameW(
     return result;
 }
 
+void MyVideoFrame::SetFormat(VideoFormat format)
+{
+    m_format = format;
+}
 
+VideoFormat MyVideoFrame::Format() const
+{
+    return m_format;
+}
 
+void MyVideoFrame::SetSize(Size size)
+{
+    m_size = size;
+}
 
+Size MyVideoFrame::SSize() const
+{
+    return m_size;
+}
 
+void MyVideoFrame::SetFrameBuffer(Buffer* frame_buffer)
+{
+    m_frame_buffer = frame_buffer;
+}
 
+Buffer* MyVideoFrame::FrameBuffer()
+{
+    return m_frame_buffer;
+}
+
+void MyVideoFrame::SetPlaneOffset(VideoPlane plane, uint32_t offset)
+{
+    m_planeOffsets[plane] = offset;
+}
+
+uint32_t MyVideoFrame::PlaneOffset(VideoPlane plane)
+{
+    return m_planeOffsets[plane];
+}
+
+void MyVideoFrame::SetStride(VideoPlane plane, uint32_t stride)
+{
+    m_stride[plane] = stride;
+}
+
+uint32_t MyVideoFrame::Stride(VideoPlane plane)
+{
+    return m_stride[plane];
+}
+
+void MyVideoFrame::SetTimestamp(int64_t timestamp)
+{
+    m_timestamp = timestamp;
+}
+
+int64_t MyVideoFrame::Timestamp() const
+{
+    return m_timestamp;
+}
