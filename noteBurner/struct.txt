@@ -97,3 +97,27 @@ AP4_ContainerAtom
 
 AP4_Atom	
 
+
+
+0x0 shard_ptr<InputBuffer_2> inputBuffer;
+
+EncryptDataInfo 
+
+
+
+0x0  const uint8_t* data;  
+0x4  uint32_t data_size; 
+0x8   const uint8_t* key_id;
+0xc   uint32_t key_id_size;
+0x10 	const uint8_t* iv;
+0x14     uint32_t iv_size;
+0x18 	const struct SubsampleEntry* subsamples;
+0x1c   uint32_t num_subsamples;
+0x20  int64_t timestamp; 
+0x50  EncryptionScheme encryption_scheme;
+EncryptBuffer 
+
+
+
+
+

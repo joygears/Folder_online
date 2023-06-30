@@ -192,7 +192,7 @@ int main() {
 	 AP4_ContainerAtom* moov = dynamic_cast<AP4_ContainerAtom*>(pAtom);
 	 while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
 	
-			 printf("11");
+ 			 printf("11");
 		 
 		 
 	 }
