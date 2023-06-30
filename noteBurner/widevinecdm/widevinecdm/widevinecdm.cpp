@@ -154,10 +154,42 @@ int main()
     input.pattern.skip_byte_block = 0;
     input.timestamp = 0x073A393;
     MyVideoFrame videoFrame;
+    MyVideoFrame* video_frame = &videoFrame;
    int result = proxy->DecryptAndDecodeFrame(&input, &videoFrame);
     Log("DecryptAndDecodeFrame result %d", result);
-
-    
+    cout << "width * height:" << videoFrame.SSize().width  << "*" << videoFrame.SSize().height << endl;
+    cout << "videoFrame.m_format : " << videoFrame.Format() << endl;
+    cout << "Timestamp : " << videoFrame.Timestamp() << endl;
+    for (int i = 0; i < VideoFrame::VideoPlane::kMaxPlanes; i++) {
+        cout << "videoFrame.PlaneOffset((VideoFrame::VideoPlane)"<<i<<")" << videoFrame.PlaneOffset((VideoFrame::VideoPlane)i) << endl;
+        cout << "videoFrame.Stride((VideoFrame::VideoPlane)" << i << ")" << videoFrame.Stride((VideoFrame::VideoPlane)i) << endl;
+   }
+    FILE* pVideo;
+    pVideo = fopen("frame.yuv", "wb");
+    unsigned char* buffer=NULL;
+    uint32_t c = video_frame->SSize().width * video_frame->SSize().height;
+    if (buffer == NULL)
+        buffer = (unsigned char*)malloc(video_frame->SSize().width * video_frame->SSize().height * 1.5);
+    //Y Plane
+    uint32_t offset = 0;
+    for (int i = 0; i < video_frame->SSize().height; i++) {
+        memcpy(buffer + video_frame->SSize().width * i, video_frame->FrameBuffer()->Data() + offset, video_frame->SSize().width);
+        offset += video_frame->Stride(VideoFrame::kYPlane);
+    }
+    //U Plane
+    offset = 0;
+    for (int i = 0; i < video_frame->SSize().height / 2; i++) {
+        memcpy(buffer + c + (video_frame->SSize().width / 2) * i, video_frame->FrameBuffer()->Data() + video_frame->PlaneOffset(VideoFrame::kUPlane) + offset, video_frame->SSize().width / 2);
+        offset += video_frame->Stride(VideoFrame::kUPlane);
+    }
+    //V Plane
+    offset = 0;
+    for (int i = 0; i < video_frame->SSize().height / 2; i++) {
+        memcpy(buffer + c + (c / 4) + (video_frame->SSize().width / 2) * i, video_frame->FrameBuffer()->Data() + video_frame->PlaneOffset(VideoFrame::kVPlane) + offset, video_frame->SSize().width / 2);
+        offset += video_frame->Stride(VideoFrame::kVPlane);
+    }
+    fwrite(buffer, 1, video_frame->SSize().width * video_frame->SSize().height * 1.5, pVideo);
+    fclose(pVideo);
     return 0;
 
 }
