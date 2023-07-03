@@ -3,6 +3,7 @@
 #include <bento4/Ap4.h>
 #include "bento4/Ap4Atom.h"
 #include <map>
+#include "MyLinearReader.h"
 using namespace std;
 int __cdecl transToVideoProfile(char a1);
 
@@ -183,7 +184,7 @@ int main() {
 	 AP4_Sample sample;
 	 AP4_DataBuffer sample_data;
 	 
-	 AP4_LinearReader LinearReader(*movie, input_stream3);
+	 MyLinearReader LinearReader(*movie, input_stream3);
 	 LinearReader.EnableTrack(pTrack->GetId());
 	 AP4_ByteStream* m_FragmentStream = *(AP4_ByteStream**)(((char*)&LinearReader) + 0x14);
 	 AP4_Atom *pAtom;
@@ -193,7 +194,7 @@ int main() {
 	 while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
 	
  			 printf("11");
-		 
+			 
 		 
 	 }
 	 char ecryptBuffer[0x49d1] = {0,};
@@ -209,6 +210,8 @@ int main() {
 	 inFile.close();
 
 	// LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data);
+
+	 AP4_Array<unsigned int> a;
 	 
 	return 0;
 }

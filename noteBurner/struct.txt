@@ -76,11 +76,20 @@
 0x38 int LinearReader.m_BufferFullness
 0x40 int LinearReader.m_BufferFullnessPeak
 
+MyLinearReader_ctor(_DWORD *this, int file_m_Movie, int  
 
-.text:100D7AF0 ; Attributes: bp-based frame
-.text:100D7AF0
-.text:100D7AF0 ; _DWORD *__thiscall MyLinearReader_ctor(_DWORD *this, int file_m_Movie, int SampleFilePathStream, char a4, int a5, int a6, int a7, int a8, int a9, int a10, int a11, int a12, char *func_int_struct_cdmDecryptor__pEncryptedBuffer, int a14, int a15)
-.text:100D7AF0 MyLinearReader_ctor proc near  
+0x0  m_Eos	false	bool
+0x4  m_Track	0x01237d78 	AP4_Track *
+0x8  m_SampleTable	0x01265550 	AP4_SampleTable * 
+0xC	 m_SampleTableIsOwned	true	bool
+0x10 m_NextSample	0x00000000 <NULL>	AP4_Sample *
+0x14 m_NextSampleIndex	0x00000001	unsigned int
+0x18 m_NextDts	0x00000000000003e8	unsigned __int64
+0x20		m_Samples		AP4_List<AP4_LinearReader::SampleBuffer>
+0x30 		m_Reader	0x00000000 <NULL>	AP4_LinearReader::SampleReader *
+
+
+AP4_LinearReader::Tracker
 
 
 0x10		m_Position	0x0000000000000000	unsigned __int64
@@ -116,6 +125,9 @@ EncryptDataInfo
 0x20  int64_t timestamp; 
 0x50  EncryptionScheme encryption_scheme;
 EncryptBuffer 
+
+
+
 
 
 

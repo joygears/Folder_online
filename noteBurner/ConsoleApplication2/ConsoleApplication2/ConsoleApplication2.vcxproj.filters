@@ -21,9 +21,15 @@
     <ClCompile Include="MyFileByteStream.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="MyLinearReader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyFileByteStream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLinearReader.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

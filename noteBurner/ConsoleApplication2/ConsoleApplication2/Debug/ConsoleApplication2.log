@@ -1,5 +1,5 @@
 ﻿  ConsoleApplication2.cpp
-D:\Users\Downloads\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(165,22): warning C4244: “初始化”: 从“AP4_UI64”转换到“AP4_UI32”，可能丢失数据
-D:\Users\Downloads\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(167,21): warning C4018: “<”: 有符号/无符号不匹配
-D:\Users\Downloads\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(206,20): warning C4244: “初始化”: 从“std::streamsize”转换到“int”，可能丢失数据
+D:\Users\Downloads\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(166,22): warning C4244: “初始化”: 从“AP4_UI64”转换到“AP4_UI32”，可能丢失数据
+D:\Users\Downloads\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(168,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\Users\Downloads\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(207,20): warning C4244: “初始化”: 从“std::streamsize”转换到“int”，可能丢失数据
   ConsoleApplication2.vcxproj -> D:\Users\Downloads\st\Folder_online\noteBurner\ConsoleApplication2\Debug\ConsoleApplication2.exe
