@@ -67,6 +67,7 @@
 .text:1006AFE0 SegMentProcess_ctor proc near  
 
 
+0x8	m_Movie		AP4_Movie &
 0xc bool m_HasFragments;
 0x14 AP4_ByteStream * m_FragmentStream;
 0x18 m_CurrentFragmentPosition	0x0000000000000000	unsigned __int64
@@ -77,6 +78,11 @@
 0x40 int LinearReader.m_BufferFullnessPeak
 
 MyLinearReader_ctor(_DWORD *this, int file_m_Movie, int  
+
+
+0x4 	m_MoovAtom	AP4_MoovAtom *
+
+AP4_Movie
 
 0x0  m_Eos	false	bool
 0x4  m_Track	0x01237d78 	AP4_Track *
@@ -114,8 +120,8 @@ EncryptDataInfo
 
 
 
-0x0  const uint8_t* data;  
-0x4  uint32_t data_size; 
+0x0  const uint8_t* data;  sample的数据
+0x4  uint32_t data_size;   sample的大小
 0x8   const uint8_t* key_id;
 0xc   uint32_t key_id_size;
 0x10 	const uint8_t* iv;
@@ -123,7 +129,7 @@ EncryptDataInfo
 0x18 	const struct SubsampleEntry* subsamples;
 0x1c   uint32_t num_subsamples;
 0x20  int64_t timestamp; 
-0x50  EncryptionScheme encryption_scheme;
+0x50  EncryptionScheme encryption_scheme; 若有加密就是1，没有就是0
 EncryptBuffer 
 
 

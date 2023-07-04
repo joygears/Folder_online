@@ -192,8 +192,8 @@ int main() {
 	 factory2.CreateAtomFromStream(*m_FragmentStream, pAtom);
 	 AP4_ContainerAtom* moov = dynamic_cast<AP4_ContainerAtom*>(pAtom);
 	 while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
-	
- 			 printf("11");
+		
+		 printf("read sample offset: 0x%llX size: 0x%X \n", sample.GetOffset(), sample.GetSize());
 			 
 		 
 	 }
