@@ -11,6 +11,6 @@ public:
     virtual AP4_Result ProcessMoof(AP4_ContainerAtom* moof,
         AP4_Position       moof_offset,
         AP4_Position       mdat_payload_offset);
-
+    virtual ~MyLinearReader() {}
 };
 

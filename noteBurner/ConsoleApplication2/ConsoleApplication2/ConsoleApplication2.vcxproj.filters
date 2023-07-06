@@ -18,18 +18,24 @@
     <ClCompile Include="ConsoleApplication2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MyFileByteStream.cpp">
+    <ClCompile Include="MyLinearReader.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MyLinearReader.cpp">
+    <ClCompile Include="MySampleReader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MySampleDecrypter.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyFileByteStream.h">
+    <ClInclude Include="MyLinearReader.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="MyLinearReader.h">
+    <ClInclude Include="MySampleReader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MySampleDecrypter.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

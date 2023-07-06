@@ -143,12 +143,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication2.cpp" />
-    <ClCompile Include="MyFileByteStream.cpp" />
     <ClCompile Include="MyLinearReader.cpp" />
+    <ClCompile Include="MySampleDecrypter.cpp" />
+    <ClCompile Include="MySampleReader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyFileByteStream.h" />
     <ClInclude Include="MyLinearReader.h" />
+    <ClInclude Include="MySampleDecrypter.h" />
+    <ClInclude Include="MySampleReader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
