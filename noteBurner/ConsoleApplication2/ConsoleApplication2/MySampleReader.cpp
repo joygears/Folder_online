@@ -38,6 +38,8 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
 		for (int i = 0; i < subsample_count; i++) {
 			printf("subsample[%d] bytes_of_cleartext_data %X bytes_of_encrypted_data %X\n", i, bytes_of_cleartext_data[i], bytes_of_encrypted_data[i]);
 		}
+		const AP4_Byte*  data = sample_data.GetData();
+		AP4_Size   dataSize = sample_data.GetDataSize();
 		m_decrypter->index++;
 	}
 	else {

@@ -453,4 +453,6 @@ private:
     static std::mutex g_mtx;
 };
 
+void transtoYUV(MyVideoFrame* video_frame, unsigned char*& buffer);
 
+extern    MyContentDecryptionModuleProxy* proxy;

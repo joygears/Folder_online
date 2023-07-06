@@ -151,6 +151,9 @@
     <ClCompile Include="base64.cpp" />
     <ClCompile Include="cdmHost.cpp" />
     <ClCompile Include="fucntion.cpp" />
+    <ClCompile Include="MyLinearReader.cpp" />
+    <ClCompile Include="MySampleDecrypter.cpp" />
+    <ClCompile Include="MySampleReader.cpp" />
     <ClCompile Include="tool\base64.cpp" />
     <ClCompile Include="widevinecdm.cpp" />
   </ItemGroup>
@@ -160,6 +163,9 @@
     <ClInclude Include="cdmHost.h" />
     <ClInclude Include="fucntion.h" />
     <ClInclude Include="InlineHook.hpp" />
+    <ClInclude Include="MyLinearReader.h" />
+    <ClInclude Include="MySampleDecrypter.h" />
+    <ClInclude Include="MySampleReader.h" />
     <ClInclude Include="widevinecdm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

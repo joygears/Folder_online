@@ -30,6 +30,15 @@
     <ClCompile Include="base64.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="MyLinearReader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MySampleDecrypter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MySampleReader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="widevinecdm.h">
@@ -48,6 +57,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="cdmapi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLinearReader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MySampleDecrypter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MySampleReader.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

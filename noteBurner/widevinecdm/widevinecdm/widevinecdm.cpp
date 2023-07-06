@@ -1,5 +1,7 @@
 ﻿// widevinecdm.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
+#include <iostream>
+#include <fstream>
 #include <fstream>
 #include "widevinecdm.h"
 #include "fucntion.h"
@@ -7,6 +9,10 @@
 #include "tool/base64.h"
 #include "InlineHook.hpp"
 #include "base64.h"
+#include <bento4/Ap4.h>
+#include "bento4/Ap4Atom.h"
+#include <map>
+#include "MyLinearReader.h"
 
 
 bool (*VerifyCdmHost_0)(verifyWrap*, int flag);
@@ -32,6 +38,8 @@ hook::InlineHook GetModuleFileNamehooker = hook::InlineHook();
 wstring dycVfchm;
 string license;
 string g_session_id;
+
+ MyContentDecryptionModuleProxy* proxy = nullptr;
 void initializeApp() {
 
     
@@ -118,78 +126,119 @@ int main()
     proxy->UpdateSession(1, g_session_id.c_str(), g_session_id.size(), (uint8_t*)license.c_str(), license.size());
    proxy->InitializeVideoDecoder((void *)video_decoder_config);
 
-    char ecryptBuffer[0x49d1] = { 0, };
-    ifstream inFile("MEM_11F971D8_000049D1.mem", ios::in | ios::binary); //二进制读方式打开
-    if (!inFile) {
-        cout << "error" << endl;
-        return 0;
-    }
-    while (inFile.read((char*)ecryptBuffer, sizeof(ecryptBuffer))) { //一直读到文件结束
-        int readedBytes = inFile.gcount(); //看刚才读了多少字节
-       
-    }
-    inFile.close();
-    char key_id[] = {
-        0x00, 0x00, 0x00, 0x00, 0x05, 0x6F, 0x60, 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-    };
-    unsigned char iv[] = {
-0x01, 0xAC, 0x60, 0x6C, 0x64, 0x88, 0x37, 0xBE
-    };
-    
-    SubsampleEntry subsamples[1];
-    subsamples->clear_bytes = 0x21;
-    subsamples->cipher_bytes = 0x49b0;
 
-    InputBuffer_2 input;
-    input.data = (uint8_t *)ecryptBuffer;
-    input.data_size = 0x49d1;
-    input.encryption_scheme = EncryptionScheme::kCenc;
-    input.key_id = (uint8_t*)key_id;
-    input.key_id_size = 0x10;
-    input.iv = iv;
-    input.iv_size = 0x8;
-    input.subsamples = subsamples;
-    input.num_subsamples = 1;
-    input.pattern.crypt_byte_block = 0;
-    input.pattern.skip_byte_block = 0;
-    input.timestamp = 0x073A393;
-    MyVideoFrame videoFrame;
-    MyVideoFrame* video_frame = &videoFrame;
-   int result = proxy->DecryptAndDecodeFrame(&input, &videoFrame);
-    Log("DecryptAndDecodeFrame result %d", result);
-    cout << "width * height:" << videoFrame.SSize().width  << "*" << videoFrame.SSize().height << endl;
-    cout << "videoFrame.m_format : " << videoFrame.Format() << endl;
-    cout << "Timestamp : " << videoFrame.Timestamp() << endl;
-    for (int i = 0; i < VideoFrame::VideoPlane::kMaxPlanes; i++) {
-        cout << "videoFrame.PlaneOffset((VideoFrame::VideoPlane)"<<i<<")" << videoFrame.PlaneOffset((VideoFrame::VideoPlane)i) << endl;
-        cout << "videoFrame.Stride((VideoFrame::VideoPlane)" << i << ")" << videoFrame.Stride((VideoFrame::VideoPlane)i) << endl;
+
+   AP4_ByteStream* input_stream = NULL;
+   AP4_Result result = AP4_FileByteStream::Create(R"(0-44306.mp4)",
+       AP4_FileByteStream::STREAM_MODE_READ,
+       input_stream);
+
+   if (result != AP4_SUCCESS || input_stream == nullptr) {
+       // 处理文件打开错误
+       return result;
    }
-    FILE* pVideo;
-    pVideo = fopen("frame.yuv", "wb");
-    unsigned char* buffer=NULL;
-    uint32_t c = video_frame->SSize().width * video_frame->SSize().height;
-    if (buffer == NULL)
-        buffer = (unsigned char*)malloc(video_frame->SSize().width * video_frame->SSize().height * 1.5);
-    //Y Plane
-    uint32_t offset = 0;
-    for (int i = 0; i < video_frame->SSize().height; i++) {
-        memcpy(buffer + video_frame->SSize().width * i, video_frame->FrameBuffer()->Data() + offset, video_frame->SSize().width);
-        offset += video_frame->Stride(VideoFrame::kYPlane);
-    }
-    //U Plane
-    offset = 0;
-    for (int i = 0; i < video_frame->SSize().height / 2; i++) {
-        memcpy(buffer + c + (video_frame->SSize().width / 2) * i, video_frame->FrameBuffer()->Data() + video_frame->PlaneOffset(VideoFrame::kUPlane) + offset, video_frame->SSize().width / 2);
-        offset += video_frame->Stride(VideoFrame::kUPlane);
-    }
-    //V Plane
-    offset = 0;
-    for (int i = 0; i < video_frame->SSize().height / 2; i++) {
-        memcpy(buffer + c + (c / 4) + (video_frame->SSize().width / 2) * i, video_frame->FrameBuffer()->Data() + video_frame->PlaneOffset(VideoFrame::kVPlane) + offset, video_frame->SSize().width / 2);
-        offset += video_frame->Stride(VideoFrame::kVPlane);
-    }
-    fwrite(buffer, 1, video_frame->SSize().width * video_frame->SSize().height * 1.5, pVideo);
-    fclose(pVideo);
+   AP4_File file(*input_stream);
+   AP4_Movie* movie = file.GetMovie();
+
+   AP4_Cardinal track_count = movie->GetTracks().ItemCount();
+   if (!track_count)
+       return 1600;
+   AP4_ProtectedSampleDescription* ProtectedSampleDescription;
+   AP4_Track* pTrack;
+   while (1) {
+
+       AP4_List<AP4_Track>::Item* item = movie->GetTracks().FirstItem();
+       pTrack = item->GetData();
+       if (!pTrack)
+           return 1600;
+       AP4_SampleDescription* SampleDescription = pTrack->GetSampleDescription(0);
+       if (SampleDescription && SampleDescription->GetType() != AP4_SampleDescription::Type::TYPE_PROTECTED) {
+           //处理未加密的track流
+       }
+       else {
+           ProtectedSampleDescription = dynamic_cast<AP4_ProtectedSampleDescription*>(SampleDescription);
+           if (ProtectedSampleDescription)
+               break;
+       }
+   }
+
+       AP4_ByteStream* input_stream3 = NULL;
+       result = AP4_FileByteStream::Create(R"(7187295-8402045.mp4)",
+           AP4_FileByteStream::STREAM_MODE_READ,
+           input_stream3);
+       AP4_Sample sample;
+       AP4_DataBuffer sample_data;
+
+       MyLinearReader LinearReader(*movie, input_stream3);
+       LinearReader.EnableTrack(pTrack->GetId());
+       AP4_ByteStream* m_FragmentStream = *(AP4_ByteStream**)(((char*)&LinearReader) + 0x14);
+       AP4_Atom* pAtom;
+       AP4_AtomFactory factory2;
+       factory2.CreateAtomFromStream(*m_FragmentStream, pAtom);
+       AP4_ContainerAtom* moov = dynamic_cast<AP4_ContainerAtom*>(pAtom);
+       while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
+
+
+
+            }
+
+
+
+
+
+
+//    char ecryptBuffer[0x49d1] = { 0, };
+//    ifstream inFile("MEM_11F971D8_000049D1.mem", ios::in | ios::binary); //二进制读方式打开
+//    if (!inFile) {
+//        cout << "error" << endl;
+//        return 0;
+//    }
+//    while (inFile.read((char*)ecryptBuffer, sizeof(ecryptBuffer))) { //一直读到文件结束
+//        int readedBytes = inFile.gcount(); //看刚才读了多少字节
+//       
+//    }
+//    inFile.close();
+//    char key_id[] = {
+//        0x00, 0x00, 0x00, 0x00, 0x05, 0x6F, 0x60, 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+//    };
+//    unsigned char iv[] = {
+//0x01, 0xAC, 0x60, 0x6C, 0x64, 0x88, 0x37, 0xBE
+//    };
+//    
+//    SubsampleEntry subsamples[1];
+//    subsamples->clear_bytes = 0x21;
+//    subsamples->cipher_bytes = 0x49b0;
+//
+//    InputBuffer_2 input;
+//    input.data = (uint8_t *)ecryptBuffer;
+//    input.data_size = 0x49d1;
+//    input.encryption_scheme = EncryptionScheme::kCenc;
+//    input.key_id = (uint8_t*)key_id;
+//    input.key_id_size = 0x10;
+//    input.iv = iv;
+//    input.iv_size = 0x8;
+//    input.subsamples = subsamples;
+//    input.num_subsamples = 1;
+//    input.pattern.crypt_byte_block = 0;
+//    input.pattern.skip_byte_block = 0;
+//    input.timestamp = 0x073A393;
+//    MyVideoFrame videoFrame;
+//    MyVideoFrame* video_frame = &videoFrame;
+//   int result = proxy->DecryptAndDecodeFrame(&input, &videoFrame);
+//    Log("DecryptAndDecodeFrame result %d", result);
+//    cout << "width * height:" << videoFrame.SSize().width  << "*" << videoFrame.SSize().height << endl;
+//    cout << "videoFrame.m_format : " << videoFrame.Format() << endl;
+//    cout << "Timestamp : " << videoFrame.Timestamp() << endl;
+//    for (int i = 0; i < VideoFrame::VideoPlane::kMaxPlanes; i++) {
+//        cout << "videoFrame.PlaneOffset((VideoFrame::VideoPlane)"<<i<<")" << videoFrame.PlaneOffset((VideoFrame::VideoPlane)i) << endl;
+//        cout << "videoFrame.Stride((VideoFrame::VideoPlane)" << i << ")" << videoFrame.Stride((VideoFrame::VideoPlane)i) << endl;
+//   }
+//    FILE* pVideo;
+//    pVideo = fopen("frame.yuv", "wb");
+//    unsigned char* buffer=NULL;
+//    transtoYUV(video_frame, buffer);
+//    fwrite(buffer, 1, video_frame->SSize().width * video_frame->SSize().height * 1.5, pVideo);
+//    fclose(pVideo);
     return 0;
 
 }
@@ -806,3 +855,28 @@ int64_t MyVideoFrame::Timestamp() const
 {
     return m_timestamp;
 }
+
+
+void transtoYUV(MyVideoFrame* video_frame, unsigned char*& buffer) {
+    uint32_t c = video_frame->SSize().width * video_frame->SSize().height;
+    if (buffer == NULL)
+        buffer = (unsigned char*)malloc(video_frame->SSize().width * video_frame->SSize().height * 1.5);
+    //Y Plane
+    uint32_t offset = 0;
+    for (int i = 0; i < video_frame->SSize().height; i++) {
+        memcpy(buffer + video_frame->SSize().width * i, video_frame->FrameBuffer()->Data() + offset, video_frame->SSize().width);
+        offset += video_frame->Stride(VideoFrame::kYPlane);
+    }
+    //U Plane
+    offset = 0;
+    for (int i = 0; i < video_frame->SSize().height / 2; i++) {
+        memcpy(buffer + c + (video_frame->SSize().width / 2) * i, video_frame->FrameBuffer()->Data() + video_frame->PlaneOffset(VideoFrame::kUPlane) + offset, video_frame->SSize().width / 2);
+        offset += video_frame->Stride(VideoFrame::kUPlane);
+    }
+    //V Plane
+    offset = 0;
+    for (int i = 0; i < video_frame->SSize().height / 2; i++) {
+        memcpy(buffer + c + (c / 4) + (video_frame->SSize().width / 2) * i, video_frame->FrameBuffer()->Data() + video_frame->PlaneOffset(VideoFrame::kVPlane) + offset, video_frame->SSize().width / 2);
+        offset += video_frame->Stride(VideoFrame::kVPlane);
+    }
+};
