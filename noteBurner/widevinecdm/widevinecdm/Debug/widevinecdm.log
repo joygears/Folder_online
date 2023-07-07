@@ -181,6 +181,4 @@ D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHoo
 D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\widevinecdm.cpp(116,117): warning C4838: 从“int”转换到“char”需要收缩转换
 D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\widevinecdm.cpp(116,117): warning C4309: “初始化”: 截断常量值
 D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\widevinecdm\widevinecdm.cpp(863,98): warning C4244: “参数”: 从“double”转换到“size_t”，可能丢失数据
-Debug\base64.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
-    正在创建库 D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.lib 和对象 D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exp
   widevinecdm.vcxproj -> D:\Users\Downloads\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe

@@ -118,7 +118,7 @@ int main()
     initializeApp();
    InitializeCdmModule_4();
     string key_system("com.widevine.alpha");
-  MyContentDecryptionModuleProxy* proxy = (MyContentDecryptionModuleProxy*)CreateCdmInstance(10, key_system.c_str(), key_system.size(), HostFunction, 0);
+  proxy = (MyContentDecryptionModuleProxy*)CreateCdmInstance(10, key_system.c_str(), key_system.size(), HostFunction, 0);
    proxy->Initialize(0, 0, 0);
    proxy->SetServerCertificate(1, (const UINT8*)cert.c_str(), cert.size());
    proxy->CreateSessionAndGenerateRequest(1, 0, 0, (const UINT8*)pssh.c_str(), pssh.size());
@@ -184,7 +184,7 @@ int main()
 
 
 
-
+       printf("所有frame解密完成");
 
 
 //    char ecryptBuffer[0x49d1] = { 0, };

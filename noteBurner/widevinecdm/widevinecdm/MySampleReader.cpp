@@ -51,11 +51,15 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
             subsamples[i].cipher_bytes = bytes_of_encrypted_data[i];
         }
 
-       
+        int dataSize = sample.GetSize();
+        char* data = new char[dataSize + 1];
+        memset(data, 0, dataSize + 1);
+        sample.GetDataStream()->Seek(sample.GetOffset());
+        sample.GetDataStream()->Read(data, dataSize);
 
         InputBuffer_2 input;
-        input.data = (uint8_t*)sample_data.GetData();
-        input.data_size = sample_data.GetDataSize();
+        input.data = (UINT8 *)data;
+        input.data_size = dataSize;
         input.encryption_scheme = EncryptionScheme::kCenc;
         input.key_id = (uint8_t*)key_id;
         input.key_id_size = 0x10;
@@ -68,6 +72,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
         input.timestamp = timestamp;
         MyVideoFrame videoFrame;
         MyVideoFrame* video_frame = &videoFrame;
+        printf("proxy %p", proxy);
         int result = proxy->DecryptAndDecodeFrame(&input, &videoFrame);
         printf("DecryptAndDecodeFrame result %d", result);
         cout << "width * height:" << videoFrame.SSize().width << "*" << videoFrame.SSize().height << endl;
@@ -84,7 +89,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
         fwrite(buffer, 1, video_frame->SSize().width * video_frame->SSize().height * 1.5, pVideo);
         fclose(pVideo);
 
-
+        delete data;
 
 	}
 	else {

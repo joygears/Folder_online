@@ -4,7 +4,8 @@
 #include "MySampleDecrypter.h"
 
 AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sample_data)
-{
+{	
+
 	auto printfHex = [](char *byteArray, int length) {
 		
 		// 打印十六进制字符串
@@ -15,8 +16,15 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
 
 		std::cout << std::endl;
 	};
-
+	int dataSize = sample.GetSize();
+	char* data = new char[dataSize + 1];
+	memset(data, 0, dataSize + 1);
+	sample.GetDataStream()->Seek(sample.GetOffset());
+	sample.GetDataStream()->Read(data, dataSize);
+	
 	if (this->m_decrypter != nullptr) {
+
+		
 		AP4_Cardinal subsample_count =0;
 		const AP4_UI16* bytes_of_cleartext_data;
 		const AP4_UI32* bytes_of_encrypted_data;
@@ -38,12 +46,13 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
 		for (int i = 0; i < subsample_count; i++) {
 			printf("subsample[%d] bytes_of_cleartext_data %X bytes_of_encrypted_data %X\n", i, bytes_of_cleartext_data[i], bytes_of_encrypted_data[i]);
 		}
-		const AP4_Byte*  data = sample_data.GetData();
-		AP4_Size   dataSize = sample_data.GetDataSize();
+	
 		m_decrypter->index++;
 	}
 	else {
 		printf("read sample offset: 0x%llX size: 0x%X isEncrypted: false\n", sample.GetOffset(), sample.GetSize());
 	}
+	delete data;
+	
 	return AP4_Result();
 }
