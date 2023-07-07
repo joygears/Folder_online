@@ -40,7 +40,6 @@ public:
     virtual void SetSize(uint32_t size) = 0;
     virtual uint32_t Size() const = 0;
 
-protected:
     Buffer() {}
     virtual ~Buffer() {}
 

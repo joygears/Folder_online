@@ -17,6 +17,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
 	};
 
 	if (this->m_decrypter != nullptr) {
+
 		AP4_Cardinal subsample_count =0;
 		const AP4_UI16* bytes_of_cleartext_data;
 		const AP4_UI32* bytes_of_encrypted_data;
@@ -72,25 +73,31 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
         input.timestamp = timestamp;
         MyVideoFrame videoFrame;
         MyVideoFrame* video_frame = &videoFrame;
-        printf("proxy %p", proxy);
+      
         int result = proxy->DecryptAndDecodeFrame(&input, &videoFrame);
         printf("DecryptAndDecodeFrame result %d", result);
-        cout << "width * height:" << videoFrame.SSize().width << "*" << videoFrame.SSize().height << endl;
+        /*cout << "width * height:" << videoFrame.SSize().width << "*" << videoFrame.SSize().height << endl;
         cout << "videoFrame.m_format : " << videoFrame.Format() << endl;
         cout << "Timestamp : " << videoFrame.Timestamp() << endl;
         for (int i = 0; i < VideoFrame::VideoPlane::kMaxPlanes; i++) {
             cout << "videoFrame.PlaneOffset((VideoFrame::VideoPlane)" << i << ")" << videoFrame.PlaneOffset((VideoFrame::VideoPlane)i) << endl;
             cout << "videoFrame.Stride((VideoFrame::VideoPlane)" << i << ")" << videoFrame.Stride((VideoFrame::VideoPlane)i) << endl;
-        }
+        }*/
         FILE* pVideo;
         pVideo = fopen("frame.yuv", "ab");
+       
         unsigned char* buffer = NULL;
         transtoYUV(video_frame, buffer);
+      
         fwrite(buffer, 1, video_frame->SSize().width * video_frame->SSize().height * 1.5, pVideo);
+     
+
         fclose(pVideo);
-
+    
+        delete buffer;
         delete data;
-
+      
+       
 	}
 	else {
 		printf("read sample offset: 0x%llX size: 0x%X isEncrypted: false\n", sample.GetOffset(), sample.GetSize());

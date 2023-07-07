@@ -129,7 +129,7 @@ int main()
 
 
    AP4_ByteStream* input_stream = NULL;
-   AP4_Result result = AP4_FileByteStream::Create(R"(0-44306.mp4)",
+   AP4_Result result = AP4_FileByteStream::Create(R"(all.mp4)",
        AP4_FileByteStream::STREAM_MODE_READ,
        input_stream);
 
@@ -163,7 +163,7 @@ int main()
    }
 
        AP4_ByteStream* input_stream3 = NULL;
-       result = AP4_FileByteStream::Create(R"(7187295-8402045.mp4)",
+       result = AP4_FileByteStream::Create(R"(all.mp4)",
            AP4_FileByteStream::STREAM_MODE_READ,
            input_stream3);
        AP4_Sample sample;
@@ -184,7 +184,7 @@ int main()
 
 
 
-       printf("所有frame解密完成");
+       printf("all frame decrypted");
 
 
 //    char ecryptBuffer[0x49d1] = { 0, };

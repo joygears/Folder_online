@@ -90,11 +90,14 @@ public:
 
 public:
     MyVideoFrame() {}
-    virtual ~MyVideoFrame() {}
-    VideoFormat m_format;
-    Size m_size;
-    int64_t m_timestamp;
-    Buffer* m_frame_buffer = nullptr;
+    virtual ~MyVideoFrame() {
+        if (m_frame_buffer != nullptr)
+            delete m_frame_buffer;
+    }
+    VideoFormat m_format; //0x4
+    Size m_size; //0x8
+    int64_t m_timestamp; //0x10
+    Buffer* m_frame_buffer = nullptr; //0x18
     uint32_t m_planeOffsets[VideoFrame::VideoPlane::kMaxPlanes];
     uint32_t m_stride[VideoPlane::kMaxPlanes];
 

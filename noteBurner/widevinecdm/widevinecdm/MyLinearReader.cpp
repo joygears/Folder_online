@@ -1,7 +1,9 @@
+#include <Windows.h>
 #include "MyLinearReader.h"
 #include <bento4/Ap4SencAtom.h>
 #include "MySampleReader.h"
 #include "MySampleDecrypter.h"
+
 MyLinearReader::MyLinearReader(AP4_Movie& movie, AP4_ByteStream* fragment_stream ):AP4_LinearReader(movie, fragment_stream) {
 
 	
