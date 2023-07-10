@@ -8,7 +8,7 @@ int main()
 {
     LPCWSTR newPath = LR"(C:\Users\Administrator\AppData\Roaming\NoteBurner Netflix Video Downloader)";  // 新路径
 
-    BOOL result = SHSetFolderPathW(CSIDL_APPDATA, NULL, 0, newPath);
+    //BOOL result = SHSetFolderPathW(CSIDL_APPDATA, NULL, 0, newPath);
     SetEnvironmentVariable(TEXT("APP_VMP_VERIFY"), TEXT("1"));
     SetEnvironmentVariable(TEXT("KEEPER_ID"), TEXT("keeper_16256"));
     SetEnvironmentVariable(TEXT("APP_IDENTIFIER"), TEXT("NoteBurner-netflix"));

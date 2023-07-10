@@ -4,13 +4,15 @@
 #include "bento4/Ap4Atom.h"
 #include <map>
 #include "MyLinearReader.h"
+
+
 using namespace std;
 int __cdecl transToVideoProfile(char a1);
 
 int main() {
 
 	AP4_ByteStream* input_stream = NULL;
-	AP4_Result result = AP4_FileByteStream::Create(R"(all.mp4)",
+	AP4_Result result = AP4_FileByteStream::Create(R"(0-44306.mp4)",
 		AP4_FileByteStream::STREAM_MODE_READ,
 		input_stream);
 
@@ -178,7 +180,7 @@ int main() {
 	// }
 
 	 AP4_ByteStream* input_stream3 = NULL;
-	 result = AP4_FileByteStream::Create(R"(all.mp4)",
+	 result = AP4_FileByteStream::Create(R"(44306-1993788.mp4)",
 		 AP4_FileByteStream::STREAM_MODE_READ,
 		 input_stream3);
 	 AP4_Sample sample;
@@ -191,27 +193,26 @@ int main() {
 	 AP4_AtomFactory factory2;
 	 factory2.CreateAtomFromStream(*m_FragmentStream, pAtom);
 	 AP4_ContainerAtom* moov = dynamic_cast<AP4_ContainerAtom*>(pAtom);
-	 while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
-		
-			 
-		 
-	 }
+	 //while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
+		//
+		//	 
+		// 
+	 //}
+	 LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data);
 	 char ecryptBuffer[0x49d1] = {0,};
 	 ifstream inFile("MEM_11F971D8_000049D1.mem", ios::in | ios::binary); //二进制读方式打开
 	 if (!inFile) {
 		 cout << "error" << endl;
-		 return 0;
+		
 	 }
 	 while (inFile.read((char*)ecryptBuffer, sizeof(ecryptBuffer))) { //一直读到文件结束
 		 int readedBytes = inFile.gcount(); //看刚才读了多少字节
-		 return 0;
+		
 	 }
 	 inFile.close();
 
 	// LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data);
-
-	 AP4_Array<unsigned int> a;
-	 
+	
 	return 0;
 }
 

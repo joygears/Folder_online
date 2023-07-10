@@ -100,6 +100,8 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
        
 	}
 	else {
+
+
 		printf("read sample offset: 0x%llX size: 0x%X isEncrypted: false\n", sample.GetOffset(), sample.GetSize());
 	}
 	return AP4_Result();

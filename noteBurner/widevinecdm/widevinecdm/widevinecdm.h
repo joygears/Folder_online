@@ -31,27 +31,27 @@ struct Pattern {
     uint32_t skip_byte_block;   // Count of the unencrypted blocks.
 };
 struct InputBuffer_2 {
-    const uint8_t* data;  // Pointer to the beginning of the input data.
-    uint32_t data_size;   // Size (in bytes) of |data|.
+    const uint8_t* data;  // Pointer to the beginning of the input data. 
+    uint32_t data_size;   // 4 Size (in bytes) of |data|.
 
-    EncryptionScheme encryption_scheme;
+    EncryptionScheme encryption_scheme; //8
 
-    const uint8_t* key_id;  // Key ID to identify the decryption key.
-    uint32_t key_id_size;   // Size (in bytes) of |key_id|.
-    uint32_t : 32;          // Padding.
+    const uint8_t* key_id;  // c Key ID to identify the decryption key.
+    uint32_t key_id_size;   // 10 Size (in bytes) of |key_id|.
+    uint32_t : 32;          // 14 Padding.
 
-    const uint8_t* iv;  // Initialization vector.
-    uint32_t iv_size;   // Size (in bytes) of |iv|.
-    uint32_t : 32;      // Padding.
+    const uint8_t* iv;  // 18 Initialization vector.
+    uint32_t iv_size;   // 1cSize (in bytes) of |iv|.
+    uint32_t : 32;      // 20 Padding.
 
-    const struct SubsampleEntry* subsamples;
-    uint32_t num_subsamples;  // Number of subsamples in |subsamples|.
-    uint32_t : 32;            // Padding.
+    const struct SubsampleEntry* subsamples; //24
+    uint32_t num_subsamples;  // 28 Number of subsamples in |subsamples|.
+    uint32_t : 32;            // 2c Padding.
 
                               // |pattern| is required if |encryption_scheme| specifies pattern encryption.
-    Pattern pattern;
+    Pattern pattern; //30
 
-    int64_t timestamp;  // Presentation timestamp in microseconds.
+    int64_t timestamp;  // 38  Presentation timestamp in microseconds.
 };
 
 

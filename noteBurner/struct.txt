@@ -135,6 +135,12 @@ EncryptBuffer
 
 
 
+MyDecryptedBlock
+0x24 Buffer *
+0x28 size
+
+
+
 
 
 
