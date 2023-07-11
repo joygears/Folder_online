@@ -16,6 +16,18 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
 		std::cout << std::endl;
 	};
 
+    int dataSize = sample.GetSize();
+    char* data = new char[dataSize + 1];
+    memset(data, 0, dataSize + 1);
+    sample.GetDataStream()->Seek(sample.GetOffset());
+    sample.GetDataStream()->Read(data, dataSize);
+
+
+
+    AVFrame* frame;
+    frame = av_frame_alloc();
+    AVPacket* packet = av_packet_alloc();
+
 	if (this->m_decrypter != nullptr) {
 
 		AP4_Cardinal subsample_count =0;
@@ -52,11 +64,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
             subsamples[i].cipher_bytes = bytes_of_encrypted_data[i];
         }
 
-        int dataSize = sample.GetSize();
-        char* data = new char[dataSize + 1];
-        memset(data, 0, dataSize + 1);
-        sample.GetDataStream()->Seek(sample.GetOffset());
-        sample.GetDataStream()->Read(data, dataSize);
+      
 
         InputBuffer_2 input;
         input.data = (UINT8 *)data;
@@ -95,14 +103,79 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
         fclose(pVideo);
     
         delete buffer;
-        delete data;
+      
       
        
 	}
 	else {
+        packet->data = (uint8_t*)data;
+        packet->size = dataSize;
+        packet->duration = 0xa2c3;
+        int error_code = av_packet_make_refcounted(packet);
 
+
+        int sendCode = avcodec_send_packet(decodecContext, packet);
+        if (sendCode >= 0) {
+            while (1) {
+                int arfcode = avcodec_receive_frame(decodecContext, frame);
+                if (arfcode == 0 || arfcode == 0xDFB9B0BB || arfcode == AVERROR(EAGAIN)) {
+                    break;
+                }
+                if (arfcode < 0) {
+                    printf("receive frame failed \n");
+                    return 0;
+                }
+
+            }
+        }
+
+        // 输入AVFrame的宽、高和像素格式
+        int src_w = frame->width;
+        int src_h = frame->height;
+        AVPixelFormat src_pix_fmt = (AVPixelFormat)frame->format;
+        // 目标输出YUV420P格式
+        int dst_w = src_w;
+        int dst_h = src_h;
+        AVPixelFormat dst_pix_fmt = AV_PIX_FMT_YUV420P;
+        // 创建SwsContext对象
+        struct SwsContext* sws_ctx = sws_getContext(src_w, src_h, src_pix_fmt,
+            dst_w, dst_h, dst_pix_fmt,
+            SWS_BILINEAR, NULL, NULL, NULL);
+        // 分配输出YUV数据缓冲区
+        uint8_t* buffer[AV_NUM_DATA_POINTERS] = { 0 };
+        buffer[0] = new uint8_t[dst_w * dst_h];
+        buffer[1] = new uint8_t[dst_w / 2 * dst_h / 2];
+        buffer[2] = new uint8_t[dst_w / 2 * dst_h / 2];
+        int linesize[AV_NUM_DATA_POINTERS] = { 0 };
+        linesize[0] = dst_w;
+        linesize[1] = dst_w / 2;
+        linesize[2] = dst_w / 2;
+        // 调用sws_scale()函数进行像素格式转换和缩放操作
+        sws_scale(sws_ctx, frame->data, frame->linesize,
+            0, src_h, buffer, linesize);
+        // 释放SwsContext对象和输出YUV数据缓冲区
+        sws_freeContext(sws_ctx);
+        const char* output_filename = "frame.yuv";
+        FILE* fp_out = fopen(output_filename, "ab");
+        if (!fp_out) {
+            printf("Could not open %s\n", output_filename);
+            return -1;
+        }
+        // 写入YUV420P数据
+        fwrite(buffer[0], 1, dst_w * dst_h, fp_out);
+        fwrite(buffer[1], 1, dst_w / 2 * dst_h / 2, fp_out);
+        fwrite(buffer[2], 1, dst_w / 2 * dst_h / 2, fp_out);
+        // 关闭输出文件
+        fclose(fp_out);
+
+        delete[] buffer[0];
+        delete[] buffer[1];
+        delete[] buffer[2];
 
 		printf("read sample offset: 0x%llX size: 0x%X isEncrypted: false\n", sample.GetOffset(), sample.GetSize());
 	}
+    av_packet_free(&packet);
+    av_frame_free(&frame);
+    delete data;
 	return AP4_Result();
 }

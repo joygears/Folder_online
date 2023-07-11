@@ -39,6 +39,11 @@ wstring dycVfchm;
 string license;
 string g_session_id;
 
+AVCodecContext* decodecContext = 0;
+AVCodecContext* encodecContext = 0;
+AVStream* videoStream = 0;
+AVFormatContext* outputFormatContext = 0;
+
  MyContentDecryptionModuleProxy* proxy = nullptr;
 void initializeApp() {
 
@@ -176,6 +181,17 @@ int main()
        AP4_AtomFactory factory2;
        factory2.CreateAtomFromStream(*m_FragmentStream, pAtom);
        AP4_ContainerAtom* moov = dynamic_cast<AP4_ContainerAtom*>(pAtom);
+
+
+       const AVCodec* decodec = avcodec_find_decoder(AV_CODEC_ID_VP9);
+
+       decodecContext = avcodec_alloc_context3(decodec);
+       int deaocode = avcodec_open2(decodecContext, decodec, 0);
+
+       if (deaocode < 0) {
+           printf("avcodec_open2 decode failed \n");
+           return 0;
+       }
        while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
 
 

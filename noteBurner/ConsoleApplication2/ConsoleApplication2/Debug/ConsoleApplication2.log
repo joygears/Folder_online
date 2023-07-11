@@ -1,5 +1,13 @@
 ﻿  MySampleReader.cpp
 C:\Users\Administrator\dev\vcpkg\installed\x86-windows\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\MySampleReader.cpp(46,21): warning C4244: “初始化”: 从“double”转换到“int64_t”，可能丢失数据
-D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\MySampleReader.cpp(58,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\muxer.h(5,14): warning C4099: “AVFrame”: 类型名称以前使用“struct”现在使用的是“class”
+C:\Users\Administrator\dev\vcpkg\installed\x86-windows\include\libavutil\frame.h(325): message : 参见“AVFrame”的声明
+D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\muxer.h(6,15): warning C4099: “AVStream”: 类型名称以前使用“struct”现在使用的是“class”
+C:\Users\Administrator\dev\vcpkg\installed\x86-windows\include\libavformat\avformat.h(950): message : 参见“AVStream”的声明
+D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\muxer.h(7,21): warning C4099: “AVCodecContext”: 类型名称以前使用“struct”现在使用的是“class”
+C:\Users\Administrator\dev\vcpkg\installed\x86-windows\include\libavcodec\avcodec.h(389): message : 参见“AVCodecContext”的声明
+D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\muxer.h(8,22): warning C4099: “AVFormatContext”: 类型名称以前使用“struct”现在使用的是“class”
+C:\Users\Administrator\dev\vcpkg\installed\x86-windows\include\libavformat\avformat.h(1215): message : 参见“AVFormatContext”的声明
+D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\MySampleReader.cpp(43,21): warning C4244: “初始化”: 从“double”转换到“int64_t”，可能丢失数据
+D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\MySampleReader.cpp(55,21): warning C4018: “<”: 有符号/无符号不匹配
   ConsoleApplication2.vcxproj -> D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\Debug\ConsoleApplication2.exe
