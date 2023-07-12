@@ -1,9 +1,59 @@
-﻿  ConsoleApplication2.cpp
-C:\Users\Administrator\dev\vcpkg\installed\x86-windows\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(240,20): warning C4244: “初始化”: 从“std::streamsize”转换到“int”，可能丢失数据
-  正在生成代码
-  2 of 206 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+﻿  正在生成代码
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 219 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   已完成代码的生成
   ConsoleApplication2.vcxproj -> D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\Release\ConsoleApplication2.exe
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avcodec-58.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avdevice-58.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avfilter-7.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avformat-58.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avutil-56.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libasprintf-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libatomic-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libbz2-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libcharset-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libcrypto-1_1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libexpat-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libffi-7.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libgccjit-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libgcc_s_dw2-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libgettextlib-0-19-8-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libgettextpo-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libgettextsrc-0-19-8-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libgfortran-5.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libgmp-10.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libgmpxx-4.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libgnarl-10.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libgnat-10.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libgomp-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libhistory8.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libiconv-2.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libintl-8.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\liblzma-5.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libmp4v2.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libmpdec++-2.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libmpdec-2.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libobjc-4.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libp11-kit-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libpkgconf-3.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libpng15-15.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libpython3.9.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libquadmath-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libreadline8.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libsqlite3-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libssl-1_1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libssp-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libstdc++-6.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libsystre-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libtasn1-6.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libtermcap-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libtre-5.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libwinpthread-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libx265.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libxxhash.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libzstd.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\swresample-3.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\swscale-5.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\zlib.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\zlib1.dll
+  复制了 53 个文件
