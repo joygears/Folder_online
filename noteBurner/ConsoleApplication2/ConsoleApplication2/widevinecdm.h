@@ -12,6 +12,18 @@ extern "C"
 
 };
 
+struct VideoDecoderConfig {
+    int codec;
+    int profile;
+    int alpha_mode;
+    int color_space;
+    int width;
+    int height;
+    int m_18;
+    int m_1C;
+    int m_20;
+};
+
 extern AVCodecContext* decodecContext;
 extern AVCodecContext* encodecContext;
 extern AVStream* videoStream;

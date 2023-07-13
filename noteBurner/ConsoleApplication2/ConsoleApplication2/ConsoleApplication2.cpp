@@ -37,7 +37,7 @@ int main() {
 		return result;
 	}
 
-
+	//获取pssh
 	AP4_List<AP4_Atom>::Item* currentItem = (AP4_List<AP4_Atom>::Item*) * (int*)((char*)moovAtom + 0x34);
 	while (currentItem) {
 
@@ -50,7 +50,7 @@ int main() {
 		currentItem = currentItem->GetNext();
 	}
 
-
+	//获取ProtectedSampleDescription
 	AP4_Cardinal track_count = movie->GetTracks().ItemCount();
 	if (!track_count)
 		return 1600;
@@ -86,6 +86,9 @@ int main() {
 		printf("unhandled protection scheme type: %u\n", schemeType);
 	}
 
+
+	//配置video_decoder_config
+	VideoDecoderConfig video_decoder_config{0};
 	AP4_SampleDescription* OriginalSampleDescription = ProtectedSampleDescription->GetOriginalSampleDescription();
 	char* format;
 	AP4_String codec;
@@ -101,15 +104,19 @@ int main() {
 		return 1600;
 		AP4_VideoSampleDescription* VideoSampleDescription = dynamic_cast<AP4_VideoSampleDescription*>(OriginalSampleDescription);
 		AP4_UI16 width = VideoSampleDescription->GetWidth();
-		AP4_UI16 hegiht = VideoSampleDescription->GetHeight();
+		AP4_UI16 height = VideoSampleDescription->GetHeight();
 		std:: string codecStr = codec.GetChars();
+		video_decoder_config.width = width;
+		video_decoder_config.height = height;
+		video_decoder_config.m_18 = 0;
+		video_decoder_config.m_1C = 0;
 		if (codecStr.find("avc1",0) == std::string::npos) {
 
 			if(codecStr.find("vp09",0) == std::string::npos)
 				printf( "codec %s not yet handled ", codecStr.c_str());
-			/*video_decoder_config[1] = 1;
-			video_decoder_config[0] = 3;
-			video_decoder_config[2] = 2;*/
+			video_decoder_config.profile = 1;
+			video_decoder_config.codec = 3;
+		
 		
 		}
 		else {
@@ -118,8 +125,11 @@ int main() {
 			AP4_UI08 level = AvcSampleDescription->GetLevel();
 			int videoProfile = transToVideoProfile(profile);
 			
+			video_decoder_config.codec = 2;
+			video_decoder_config.profile = videoProfile;
+			
 		}
-
+		video_decoder_config.alpha_mode = 2;
 	}
 	
 	AP4_List<AP4_Atom>::Item*  curItem = file.GetTopLevelAtoms().FirstItem();
@@ -225,7 +235,6 @@ int main() {
 	
 	const AVCodec* decodec = avcodec_find_decoder(AV_CODEC_ID_VP9);
 	
-
 	 encodec = avcodec_find_encoder(AV_CODEC_ID_H264);
 	decodecContext = avcodec_alloc_context3(decodec);
 	 encodecContext = avcodec_alloc_context3(encodec);
