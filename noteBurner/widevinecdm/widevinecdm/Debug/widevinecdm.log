@@ -13,80 +13,211 @@ D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\M
 D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
 D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
 D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x120d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x120f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1218 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x121e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1221 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1223 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x101c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1022 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1023 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1049 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x104f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1052 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x11d0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x11d1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x11d3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1224 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1225 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
 D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1227 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12c3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12c4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12c7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12c8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x127f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1280 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1282 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12cc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12cd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12cf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
 D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12d0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
 D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12d1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1352 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1353 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1354 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1355 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1360 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1361 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1363 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1417 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1418 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x141a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x141d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x141e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12d5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1321 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1322 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1324 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1325 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1326 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x132a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13b8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13b9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13ba 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13bb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13bd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13be 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13c0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1421 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
 D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1422 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1423 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
 D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1424 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1426 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
 D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1427 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1428 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
 D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1429 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15ab 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15ac 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15ba 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15bb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15bc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15be 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15bf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15c0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15c2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15c4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15c6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15c7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15cb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15cc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15cd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15ce 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15cf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15d1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15d5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x15d7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1649 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x164b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x164c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1657 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1658 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x165a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x165e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1664 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1666 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1669 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x166a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x166b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1782 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x178b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x178d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x178e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x184e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1851 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1853 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1856 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1858 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1859 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14a6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14a7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14a8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14a9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14ab 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14ac 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14ae 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x17ff 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1801 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x180a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1810 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1813 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1815 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1819 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x18bd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x18be 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x18c1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x18c2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x18ca 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x18cb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1954 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1955 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1956 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1957 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1962 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1963 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1965 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a21 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a22 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a24 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a27 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a28 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a2c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a2e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a31 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a32 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a33 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bc7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bc8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bd6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bd7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bd8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bda 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bdb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bdc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bde 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1be0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1be2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1be3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1be7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1be8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1be9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bea 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1beb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bed 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bf1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bf3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c6b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c6d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c6e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c79 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c7a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c7c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c80 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c86 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c88 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c8b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c8c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c8d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1db4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1dbd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1dbf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1dc0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1e88 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1e8b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1e8d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1e90 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1e92 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1e93 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2088 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2089 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x208d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2090 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2091 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2095 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2096 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2097 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x220e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x220f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2213 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2215 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2218 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2219 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x221b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x221c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2220 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x222a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22cb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22cc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22cd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22cf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22d0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
 D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(39,21): warning C4244: “初始化”: 从“double”转换到“int64_t”，可能丢失数据
 D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(51,21): warning C4018: “<”: 有符号/无符号不匹配
 D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(62,27): warning C4018: “<”: 有符号/无符号不匹配
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(100,84): warning C4244: “参数”: 从“double”转换到“size_t”，可能丢失数据
   widevinecdm.vcxproj -> D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\avcodec-58.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\avdevice-58.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\avfilter-7.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\avformat-58.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\avutil-56.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libasprintf-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libatomic-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libbz2-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libcharset-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libcrypto-1_1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libexpat-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libffi-7.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libgccjit-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libgcc_s_dw2-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libgettextlib-0-19-8-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libgettextpo-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libgettextsrc-0-19-8-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libgfortran-5.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libgmp-10.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libgmpxx-4.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libgnarl-10.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libgnat-10.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libgomp-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libhistory8.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libiconv-2.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libintl-8.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\liblzma-5.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libmp4v2.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libmpdec++-2.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libmpdec-2.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libobjc-4.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libp11-kit-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libpkgconf-3.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libpng15-15.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libpython3.9.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libquadmath-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libreadline8.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libsqlite3-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libssl-1_1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libssp-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libstdc++-6.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libsystre-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libtasn1-6.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libtermcap-0.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libtre-5.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libwinpthread-1.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libx265.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libxxhash.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\libzstd.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\swresample-3.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\swscale-5.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\zlib.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\zlib1.dll
+  复制了 53 个文件

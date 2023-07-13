@@ -181,26 +181,79 @@ int main()
        AP4_AtomFactory factory2;
        factory2.CreateAtomFromStream(*m_FragmentStream, pAtom);
        AP4_ContainerAtom* moov = dynamic_cast<AP4_ContainerAtom*>(pAtom);
+      
 
+       avformat_alloc_output_context2(&outputFormatContext, NULL, NULL, "tmp.mp4");
 
+       // 打开输出文件
+       if (avio_open(&outputFormatContext->pb, "tmp.mp4", AVIO_FLAG_WRITE) < 0) {
+           fprintf(stderr, "无法打开输出文件\n");
+           return -1;
+       }
+
+       // 创建视频流
+       videoStream = avformat_new_stream(outputFormatContext, nullptr);
+       if (!videoStream) {
+           fprintf(stderr, "无法创建视频流\n");
+           return -1;
+       }
+
+      
        const AVCodec* decodec = avcodec_find_decoder(AV_CODEC_ID_VP9);
-
+       const AVCodec* encodec = avcodec_find_encoder(AV_CODEC_ID_H264);
        decodecContext = avcodec_alloc_context3(decodec);
-       int deaocode = avcodec_open2(decodecContext, decodec, 0);
+       encodecContext = avcodec_alloc_context3(encodec);
+       encodecContext->codec_type = AVMediaType::AVMEDIA_TYPE_VIDEO;
+       encodecContext->codec_id = AV_CODEC_ID_H264;
+       encodecContext->pix_fmt = AV_PIX_FMT_YUV420P;
+       encodecContext->width = 0x3c0;
+       encodecContext->height = 0x21c;
+       encodecContext->level = 0x1E;
+       encodecContext->bit_rate = 0;
+       encodecContext->framerate = AVRational{ 1, 0x18 };
+       encodecContext->time_base = AVRational{ 1, 0x18 };
+       encodecContext->sample_aspect_ratio = AVRational{ 1, 0x1 };
+     
+        av_opt_set_int(encodecContext->priv_data, "crf", 0x16, 0);
+       encodecContext->flags |= 0x400000;
+     
+       int enaocode = avcodec_open2(encodecContext, encodec, 0);
 
+       if (enaocode < 0) {
+           printf("avcodec_open2 encode failed \n");
+           return 0;
+       }
+      
+       int deaocode = avcodec_open2(decodecContext, decodec, 0);
+      
        if (deaocode < 0) {
            printf("avcodec_open2 decode failed \n");
            return 0;
        }
+
+      
+
+       avcodec_parameters_from_context(videoStream->codecpar, encodecContext);
+       // av_dump_format(outputFormatContext, videoStream->id, "output.mp4", 1);
+
+
+
+       
+        // 写入文件头部信息
+       avformat_write_header(outputFormatContext, NULL);
        while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
 
 
 
             }
 
+       // 写入文件尾部信息
+       av_write_trailer(outputFormatContext);
+       avcodec_free_context(&encodecContext);
+       avcodec_free_context(&decodecContext);
+       avformat_free_context(outputFormatContext);
 
-
-       printf("all frame decrypted");
+       printf("\nall frame decrypted");
 
 
 //    char ecryptBuffer[0x49d1] = { 0, };
