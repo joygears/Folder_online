@@ -1,171 +1,185 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1091,5): warning MSB8027: 名为 base64.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 base64.cpp, tool\base64.cpp。
-  MySampleReader.cpp
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x11d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x11e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x122 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x123 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x124 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x125 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x126 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x127 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x129 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x101c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1022 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1023 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1049 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x104f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1052 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x11d0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x11d1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x11d3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1224 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1225 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1227 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x127f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1280 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1282 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12cc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12cd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12cf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12d0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12d1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x12d5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1321 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1322 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1324 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1325 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1326 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x132a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13b8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13b9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13ba 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13bb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13bd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13be 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x13c0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1421 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1422 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1423 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1424 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1426 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1427 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1429 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14a6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14a7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14a8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14a9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14ab 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14ac 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x14ae 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x17ff 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1801 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x180a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1810 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1813 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1815 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1819 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x18bd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x18be 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x18c1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x18c2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x18ca 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x18cb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1954 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1955 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1956 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1957 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1962 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1963 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1965 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a21 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a22 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a24 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a27 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a28 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a2c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a2e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a31 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a32 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1a33 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bc7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bc8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bd6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bd7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bd8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bda 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bdb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bdc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bde 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1be0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1be2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1be3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1be7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1be8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1be9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bea 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1beb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bed 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bf1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1bf3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c6b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c6d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c6e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c79 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c7a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c7c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c80 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c86 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c88 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c8b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c8c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1c8d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1db4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1dbd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1dbf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1dc0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1e88 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1e8b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1e8d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1e90 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1e92 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x1e93 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2088 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2089 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x208d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2090 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2091 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2095 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2096 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2097 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x220e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x220f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2213 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2215 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2218 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2219 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x221b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x221c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x2220 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x222a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22c9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22cb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22cc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22cd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22cf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(1,1): warning C4828: 文件包含在偏移 0x22d0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(39,21): warning C4244: “初始化”: 从“double”转换到“int64_t”，可能丢失数据
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(51,21): warning C4018: “<”: 有符号/无符号不匹配
-D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\MySampleReader.cpp(62,27): warning C4018: “<”: 有符号/无符号不匹配
+  widevinecdm.cpp
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1136,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1137,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1139,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1144,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1145,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1146,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1147,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1148,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1149,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1150,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1151,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1152,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1153,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1154,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1155,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1156,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1157,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1158,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1159,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1160,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1161,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1162,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1163,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1164,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1165,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1166,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1167,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1168,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1169,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1170,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1171,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1172,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1173,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1174,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1175,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1176,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1177,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1178,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1179,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1180,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1181,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1182,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1183,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1184,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1185,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1186,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1187,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1188,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1189,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1190,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1191,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1192,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1193,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1194,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1195,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1196,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1197,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1198,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1199,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1200,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1201,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1202,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1203,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1204,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1205,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1206,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1207,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1208,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1209,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1210,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1211,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1212,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1213,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1214,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1215,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1216,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1217,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1218,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1219,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1220,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1221,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1222,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1223,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1224,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1225,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1226,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1227,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1228,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1229,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1230,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1231,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1232,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1233,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1234,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1235,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1236,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1237,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1238,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1239,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1240,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1241,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1242,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1243,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1244,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1245,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1246,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1247,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1248,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1249,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1250,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1251,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1252,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1253,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1254,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1255,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1256,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1257,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1258,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1259,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1298,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1299,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1306,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1316,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1317,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1326,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1327,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1328,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1329,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1330,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1331,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1340,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1341,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1342,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1343,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1344,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1345,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1346,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1347,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1348,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1349,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1350,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1351,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1352,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1353,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1354,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1355,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1356,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1357,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1358,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1359,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1360,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1361,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1362,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1363,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1364,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1365,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1366,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1367,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1368,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1369,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1370,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1371,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1372,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1373,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1374,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1375,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1376,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1377,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1378,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1379,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1380,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1381,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1382,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1383,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1384,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1385,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1386,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\InlineHook.hpp(1387,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\widevinecdm.cpp(263,53): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\widevinecdm\widevinecdm.cpp(998,98): warning C4244: “参数”: 从“double”转换到“size_t”，可能丢失数据
   widevinecdm.vcxproj -> D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\Debug\widevinecdm.exe
   D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\avcodec-58.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\widevinecdm\sdk\bin\avdevice-58.dll

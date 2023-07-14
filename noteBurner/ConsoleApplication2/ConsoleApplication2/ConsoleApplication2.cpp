@@ -20,7 +20,7 @@ const AVCodec* encodec = 0;
 int main() {
 
 	AP4_ByteStream* input_stream = NULL;
-	AP4_Result result = AP4_FileByteStream::Create(R"(0-44306.mp4)",
+	AP4_Result result = AP4_FileByteStream::Create(R"(all.mp4)",
 		AP4_FileByteStream::STREAM_MODE_READ,
 		input_stream);
 
@@ -99,12 +99,18 @@ int main() {
 		printf( "format:%s, codec:%s, type:%d \n", format, codec.GetChars(), OriginalSampleDescription->GetType());
 	}
 	AP4_Atom::Type trackType = pTrack->GetType();
+	AP4_UI16 width ;
+	AP4_UI16 height ;
 	if (trackType != AP4_Track::TYPE_AUDIO ) {
 		if(trackType != AP4_Track::TYPE_VIDEO)
 		return 1600;
+
+		
+
 		AP4_VideoSampleDescription* VideoSampleDescription = dynamic_cast<AP4_VideoSampleDescription*>(OriginalSampleDescription);
-		AP4_UI16 width = VideoSampleDescription->GetWidth();
-		AP4_UI16 height = VideoSampleDescription->GetHeight();
+		
+		 width = VideoSampleDescription->GetWidth();
+		 height = VideoSampleDescription->GetHeight();
 		std:: string codecStr = codec.GetChars();
 		video_decoder_config.width = width;
 		video_decoder_config.height = height;
@@ -154,7 +160,7 @@ int main() {
 
 
 	 AP4_ByteStream* input_stream2 = NULL;
-	  result = AP4_FileByteStream::Create(R"(0-44306.mp4)",
+	  result = AP4_FileByteStream::Create(R"(all.mp4)",
 		 AP4_FileByteStream::STREAM_MODE_READ,
 		  input_stream2);
 
@@ -205,15 +211,18 @@ int main() {
 	 AP4_DataBuffer sample_data;
 	 
 	 MyLinearReader LinearReader(*movie, input_stream3);
+	 AP4_LinearReader fpsReader(*movie, input_stream3);
 	 LinearReader.EnableTrack(pTrack->GetId());
+	 fpsReader.EnableTrack(pTrack->GetId());
 	 AP4_ByteStream* m_FragmentStream = *(AP4_ByteStream**)(((char*)&LinearReader) + 0x14);
 	 AP4_Atom *pAtom;
 	 AP4_AtomFactory factory2;
 	 factory2.CreateAtomFromStream(*m_FragmentStream, pAtom);
 	 AP4_ContainerAtom* moov = dynamic_cast<AP4_ContainerAtom*>(pAtom);
 
-	 
-
+	 fpsReader.ReadNextSample(pTrack->GetId(), sample, sample_data);
+	 int frameRate = TimeScale / sample.GetDuration();
+	 fpsReader.SeekTo(0);
 	 avformat_alloc_output_context2(&outputFormatContext, NULL, NULL, "tmp.mp4");
 	
 	 // 打开输出文件
@@ -238,15 +247,25 @@ int main() {
 	 encodec = avcodec_find_encoder(AV_CODEC_ID_H264);
 	decodecContext = avcodec_alloc_context3(decodec);
 	 encodecContext = avcodec_alloc_context3(encodec);
-	 encodecContext->codec_type = AVMediaType::AVMEDIA_TYPE_VIDEO;
-	 encodecContext->codec_id = AV_CODEC_ID_H264;
-	 encodecContext->pix_fmt = AV_PIX_FMT_YUV420P;
-	 encodecContext->width = 0x3c0;
-	 encodecContext->height = 0x21c;
-	 encodecContext->level = 0x1E;
-	 encodecContext->bit_rate = 0;
-	 encodecContext->framerate = AVRational{ 1, 0x18 };
-	 encodecContext->time_base = AVRational{1, 0x18};
+	 if (encodecContext) {
+		 encodecContext->codec_type = AVMediaType::AVMEDIA_TYPE_VIDEO;
+		 encodecContext->codec_id = encodec->id;
+		 encodecContext->pix_fmt = *encodec->pix_fmts;
+
+		 encodecContext->width = width;
+		 encodecContext->height = height;
+
+		 encodecContext->level = 0x1E;
+		 
+		 encodecContext->framerate = AVRational{ 1, frameRate };
+		 encodecContext->time_base = AVRational{ 1, frameRate };
+	 }
+	 
+	
+
+	
+	
+	 
 	encodecContext->sample_aspect_ratio = AVRational{ 1, 0x1 };
 
 	av_opt_set_int(encodecContext->priv_data, "crf", 0x16, 0);
@@ -274,7 +293,7 @@ int main() {
 
 	 // 写入文件头部信息
 	avformat_write_header(outputFormatContext, NULL);
-
+	
 	 while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
 		
 			 

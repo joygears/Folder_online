@@ -127,3 +127,36 @@ std::vector<std::string> splitString(const std::string& input, char delimiter) {
 }
 
 
+int __cdecl transToVideoProfile(char a1)
+{
+    int result; // eax
+
+    switch (a1)
+    {
+    case 66:
+        result = 2;
+        break;
+    case 77:
+        result = 3;
+        break;
+    case 88:
+        result = 4;
+        break;
+    case 100:
+        result = 5;
+        break;
+    case 110:
+        result = 6;
+        break;
+    case 122:
+        result = 7;
+        break;
+    case -112:
+        result = 8;
+        break;
+    default:
+        result = 0;
+        break;
+    }
+    return result;
+}

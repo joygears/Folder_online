@@ -116,9 +116,109 @@ int main()
     video_decoder_config.height = 0x21c;
     video_decoder_config.m_18 = 0;
     video_decoder_config.m_1C = 0;
-    video_decoder_config.m_20 = 0xF;*/
+    video_decoder_config.m_20 = 0xF;
 
     char video_decoder_config[] = { 0x03,0x00,0x00,0x00,0x01,0x00,0x00,0x00,0x02,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xC0,0x03,0x00,0x00,0x1C,0x02,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x0F,0x00,0x00,0x00 };
+    */
+
+
+    AP4_ByteStream* input_stream = NULL;
+    AP4_Result result = AP4_FileByteStream::Create(R"(all.mp4)",
+        AP4_FileByteStream::STREAM_MODE_READ,
+        input_stream);
+
+    if (result != AP4_SUCCESS || input_stream == nullptr) {
+        // 处理文件打开错误
+        return result;
+    }
+    AP4_File file(*input_stream);
+    AP4_Movie* movie = file.GetMovie();
+
+    
+    //获取ProtectedSampleDescription
+    AP4_Cardinal track_count = movie->GetTracks().ItemCount();
+    if (!track_count)
+        return 1600;
+    AP4_ProtectedSampleDescription* ProtectedSampleDescription;
+    AP4_Track* pTrack;
+    while (1) {
+
+        AP4_List<AP4_Track>::Item* item = movie->GetTracks().FirstItem();
+        pTrack = item->GetData();
+        if (!pTrack)
+            return 1600;
+        AP4_SampleDescription* SampleDescription = pTrack->GetSampleDescription(0);
+        if (SampleDescription && SampleDescription->GetType() != AP4_SampleDescription::Type::TYPE_PROTECTED) {
+            //处理未加密的track流
+        }
+        else {
+            ProtectedSampleDescription = dynamic_cast<AP4_ProtectedSampleDescription*>(SampleDescription);
+            if (ProtectedSampleDescription)
+                break;
+        }
+    }
+    AP4_UI32 schemeType = ProtectedSampleDescription->GetSchemeType();
+    if (schemeType == 0x63656E63
+        || schemeType == 0x63626331
+        || schemeType == 0x63656E73
+        || schemeType == 0x63626373
+        || schemeType == 0x70696666)
+    {
+        printf("protection scheme type: %u\n", schemeType);
+    }
+    else
+    {
+        printf("unhandled protection scheme type: %u\n", schemeType);
+    }
+
+
+    //配置video_decoder_config
+    VideoDecoderConfig video_decoder_config{ 0 };
+    AP4_SampleDescription* OriginalSampleDescription = ProtectedSampleDescription->GetOriginalSampleDescription();
+    char* format;
+    AP4_String codec;
+    if (OriginalSampleDescription) {
+        format = (char*)AP4_GetFormatName(OriginalSampleDescription->GetFormat());
+        OriginalSampleDescription->GetCodecString(codec);
+
+        printf("format:%s, codec:%s, type:%d \n", format, codec.GetChars(), OriginalSampleDescription->GetType());
+    }
+    AP4_UI16 width;
+    AP4_UI16 height;
+    AP4_Atom::Type trackType = pTrack->GetType();
+    if (trackType != AP4_Track::TYPE_AUDIO) {
+        if (trackType != AP4_Track::TYPE_VIDEO)
+            return 1600;
+        AP4_VideoSampleDescription* VideoSampleDescription = dynamic_cast<AP4_VideoSampleDescription*>(OriginalSampleDescription);
+         width = VideoSampleDescription->GetWidth();
+         height = VideoSampleDescription->GetHeight();
+        std::string codecStr = codec.GetChars();
+        video_decoder_config.width = width;
+        video_decoder_config.height = height;
+        video_decoder_config.m_18 = 0;
+        video_decoder_config.m_1C = 0;
+        if (codecStr.find("avc1", 0) == std::string::npos) {
+
+            if (codecStr.find("vp09", 0) == std::string::npos)
+                printf("codec %s not yet handled ", codecStr.c_str());
+            video_decoder_config.profile = 1;
+            video_decoder_config.codec = 3;
+
+
+        }
+        else {
+            AP4_AvcSampleDescription* AvcSampleDescription = dynamic_cast<AP4_AvcSampleDescription*>(OriginalSampleDescription);
+            AP4_UI08 profile = AvcSampleDescription->GetProfile();
+            AP4_UI08 level = AvcSampleDescription->GetLevel();
+            int videoProfile = transToVideoProfile(profile);
+
+            video_decoder_config.codec = 2;
+            video_decoder_config.profile = videoProfile;
+
+        }
+        video_decoder_config.alpha_mode = 2;
+    }
+
 
     initializeApp();
    InitializeCdmModule_4();
@@ -129,43 +229,11 @@ int main()
    proxy->CreateSessionAndGenerateRequest(1, 0, 0, (const UINT8*)pssh.c_str(), pssh.size());
     license = base64_decode(license);
     proxy->UpdateSession(1, g_session_id.c_str(), g_session_id.size(), (uint8_t*)license.c_str(), license.size());
-   proxy->InitializeVideoDecoder((void *)video_decoder_config);
+   proxy->InitializeVideoDecoder(&video_decoder_config);
 
 
 
-   AP4_ByteStream* input_stream = NULL;
-   AP4_Result result = AP4_FileByteStream::Create(R"(all.mp4)",
-       AP4_FileByteStream::STREAM_MODE_READ,
-       input_stream);
-
-   if (result != AP4_SUCCESS || input_stream == nullptr) {
-       // 处理文件打开错误
-       return result;
-   }
-   AP4_File file(*input_stream);
-   AP4_Movie* movie = file.GetMovie();
-
-   AP4_Cardinal track_count = movie->GetTracks().ItemCount();
-   if (!track_count)
-       return 1600;
-   AP4_ProtectedSampleDescription* ProtectedSampleDescription;
-   AP4_Track* pTrack;
-   while (1) {
-
-       AP4_List<AP4_Track>::Item* item = movie->GetTracks().FirstItem();
-       pTrack = item->GetData();
-       if (!pTrack)
-           return 1600;
-       AP4_SampleDescription* SampleDescription = pTrack->GetSampleDescription(0);
-       if (SampleDescription && SampleDescription->GetType() != AP4_SampleDescription::Type::TYPE_PROTECTED) {
-           //处理未加密的track流
-       }
-       else {
-           ProtectedSampleDescription = dynamic_cast<AP4_ProtectedSampleDescription*>(SampleDescription);
-           if (ProtectedSampleDescription)
-               break;
-       }
-   }
+   
 
        AP4_ByteStream* input_stream3 = NULL;
        result = AP4_FileByteStream::Create(R"(all.mp4)",
@@ -206,10 +274,9 @@ int main()
        encodecContext->codec_type = AVMediaType::AVMEDIA_TYPE_VIDEO;
        encodecContext->codec_id = AV_CODEC_ID_H264;
        encodecContext->pix_fmt = AV_PIX_FMT_YUV420P;
-       encodecContext->width = 0x3c0;
-       encodecContext->height = 0x21c;
+       encodecContext->width = width;
+       encodecContext->height = height;
        encodecContext->level = 0x1E;
-       encodecContext->bit_rate = 0;
        encodecContext->framerate = AVRational{ 1, 0x18 };
        encodecContext->time_base = AVRational{ 1, 0x18 };
        encodecContext->sample_aspect_ratio = AVRational{ 1, 0x1 };
