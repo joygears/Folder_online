@@ -28,6 +28,7 @@ int main()
             return MyData{ 2, 1 };
         }
     );
+   
     printf("1");
     auto dataFuture = produceTask.get_future();
 
