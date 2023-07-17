@@ -103,6 +103,7 @@ void initializeApp() {
 
 int main()
 {
+    string input_file = "all.mp4";
     string cert = "Cr0CCAMSEOVEukALwQ8307Y2+LVP+0MYh/HPkwUijgIwggEKAoIBAQDm875btoWUbGqQD8eAGuBlGY+Pxo8YF1LQR+Ex0pDONMet8EHslcZRBKNQ/09RZFTP0vrYimyYiBmk9GG+S0wB3CRITgweNE15cD33MQYyS3zpBd4z+sCJam2+jj1ZA4uijE2dxGC+gRBRnw9WoPyw7D8RuhGSJ95OEtzg3Ho+mEsxuE5xg9LM4+Zuro/9msz2bFgJUjQUVHo5j+k4qLWu4ObugFmc9DLIAohL58UR5k0XnvizulOHbMMxdzna9lwTw/4SALadEV/CZXBmswUtBgATDKNqjXwokohncpdsWSauH6vfS6FXwizQoZJ9TdjSGC60rUB2t+aYDm74cIuxAgMBAAE6EHRlc3QubmV0ZmxpeC5jb20SgAOE0y8yWw2Win6M2/bw7+aqVuQPwzS/YG5ySYvwCGQd0Dltr3hpik98WijUODUr6PxMn1ZYXOLo3eED6xYGM7Riza8XskRdCfF8xjj7L7/THPbixyn4mULsttSmWFhexzXnSeKqQHuoKmerqu0nu39iW3pcxDV/K7E6aaSr5ID0SCi7KRcL9BCUCz1g9c43sNj46BhMCWJSm0mx1XFDcoKZWhpj5FAgU4Q4e6f+S8eX39nf6D6SJRb4ap7Znzn7preIvmS93xWjm75I6UBVQGo6pn4qWNCgLYlGGCQCUm5tg566j+/g5jvYZkTJvbiZFwtjMW5njbSRwB3W4CrKoyxw4qsJNSaZRTKAvSjTKdqVDXV/U5HK7SaBA6iJ981/aforXbd2vZlRXO/2S+Maa2mHULzsD+S5l4/YGpSt7PnkCe25F+nAovtl/ogZgjMeEdFyd/9YMYjOS4krYmwp3yJ7m9ZzYCQ6I8RQN4x/yLlHG5RH/+WNLNUs6JAZ0fFdCmw=";
     string pssh = "AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAVvYDgAAAAAAAAAAA==";
     cert = base64_decode(cert);
@@ -123,7 +124,7 @@ int main()
 
 
     AP4_ByteStream* input_stream = NULL;
-    AP4_Result result = AP4_FileByteStream::Create(R"(all.mp4)",
+    AP4_Result result = AP4_FileByteStream::Create(input_file.c_str(),
         AP4_FileByteStream::STREAM_MODE_READ,
         input_stream);
 
@@ -236,7 +237,7 @@ int main()
    
 
        AP4_ByteStream* input_stream3 = NULL;
-       result = AP4_FileByteStream::Create(R"(all.mp4)",
+       result = AP4_FileByteStream::Create(input_file.c_str(),
            AP4_FileByteStream::STREAM_MODE_READ,
            input_stream3);
        AP4_Sample sample;
@@ -266,23 +267,59 @@ int main()
            return -1;
        }
 
+       //获取sample_aspect_ratio
+       AVFormatContext* Formatcontext = 0;
+       int result1 = avformat_open_input(&Formatcontext, input_file.c_str(), 0, 0);
+       int result2 = avformat_find_stream_info(Formatcontext, 0);
+       AVStream* stream = Formatcontext->streams[0];
+       AVRational sample_aspect_ratio = av_guess_sample_aspect_ratio(Formatcontext, stream, 0);
+       int64_t bit_rate = Formatcontext->bit_rate;
+       if (sample_aspect_ratio.den == 0 || sample_aspect_ratio.num == 0) {
+           sample_aspect_ratio = AVRational{ 1, 0x1 }; // 从licensedMainfest获取
+       }
       
        const AVCodec* decodec = avcodec_find_decoder(AV_CODEC_ID_VP9);
        const AVCodec* encodec = avcodec_find_encoder(AV_CODEC_ID_H264);
        decodecContext = avcodec_alloc_context3(decodec);
        encodecContext = avcodec_alloc_context3(encodec);
-       encodecContext->codec_type = AVMediaType::AVMEDIA_TYPE_VIDEO;
-       encodecContext->codec_id = AV_CODEC_ID_H264;
-       encodecContext->pix_fmt = AV_PIX_FMT_YUV420P;
-       encodecContext->width = width;
-       encodecContext->height = height;
-       encodecContext->level = 0x1E;
-       encodecContext->framerate = AVRational{ 1, 0x18 };
-       encodecContext->time_base = AVRational{ 1, 0x18 };
-       encodecContext->sample_aspect_ratio = AVRational{ 1, 0x1 };
-     
-        av_opt_set_int(encodecContext->priv_data, "crf", 0x16, 0);
-       encodecContext->flags |= 0x400000;
+       if (encodecContext) {
+           encodecContext->codec_type = AVMediaType::AVMEDIA_TYPE_VIDEO;
+           encodecContext->codec_id = encodec->id;
+           encodecContext->pix_fmt = *encodec->pix_fmts;
+
+           encodecContext->width = width;
+           encodecContext->height = height;
+
+           encodecContext->level = 0x1E;
+
+           encodecContext->framerate = AVRational{ 1, stream->avg_frame_rate.num };
+           encodecContext->time_base = AVRational{ 1, stream->avg_frame_rate.num };
+           encodecContext->sample_aspect_ratio = sample_aspect_ratio;
+           auto getQualityFromBitrate = [](int64_t bitrate)->int {
+               if ((bitrate & 0x8000000000000000ui64) == 0i64)
+               {
+                   if (*((int*)(&bitrate) + 1) > 0)
+                       return 4;
+                   if ((unsigned int)bitrate >= 0x16E360)
+                   {
+                       if ((unsigned int)bitrate < 0x2625A0)
+                           return 1;
+                       if ((unsigned int)bitrate < 0x3D0900)
+                           return 2;
+                       if ((unsigned int)bitrate < 0x5B8D80)
+                           return 3;
+                       return 4;
+                   }
+               }
+               return 0;
+           };
+
+           int64_t val = 22 - getQualityFromBitrate(bit_rate);
+           av_opt_set_int(encodecContext->priv_data, "crf", val, 0);
+
+           if ((*(char*)&outputFormatContext->oformat->flags & 0x40) != 0)
+               encodecContext->flags |= 0x400000;
+       }
      
        int enaocode = avcodec_open2(encodecContext, encodec, 0);
 

@@ -140,6 +140,12 @@ MyDecryptedBlock
 0x28 size
 
 
+0xD0 int meida_type   // 0 表示 音频  1 视频  2 字幕
+0x130 __int64 duration  
+0xA0 string Formatcontext__iformat__long_name  // Formatcontext->iformat->long_name + " - " + Formatcontext->iformat->name + " - " + Formatcontext->iformat->extensions
+VideoHandler_ctor
+
+
 
 
 

@@ -203,6 +203,17 @@ int main() {
 		 }
 	 }
 
+	 //获取sample_aspect_ratio
+	 AVFormatContext * Formatcontext = 0;
+	 int result1 = avformat_open_input(&Formatcontext, R"(D:\Users\Downloads\all.mp4)", 0, 0);
+	 int result2 = avformat_find_stream_info(Formatcontext, 0);
+	 AVStream* stream = Formatcontext->streams[0];
+	 AVRational sample_aspect_ratio = av_guess_sample_aspect_ratio(Formatcontext, stream, 0);
+	 int64_t bit_rate = Formatcontext->bit_rate;
+	 if (sample_aspect_ratio.den == 0 || sample_aspect_ratio.num == 0) {
+		 sample_aspect_ratio = AVRational{ 1, 0x1 }; // 从licensedMainfest获取
+	 }
+
 	 AP4_ByteStream* input_stream3 = NULL;
 	 result = AP4_FileByteStream::Create(R"(D:\Users\Downloads\all.mp4)",
 		 AP4_FileByteStream::STREAM_MODE_READ,
@@ -257,8 +268,33 @@ int main() {
 
 		 encodecContext->level = 0x1E;
 		 
-		 encodecContext->framerate = AVRational{ 1, frameRate };
-		 encodecContext->time_base = AVRational{ 1, frameRate };
+		 encodecContext->framerate = AVRational{ 1, stream->avg_frame_rate.num };
+		 encodecContext->time_base = AVRational{ 1, stream->avg_frame_rate.num };
+		 encodecContext->sample_aspect_ratio = sample_aspect_ratio;
+		 auto getQualityFromBitrate = [](int64_t bitrate)->int {
+			 if ((bitrate & 0x8000000000000000ui64) == 0i64)
+			 {
+				 if (*((int*)(&bitrate)+1) > 0)
+					 return 4;
+				 if ((unsigned int)bitrate >= 0x16E360)
+				 {
+					 if ((unsigned int)bitrate < 0x2625A0)
+						 return 1;
+					 if ((unsigned int)bitrate < 0x3D0900)
+						 return 2;
+					 if ((unsigned int)bitrate < 0x5B8D80)
+						 return 3;
+					 return 4;
+				 }
+			 }
+			 return 0;
+		 };
+
+		 int64_t val = 22 - getQualityFromBitrate(bit_rate);
+		 av_opt_set_int(encodecContext->priv_data, "crf", val, 0);
+
+		 if((*(char *)&outputFormatContext->oformat->flags & 0x40) != 0)
+			encodecContext->flags |= 0x400000;
 	 }
 	 
 	
@@ -266,10 +302,10 @@ int main() {
 	
 	
 	 
-	encodecContext->sample_aspect_ratio = AVRational{ 1, 0x1 };
+	
 
-	av_opt_set_int(encodecContext->priv_data, "crf", 0x16, 0);
-	 encodecContext->flags |= 0x400000;
+	
+	 
 	 int enaocode = avcodec_open2(encodecContext, encodec, 0);
 
 	 if (enaocode < 0) {
