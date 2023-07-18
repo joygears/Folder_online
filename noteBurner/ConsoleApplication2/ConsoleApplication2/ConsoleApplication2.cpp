@@ -205,7 +205,7 @@ int main() {
 
 	 //获取sample_aspect_ratio
 	 AVFormatContext * Formatcontext = 0;
-	 int result1 = avformat_open_input(&Formatcontext, R"(D:\Users\Downloads\all.mp4)", 0, 0);
+	 int result1 = avformat_open_input(&Formatcontext, R"(all.mp4)", 0, 0);
 	 int result2 = avformat_find_stream_info(Formatcontext, 0);
 	 AVStream* stream = Formatcontext->streams[0];
 	 AVRational sample_aspect_ratio = av_guess_sample_aspect_ratio(Formatcontext, stream, 0);
@@ -215,7 +215,7 @@ int main() {
 	 }
 
 	 AP4_ByteStream* input_stream3 = NULL;
-	 result = AP4_FileByteStream::Create(R"(D:\Users\Downloads\all.mp4)",
+	 result = AP4_FileByteStream::Create(R"(all.mp4)",
 		 AP4_FileByteStream::STREAM_MODE_READ,
 		 input_stream3);
 	 AP4_Sample sample;
@@ -253,7 +253,7 @@ int main() {
 	
 
 	
-	const AVCodec* decodec = avcodec_find_decoder(AV_CODEC_ID_VP9);
+	const AVCodec* decodec = avcodec_find_decoder(stream->codecpar->codec_id);
 	
 	 encodec = avcodec_find_encoder(AV_CODEC_ID_H264);
 	decodecContext = avcodec_alloc_context3(decodec);

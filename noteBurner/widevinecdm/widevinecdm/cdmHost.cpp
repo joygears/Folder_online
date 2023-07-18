@@ -3,8 +3,8 @@
 #include "widevinecdm.h"
 #include "base64.h"
 
-string getLicense(string session_id, string challeageBase64) {
-    std::string command = "getLicense.exe " + session_id + " " + challeageBase64;
+string getLicense(string url ,string session_id, string challeageBase64) {
+    std::string command = "getLicense.exe \"" + url +"\" " + session_id + " " + challeageBase64;
     std::string output = getCommandOutput(command);
 
     std::vector<std::string> lines = splitString(output, '\n');
@@ -131,6 +131,8 @@ void cdmHost::OnRejectPromise(uint32_t promise_id, int exception, uint32_t syste
 
 void cdmHost::OnSessionMessage(const char* session_id, uint32_t session_id_size, int message_type, const char* message, uint32_t message_size)
 {
+    string url = "https://www.netflix.com/watch/81405170?trackId=15036064&tctx=3%2C1%2C524805d0-02c8-484c-9d97-3dbe4ce44a77-2104468%2CNES_743E7DB0564DECE5F267D736BB9848-A3F87CB3ABAB23-15A789EEBD_p_1689650198442%2CNES_743E7DB0564DECE5F267D736BB9848_p_1689647325866%2C%2C%2C%2C%2CVideo%3A81281579%2CdetailsPagePlayButton";
+   
     Log(
         "[%08x] Host::OnSessionMessage, session_id %s, session_id_size %u, message_type %u, message_size %u, message %p ",
         this,
@@ -142,7 +144,7 @@ void cdmHost::OnSessionMessage(const char* session_id, uint32_t session_id_size,
     string licenseRequest = base64_encode(string(message, message_size));
     Log("licenseRequest: %s",licenseRequest.c_str());
     g_session_id = session_id;
-    license = getLicense(session_id, licenseRequest);
+    license = getLicense(url,session_id, licenseRequest);
     Log("license: %s", license.c_str());
     if (m_host) {
 

@@ -105,7 +105,7 @@ int main()
 {
     string input_file = "all.mp4";
     string cert = "Cr0CCAMSEOVEukALwQ8307Y2+LVP+0MYh/HPkwUijgIwggEKAoIBAQDm875btoWUbGqQD8eAGuBlGY+Pxo8YF1LQR+Ex0pDONMet8EHslcZRBKNQ/09RZFTP0vrYimyYiBmk9GG+S0wB3CRITgweNE15cD33MQYyS3zpBd4z+sCJam2+jj1ZA4uijE2dxGC+gRBRnw9WoPyw7D8RuhGSJ95OEtzg3Ho+mEsxuE5xg9LM4+Zuro/9msz2bFgJUjQUVHo5j+k4qLWu4ObugFmc9DLIAohL58UR5k0XnvizulOHbMMxdzna9lwTw/4SALadEV/CZXBmswUtBgATDKNqjXwokohncpdsWSauH6vfS6FXwizQoZJ9TdjSGC60rUB2t+aYDm74cIuxAgMBAAE6EHRlc3QubmV0ZmxpeC5jb20SgAOE0y8yWw2Win6M2/bw7+aqVuQPwzS/YG5ySYvwCGQd0Dltr3hpik98WijUODUr6PxMn1ZYXOLo3eED6xYGM7Riza8XskRdCfF8xjj7L7/THPbixyn4mULsttSmWFhexzXnSeKqQHuoKmerqu0nu39iW3pcxDV/K7E6aaSr5ID0SCi7KRcL9BCUCz1g9c43sNj46BhMCWJSm0mx1XFDcoKZWhpj5FAgU4Q4e6f+S8eX39nf6D6SJRb4ap7Znzn7preIvmS93xWjm75I6UBVQGo6pn4qWNCgLYlGGCQCUm5tg566j+/g5jvYZkTJvbiZFwtjMW5njbSRwB3W4CrKoyxw4qsJNSaZRTKAvSjTKdqVDXV/U5HK7SaBA6iJ981/aforXbd2vZlRXO/2S+Maa2mHULzsD+S5l4/YGpSt7PnkCe25F+nAovtl/ogZgjMeEdFyd/9YMYjOS4krYmwp3yJ7m9ZzYCQ6I8RQN4x/yLlHG5RH/+WNLNUs6JAZ0fFdCmw=";
-    string pssh = "AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAVvYDgAAAAAAAAAAA==";
+    string pssh = "AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAZulPgAAAAAAAAAAA==";
     cert = base64_decode(cert);
     pssh = base64_decode(pssh);
   /*  VideoDecoderConfig video_decoder_config;
@@ -198,7 +198,7 @@ int main()
         video_decoder_config.height = height;
         video_decoder_config.m_18 = 0;
         video_decoder_config.m_1C = 0;
-        if (codecStr.find("avc1", 0) == std::string::npos) {
+        if (codecStr.find("av", 0) == std::string::npos) {
 
             if (codecStr.find("vp09", 0) == std::string::npos)
                 printf("codec %s not yet handled ", codecStr.c_str());
@@ -278,7 +278,7 @@ int main()
            sample_aspect_ratio = AVRational{ 1, 0x1 }; // 从licensedMainfest获取
        }
       
-       const AVCodec* decodec = avcodec_find_decoder(AV_CODEC_ID_VP9);
+       const AVCodec* decodec = avcodec_find_decoder(stream->codecpar->codec_id);
        const AVCodec* encodec = avcodec_find_encoder(AV_CODEC_ID_H264);
        decodecContext = avcodec_alloc_context3(decodec);
        encodecContext = avcodec_alloc_context3(encodec);
