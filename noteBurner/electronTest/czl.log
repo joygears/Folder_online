@@ -1,0 +1,2374 @@
+czl open file, FFFFFFFF, FFFFFFFF, FFFFFFFF, FFFFFFFF
+
+czl LoadLibrary widevinecdm.dll error  GetLasterror 126
+
+czl load widevinecdm success, 00000000, 00000000, 00000000, 00000000 
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5472908462574796818, 
+
+czl GetCdmHost called, version 10, user_data 4BED09A0
+czl originHostFunction called, originHost 4BED09B0
+czl new CDMHost 0CA0B670
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, FFFFFFFF, FFFFFFFF, FFFFFFFF, FFFFFFFF
+
+czl LoadLibrary widevinecdm.dll error  GetLasterror 126
+
+czl load widevinecdm success, 00000000, 00000000, 00000000, 00000000 
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4986521901842038802, 
+
+czl GetCdmHost called, version 10, user_data 452D09A0
+czl originHostFunction called, originHost 452D09B0
+czl new CDMHost 0C7CC2F8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, FFFFFFFF, FFFFFFFF, FFFFFFFF, FFFFFFFF
+
+czl LoadLibrary widevinecdm.dll error  GetLasterror 126
+
+czl load widevinecdm success, 00000000, 00000000, 00000000, 00000000 
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3635416037668683794, 
+
+czl GetCdmHost called, version 10, user_data 326D09A0
+czl originHostFunction called, originHost 326D09B0
+czl new CDMHost 0C9A5240
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, FFFFFFFF, FFFFFFFF, FFFFFFFF, FFFFFFFF
+
+czl LoadLibrary widevinecdm.dll error  GetLasterror 126
+
+czl load widevinecdm success, 00000000, 00000000, 00000000, 00000000 
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5184680285446340626, 
+
+czl GetCdmHost called, version 10, user_data 47ED09A0
+czl originHostFunction called, originHost 47ED09B0
+czl new CDMHost 0C92AA50
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, FFFFFFFF, FFFFFFFF, FFFFFFFF, FFFFFFFF
+
+czl LoadLibrary widevinecdm.dll error  GetLasterror 126
+
+czl load widevinecdm success, 00000000, 00000000, 00000000, 00000000 
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4941485905568333842, 
+
+czl GetCdmHost called, version 10, user_data 448D09A0
+czl originHostFunction called, originHost 448D09B0
+czl new CDMHost 0C728C98
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, FFFFFFFF, FFFFFFFF, FFFFFFFF, FFFFFFFF
+
+czl LoadLibrary widevinecdm.dll error  GetLasterror 126
+
+czl load widevinecdm success, 00000000, 00000000, 00000000, 00000000 
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5698090642966577170, 
+
+czl GetCdmHost called, version 10, user_data 4F0D09A0
+czl originHostFunction called, originHost 4F0D09B0
+czl new CDMHost 0C5F5E48
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, FFFFFFFF, FFFFFFFF, FFFFFFFF, FFFFFFFF
+
+czl LoadLibrary widevinecdm.dll error  GetLasterror 126
+
+czl load widevinecdm success, 00000000, 00000000, 00000000, 00000000 
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4887442710039887890, 
+
+czl GetCdmHost called, version 10, user_data 43CD09A0
+czl originHostFunction called, originHost 43CD09B0
+czl new CDMHost 0C849490
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, FFFFFFFF, FFFFFFFF, FFFFFFFF, FFFFFFFF
+
+czl LoadLibrary widevinecdm.dll error  GetLasterror 126
+
+czl load widevinecdm success, 00000000, 00000000, 00000000, 00000000 
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3680456431988899858, 
+
+czl GetCdmHost called, version 10, user_data 330D09A0
+czl originHostFunction called, originHost 330D09B0
+czl new CDMHost 0C79B8D0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, FFFFFFFF, FFFFFFFF, FFFFFFFF, FFFFFFFF
+
+czl LoadLibrary widevinecdm.dll error  GetLasterror 126
+
+czl load widevinecdm success, 00000000, 00000000, 00000000, 00000000 
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3509341224064516114, 
+
+czl GetCdmHost called, version 10, user_data 30AD09A0
+czl originHostFunction called, originHost 30AD09B0
+czl new CDMHost 0C74E1E8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, FFFFFFFF, FFFFFFFF, FFFFFFFF, FFFFFFFF
+
+czl LoadLibrary widevinecdm.dll error  GetLasterror 126
+
+czl load widevinecdm success, 00000000, 00000000, 00000000, 00000000 
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 2617611730292834322, 
+
+czl GetCdmHost called, version 10, user_data 244D09A0
+czl originHostFunction called, originHost 244D09B0
+czl new CDMHost 0C84C778
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000488, 00000500, 000004FC, 00000504
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5680076244457095186, 
+
+czl GetCdmHost called, version 10, user_data 4ECD09A0
+czl originHostFunction called, originHost 4ECD09B0
+czl new CDMHost 0C80FAC8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000508, 00000510, 0000052C, 00000528
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3338192068718624786, 
+
+czl GetCdmHost called, version 10, user_data 2E4D09A0
+czl originHostFunction called, originHost 2E4D09B0
+czl new CDMHost 0CA4BC20
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000500, 00000504, 00000508, 00000510
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5346809872031678482, 
+
+czl GetCdmHost called, version 10, user_data 4A2D09A0
+czl originHostFunction called, originHost 4A2D09B0
+czl new CDMHost 0C6FD7F8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 000004F4, 000004F8, 000004FC, 00000500
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5400853067560124434, 
+
+czl GetCdmHost called, version 10, user_data 4AED09A0
+czl originHostFunction called, originHost 4AED09B0
+czl new CDMHost 0C92BCC0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000508, 0000050C, 00000524, 00000520
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6851004176114122770, 
+
+czl GetCdmHost called, version 10, user_data 5F0D09A0
+czl originHostFunction called, originHost 5F0D09B0
+czl new CDMHost 0C690EC8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000504, 00000510, 0000050C, 00000518
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4761341920473514002, 
+
+czl GetCdmHost called, version 10, user_data 420D09A0
+czl originHostFunction called, originHost 420D09B0
+czl new CDMHost 0C88BAE8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000508, 00000510, 000004FC, 00000480
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3383240434498142226, 
+
+czl GetCdmHost called, version 10, user_data 2EED09A0
+czl originHostFunction called, originHost 2EED09B0
+czl new CDMHost 0C43C9E8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000480, 00000484, 000004FC, 00000500
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6004335417627770898, 
+
+czl GetCdmHost called, version 10, user_data 534D09A0
+czl originHostFunction called, originHost 534D09B0
+czl new CDMHost 0C7A8248
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 0000050C, 00000510, 00000504, 00000508
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3995729983820529682, 
+
+czl GetCdmHost called, version 10, user_data 376D09A0
+czl originHostFunction called, originHost 376D09B0
+czl new CDMHost 0C77ED88
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000488, 000004FC, 00000500, 00000504
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4031758780839493650, 
+
+czl GetCdmHost called, version 10, user_data 37ED09A0
+czl originHostFunction called, originHost 37ED09B0
+czl new CDMHost 0C3AC8A0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000480, 00000484, 0000050C, 00000510
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6562781771421712402, 
+
+czl GetCdmHost called, version 10, user_data 5B0D09A0
+czl originHostFunction called, originHost 5B0D09B0
+czl new CDMHost 0C77A9F0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 000004F8, 000004F4, 000004FC, 00000500
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4959474328115609618, 
+
+czl GetCdmHost called, version 10, user_data 44CD09A0
+czl originHostFunction called, originHost 44CD09B0
+czl new CDMHost 0CA1C500
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 0000048C, 000004F8, 000004FC, 00000500
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6004335417627770898, 
+
+czl GetCdmHost called, version 10, user_data 534D09A0
+czl originHostFunction called, originHost 534D09B0
+czl new CDMHost 0C729FF8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 000004F8, 000004F4, 000004FC, 00000500
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6373604611109945362, 
+
+czl GetCdmHost called, version 10, user_data 586D09A0
+czl originHostFunction called, originHost 586D09B0
+czl new CDMHost 0C7F54A0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000504, 00000508, 00000484, 00000488
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5130637089917894674, 
+
+czl GetCdmHost called, version 10, user_data 472D09A0
+czl originHostFunction called, originHost 472D09B0
+czl new CDMHost 0CA887F8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 000004FC, 00000500, 00000480, 00000484
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 2896830096826433554, 
+
+czl GetCdmHost called, version 10, user_data 282D09A0
+czl originHostFunction called, originHost 282D09B0
+czl new CDMHost 0C73DB18
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000504, 00000514, 000004F4, 000004FC
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3176074851639099410, 
+
+czl GetCdmHost called, version 10, user_data 2C0D09A0
+czl originHostFunction called, originHost 2C0D09B0
+czl new CDMHost 0C931158
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000524, 00000520, 00000528, 0000052C
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4365010584735842322, 
+
+czl GetCdmHost called, version 10, user_data 3C8D09A0
+czl originHostFunction called, originHost 3C8D09B0
+czl new CDMHost 0C91BD90
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000504, 00000510, 00000484, 000004F8
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5968306620608806930, 
+
+czl GetCdmHost called, version 10, user_data 52CD09A0
+czl originHostFunction called, originHost 52CD09B0
+czl new CDMHost 0C7AA918
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000504, 00000508, 000004FC, 00000500
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4923471507058851858, 
+
+czl GetCdmHost called, version 10, user_data 444D09A0
+czl originHostFunction called, originHost 444D09B0
+czl new CDMHost 0C70AAB0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000504, 0000050C, 00000508, 00000510
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3284161242695991314, 
+
+czl GetCdmHost called, version 10, user_data 2D8D09A0
+czl originHostFunction called, originHost 2D8D09B0
+czl new CDMHost 0C7BAE70
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 0000051C, 00000520, 00000524, 00000528
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 2356419719457669138, 
+
+czl GetCdmHost called, version 10, user_data 20AD09A0
+czl originHostFunction called, originHost 20AD09B0
+czl new CDMHost 0CA8EF48
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 000004FC, 00000500, 00000504, 0000050C
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4599212333888176146, 
+
+czl GetCdmHost called, version 10, user_data 3FCD09A0
+czl originHostFunction called, originHost 3FCD09B0
+czl new CDMHost 0C879C68
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000484, 000004FC, 00000504, 00000508
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5671069045202354194, 
+
+czl GetCdmHost called, version 10, user_data 4EAD09A0
+czl originHostFunction called, originHost 4EAD09B0
+czl new CDMHost 0C7C4F80
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000504, 0000050C, 00000528, 00000524
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3113012087350099986, 
+
+czl GetCdmHost called, version 10, user_data 2B2D09A0
+czl originHostFunction called, originHost 2B2D09B0
+czl new CDMHost 0CA54D90
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000504, 00000508, 00000514, 00000518
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4238924363698536466, 
+
+czl GetCdmHost called, version 10, user_data 3ACD09A0
+czl originHostFunction called, originHost 3ACD09B0
+czl new CDMHost 0C8E1548
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 000004F4, 000004F8, 000004FC, 00000500
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6589803369185935378, 
+
+czl GetCdmHost called, version 10, user_data 5B6D09A0
+czl originHostFunction called, originHost 5B6D09B0
+czl new CDMHost 0C76AEF8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000508, 00000514, 000004F4, 000004F8
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5436881864579088402, 
+
+czl GetCdmHost called, version 10, user_data 4B6D09A0
+czl originHostFunction called, originHost 4B6D09B0
+czl new CDMHost 0C6FC708
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000504, 00000500, 00000514, 0000051C
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5508939458617016338, 
+
+czl GetCdmHost called, version 10, user_data 4C6D09A0
+czl originHostFunction called, originHost 4C6D09B0
+czl new CDMHost 0C94A0E0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 000004F4, 000004FC, 00000504, 00000508
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4896449909294628882, 
+
+czl GetCdmHost called, version 10, user_data 43ED09A0
+czl originHostFunction called, originHost 43ED09B0
+czl new CDMHost 0C7D2FF8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 0000051C, 00000520, 00000524, 00000528
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6535760173657489426, 
+
+czl GetCdmHost called, version 10, user_data 5AAD09A0
+czl originHostFunction called, originHost 5AAD09B0
+czl new CDMHost 0C9EC5C8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 0000050C, 00000514, 0000051C, 00000520
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3599413216611926034, 
+
+czl GetCdmHost called, version 10, user_data 31ED09A0
+czl originHostFunction called, originHost 31ED09B0
+czl new CDMHost 0C6E91E8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000508, 00000504, 000003D0, 000003D4
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 2698693291137826834, 
+
+czl GetCdmHost called, version 10, user_data 256D09A0
+czl originHostFunction called, originHost 256D09B0
+czl new CDMHost 0C7292D8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 000004F8, 000004F4, 000004FC, 00000500
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3383240434498142226, 
+
+czl GetCdmHost called, version 10, user_data 2EED09A0
+czl originHostFunction called, originHost 2EED09B0
+czl new CDMHost 0CA0DD40
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 000004F4, 000004F8, 00000504, 0000050C
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6418666583345856530, 
+
+czl GetCdmHost called, version 10, user_data 590D09A0
+czl originHostFunction called, originHost 590D09B0
+czl new CDMHost 0C64A860
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000484, 00000500, 000004F8, 000004FC
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3707499607668817938, 
+
+czl GetCdmHost called, version 10, user_data 336D09A0
+czl originHostFunction called, originHost 336D09B0
+czl new CDMHost 0C8AB5E0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000490, 00000504, 00000514, 00000518
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6688882560988086290, 
+
+czl GetCdmHost called, version 10, user_data 5CCD09A0
+czl originHostFunction called, originHost 5CCD09B0
+czl new CDMHost 0C80A090
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 000003D0, 000004F8, 000004FC, 00000500
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4932478706313592850, 
+
+czl GetCdmHost called, version 10, user_data 446D09A0
+czl originHostFunction called, originHost 446D09B0
+czl new CDMHost 0C9E8B48
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(00000000)
+czl open file, 00000508, 00000514, 000004F4, 000004FC
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3401254833007624210, 
+
+czl GetCdmHost called, version 10, user_data 2F2D09A0
+czl originHostFunction called, originHost 2F2D09B0
+czl new CDMHost 0045CD00
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0045CD00)
+czl Host::QueryOutputProtectionStatus
+czl init module(0047DD18), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0047DD18) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 3401257306908786706, 
+
+czl GetCdmHost called, version 10, user_data 2F2D1260
+czl originHostFunction called, originHost 2F2D1270
+czl new CDMHost 0045CDA0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0045CDA0)
+czl Host::QueryOutputProtectionStatus
+czl init module(0047E5E8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0047E5E8) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl CreateCdmInstance 10, com.widevine.alpha, 3401262392150065170, 
+
+czl GetCdmHost called, version 10, user_data 2F2D1180
+czl originHostFunction called, originHost 2F2D1190
+czl new CDMHost 0045D160
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 3
+czl module SetHost(0045D160)
+czl Host::QueryOutputProtectionStatus
+czl init module(00482AB0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(00482AB0) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(0047DD18): 944
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(0047E5E8): 944
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 4D5D0BF3C3D070205492B55F098238BA
+czl [0045cda0] Host::OnSessionMessage, session_id 4D5D0BF3C3D070205492B55F098238BA, session_id_size 32, message_type 0, message_size 5136, message 0047F920 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateSessionAndGenerateRequest(0047E5E8)
+czl Host::CreateFileIO
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(00482AB0): 944
+czl Host::OnResolvePromise, 00000002
+czl Host::OnResolveNewSessionPromise, 00000003, 4D5D0BF3C3D070205492B55F098238BA
+czl [0045d160] Host::OnSessionMessage, session_id 4D5D0BF3C3D070205492B55F098238BA, session_id_size 32, message_type 0, message_size 5136, message 00489020 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateSessionAndGenerateRequest(00482AB0)
+czl Host::RequestStorageId, 0
+czl CloseSession(00482AB0):
+czl Host::OnRejectPromise, 00000004 (null)
+czl OnStorageId(0047E5E8):
+czl Host::CreateFileIO
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, AE32EFD0B3C0BCD96EE61385A86731D8
+czl [0045cda0] Host::OnSessionMessage, session_id AE32EFD0B3C0BCD96EE61385A86731D8, session_id_size 32, message_type 0, message_size 3915, message 00519E48 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Host::RequestStorageId, 0
+czl OnStorageId(00482AB0):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 9D1DF9ADF2A236460685DC8CAE1ED1FF
+czl [0045d160] Host::OnSessionMessage, session_id 9D1DF9ADF2A236460685DC8CAE1ED1FF, session_id_size 32, message_type 0, message_size 3915, message 109B3198 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0047E5E8):
+czl Host::OnRejectPromise, 00000004 (null)
+czl CreateCdmInstance 10, com.widevine.alpha, 3401268164586110994, 
+
+czl GetCdmHost called, version 10, user_data 2F2D10A0
+czl originHostFunction called, originHost 2F2D10B0
+czl new CDMHost 0045CA80
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 4
+czl module SetHost(0045CA80)
+czl Host::QueryOutputProtectionStatus
+czl init module(004CA378), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(004CA378) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(004CA378): 944
+czl Host::OnResolvePromise, 00000002
+czl Host::OnResolveNewSessionPromise, 00000003, 4D5D0BF3C3D070205492B55F098238BA
+czl [0045ca80] Host::OnSessionMessage, session_id 4D5D0BF3C3D070205492B55F098238BA, session_id_size 32, message_type 0, message_size 5136, message 109B31C0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateSessionAndGenerateRequest(004CA378)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(004CA378):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 2616766B20E7D370BB1F41447D47C905
+czl [0045ca80] Host::OnSessionMessage, session_id 2616766B20E7D370BB1F41447D47C905, session_id_size 32, message_type 0, message_size 3915, message 109F57E8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(004CA378):
+czl Host::OnRejectPromise, 00000004 (null)
+czl Destroy(00482AB0):
+czl Destroy(0047E5E8):
+czl Destroy(0047DD18):
+czl Destroy(004CA378):
+czl CreateCdmInstance 10, com.widevine.alpha, 3401241089112277010, 
+
+czl GetCdmHost called, version 10, user_data 2F2D10A0
+czl originHostFunction called, originHost 2F2D10B0
+czl new CDMHost 0045D200
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 5
+czl module SetHost(0045D200)
+czl Host::QueryOutputProtectionStatus
+czl init module(004CA420), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(004CA420) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(004CA420): 944
+czl Host::OnResolvePromise, 00000002
+czl Host::OnResolveNewSessionPromise, 00000003, 4D5D0BF3C3D070205492B55F098238BA
+czl [0045d200] Host::OnSessionMessage, session_id 4D5D0BF3C3D070205492B55F098238BA, session_id_size 32, message_type 0, message_size 5136, message 0047F920 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateSessionAndGenerateRequest(004CA420)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(004CA420):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, ABA4F269454B68F519B3247602150AC9
+czl [0045d200] Host::OnSessionMessage, session_id ABA4F269454B68F519B3247602150AC9, session_id_size 32, message_type 0, message_size 3915, message 00475B50 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(004CA420):
+czl Host::OnRejectPromise, 00000004 (null)
+czl CreateCdmInstance 10, com.widevine.alpha, 3401260468004716562, 
+
+czl GetCdmHost called, version 10, user_data 2F2D0D20
+czl originHostFunction called, originHost 2F2D0D30
+czl new CDMHost 0045CEE0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 6
+czl module SetHost(0045CEE0)
+czl Host::QueryOutputProtectionStatus
+czl init module(004C9AF0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(004C9AF0) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(004C9AF0): 944
+czl Host::OnResolvePromise, 00000002
+czl Host::OnResolveNewSessionPromise, 00000003, 4D5D0BF3C3D070205492B55F098238BA
+czl [0045cee0] Host::OnSessionMessage, session_id 4D5D0BF3C3D070205492B55F098238BA, session_id_size 32, message_type 0, message_size 5136, message 00482B60 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateSessionAndGenerateRequest(004C9AF0)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(004C9AF0):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 5190CC54A760324A6A9E332539DDC424
+czl [0045cee0] Host::OnSessionMessage, session_id 5190CC54A760324A6A9E332539DDC424, session_id_size 32, message_type 0, message_size 3915, message 109B0048 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(004C9AF0):
+czl Host::OnRejectPromise, 00000004 (null)
+czl Destroy(004CA420):
+czl Destroy(004C9AF0):
+czl CreateCdmInstance 10, com.widevine.alpha, 3401241501429137426, 
+
+czl GetCdmHost called, version 10, user_data 2F2D0D20
+czl originHostFunction called, originHost 2F2D0D30
+czl new CDMHost 0045D2A0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 7
+czl module SetHost(0045D2A0)
+czl Host::QueryOutputProtectionStatus
+czl init module(004CA810), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(004CA810) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 3401234354603556882, 
+
+czl GetCdmHost called, version 10, user_data 2F2D0C40
+czl originHostFunction called, originHost 2F2D0C50
+czl new CDMHost 0045CF80
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 8
+czl module SetHost(0045CF80)
+czl Host::QueryOutputProtectionStatus
+czl init module(004CA4C8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(004CA4C8) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl CreateCdmInstance 10, com.widevine.alpha, 3401242188623904786, 
+
+czl GetCdmHost called, version 10, user_data 2F2D09A0
+czl originHostFunction called, originHost 2F2D09B0
+czl new CDMHost 0045CC60
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 9
+czl module SetHost(0045CC60)
+czl Host::QueryOutputProtectionStatus
+czl init module(004C9A48), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(004C9A48) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl CreateCdmInstance 10, com.widevine.alpha, 3401258543859367954, 
+
+czl GetCdmHost called, version 10, user_data 2F2D08C0
+czl originHostFunction called, originHost 2F2D08D0
+czl new CDMHost 0045D340
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 10
+czl module SetHost(0045D340)
+czl Host::QueryOutputProtectionStatus
+czl init module(004C99A0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(004C99A0) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl CreateCdmInstance 10, com.widevine.alpha, 3401259505932042258, 
+
+czl GetCdmHost called, version 10, user_data 2F2D07E0
+czl originHostFunction called, originHost 2F2D07F0
+czl new CDMHost 0045D480
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 11
+czl module SetHost(0045D480)
+czl Host::QueryOutputProtectionStatus
+czl init module(004CA6C0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(004CA6C0) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(004CA810): 944
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(004CA4C8): 944
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(004C9A48): 944
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(004C99A0): 944
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 4D5D0BF3C3D070205492B55F098238BA
+czl [0045cf80] Host::OnSessionMessage, session_id 4D5D0BF3C3D070205492B55F098238BA, session_id_size 32, message_type 0, message_size 5136, message 0047FA00 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateSessionAndGenerateRequest(004CA4C8)
+czl Host::CreateFileIO
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 4D5D0BF3C3D070205492B55F098238BA
+czl [0045cc60] Host::OnSessionMessage, session_id 4D5D0BF3C3D070205492B55F098238BA, session_id_size 32, message_type 0, message_size 5136, message 0047FA00 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateSessionAndGenerateRequest(004C9A48)
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 4D5D0BF3C3D070205492B55F098238BA
+czl [0045d340] Host::OnSessionMessage, session_id 4D5D0BF3C3D070205492B55F098238BA, session_id_size 32, message_type 0, message_size 5136, message 0047FA00 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateSessionAndGenerateRequest(004C99A0)
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(004CA6C0): 944
+czl Host::OnResolvePromise, 00000002
+czl CloseSession(004C99A0):
+czl Host::OnRejectPromise, 00000004 (null)
+czl Host::OnResolveNewSessionPromise, 00000003, 4D5D0BF3C3D070205492B55F098238BA
+czl [0045d480] Host::OnSessionMessage, session_id 4D5D0BF3C3D070205492B55F098238BA, session_id_size 32, message_type 0, message_size 5136, message 109ED900 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateSessionAndGenerateRequest(004CA6C0)
+czl Host::RequestStorageId, 0
+czl OnStorageId(004CA4C8):
+czl Host::CreateFileIO
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, A4E8962710F8EDF1DBE15561AADFD288
+czl [0045cf80] Host::OnSessionMessage, session_id A4E8962710F8EDF1DBE15561AADFD288, session_id_size 32, message_type 0, message_size 3915, message 10A3C6D0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Host::RequestStorageId, 0
+czl OnStorageId(004C9A48):
+czl Host::CreateFileIO
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 9A87554083876B26F3236306CFA05A96
+czl [0045cc60] Host::OnSessionMessage, session_id 9A87554083876B26F3236306CFA05A96, session_id_size 32, message_type 0, message_size 3915, message 10A3C6D0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Host::RequestStorageId, 0
+czl CloseSession(004CA4C8):
+czl Host::OnRejectPromise, 00000004 (null)
+czl CreateCdmInstance 10, com.widevine.alpha, 3401238340333207570, 
+
+czl GetCdmHost called, version 10, user_data 2F2D0700
+czl originHostFunction called, originHost 2F2D0710
+czl new CDMHost 0045C620
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 12
+czl module SetHost(0045C620)
+czl Host::QueryOutputProtectionStatus
+czl init module(004C9C40), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(004C9C40) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnStorageId(004C99A0):
+czl Host::CreateFileIO
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 9A8C02087642956C1A4C6EACBE7E6A20
+czl [0045d340] Host::OnSessionMessage, session_id 9A8C02087642956C1A4C6EACBE7E6A20, session_id_size 32, message_type 0, message_size 3915, message 10A42D48 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CloseSession(004C9A48):
+czl Host::OnRejectPromise, 00000004 (null)
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(004C9C40): 944
+czl Host::OnResolvePromise, 00000002
+czl Host::RequestStorageId, 0
+czl CloseSession(004CA6C0):
+czl Host::OnRejectPromise, 00000004 (null)
+czl CreateCdmInstance 10, com.widevine.alpha, 3401268989219831826, 
+
+czl GetCdmHost called, version 10, user_data 2F2D0620
+czl originHostFunction called, originHost 2F2D0630
+czl new CDMHost 0045D020
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 13
+czl module SetHost(0045D020)
+czl Host::QueryOutputProtectionStatus
+czl init module(004C9EE0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(004C9EE0) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnStorageId(004CA6C0):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 0FF7F234E6904B25C1F68F3731C9A5EF
+czl [0045d480] Host::OnSessionMessage, session_id 0FF7F234E6904B25C1F68F3731C9A5EF, session_id_size 32, message_type 0, message_size 3915, message 10A49B08 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Host::OnResolveNewSessionPromise, 00000003, 4D5D0BF3C3D070205492B55F098238BA
+czl [0045c620] Host::OnSessionMessage, session_id 4D5D0BF3C3D070205492B55F098238BA, session_id_size 32, message_type 0, message_size 5136, message 10A49B40 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateSessionAndGenerateRequest(004C9C40)
+czl Host::CreateFileIO
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(004C9EE0): 944
+czl Host::OnResolvePromise, 00000002
+czl Host::RequestStorageId, 0
+czl Host::OnResolveNewSessionPromise, 00000003, 4D5D0BF3C3D070205492B55F098238BA
+czl [0045d020] Host::OnSessionMessage, session_id 4D5D0BF3C3D070205492B55F098238BA, session_id_size 32, message_type 0, message_size 5136, message 10A49B40 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateSessionAndGenerateRequest(004C9EE0)
+czl OnStorageId(004C9C40):
+czl Host::CreateFileIO
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, DC6329B89F56BEC0BC7869D3A03B194F
+czl [0045c620] Host::OnSessionMessage, session_id DC6329B89F56BEC0BC7869D3A03B194F, session_id_size 32, message_type 0, message_size 3915, message 10AA8AA0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Host::RequestStorageId, 0
+czl OnStorageId(004C9EE0):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 28AFE00E41E529022FDB4BF3D35E442C
+czl [0045d020] Host::OnSessionMessage, session_id 28AFE00E41E529022FDB4BF3D35E442C, session_id_size 32, message_type 0, message_size 3915, message 10A47340 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(004C9C40):
+czl Host::OnRejectPromise, 00000004 (null)
+czl CloseSession(004C9EE0):
+czl Host::OnRejectPromise, 00000004 (null)
+czl CreateCdmInstance 10, com.widevine.alpha, 3401270088731459602, 
+
+czl GetCdmHost called, version 10, user_data 2F2D0380
+czl originHostFunction called, originHost 2F2D0390
+czl new CDMHost 0045CE40
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 14
+czl module SetHost(0045CE40)
+czl Host::QueryOutputProtectionStatus
+czl init module(004C9D90), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(004C9D90) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Destroy(004C99A0):
+czl Destroy(004C9A48):
+czl Destroy(004CA4C8):
+czl Destroy(004CA810):
+czl SetServerCertificate(004C9D90): 944
+czl Host::OnResolvePromise, 00000002
+czl Host::OnResolveNewSessionPromise, 00000003, 4D5D0BF3C3D070205492B55F098238BA
+czl [0045ce40] Host::OnSessionMessage, session_id 4D5D0BF3C3D070205492B55F098238BA, session_id_size 32, message_type 0, message_size 5136, message 109ED900 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateSessionAndGenerateRequest(004C9D90)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(004C9D90):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, DF90FCAEA097372EC19973ACC891E6CD
+czl [0045ce40] Host::OnSessionMessage, session_id DF90FCAEA097372EC19973ACC891E6CD, session_id_size 32, message_type 0, message_size 3914, message 00483B40 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(004C9D90):
+czl Host::OnRejectPromise, 00000004 (null)
+czl Destroy(004C9EE0):
+czl Destroy(004C9C40):
+czl Destroy(004CA6C0):
+czl open file, 00000508, 0000050C, 00000518, 0000051C
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6905055343101870098, 
+
+czl GetCdmHost called, version 10, user_data 5FCD09A0
+czl originHostFunction called, originHost 5FCD09B0
+czl new CDMHost 0C6EAC78
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0C6EAC78)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C704780), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C704780) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 6905057817003032594, 
+
+czl GetCdmHost called, version 10, user_data 5FCD1260
+czl originHostFunction called, originHost 5FCD1270
+czl new CDMHost 0C702058
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0C702058)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C704588), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C704588) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl CreateCdmInstance 10, com.widevine.alpha, 6905062902244311058, 
+
+czl GetCdmHost called, version 10, user_data 5FCD1180
+czl originHostFunction called, originHost 5FCD1190
+czl new CDMHost 0C6A5E88
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 3
+czl module SetHost(0C6A5E88)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C705350), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C705350) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateSessionAndGenerateRequest(0C704588)
+czl Host::CreateFileIO
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C705350)
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C704588):
+czl Host::CreateFileIO
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, BCBC8385C724AC6AF134D08EF85279A7
+czl [0c702058] Host::OnSessionMessage, session_id BCBC8385C724AC6AF134D08EF85279A7, session_id_size 32, message_type 0, message_size 3915, message 0C790F68 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C705350):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, AC9DDD8ADFFC601E1919250C73E020D6
+czl [0c6a5e88] Host::OnSessionMessage, session_id AC9DDD8ADFFC601E1919250C73E020D6, session_id_size 32, message_type 0, message_size 3915, message 0C792D60 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0C705350):
+czl Host::OnSessionClosed, AC9DDD8ADFFC601E1919250C73E020D6
+czl Host::OnResolvePromise, 00000004
+czl CloseSession(0C704588):
+czl Host::OnSessionClosed, BCBC8385C724AC6AF134D08EF85279A7
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 6905067712607682578, 
+
+czl GetCdmHost called, version 10, user_data 5FCD0700
+czl originHostFunction called, originHost 5FCD0710
+czl new CDMHost 0C6AB570
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 4
+czl module SetHost(0C6AB570)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C704630), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C704630) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C704630)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C704630):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, F19B5704621FFBF2F3A1F8ABF17E4E53
+czl [0c6ab570] Host::OnSessionMessage, session_id F19B5704621FFBF2F3A1F8ABF17E4E53, session_id_size 32, message_type 0, message_size 3914, message 112A3680 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Destroy(0C704588):
+czl Destroy(0C705350):
+czl CloseSession(0C704630):
+czl Host::OnSessionClosed, F19B5704621FFBF2F3A1F8ABF17E4E53
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 6905065925901287442, 
+
+czl GetCdmHost called, version 10, user_data 5FCD1180
+czl originHostFunction called, originHost 5FCD1190
+czl new CDMHost 0C6FBD88
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 5
+czl module SetHost(0C6FBD88)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C7052A8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C7052A8) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C7052A8)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C7052A8):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 7968E0BDD995FB03AD6A0A896E49136E
+czl [0c6fbd88] Host::OnSessionMessage, session_id 7968E0BDD995FB03AD6A0A896E49136E, session_id_size 32, message_type 0, message_size 3915, message 112A5AD0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0C7052A8):
+czl Host::OnSessionClosed, 7968E0BDD995FB03AD6A0A896E49136E
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0C704780):
+czl Destroy(0C704630):
+czl Destroy(0C7052A8):
+czl CreateCdmInstance 10, com.widevine.alpha, 6905065925901287442, 
+
+czl GetCdmHost called, version 10, user_data 5FCD1180
+czl originHostFunction called, originHost 5FCD1190
+czl new CDMHost 0C7009E0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 6
+czl module SetHost(0C7009E0)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C7046D8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C7046D8) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 6905065376145473554, 
+
+czl GetCdmHost called, version 10, user_data 5FCD0E00
+czl originHostFunction called, originHost 5FCD0E10
+czl new CDMHost 112AAE00
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 7
+czl module SetHost(112AAE00)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C705008), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C705008) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C705008)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C705008):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, E1F597415EAEC75562725BBB9C3BC8FC
+czl [112aae00] Host::OnSessionMessage, session_id E1F597415EAEC75562725BBB9C3BC8FC, session_id_size 32, message_type 0, message_size 3915, message 112A6048 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0C705008):
+czl Host::OnSessionClosed, E1F597415EAEC75562725BBB9C3BC8FC
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 6905062352488497170, 
+
+czl GetCdmHost called, version 10, user_data 5FCD0C40
+czl originHostFunction called, originHost 5FCD0C50
+czl new CDMHost 0C6E8020
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 8
+czl module SetHost(0C6E8020)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C704438), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C704438) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C704438)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C704438):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 88EB3B62B75A53A326FC36E714AC4648
+czl [0c6e8020] Host::OnSessionMessage, session_id 88EB3B62B75A53A326FC36E714AC4648, session_id_size 32, message_type 0, message_size 3915, message 112A12B8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateCdmInstance 10, com.widevine.alpha, 6905041049450709010, 
+
+czl GetCdmHost called, version 10, user_data 5FCD09A0
+czl originHostFunction called, originHost 5FCD09B0
+czl new CDMHost 0C7073C8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 9
+czl module SetHost(0C7073C8)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C704EB8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C704EB8) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 6905058916514660370, 
+
+czl GetCdmHost called, version 10, user_data 5FCD08C0
+czl originHostFunction called, originHost 5FCD08D0
+czl new CDMHost 112A78C8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 10
+czl module SetHost(112A78C8)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C704CC0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C704CC0) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateSessionAndGenerateRequest(0C704EB8)
+czl Host::CreateFileIO
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C704CC0)
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C704EB8):
+czl Host::CreateFileIO
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 291B90D42D4ADF942E8E84D4BF3DAE46
+czl [0c7073c8] Host::OnSessionMessage, session_id 291B90D42D4ADF942E8E84D4BF3DAE46, session_id_size 32, message_type 0, message_size 3915, message 0C70D3E8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C704CC0):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, C4EF90F485BEFB8A46B56E9E283F2CC3
+czl [112a78c8] Host::OnSessionMessage, session_id C4EF90F485BEFB8A46B56E9E283F2CC3, session_id_size 32, message_type 0, message_size 3915, message 0C786418 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0C704EB8):
+czl Host::OnSessionClosed, 291B90D42D4ADF942E8E84D4BF3DAE46
+czl Host::OnResolvePromise, 00000004
+czl CloseSession(0C704CC0):
+czl Host::OnSessionClosed, C4EF90F485BEFB8A46B56E9E283F2CC3
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 6905061802732683282, 
+
+czl GetCdmHost called, version 10, user_data 5FCD07E0
+czl originHostFunction called, originHost 5FCD07F0
+czl new CDMHost 0C6EA0E8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 11
+czl module SetHost(0C6EA0E8)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C705158), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C705158) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C705158)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C705158):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, A4AD4C62E488477E67BC6B086D8CD0E9
+czl [0c6ea0e8] Host::OnSessionMessage, session_id A4AD4C62E488477E67BC6B086D8CD0E9, session_id_size 32, message_type 0, message_size 3915, message 0C7874F8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0C705158):
+czl Host::OnSessionClosed, A4AD4C62E488477E67BC6B086D8CD0E9
+czl Host::OnResolvePromise, 00000004
+czl CloseSession(0C704438):
+czl Host::OnSessionClosed, 88EB3B62B75A53A326FC36E714AC4648
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 6905058504197799954, 
+
+czl GetCdmHost called, version 10, user_data 5FCD0700
+czl originHostFunction called, originHost 5FCD0710
+czl new CDMHost 0C6FD0F0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 12
+czl module SetHost(0C6FD0F0)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C704A20), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C704A20) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C704A20)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C704A20):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 03A2060A1750FA3ECF9C683B2EFD1BE4
+czl [0c6fd0f0] Host::OnSessionMessage, session_id 03A2060A1750FA3ECF9C683B2EFD1BE4, session_id_size 32, message_type 0, message_size 3915, message 0C745DF0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Destroy(0C704438):
+czl Destroy(0C705008):
+czl Destroy(0C704EB8):
+czl Destroy(0C704CC0):
+czl Destroy(0C705158):
+czl Destroy(0C7046D8):
+czl CloseSession(0C704A20):
+czl Host::OnSessionClosed, 03A2060A1750FA3ECF9C683B2EFD1BE4
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 6905042148962336786, 
+
+czl GetCdmHost called, version 10, user_data 5FCD1180
+czl originHostFunction called, originHost 5FCD1190
+czl new CDMHost 112A39C0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 13
+czl module SetHost(112A39C0)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C704F60), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C704F60) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C704F60)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C704F60):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 30F96FA6F02F76B5146BBF09544113A3
+czl [112a39c0] Host::OnSessionMessage, session_id 30F96FA6F02F76B5146BBF09544113A3, session_id_size 32, message_type 0, message_size 3915, message 0C70A640 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0C704F60):
+czl Host::OnSessionClosed, 30F96FA6F02F76B5146BBF09544113A3
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0C704A20):
+czl Destroy(0C704F60):
+czl open file, 00000518, 00000520, 000004FC, 00000500
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6256536996760518674, 
+
+czl GetCdmHost called, version 10, user_data 56CD09A0
+czl originHostFunction called, originHost 56CD09B0
+czl new CDMHost 0CA425A8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0CA425A8)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CA0FEF0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CA0FEF0) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 6256539608100634642, 
+
+czl GetCdmHost called, version 10, user_data 56CD1260
+czl originHostFunction called, originHost 56CD1270
+czl new CDMHost 0CA42BE8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0CA42BE8)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CA0FE48), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CA0FE48) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CA0FE48)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CA0FE48):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 822AB495956A7178D9626A0ADC0147D5
+czl [0ca42be8] Host::OnSessionMessage, session_id 822AB495956A7178D9626A0ADC0147D5, session_id_size 32, message_type 0, message_size 3915, message 0CA960B0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Destroy(0CA0FEF0):
+czl CreateCdmInstance 10, com.widevine.alpha, 6256537134199472146, 
+
+czl GetCdmHost called, version 10, user_data 56CD09A0
+czl originHostFunction called, originHost 56CD09B0
+czl new CDMHost 0CA42468
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 3
+czl module SetHost(0CA42468)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CA10388), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CA10388) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CA10388)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CA10388):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 40A3685B437337F828BA9BF9ED8F62BE
+czl [0ca42468] Host::OnSessionMessage, session_id 40A3685B437337F828BA9BF9ED8F62BE, session_id_size 32, message_type 0, message_size 3915, message 0CAD75B0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CA10388):
+czl Host::OnSessionClosed, 40A3685B437337F828BA9BF9ED8F62BE
+czl Host::OnResolvePromise, 00000004
+czl CloseSession(0CA0FE48):
+czl Host::OnSessionClosed, 822AB495956A7178D9626A0ADC0147D5
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0CA10388):
+czl Destroy(0CA0FE48):
+czl open file, 000004FC, 000004F8, 00000500, 00000504
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6535760173657489426, 
+
+czl GetCdmHost called, version 10, user_data 5AAD09A0
+czl originHostFunction called, originHost 5AAD09B0
+czl new CDMHost 0C8BEE68
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0C8BEE68)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C8A08D8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C8A08D8) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 6535762784997605394, 
+
+czl GetCdmHost called, version 10, user_data 5AAD1260
+czl originHostFunction called, originHost 5AAD1270
+czl new CDMHost 0C8BEB48
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0C8BEB48)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C8A0830), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C8A0830) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C8A0830)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C8A0830):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 0523F7C79E081CF2C02DDA95723CC68A
+czl [0c8beb48] Host::OnSessionMessage, session_id 0523F7C79E081CF2C02DDA95723CC68A, session_id_size 32, message_type 0, message_size 3915, message 0C927000 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0C8A0830):
+czl Host::OnSessionClosed, 0523F7C79E081CF2C02DDA95723CC68A
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 6535768007677837330, 
+
+czl GetCdmHost called, version 10, user_data 5AAD1180
+czl originHostFunction called, originHost 5AAD1190
+czl new CDMHost 0C8BEBE8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 3
+czl module SetHost(0C8BEBE8)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C89FD08), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C89FD08) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C89FD08)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C89FD08):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 7AE858DB8E25895BCCCF24F1D9E17A48
+czl [0c8bebe8] Host::OnSessionMessage, session_id 7AE858DB8E25895BCCCF24F1D9E17A48, session_id_size 32, message_type 0, message_size 3915, message 0C9399B8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0C89FD08):
+czl Host::OnSessionClosed, 7AE858DB8E25895BCCCF24F1D9E17A48
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 6535768832311558162, 
+
+czl GetCdmHost called, version 10, user_data 5AAD0700
+czl originHostFunction called, originHost 5AAD0710
+czl new CDMHost 0C8BEAA8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 4
+czl module SetHost(0C8BEAA8)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C8A0590), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C8A0590) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C8A0590)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C8A0590):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 440D18563A356A6275794712E54CF26B
+czl [0c8beaa8] Host::OnSessionMessage, session_id 440D18563A356A6275794712E54CF26B, session_id_size 32, message_type 0, message_size 3915, message 0C95BE88 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0C8A0590):
+czl Host::OnSessionClosed, 440D18563A356A6275794712E54CF26B
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0C8A0830):
+czl Destroy(0C8A08D8):
+czl Destroy(0C89FD08):
+czl Destroy(0C8A0590):
+czl open file, 000004FC, 00000500, 00000504, 00000508
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 2374434117967151122, 
+
+czl GetCdmHost called, version 10, user_data 20ED09A0
+czl originHostFunction called, originHost 20ED09B0
+czl new CDMHost 0C7FB358
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0C7FB358)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C814328), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C814328) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 2374436591868313618, 
+
+czl GetCdmHost called, version 10, user_data 20ED1260
+czl originHostFunction called, originHost 20ED1270
+czl new CDMHost 0C7FB5D8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0C7FB5D8)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C814D00), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C814D00) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl CreateCdmInstance 10, com.widevine.alpha, 2374441677109592082, 
+
+czl GetCdmHost called, version 10, user_data 20ED1180
+czl originHostFunction called, originHost 20ED1190
+czl new CDMHost 0C7FAF98
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 3
+czl module SetHost(0C7FAF98)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C8143D0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C8143D0) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C814D00)
+czl Host::CreateFileIO
+czl CreateSessionAndGenerateRequest(0C8143D0)
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C814D00):
+czl Host::CreateFileIO
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 05A56F5739A609D0B284337E3AA2A26A
+czl [0c7fb5d8] Host::OnSessionMessage, session_id 05A56F5739A609D0B284337E3AA2A26A, session_id_size 32, message_type 0, message_size 3915, message 0C8B9DD8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C8143D0):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, E52FFD6B09157FA125FE888898CA2F21
+czl [0c7faf98] Host::OnSessionMessage, session_id E52FFD6B09157FA125FE888898CA2F21, session_id_size 32, message_type 0, message_size 3915, message 0C8BCC88 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0C8143D0):
+czl Host::OnSessionClosed, E52FFD6B09157FA125FE888898CA2F21
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 2374412402612502546, 
+
+czl GetCdmHost called, version 10, user_data 20ED1420
+czl originHostFunction called, originHost 20ED1430
+czl new CDMHost 0C7FB678
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 4
+czl module SetHost(0C7FB678)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C814C58), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0C814C58) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C814C58)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C814C58):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 6F5EF54A41DBBEFDDEE5F42B782A6C70
+czl [0c7fb678] Host::OnSessionMessage, session_id 6F5EF54A41DBBEFDDEE5F42B782A6C70, session_id_size 32, message_type 0, message_size 3915, message 1129F828 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0C814D00):
+czl Host::OnSessionClosed, 05A56F5739A609D0B284337E3AA2A26A
+czl Host::OnResolvePromise, 00000004
+czl CloseSession(0C814C58):
+czl Host::OnSessionClosed, 6F5EF54A41DBBEFDDEE5F42B782A6C70
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0C8143D0):
+czl Destroy(0C814328):
+czl Destroy(0C814D00):
+czl Destroy(0C814C58):
