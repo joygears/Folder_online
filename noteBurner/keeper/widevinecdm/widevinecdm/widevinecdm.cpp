@@ -119,7 +119,7 @@ DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system
 {
     Log("CreateCdmInstance %d, %s, %lld, \n", interface_version, key_system, key_system_len);
 
-   /* originHostFunction = (void* (*)(int host_version, void* user_data))host_function;
+   originHostFunction = (void* (*)(int host_version, void* user_data))host_function;
     void* instance = nullptr;
 
     
@@ -140,9 +140,9 @@ DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system
 
     MyContentDecryptionModuleProxy* proxy = new MyContentDecryptionModuleProxy(static_cast<ContentDecryptionModule_10*>(instance));
     proxy->setHost(g_CDMHost);
-    return proxy;*/
+    return proxy;
 
-    return _CreateCdmInstance(interface_version, key_system, key_system_len, host_function, extra_data);
+   
 
 }
 

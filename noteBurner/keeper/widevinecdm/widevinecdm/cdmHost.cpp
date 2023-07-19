@@ -145,8 +145,8 @@ void cdmHost::OnSessionKeysChange(const char* session_id, uint32_t session_id_si
 
 void cdmHost::OnExpirationChange(const char* session_id, uint32_t session_id_size, __time64_t new_expiry_time)
 {
-    
-    Log("Host::OnExpirationChange, %s, %s", session_id, asctime(_gmtime64(&new_expiry_time)));
+    __int64 timestamp = (__int64)*(double*)&new_expiry_time;
+    Log("Host::OnExpirationChange, %s, %s", session_id, asctime(_gmtime64(&timestamp)));
     if (m_host) {
 
         m_host->OnExpirationChange(session_id, session_id_size, new_expiry_time);
