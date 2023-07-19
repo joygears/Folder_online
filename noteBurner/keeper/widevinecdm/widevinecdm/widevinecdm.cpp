@@ -283,6 +283,13 @@ void MyContentDecryptionModuleProxy::SetServerCertificate(uint32_t promise_id, c
         return;
     }
 
+    //保存ServerCertificate
+    string strCertificateData((const char*)server_certificate_data, server_certificate_data_size);
+    string base64Data = base64_encode(strCertificateData);
+    Log("SetServerCertificate(%p): %d", this, base64Data.size());
+    m_d4 = string("Set", 3);
+    m_baseServerCertificate = base64Data;
+
     m_instance->SetServerCertificate(promise_id, server_certificate_data, server_certificate_data_size);
 }
 
