@@ -158,6 +158,7 @@
   <ItemGroup>
     <ClInclude Include="cdmHost.h" />
     <ClInclude Include="fucntion.h" />
+    <ClInclude Include="InlineHook.hpp" />
     <ClInclude Include="widevinecdm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

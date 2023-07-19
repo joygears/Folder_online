@@ -380,7 +380,6 @@ public:
 private:
     ContentDecryptionModule_10* m_instance;
     cdmHost* m_host;
-    FILE * mDecFile;
     std::mutex m_mtx;
     std::string m_d4;
     std::string m_baseServerCertificate;

@@ -3,7 +3,7 @@
 
 #include <fstream>
 #include <mutex>
-
+#define LOG_BUFFER 65535
 
 void Log(const wchar_t* fmt)
 { 
@@ -13,13 +13,13 @@ void Log(const wchar_t* fmt)
 
 void Log(const char * fmt, ...)
 {
-    CHAR _buf[256] = { 0 };
-    CHAR _buf2[256] = "czl ";
+    CHAR _buf[LOG_BUFFER] = { 0 };
+    CHAR _buf2[LOG_BUFFER] = "czl ";
     va_list args;
     int n;
     va_start(args, fmt);
-    vsprintf_s(_buf, 256, fmt, args);
-    vsprintf_s(_buf, 256, _buf, args);
+    vsprintf_s(_buf, LOG_BUFFER, fmt, args);
+    vsprintf_s(_buf, LOG_BUFFER, _buf, args);
     strcat(_buf2, _buf);
     wstring str = DecodeUtf8(_buf2);
     str += L"\n";

@@ -2372,3 +2372,1494 @@ czl Destroy(0C8143D0):
 czl Destroy(0C814328):
 czl Destroy(0C814D00):
 czl Destroy(0C814C58):
+czl open file, 00000508, 000004F4, 000004F8, 000004FC
+
+czl load widevinecdm success, 51262CC0, 51262D10, 51262CF0, 51262E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6472709916313255954, 
+
+czl GetCdmHost called, version 10, user_data 59CD09A0
+czl originHostFunction called, originHost 59CD09B0
+czl new CDMHost 0CCB4EA0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0CCB4EA0)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CCBC9C0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CCBC9C0) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 6472712527653371922, 
+
+czl GetCdmHost called, version 10, user_data 59CD1260
+czl originHostFunction called, originHost 59CD1270
+czl new CDMHost 0CCCBFA0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0CCCBFA0)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CCD0850), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CCD0850) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CCD0850)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CCD0850):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 9761303F36E74813329DB4984F330F63
+czl [0cccbfa0] Host::OnSessionMessage, session_id 9761303F36E74813329DB4984F330F63, session_id_size 32, message_type 0, message_size 3915, message 0CD159F8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CCD0850):
+czl Host::OnSessionClosed, 9761303F36E74813329DB4984F330F63
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 6472717887772557330, 
+
+czl GetCdmHost called, version 10, user_data 59CD1180
+czl originHostFunction called, originHost 59CD1190
+czl new CDMHost 0CCC7028
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 3
+czl module SetHost(0CCC7028)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CCC6DC8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CCC6DC8) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CCC6DC8)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CCC6DC8):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 8FBF4ACCB8B1FBAFD357164C836C2224
+czl [0ccc7028] Host::OnSessionMessage, session_id 8FBF4ACCB8B1FBAFD357164C836C2224, session_id_size 32, message_type 0, message_size 3915, message 0CD28270 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CCC6DC8):
+czl Host::OnSessionClosed, 8FBF4ACCB8B1FBAFD357164C836C2224
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0CCC6DC8):
+czl Destroy(0CCD0850):
+czl Destroy(0CCBC9C0):
+czl open file, 000004F8, 000004FC, 00000500, 00000484
+
+czl load widevinecdm success, 51262CC0, 51262D10, 51262CF0, 51262E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3869629331693109266, 
+
+czl GetCdmHost called, version 10, user_data 35AD09A0
+czl originHostFunction called, originHost 35AD09B0
+czl new CDMHost 0CC1A7A8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0CC1A7A8)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CC37130), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CC37130) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 3869631943033225234, 
+
+czl GetCdmHost called, version 10, user_data 35AD1260
+czl originHostFunction called, originHost 35AD1270
+czl new CDMHost 0CC1A208
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0CC1A208)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CC3D938), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CC3D938) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CC3D938)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CC3D938):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 9698B8BCC4ADF1E62D138C12C54F777B
+czl [0cc1a208] Host::OnSessionMessage, session_id 9698B8BCC4ADF1E62D138C12C54F777B, session_id_size 32, message_type 0, message_size 3915, message 0CC86720 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CC3D938):
+czl Host::OnSessionClosed, 9698B8BCC4ADF1E62D138C12C54F777B
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 3869637303152410642, 
+
+czl GetCdmHost called, version 10, user_data 35AD1180
+czl originHostFunction called, originHost 35AD1190
+czl new CDMHost 0CC1A668
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 3
+czl module SetHost(0CC1A668)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CC36FE8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CC36FE8) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CC36FE8)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CC36FE8):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 2519B2820ACE3F25330C9FF12A2D5A49
+czl [0cc1a668] Host::OnSessionMessage, session_id 2519B2820ACE3F25330C9FF12A2D5A49, session_id_size 32, message_type 0, message_size 3915, message 0CC99330 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CC36FE8):
+czl Host::OnSessionClosed, 2519B2820ACE3F25330C9FF12A2D5A49
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0CC3D938):
+czl Destroy(0CC37130):
+czl Destroy(0CC36FE8):
+czl open file, 000004F0, 00000480, 00000484, 000004F4
+
+czl load widevinecdm success, 51262CC0, 51262D10, 51262CF0, 51262E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 2887842413903085586, 
+
+czl GetCdmHost called, version 10, user_data 280D09A0
+czl originHostFunction called, originHost 280D09B0
+czl new CDMHost 0CD08E40
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0CD08E40)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CD24810), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CD24810) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 2887845025243201554, 
+
+czl GetCdmHost called, version 10, user_data 280D1260
+czl originHostFunction called, originHost 280D1270
+czl new CDMHost 0CD08EE0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0CD08EE0)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CD2C1D0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CD2C1D0) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CD2C1D0)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CD2C1D0):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 83787E34E22EC984F9063F09B4AC970E
+czl [0cd08ee0] Host::OnSessionMessage, session_id 83787E34E22EC984F9063F09B4AC970E, session_id_size 32, message_type 0, message_size 3915, message 0CD7A3B0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CD2C1D0):
+czl Host::OnSessionClosed, 83787E34E22EC984F9063F09B4AC970E
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 2887850385362386962, 
+
+czl GetCdmHost called, version 10, user_data 280D1180
+czl originHostFunction called, originHost 280D1190
+czl new CDMHost 0CD09020
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 3
+czl module SetHost(0CD09020)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CD2C278), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CD2C278) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CD2C278)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CD2C278):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, EFCEF1460F85A60AE9DE52E5A7B01163
+czl [0cd09020] Host::OnSessionMessage, session_id EFCEF1460F85A60AE9DE52E5A7B01163, session_id_size 32, message_type 0, message_size 3915, message 0CD7DA28 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CD2C278):
+czl Host::OnSessionClosed, EFCEF1460F85A60AE9DE52E5A7B01163
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0CD2C1D0):
+czl Destroy(0CD24810):
+czl Destroy(0CD2C278):
+czl open file, 000004F8, 000004FC, 00000500, 00000508
+
+czl load widevinecdm success, 51262CC0, 51262D10, 51262CF0, 51262E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6535758112073187346, 
+
+czl GetCdmHost called, version 10, user_data 5AAD09A0
+czl originHostFunction called, originHost 5AAD09B0
+czl new CDMHost 0CBDB9D0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0CBDB9D0)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CBAC208), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CBAC208) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 6535760723413303314, 
+
+czl GetCdmHost called, version 10, user_data 5AAD1260
+czl originHostFunction called, originHost 5AAD1270
+czl new CDMHost 0CBDB890
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0CBDB890)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CBFC540), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CBFC540) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl CreateCdmInstance 10, com.widevine.alpha, 6535765946093535250, 
+
+czl GetCdmHost called, version 10, user_data 5AAD1180
+czl originHostFunction called, originHost 5AAD1190
+czl new CDMHost 0CBDB930
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 3
+czl module SetHost(0CBDB930)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CBF97B8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CBF97B8) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateSessionAndGenerateRequest(0CBFC540)
+czl Host::CreateFileIO
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CBF97B8)
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CBFC540):
+czl Host::CreateFileIO
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 3EA29A1064E462F3738CA64844D0AF59
+czl [0cbdb890] Host::OnSessionMessage, session_id 3EA29A1064E462F3738CA64844D0AF59, session_id_size 32, message_type 0, message_size 3915, message 0CC889F0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CBF97B8):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 49A05A100C2CD1D23BDA7B842010F880
+czl [0cbdb930] Host::OnSessionMessage, session_id 49A05A100C2CD1D23BDA7B842010F880, session_id_size 32, message_type 0, message_size 3915, message 0CC8A988 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CBF97B8):
+czl Host::OnSessionClosed, 49A05A100C2CD1D23BDA7B842010F880
+czl Host::OnResolvePromise, 00000004
+czl CloseSession(0CBFC540):
+czl Host::OnSessionClosed, 3EA29A1064E462F3738CA64844D0AF59
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 6535752202198188050, 
+
+czl GetCdmHost called, version 10, user_data 5AAD10A0
+czl originHostFunction called, originHost 5AAD10B0
+czl new CDMHost 0CBDB6B0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 4
+czl module SetHost(0CBDB6B0)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CC08BC8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CC08BC8) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CC08BC8)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CC08BC8):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 5A776500203AA832959B5E6B858993BE
+czl [0cbdb6b0] Host::OnSessionMessage, session_id 5A776500203AA832959B5E6B858993BE, session_id_size 32, message_type 0, message_size 3915, message 112A2B30 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CC08BC8):
+czl Host::OnSessionClosed, 5A776500203AA832959B5E6B858993BE
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0CC08BC8):
+czl Destroy(0CBF97B8):
+czl Destroy(0CBFC540):
+czl CreateCdmInstance 10, com.widevine.alpha, 6535735709523771410, 
+
+czl GetCdmHost called, version 10, user_data 5AAD0E00
+czl originHostFunction called, originHost 5AAD0E10
+czl new CDMHost 0CBDC150
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 5
+czl module SetHost(0CBDC150)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CC091B0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CC091B0) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CC091B0)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CC091B0):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, D510D21A111434AE0CDC20FAAFD95572
+czl [0cbdc150] Host::OnSessionMessage, session_id D510D21A111434AE0CDC20FAAFD95572, session_id_size 32, message_type 0, message_size 3915, message 0CC9BFA8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateCdmInstance 10, com.widevine.alpha, 6535743268666212370, 
+
+czl GetCdmHost called, version 10, user_data 5AAD1500
+czl originHostFunction called, originHost 5AAD1510
+czl new CDMHost 0CBDB430
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 6
+czl module SetHost(0CBDB430)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CC09450), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CC09450) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CC09450)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CC09450):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, BD39C74E2D39E9360172A27567E63091
+czl [0cbdb430] Host::OnSessionMessage, session_id BD39C74E2D39E9360172A27567E63091, session_id_size 32, message_type 0, message_size 3914, message 112A1EF0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Destroy(0CBAC208):
+czl CreateCdmInstance 10, com.widevine.alpha, 6535744505616793618, 
+
+czl GetCdmHost called, version 10, user_data 5AAD1420
+czl originHostFunction called, originHost 5AAD1430
+czl new CDMHost 0CBDB390
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 7
+czl module SetHost(0CBDB390)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CC08688), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CC08688) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CC08688)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CC08688):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, D0FDEAA9F6DC1EA5A4FC1D7FC67D66D9
+czl [0cbdb390] Host::OnSessionMessage, session_id D0FDEAA9F6DC1EA5A4FC1D7FC67D66D9, session_id_size 32, message_type 0, message_size 3915, message 112C2BC0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CC08688):
+czl Host::OnSessionClosed, D0FDEAA9F6DC1EA5A4FC1D7FC67D66D9
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0CC08688):
+czl CloseSession(0CC09450):
+czl Host::OnSessionClosed, BD39C74E2D39E9360172A27567E63091
+czl Host::OnResolvePromise, 00000004
+czl CloseSession(0CC091B0):
+czl Host::OnSessionClosed, D510D21A111434AE0CDC20FAAFD95572
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0CC09450):
+czl Destroy(0CC091B0):
+czl open file, 00000484, 000004F8, 000004FC, 00000500
+
+czl load widevinecdm success, 51262CC0, 51262D10, 51262CF0, 51262E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6445688318549032978, 
+
+czl GetCdmHost called, version 10, user_data 596D09A0
+czl originHostFunction called, originHost 596D09B0
+czl new CDMHost 0CD5AB98
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0CD5AB98)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CD65F30), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CD65F30) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 6445690929889148946, 
+
+czl GetCdmHost called, version 10, user_data 596D1260
+czl originHostFunction called, originHost 596D1270
+czl new CDMHost 0CD5A0F8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0CD5A0F8)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CD7B6A0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CD7B6A0) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl CreateCdmInstance 10, com.widevine.alpha, 6445696152569380882, 
+
+czl GetCdmHost called, version 10, user_data 596D1180
+czl originHostFunction called, originHost 596D1190
+czl new CDMHost 0CD59C98
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 3
+czl module SetHost(0CD59C98)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CD7A910), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CD7A910) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateSessionAndGenerateRequest(0CD7B6A0)
+czl Host::CreateFileIO
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CD7A910)
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CD7B6A0):
+czl Host::CreateFileIO
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 0EDCE9B2D615E2E68D8C38A82175F58C
+czl [0cd5a0f8] Host::OnSessionMessage, session_id 0EDCE9B2D615E2E68D8C38A82175F58C, session_id_size 32, message_type 0, message_size 3915, message 0CE17EF8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CD7A910):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 6FCE3A19A12145BF0E00CC23DA07CBBD
+czl [0cd59c98] Host::OnSessionMessage, session_id 6FCE3A19A12145BF0E00CC23DA07CBBD, session_id_size 32, message_type 0, message_size 3915, message 0CD75078 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CD7A910):
+czl Host::OnSessionClosed, 6FCE3A19A12145BF0E00CC23DA07CBBD
+czl Host::OnResolvePromise, 00000004
+czl CloseSession(0CD7B6A0):
+czl Host::OnSessionClosed, 0EDCE9B2D615E2E68D8C38A82175F58C
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 6445682408674033682, 
+
+czl GetCdmHost called, version 10, user_data 596D10A0
+czl originHostFunction called, originHost 596D10B0
+czl new CDMHost 0CD5A378
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 4
+czl module SetHost(0CD5A378)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CD7AA60), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CD7AA60) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CD7AA60)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CD7AA60):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, BC4F15A3DF9162272A42986A46C033C7
+czl [0cd5a378] Host::OnSessionMessage, session_id BC4F15A3DF9162272A42986A46C033C7, session_id_size 32, message_type 0, message_size 3915, message 0CE1B0E8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateCdmInstance 10, com.widevine.alpha, 6445694640740892690, 
+
+czl GetCdmHost called, version 10, user_data 596D07E0
+czl originHostFunction called, originHost 596D07F0
+czl new CDMHost 0CD5A878
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 5
+czl module SetHost(0CD5A878)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CD80FA8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CD80FA8) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CD80FA8)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CD80FA8):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 65A5B3402D20DCAFBA50BD7CC44E1912
+czl [0cd5a878] Host::OnSessionMessage, session_id 65A5B3402D20DCAFBA50BD7CC44E1912, session_id_size 32, message_type 0, message_size 3915, message 115A12B8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CD80FA8):
+czl Host::OnSessionClosed, 65A5B3402D20DCAFBA50BD7CC44E1912
+czl Host::OnResolvePromise, 00000004
+czl CloseSession(0CD7AA60):
+czl Host::OnSessionClosed, BC4F15A3DF9162272A42986A46C033C7
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 6445667290389151762, 
+
+czl GetCdmHost called, version 10, user_data 596D17A0
+czl originHostFunction called, originHost 596D17B0
+czl new CDMHost 0CD5A198
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 6
+czl module SetHost(0CD5A198)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CE18EB0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl module(0CE18EB0) GetStatusForPolicy
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl Host::GetCurrentWallTime
+czl Host::OnResolveKeyStatusPromise, promise_id -1, 0
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CE18EB0)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CE18EB0):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, CDF4FEC2FC0B51DD476857B4436DC6F8
+czl [0cd5a198] Host::OnSessionMessage, session_id CDF4FEC2FC0B51DD476857B4436DC6F8, session_id_size 32, message_type 0, message_size 3915, message 0CE1B4F0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CE18EB0):
+czl Host::OnSessionClosed, CDF4FEC2FC0B51DD476857B4436DC6F8
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0CD65F30):
+czl Destroy(0CD7A910):
+czl Destroy(0CD80FA8):
+czl Destroy(0CD7B6A0):
+czl Destroy(0CE18EB0):
+czl Destroy(0CD7AA60):
+czl open file, 00000514, 0000050C, 00000508, 00000510
+
+czl load widevinecdm success, 78AC2CC0, 78AC2D10, 78AC2CF0, 78AC2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3959701324240519186, 
+
+czl GetCdmHost called, version 10, user_data 36ED09A0
+czl originHostFunction called, originHost 36ED09B0
+czl new CDMHost 0C9DEB50
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0C9DEB50)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CA25AF8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 3959704073019588626, 
+
+czl GetCdmHost called, version 10, user_data 36ED1260
+czl originHostFunction called, originHost 36ED1270
+czl new CDMHost 0CA27578
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0CA27578)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CA21F88), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CA21F88)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CA21F88):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, A4DB8482C744ED0327E5D3C3E0FBDD08
+czl [0ca27578] Host::OnSessionMessage, session_id A4DB8482C744ED0327E5D3C3E0FBDD08, session_id_size 32, message_type 0, message_size 3915, message 0CA74DD0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateCdmInstance 10, com.widevine.alpha, 3959709295699820562, 
+
+czl GetCdmHost called, version 10, user_data 36ED1180
+czl originHostFunction called, originHost 36ED1190
+czl new CDMHost 0CA2FA78
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 3
+czl module SetHost(0CA2FA78)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CA301B0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CloseSession(0CA21F88):
+czl Host::OnSessionClosed, A4DB8482C744ED0327E5D3C3E0FBDD08
+czl Host::OnResolvePromise, 00000004
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CA301B0)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CA301B0):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 6B8BCC9BFA856FE933E1CC4EC2214498
+czl [0ca2fa78] Host::OnSessionMessage, session_id 6B8BCC9BFA856FE933E1CC4EC2214498, session_id_size 32, message_type 0, message_size 3915, message 0CA745A0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CreateCdmInstance 10, com.widevine.alpha, 3959710120333541394, 
+
+czl GetCdmHost called, version 10, user_data 36ED10A0
+czl originHostFunction called, originHost 36ED10B0
+czl new CDMHost 0CA79678
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 4
+czl module SetHost(0CA79678)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CA25788), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CA25788)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CA25788):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 757DE213C5B267543676831DA3829336
+czl [0ca79678] Host::OnSessionMessage, session_id 757DE213C5B267543676831DA3829336, session_id_size 32, message_type 0, message_size 3915, message 0CABE170 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CA301B0):
+czl Host::OnSessionClosed, 6B8BCC9BFA856FE933E1CC4EC2214498
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 3959710670089355282, 
+
+czl GetCdmHost called, version 10, user_data 36ED07E0
+czl originHostFunction called, originHost 36ED07F0
+czl new CDMHost 0CA79180
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 5
+czl module SetHost(0CA79180)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CA30250), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CA30250)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CA30250):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 7148EE95A1595CA1A24065B419913C8E
+czl [0ca79180] Host::OnSessionMessage, session_id 7148EE95A1595CA1A24065B419913C8E, session_id_size 32, message_type 0, message_size 3915, message 0CAC2EB8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CA25788):
+czl Host::OnSessionClosed, 757DE213C5B267543676831DA3829336
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 3959689229612613650, 
+
+czl GetCdmHost called, version 10, user_data 36ED17A0
+czl originHostFunction called, originHost 36ED17B0
+czl new CDMHost 0CA302F0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 6
+czl module SetHost(0CA302F0)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CA7A0B0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CA7A0B0)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CA7A0B0):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 671EFDC57815AD542DEF3654A63E4A8F
+czl [0ca302f0] Host::OnSessionMessage, session_id 671EFDC57815AD542DEF3654A63E4A8F, session_id_size 32, message_type 0, message_size 3915, message 0CABABB8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CA7A0B0):
+czl Host::OnSessionClosed, 671EFDC57815AD542DEF3654A63E4A8F
+czl Host::OnResolvePromise, 00000004
+czl CloseSession(0CA30250):
+czl Host::OnSessionClosed, 7148EE95A1595CA1A24065B419913C8E
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0CA25AF8):
+czl Destroy(0CA21F88):
+czl Destroy(0CA25788):
+czl Destroy(0CA30250):
+czl Destroy(0CA7A0B0):
+czl Destroy(0CA301B0):
+czl open file, 0000050C, 00000514, 00000500, 00000504
+
+czl load widevinecdm success, 78AC2CC0, 78AC2D10, 78AC2CF0, 78AC2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3004938203237974034, 
+
+czl GetCdmHost called, version 10, user_data 29AD09A0
+czl originHostFunction called, originHost 29AD09B0
+czl new CDMHost 0CD52C30
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0CD52C30)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CD52730), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 3004940814578090002, 
+
+czl GetCdmHost called, version 10, user_data 29AD1260
+czl originHostFunction called, originHost 29AD1270
+czl new CDMHost 0CD529B0
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0CD529B0)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CD52FF0), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl CreateCdmInstance 10, com.widevine.alpha, 3004945899819368466, 
+
+czl GetCdmHost called, version 10, user_data 29AD1180
+czl originHostFunction called, originHost 29AD1190
+czl new CDMHost 0CD52B90
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 3
+czl module SetHost(0CD52B90)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CD52A50), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CD52FF0)
+czl Host::CreateFileIO
+czl CreateSessionAndGenerateRequest(0CD52A50)
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CD52FF0):
+czl Host::CreateFileIO
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 2005F2E1D83326AEA3BA366DC0C7BDED
+czl [0cd529b0] Host::OnSessionMessage, session_id 2005F2E1D83326AEA3BA366DC0C7BDED, session_id_size 32, message_type 0, message_size 3915, message 0CDF9D50 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CD52A50):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 016389B54E9C9D10C6A4A5C892269B65
+czl [0cd52b90] Host::OnSessionMessage, session_id 016389B54E9C9D10C6A4A5C892269B65, session_id_size 32, message_type 0, message_size 3915, message 0CDFC310 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CD52A50):
+czl Host::OnSessionClosed, 016389B54E9C9D10C6A4A5C892269B65
+czl Host::OnResolvePromise, 00000004
+czl CloseSession(0CD52FF0):
+czl Host::OnSessionClosed, 2005F2E1D83326AEA3BA366DC0C7BDED
+czl Host::OnResolvePromise, 00000004
+czl CreateCdmInstance 10, com.widevine.alpha, 3004916487883325458, 
+
+czl GetCdmHost called, version 10, user_data 29AD0700
+czl originHostFunction called, originHost 29AD0710
+czl new CDMHost 0CD52D70
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 4
+czl module SetHost(0CD52D70)
+czl Host::QueryOutputProtectionStatus
+czl init module(0CD53590), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0CD53590)
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0CD53590):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, A1DC4C6DF00CDB7219EC49C3EC124C23
+czl [0cd52d70] Host::OnSessionMessage, session_id A1DC4C6DF00CDB7219EC49C3EC124C23, session_id_size 32, message_type 0, message_size 3915, message 0CDFD1C8 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl CloseSession(0CD53590):
+czl Host::OnSessionClosed, A1DC4C6DF00CDB7219EC49C3EC124C23
+czl Host::OnResolvePromise, 00000004
+czl Destroy(0CD52FF0):
+czl Destroy(0CD52A50):
+czl Destroy(0CD53590):
+czl Destroy(0CD52730):
+czl open file, 000004F8, 000004F4, 00000508, 00000514
+
+czl load widevinecdm success, 78AC2CC0, 78AC2D10, 78AC2CF0, 78AC2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6562781908860665874, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6562784795078688786, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6562789880319967250, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6562772288133922834, 
+
+czl open file, 000004F8, 00000500, 000004FC, 00000504
+
+czl load widevinecdm success, 78AC2CC0, 78AC2D10, 78AC2CF0, 78AC2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 2437484650189291538, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 2437487261529407506, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 2437492759087546386, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 2437493996038127634, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 2437499493596266514, 
+
+czl open file, 00000504, 00000510, 0000051C, 00000520
+
+czl load widevinecdm success, 78AC2CC0, 78AC2D10, 78AC2CF0, 78AC2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3815586136164663314, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3815588884943732754, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3815594382501871634, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3815564420810014738, 
+
+czl open file, 00000488, 000004FC, 0000050C, 00000518
+
+czl load widevinecdm success, 78AC2CC0, 78AC2D10, 78AC2CF0, 78AC2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl GetCdmVersion
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6679875499172298770, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6679878385390321682, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6679883470631600146, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 6679876598683926546, 
+
+czl open file, 0000050C, 0000048C, 00000488, 00000514
+
+czl load widevinecdm success, 78AC2CC0, 78AC2D10, 78AC2CF0, 78AC2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl GetCdmVersion
+
+czl VerifyCdmHost_0
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5463903599782264850, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5463906486000287762, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5463911571241566226, 
+
+czl open file, 00000484, 000004F8, 0000050C, 00000514
+
+czl load widevinecdm success, 78AC2CC0, 78AC2D10, 78AC2CF0, 78AC2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl GetCdmVersion
+
+czl VerifyCdmHost_0
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5022550836299956242, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5022553585079025682, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5022559082637164562, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5022560319587745810, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5022560594465652754, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5022536267770888210, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5022521012047052818, 
+
+czl open file, 00000484, 000004EC, 000004F0, 000004F4
+
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl GetCdmVersion
+
+czl VerifyCdmHost_0
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3257137583347466258, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3257140469565489170, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3257138407981187090, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3257122465062584338, 
+
+czl open file, 0000050C, 00000514, 00000484, 000004F8
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl GetCdmVersion
+
+czl VerifyCdmHost_0
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3554377357777174546, 
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl open file, 000004F8, 000004FC, 00000500, 00000504
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl GetCdmVersion
+
+czl VerifyCdmHost_0
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4193888504863784978, 
+
+czl open file, 000004F8, 000004F4, 000004FC, 00000500
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl load widevinecdm success, 13632CC0, 13632D10, 13632CF0, 13632E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl GetCdmVersion
+
+czl VerifyCdmHost_0
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4563183674308165650, 
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl open file, 00000484, 00000488, 000004F4, 000004F8
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl load widevinecdm success, 784E2CC0, 784E2D10, 784E2CF0, 784E2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl GetCdmVersion
+
+czl VerifyCdmHost_0
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4986519840257736722, 
+
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Users\Administrator\AppData\Roaming\Electron\WidevineCdm\4.10.2557.0\_platform_specific\win_x86\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNELBASE.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNELBASE.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl CreateCdmInstance 10, com.widevine.alpha, 4986522589036806162, 
+
+czl CreateCdmInstance 10, com.widevine.alpha, 4986528086594945042, 
+

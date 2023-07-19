@@ -4,6 +4,7 @@
 #include "fucntion.h"
 #include "cdmHost.h"
 #include "tool/base64.h"
+#include "InlineHook.hpp"
 
 
 bool (*_VerifyCdmHost_0)(verifyWrap*, int flag);
@@ -15,6 +16,17 @@ char* (*_GetCdmVersion)();
 void* (*originHostFunction)(int host_version, void* user_data);
 void* HostFunction(int host_version, void* user_data);
 
+typedef DWORD(__stdcall* MyGetFileAttributes)(LPCWSTR lpFileName);
+typedef DWORD(__stdcall* MyGetModuleFileName)(HMODULE hModule, LPWSTR  lpFilename, DWORD  nSize);
+DWORD __stdcall  fake_GetModuleFileNameW(
+    HMODULE hModule,
+    LPWSTR  lpFilename,
+    DWORD   nSize
+);
+DWORD __stdcall fake_GetFileAttributesW(LPCWSTR lpFileName);
+hook::InlineHook GetFileAttributeshooker = hook::InlineHook();
+hook::InlineHook GetModuleFileNamehooker = hook::InlineHook();
+wstring dycVfchm;
 struct Keys_info {
     const char* key_id;
     int size;
@@ -25,12 +37,15 @@ struct Keys_info {
 };
 
 void initializeApp() {
-    wstring dycWidevine = TEXT(R"(.\sig_files\widevinecdm.dll)");
-    wstring sigWidevine = TEXT(R"(.\sig_files\widevinecdm.dll.sig)");
-    wstring dycVfchm = TEXT(R"(.\sig_files\vfchm.dll)");
-    wstring sigVfchm = TEXT(R"(.\sig_files\vfchm.dll.sig)");
+    wstring dycWidevine = TEXT(R"(C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll)");
+    wstring sigWidevine = TEXT(R"(C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll.sig)");
+    dycVfchm = TEXT(R"(C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll)");
+    wstring sigVfchm = TEXT(R"(C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll.sig)");
     verifyWrap wrap;
    
+    GetFileAttributeshooker.hook(::GetFileAttributesW, fake_GetFileAttributesW);
+    GetModuleFileNamehooker.hook(::GetModuleFileNameW, fake_GetModuleFileNameW);
+
  
     
     HANDLE HDycWidevinecdm = CreateFile(dycWidevine.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
@@ -104,7 +119,7 @@ DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system
 {
     Log("CreateCdmInstance %d, %s, %lld, \n", interface_version, key_system, key_system_len);
 
-    originHostFunction = (void* (*)(int host_version, void* user_data))host_function;
+   /* originHostFunction = (void* (*)(int host_version, void* user_data))host_function;
     void* instance = nullptr;
 
     
@@ -125,7 +140,10 @@ DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system
 
     MyContentDecryptionModuleProxy* proxy = new MyContentDecryptionModuleProxy(static_cast<ContentDecryptionModule_10*>(instance));
     proxy->setHost(g_CDMHost);
-    return proxy;
+    return proxy;*/
+
+    return _CreateCdmInstance(interface_version, key_system, key_system_len, host_function, extra_data);
+
 }
 
 DLL_EXPORT void DeinitializeCdmModule()
@@ -136,11 +154,14 @@ DLL_EXPORT void DeinitializeCdmModule()
 
 DLL_EXPORT char* GetCdmVersion()
 {
+    Log("GetCdmVersion\n");
     return _GetCdmVersion();
 }
 
-DLL_EXPORT bool VerifyCdmHost_0(verifyWrap*, int flag)
+ bool VerifyCdmHost_0(verifyWrap*, int flag)
 {
+     Log("VerifyCdmHost_0\n");
+    
     return true;
 }
 
@@ -193,22 +214,22 @@ void MyContentDecryptionModuleProxy::Initialize(bool allow_distinctive_identifie
     Log("init module(%p), %d, %d, %d", this, allow_distinctive_identifier, allow_persistent_state, flag);
 
     m_instance->Initialize(allow_distinctive_identifier, allow_persistent_state, flag);
-    allow_distinctive_identifier = 1;
-    this->GetStatusForPolicy(-1, (int *)&allow_distinctive_identifier);
+    //allow_distinctive_identifier = 1;
+    //this->GetStatusForPolicy(-1, (int *)&allow_distinctive_identifier);
 }
 
 void MyContentDecryptionModuleProxy::GetStatusForPolicy(uint32_t promise_id, int* policy)
 {
     Log("module(%p) GetStatusForPolicy", this);
     
-    m_host->OnResolveKeyStatusPromise(promise_id, 0);
+   // m_host->OnResolveKeyStatusPromise(promise_id, 0);
     if (!m_instance)
     {
         Log("instance is null, %d", 96);
         return;
     }
    
-    string aGetstatusforpo = "GetStatusForPolicy_";
+  /*  string aGetstatusforpo = "GetStatusForPolicy_";
 
     switch (*policy) {
     case 0:
@@ -248,7 +269,7 @@ void MyContentDecryptionModuleProxy::GetStatusForPolicy(uint32_t promise_id, int
     };
 
     
-    m_host->setMapIdHdcp(promise_id, aGetstatusforpo);
+    m_host->setMapIdHdcp(promise_id, aGetstatusforpo);*/
 
     m_instance->GetStatusForPolicy(promise_id, policy);
 
@@ -350,16 +371,7 @@ int MyContentDecryptionModuleProxy::Decrypt(void* encrypted_buffer, DecryptedBlo
     Log("Decrypt(%p):", (const void*)this);
 
     int status    = m_instance->Decrypt(encrypted_buffer, decrypted_buffer);
-    if (mDecFile == NULL)
-    {
-        mDecFile = fopen("d:\\cdm_dec.bin", "wb");
-    }
-    if (mDecFile != NULL)
-    {
-        fwrite(decrypted_buffer->DecryptedBuffer()->Data(), 1,
-            decrypted_buffer->DecryptedBuffer()->Size(), mDecFile);
-        Log("Decrypt data size %d:", decrypted_buffer->DecryptedBuffer()->Size());
-    }
+   
     return status;
 }
 
@@ -493,9 +505,7 @@ void MyContentDecryptionModuleProxy::Destroy()
         return;
     }
     Log("Destroy(%p):", (const void*)this);
-    if(mDecFile!=NULL)
-        fclose(mDecFile);
-    mDecFile = NULL;
+   
 
     m_instance->Destroy();
 }
@@ -595,3 +605,38 @@ int64_t DecryptedProxyBlock::Timestamp() const {
 
 std::mutex MyContentDecryptionModuleProxy::g_mtx;
 std::list< MyContentDecryptionModuleProxy*> MyContentDecryptionModuleProxy::g_listInstance;
+
+
+
+
+DWORD __stdcall fake_GetFileAttributesW(LPCWSTR lpFileName) {
+    if (lpFileName)
+        Log("GetFileAttributesW called, file %S", lpFileName);
+
+    if (wcsstr(lpFileName, TEXT("cshell.dll")) == 0 && wcsstr(lpFileName, TEXT("decrypt.dll")) == 0 && wcsstr(lpFileName, TEXT("widevinecdm.dll")) == 0) {
+        return  ((MyGetFileAttributes)GetFileAttributeshooker.originalFunction())(lpFileName);
+    }
+    Log("GetFileAttributesW called, file %S, %08x", lpFileName, ((MyGetFileAttributes)GetFileAttributeshooker.originalFunction())(lpFileName));
+
+    return 0x80;
+}
+
+DWORD __stdcall  fake_GetModuleFileNameW(
+    HMODULE hModule,
+    LPWSTR  lpFilename,
+    DWORD   nSize
+) {
+    wchar_t absolutePath[MAX_PATH];
+    GetFullPathName(dycVfchm.c_str(), MAX_PATH, absolutePath, nullptr);
+
+    DWORD result = ((MyGetModuleFileName)GetModuleFileNamehooker.originalFunction())(hModule, lpFilename, nSize);
+    if (result) {
+        wstring originFileName = lpFilename;
+
+        if (wcsstr(lpFilename, L"")) {
+            Log("GetModuleFileNameW called, hook %S to %S", originFileName.c_str(), absolutePath);
+            wcscpy(lpFilename, absolutePath);
+        }
+    }
+    return result;
+}
