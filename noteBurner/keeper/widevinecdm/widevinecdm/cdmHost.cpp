@@ -1,7 +1,11 @@
+#include <string>
+#include <sstream>
+#include <vector>
 #include "cdmHost.h"
 #include "fucntion.h"
 #include "widevinecdm.h"
-
+#include "webNetwork.h"
+#include <base64.h>
 CDMHostBuffer * cdmHost::Allocate(int capacity)
 {
 
@@ -118,9 +122,25 @@ void cdmHost::OnSessionMessage(const char* session_id, uint32_t session_id_size,
         message_type,
         message_size,
         (const void*)message);
+   
+    string licenseRequestResult =  sendMessageAndWaitForResponse("licenseRequest:" + m_MyProxy->m_baseServerCertificate + ":" + m_MyProxy->m_base64Pssh);
+    string licenseRequest = "";
+    Log("%s", licenseRequestResult.c_str());
+    std::vector<std::string> tokens;
+    std::stringstream ss(licenseRequestResult);
+    std::string token;
 
-    Log("[KREQ]cdm normal mode process OnSessionMessage!");
-
+    while (std::getline(ss, token, ':')) {
+        tokens.push_back(token);
+    }
+   
+   /* session_id = tokens[1].c_str();
+    session_id_size = strlen(session_id);*/
+    licenseRequest = base64_decode(tokens[2]);
+    message = licenseRequest.c_str();
+    message_size = licenseRequest.size();
+    
+    Log("session_id:%s licenseRequestResult:%s ", session_id, tokens[2].c_str());
     if (m_host) {
         
         m_host->OnSessionMessage(session_id,session_id_size,message_type, message,message_size);

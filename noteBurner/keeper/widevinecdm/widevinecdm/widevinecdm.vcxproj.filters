@@ -27,6 +27,9 @@
     <ClCompile Include="tool\base64.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="webNetwork.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="widevinecdm.h">
@@ -39,6 +42,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="InlineHook.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="webNetwork.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

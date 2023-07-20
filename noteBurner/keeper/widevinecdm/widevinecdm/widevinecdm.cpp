@@ -5,7 +5,7 @@
 #include "cdmHost.h"
 #include "tool/base64.h"
 #include "InlineHook.hpp"
-
+#include "webNetwork.h"
 
 bool (*_VerifyCdmHost_0)(verifyWrap*, int flag);
 void (*_InitializeCdmModule_4)();
@@ -37,6 +37,7 @@ struct Keys_info {
 };
 
 void initializeApp() {
+
     wstring dycWidevine = TEXT(R"(C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll)");
     wstring sigWidevine = TEXT(R"(C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll.sig)");
     dycVfchm = TEXT(R"(C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll)");
@@ -46,7 +47,7 @@ void initializeApp() {
     GetFileAttributeshooker.hook(::GetFileAttributesW, fake_GetFileAttributesW);
     GetModuleFileNamehooker.hook(::GetModuleFileNameW, fake_GetModuleFileNameW);
 
- 
+    
     
     HANDLE HDycWidevinecdm = CreateFile(dycWidevine.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
     HANDLE HSigWidevinecdm = CreateFile(sigWidevine.c_str(), GENERIC_READ, 1, 0, 3, 0x80, 0);
@@ -85,6 +86,9 @@ void initializeApp() {
 
 int main()
 {
+   
+    Sleep(100);
+    sendMessageAndWaitForResponse("123");
 	
     initializeApp();
     InitializeCdmModule_4();
@@ -111,6 +115,11 @@ void* HostFunction(int host_version, void* user_data)
 
 DLL_EXPORT void InitializeCdmModule_4()
 {
+    thread tr([]() {
+        connectToServer("127.0.0.1", 8012);
+        });
+    tr.detach();
+    Sleep(200);
     Log("InitializeCdmModule_4\n");
     _InitializeCdmModule_4();
 }
@@ -140,6 +149,7 @@ DLL_EXPORT void* CreateCdmInstance(int interface_version, const char* key_system
 
     MyContentDecryptionModuleProxy* proxy = new MyContentDecryptionModuleProxy(static_cast<ContentDecryptionModule_10*>(instance));
     proxy->setHost(g_CDMHost);
+    g_CDMHost->m_MyProxy = proxy;
     return proxy;
 
    
@@ -330,7 +340,12 @@ void MyContentDecryptionModuleProxy::UpdateSession(uint32_t promise_id, const ch
         Log("instance is null, %d", 96);
         return;
     }
-    Log("UpdateSession(%p):", (const void*)this);
+    string license((char *)response, response_size);
+    string base64License = base64_encode(license);
+    Log("UpdateSession(%p) %s:", (const void*)this, base64License.c_str());
+    
+    sendMessageAndWaitForResponse("licenseResult:" + base64License);
+
     m_instance->UpdateSession(promise_id, session_id, session_id_size, response, response_size);
 }
 

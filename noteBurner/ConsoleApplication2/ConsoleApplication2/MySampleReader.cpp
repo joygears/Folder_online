@@ -87,7 +87,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
 
 		packet->data = (uint8_t*)data;
 		packet->size = dataSize;
-		packet->duration = 0xa2c3;
+		packet->duration = sample.GetDuration();
 		int error_code = av_packet_make_refcounted(packet);
 
 

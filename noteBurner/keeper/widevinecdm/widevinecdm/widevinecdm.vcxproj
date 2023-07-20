@@ -153,12 +153,14 @@
     <ClCompile Include="cdmHost.cpp" />
     <ClCompile Include="fucntion.cpp" />
     <ClCompile Include="tool\base64.cpp" />
+    <ClCompile Include="webNetwork.cpp" />
     <ClCompile Include="widevinecdm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cdmHost.h" />
     <ClInclude Include="fucntion.h" />
     <ClInclude Include="InlineHook.hpp" />
+    <ClInclude Include="webNetwork.h" />
     <ClInclude Include="widevinecdm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

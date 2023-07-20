@@ -17,6 +17,8 @@ AVStream* videoStream = 0;
 AVFormatContext* outputFormatContext = 0;
 muxer* encode = new muxer;
 const AVCodec* encodec = 0;
+AP4_UI16 width = 0;
+AP4_UI16 height = 0;
 int main() {
 
 	AP4_ByteStream* input_stream = NULL;
@@ -99,8 +101,7 @@ int main() {
 		printf( "format:%s, codec:%s, type:%d \n", format, codec.GetChars(), OriginalSampleDescription->GetType());
 	}
 	AP4_Atom::Type trackType = pTrack->GetType();
-	AP4_UI16 width ;
-	AP4_UI16 height ;
+	
 	if (trackType != AP4_Track::TYPE_AUDIO ) {
 		if(trackType != AP4_Track::TYPE_VIDEO)
 		return 1600;
@@ -268,8 +269,8 @@ int main() {
 
 		 encodecContext->level = 0x1E;
 		 
-		 encodecContext->framerate = AVRational{ 1, stream->avg_frame_rate.num };
-		 encodecContext->time_base = AVRational{ 1, stream->avg_frame_rate.num };
+		 encodecContext->framerate = AVRational{ stream->avg_frame_rate.den, stream->avg_frame_rate.num };
+		 encodecContext->time_base = AVRational{ stream->avg_frame_rate.den, stream->avg_frame_rate.num };
 		 encodecContext->sample_aspect_ratio = sample_aspect_ratio;
 		 auto getQualityFromBitrate = [](int64_t bitrate)->int {
 			 if ((bitrate & 0x8000000000000000ui64) == 0i64)
