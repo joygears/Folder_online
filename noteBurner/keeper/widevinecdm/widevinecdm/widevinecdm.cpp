@@ -286,7 +286,7 @@ void MyContentDecryptionModuleProxy::SetServerCertificate(uint32_t promise_id, c
     //保存ServerCertificate
     string strCertificateData((const char*)server_certificate_data, server_certificate_data_size);
     string base64Data = base64_encode(strCertificateData);
-    Log("SetServerCertificate(%p): %d", this, base64Data.size());
+    Log("SetServerCertificate(%p): %s", this, base64Data.c_str());
     m_d4 = string("Set", 3);
     m_baseServerCertificate = base64Data;
 
@@ -301,8 +301,11 @@ void MyContentDecryptionModuleProxy::CreateSessionAndGenerateRequest(uint32_t pr
         Log("instance is null, %d", 96);
         return;
     }
-    Log("CreateSessionAndGenerateRequest(%p)", this);
+    
+    string pssh((char *)init_data, init_data_size);
+    m_base64Pssh = base64_encode(pssh);
 
+    Log("CreateSessionAndGenerateRequest(%p) pssh: %s ", this, m_base64Pssh.c_str());
     m_instance->CreateSessionAndGenerateRequest(promise_id, session_type, init_data_type, init_data, init_data_size);
 
 }

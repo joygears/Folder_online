@@ -83068,3 +83068,1300 @@ czl TimerExpired(0D16D870):
 czl Host::SetTimer: 00000104, 1000
 czl TimerExpired(0D16D870):
 czl Destroy(0D16D870):
+czl open file, 000004F8, 00000484, 000004FC, 00000500
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl load widevinecdm success, 784E2CC0, 784E2D10, 784E2CF0, 784E2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl GetCdmVersion
+
+czl VerifyCdmHost_0
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 2869830214416859154, 
+
+czl GetCdmHost called, version 10, user_data 27C3CB60
+czl originHostFunction called, originHost 27C3CB70
+czl new CDMHost 0C2D1200
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Users\Administrator\AppData\Roaming\Electron\WidevineCdm\4.10.2557.0\_platform_specific\win_x86\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNELBASE.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNELBASE.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0C2D1200)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C2ED598), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 2869833100634882066, 
+
+czl GetCdmHost called, version 10, user_data 27C3D420
+czl originHostFunction called, originHost 27C3D430
+czl new CDMHost 0C2D1520
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0C2D1520)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C2ED1D8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(0C2ED598): Cr0CCAMSEOVEukALwQ8307Y2+LVP+0MYh/HPkwUijgIwggEKAoIBAQDm875btoWUbGqQD8eAGuBlGY+Pxo8YF1LQR+Ex0pDONMet8EHslcZRBKNQ/09RZFTP0vrYimyYiBmk9GG+S0wB3CRITgweNE15cD33MQYyS3zpBd4z+sCJam2+jj1ZA4uijE2dxGC+gRBRnw9WoPyw7D8RuhGSJ95OEtzg3Ho+mEsxuE5xg9LM4+Zuro/9msz2bFgJUjQUVHo5j+k4qLWu4ObugFmc9DLIAohL58UR5k0XnvizulOHbMMxdzna9lwTw/4SALadEV/CZXBmswUtBgATDKNqjXwokohncpdsWSauH6vfS6FXwizQoZJ9TdjSGC60rUB2t+aYDm74cIuxAgMBAAE6EHRlc3QubmV0ZmxpeC5jb20SgAOE0y8yWw2Win6M2/bw7+aqVuQPwzS/YG5ySYvwCGQd0Dltr3hpik98WijUODUr6PxMn1ZYXOLo3eED6xYGM7Riza8XskRdCfF8xjj7L7/THPbixyn4mULsttSmWFhexzXnSeKqQHuoKmerqu0nu39iW3pcxDV/K7E6aaSr5ID0SCi7KRcL9BCUCz1g9c43sNj46BhMCWJSm0mx1XFDcoKZWhpj5FAgU4Q4e6f+S8eX39nf6D6SJRb4ap7Znzn7preIvmS93xWjm75I6UBVQGo6pn4qWNCgLYlGGCQCUm5tg566j+/g5jvYZkTJvbiZFwtjMW5njbSRwB3W4CrKoyxw4qsJNSaZRTKAvSjTKdqVDXV/U5HK7SaBA6iJ981/aforXbd2vZlRXO/2S+Maa2mHULzsD+S5l4/YGpSt7PnkCe25F+nAovtl/ogZgjMeEdFyd/9YMYjOS4krYmwp3yJ7m9ZzYCQ6I8RQN4x/yLlHG5RH/+WNLNUs6JAZ0fFdCmw=
+czl Host::OnResolvePromise, 00000002
+czl Destroy(0C2ED1D8):
+czl Destroy(0C2ED598):
+czl open file, 0000050C, 00000514, 000004FC, 00000480
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl load widevinecdm success, 784E2CC0, 784E2D10, 784E2CF0, 784E2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl GetCdmVersion
+
+czl VerifyCdmHost_0
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 3608420553305620498, 
+
+czl GetCdmHost called, version 10, user_data 3203CB60
+czl originHostFunction called, originHost 3203CB70
+czl new CDMHost 0C24B088
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Users\Administrator\AppData\Roaming\Electron\WidevineCdm\4.10.2557.0\_platform_specific\win_x86\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNELBASE.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNELBASE.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0C24B088)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C26B018), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 3608423302084689938, 
+
+czl GetCdmHost called, version 10, user_data 3203D420
+czl originHostFunction called, originHost 3203D430
+czl new CDMHost 0C24B1C8
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0C24B1C8)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C26ADD8), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(0C26B018): Cr0CCAMSEOVEukALwQ8307Y2+LVP+0MYh/HPkwUijgIwggEKAoIBAQDm875btoWUbGqQD8eAGuBlGY+Pxo8YF1LQR+Ex0pDONMet8EHslcZRBKNQ/09RZFTP0vrYimyYiBmk9GG+S0wB3CRITgweNE15cD33MQYyS3zpBd4z+sCJam2+jj1ZA4uijE2dxGC+gRBRnw9WoPyw7D8RuhGSJ95OEtzg3Ho+mEsxuE5xg9LM4+Zuro/9msz2bFgJUjQUVHo5j+k4qLWu4ObugFmc9DLIAohL58UR5k0XnvizulOHbMMxdzna9lwTw/4SALadEV/CZXBmswUtBgATDKNqjXwokohncpdsWSauH6vfS6FXwizQoZJ9TdjSGC60rUB2t+aYDm74cIuxAgMBAAE6EHRlc3QubmV0ZmxpeC5jb20SgAOE0y8yWw2Win6M2/bw7+aqVuQPwzS/YG5ySYvwCGQd0Dltr3hpik98WijUODUr6PxMn1ZYXOLo3eED6xYGM7Riza8XskRdCfF8xjj7L7/THPbixyn4mULsttSmWFhexzXnSeKqQHuoKmerqu0nu39iW3pcxDV/K7E6aaSr5ID0SCi7KRcL9BCUCz1g9c43sNj46BhMCWJSm0mx1XFDcoKZWhpj5FAgU4Q4e6f+S8eX39nf6D6SJRb4ap7Znzn7preIvmS93xWjm75I6UBVQGo6pn4qWNCgLYlGGCQCUm5tg566j+/g5jvYZkTJvbiZFwtjMW5njbSRwB3W4CrKoyxw4qsJNSaZRTKAvSjTKdqVDXV/U5HK7SaBA6iJ981/aforXbd2vZlRXO/2S+Maa2mHULzsD+S5l4/YGpSt7PnkCe25F+nAovtl/ogZgjMeEdFyd/9YMYjOS4krYmwp3yJ7m9ZzYCQ6I8RQN4x/yLlHG5RH/+WNLNUs6JAZ0fFdCmw=
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(0C26ADD8): Cr0CCAMSEOVEukALwQ8307Y2+LVP+0MYh/HPkwUijgIwggEKAoIBAQDm875btoWUbGqQD8eAGuBlGY+Pxo8YF1LQR+Ex0pDONMet8EHslcZRBKNQ/09RZFTP0vrYimyYiBmk9GG+S0wB3CRITgweNE15cD33MQYyS3zpBd4z+sCJam2+jj1ZA4uijE2dxGC+gRBRnw9WoPyw7D8RuhGSJ95OEtzg3Ho+mEsxuE5xg9LM4+Zuro/9msz2bFgJUjQUVHo5j+k4qLWu4ObugFmc9DLIAohL58UR5k0XnvizulOHbMMxdzna9lwTw/4SALadEV/CZXBmswUtBgATDKNqjXwokohncpdsWSauH6vfS6FXwizQoZJ9TdjSGC60rUB2t+aYDm74cIuxAgMBAAE6EHRlc3QubmV0ZmxpeC5jb20SgAOE0y8yWw2Win6M2/bw7+aqVuQPwzS/YG5ySYvwCGQd0Dltr3hpik98WijUODUr6PxMn1ZYXOLo3eED6xYGM7Riza8XskRdCfF8xjj7L7/THPbixyn4mULsttSmWFhexzXnSeKqQHuoKmerqu0nu39iW3pcxDV/K7E6aaSr5ID0SCi7KRcL9BCUCz1g9c43sNj46BhMCWJSm0mx1XFDcoKZWhpj5FAgU4Q4e6f+S8eX39nf6D6SJRb4ap7Znzn7preIvmS93xWjm75I6UBVQGo6pn4qWNCgLYlGGCQCUm5tg566j+/g5jvYZkTJvbiZFwtjMW5njbSRwB3W4CrKoyxw4qsJNSaZRTKAvSjTKdqVDXV/U5HK7SaBA6iJ981/aforXbd2vZlRXO/2S+Maa2mHULzsD+S5l4/YGpSt7PnkCe25F+nAovtl/ogZgjMeEdFyd/9YMYjOS4krYmwp3yJ7m9ZzYCQ6I8RQN4x/yLlHG5RH/+WNLNUs6JAZ0fFdCmw=
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C26ADD8) pssh: Lczl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, F2563329D9D6D53CB53FF27FE9939693
+czl [0c24b1c8] Host::OnSessionMessage, session_id F2563329D9D6D53CB53FF27FE9939693, session_id_size 32, message_type 0, message_size 3851, message 0C2BC090 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl UpdateSession(0C26ADD8):
+czl Host::SetTimer: 00000001, 1000
+czl Host::GetCurrentWallTime
+czl Host::OnExpirationChange, F2563329D9D6D53CB53FF27FE9939693, Thu Jul 20 13:48:51 2023
+
+czl Host::OnResolvePromise, 00000004
+czl Host::OnSessionKeysChange, session_id F2563329D9D6D53CB53FF27FE9939693, session_id_size 32, has_additional_usable_key 1, keys_info_count 2
+czl Host::SetTimer: 00000002, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000002, 1000
+czl Host::SetTimer: 00000003, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000003, 1000
+czl Host::SetTimer: 00000003, 1000
+czl TimerExpired(0C26ADD8):
+czl InitializeVideoDecoder(0C26ADD8):
+czl ResetDecoder(0C26ADD8):
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::OnExpirationChange, F2563329D9D6D53CB53FF27FE9939693, Thu Jul 20 13:48:55 2023
+
+czl Host::Allocate, 3214080, 320C3930
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2D60
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C46F8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C46B0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4668
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4620
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3558
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3510
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C34C8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3480
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3438
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4AA0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4A58
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4A10
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C49C8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4980
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4C38
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4980
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4BA8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4B60
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4B18
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4AD0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4D70
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4D28
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4CE0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4C98
+czl Host::SetTimer: 00000004, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000004, 1000
+czl Host::SetTimer: 00000004, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000004, 1000
+czl TimerExpired(0C26ADD8):
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4C50
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4F08
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4EC0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4E78
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4E30
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4DE8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C50A0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C50A0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C5010
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4FC8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4F80
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2D78
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3390
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3348
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3300
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C32B8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2EC8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4470
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2CE8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2EB0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4728
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C38D0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3420
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3420
+czl Host::SetTimer: 00000005, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000005, 1000
+czl Host::SetTimer: 00000005, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000005, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000005, 1000
+czl TimerExpired(0C26ADD8):
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C34B0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C34F8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3540
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3528
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4638
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4680
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C46C8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4710
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2CA0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4998
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4F98
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4FE0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4C08
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3438
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4BD8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4BD8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2EC8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C32B8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3300
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3348
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3390
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4530
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2D18
+czl Host::SetTimer: 00000006, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000006, 1000
+czl Host::SetTimer: 00000006, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000006, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000006, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000006, 1000
+czl TimerExpired(0C26ADD8):
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2D90
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3F00
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C33A8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4548
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2D00
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3930
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2DA8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C5058
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C5058
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2CA0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4710
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4B00
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4A58
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4638
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3DC8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4AB8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4A70
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4B18
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C49E0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4C98
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4CE0
+czl Destroy(0C26B018):
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4D70
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4C80
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C5010
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C5010
+czl Host::SetTimer: 00000007, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000007, 1000
+czl Host::SetTimer: 00000007, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000007, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000007, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000007, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000007, 1000
+czl TimerExpired(0C26ADD8):
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C49B0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3510
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4F68
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4FB0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4C08
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4A10
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4470
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4FE0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4FC8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3390
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3318
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C32B8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2DD8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2CE8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C46B0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C46B0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4920
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4AA0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2D00
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2760
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C49C8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3498
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4980
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4DB8
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000008, 1000
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C26ADD8):
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3468
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3468
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4A70
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4CC8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C2D30
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4680
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4110
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C3DE0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4260
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4278
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4EF0
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C40C8
+czl DecryptAndDecodeFrame(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 320C4D10
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000009, 1000
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000A, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 0000000A, 1000
+czl Host::SetTimer: 0000000A, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000A, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000A, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000A, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000A, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000A, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000A, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000A, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000B, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 0000000B, 1000
+czl Host::SetTimer: 0000000B, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000B, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000B, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000B, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000B, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000B, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000B, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000B, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000B, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000C, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 0000000C, 1000
+czl Host::SetTimer: 0000000C, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000C, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000C, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000C, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000C, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000C, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000C, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000C, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000C, 1000
+czl TimerExpired(0C26ADD8):
+czl Host::SetTimer: 0000000C, 1000
+czl TimerExpired(0C26ADD8):
+czl open file, 00000484, 000004F8, 000004FC, 00000500
+
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl load widevinecdm success, 784E2CC0, 784E2D10, 784E2CF0, 784E2E90 
+
+czl widevine VerifyCdmHost_0 retcode value 1
+
+czl GetCdmVersion
+
+czl VerifyCdmHost_0
+
+czl InitializeCdmModule_4
+
+czl CreateCdmInstance 10, com.widevine.alpha, 5941285160283537426, 
+
+czl GetCdmHost called, version 10, user_data 5263CB60
+czl originHostFunction called, originHost 5263CB70
+czl new CDMHost 0C32C770
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Users\Administrator\AppData\Roaming\Electron\WidevineCdm\4.10.2557.0\_platform_specific\win_x86\widevinecdm.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNELBASE.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\System32\KERNELBASE.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl GetModuleFileNameW called, hook C:\Windows\SYSTEM32\ntdll.dll to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl module version, 10
+czl construct module, count: 1
+czl module SetHost(0C32C770)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C339208), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl GetModuleFileNameW called, hook D:\Users\Downloads\electron-v17.1.2+wvcus-win32-ia32\electron.exe to C:\Program Files (x86)\NoteBurner\NoteBurner Netflix Video Downloader\resources\com.noteburner.netflix\native\sig_files\vfchm.dll
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl CreateCdmInstance 10, com.widevine.alpha, 5941287909062606866, 
+
+czl GetCdmHost called, version 10, user_data 5263D420
+czl originHostFunction called, originHost 5263D430
+czl new CDMHost 0C32BD70
+czl Host::GetCurrentWallTime
+czl module version, 10
+czl construct module, count: 2
+czl module SetHost(0C32BD70)
+czl Host::QueryOutputProtectionStatus
+czl init module(0C33F328), 0, 1, 0
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::QueryOutputProtectionStatus
+czl Host::OnInitialized, 1
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(0C339208): Cr0CCAMSEOVEukALwQ8307Y2+LVP+0MYh/HPkwUijgIwggEKAoIBAQDm875btoWUbGqQD8eAGuBlGY+Pxo8YF1LQR+Ex0pDONMet8EHslcZRBKNQ/09RZFTP0vrYimyYiBmk9GG+S0wB3CRITgweNE15cD33MQYyS3zpBd4z+sCJam2+jj1ZA4uijE2dxGC+gRBRnw9WoPyw7D8RuhGSJ95OEtzg3Ho+mEsxuE5xg9LM4+Zuro/9msz2bFgJUjQUVHo5j+k4qLWu4ObugFmc9DLIAohL58UR5k0XnvizulOHbMMxdzna9lwTw/4SALadEV/CZXBmswUtBgATDKNqjXwokohncpdsWSauH6vfS6FXwizQoZJ9TdjSGC60rUB2t+aYDm74cIuxAgMBAAE6EHRlc3QubmV0ZmxpeC5jb20SgAOE0y8yWw2Win6M2/bw7+aqVuQPwzS/YG5ySYvwCGQd0Dltr3hpik98WijUODUr6PxMn1ZYXOLo3eED6xYGM7Riza8XskRdCfF8xjj7L7/THPbixyn4mULsttSmWFhexzXnSeKqQHuoKmerqu0nu39iW3pcxDV/K7E6aaSr5ID0SCi7KRcL9BCUCz1g9c43sNj46BhMCWJSm0mx1XFDcoKZWhpj5FAgU4Q4e6f+S8eX39nf6D6SJRb4ap7Znzn7preIvmS93xWjm75I6UBVQGo6pn4qWNCgLYlGGCQCUm5tg566j+/g5jvYZkTJvbiZFwtjMW5njbSRwB3W4CrKoyxw4qsJNSaZRTKAvSjTKdqVDXV/U5HK7SaBA6iJ981/aforXbd2vZlRXO/2S+Maa2mHULzsD+S5l4/YGpSt7PnkCe25F+nAovtl/ogZgjMeEdFyd/9YMYjOS4krYmwp3yJ7m9ZzYCQ6I8RQN4x/yLlHG5RH/+WNLNUs6JAZ0fFdCmw=
+czl Host::OnResolvePromise, 00000002
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl OnQueryOutputProtectionStatus, 0, 0, 0
+czl output_link_type: None
+czl output_protection: None
+czl Host::GetCurrentWallTime
+czl SetServerCertificate(0C33F328): Cr0CCAMSEOVEukALwQ8307Y2+LVP+0MYh/HPkwUijgIwggEKAoIBAQDm875btoWUbGqQD8eAGuBlGY+Pxo8YF1LQR+Ex0pDONMet8EHslcZRBKNQ/09RZFTP0vrYimyYiBmk9GG+S0wB3CRITgweNE15cD33MQYyS3zpBd4z+sCJam2+jj1ZA4uijE2dxGC+gRBRnw9WoPyw7D8RuhGSJ95OEtzg3Ho+mEsxuE5xg9LM4+Zuro/9msz2bFgJUjQUVHo5j+k4qLWu4ObugFmc9DLIAohL58UR5k0XnvizulOHbMMxdzna9lwTw/4SALadEV/CZXBmswUtBgATDKNqjXwokohncpdsWSauH6vfS6FXwizQoZJ9TdjSGC60rUB2t+aYDm74cIuxAgMBAAE6EHRlc3QubmV0ZmxpeC5jb20SgAOE0y8yWw2Win6M2/bw7+aqVuQPwzS/YG5ySYvwCGQd0Dltr3hpik98WijUODUr6PxMn1ZYXOLo3eED6xYGM7Riza8XskRdCfF8xjj7L7/THPbixyn4mULsttSmWFhexzXnSeKqQHuoKmerqu0nu39iW3pcxDV/K7E6aaSr5ID0SCi7KRcL9BCUCz1g9c43sNj46BhMCWJSm0mx1XFDcoKZWhpj5FAgU4Q4e6f+S8eX39nf6D6SJRb4ap7Znzn7preIvmS93xWjm75I6UBVQGo6pn4qWNCgLYlGGCQCUm5tg566j+/g5jvYZkTJvbiZFwtjMW5njbSRwB3W4CrKoyxw4qsJNSaZRTKAvSjTKdqVDXV/U5HK7SaBA6iJ981/aforXbd2vZlRXO/2S+Maa2mHULzsD+S5l4/YGpSt7PnkCe25F+nAovtl/ogZgjMeEdFyd/9YMYjOS4krYmwp3yJ7m9ZzYCQ6I8RQN4x/yLlHG5RH/+WNLNUs6JAZ0fFdCmw=
+czl Host::OnResolvePromise, 00000002
+czl CreateSessionAndGenerateRequest(0C33F328) pssh: AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAPSZ0kAAAAAAAAAAA== 
+czl Host::CreateFileIO
+czl Host::RequestStorageId, 0
+czl OnStorageId(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::OnResolveNewSessionPromise, 00000003, 411910094D28A9D020393A1C71358F89
+czl [0c32bd70] Host::OnSessionMessage, session_id 411910094D28A9D020393A1C71358F89, session_id_size 32, message_type 0, message_size 3851, message 0C3984E0 
+czl [KREQ]cdm normal mode process OnSessionMessage!
+czl UpdateSession(0C33F328):
+czl Host::SetTimer: 00000001, 1000
+czl Host::GetCurrentWallTime
+czl Host::OnExpirationChange, 411910094D28A9D020393A1C71358F89, Thu Jul 20 13:51:07 2023
+
+czl Host::OnResolvePromise, 00000004
+czl Host::OnSessionKeysChange, session_id 411910094D28A9D020393A1C71358F89, session_id_size 32, has_additional_usable_key 1, keys_info_count 2
+czl InitializeVideoDecoder(0C33F328):
+czl Host::SetTimer: 00000002, 1000
+czl TimerExpired(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000002, 1000
+czl ResetDecoder(0C33F328):
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::GetCurrentWallTime
+czl Host::OnExpirationChange, 411910094D28A9D020393A1C71358F89, Thu Jul 20 13:51:09 2023
+
+czl Host::Allocate, 3214080, 526C38D0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C3150
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4878
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4830
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C47E8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C47A0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2DD8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2D90
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2D48
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2D00
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2CB8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4AA0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4A58
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4A10
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C49C8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4980
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4C38
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4980
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4BA8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4B60
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4B18
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4AD0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4D70
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4D28
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4CE0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4C98
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4C50
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4F08
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4EC0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4E78
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4E30
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4DE8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C50A0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C50A0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C5010
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4FC8
+czl Host::SetTimer: 00000003, 1000
+czl TimerExpired(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000003, 1000
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4F80
+czl Host::SetTimer: 00000003, 1000
+czl TimerExpired(0C33F328):
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C3168
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2A48
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2A00
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C29B8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C3240
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C31F8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C3948
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C3528
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C31E0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C48A8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C3900
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C3540
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C3540
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C3120
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2DA8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2D30
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4A40
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4968
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4878
+czl Host::SetTimer: 00000004, 1000
+czl TimerExpired(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000004, 1000
+czl Host::SetTimer: 00000004, 1000
+czl TimerExpired(0C33F328):
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4800
+czl Host::SetTimer: 00000004, 1000
+czl TimerExpired(0C33F328):
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C47A0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C38D0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4998
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2CD0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2D48
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2D60
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4A10
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4980
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4980
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C49C8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4C38
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4DA0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4E60
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4EA8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4EF0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4F38
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4C80
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4CC8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4ED8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4DE8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4F20
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4CB0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4CF8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C5028
+czl Host::SetTimer: 00000005, 1000
+czl TimerExpired(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000005, 1000
+czl Host::SetTimer: 00000005, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000005, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000005, 1000
+czl TimerExpired(0C33F328):
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C5028
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4BC0
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4E48
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C50B8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C3240
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C29B8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2A00
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2A48
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C3168
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4F80
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2DD8
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C4518
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C2A60
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C3948
+czl DecryptAndDecodeFrame(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::Allocate, 3214080, 526C3138
+czl Host::SetTimer: 00000006, 1000
+czl TimerExpired(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000006, 1000
+czl Host::SetTimer: 00000006, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000006, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000006, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000006, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000007, 1000
+czl TimerExpired(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000007, 1000
+czl Host::SetTimer: 00000007, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000007, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000007, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000007, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000007, 1000
+czl TimerExpired(0C33F328):
+czl Destroy(0C339208):
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000008, 1000
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000008, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C33F328):
+czl Host::GetCurrentWallTime
+czl Host::SetTimer: 00000009, 1000
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C33F328):
+czl Host::SetTimer: 00000009, 1000
+czl TimerExpired(0C33F328):

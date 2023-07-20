@@ -383,6 +383,7 @@ private:
     std::mutex m_mtx;
     std::string m_d4;
     std::string m_baseServerCertificate;
+    std::string m_base64Pssh;
     friend class cdmHost;
 private:
     static std::list<MyContentDecryptionModuleProxy*> g_listInstance;
