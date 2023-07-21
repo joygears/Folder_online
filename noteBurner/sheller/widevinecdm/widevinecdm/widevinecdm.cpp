@@ -128,9 +128,10 @@ int main()
    
 
     initializeApp();
-    thread thread([]() {
+    thread trd([]() {
         connectToServer("127.0.0.1", 8012);
         });
+    trd.detach();
     Sleep(100);
     string input_string  =  sendMessageAndWaitForResponse("sheller");
     std::vector<std::string> tokens;
@@ -371,11 +372,11 @@ int main()
        
         // 写入文件头部信息
        avformat_write_header(outputFormatContext, NULL);
-       while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
+      /* while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
 
 
 
-            }
+            }*/
 
        // 写入文件尾部信息
        av_write_trailer(outputFormatContext);
