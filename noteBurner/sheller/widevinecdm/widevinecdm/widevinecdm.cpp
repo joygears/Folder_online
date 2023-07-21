@@ -47,6 +47,8 @@ AVStream* videoStream = 0;
 AVFormatContext* outputFormatContext = 0;
 AP4_UI16 g_width = 0;
 AP4_UI16 g_height = 0;
+double segCount = 0;
+double curSegIndex = 0;
  MyContentDecryptionModuleProxy* proxy = nullptr;
 void initializeApp() {
 
@@ -261,6 +263,38 @@ int main()
 
 
 
+   AP4_ByteStream* input_stream2 = NULL;
+   result = AP4_FileByteStream::Create(input_file.c_str(),
+       AP4_FileByteStream::STREAM_MODE_READ,
+       input_stream2);
+
+   AP4_AtomFactory factory;
+   AP4_Atom* currentAtom;
+   AP4_SidxAtom* SidxAtom = 0;;
+   AP4_LargeSize size = 0;
+   AP4_Position pos = 0;
+   AP4_UI64 FirstOffset = 0;
+   while (!factory.CreateAtomFromStream(*input_stream2, currentAtom)) {
+
+       if (currentAtom->GetType() == AP4_ATOM_TYPE_SIDX) {
+           SidxAtom = dynamic_cast<AP4_SidxAtom*>(currentAtom);
+           size = SidxAtom->GetSize();
+           FirstOffset = SidxAtom->GetFirstOffset();
+           SidxAtom->GetReferences();
+           break;
+       }
+       else if (currentAtom->GetType() == AP4_ATOM_TYPE_SSIX) {
+
+       }
+       input_stream2->Tell(pos);
+   }
+
+ 
+
+   const AP4_Array<AP4_SidxAtom::Reference>& References = SidxAtom->GetReferences();
+
+   segCount = References.ItemCount();
+
    
 
        AP4_ByteStream* input_stream3 = NULL;
@@ -372,11 +406,11 @@ int main()
        
         // 写入文件头部信息
        avformat_write_header(outputFormatContext, NULL);
-      /* while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
+       while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
 
 
 
-            }*/
+            }
 
        // 写入文件尾部信息
        av_write_trailer(outputFormatContext);
@@ -386,59 +420,8 @@ int main()
 
        printf("all frame decrypted\n");
 
+       closeClient();
 
-//    char ecryptBuffer[0x49d1] = { 0, };
-//    ifstream inFile("MEM_11F971D8_000049D1.mem", ios::in | ios::binary); //二进制读方式打开
-//    if (!inFile) {
-//        cout << "error" << endl;
-//        return 0;
-//    }
-//    while (inFile.read((char*)ecryptBuffer, sizeof(ecryptBuffer))) { //一直读到文件结束
-//        int readedBytes = inFile.gcount(); //看刚才读了多少字节
-//       
-//    }
-//    inFile.close();
-//    char key_id[] = {
-//        0x00, 0x00, 0x00, 0x00, 0x05, 0x6F, 0x60, 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-//    };
-//    unsigned char iv[] = {
-//0x01, 0xAC, 0x60, 0x6C, 0x64, 0x88, 0x37, 0xBE
-//    };
-//    
-//    SubsampleEntry subsamples[1];
-//    subsamples->clear_bytes = 0x21;
-//    subsamples->cipher_bytes = 0x49b0;
-//
-//    InputBuffer_2 input;
-//    input.data = (uint8_t *)ecryptBuffer;
-//    input.data_size = 0x49d1;
-//    input.encryption_scheme = EncryptionScheme::kCenc;
-//    input.key_id = (uint8_t*)key_id;
-//    input.key_id_size = 0x10;
-//    input.iv = iv;
-//    input.iv_size = 0x8;
-//    input.subsamples = subsamples;
-//    input.num_subsamples = 1;
-//    input.pattern.crypt_byte_block = 0;
-//    input.pattern.skip_byte_block = 0;
-//    input.timestamp = 0x073A393;
-//    MyVideoFrame videoFrame;
-//    MyVideoFrame* video_frame = &videoFrame;
-//   int result = proxy->DecryptAndDecodeFrame(&input, &videoFrame);
-//    Log("DecryptAndDecodeFrame result %d", result);
-//    cout << "width * height:" << videoFrame.SSize().width  << "*" << videoFrame.SSize().height << endl;
-//    cout << "videoFrame.m_format : " << videoFrame.Format() << endl;
-//    cout << "Timestamp : " << videoFrame.Timestamp() << endl;
-//    for (int i = 0; i < VideoFrame::VideoPlane::kMaxPlanes; i++) {
-//        cout << "videoFrame.PlaneOffset((VideoFrame::VideoPlane)"<<i<<")" << videoFrame.PlaneOffset((VideoFrame::VideoPlane)i) << endl;
-//        cout << "videoFrame.Stride((VideoFrame::VideoPlane)" << i << ")" << videoFrame.Stride((VideoFrame::VideoPlane)i) << endl;
-//   }
-//    FILE* pVideo;
-//    pVideo = fopen("frame.yuv", "wb");
-//    unsigned char* buffer=NULL;
-//    transtoYUV(video_frame, buffer);
-//    fwrite(buffer, 1, video_frame->SSize().width * video_frame->SSize().height * 1.5, pVideo);
-//    fclose(pVideo);
     return 0;
 
 }

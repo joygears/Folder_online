@@ -3,14 +3,14 @@
 #include <bento4/Ap4SencAtom.h>
 #include "MySampleReader.h"
 #include "MySampleDecrypter.h"
-
+#include "widevinecdm.h"
 MyLinearReader::MyLinearReader(AP4_Movie& movie, AP4_ByteStream* fragment_stream ):AP4_LinearReader(movie, fragment_stream) {
 
 	
 }
 AP4_Result MyLinearReader::ProcessMoof(AP4_ContainerAtom* moof, AP4_Position moof_offset, AP4_Position mdat_payload_offset)
 {
-	
+	curSegIndex++;
 	if (!this->AP4_LinearReader::ProcessMoof(moof, moof_offset, mdat_payload_offset)) {
 		
 		MySampleDecrypter* decrypter = nullptr;

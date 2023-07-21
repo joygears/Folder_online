@@ -19,6 +19,7 @@ muxer* encode = new muxer;
 const AVCodec* encodec = 0;
 AP4_UI16 width = 0;
 AP4_UI16 height = 0;
+int segCount = 0;
 int main() {
 
 	AP4_ByteStream* input_stream = NULL;
@@ -192,7 +193,8 @@ int main() {
 	 std::map<AP4_UI32, AP4_UI32> segs;
 	 AP4_UI32 curOffset = segPos;
 	 AP4_UI32 segsSize = 0;
-	 for (int i = 0; i < References.ItemCount(); i++) {
+	 segCount = References.ItemCount();
+	 for (int i = 0; i < segCount; i++) {
 		 segsSize += References[i].m_ReferencedSize;
 		if (segsSize >= 0x100000)
 		 {

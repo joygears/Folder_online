@@ -1,14 +1,34 @@
+#include <iostream>
 #include "MyLinearReader.h"
 #include <bento4/Ap4SencAtom.h>
 #include "MySampleReader.h"
 #include "MySampleDecrypter.h"
+#include "widevinecdm.h"
+
+double curSegIndex = 0;
+// 进度条函数
+void printProgressBar(double progress) {
+	const int barWidth = 50; // 进度条宽度
+	std::cout << "[";
+
+	int pos = barWidth * progress;
+	for (int i = 0; i < barWidth; ++i) {
+		if (i < pos) std::cout << "=";
+		else if (i == pos) std::cout << ">";
+		else std::cout << " ";
+	}
+
+	std::cout << "] " << int(progress * 100.0) << " %\r";
+	std::cout.flush();
+}
 MyLinearReader::MyLinearReader(AP4_Movie& movie, AP4_ByteStream* fragment_stream ):AP4_LinearReader(movie, fragment_stream) {
 
 	
 }
 AP4_Result MyLinearReader::ProcessMoof(AP4_ContainerAtom* moof, AP4_Position moof_offset, AP4_Position mdat_payload_offset)
 {
-	
+	curSegIndex++;
+	printProgressBar(curSegIndex / segCount);
 	if (!this->AP4_LinearReader::ProcessMoof(moof, moof_offset, mdat_payload_offset)) {
 		
 		MySampleDecrypter* decrypter = nullptr;

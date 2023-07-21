@@ -31,3 +31,4 @@ extern AVFormatContext* outputFormatContext;
 extern muxer * encode;
 extern AP4_UI16 width;
 extern AP4_UI16 height;
+extern int segCount;

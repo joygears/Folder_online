@@ -26,7 +26,8 @@ extern AVStream* videoStream;
 extern AVFormatContext* outputFormatContext;
 extern AP4_UI16 g_width;
 extern AP4_UI16 g_height;
-
+extern double segCount;
+extern double curSegIndex;
 using namespace std;
 
 #define DLL_EXPORT extern "C" __declspec( dllexport )

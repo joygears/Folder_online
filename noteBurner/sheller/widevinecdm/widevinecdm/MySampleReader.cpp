@@ -16,6 +16,23 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
 		std::cout << std::endl;
 	};
 
+    auto printProgressBar = [](double progress) {
+        const int barWidth = 50; // 进度条宽度
+        std::cout << "[";
+
+        int pos = barWidth * progress;
+        for (int i = 0; i < barWidth; ++i) {
+            if (i < pos) std::cout << "=";
+            else if (i == pos) std::cout << ">";
+            else std::cout << " ";
+        }
+
+        std::cout << "] " << int(progress * 100.0) << " %\r";
+        std::cout.flush();
+    };
+
+    printProgressBar(curSegIndex / segCount);
+
     int dataSize = sample.GetSize();
     char* data = new char[dataSize + 1];
     memset(data, 0, dataSize + 1);

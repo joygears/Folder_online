@@ -14,3 +14,5 @@ public:
     virtual ~MyLinearReader() {}
 };
 
+extern double curSegIndex;
+

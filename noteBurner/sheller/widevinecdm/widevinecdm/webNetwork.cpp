@@ -85,3 +85,8 @@ std::string sendMessageAndWaitForResponse(const std::string& message) {
 
     return server_response;
 }
+
+
+void closeClient() {
+    cli.close(con, websocketpp::close::status::normal, "Client shutting down");
+}
