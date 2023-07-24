@@ -1,3 +1,4 @@
+
 const injection = () => {
   const WEBVTT = 'webvtt-lssdh-ios8';
   const MANIFEST_URL = "manifest";
@@ -12,6 +13,7 @@ const injection = () => {
         console.log('manifest:')
         console.log(data)
         console.log(stringify(data))
+		window.electronAPI.setManifest(data)
       }
       return data;
     };
@@ -33,6 +35,7 @@ const injection = () => {
         }
         console.log('manifest_req:')
         console.log(data)
+		
       }
       if(data && typeof data.movieId === 'number') {
         try {
@@ -48,3 +51,5 @@ const injection = () => {
 }
 
 injection();
+
+

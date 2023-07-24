@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Electron Search Interface</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .search-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column; /* Add this to stack items vertically */
+    }
+    #searchBox {
+      width: 300px;
+      padding: 5px;
+      font-size: 16px;
+      margin-bottom: 10px; /* Add some spacing between the search box and button */
+    }
+    #searchButton {
+      padding: 5px 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #searchResult {
+      margin-top: 20px; /* Add spacing between search button and search results */
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" id="searchBox" placeholder="Enter your search term...">
+    <button id="searchButton">Search</button>
+    <div id="searchResult"></div>
+  </div>
+
+  <script>
+	
+	
+	 const { ipcRenderer } = require("electron");
+
+    const searchButton = document.getElementById('searchButton');
+    const searchBox = document.getElementById('searchBox');
+    const searchResultDiv = document.getElementById('searchResult');
+
+    searchButton.addEventListener('click', () => {
+      const searchTerm = searchBox.value;
+      ipcRenderer.send('search', searchTerm);
+    });
+
+  </script>
+</body>
+</html>
