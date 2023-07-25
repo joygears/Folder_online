@@ -108,7 +108,7 @@ void initializeApp() {
 
 int main()
 {
-    string input_file = "all.mp4";
+    string input_file = R"(all.mp4)";
     string cert = "Cr0CCAMSEOVEukALwQ8307Y2+LVP+0MYh/HPkwUijgIwggEKAoIBAQDm875btoWUbGqQD8eAGuBlGY+Pxo8YF1LQR+Ex0pDONMet8EHslcZRBKNQ/09RZFTP0vrYimyYiBmk9GG+S0wB3CRITgweNE15cD33MQYyS3zpBd4z+sCJam2+jj1ZA4uijE2dxGC+gRBRnw9WoPyw7D8RuhGSJ95OEtzg3Ho+mEsxuE5xg9LM4+Zuro/9msz2bFgJUjQUVHo5j+k4qLWu4ObugFmc9DLIAohL58UR5k0XnvizulOHbMMxdzna9lwTw/4SALadEV/CZXBmswUtBgATDKNqjXwokohncpdsWSauH6vfS6FXwizQoZJ9TdjSGC60rUB2t+aYDm74cIuxAgMBAAE6EHRlc3QubmV0ZmxpeC5jb20SgAOE0y8yWw2Win6M2/bw7+aqVuQPwzS/YG5ySYvwCGQd0Dltr3hpik98WijUODUr6PxMn1ZYXOLo3eED6xYGM7Riza8XskRdCfF8xjj7L7/THPbixyn4mULsttSmWFhexzXnSeKqQHuoKmerqu0nu39iW3pcxDV/K7E6aaSr5ID0SCi7KRcL9BCUCz1g9c43sNj46BhMCWJSm0mx1XFDcoKZWhpj5FAgU4Q4e6f+S8eX39nf6D6SJRb4ap7Znzn7preIvmS93xWjm75I6UBVQGo6pn4qWNCgLYlGGCQCUm5tg566j+/g5jvYZkTJvbiZFwtjMW5njbSRwB3W4CrKoyxw4qsJNSaZRTKAvSjTKdqVDXV/U5HK7SaBA6iJ981/aforXbd2vZlRXO/2S+Maa2mHULzsD+S5l4/YGpSt7PnkCe25F+nAovtl/ogZgjMeEdFyd/9YMYjOS4krYmwp3yJ7m9ZzYCQ6I8RQN4x/yLlHG5RH/+WNLNUs6JAZ0fFdCmw=";
     string pssh = "AAAANHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABQIARIQAAAAAAZulPgAAAAAAAAAAA==";
     
@@ -160,7 +160,9 @@ int main()
     license = base64_decode(license);
     proxy->UpdateSession(1, g_session_id.c_str(), g_session_id.size(), (uint8_t*)license.c_str(), license.size());
 
-
+    Log("decrypt environments config finished");
+    string res = sendMessageAndWaitForResponse("");
+    Log("res%s",res.c_str());
     AP4_ByteStream* input_stream = NULL;
     AP4_Result result = AP4_FileByteStream::Create(input_file.c_str(),
         AP4_FileByteStream::STREAM_MODE_READ,
@@ -168,6 +170,7 @@ int main()
 
     if (result != AP4_SUCCESS || input_stream == nullptr) {
         // 处理文件打开错误
+        Log("file open failed");
         return result;
     }
     AP4_File file(*input_stream);
@@ -176,8 +179,11 @@ int main()
 
     //获取ProtectedSampleDescription
     AP4_Cardinal track_count = movie->GetTracks().ItemCount();
-    if (!track_count)
+    if (!track_count) {
+        Log("movie have no track");
         return 1600;
+    }
+       
     AP4_ProtectedSampleDescription* ProtectedSampleDescription;
     AP4_Track* pTrack;
     while (1) {

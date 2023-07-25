@@ -86,6 +86,15 @@ std::string sendMessageAndWaitForResponse(const std::string& message) {
     return server_response;
 }
 
+// 函数：发送消息并等待返回消息
+void sendMessage(const std::string& message) {
+    std::unique_lock<std::mutex> lock(mutex);
+    // 向服务器发送消息
+    // 这里需要根据具体的WebSocket客户端库来发送消息，示例中省略此部分代码
+    cli.send(con, message, websocketpp::frame::opcode::text);
+  
+
+}
 
 void closeClient() {
     cli.close(con, websocketpp::close::status::normal, "Client shutting down");
