@@ -1,5 +1,5 @@
-import asyncio
-import time
+import asyncio,base64
+
 
 import websockets
 import json
@@ -36,6 +36,10 @@ async def handle_client(websocket, path):
         if message.startswith("licenseResult:"):
             response = message
             await shell_websocket.send(response)
+        if message.startswith("convert:"):
+            base64data = message.split(":")[1]
+            data = base64.standard_b64decode(base64data).decode("utf-8")
+            print(data)
 
 
 

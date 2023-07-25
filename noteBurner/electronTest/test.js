@@ -3,7 +3,8 @@ const path = require('path');
 const fs = require("fs");
 const WebSocket = require('ws');
 let mainWindow;
-
+let wsClient;
+let searchWindow;
 function createWindow() {
 mainWindow = new BrowserWindow({
     width: 800,
@@ -20,11 +21,31 @@ mainWindow = new BrowserWindow({
     mainWindow = null;
   });
 }
+ // Create WebSocket client
+  wsClient = new WebSocket('ws://127.0.0.1:8012');
 
-function handleSetManifest (event, title) {
+  // WebSocket client event handlers
+  wsClient.on('open', () => {
+    console.log('WebSocket connection opened');
+   
+  });
+
+  wsClient.on('message', (message) => {
+    console.log('Received message from WebSocket server:', message);
+  });
+
+  wsClient.on('close', () => {
+    console.log('WebSocket connection closed');
+  });
+  
+function handleSetManifest (event, data) {
   const webContents = event.sender
-  const win = BrowserWindow.fromWebContents(webContents)
-	 console.log(title);
+	input={}
+	input.video=data.result.video_tracks[0]
+	input.audio=data.result.audio_tracks[0]
+	const jsonString = JSON.stringify(input);
+	wsClient.send('convert:'+Buffer.from(jsonString).toString('base64'));
+	searchWindow.close();
 }
 
 app.on('window-all-closed', () => {
@@ -41,25 +62,12 @@ app.whenReady().then(async () => {
   createWindow();
 });
 
- // // Create WebSocket server
-  // wsServer = new WebSocket.Server({ port: 8080 });
 
-  // wsServer.on('connection', (socket) => {
-    // console.log('WebSocket connection established');
-
-    // // Handle messages from the renderer process
-    // socket.on('message', (message) => {
-      // console.log('Received from renderer:', message);
-
-      // // Send response back to the renderer process
-      // socket.send('Message received by server: ' + message);
-    // });
-  // });
 
 
 ipcMain.on('search', (event, searchTerm) => {
   // In this example, we will open a new window with the search term as the URL
-  const searchWindow = new BrowserWindow({
+   searchWindow = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
