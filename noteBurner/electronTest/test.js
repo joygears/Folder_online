@@ -30,8 +30,11 @@ mainWindow = new BrowserWindow({
    
   });
 
-  wsClient.on('message', (message) => {
-    console.log('Received message from WebSocket server:', message);
+ wsClient.on('message', (message) => {
+    console.log('Received message from WebSocket server:', message.toString('utf8'));
+	mainWindow.webContents.send('progress', parseFloat(message.toString('utf8')));
+    // Handle the received message here as needed
+    // For example, update the UI or perform some actions based on the message content
   });
 
   wsClient.on('close', () => {
