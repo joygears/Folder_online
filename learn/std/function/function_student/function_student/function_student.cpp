@@ -5,7 +5,7 @@
 #include "functional.h"
 int main()
 {
-    functional<int(int)> fun;
+    function<int(int)> fun;
 
     std::cout << "Hello World!\n";
 }
