@@ -1,8 +1,10 @@
 #include <iostream>
+#include <sstream>
 #include <iomanip>
 #include "MySampleReader.h"
 #include "MySampleDecrypter.h"
 #include "widevinecdm.h"
+#include "webNetwork.h"
 AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sample_data)
 {
 	auto printfHex = [](char *byteArray, int length) {
@@ -27,11 +29,16 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
             else std::cout << " ";
         }
 
-        std::cout << "] " << int(progress * 100.0) << " %\r";
+        std::cout << "] " << static_cast<int>(progress * 100.0) << " %\r";
         std::cout.flush();
     };
 
     printProgressBar(curSegIndex / segCount);
+   
+    stringstream ss;
+    ss.setf(ios::fixed);
+    ss << "decryptProgress:" << curSegIndex / segCount;
+    sendMessage(ss.str());
 
     int dataSize = sample.GetSize();
     char* data = new char[dataSize + 1];

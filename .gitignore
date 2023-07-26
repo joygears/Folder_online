@@ -7,4 +7,5 @@ netflix-script/binaries/out.mp4
 noteBurner/widevinecdm/Debug/all.mp4
 *.mp4
 *.log
+*.pdb
 node_modules/

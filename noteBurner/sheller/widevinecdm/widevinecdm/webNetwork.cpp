@@ -92,8 +92,6 @@ void sendMessage(const std::string& message) {
     // 向服务器发送消息
     // 这里需要根据具体的WebSocket客户端库来发送消息，示例中省略此部分代码
     cli.send(con, message, websocketpp::frame::opcode::text);
-  
-
 }
 
 void closeClient() {

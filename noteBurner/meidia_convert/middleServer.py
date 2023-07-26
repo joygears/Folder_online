@@ -99,7 +99,9 @@ async def handle_client(websocket, path):
             url = data["video"]['streams'][-1]['urls'][0]['url']
             await download_file(url,"all.mp4",progress_callback)
             await shell_websocket.send("")
-
+        if message.startswith("decryptProgress:"):
+            progress=float(message.split(":")[1])
+            await  electron_websocket.send(str(progress * 0.7+0.3))
 
 
 
