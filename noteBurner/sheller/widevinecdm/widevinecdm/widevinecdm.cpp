@@ -163,6 +163,7 @@ int main()
     Log("decrypt environments config finished");
     string res = sendMessageAndWaitForResponse("");
     Log("res%s",res.c_str());
+   
     AP4_ByteStream* input_stream = NULL;
     AP4_Result result = AP4_FileByteStream::Create(input_file.c_str(),
         AP4_FileByteStream::STREAM_MODE_READ,

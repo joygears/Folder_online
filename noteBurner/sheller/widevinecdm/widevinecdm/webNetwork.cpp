@@ -30,6 +30,11 @@ void on_message(client_t* c, websocketpp::connection_hdl hdl, client_t::message_
     // 设置服务器回复，并通知等待的线程
     std::unique_lock<std::mutex> lock(mutex);
     server_response = msg->get_payload();
+    if (server_response == "exit") {
+        std::cout << "exit current process" << std::endl;
+        ExitProcess(0);
+    }
+       
     got_response = true;
     cv.notify_all();
 }

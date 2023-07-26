@@ -344,7 +344,7 @@ void MyContentDecryptionModuleProxy::UpdateSession(uint32_t promise_id, const ch
     string base64License = base64_encode(license);
     Log("UpdateSession(%p) %s:", (const void*)this, base64License.c_str());
     
-    sendMessageAndWaitForResponse("licenseResult:" + base64License);
+    sendMessage("licenseResult:" + base64License);
 
     m_instance->UpdateSession(promise_id, session_id, session_id_size, response, response_size);
 }

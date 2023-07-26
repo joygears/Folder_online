@@ -81,6 +81,11 @@ async def handle_client(websocket, path):
             # response = licenseRequest
             # await shell_websocket.send(response)
         if message.startswith("shell"):
+            try:
+                if shell_websocket is not None:
+                    await shell_websocket.send("exit")
+            except:
+                pass
             shell_websocket = websocket
             response = licenseRequest
             await shell_websocket.send(response)
