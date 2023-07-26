@@ -2,9 +2,44 @@ const { app, BrowserWindow, components,ipcMain } = require('electron');
 const path = require('path');
 const fs = require("fs");
 const WebSocket = require('ws');
+const { exec } = require('child_process');
+
 let mainWindow;
 let wsClient;
 let searchWindow;
+
+command="middleServer.exe"
+const processName = 'middleServer.exe';
+
+function closeProcessOnWindows() {
+  exec(`taskkill /F /IM ${processName}`, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error closing the process: ${error.message}`);
+      return;
+    }
+
+    console.log(`Process ${processName} is closed.`);
+  });
+}
+function delay(milliseconds) {
+  const start = new Date().getTime();
+  while (new Date().getTime() - start < milliseconds) {
+    // Busy loop to block the main thread
+  }
+}
+exec(command, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error executing the command: ${error.message}`);
+      return;
+    }
+
+    // Output of the command
+    console.log(`Command output:\n${stdout}`);
+    console.error(`Command error output:\n${stderr}`);
+  });
+
+ delay(1000);
+
 function createWindow() {
 mainWindow = new BrowserWindow({
     width: 800,
@@ -19,6 +54,7 @@ mainWindow = new BrowserWindow({
 
   mainWindow.on('closed', () => {
     mainWindow = null;
+	closeProcessOnWindows();
   });
 }
  // Create WebSocket client
@@ -68,7 +104,8 @@ function handleSetManifest (event, data) {
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
-    app.quit();
+    delay(1000);
+	app.quit();
   }
 });
 
