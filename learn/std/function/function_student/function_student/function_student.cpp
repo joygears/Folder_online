@@ -3,11 +3,19 @@
 
 #include <iostream>
 #include "functional.h"
+
+using namespace std;
+
+
+void hello(string name) {
+    cout << name  << " hello";
+}
 int main()
 {
-    function<int(int)> fun;
-
-    std::cout << "Hello World!\n";
+    my::function<void(string)> fun;
+    fun = hello;
+    fun("czl");
+    
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
