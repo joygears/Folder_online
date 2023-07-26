@@ -29,10 +29,25 @@ mainWindow = new BrowserWindow({
     console.log('WebSocket connection opened');
    
   });
-
+function waitForThreeSeconds() {
+	if(searchWindow!=null){
+	searchWindow.close();
+	searchWindow = null;
+	}
+	
+}
  wsClient.on('message', (message) => {
     //console.log('Received message from WebSocket server:', message.toString('utf8'));
-	mainWindow.webContents.send('progress', parseFloat(message.toString('utf8')));
+	message = message.toString('utf8');
+	if (message.startsWith("initFinished"))
+	{
+		if(searchWindow!=null)
+			setTimeout(waitForThreeSeconds, 3000);
+	}
+else{
+	mainWindow.webContents.send('progress', parseFloat(message));
+	}	
+	
     // Handle the received message here as needed
     // For example, update the UI or perform some actions based on the message content
   });
@@ -48,7 +63,7 @@ function handleSetManifest (event, data) {
 	input.audio=data.result.audio_tracks[0]
 	const jsonString = JSON.stringify(input);
 	wsClient.send('convert:'+Buffer.from(jsonString).toString('base64'));
-	//searchWindow.close();
+	
 }
 
 app.on('window-all-closed', () => {

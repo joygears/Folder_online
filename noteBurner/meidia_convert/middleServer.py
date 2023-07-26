@@ -107,7 +107,8 @@ async def handle_client(websocket, path):
         if message.startswith("decryptProgress:"):
             progress=float(message.split(":")[1])
             await  electron_websocket.send(str(progress * 0.7+0.3))
-
+        if message.startswith("initFinished"):
+            await  electron_websocket.send("initFinished")
 
 
 

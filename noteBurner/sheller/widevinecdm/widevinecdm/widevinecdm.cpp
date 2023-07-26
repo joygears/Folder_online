@@ -161,7 +161,7 @@ int main()
     proxy->UpdateSession(1, g_session_id.c_str(), g_session_id.size(), (uint8_t*)license.c_str(), license.size());
 
     Log("decrypt environments config finished");
-    string res = sendMessageAndWaitForResponse("");
+    string res = sendMessageAndWaitForResponse("initFinished");
     Log("res%s",res.c_str());
    
     AP4_ByteStream* input_stream = NULL;
