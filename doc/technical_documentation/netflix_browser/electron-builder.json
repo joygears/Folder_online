@@ -1,0 +1,16 @@
+{
+  "appId": "com.example.netflix_browser",
+  "productName": "netflix_browser",
+  "directories": {
+    "output": "dist"
+  },
+  "mac": {
+    "category": "your.app.category.type"
+  },
+  "win": {
+    "target": "nsis"
+  },
+  "linux": {
+    "target": "AppImage"
+  }
+}

@@ -9,3 +9,7 @@ noteBurner/widevinecdm/Debug/all.mp4
 *.log
 *.pdb
 node_modules/
+*.idx
+*.out
+*.run
+noteBurner/sig_files/widevinecdm.dll.idb

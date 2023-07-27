@@ -1,0 +1,13 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.example.netflix_browser
+productName: netflix_browser
+mac:
+  category: your.app.category.type
+win:
+  target: nsis
+linux:
+  target: AppImage
+files: []
+electronVersion: 25.0.0+wvcus

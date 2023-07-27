@@ -1,0 +1,10 @@
+{
+  "name": "netflix_browser",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts" : { "start" : "electron ./main.js --no-sandbox" },
+  "devDependencies": {
+    "electron": "github:castlabs/electron-releases#v25.0.0+wvcus"
+  }
+}
