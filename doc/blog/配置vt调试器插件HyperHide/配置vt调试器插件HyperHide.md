@@ -57,6 +57,6 @@ on.bat
 
 
 
-> 如果不使用插件，记得执行HyperHide/Scripts 文件夹的off.bat,关闭插件驱动
+> 如果不使用插件，记得执行HyperHide/Scripts 文件夹的off.bat,关闭插件驱动，请记住在关闭驱动程序之前关闭所有 x64dbg/x32dbg 实例
 
 > 请不要在真机上配置这个插件，蓝屏警告
