@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "main.js",
   "license": "MIT",
-  "scripts" : { "start" : "electron ./main.js --no-sandbox" },
+  "scripts": {
+   "start" : "electron ./main.js --no-sandbox",
+    "pack": "electron-builder --dir",
+    "package": "electron-packager . --out ./OutApp --overwrite",
+    "dist": "electron-builder --win --ia32"
+  },
+
   "devDependencies": {
     "electron": "github:castlabs/electron-releases#v25.0.0+wvcus"
   }
