@@ -2,3 +2,54 @@ https://0o0.me/legendary/crack-widevine-drm.html
 https://stackoverflow.com/questions/69984831/how-to-play-netflix-videos-on-simple-electron-based-browser
 https://github.com/castlabs/electron-releases/wiki/EVS
 https://enigmaz.gitee.io/2020/12/23/netflix-webrip-note/
+
+
+ 
+
+enum VideoCodec : uint32_t {
+    kUnknownVideoCodec = 0,
+    kCodecVp8,
+    kCodecH264,
+    kCodecVp9,
+    kCodecAv1
+};
+ enum VideoCodecProfile : uint32_t {
+    kUnknownVideoCodecProfile = 0,
+    kProfileNotNeeded,
+    kH264ProfileBaseline,
+    kH264ProfileMain,
+    kH264ProfileExtended,
+    kH264ProfileHigh,
+    kH264ProfileHigh10,
+    kH264ProfileHigh422,
+    kH264ProfileHigh444Predictive,
+    // VP9 Profiles are only passed in starting from CDM_9.
+    kVP9Profile0,
+    kVP9Profile1,
+    kVP9Profile2,
+    kVP9Profile3,
+    kAv1ProfileMain,
+    kAv1ProfileHigh,
+    kAv1ProfilePro
+  };
+
+cdm::VideoDecoderConfig_3 media::ToCdmVideoDecoderConfig(const SSD::SSD_VIDEOINITDATA* initData,
+                                                         const CryptoMode cryptoMode)
+{
+  cdm::VideoDecoderConfig_3 cdmConfig{};
+  cdmConfig.codec = ToCdmVideoCodec(initData->codec);
+  cdmConfig.profile = ToCdmVideoCodecProfile(initData->codecProfile);
+
+  cdmConfig.format = ToCdmVideoFormat(initData->videoFormats[0]);
+
+  //! @todo: Color space not implemented
+  cdmConfig.color_space = {2, 2, 2, cdm::ColorRange::kInvalid}; // Unspecified
+
+  cdmConfig.coded_size.width = initData->width;
+  cdmConfig.coded_size.height = initData->height;
+  cdmConfig.extra_data = const_cast<uint8_t*>(initData->extraData);
+  cdmConfig.extra_data_size = initData->extraDataSize;
+  cdmConfig.encryption_scheme = ToCdmEncryptionScheme(cryptoMode);
+  return cdmConfig;
+}
+https://github.com/xbmc/inputstream.adaptive/blob/646c8751fdf48254449801668ee95dc1cefe3503/wvdecrypter/cdm/media/cdm/cdm_type_conversion.cc#L177

@@ -210,11 +210,11 @@ int main()
         || schemeType == 0x63626373
         || schemeType == 0x70696666)
     {
-        printf("protection scheme type: %u\n", schemeType);
+        Log("protection scheme type: %u\n", schemeType);
     }
     else
     {
-        printf("unhandled protection scheme type: %u\n", schemeType);
+        Log("unhandled protection scheme type: %u\n", schemeType);
     }
 
 
@@ -227,7 +227,7 @@ int main()
         format = (char*)AP4_GetFormatName(OriginalSampleDescription->GetFormat());
         OriginalSampleDescription->GetCodecString(codec);
 
-        printf("format:%s, codec:%s, type:%d \n", format, codec.GetChars(), OriginalSampleDescription->GetType());
+        Log("format:%s, codec:%s, type:%d \n", format, codec.GetChars(), OriginalSampleDescription->GetType());
     }
     
     AP4_Atom::Type trackType = pTrack->GetType();
@@ -242,10 +242,10 @@ int main()
         video_decoder_config.height = g_height;
         video_decoder_config.m_18 = 0;
         video_decoder_config.m_1C = 0;
-        if (codecStr.find("av", 0) == std::string::npos) {
+        if (codecStr.find("avc", 0) == std::string::npos) {
 
             if (codecStr.find("vp09", 0) == std::string::npos)
-                printf("codec %s not yet handled ", codecStr.c_str());
+                Log("codec %s not yet handled ", codecStr.c_str());
             video_decoder_config.profile = 1;
             video_decoder_config.codec = 3;
 
@@ -324,14 +324,14 @@ int main()
 
        // 打开输出文件
        if (avio_open(&outputFormatContext->pb, "tmp.mp4", AVIO_FLAG_WRITE) < 0) {
-           fprintf(stderr, "无法打开输出文件\n");
+           Log("无法打开输出文件\n");
            return -1;
        }
 
        // 创建视频流
        videoStream = avformat_new_stream(outputFormatContext, nullptr);
        if (!videoStream) {
-           fprintf(stderr, "无法创建视频流\n");
+           Log( "无法创建视频流\n");
            return -1;
        }
 
@@ -392,14 +392,14 @@ int main()
        int enaocode = avcodec_open2(encodecContext, encodec, 0);
 
        if (enaocode < 0) {
-           printf("avcodec_open2 encode failed \n");
+           Log("avcodec_open2 encode failed \n");
            return 0;
        }
       
        int deaocode = avcodec_open2(decodecContext, decodec, 0);
       
        if (deaocode < 0) {
-           printf("avcodec_open2 decode failed \n");
+           Log("avcodec_open2 decode failed \n");
            return 0;
        }
 
@@ -425,7 +425,7 @@ int main()
        avcodec_free_context(&decodecContext);
        avformat_free_context(outputFormatContext);
 
-       printf("all frame decrypted\n");
+       Log("all frame decrypted\n");
 
        closeClient();
 

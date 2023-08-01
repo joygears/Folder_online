@@ -102,7 +102,7 @@ async def handle_client(websocket, path):
             print(data)
             data = json.loads(data)
             url = data["video"]['streams'][-1]['urls'][0]['url']
-            await download_file(url,"all.mp4",progress_callback)
+            await download_file(url,r"D:\Users\Downloads\project\st\Folder_online\noteBurner\sheller\widevinecdm\Debug\all.mp4",progress_callback)
             await shell_websocket.send("")
         if message.startswith("decryptProgress:"):
             progress=float(message.split(":")[1])

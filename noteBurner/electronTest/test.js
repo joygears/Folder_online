@@ -11,6 +11,8 @@ let searchWindow;
 command="middleServer.exe"
 const processName = 'middleServer.exe';
 
+app.commandLine.appendSwitch('--no-sandbox')
+
 function closeProcessOnWindows() {
   exec(`taskkill /F /IM ${processName}`, (error, stdout, stderr) => {
     if (error) {
@@ -57,6 +59,7 @@ mainWindow = new BrowserWindow({
 	closeProcessOnWindows();
   });
 }
+
  // Create WebSocket client
   wsClient = new WebSocket('ws://127.0.0.1:8012');
 
