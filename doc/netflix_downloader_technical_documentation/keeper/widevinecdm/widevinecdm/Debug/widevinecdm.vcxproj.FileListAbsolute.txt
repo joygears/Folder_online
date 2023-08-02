@@ -1,2 +1,3 @@
 D:\Users\st\Folder_online\noteBurner\widevinecdm\widevinecdm\Debug\widevinecdm.vcxproj.CopyComplete
 D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\Debug\widevinecdm.vcxproj.CopyComplete
+D:\Users\Downloads\project\st\Folder_online\doc\netflix_downloader_technical_documentation\keeper\widevinecdm\widevinecdm\Debug\widevinecdm.vcxproj.CopyComplete

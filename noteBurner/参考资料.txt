@@ -33,6 +33,48 @@ enum VideoCodec : uint32_t {
     kAv1ProfilePro
   };
 
+enum VideoFormat : uint32_t {
+    kUnknownVideoFormat = 0,  // Unknown format value. Used for error reporting.
+    kYv12 = 1,                // 12bpp YVU planar 1x1 Y, 2x2 VU samples.
+    kI420 = 2,                // 12bpp YUV planar 1x1 Y, 2x2 UV samples.
+
+                              // In the following formats, each sample uses 16-bit in storage, while the
+                              // sample value is stored in the least significant N bits where N is
+                              // specified by the number after "P". For example, for YUV420P9, each Y, U,
+                              // and V sample is stored in the least significant 9 bits in a 2-byte block.
+                              kYUV420P9 = 16,
+                              kYUV420P10 = 17,
+                              kYUV422P9 = 18,
+                              kYUV422P10 = 19,
+                              kYUV444P9 = 20,
+                              kYUV444P10 = 21,
+                              kYUV420P12 = 22,
+                              kYUV422P12 = 23,
+                              kYUV444P12 = 24,
+  };
+
+  enum class EncryptionScheme : uint32_t {
+    kUnencrypted = 0,
+    kCenc,  // 'cenc' subsample encryption using AES-CTR mode.
+    kCbcs   // 'cbcs' pattern encryption using AES-CBC mode.
+  };
+struct VideoDecoderConfig_3 {
+    VideoCodec codec;
+    VideoCodecProfile profile;
+    VideoFormat format;
+    ColorSpace color_space;
+
+    // Width and height of video frame immediately post-decode. Not all pixels
+    // in this region are valid.
+    Size coded_size;
+
+    // Optional byte data required to initialize video decoders, such as H.264
+    // AAVC data.
+    uint8_t* extra_data;
+    uint32_t extra_data_size;
+
+    EncryptionScheme encryption_scheme;
+  };
 cdm::VideoDecoderConfig_3 media::ToCdmVideoDecoderConfig(const SSD::SSD_VIDEOINITDATA* initData,
                                                          const CryptoMode cryptoMode)
 {
@@ -53,3 +95,21 @@ cdm::VideoDecoderConfig_3 media::ToCdmVideoDecoderConfig(const SSD::SSD_VIDEOINI
   return cdmConfig;
 }
 https://github.com/xbmc/inputstream.adaptive/blob/646c8751fdf48254449801668ee95dc1cefe3503/wvdecrypter/cdm/media/cdm/cdm_type_conversion.cc#L177
+
+
+0fa8eab0  04 00 00 00 0d 00 00 00 02 00 00 00 28 eb a8 0f  ............(...
+0fa8eac0  80 07 00 00 38 04 00 00 00 00 00 00 00 00 00 00  ....8...........
+0fa8ead0  02 00 00 00 6b 08 d2 8a 10 eb a8 0f c0 15 c2 2f  ....k........../
+0fa8eae0  50 a6 10 04 58 eb a8 0f 14 b0 10 04 10 eb a8 0f  P...X...........
+0fa8eaf0  05 00 00 00 38 04 00 00 80 07 00 00 00 00 00 00  ....8...........
+0fa8eb00  ff ff ff ff ff ff ff ff ff ff ff ff ac 25 d0 2f  .............%./
+0fa8eb10  04 00 00 00 0d 00 00 00 02 00 00 00 01 01 01 01  ................
+0fa8eb20  80 07 00 00 38 04 00 00 00 00 00 00 00 00 00 00  ....8...........
+0fa8eb30  02 00 00 00 bd c7 67 03 d7 09 d2 8a 28 00 00 00  ......g.....(...
+0fa8eb40  00 00 00 00 ac 25 d0 2f 48 8a c3 2f ac 25 d0 2f  .....%./H../.%./
+0fa8eb50  8c eb a8 0f 80 af 10 04 80 eb a8 0f c4 fa 49 06  ..............I.
+0fa8eb60  b0 eb a8 0f 00 bc f1 2f 68 8a c3 2f 00 bc f1 2f  ......./h../.../
+0fa8eb70  0f 09 d2 8a 90 eb a8 0f b0 eb a8 0f 40 fa 49 06  ............@.I.
+0fa8eb80  74 ec a8 0f ec 79 f8 03 b0 eb a8 0f 00 00 00 00  t....y..........
+0fa8eb90  ff ff ff ff ff ff ff ff 48 8a c3 2f ff ff ff ff  ........H../....
+0fa8eba0  00 6f c4 2f ff ff ff ff ff ff ff ff 00 00 00 00  .o./............

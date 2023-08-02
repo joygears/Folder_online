@@ -4,7 +4,7 @@
   },
   "name": "netflix_downloader",
   "version": "1.0.0",
-  "main": "test.js",
+  "main": "main.js",
   "license": "MIT",
   "scripts": {
    "start" : "electron ./main.js --no-sandbox",

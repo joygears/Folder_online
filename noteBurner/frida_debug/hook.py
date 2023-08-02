@@ -26,7 +26,7 @@ def on_message(message, data):
     print(message)
 
 if __name__ == "__main__":
-    pid = get_cdm_process_pid("NoteBurner Netflix Video Downloader.exe")
+    pid = get_cdm_process_pid("electron.exe")
     if pid is None:
         print("cdm进程未启动，请启动cdm进程")
         sys.exit(1)
