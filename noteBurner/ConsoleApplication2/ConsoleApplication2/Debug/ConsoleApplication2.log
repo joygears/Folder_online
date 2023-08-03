@@ -1,20 +1,25 @@
 ﻿  ConsoleApplication2.cpp
 D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\muxer.h(5,14): warning C4099: “AVFrame”: 类型名称以前使用“struct”现在使用的是“class”
-D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\include\libavutil\frame.h(295): message : 参见“AVFrame”的声明
+D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\include\libavutil\frame.h(325): message : 参见“AVFrame”的声明
 D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\muxer.h(6,15): warning C4099: “AVStream”: 类型名称以前使用“struct”现在使用的是“class”
-D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\include\libavformat\avformat.h(872): message : 参见“AVStream”的声明
+D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\include\libavformat\avformat.h(950): message : 参见“AVStream”的声明
 D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\muxer.h(7,21): warning C4099: “AVCodecContext”: 类型名称以前使用“struct”现在使用的是“class”
-D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\include\libavcodec\avcodec.h(1565): message : 参见“AVCodecContext”的声明
+D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\include\libavcodec\avcodec.h(389): message : 参见“AVCodecContext”的声明
 D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\muxer.h(8,22): warning C4099: “AVFormatContext”: 类型名称以前使用“struct”现在使用的是“class”
-D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\include\libavformat\avformat.h(1344): message : 参见“AVFormatContext”的声明
-D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(194,22): warning C4244: “初始化”: 从“AP4_UI64”转换到“AP4_UI32”，可能丢失数据
+D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\include\libavformat\avformat.h(1215): message : 参见“AVFormatContext”的声明
+D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(198,22): warning C4244: “初始化”: 从“AP4_UI64”转换到“AP4_UI32”，可能丢失数据
   ConsoleApplication2.vcxproj -> D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\Debug\ConsoleApplication2.exe
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avcodec-58.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avcodec-59.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avdevice-58.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avdevice-59.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avfilter-7.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avfilter-8.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avformat-58.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avformat-59.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avutil-56.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\avutil-57.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libasprintf-0.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libatomic-1.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libbz2-1.dll
@@ -59,8 +64,11 @@ D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\Conso
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libx265.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libxxhash.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\libzstd.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\postproc-56.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\swresample-3.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\swresample-4.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\swscale-5.dll
+  D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\swscale-6.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\zlib.dll
   D:\Users\Downloads\project\st\Folder_online\noteBurner\ConsoleApplication2\sdk\bin\zlib1.dll
-  复制了 53 个文件
+  复制了 61 个文件

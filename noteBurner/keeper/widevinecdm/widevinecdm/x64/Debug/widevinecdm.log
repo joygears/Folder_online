@@ -1,25 +1,227 @@
 ﻿  cdmHost.cpp
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\cdmHost.cpp(149,57): error C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\cdmHost.cpp(244,22): warning C4267: “return”: 从“size_t”转换到“uint32_t”，可能丢失数据
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\cdmHost.cpp(141,41): warning C4267: “=”: 从“size_t”转换到“uint32_t”，可能丢失数据
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\cdmHost.cpp(169,57): error C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\cdmHost.cpp(264,22): warning C4267: “return”: 从“size_t”转换到“uint32_t”，可能丢失数据
   fucntion.cpp
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\fucntion.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\fucntion.cpp(23,5): error C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\fucntion.cpp(19,9): warning C4101: “n”: 未引用的局部变量
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\fucntion.cpp(52,20): error C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\fucntion.cpp(76,26): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\fucntion.cpp(87,19): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-  base64.cpp
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\tool\base64.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\fucntion.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\fucntion.cpp(23,5): error C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\fucntion.cpp(19,9): warning C4101: “n”: 未引用的局部变量
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\fucntion.cpp(52,20): error C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\fucntion.cpp(76,26): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\fucntion.cpp(87,19): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  webNetwork.cpp
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\webNetwork.cpp(4,10): fatal error C1083: 无法打开包括文件: “websocketpp/config/asio_no_tls_client.hpp”: No such file or directory
   widevinecdm.cpp
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\widevinecdm.cpp(77,81): warning C4267: “参数”: 从“size_t”转换到“uint32_t”，可能丢失数据
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\widevinecdm.cpp(274,87): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\widevinecdm.cpp(275,101): warning C4267: “参数”: 从“size_t”转换到“uint32_t”，可能丢失数据
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\widevinecdm.cpp(303,48): warning C4838: 从“int”转换到“char”需要收缩转换
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\widevinecdm.cpp(303,48): warning C4309: “初始化”: 截断常量值
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\widevinecdm.cpp(303,53): warning C4838: 从“int”转换到“char”需要收缩转换
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\widevinecdm.cpp(303,53): warning C4309: “初始化”: 截断常量值
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\widevinecdm.cpp(347,50): warning C4311: “类型强制转换”: 从“void *”到“int”的指针截断
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\widevinecdm.cpp(347,50): warning C4302: “类型强制转换”: 从“void *”到“int”截断
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\widevinecdm.cpp(347,54): warning C4312: “类型强制转换”: 从“int”转换到更大的“void *”
-D:\Users\Downloads\project\st\Folder_online\noteBurner\fakewidevinecdm\widevinecdm\widevinecdm\widevinecdm.cpp(369,20): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1136,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1137,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1139,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1144,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1145,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1146,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1147,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1148,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1149,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1150,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1151,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1152,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1153,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1154,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1155,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1156,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1157,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1158,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1159,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1160,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1161,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1162,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1163,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1164,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1165,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1166,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1167,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1168,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1169,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1170,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1171,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1172,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1173,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1174,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1175,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1176,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1177,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1178,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1179,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1180,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1181,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1182,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1183,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1184,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1185,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1186,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1187,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1188,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1189,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1190,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1191,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1192,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1193,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1194,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1195,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1196,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1197,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1198,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1199,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1200,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1201,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1202,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1203,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1204,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1205,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1206,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1207,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1208,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1209,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1210,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1211,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1212,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1213,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1214,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1215,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1216,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1217,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1218,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1219,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1220,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1221,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1222,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1223,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1224,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1225,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1226,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1227,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1228,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1229,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1230,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1231,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1232,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1233,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1234,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1235,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1236,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1237,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1238,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1239,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1240,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1241,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1242,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1243,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1244,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1245,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1246,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1247,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1248,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1249,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1250,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1251,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1252,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1253,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1254,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1255,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1256,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1257,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1258,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1259,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1298,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1299,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1306,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1316,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1317,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1326,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1327,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1328,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1329,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1330,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1331,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1340,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1341,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1342,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1343,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1344,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1345,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1346,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1347,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1348,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1349,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1350,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1351,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1352,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1353,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1354,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1355,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1356,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1357,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1358,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1359,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1360,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1361,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1362,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1363,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1364,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1365,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1366,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1367,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1368,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1369,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1370,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1371,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1372,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1373,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1374,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1375,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1376,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1377,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1378,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1379,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1380,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1381,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1382,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1383,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1384,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1385,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1386,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1387,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1529,16): warning C4244: “return”: 从“__int64”转换到“int”，可能丢失数据
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1697,1): warning C4311: “类型强制转换”: 从“PVOID”到“DWORD”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1697,1): warning C4302: “类型强制转换”: 从“PVOID”到“DWORD”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1702,1): warning C4311: “类型强制转换”: 从“PVOID”到“DWORD”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1702,1): warning C4302: “类型强制转换”: 从“PVOID”到“DWORD”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1738,1): warning C4311: “类型强制转换”: 从“unsigned char *”到“ULONG”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1738,1): warning C4302: “类型强制转换”: 从“unsigned char *”到“ULONG”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1738,1): warning C4312: “类型强制转换”: 从“ULONG”转换到更大的“BYTE *”
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1739,1): warning C4311: “类型强制转换”: 从“unsigned char *”到“ULONG”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1739,1): warning C4302: “类型强制转换”: 从“unsigned char *”到“ULONG”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1739,1): warning C4311: “类型强制转换”: 从“BYTE *”到“ULONG”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1739,1): warning C4302: “类型强制转换”: 从“BYTE *”到“ULONG”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1746,1): warning C4311: “类型强制转换”: 从“unsigned char *”到“ULONG”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1746,1): warning C4302: “类型强制转换”: 从“unsigned char *”到“ULONG”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1746,1): warning C4312: “类型强制转换”: 从“ULONG”转换到更大的“ULONG_PTR *”
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1746,1): warning C4311: “类型强制转换”: 从“BYTE *”到“ULONG”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1746,1): warning C4302: “类型强制转换”: 从“BYTE *”到“ULONG”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1752,1): warning C4311: “类型强制转换”: 从“unsigned char *”到“ULONG”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1752,1): warning C4302: “类型强制转换”: 从“unsigned char *”到“ULONG”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1752,1): warning C4311: “类型强制转换”: 从“BYTE *”到“ULONG”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1752,1): warning C4302: “类型强制转换”: 从“BYTE *”到“ULONG”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1764,1): warning C4311: “类型强制转换”: 从“unsigned char *”到“ULONG”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1764,1): warning C4302: “类型强制转换”: 从“unsigned char *”到“ULONG”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1764,1): warning C4311: “类型强制转换”: 从“BYTE *”到“ULONG”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1764,1): warning C4302: “类型强制转换”: 从“BYTE *”到“ULONG”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1788,1): warning C4311: “类型强制转换”: 从“PVOID”到“DWORD”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1788,1): warning C4302: “类型强制转换”: 从“PVOID”到“DWORD”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1793,1): warning C4311: “类型强制转换”: 从“PVOID”到“DWORD”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1793,1): warning C4302: “类型强制转换”: 从“PVOID”到“DWORD”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\widevinecdm.cpp(96,81): warning C4267: “参数”: 从“size_t”转换到“uint32_t”，可能丢失数据
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\widevinecdm.cpp(379,50): warning C4311: “类型强制转换”: 从“void *”到“int”的指针截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\widevinecdm.cpp(379,50): warning C4302: “类型强制转换”: 从“void *”到“int”截断
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\widevinecdm.cpp(379,54): warning C4312: “类型强制转换”: 从“int”转换到更大的“void *”
+D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\widevinecdm.cpp(663,13): error C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   正在生成代码...

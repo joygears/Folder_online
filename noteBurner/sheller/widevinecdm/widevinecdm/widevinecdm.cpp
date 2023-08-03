@@ -242,16 +242,15 @@ int main()
         video_decoder_config.height = g_height;
         video_decoder_config.m_18 = 0;
         video_decoder_config.m_1C = 0;
-        if (codecStr.find("avc", 0) == std::string::npos) {
-
-            if (codecStr.find("vp09", 0) == std::string::npos)
-                Log("codec %s not yet handled ", codecStr.c_str());
+       
+        if (codecStr.find("vp09", 0) != std::string::npos) {
+  
             video_decoder_config.profile = 1;
             video_decoder_config.codec = 3;
 
 
         }
-        else {
+        else if (codecStr.find("avc", 0) != std::string::npos) {
             AP4_AvcSampleDescription* AvcSampleDescription = dynamic_cast<AP4_AvcSampleDescription*>(OriginalSampleDescription);
             AP4_UI08 profile = AvcSampleDescription->GetProfile();
             AP4_UI08 level = AvcSampleDescription->GetLevel();
@@ -260,6 +259,12 @@ int main()
             video_decoder_config.codec = 2;
             video_decoder_config.profile = videoProfile;
 
+        }
+        else if (codecStr.find("av01", 0) != std::string::npos) {
+            video_decoder_config.profile = 0xd;
+            video_decoder_config.codec = 4;
+            video_decoder_config.color_space = 0x0f7bf138;
+            video_decoder_config.m_20 = 2;
         }
         video_decoder_config.alpha_mode = 2;
     }

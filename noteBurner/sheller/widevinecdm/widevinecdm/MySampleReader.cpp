@@ -5,6 +5,7 @@
 #include "MySampleDecrypter.h"
 #include "widevinecdm.h"
 #include "webNetwork.h"
+#include "fucntion.h"
 AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sample_data)
 {
 	auto printfHex = [](char *byteArray, int length) {
@@ -93,7 +94,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
         InputBuffer_2 input;
         input.data = (UINT8 *)data;
         input.data_size = dataSize;
-        input.encryption_scheme = EncryptionScheme::kCenc;
+        input.encryption_scheme = EncryptionScheme::kCbcs;
         input.key_id = (uint8_t*)key_id;
         input.key_id_size = 0x10;
         input.iv = iv;
@@ -107,7 +108,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
         MyVideoFrame* video_frame = &videoFrame;
       
         int result = proxy->DecryptAndDecodeFrame(&input, &videoFrame);
-        printf("DecryptAndDecodeFrame result %d\n", result);
+        Log("DecryptAndDecodeFrame result %d\n", result);
         /*cout << "width * height:" << videoFrame.SSize().width << "*" << videoFrame.SSize().height << endl;
         cout << "videoFrame.m_format : " << videoFrame.Format() << endl;
         cout << "Timestamp : " << videoFrame.Timestamp() << endl;

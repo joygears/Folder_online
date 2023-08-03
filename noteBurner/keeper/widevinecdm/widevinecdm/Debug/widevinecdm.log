@@ -476,5 +476,6 @@ D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevi
 D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1386,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
 D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\widevinecdm\InlineHook.hpp(1387,15): warning C4838: 从“int”转换到“unsigned long”需要收缩转换
   正在生成代码...
+  LINK : 缺少程序数据库 D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\Debug\widevinecdm.pdb；正在执行完全链接
     正在创建库 D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\Debug\widevinecdm.lib 和对象 D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\Debug\widevinecdm.exp
   widevinecdm.vcxproj -> D:\Users\Downloads\project\st\Folder_online\noteBurner\keeper\widevinecdm\Debug\widevinecdm.dll
