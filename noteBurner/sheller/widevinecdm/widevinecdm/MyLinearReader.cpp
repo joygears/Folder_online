@@ -54,11 +54,13 @@ AP4_Result MyLinearReader::ProcessMoof(AP4_ContainerAtom* moof, AP4_Position moo
 			AP4_SencAtom* SencAtom = dynamic_cast<AP4_SencAtom*>(moof->GetChild(AP4_ATOM_TYPE_SENC));
 			AP4_CencSampleEncryption* CencSampleEncryption = (AP4_CencSampleEncryption*)(((char*)SencAtom) + 0x28);
 			AP4_CencSampleInfoTable* table = 0;
+			AP4_UI08 m_DefaultCryptByteBlock = 0;
+			AP4_UI08 m_DefaultSkipByteBlock = 0;
 			if (!CencSampleEncryption || (CencSampleEncryption->GetOuter().GetFlags() & 1)==0){
 				AP4_UI08 DefaultPerSampleIvSize = cenc->GetDefaultPerSampleIvSize();
 				AP4_UI08 m_DefaultConstantIvSize = cenc->GetDefaultConstantIvSize();
-				AP4_UI08 m_DefaultCryptByteBlock = cenc->GetDefaultCryptByteBlock();
-				AP4_UI08 m_DefaultSkipByteBlock = cenc->GetDefaultSkipByteBlock();
+				 m_DefaultCryptByteBlock = cenc->GetDefaultCryptByteBlock();
+				 m_DefaultSkipByteBlock = cenc->GetDefaultSkipByteBlock();
 				const AP4_UI08* m_DefaultConstantIv = 0;
 				if (m_DefaultConstantIvSize) {
 					m_DefaultConstantIv = cenc->GetDefaultConstantIv();
@@ -69,7 +71,7 @@ AP4_Result MyLinearReader::ProcessMoof(AP4_ContainerAtom* moof, AP4_Position moo
 			}
 			
 			
-			decrypter = new MySampleDecrypter(kid, 16, table, timeScale);
+			decrypter = new MySampleDecrypter(kid, 16, table, timeScale, m_DefaultCryptByteBlock, m_DefaultSkipByteBlock);
 		}
 		else {
 		

@@ -264,7 +264,7 @@ int main()
             video_decoder_config.profile = 0xd;
             video_decoder_config.codec = 4;
             video_decoder_config.color_space = 0x0f7bf138;
-            video_decoder_config.m_20 = 2;
+               video_decoder_config.m_20 = 2;
         }
         video_decoder_config.alpha_mode = 2;
     }

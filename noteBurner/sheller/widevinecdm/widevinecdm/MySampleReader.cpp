@@ -67,12 +67,12 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
 		m_decrypter->m_table->GetSampleInfo(m_decrypter->index, subsample_count, bytes_of_cleartext_data, bytes_of_encrypted_data);
 
 
-		printf("read sample offset: 0x%llX size: 0x%X isEncrypted: true\n", sample.GetOffset(), sample.GetSize());
+		Log("read sample offset: 0x%llX size: 0x%X isEncrypted: true m_DefaultCryptByteBlock %d m_DefaultSkipByteBlock %d \n", sample.GetOffset(), sample.GetSize(), m_decrypter->m_DefaultCryptByteBlock, m_decrypter->m_DefaultSkipByteBlock);
 		printf("keyid: ");
 		printfHex((char *)m_decrypter->m_key_id, m_decrypter->m_key_id_size);
 		printf("iv: ");
 		printfHex((char*)iv, ivSize);
-
+       
 		for (int i = 0; i < subsample_count; i++) {
 			printf("subsample[%d] bytes_of_cleartext_data %X bytes_of_encrypted_data %X\n", i, bytes_of_cleartext_data[i], bytes_of_encrypted_data[i]);
 		}
@@ -101,8 +101,8 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
         input.iv_size = ivSize;
         input.subsamples = subsamples;
         input.num_subsamples = subsample_count;
-        input.pattern.crypt_byte_block = 0;
-        input.pattern.skip_byte_block = 0;
+        input.pattern.crypt_byte_block = m_decrypter->m_DefaultCryptByteBlock;
+        input.pattern.skip_byte_block = m_decrypter->m_DefaultSkipByteBlock;
         input.timestamp = timestamp;
         MyVideoFrame videoFrame;
         MyVideoFrame* video_frame = &videoFrame;

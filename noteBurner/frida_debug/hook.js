@@ -88,7 +88,7 @@ function std_string_c_str(str){
 // });
 
 
-const sub_102125B0 = getTargetAddr(ptr(0x102125B0));
+const sub_102125B0 = getTargetAddr(ptr(0x10211E90));
 
 send(sub_102125B0)
 
