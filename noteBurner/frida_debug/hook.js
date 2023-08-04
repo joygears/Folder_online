@@ -88,14 +88,14 @@ function std_string_c_str(str){
 // });
 
 
-const sub_102125B0 = getTargetAddr(ptr(0x10211E90));
+const InitializeVideoDecoder = getTargetAddr(ptr(0x102125B0));
 
-send(sub_102125B0)
+send(InitializeVideoDecoder)
 
 
-Interceptor.attach(sub_102125B0, {
+Interceptor.attach(InitializeVideoDecoder, {
     onEnter(args) {
-        console.log("sub_102125B0 onEnter")
+        console.log("InitializeVideoDecoder onEnter")
         // pNode = ptr(ptr(this.context.ecx).readU32());
 
         // console.log("root------------------------------------: ",pNode);
@@ -114,16 +114,64 @@ Interceptor.attach(sub_102125B0, {
      // console.log("第二个参数: "+ args[1].readUtf8String())
     },
     onLeave(retval){
-        console.log("sub_102125B0 onLeave")
+        console.log("InitializeVideoDecoder onLeave")
         // console.log("root------------------------------------: ",pNode);
         // console.log("左节点: ",ptr(pNode.readU32()));
         // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
         // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
-       // console.log("返回值：" + !retval.isNull())
+        console.log("返回值：" + retval)
     }
 });
 
 
+// const DecryptAndDecodeFrame = getTargetAddr(ptr(0x10211E90));
+
+// send(DecryptAndDecodeFrame)
+
+
+// Interceptor.attach(DecryptAndDecodeFrame, {
+    // onEnter(args) {
+        // console.log("DecryptAndDecodeFrame onEnter")
+     
+      // console.log("第一个参数: "+ hexdump(ptr(args[0])));
+    
+    // },
+    // onLeave(retval){
+        // console.log("DecryptAndDecodeFrame onLeave")
+    // }
+// });
+
+// // const DeinitializeDecoder = getTargetAddr(ptr(0x10212070));
+
+// // send(DeinitializeDecoder)
+
+
+// // Interceptor.attach(DeinitializeDecoder, {
+    // // onEnter(args) {
+        // // console.log("DeinitializeDecoder onEnter")
+       
+    // // },
+    // // onLeave(retval){
+        // // console.log("DeinitializeDecoder onLeave")
+        
+    // // }
+// // });
+
+// const ResetDecoder = getTargetAddr(ptr(0x10212B50));
+
+// send(ResetDecoder)
+
+
+// Interceptor.attach(ResetDecoder, {
+    // onEnter(args) {
+        // console.log("ResetDecoder onEnter")
+		// console.log("decoder_type: ",ptr(args[0]).toInt32())
+    // },
+    // onLeave(retval){
+        // console.log("ResetDecoder onLeave")
+        
+    // }
+// });
 
 
 //---------------------------------------- CreateProcess -----------------------------------------------

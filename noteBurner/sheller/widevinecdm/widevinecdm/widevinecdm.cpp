@@ -263,7 +263,7 @@ int main()
         else if (codecStr.find("av01", 0) != std::string::npos) {
             video_decoder_config.profile = 0xd;
             video_decoder_config.codec = 4;
-            video_decoder_config.color_space = 0x0f7bf138;
+           
                video_decoder_config.m_20 = 2;
         }
         video_decoder_config.alpha_mode = 2;
@@ -271,9 +271,9 @@ int main()
 
 
 
-   proxy->InitializeVideoDecoder(&video_decoder_config);
-
-
+   result =  proxy->InitializeVideoDecoder(&video_decoder_config);
+  Log("InitializeVideoDecoder result : %d", result);
+   proxy->ResetDecoder(1);
 
    AP4_ByteStream* input_stream2 = NULL;
    result = AP4_FileByteStream::Create(input_file.c_str(),
