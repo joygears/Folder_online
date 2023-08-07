@@ -1,2 +1,2 @@
-PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.29.30133:TargetPlatformVersion=10.0.19041.0:VcpkgTriplet=x86-windows:
+PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.29.30133:VCServicingVersionMFC=14.29.30136:TargetPlatformVersion=10.0.19041.0:VcpkgTriplet=x86-windows:
 Debug|Win32|D:\Users\Downloads\project\st\Folder_online\noteBurner\sheller\widevinecdm\|

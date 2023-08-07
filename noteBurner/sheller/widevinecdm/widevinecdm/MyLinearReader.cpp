@@ -1,9 +1,11 @@
 #include <Windows.h>
+#include <sstream>
 #include "MyLinearReader.h"
 #include <bento4/Ap4SencAtom.h>
 #include "MySampleReader.h"
 #include "MySampleDecrypter.h"
 #include "widevinecdm.h"
+#include "webNetwork.h"
 MyLinearReader::MyLinearReader(AP4_Movie& movie, AP4_ByteStream* fragment_stream ):AP4_LinearReader(movie, fragment_stream) {
 
 	
@@ -11,6 +13,11 @@ MyLinearReader::MyLinearReader(AP4_Movie& movie, AP4_ByteStream* fragment_stream
 AP4_Result MyLinearReader::ProcessMoof(AP4_ContainerAtom* moof, AP4_Position moof_offset, AP4_Position mdat_payload_offset)
 {
 	curSegIndex++;
+
+	stringstream ss;
+	ss.setf(ios::fixed);
+	ss << "decryptProgress:" << curSegIndex / segCount;
+	sendMessage(ss.str());
 	if (!this->AP4_LinearReader::ProcessMoof(moof, moof_offset, mdat_payload_offset)) {
 		
 		MySampleDecrypter* decrypter = nullptr;

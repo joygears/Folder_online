@@ -387,7 +387,8 @@ int main()
                return 0;
            };
 
-           int64_t val = 22 - getQualityFromBitrate(bit_rate);
+           //int64_t val = 22 - getQualityFromBitrate(bit_rate);
+           int64_t val = 22 - 4;
            av_opt_set_int(encodecContext->priv_data, "crf", val, 0);
 
            if ((*(char*)&outputFormatContext->oformat->flags & 0x40) != 0)
