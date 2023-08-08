@@ -261,7 +261,13 @@ int main()
 
         }
         else if (codecStr.find("av01", 0) != std::string::npos) {
-            video_decoder_config.profile = 0xd;
+            AP4_Av1SampleDescription* Av1SampleDescription = dynamic_cast<AP4_Av1SampleDescription*>(OriginalSampleDescription);
+			AP4_UI08 profile = Av1SampleDescription->GetSeqProfile();
+			AP4_UI08 level = Av1SampleDescription->GetSeqLevelIdx0();
+			int videoProfile = ([](AP4_UI08 profile) ->int{
+				return profile + 0xd;
+				})(profile);
+			video_decoder_config.profile = videoProfile;
             video_decoder_config.codec = 4;
            
                video_decoder_config.m_20 = 2;
