@@ -136,9 +136,15 @@ int main() {
 
 		}
 		else if (codecStr.find("av01", 0) != std::string::npos) {
-			video_decoder_config.profile = 0xd;
+			AP4_Av1SampleDescription* Av1SampleDescription = dynamic_cast<AP4_Av1SampleDescription*>(OriginalSampleDescription);
+			AP4_UI08 profile = Av1SampleDescription->GetSeqProfile();
+			AP4_UI08 level = Av1SampleDescription->GetSeqLevelIdx0();
+			int videoProfile = ([](AP4_UI08 profile) ->int{
+				return profile + 0xd;
+				})(profile);
+			video_decoder_config.profile = videoProfile;
 			video_decoder_config.codec = 4;
-			video_decoder_config.color_space = 0x0f7bf138;
+			
 			video_decoder_config.m_20 = 2;
 		}
 		video_decoder_config.alpha_mode = 2;
@@ -220,6 +226,9 @@ int main() {
 	 if (sample_aspect_ratio.den == 0 || sample_aspect_ratio.num == 0) {
 		 sample_aspect_ratio = AVRational{ 1, 0x1 }; // 从licensedMainfest获取
 	 }
+
+	
+	
 
 	 AP4_ByteStream* input_stream3 = NULL;
 	 result = AP4_FileByteStream::Create(R"(all.mp4)",
