@@ -14,3 +14,4 @@ node_modules/
 *.run
 noteBurner/sig_files/widevinecdm.dll.idb
 dist/
+Debug/
