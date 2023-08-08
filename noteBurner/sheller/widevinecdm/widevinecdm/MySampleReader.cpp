@@ -91,7 +91,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
             InputBuffer_2 input{ 0 };
             input.data = (UINT8*)data;
             input.data_size = dataSize;
-            input.encryption_scheme = EncryptionScheme::kCbcs;
+            input.encryption_scheme = m_decrypter->m_protectedType;
             input.key_id = (uint8_t*)key_id;
             input.key_id_size = 0x10;
             input.iv = iv;

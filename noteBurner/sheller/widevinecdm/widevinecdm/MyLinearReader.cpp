@@ -52,13 +52,14 @@ AP4_Result MyLinearReader::ProcessMoof(AP4_ContainerAtom* moof, AP4_Position moo
 			AP4_ProtectionSchemeInfo* SchemeInfo = ProtectedSampleDescription->GetSchemeInfo();
 			AP4_ContainerAtom* SchiAtom = SchemeInfo->GetSchiAtom();
 			AP4_CencTrackEncryption* cenc = dynamic_cast<AP4_CencTrackEncryption*>(SchiAtom->GetChild(AP4_ATOM_TYPE_TENC));
-			
+			EncryptionScheme protectedType = (EncryptionScheme)(ProtectedSampleDescription->GetSchemeType() == 0x63656E63 ? EncryptionScheme::kCenc : EncryptionScheme::kCbcs);
 			if (!cenc) {
 
 				//SchiAtom->GetChild()  100D8019
 			}
 			const AP4_UI08* kid = cenc->GetDefaultKid();
 			AP4_SencAtom* SencAtom = dynamic_cast<AP4_SencAtom*>(moof->GetChild(AP4_ATOM_TYPE_SENC));
+			
 			AP4_CencSampleEncryption* CencSampleEncryption = (AP4_CencSampleEncryption*)(((char*)SencAtom) + 0x28);
 			AP4_CencSampleInfoTable* table = 0;
 			AP4_UI08 m_DefaultCryptByteBlock = 0;
@@ -78,7 +79,7 @@ AP4_Result MyLinearReader::ProcessMoof(AP4_ContainerAtom* moof, AP4_Position moo
 			}
 			
 			
-			decrypter = new MySampleDecrypter(kid, 16, table, timeScale, m_DefaultCryptByteBlock, m_DefaultSkipByteBlock);
+			decrypter = new MySampleDecrypter(kid, 16, table, timeScale, m_DefaultCryptByteBlock, m_DefaultSkipByteBlock, protectedType);
 		}
 		else {
 		

@@ -204,10 +204,10 @@ int main()
         }
     }
     AP4_UI32 schemeType = ProtectedSampleDescription->GetSchemeType();
-    if (schemeType == 0x63656E63
+    if (schemeType == 0x63656E63 //aes-CTR
         || schemeType == 0x63626331
         || schemeType == 0x63656E73
-        || schemeType == 0x63626373
+        || schemeType == 0x63626373 //aes-cbc
         || schemeType == 0x70696666)
     {
         Log("protection scheme type: %u\n", schemeType);
@@ -265,6 +265,9 @@ int main()
             video_decoder_config.codec = 4;
            
                video_decoder_config.m_20 = 2;
+        }
+        else {
+            Log("codec %s not yet handled ", codecStr.c_str());
         }
         video_decoder_config.alpha_mode = 2;
     }
@@ -387,8 +390,8 @@ int main()
                return 0;
            };
 
-           //int64_t val = 22 - getQualityFromBitrate(bit_rate);
-           int64_t val = 22 - 4;
+           int64_t val = 22 - getQualityFromBitrate(bit_rate);
+           //int64_t val = 22 - 4;
            av_opt_set_int(encodecContext->priv_data, "crf", val, 0);
 
            if ((*(char*)&outputFormatContext->oformat->flags & 0x40) != 0)

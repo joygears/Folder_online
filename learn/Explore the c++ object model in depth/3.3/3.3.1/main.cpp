@@ -57,12 +57,11 @@ class Concrete3 : public Concrete2{
 		char c3;
 };
 
-#pragma pack(8)
+
 
 struct A{
 char c;
-int n;
-short s;
+long long int a;
 };
 
 int main(int argc,char ** argv){
