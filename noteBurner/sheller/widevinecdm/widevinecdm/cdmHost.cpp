@@ -149,20 +149,20 @@ void cdmHost::OnSessionMessage(const char* session_id, uint32_t session_id_size,
     Log("licenseRequest: %s",licenseRequest.c_str());
     g_session_id = session_id;
 
-    string msg = sendMessageAndWaitForResponse("licenseRequestResult:" + g_session_id + ":" + licenseRequest);
+    //string msg = sendMessageAndWaitForResponse("licenseRequestResult:" + g_session_id + ":" + licenseRequest);
 
-    std::vector<std::string> tokens;
-    std::stringstream ss(msg);
-    std::string token;
+    //std::vector<std::string> tokens;
+    //std::stringstream ss(msg);
+    //std::string token;
 
-    while (std::getline(ss, token, ':')) {
-        tokens.push_back(token);
-    }
-    
+    //while (std::getline(ss, token, ':')) {
+    //    tokens.push_back(token);
+    //}
+    //
 
 
-    license = tokens[1];
-    Log("license: %s", license.c_str());
+   // license = tokens[1];
+  //  Log("license: %s", license.c_str());
     if (m_host) {
 
         m_host->OnSessionMessage(session_id, session_id_size, message_type, message, message_size);

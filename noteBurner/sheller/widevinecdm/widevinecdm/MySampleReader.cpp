@@ -49,8 +49,13 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
     AVFrame* frame;
     frame = av_frame_alloc();
     AVPacket* packet = av_packet_alloc();
+
+    InputBuffer_2 input{ 0 };
+    MyVideoFrame videoFrame;
+    MyVideoFrame* video_frame = &videoFrame;
+    int64_t timestamp = ((double)sample.GetDts() * ((double)1000000 / (double)m_decrypter->m_timeScale) + 0.5);
     do {
-        if (this->m_decrypter != nullptr) {
+        if (this->m_decrypter->m_protectedType != EncryptionScheme::kUnencrypted) {
 
             AP4_Cardinal subsample_count = 0;
             const AP4_UI16* bytes_of_cleartext_data;
@@ -58,7 +63,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
 
             const AP4_UI08* iv = m_decrypter->m_table->GetIv(m_decrypter->index);
             uint32_t ivSize = m_decrypter->m_table->GetIvSize();
-            int64_t timestamp = ((double)sample.GetDts() * ((double)1000000 / (double)m_decrypter->m_timeScale) + 0.5);
+            
 
 
             m_decrypter->m_table->GetSampleInfo(m_decrypter->index, subsample_count, bytes_of_cleartext_data, bytes_of_encrypted_data);
@@ -88,7 +93,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
 
 
 
-            InputBuffer_2 input{ 0 };
+           
             input.data = (UINT8*)data;
             input.data_size = dataSize;
             input.encryption_scheme = m_decrypter->m_protectedType;
@@ -101,70 +106,15 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
             input.pattern.crypt_byte_block = m_decrypter->m_DefaultCryptByteBlock;
             input.pattern.skip_byte_block = m_decrypter->m_DefaultSkipByteBlock;
             input.timestamp = timestamp;
-            MyVideoFrame videoFrame;
-            MyVideoFrame* video_frame = &videoFrame;
+          
 
-            int result = proxy->DecryptAndDecodeFrame(&input, &videoFrame);
-            Log("DecryptAndDecodeFrame result %d\n", result);
-            if (result == 1)
-                break;
-            /*cout << "width * height:" << videoFrame.SSize().width << "*" << videoFrame.SSize().height << endl;
-            cout << "videoFrame.m_format : " << videoFrame.Format() << endl;
-            cout << "Timestamp : " << videoFrame.Timestamp() << endl;
-            for (int i = 0; i < VideoFrame::VideoPlane::kMaxPlanes; i++) {
-                cout << "videoFrame.PlaneOffset((VideoFrame::VideoPlane)" << i << ")" << videoFrame.PlaneOffset((VideoFrame::VideoPlane)i) << endl;
-                cout << "videoFrame.Stride((VideoFrame::VideoPlane)" << i << ")" << videoFrame.Stride((VideoFrame::VideoPlane)i) << endl;
-            }*/
-            //  FILE* pVideo;
-            //  pVideo = fopen("frame.yuv", "ab");
-
-            unsigned char* buffer = NULL;
-            transtoYUV(video_frame, buffer);
-
-            /*  fwrite(buffer, 1, video_frame->SSize().width * video_frame->SSize().height * 1.5, pVideo);
-
-
-              fclose(pVideo);*/
-
-            auto transYUVToAVFrame = [](uint8_t* yuvData, AVFrame*& frame)->int {
-
-                if (!frame) {
-                    fprintf(stderr, "conot getframe AVFrame\n");
-                    return -1;
-                }
-
-                int width = g_width;  // 视频帧宽度
-                int height = g_height; // 视频帧高度
-
-                frame->format = AV_PIX_FMT_YUV420P;
-                frame->width = width;
-                frame->height = height;
-
-                int dataSize = av_image_get_buffer_size((AVPixelFormat)frame->format, frame->width, frame->height, 1);
-                uint8_t* data = (uint8_t*)av_malloc(dataSize);
-                frame->data[0] = data;                                        // Y分量
-                frame->data[1] = data + width * height;                       // U分量
-                frame->data[2] = data + width * height + (width / 2) * (height / 2); // V分量
-                frame->linesize[0] = width;                            // Y分量的行大小
-                frame->linesize[1] = width / 2;                        // U分量的行大小
-                frame->linesize[2] = width / 2;
-
-                memcpy(frame->data[0], yuvData, width * height);                           // 拷贝Y分量
-                memcpy(frame->data[1], yuvData + width * height, (width / 2) * (height / 2));  // 拷贝U分量
-                memcpy(frame->data[2], yuvData + width * height + (width / 2) * (height / 2), (width / 2) * (height / 2)); // 拷贝V分量
-                return 0;
-            };
-
-
-            transYUVToAVFrame(buffer, frame);
-            delete buffer;
-
+          
 
 
         }
         else {
 
-            packet->data = (uint8_t*)data;
+          /*  packet->data = (uint8_t*)data;
             packet->size = dataSize;
             packet->duration = sample.GetDuration();;
             int error_code = av_packet_make_refcounted(packet);
@@ -183,7 +133,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
                     }
 
                 }
-            }
+            }*/
 
             //// 输入AVFrame的宽、高和像素格式
             //int src_w = frame->width;
@@ -228,10 +178,68 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
             //delete[] buffer[1];
             //delete[] buffer[2];
 
-
+            input.data = (UINT8*)data;
+            input.data_size = dataSize;
+            input.encryption_scheme = m_decrypter->m_protectedType;
+            input.timestamp = timestamp;
 
             printf("read sample offset: 0x%llX size: 0x%X isEncrypted: false\n", sample.GetOffset(), sample.GetSize());
         }
+
+        int result = proxy->DecryptAndDecodeFrame(&input, &videoFrame);
+        Log("DecryptAndDecodeFrame result %d\n", result);
+        if (result == 1)
+            break;
+        /*cout << "width * height:" << videoFrame.SSize().width << "*" << videoFrame.SSize().height << endl;
+        cout << "videoFrame.m_format : " << videoFrame.Format() << endl;
+        cout << "Timestamp : " << videoFrame.Timestamp() << endl;
+        for (int i = 0; i < VideoFrame::VideoPlane::kMaxPlanes; i++) {
+            cout << "videoFrame.PlaneOffset((VideoFrame::VideoPlane)" << i << ")" << videoFrame.PlaneOffset((VideoFrame::VideoPlane)i) << endl;
+            cout << "videoFrame.Stride((VideoFrame::VideoPlane)" << i << ")" << videoFrame.Stride((VideoFrame::VideoPlane)i) << endl;
+        }*/
+        //  FILE* pVideo;
+        //  pVideo = fopen("frame.yuv", "ab");
+
+        unsigned char* buffer = NULL;
+        transtoYUV(video_frame, buffer);
+
+        /*  fwrite(buffer, 1, video_frame->SSize().width * video_frame->SSize().height * 1.5, pVideo);
+
+
+          fclose(pVideo);*/
+
+        auto transYUVToAVFrame = [](uint8_t* yuvData, AVFrame*& frame)->int {
+
+            if (!frame) {
+                fprintf(stderr, "conot getframe AVFrame\n");
+                return -1;
+            }
+
+            int width = g_width;  // 视频帧宽度
+            int height = g_height; // 视频帧高度
+
+            frame->format = AV_PIX_FMT_YUV420P;
+            frame->width = width;
+            frame->height = height;
+
+            int dataSize = av_image_get_buffer_size((AVPixelFormat)frame->format, frame->width, frame->height, 1);
+            uint8_t* data = (uint8_t*)av_malloc(dataSize);
+            frame->data[0] = data;                                        // Y分量
+            frame->data[1] = data + width * height;                       // U分量
+            frame->data[2] = data + width * height + (width / 2) * (height / 2); // V分量
+            frame->linesize[0] = width;                            // Y分量的行大小
+            frame->linesize[1] = width / 2;                        // U分量的行大小
+            frame->linesize[2] = width / 2;
+
+            memcpy(frame->data[0], yuvData, width * height);                           // 拷贝Y分量
+            memcpy(frame->data[1], yuvData + width * height, (width / 2) * (height / 2));  // 拷贝U分量
+            memcpy(frame->data[2], yuvData + width * height + (width / 2) * (height / 2), (width / 2) * (height / 2)); // 拷贝V分量
+            return 0;
+        };
+
+
+        transYUVToAVFrame(buffer, frame);
+        delete buffer;
 
         char errbuf[64]{ 0 };
         static int p = 0;
