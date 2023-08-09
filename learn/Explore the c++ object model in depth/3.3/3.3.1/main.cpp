@@ -66,9 +66,9 @@ long long int a;
 
 int main(int argc,char ** argv){
 	
-	cout << "size of A is " << sizeof(A) << endl;
-	Concrete3 concrete;
-	cout << "size of Concrete3 is " << sizeof(concrete) << endl;
+	// cout << "size of A is " << sizeof(A) << endl;
+	// Concrete3 concrete;
+	// cout << "size of Concrete3 is " << sizeof(concrete) << endl;
 	
 	return 0;
 }
