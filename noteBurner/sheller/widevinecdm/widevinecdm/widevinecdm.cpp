@@ -269,7 +269,7 @@ int main()
 				})(profile);
 			video_decoder_config.profile = videoProfile;
             video_decoder_config.codec = 4;
-           
+            video_decoder_config.color_space = 0x1040efa8;
                video_decoder_config.m_20 = 2;
         }
         else {

@@ -6,6 +6,26 @@
 #include "widevinecdm.h"
 #include "webNetwork.h"
 #include "fucntion.h"
+void saveFrameAsYUV420P10LE(const char* outputFilename, AVFrame* frame) {
+    // 打开输出 YUV 文件
+    FILE* yuvFile = fopen(outputFilename, "ab");
+    if (!yuvFile) {
+        fprintf(stderr, "Could not open output YUV file\n");
+        return;
+    }
+
+    // 将 YUV420P10LE 数据写入输出文件
+    for (int i = 0; i < frame->height; i++) {
+        fwrite(frame->data[0] + i * frame->linesize[0], 1, frame->width * 2, yuvFile);
+    }
+    for (int i = 0; i < frame->height / 2; i++) {
+        fwrite(frame->data[1] + i * frame->linesize[1], 1, frame->width / 2 * 2, yuvFile);
+        fwrite(frame->data[2] + i * frame->linesize[2], 1, frame->width / 2 * 2, yuvFile);
+    }
+
+    // 关闭文件
+    fclose(yuvFile);
+}
 
 void saveAVFrameAsYUV(AVFrame* frame, const std::string& saveFileName) {
     // 初始化FFmpeg库
@@ -256,18 +276,22 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
             cout << "videoFrame.PlaneOffset((VideoFrame::VideoPlane)" << i << ")" << videoFrame.PlaneOffset((VideoFrame::VideoPlane)i) << endl;
             cout << "videoFrame.Stride((VideoFrame::VideoPlane)" << i << ")" << videoFrame.Stride((VideoFrame::VideoPlane)i) << endl;
         }*/
-         FILE* pVideo;
-          pVideo = fopen("frame.yuv", "ab");
+    
+        //if (sample.GetOffset() == 0xADBE9) {
+            FILE* pVideo;
+            pVideo = fopen("frame.yuv", "ab");
+            fwrite(video_frame->FrameBuffer()->Data(), 1, video_frame->SSize().width * video_frame->SSize().height * 1.5*2, pVideo);
 
+
+            fclose(pVideo);
+         //   exit(0);
+      //  }
         unsigned char* buffer = NULL;
         transtoYUV(video_frame, buffer);
-
-        fwrite(buffer, 1, video_frame->SSize().width * video_frame->SSize().height * 1.5, pVideo);
-
-
-          fclose(pVideo);
-          if (this->m_decrypter->m_protectedType != EncryptionScheme::kUnencrypted)
-              exit(0);
+       
+   
+         // if (this->m_decrypter->m_protectedType != EncryptionScheme::kUnencrypted)
+            
 
         auto transYUVToAVFrame = [](uint8_t* yuvData, AVFrame*& frame)->int {
 
@@ -279,7 +303,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
             int width = g_width;  // 视频帧宽度
             int height = g_height; // 视频帧高度
 
-            frame->format = AV_PIX_FMT_YUV420P;
+            frame->format = AV_PIX_FMT_YUV420P10LE;
             frame->width = width;
             frame->height = height;
 
@@ -300,7 +324,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
 
 
         transYUVToAVFrame(buffer, frame);
-        //saveAVFrameAsYUV(frame, "frame.yuv");
+       // saveFrameAsYUV420P10LE("frame.yuv", frame);
         delete buffer;
 
         char errbuf[64]{ 0 };
