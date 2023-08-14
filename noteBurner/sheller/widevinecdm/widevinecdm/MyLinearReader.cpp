@@ -14,10 +14,10 @@ AP4_Result MyLinearReader::ProcessMoof(AP4_ContainerAtom* moof, AP4_Position moo
 {
 	curSegIndex++;
 
-	/*stringstream ss;
+	stringstream ss;
 	ss.setf(ios::fixed);
 	ss << "decryptProgress:" << curSegIndex / segCount;
-	sendMessage(ss.str());*/
+	sendMessage(ss.str());
 	if (!this->AP4_LinearReader::ProcessMoof(moof, moof_offset, mdat_payload_offset)) {
 		
 		MySampleDecrypter* decrypter = nullptr;

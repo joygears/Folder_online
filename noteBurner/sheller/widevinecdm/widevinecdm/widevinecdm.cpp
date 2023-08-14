@@ -130,7 +130,7 @@ int main()
    
 
     initializeApp();
-   /* thread trd([]() {
+    thread trd([]() {
         connectToServer("127.0.0.1", 8012);
         });
     trd.detach();
@@ -146,7 +146,7 @@ int main()
     if (tokens[0] == "licenseRequest") {
         cert = tokens[1];
         pssh = tokens[2];
-    }*/
+    }
 
     cert = base64_decode(cert);
     pssh = base64_decode(pssh);
@@ -161,8 +161,8 @@ int main()
     proxy->UpdateSession(1, g_session_id.c_str(), g_session_id.size(), (uint8_t*)license.c_str(), license.size());
 
     Log("decrypt environments config finished");
-   /* string res = sendMessageAndWaitForResponse("initFinished");
-    Log("res%s",res.c_str());*/
+    string res = sendMessageAndWaitForResponse("initFinished");
+    Log("res%s",res.c_str());
    
     AP4_ByteStream* input_stream = NULL;
     AP4_Result result = AP4_FileByteStream::Create(input_file.c_str(),
@@ -430,7 +430,8 @@ int main()
        avformat_write_header(outputFormatContext, NULL);
        while (!LinearReader.ReadNextSample(pTrack->GetId(), sample, sample_data)) {
 
-
+          /* if (curSegIndex > 10) break;*/
+       
 
             }
 

@@ -102,7 +102,7 @@
       <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy $(SolutionDir)sdk\bin\* $(OutDir) /E /Y</Command>
+      <Command>cmd /k robocopy  /E /XC /XN /XO    "$(SolutionDir)sdk\bin\."   "$(OutDir)\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -125,7 +125,7 @@
       <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy $(SolutionDir)sdk\bin\* $(OutDir) /E /Y</Command>
+      <Command>cmd /k robocopy  /E /XC /XN /XO    "$(SolutionDir)sdk\bin\."   "$(OutDir)\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
