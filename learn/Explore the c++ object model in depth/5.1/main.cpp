@@ -1,33 +1,14 @@
-#include <iostream>
+class A{ public: A(){}};
+class B : public virtual A{};
+class C : public virtual A{};
+class D : public B,public C{};
+class F : public D{};
 
-
-using namespace std;
-
-class Abstract_base {
-	public:
-		virtual ~Abstract_base(){};
-		virtual void interface() const = 0;
-		virtual const char * mumble() const  { return _mumble; }
-	protected:
-		char * _mumble;
-};
-void Abstract_base::interface() const {
+int main(int argc,char ** argv){
 	
-	
-}
-
-class Concrete_derived : public Abstract_base {
-	public:
-		Concrete_derived(){}
-		inline void Concrete_derived::interface() const {
-			Abstract_base::interface();
-		}
-	
-	
-};
-	int main(int argc,char ** argv){
-	
-		Concrete_derived trouble;
+	B b;
+	D d;
+	F f;	
 	
 	return 0;
 }
