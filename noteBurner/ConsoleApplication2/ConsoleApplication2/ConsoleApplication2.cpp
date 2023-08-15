@@ -227,7 +227,20 @@ int main() {
 		 sample_aspect_ratio = AVRational{ 1, 0x1 }; // 从licensedMainfest获取
 	 }
 
-	
+
+	// 获取裸流编码
+	 AVCodecContext* avctx;
+	 int ret;
+
+	 avctx = avcodec_alloc_context3(NULL);
+	 if (!avctx)
+		 return -1;
+
+	 ret = avcodec_parameters_to_context(avctx, stream->codecpar);
+	 if (ret < 0) {
+		 avcodec_free_context(&avctx);
+		 return -1;
+	 }
 	
 
 	 AP4_ByteStream* input_stream3 = NULL;
