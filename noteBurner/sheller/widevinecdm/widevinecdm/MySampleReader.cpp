@@ -385,60 +385,65 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
         }*/
     
         //if (sample.GetOffset() == 0xADBE9) {
-            FILE* pVideo;
-           pVideo = fopen("frame.yuv", "ab");
-            fwrite(video_frame->FrameBuffer()->Data(), 1, video_frame->SSize().width * video_frame->SSize().height * 1.5*2, pVideo);
+           // FILE* pVideo;
+           //pVideo = fopen("frame.yuv", "ab");
+           // fwrite(video_frame->FrameBuffer()->Data(), 1, video_frame->SSize().width * video_frame->SSize().height * 1.5*2, pVideo);
 
 
-            fclose(pVideo);
+           // fclose(pVideo);
       //   //   exit(0);
       ////  }
-      //  unsigned char* buffer = NULL;
-      //  transtoYUV(video_frame, buffer);
-       
-   
-         // if (this->m_decrypter->m_protectedType != EncryptionScheme::kUnencrypted)
-            
-
-        //auto transYUVToAVFrame = [](uint8_t* yuvData, AVFrame*& frame)->int {
-
-        //    if (!frame) {
-        //        fprintf(stderr, "conot getframe AVFrame\n");
-        //        return -1;
-        //    }
-
-        //    int width = g_width;  // 视频帧宽度
-        //    int height = g_height; // 视频帧高度
-
-        //    frame->format = AV_PIX_FMT_YUV420P10LE;
-        //    frame->width = width;
-        //    frame->height = height;
-
-        //    int dataSize = av_image_get_buffer_size((AVPixelFormat)frame->format, frame->width, frame->height, 1);
-        //    uint8_t* data = (uint8_t*)av_malloc(dataSize);
-        //    frame->data[0] = data;                                        // Y分量
-        //    frame->data[1] = data + width * height;                       // U分量
-        //    frame->data[2] = data + width * height + (width / 2) * (height / 2); // V分量
-        //    frame->linesize[0] = width;                            // Y分量的行大小
-        //    frame->linesize[1] = width / 2;                        // U分量的行大小
-        //    frame->linesize[2] = width / 2;
-
-        //    memcpy(frame->data[0], yuvData, width * height);                           // 拷贝Y分量
-        //    memcpy(frame->data[1], yuvData + width * height, (width / 2) * (height / 2));  // 拷贝U分量
-        //    memcpy(frame->data[2], yuvData + width * height + (width / 2) * (height / 2), (width / 2) * (height / 2)); // 拷贝V分量
-        //    return 0;
-        //};
+        if (decodecContext->pix_fmt == AV_PIX_FMT_YUV420P) {
+            Log("pix_fmt==AV_PIX_FMT_YUV420P");
+            unsigned char* buffer = NULL;
+            transtoYUV(video_frame, buffer);
 
 
-        //transYUVToAVFrame(buffer, frame);
-        
-       // saveFrameAsYUV420P10LE("frame.yuv", frame);
-        //delete buffer;
+            // if (this->m_decrypter->m_protectedType != EncryptionScheme::kUnencrypted)
 
-       //frame =  createAVFrameFromYUV420P10LE(video_frame->FrameBuffer()->Data(),g_width,g_height);
-       
-        frame = convertYUV420P10LEtoYUV420P(video_frame->FrameBuffer()->Data(), g_width, g_height);
-       
+
+            auto transYUVToAVFrame = [](uint8_t* yuvData, AVFrame*& frame)->int {
+                frame = av_frame_alloc();
+                if (!frame) {
+                    Log( "conot getframe AVFrame\n");
+                    return -1;
+                }
+
+                int width = g_width;  // 视频帧宽度
+                int height = g_height; // 视频帧高度
+
+                frame->format = AV_PIX_FMT_YUV420P;
+                frame->width = width;
+                frame->height = height;
+
+                int dataSize = av_image_get_buffer_size((AVPixelFormat)frame->format, frame->width, frame->height, 1);
+                uint8_t* data = (uint8_t*)av_malloc(dataSize);
+                frame->data[0] = data;                                        // Y分量
+                frame->data[1] = data + width * height;                       // U分量
+                frame->data[2] = data + width * height + (width / 2) * (height / 2); // V分量
+                frame->linesize[0] = width;                            // Y分量的行大小
+                frame->linesize[1] = width / 2;                        // U分量的行大小
+                frame->linesize[2] = width / 2;
+
+                memcpy(frame->data[0], yuvData, width * height);                           // 拷贝Y分量
+                memcpy(frame->data[1], yuvData + width * height, (width / 2) * (height / 2));  // 拷贝U分量
+                memcpy(frame->data[2], yuvData + width * height + (width / 2) * (height / 2), (width / 2) * (height / 2)); // 拷贝V分量
+                return 0;
+            };
+
+
+            transYUVToAVFrame(buffer, frame);
+
+            // saveFrameAsYUV420P10LE("frame.yuv", frame);
+            delete buffer;
+
+        }
+        else {
+            Log("pix_fmt==AV_PIX_FMT_YUV420P10LE");
+            frame = convertYUV420P10LEtoYUV420P(video_frame->FrameBuffer()->Data(), g_width, g_height);
+        }
+        Log("decode finished \n");
+
         char errbuf[64]{ 0 };
         static int p = 0;
         int ret = 1;
@@ -460,7 +465,7 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
 
             else
                 if (ret < 0) {
-                    fprintf(stderr, "Error encoding a frame: %s\n", av_make_error_string(errbuf, sizeof(errbuf), ret));
+                    Log("Error encoding a frame: %s\n", av_make_error_string(errbuf, sizeof(errbuf), ret));
                     return 1007;
                 }
 
@@ -475,12 +480,12 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
         }
 
       
-
-    /*if (this->m_decrypter != nullptr)
-     av_free(frame->data[0]);*/
+        Log("encode finished \n");
+      if (this->m_decrypter != nullptr && decodecContext->pix_fmt == AV_PIX_FMT_YUV420P)
+         av_free(frame->data[0]);
    
     av_frame_free(&frame);
-    fprintf(stderr, "Failed to allocate AVFrame\n");
+    
      }while (false);
     av_packet_free(&packet);
     delete data;

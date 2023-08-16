@@ -349,7 +349,7 @@ int main()
            return -1;
        }
 
-       //获取sample_aspect_ratio
+       //获取ffmpeg 流信息
        AVFormatContext* Formatcontext = 0;
        int result1 = avformat_open_input(&Formatcontext, input_file.c_str(), 0, 0);
        int result2 = avformat_find_stream_info(Formatcontext, 0);
@@ -359,11 +359,29 @@ int main()
        if (sample_aspect_ratio.den == 0 || sample_aspect_ratio.num == 0) {
            sample_aspect_ratio = AVRational{ 1, 0x1 }; // 从licensedMainfest获取
        }
-      
+
+
+       // 获取裸流编码
+       AVCodecContext* avctx;
+       int ret;
+
+       avctx = avcodec_alloc_context3(NULL);
+       if (!avctx)
+           return -1;
+
+       ret = avcodec_parameters_to_context(avctx, stream->codecpar);
+       if (ret < 0) {
+           avcodec_free_context(&avctx);
+           return -1;
+       }
+
+       
        const AVCodec* decodec = avcodec_find_decoder(stream->codecpar->codec_id);
        const AVCodec* encodec = avcodec_find_encoder(AV_CODEC_ID_H264);
        decodecContext = avcodec_alloc_context3(decodec);
        encodecContext = avcodec_alloc_context3(encodec);
+       decodecContext->pix_fmt = avctx->pix_fmt;
+
        if (encodecContext) {
            encodecContext->codec_type = AVMediaType::AVMEDIA_TYPE_VIDEO;
            encodecContext->codec_id = encodec->id;
