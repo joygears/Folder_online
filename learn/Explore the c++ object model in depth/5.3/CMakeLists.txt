@@ -6,6 +6,7 @@ project(test)
 # 从文件夹从获取文件的决定路径
 file(GLOB SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/*.h" "${CMAKE_CURRENT_SOURCE_DIR}/*.ui")
 
+
 add_executable(test	${SOURCE_FILES})
 
 

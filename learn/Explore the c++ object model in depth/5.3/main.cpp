@@ -6,12 +6,12 @@ using namespace std;
 class Point {
 	public:
 		Point(float x = 0.0,float y = 0.0):_x(x),_y(y){}
-		virtual float z(){return 0.0;}
+		//virtual float z(){return 0.0;}
 	private:
 		float _x,_y;
 };
 
-class Point3d :  public virtual Point {
+class Point3d :  public  Point {
 	public:
 		Point3d(float x = 0.0 , float y = 0.0, float z = 0.0):Point(x,y),_z(z){}
 
@@ -31,17 +31,17 @@ class Vertex :  public virtual Point {
 		Vertex *  _next;
 };
 
-class Vertex3D :  public  Point3d,public Vertex {
-	public:
-		Vertex3D(){}
-		Vertex3D & operator=(const Vertex3D & v){
-			Point::operator=(v);
-			Point3d::operator=(v);
-			Vertex::operator=(v);
-			return *this;
-		}
+// class Vertex3D :  public  Point3d,public Vertex {
+// 	public:
+// 		Vertex3D(){}
+// 		Vertex3D & operator=(const Vertex3D & v){
+// 			Point::operator=(v);
+// 			Point3d::operator=(v);
+// 			Vertex::operator=(v);
+// 			return *this;
+// 		}
 	
-};
+// };
 
 
 template <typename Ret,class Fx,class... Args>
@@ -80,10 +80,22 @@ void Time_Record(Fx func,Args... args){
     std::cout << "程序运行时间: " << duration << " 微秒" << std::endl;
 	
 }
-
+Point3d lots_of_copies(Point3d a,Point3d b){
+	Point3d pC = a;
+	pC = b;
+	b = a;
+	return pC;
+}
 void _main(){
 	
-	
+	Point3d pA(1.725,0.875,0.478);
+	Point3d pB(0.315,0.317,0.838);
+	Point3d pC;
+
+	for( int iters = 0; iters < 10000000 ; iters++){
+			pC = lots_of_copies(pA,pB);
+
+	}
 }
 
 int main(int argc,char ** argv){
