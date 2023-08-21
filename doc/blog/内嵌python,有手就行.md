@@ -142,7 +142,7 @@ Py_SetPythonHome(wStrExeDir.c_str());
 + 初始化
 
 ~~~c++
-Py_Finalize();
+Py_Initialize();
 ~~~
 
 + 传递命令行参数
