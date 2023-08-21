@@ -1,9 +1,0 @@
-﻿  uic uiFit.ui
-  MyTabWidget.cpp
-  uiFit.cpp
-  main.cpp
-D:\sourcetree\Folder_online\qt\uiFit\uiFit\MyTabWidget.cpp(18,34): error C2027: 使用了未定义类型“QStackedWidget”
-D:\sourcetree\Folder_online\qt\uiFit\uiFit\MyTabWidget.h(4): message : 参见“QStackedWidget”的声明
-D:\sourcetree\Folder_online\qt\uiFit\uiFit\MyTabWidget.cpp(20,29): error C2664: “void QBoxLayout::addWidget(QWidget *,int,Qt::Alignment)”: 无法将参数 1 从“QStackedWidget *”转换为“QWidget *”
-D:\sourcetree\Folder_online\qt\uiFit\uiFit\MyTabWidget.cpp(20,24): message : 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
-C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qboxlayout.h(74,10): message : 参见“QBoxLayout::addWidget”的声明 (编译源文件 MyTabWidget.cpp)

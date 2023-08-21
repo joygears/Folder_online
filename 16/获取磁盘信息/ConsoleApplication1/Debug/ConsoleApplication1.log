@@ -1,5 +1,0 @@
-﻿  ConsoleApplication1.cpp
-D:\Game\Folder_online\16\获取磁盘信息\ConsoleApplication1\ConsoleApplication1.cpp(42,80): warning C4244: “=”: 从“ULONGLONG”转换到“long”，可能丢失数据
-D:\Game\Folder_online\16\获取磁盘信息\ConsoleApplication1\ConsoleApplication1.cpp(43,64): warning C4244: “=”: 从“ULONGLONG”转换到“long”，可能丢失数据
-D:\Game\Folder_online\16\获取磁盘信息\ConsoleApplication1\ConsoleApplication1.cpp(21,10): warning C4101: “command”: 未引用的局部变量
-  ConsoleApplication1.vcxproj -> D:\Game\Folder_online\16\获取磁盘信息\ConsoleApplication1\Debug\ConsoleApplication1.exe

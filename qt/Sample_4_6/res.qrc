@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>third/images/Cursor_Laser_Pointer.ico</file>
-        <file>third/images/msys2.ico</file>
-    </qresource>
-</RCC>

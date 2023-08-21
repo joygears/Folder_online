@@ -1,9 +1,0 @@
-﻿  uic sample_4_3.ui
-  rcc sample_4_3.qrc
-  moc sample_4_3.h
-   RCC: Warning: No resources in 'D:\Users\st\Folder_online\qt\sample_4_3\sample_4_3\sample_4_3.qrc'.
-  sample_4_3.cpp
-  main.cpp
-  qrc_sample_4_3.cpp
-  moc_sample_4_3.cpp
-  sample_4_3.vcxproj -> D:\Users\st\Folder_online\qt\sample_4_3\x64\Debug\sample_4_3.exe

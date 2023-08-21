@@ -1,8 +1,0 @@
-﻿  ConsoleApplication7.cpp
-D:\Game\Folder_online\16\socket\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(158,20): warning C4018: “<”: 有符号/无符号不匹配
-  正在生成代码
-  3 of 3 functions (100.0%) were compiled.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  已完成代码的生成
-  ConsoleApplication7.vcxproj -> D:\Game\Folder_online\16\socket\ConsoleApplication7\Release\server.exe

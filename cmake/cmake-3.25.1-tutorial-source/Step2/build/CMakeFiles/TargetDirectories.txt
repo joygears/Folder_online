@@ -1,4 +1,0 @@
-D:/sourcetree/Folder_online/cmake/cmake-3.25.1-tutorial-source/Step2/build/CMakeFiles/Tutorial.dir
-D:/sourcetree/Folder_online/cmake/cmake-3.25.1-tutorial-source/Step2/build/CMakeFiles/ALL_BUILD.dir
-D:/sourcetree/Folder_online/cmake/cmake-3.25.1-tutorial-source/Step2/build/CMakeFiles/ZERO_CHECK.dir
-D:/sourcetree/Folder_online/cmake/cmake-3.25.1-tutorial-source/Step2/build/MathFunctions/CMakeFiles/MathFunctions.dir

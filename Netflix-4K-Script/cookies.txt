@@ -1,9 +1,0 @@
-# Netscape HTTP Cookie File
-# http://curl.haxx.se/rfc/cookie_spec.html
-# This is a generated file!  Do not edit.
-.netflix.com	TRUE	/	FALSE	1684081256	flwssn	303381bd-9b39-4f3f-9eb6-348289037390
-.netflix.com	TRUE	/	FALSE	1715606456	nfvdid	BQFmAAEBEO4cA-6eNMAYzzPHfJUKF1Fgna3AoiH46W-pC31InDCf2nwxPffyyvuawmOETWujshjQG3M-RjZebpOa2h0ijwa3JNG6EvQPHvN6qRVGvKAuln5VpT1H3iwuaAkNuZlktS0IIHqEzrs28dCpOqDsBmOG
-.netflix.com	TRUE	/	TRUE	1715606460	SecureNetflixId	v%3D2%26mac%3DAQEAEQABABS2SkYmQ3shBf11IuWqq3lo9vbTjZUW3ws.%26dt%3D1684070459626
-.netflix.com	TRUE	/	TRUE	1715606460	NetflixId	v%3D2%26ct%3DBQAOAAEBEHGrWppQnK50QzfO6WBYixGBwGHbEciXkEsNIiiD_ZqA1m1bVpc12dL5vVv8Tc9qrHsCYVyS41Nu_edFRYztvXC4QgQ5wmz43YGZbmiZdqA8QaueMuIiuAwIu5h1uQ9JAdJNSEiM-DAUEJepvN_xU2PW6g7vBZKowJbQHKOD37dMYrA2WjUUYSltmgqxhAsZBDr_imQ1FoA0HUprMf4mPbW2IZEfFaeaGcKd2AksnHtHRVqIWGoHz-mhT4XO-1ROMcOXk8FkM7gZ6sPVa-G5Ebd4XoISuPbR017W4jRwU18yPoph_iD-vTSDX6t5p1FvixuySaQmCgkSSg5WXS5awIZwcJKYwQIGFTRaTV62fXIYyT6gt89xudV1vvEWKimF3hp3VAvxObfrnbQZbOI0GGMpOr__yewBndKTRixSgctHZBYN6RJ3mv4EBJJO6dog-i769yAmXvHTiZYRmcz40uF-Ixwu9HwIl3kk8n6zqrni4gKJaqoUlTbnP25e-eXTVeVdRi6QIvt7dh5d2wTDw6f7AXNy611zTJAuOKMhKuYsz0VIbxXVfi7cXrMCr3PeqE1klqW-GO7o4stvYEwh3TkL7bvlL6QKP4YY9CyoCZEyUyI.%26bt%3Ddbl%26ch%3DAQEAEAABABSRAcbMB-n_OTgjofl6EQ9_xJ3oj6kjPf4.%26mac%3DAQEAEAABABR_zTpj6JOB7KMQYiVyk_Bo4hAsnIUd4-U.
-.netflix.com	TRUE	/	FALSE	1684072565	profilesNewSession	0
-.netflix.com	TRUE	/	FALSE	1715606476	OptanonConsent	isGpcEnabled=0&datestamp=Sun+May+14+2023+21%3A21%3A16+GMT%2B0800+(%E4%B8%AD%E5%9B%BD%E6%A0%87%E5%87%86%E6%97%B6%E9%97%B4)&version=202301.1.0&isIABGlobal=false&hosts=&consentId=564a74ea-dc8f-4b6e-a8a6-ff0dc74ee458&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false

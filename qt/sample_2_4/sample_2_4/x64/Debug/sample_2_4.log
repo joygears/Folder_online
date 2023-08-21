@@ -1,9 +1,0 @@
-﻿  Reading Qt configuration (C:\Qt\Qt5.12.1\5.12.1\msvc2017_64\bin\qmake.exe)
-  uic sample_2_4.ui
-  rcc sample_2_4.qrc
-  moc sample_2_4.h
-  sample_2_4.cpp
-  main.cpp
-  qrc_sample_2_4.cpp
-  moc_sample_2_4.cpp
-  sample_2_4.vcxproj -> D:\sourcetree\Folder_online\qt\sample_2_4\x64\Debug\sample_2_4.exe
