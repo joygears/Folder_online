@@ -25,8 +25,83 @@ void SaveH264(AVPacket* packet)
 
 	fclose(fpSave);
 }
+void saveAVFrameAsYUV(AVFrame* frame, const std::string& saveFileName) {
+	// 初始化FFmpeg库
 
 
+	// 初始化像素格式转换上下文
+	AVCodecContext* codecContext = avcodec_alloc_context3(NULL);
+	if (!codecContext) {
+		fprintf(stderr, "Could not allocate codec context\n");
+		return;
+	}
+
+	codecContext->width = frame->width;
+	codecContext->height = frame->height;
+	codecContext->pix_fmt = AV_PIX_FMT_YUV420P; // 目标像素格式
+
+	struct SwsContext* sws_ctx = sws_getContext(
+		frame->width, frame->height, (AVPixelFormat)frame->format,
+		codecContext->width, codecContext->height, codecContext->pix_fmt,
+		SWS_BILINEAR, NULL, NULL, NULL
+	);
+
+	// 分配一个AVFrame用于存储转换后的图像数据
+	AVFrame* convertedFrame = av_frame_alloc();
+	convertedFrame->width = codecContext->width;
+	convertedFrame->height = codecContext->height;
+	convertedFrame->format = codecContext->pix_fmt;
+	av_frame_get_buffer(convertedFrame, 32); // 分配图像数据内存
+
+	// 进行像素格式转换
+	sws_scale(sws_ctx, frame->data, frame->linesize, 0, frame->height,
+		convertedFrame->data, convertedFrame->linesize);
+
+	// 保存转换后的图像数据到文件
+	FILE* outputFile = fopen(saveFileName.c_str(), "ab");
+	if (!outputFile) {
+		fprintf(stderr, "Could not open output file\n");
+		av_frame_free(&convertedFrame);
+		avcodec_free_context(&codecContext);
+		sws_freeContext(sws_ctx);
+		return;
+	}
+
+	for (int i = 0; i < codecContext->height; i++) {
+		fwrite(convertedFrame->data[0] + i * convertedFrame->linesize[0], 1, codecContext->width, outputFile);
+	}
+	for (int i = 0; i < codecContext->height / 2; i++) {
+		fwrite(convertedFrame->data[1] + i * convertedFrame->linesize[1], 1, codecContext->width / 2, outputFile);
+		fwrite(convertedFrame->data[2] + i * convertedFrame->linesize[2], 1, codecContext->width / 2, outputFile);
+	}
+
+	fclose(outputFile);
+
+	// 清理资源
+	av_frame_free(&convertedFrame);
+	avcodec_free_context(&codecContext);
+	sws_freeContext(sws_ctx);
+}
+void saveFrameAsYUV420P10LE(const char* outputFilename, AVFrame* frame) {
+	// 打开输出 YUV 文件
+	FILE* yuvFile = fopen(outputFilename, "ab");
+	if (!yuvFile) {
+		fprintf(stderr, "Could not open output YUV file\n");
+		return;
+	}
+
+	// 将 YUV420P10LE 数据写入输出文件
+	for (int i = 0; i < frame->height; i++) {
+		fwrite(frame->data[0] + i * frame->linesize[0], 1, frame->width * 2, yuvFile);
+	}
+	for (int i = 0; i < frame->height / 2; i++) {
+		fwrite(frame->data[1] + i * frame->linesize[1], 1, frame->width / 2 * 2, yuvFile);
+		fwrite(frame->data[2] + i * frame->linesize[2], 1, frame->width / 2 * 2, yuvFile);
+	}
+
+	// 关闭文件
+	fclose(yuvFile);
+}
 
 
 AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sample_data)
@@ -107,10 +182,15 @@ AP4_Result MySampleReader::ReadSampleData(AP4_Sample& sample, AP4_DataBuffer& sa
 			}
 		}
 	
-
+		
 		char errbuf[64]{ 0 };
 		//cout << "error_code : " << error_code << endl;
 		printf("read sample offset: 0x%llX size: 0x%X isEncrypted: false\n", sample.GetOffset(), sample.GetSize());
+		//if (sample.GetOffset() == 0xADBE9) {
+		saveFrameAsYUV420P10LE( "corrent.yuv", frame);
+		//	exit(0);
+		//}
+		
 		static int p = 0;
 		int ret = 1;
 		

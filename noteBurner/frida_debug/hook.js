@@ -121,55 +121,55 @@ send(InitializeVideoDecoder)
   // return ret;
 // }, 'int', ['pointer','pointer'],'thiscall'));
 
-// Interceptor.attach(InitializeVideoDecoder, {
-    // onEnter(args) {
-        // console.log("InitializeVideoDecoder onEnter")
-        // // pNode = ptr(ptr(this.context.ecx).readU32());
-
-        // // console.log("root------------------------------------: ",pNode);
-        // // console.log("左节点: ",ptr(pNode.readU32()));
-        // // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
-        // // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
-        // // pNode = ptr(pNode.readU32());
-        // // console.log("head ------------------------------------: ",pNode);
-        // // console.log("左节点: ",ptr(pNode.readU32()));
-        // // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
-        // // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
-        // // console.log("is Head: ",ptr(pNode.add(0xD).readU8()));
-        // // pNode = ptr(ptr(this.context.ecx).readU32());
-      // // console.log("第一个参数:"+args[0].readUtf8String()," this对象: ",std_string_c_str(this.context.ecx))
-     // // console.log("第二个参数: "+ args[1].readUtf8String())
-	 // console.log(hexdump(args[0]))
-	 // args[0]=ptr(memoryData);
-    // },
-    // onLeave(retval){
-        // console.log("InitializeVideoDecoder onLeave")
-        // // console.log("root------------------------------------: ",pNode);
-        // // console.log("左节点: ",ptr(pNode.readU32()));
-        // // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
-        // // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
-        // console.log("返回值：" + retval)
-    // }
-// });
-
-
-const DecryptAndDecodeFrame = getTargetAddr(ptr(0x10211E90));
-
-send(DecryptAndDecodeFrame)
-
-
-Interceptor.attach(DecryptAndDecodeFrame, {
+Interceptor.attach(InitializeVideoDecoder, {
     onEnter(args) {
-        console.log("DecryptAndDecodeFrame onEnter")
-     
-     // console.log("第一个参数: "+ hexdump(ptr(args[0])));
-    
+        console.log("InitializeVideoDecoder onEnter")
+        // pNode = ptr(ptr(this.context.ecx).readU32());
+
+        // console.log("root------------------------------------: ",pNode);
+        // console.log("左节点: ",ptr(pNode.readU32()));
+        // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
+        // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
+        // pNode = ptr(pNode.readU32());
+        // console.log("head ------------------------------------: ",pNode);
+        // console.log("左节点: ",ptr(pNode.readU32()));
+        // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
+        // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
+        // console.log("is Head: ",ptr(pNode.add(0xD).readU8()));
+        // pNode = ptr(ptr(this.context.ecx).readU32());
+      // console.log("第一个参数:"+args[0].readUtf8String()," this对象: ",std_string_c_str(this.context.ecx))
+     // console.log("第二个参数: "+ args[1].readUtf8String())
+	 console.log(hexdump(args[0]))
+	
     },
     onLeave(retval){
-        console.log("DecryptAndDecodeFrame onLeave")
-		console.log("返回值：" + retval)
+        console.log("InitializeVideoDecoder onLeave")
+        // console.log("root------------------------------------: ",pNode);
+        // console.log("左节点: ",ptr(pNode.readU32()));
+        // console.log("父节点: ",ptr(pNode.add(0x4).readU32()));
+        // console.log("左节点: ",ptr(pNode.add(0x8).readU32()));
+        console.log("返回值：" + retval)
     }
 });
+
+
+// const DecryptAndDecodeFrame = getTargetAddr(ptr(0x10211E90));
+
+// send(DecryptAndDecodeFrame)
+
+
+// Interceptor.attach(DecryptAndDecodeFrame, {
+    // onEnter(args) {
+        // console.log("DecryptAndDecodeFrame onEnter")
+     
+     // // console.log("第一个参数: "+ hexdump(ptr(args[0])));
+    
+    // },
+    // onLeave(retval){
+        // console.log("DecryptAndDecodeFrame onLeave")
+		// console.log("返回值：" + retval)
+    // }
+// });
 
 // // const DeinitializeDecoder = getTargetAddr(ptr(0x10212070));
 

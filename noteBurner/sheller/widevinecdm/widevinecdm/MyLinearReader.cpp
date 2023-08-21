@@ -82,7 +82,7 @@ AP4_Result MyLinearReader::ProcessMoof(AP4_ContainerAtom* moof, AP4_Position moo
 			decrypter = new MySampleDecrypter(kid, 16, table, timeScale, m_DefaultCryptByteBlock, m_DefaultSkipByteBlock, protectedType);
 		}
 		else {
-		
+			decrypter = new MySampleDecrypter(0, 16, 0, timeScale, 0, 0, EncryptionScheme::kUnencrypted);
 		}
 
 		this->m_Trackers[0]->m_Reader = new MySampleReader(decrypter);
