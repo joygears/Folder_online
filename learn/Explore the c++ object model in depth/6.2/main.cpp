@@ -8,7 +8,9 @@ class Point {
 		Point(float x = 0.0,float y = 0.0):_x(x),_y(y){}
 		virtual float x(){return _x;}
 		virtual float z(){return 0.0;}
-		virtual ~Point(){}
+		virtual ~Point(){
+			cout << "~Point()" << endl;
+		}
 	private:
 		float _x,_y;
 };
@@ -16,7 +18,9 @@ class Point {
 class Point3d :  public  Point {
 	public:
 		Point3d(float x = 0.0 , float y = 0.0, float z = 0.0):Point(x,y),_z(z){}
-		virtual ~Point3d(){}
+		virtual ~Point3d(){
+			cout << "~Point3d()" << endl;
+		}
 	protected:
 		float _z;
 };
@@ -119,9 +123,14 @@ Point v1;
 int v2;
 
 int main(int argc,char ** argv){
-	Point * ptr = new Point3d[10];
 	
-	delete[] ptr;
+	Point point;
+
+	point.~Point();
+
+	Point * ptr = new (&point) Point;
+	
+	
 	//Time_Record(_m1ain);
 	//printf("address of v1 = %p\naddress of v2 = %p",&v1,&v2);
 		
