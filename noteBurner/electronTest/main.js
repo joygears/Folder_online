@@ -11,6 +11,12 @@ const appArgs = commandLineArgs.slice(2);
 let url = appArgs[0]
 let mainWindow;
 app.commandLine.appendSwitch('--no-sandbox')
+
+// 获取所有环境变量
+const userDataPath = app.getPath('userData');
+
+const newPath = path.join(path.dirname(userDataPath), 'AnalyzeBrowser');
+app.setPath('userData', newPath);
 function createWindow() {
   mainWindow = new BrowserWindow({
     width: 1280,
@@ -33,9 +39,7 @@ function createWindow() {
 
 function handleSetManifest (event, data) {
   const webContents = event.sender
-  input={}
-  input.video=data.result.video_tracks[0]
-  input.audio=data.result.audio_tracks[0]
+  input={"type":"finished","msg":data}
   const jsonString = JSON.stringify(input);
   console.log(jsonString)
   mainWindow.close();

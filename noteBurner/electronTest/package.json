@@ -2,7 +2,7 @@
   "dependencies": {
     "ws": "^8.13.0"
   },
-  "name": "netflix_downloader",
+  "name": "WvBrowser",
   "version": "1.0.0",
   "main": "main.js",
   "license": "MIT",
