@@ -1,6 +1,7 @@
-const { app, components,BrowserWindow,ipcMain } = require('electron');
-const path = require('path')
-const fs = require("fs")
+//const { app, components,BrowserWindow,ipcMain } = require('electron');
+const parseMain = require('./parse');
+const convertMain = require('./convert');
+
 
 // 获取命令行参数数组
 const commandLineArgs = process.argv;
@@ -8,53 +9,25 @@ const commandLineArgs = process.argv;
 // 获取应用程序参数（不包括 Electron 内部参数）
 const appArgs = commandLineArgs.slice(2);
 
-let url = appArgs[0]
-let mainWindow;
-app.commandLine.appendSwitch('--no-sandbox')
+//let url = appArgs[0]
+const base64String = appArgs[0]
 
-// 获取所有环境变量
-const userDataPath = app.getPath('userData');
+// 将Base64字符串解码为Buffer
+const decodedBuffer = Buffer.from(base64String, 'base64');
+// 将Buffer转换为字符串
+const decodedString = decodedBuffer.toString('utf-8');
 
-const newPath = path.join(path.dirname(userDataPath), 'AnalyzeBrowser');
-app.setPath('userData', newPath);
-function createWindow() {
-  mainWindow = new BrowserWindow({
-    width: 1280,
-    height: 720,
-  webPreferences: {
-    
-	contextIsolation: true,
-   preload: path.join(__dirname, 'preload.js')
-    },
-  });
-// Load Netflix URL
-  mainWindow.loadURL(url);
-  //mainWindow.webContents.openDevTools()
-  mainWindow.webContents.on("did-finish-load", function() {
- const js = fs.readFileSync(path.join(__dirname, 'netflixHook.js')).toString();
-  mainWindow.webContents.executeJavaScript(js);
-
-});
+console.log("decodedString:",decodedString)
+ let jsonObject;
+try {
+  jsonObject = JSON.parse(decodedString);
+} catch (error) {
+  console.error("Error parsing JSON:", error.message);
 }
 
-function handleSetManifest (event, data) {
-  const webContents = event.sender
-  input={"type":"finished","msg":data}
-  const jsonString = JSON.stringify(input);
-  console.log(jsonString)
-  mainWindow.close();
-}
-
-app.whenReady().then(async () => {
-  await components.whenReady();
-  console.log('components ready:', components.status());
-  ipcMain.on('set-manifest', handleSetManifest)
-  createWindow();
-});
+if(jsonObject['mode']=="parse")
+  parseMain.parseMain(jsonObject);
+else if(jsonObject['mode']=="convert")
+  convertMain.convertMain(jsonObject);
 
 
-app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-  app.quit();
-  }
-});
