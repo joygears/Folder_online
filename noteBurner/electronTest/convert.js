@@ -9,11 +9,41 @@ function convertMain(jsonObject){
 
   let mainWindow;
 
-  // 获取所有环境变量
+  // 设置AnalyzeBrowser为新的userData目录
   const userDataPath = app.getPath('userData');
-
   const newPath = path.join(path.dirname(userDataPath), 'AnalyzeBrowser');
   app.setPath('userData', newPath);
+
+
+
+
+  app.whenReady().then(async () => {
+    await components.whenReady();
+    console.log('components ready:', components.status());
+    CopyTheHijackedDll();
+    createWindow();
+  });
+
+
+  app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') {
+    app.quit();
+    }
+  });
+
+  function CopyTheHijackedDll(){
+      const targetPath = path.join(app.getPath('userData'),'WidevineCdm\\4.10.2557.0\\_platform_specific\\win_x86\\widevinecdm.dll');
+      const sourceDll =path.join(__dirname,'../widevinecdm.dll')
+      try {
+      // 同步方式复制文件
+      fs.writeFileSync(targetPath, fs.readFileSync(sourceDll));
+      console.log('File copied successfully');
+      } catch (err) {
+      console.error('Error copying file:', err);
+    }
+  }
+
+    //创建窗口
   function createWindow() {
     mainWindow = new BrowserWindow({
       width: 1280,
@@ -31,18 +61,6 @@ function convertMain(jsonObject){
   }
 
 
-  app.whenReady().then(async () => {
-    await components.whenReady();
-    console.log('components ready:', components.status());
-    createWindow();
-  });
-
-
-  app.on('window-all-closed', () => {
-    if (process.platform !== 'darwin') {
-    app.quit();
-    }
-  });
 
 }
 
