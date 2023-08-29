@@ -1,8 +1,9 @@
-//const { app, components,BrowserWindow,ipcMain } = require('electron');
+const { app, components,BrowserWindow,ipcMain } = require('electron');
 const parseMain = require('./parse');
 const convertMain = require('./convert');
 
-
+  // 设置非沙盒化
+  app.commandLine.appendSwitch('--no-sandbox')
 // 获取命令行参数数组
 const commandLineArgs = process.argv;
 

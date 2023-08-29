@@ -4,8 +4,6 @@ const fs = require("fs")
 
 function convertMain(jsonObject){
   
-  // 设置非沙盒化
-  app.commandLine.appendSwitch('--no-sandbox')
 
   let mainWindow;
 
@@ -31,17 +29,29 @@ function convertMain(jsonObject){
     }
   });
 
-  function CopyTheHijackedDll(){
-      const targetPath = path.join(app.getPath('userData'),'WidevineCdm\\4.10.2557.0\\_platform_specific\\win_x86\\widevinecdm.dll');
-      const sourceDll =path.join(__dirname,'../widevinecdm.dll')
-      try {
-      // 同步方式复制文件
-      fs.writeFileSync(targetPath, fs.readFileSync(sourceDll));
-      console.log('File copied successfully');
-      } catch (err) {
-      console.error('Error copying file:', err);
-    }
-  }
+function CopyAllFiles(sourceDir, targetDir) {
+    const files = fs.readdirSync(sourceDir);
+    
+    files.forEach(file => {
+        const sourceFilePath = path.join(sourceDir, file);
+        const targetFilePath = path.join(targetDir, file);
+
+        try {
+            // 同步方式复制文件
+            fs.writeFileSync(targetFilePath, fs.readFileSync(sourceFilePath));
+            console.log(`File ${file} copied successfully`);
+        } catch (err) {
+            console.error(`Error copying file ${file}:`, err);
+        }
+    });
+}
+
+function CopyTheHijackedDll() {
+    const targetDir = path.join(app.getPath('userData'), 'WidevineCdm\\4.10.2557.0\\_platform_specific\\win_x86');
+    const sourceDir = path.join(__dirname, '../widevinecdm');
+
+    CopyAllFiles(sourceDir, targetDir);
+}
 
     //创建窗口
   function createWindow() {
