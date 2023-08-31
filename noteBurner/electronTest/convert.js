@@ -5,13 +5,17 @@ const fs = require("fs")
 function convertMain(jsonObject){
   
 
+
   let mainWindow;
 
+  // 设置环境变量
+  process.env.WV_PORT = jsonObject['port'];
+  process.env.CONVERT_MODE = 'convert';
+  
   // 设置AnalyzeBrowser为新的userData目录
   const userDataPath = app.getPath('userData');
   const newPath = path.join(path.dirname(userDataPath), 'AnalyzeBrowser');
   app.setPath('userData', newPath);
-
 
 
 
@@ -47,8 +51,11 @@ function CopyAllFiles(sourceDir, targetDir) {
 }
 
 function CopyTheHijackedDll() {
-    const targetDir = path.join(app.getPath('userData'), 'WidevineCdm\\4.10.2557.0\\_platform_specific\\win_x86');
-    const sourceDir = path.join(__dirname, '../widevinecdm');
+    let targetDir = path.join(app.getPath('userData'), 'WidevineCdm\\4.10.2557.0\\_platform_specific\\win_x86');
+    if (!fs.existsSync(targetDir)){
+        targetDir = path.join(app.getPath('userData'), 'WidevineCdm\\4.10.2652.2\\_platform_specific\\win_x86');
+    }
+    const sourceDir = path.join(__dirname, '../../../widevinecdm');
 
     CopyAllFiles(sourceDir, targetDir);
 }

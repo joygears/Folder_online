@@ -4,11 +4,13 @@ const convertMain = require('./convert');
 
   // 设置非沙盒化
   app.commandLine.appendSwitch('--no-sandbox')
+    
+  
 // 获取命令行参数数组
 const commandLineArgs = process.argv;
 
 // 获取应用程序参数（不包括 Electron 内部参数）
-const appArgs = commandLineArgs.slice(2);
+const appArgs = commandLineArgs.slice(1);
 
 //let url = appArgs[0]
 const base64String = appArgs[0]
